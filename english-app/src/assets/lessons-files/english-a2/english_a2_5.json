@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 5,
+  "sections": [
+    {
+      "title": "Understanding Commands and Instructions → Entendiendo comandos e instrucciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Turn on the machine",
+          "spanish": "Encienda la máquina"
+        },
+        {
+          "english": "Turn off the power",
+          "spanish": "Apague la energía"
+        },
+        {
+          "english": "Check the gauge",
+          "spanish": "Revise el medidor"
+        },
+        {
+          "english": "Press the red button",
+          "spanish": "Presione el botón rojo"
+        },
+        {
+          "english": "Pull the lever down",
+          "spanish": "Baje la palanca"
+        },
+        {
+          "english": "Wait for the signal",
+          "spanish": "Espere la señal"
+        },
+        {
+          "english": "Stop immediately",
+          "spanish": "Pare inmediatamente"
+        },
+        {
+          "english": "Move slowly and carefully",
+          "spanish": "Muévase lenta y cuidadosamente"
+        },
+        {
+          "english": "Follow the procedure",
+          "spanish": "Siga el procedimiento"
+        },
+        {
+          "english": "Report any problems",
+          "spanish": "Reporte cualquier problema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "First, turn on the main switch. Then check the display.",
+          "options": ["Turn on switch, then check display", "Check display, then turn on switch", "Do both at the same time"],
+          "answer": 0
+        },
+        {
+          "audio": "If you see a red light, stop the machine immediately.",
+          "options": ["Red light means continue", "Red light means stop", "Red light means slow down"],
+          "answer": 1
+        },
+        {
+          "audio": "Press and hold the button for 5 seconds.",
+          "options": ["Press once quickly", "Press and hold for 5 seconds", "Press 5 times"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "the safety procedures before starting.",
+          "answer": "follow",
+          "selected": false,
+          "feedback": "Following safety procedures is essential before operating any equipment."
+        },
+        {
+          "prefix": "If the gauge shows red,",
+          "suffix": "the machine immediately.",
+          "answer": "stop",
+          "selected": false,
+          "feedback": "Red indicators on gauges typically signal danger and require immediate stopping."
+        },
+        {
+          "prefix": "Press the green button to",
+          "suffix": "the system.",
+          "answer": "start",
+          "selected": false,
+          "feedback": "Green buttons are commonly used to start or begin operations."
+        }
+      ]
+    },
+    {
+      "title": "Giving Step-by-Step Instructions → Dando instrucciones paso a paso",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "First, put on your safety equipment",
+          "spanish": "Primero, póngase su equipo de seguridad"
+        },
+        {
+          "english": "Next, check all connections",
+          "spanish": "Luego, revise todas las conexiones"
+        },
+        {
+          "english": "Then, start the motor",
+          "spanish": "Después, arranque el motor"
+        },
+        {
+          "english": "After that, monitor the temperature",
+          "spanish": "Después de eso, monitoree la temperatura"
+        },
+        {
+          "english": "Finally, record the results",
+          "spanish": "Finalmente, registre los resultados"
+        },
+        {
+          "english": "Before you begin, read the manual",
+          "spanish": "Antes de comenzar, lea el manual"
+        },
+        {
+          "english": "While the machine is running, stay alert",
+          "spanish": "Mientras la máquina funciona, manténgase alerta"
+        },
+        {
+          "english": "Once you finish, clean the workspace",
+          "spanish": "Una vez que termine, limpie el área de trabajo"
+        },
+        {
+          "english": "Remember to sign the logbook",
+          "spanish": "Recuerde firmar el libro de registro"
+        },
+        {
+          "english": "Complete all steps in order",
+          "spanish": "Complete todos los pasos en orden"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "First, check the power supply. Next, connect the cables. Then, test the system.",
+          "options": ["3 steps in sequence", "3 steps at the same time", "Only 2 steps needed"],
+          "answer": 0
+        },
+        {
+          "audio": "Before starting, make sure you have all tools. After finishing, clean everything.",
+          "options": ["Preparation and cleanup", "Only preparation needed", "Only cleanup needed"],
+          "answer": 0
+        },
+        {
+          "audio": "While the system is heating, prepare the materials. Once it's ready, begin the process.",
+          "options": ["Two parallel actions", "Two sequential actions", "One continuous action"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "First,",
+          "suffix": "your protective equipment.",
+          "answer": "put on",
+          "selected": false,
+          "feedback": "Safety equipment should always be the first step in any procedure."
+        },
+        {
+          "prefix": "After checking the connections,",
+          "suffix": "the power switch.",
+          "answer": "turn on",
+          "selected": false,
+          "feedback": "Power should only be turned on after verifying all connections are secure."
+        },
+        {
+          "prefix": "Finally,",
+          "suffix": "the results in the logbook.",
+          "answer": "record",
+          "selected": false,
+          "feedback": "Recording results is the final step to document the completed procedure."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Procedures and Commands → Procedimientos y comandos de emergencia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Emergency stop",
+          "spanish": "Parada de emergencia"
+        },
+        {
+          "english": "Evacuate the area",
+          "spanish": "Evacúe el área"
+        },
+        {
+          "english": "Call for help",
+          "spanish": "Pida ayuda"
+        },
+        {
+          "english": "Sound the alarm",
+          "spanish": "Active la alarma"
+        },
+        {
+          "english": "Cut the power",
+          "spanish": "Corte la energía"
+        },
+        {
+          "english": "Use the fire extinguisher",
+          "spanish": "Use el extintor"
+        },
+        {
+          "english": "Apply first aid",
+          "spanish": "Aplique primeros auxilios"
+        },
+        {
+          "english": "Clear the exit routes",
+          "spanish": "Despeje las rutas de salida"
+        },
+        {
+          "english": "Report to the assembly point",
+          "spanish": "Repórtese al punto de reunión"
+        },
+        {
+          "english": "Do not use elevators",
+          "spanish": "No use los ascensores"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "In case of fire, activate the alarm and evacuate immediately.",
+          "options": ["Activate alarm first", "Evacuate first", "Both simultaneously"],
+          "answer": 0
+        },
+        {
+          "audio": "If someone is injured, apply first aid and call for medical help.",
+          "options": ["Call first, then first aid", "First aid first, then call", "Either order is fine"],
+          "answer": 1
+        },
+        {
+          "audio": "When you hear the emergency alarm, stop work and go to the assembly point.",
+          "options": ["Continue working", "Stop and evacuate", "Stop and wait"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "In any emergency,",
+          "suffix": "the red emergency button.",
+          "answer": "press",
+          "selected": false,
+          "feedback": "Emergency buttons are designed to quickly stop operations during emergencies."
+        },
+        {
+          "prefix": "If you smell gas,",
+          "suffix": "the area immediately.",
+          "answer": "evacuate",
+          "selected": false,
+          "feedback": "Gas leaks require immediate evacuation to prevent explosions or poisoning."
+        },
+        {
+          "prefix": "After evacuating,",
+          "suffix": "at the designated assembly point.",
+          "answer": "gather",
+          "selected": false,
+          "feedback": "Assembly points allow supervisors to account for all personnel during emergencies."
+        }
+      ]
+    },
+    {
+      "title": "Quality Control Instructions → Instrucciones de control de calidad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Inspect each piece carefully",
+          "spanish": "Inspeccione cada pieza cuidadosamente"
+        },
+        {
+          "english": "Measure the dimensions",
+          "spanish": "Mida las dimensiones"
+        },
+        {
+          "english": "Check for defects",
+          "spanish": "Revise por defectos"
+        },
+        {
+          "english": "Compare with specifications",
+          "spanish": "Compare con las especificaciones"
+        },
+        {
+          "english": "Mark any rejected items",
+          "spanish": "Marque cualquier artículo rechazado"
+        },
+        {
+          "english": "Document all findings",
+          "spanish": "Documente todos los hallazgos"
+        },
+        {
+          "english": "Follow testing procedures",
+          "spanish": "Siga los procedimientos de prueba"
+        },
+        {
+          "english": "Verify functionality",
+          "spanish": "Verifique la funcionalidad"
+        },
+        {
+          "english": "Complete the checklist",
+          "spanish": "Complete la lista de verificación"
+        },
+        {
+          "english": "Sign off on approved items",
+          "spanish": "Firme los artículos aprobados"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Check each product against the quality standards before approval.",
+          "options": ["Check after approval", "Check before approval", "Approval not needed"],
+          "answer": 1
+        },
+        {
+          "audio": "If you find a defect, mark it clearly and set it aside.",
+          "options": ["Hide the defect", "Mark and separate", "Try to fix it"],
+          "answer": 1
+        },
+        {
+          "audio": "All measurements must be within the tolerance limits.",
+          "options": ["Exact measurements only", "Within tolerance limits", "Approximate is fine"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Work Order Instructions → Instrucciones de órdenes de trabajo",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Read the work order completely",
+          "spanish": "Lea la orden de trabajo completamente"
+        },
+        {
+          "english": "Gather all required materials",
+          "spanish": "Reúna todos los materiales requeridos"
+        },
+        {
+          "english": "Estimate the time needed",
+          "spanish": "Estime el tiempo necesario"
+        },
+        {
+          "english": "Start with priority tasks",
+          "spanish": "Comience con las tareas prioritarias"
+        },
+        {
+          "english": "Update progress regularly",
+          "spanish": "Actualice el progreso regularmente"
+        },
+        {
+          "english": "Note any complications",
+          "spanish": "Anote cualquier complicación"
+        },
+        {
+          "english": "Request additional resources if needed",
+          "spanish": "Solicite recursos adicionales si es necesario"
+        },
+        {
+          "english": "Complete all assigned tasks",
+          "spanish": "Complete todas las tareas asignadas"
+        },
+        {
+          "english": "Clean up the work area",
+          "spanish": "Limpie el área de trabajo"
+        },
+        {
+          "english": "Submit the completed work order",
+          "spanish": "Entregue la orden de trabajo completada"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Before starting any work,",
+          "suffix": "the entire work order.",
+          "answer": "read",
+          "selected": false,
+          "feedback": "Reading the complete work order ensures you understand all requirements and can plan accordingly."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "your progress on the work order form.",
+          "answer": "document",
+          "selected": false,
+          "feedback": "Documenting progress helps track completion and provides records for future reference."
+        },
+        {
+          "prefix": "If you encounter problems,",
+          "suffix": "your supervisor immediately.",
+          "answer": "notify",
+          "selected": false,
+          "feedback": "Notifying supervisors of problems allows for quick resolution and prevents delays."
+        }
+      ]
+    }
+  ]
+}
+]
+

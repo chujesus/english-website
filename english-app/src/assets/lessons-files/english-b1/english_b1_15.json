@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 15,
+  "sections": [
+    {
+      "title": "Data Science and Analytics in Engineering → Ciencia de datos y análisis en ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Big data analytics reveals hidden patterns in engineering systems",
+          "spanish": "El análisis de big data revela patrones ocultos en sistemas de ingeniería"
+        },
+        {
+          "english": "Machine learning algorithms predict equipment behavior",
+          "spanish": "Los algoritmos de aprendizaje automático predicen comportamiento de equipos"
+        },
+        {
+          "english": "Statistical modeling quantifies system relationships",
+          "spanish": "El modelado estadístico cuantifica relaciones del sistema"
+        },
+        {
+          "english": "Data visualization communicates complex information clearly",
+          "spanish": "La visualización de datos comunica información compleja claramente"
+        },
+        {
+          "english": "Sensor fusion combines multiple data sources",
+          "spanish": "La fusión de sensores combina múltiples fuentes de datos"
+        },
+        {
+          "english": "Anomaly detection identifies unusual system behavior",
+          "spanish": "La detección de anomalías identifica comportamiento inusual del sistema"
+        },
+        {
+          "english": "Optimization algorithms improve system performance",
+          "spanish": "Los algoritmos de optimización mejoran rendimiento del sistema"
+        },
+        {
+          "english": "Real-time analytics enable immediate decision making",
+          "spanish": "Los análisis en tiempo real permiten toma de decisiones inmediata"
+        },
+        {
+          "english": "Data quality assurance ensures reliable analysis",
+          "spanish": "El aseguramiento de calidad de datos asegura análisis confiable"
+        },
+        {
+          "english": "Automated reporting streamlines information sharing",
+          "spanish": "Los reportes automatizados optimizan compartir información"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does big data analytics benefit engineering systems?",
+          "options": ["It finds patterns in large datasets that humans might miss", "It makes data bigger", "It complicates analysis"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of anomaly detection in engineering?",
+          "options": ["To identify unusual behavior that might indicate problems", "To create anomalies", "To ignore unusual data"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is data quality important in analytics?",
+          "options": ["Poor quality data leads to incorrect conclusions and decisions", "Quality doesn't matter", "It makes analysis slower"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Machine learning",
+          "suffix": "can identify complex patterns that traditional analysis might miss.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Machine learning algorithms excel at finding patterns in complex engineering data."
+        },
+        {
+          "prefix": "Data",
+          "suffix": "makes complex engineering information accessible to decision makers.",
+          "answer": "visualization",
+          "selected": false,
+          "feedback": "Effective visualization transforms data into actionable insights."
+        },
+        {
+          "prefix": "Real-time",
+          "suffix": "enables immediate response to changing system conditions.",
+          "answer": "analytics",
+          "selected": false,
+          "feedback": "Real-time analytics provide immediate insights for dynamic systems."
+        }
+      ]
+    },
+    {
+      "title": "Blockchain Technology in Engineering Applications → Tecnología blockchain en aplicaciones de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Distributed ledgers ensure data integrity and transparency",
+          "spanish": "Los libros contables distribuidos aseguran integridad y transparencia de datos"
+        },
+        {
+          "english": "Smart contracts automate agreement execution",
+          "spanish": "Los contratos inteligentes automatizan ejecución de acuerdos"
+        },
+        {
+          "english": "Supply chain traceability tracks component origins",
+          "spanish": "La trazabilidad de cadena de suministro rastrea orígenes de componentes"
+        },
+        {
+          "english": "Digital certificates verify product authenticity",
+          "spanish": "Los certificados digitales verifican autenticidad de productos"
+        },
+        {
+          "english": "Decentralized systems reduce single points of failure",
+          "spanish": "Los sistemas descentralizados reducen puntos únicos de falla"
+        },
+        {
+          "english": "Cryptographic security protects sensitive information",
+          "spanish": "La seguridad criptográfica protege información sensible"
+        },
+        {
+          "english": "Consensus mechanisms validate transactions",
+          "spanish": "Los mecanismos de consenso validan transacciones"
+        },
+        {
+          "english": "Immutable records prevent data tampering",
+          "spanish": "Los registros inmutables previenen manipulación de datos"
+        },
+        {
+          "english": "Peer-to-peer networks eliminate intermediaries",
+          "spanish": "Las redes peer-to-peer eliminan intermediarios"
+        },
+        {
+          "english": "Token economics incentivize network participation",
+          "spanish": "La economía de tokens incentiva participación en la red"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does blockchain ensure data integrity?",
+          "options": ["It creates immutable records that cannot be changed without consensus", "It makes data larger", "It encrypts all data"],
+          "answer": 0
+        },
+        {
+          "audio": "What are smart contracts in blockchain?",
+          "options": ["Self-executing contracts with terms directly written into code", "Paper contracts", "Expensive contracts"],
+          "answer": 0
+        },
+        {
+          "audio": "How does blockchain benefit supply chain management?",
+          "options": ["It provides complete traceability from origin to destination", "It makes supply chains longer", "It eliminates suppliers"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Distributed",
+          "suffix": "eliminate single points of failure in data management systems.",
+          "answer": "ledgers",
+          "selected": false,
+          "feedback": "Distributed ledgers provide resilient and transparent data storage."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "automatically execute when predefined conditions are met.",
+          "answer": "contracts",
+          "selected": false,
+          "feedback": "Smart contracts reduce the need for intermediaries in agreements."
+        },
+        {
+          "prefix": "Supply chain",
+          "suffix": "becomes transparent and verifiable with blockchain technology.",
+          "answer": "traceability",
+          "selected": false,
+          "feedback": "Blockchain enables end-to-end transparency in supply chains."
+        }
+      ]
+    },
+    {
+      "title": "Cybersecurity in Industrial Systems → Ciberseguridad en sistemas industriales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Industrial control systems require specialized security measures",
+          "spanish": "Los sistemas de control industrial requieren medidas de seguridad especializadas"
+        },
+        {
+          "english": "Network segmentation isolates critical systems",
+          "spanish": "La segmentación de red aísla sistemas críticos"
+        },
+        {
+          "english": "Intrusion detection monitors unauthorized access attempts",
+          "spanish": "La detección de intrusiones monitorea intentos de acceso no autorizado"
+        },
+        {
+          "english": "Encryption protects data transmission",
+          "spanish": "La encriptación protege transmisión de datos"
+        },
+        {
+          "english": "Access control limits system permissions",
+          "spanish": "El control de acceso limita permisos del sistema"
+        },
+        {
+          "english": "Security audits identify vulnerabilities",
+          "spanish": "Las auditorías de seguridad identifican vulnerabilidades"
+        },
+        {
+          "english": "Incident response procedures minimize breach impacts",
+          "spanish": "Los procedimientos de respuesta a incidentes minimizan impactos de violaciones"
+        },
+        {
+          "english": "Security awareness training educates personnel",
+          "spanish": "El entrenamiento de conciencia de seguridad educa al personal"
+        },
+        {
+          "english": "Backup systems ensure continuity during attacks",
+          "spanish": "Los sistemas de respaldo aseguran continuidad durante ataques"
+        },
+        {
+          "english": "Threat intelligence identifies emerging risks",
+          "spanish": "La inteligencia de amenazas identifica riesgos emergentes"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why do industrial systems need specialized cybersecurity?",
+          "options": ["They control critical infrastructure and physical processes", "They are immune to attacks", "They don't use computers"],
+          "answer": 0
+        },
+        {
+          "audio": "How does network segmentation improve security?",
+          "options": ["It isolates critical systems from less secure networks", "It makes networks smaller", "It eliminates all networks"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the role of intrusion detection systems?",
+          "options": ["To monitor networks for unauthorized access attempts", "To create intrusions", "To slow down networks"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Industrial control",
+          "suffix": "face unique cybersecurity challenges due to their critical nature.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Industrial systems require specialized security approaches due to their operational requirements."
+        },
+        {
+          "prefix": "Network",
+          "suffix": "creates security zones to contain potential breaches.",
+          "answer": "segmentation",
+          "selected": false,
+          "feedback": "Segmentation is a key strategy for protecting critical industrial networks."
+        },
+        {
+          "prefix": "Access",
+          "suffix": "ensures only authorized personnel can operate critical systems.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "Access control is fundamental to industrial cybersecurity."
+        }
+      ]
+    },
+    {
+      "title": "Augmented Reality in Engineering Applications → Realidad aumentada en aplicaciones de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Mixed reality overlays digital information on physical environments",
+          "spanish": "La realidad mixta superpone información digital en ambientes físicos"
+        },
+        {
+          "english": "Maintenance visualization guides technician procedures",
+          "spanish": "La visualización de mantenimiento guía procedimientos de técnicos"
+        },
+        {
+          "english": "Remote assistance connects experts with field workers",
+          "spanish": "La asistencia remota conecta expertos con trabajadores de campo"
+        },
+        {
+          "english": "Training simulations provide immersive learning experiences",
+          "spanish": "Las simulaciones de entrenamiento proporcionan experiencias de aprendizaje inmersivas"
+        },
+        {
+          "english": "Design visualization enables spatial understanding",
+          "spanish": "La visualización de diseño permite comprensión espacial"
+        },
+        {
+          "english": "Quality inspection overlays highlight defects",
+          "spanish": "Las superposiciones de inspección de calidad resaltan defectos"
+        },
+        {
+          "english": "Assembly instructions guide manufacturing processes",
+          "spanish": "Las instrucciones de ensamble guían procesos de manufactura"
+        },
+        {
+          "english": "Safety information displays warn of hazards",
+          "spanish": "Las pantallas de información de seguridad advierten de peligros"
+        },
+        {
+          "english": "Collaborative design enables team interaction",
+          "spanish": "El diseño colaborativo permite interacción de equipo"
+        },
+        {
+          "english": "Data visualization presents complex information intuitively",
+          "spanish": "La visualización de datos presenta información compleja intuitivamente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does augmented reality help in maintenance?",
+          "options": ["It overlays step-by-step instructions directly on equipment", "It replaces all equipment", "It makes maintenance unnecessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What benefit does AR provide for training?",
+          "options": ["It creates immersive, hands-on learning without real-world risks", "It eliminates all training", "It makes training more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "How does remote assistance using AR work?",
+          "options": ["Experts can see what field workers see and provide visual guidance", "It works only locally", "It eliminates the need for experts"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Quantum Computing Applications in Engineering → Aplicaciones de computación cuántica en ingeniería",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Quantum algorithms solve optimization problems exponentially faster",
+          "spanish": "Los algoritmos cuánticos resuelven problemas de optimización exponencialmente más rápido"
+        },
+        {
+          "english": "Molecular simulation enables advanced materials design",
+          "spanish": "La simulación molecular permite diseño avanzado de materiales"
+        },
+        {
+          "english": "Cryptographic applications provide quantum-secure communications",
+          "spanish": "Las aplicaciones criptográficas proporcionan comunicaciones cuántico-seguras"
+        },
+        {
+          "english": "Machine learning acceleration improves pattern recognition",
+          "spanish": "La aceleración del aprendizaje automático mejora reconocimiento de patrones"
+        },
+        {
+          "english": "Financial modeling calculates complex risk scenarios",
+          "spanish": "El modelado financiero calcula escenarios de riesgo complejos"
+        },
+        {
+          "english": "Drug discovery simulates molecular interactions",
+          "spanish": "El descubrimiento de medicamentos simula interacciones moleculares"
+        },
+        {
+          "english": "Traffic optimization manages complex transportation networks",
+          "spanish": "La optimización de tráfico gestiona redes de transporte complejas"
+        },
+        {
+          "english": "Weather prediction models handle massive data sets",
+          "spanish": "Los modelos de predicción meteorológica manejan conjuntos de datos masivos"
+        },
+        {
+          "english": "Energy distribution optimizes power grid efficiency",
+          "spanish": "La distribución de energía optimiza eficiencia de la red eléctrica"
+        },
+        {
+          "english": "Quantum sensing achieves unprecedented measurement precision",
+          "spanish": "La detección cuántica logra precisión de medición sin precedentes"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Quantum",
+          "suffix": "can solve certain problems much faster than classical computers.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Quantum algorithms leverage quantum mechanical properties for computational advantage."
+        },
+        {
+          "prefix": "Molecular",
+          "suffix": "enables design of materials with precisely controlled properties.",
+          "answer": "simulation",
+          "selected": false,
+          "feedback": "Quantum computers excel at simulating quantum mechanical systems like molecules."
+        },
+        {
+          "prefix": "Quantum",
+          "suffix": "can provide measurement capabilities beyond classical limits.",
+          "answer": "sensing",
+          "selected": false,
+          "feedback": "Quantum sensing techniques offer unprecedented precision in measurements."
+        }
+      ]
+    }
+  ]
+}
+]
+

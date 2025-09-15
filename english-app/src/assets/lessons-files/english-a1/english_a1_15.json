@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 15,
+    "sections": [
+      {
+        "title": "Health and Body Parts → Salud y partes del cuerpo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "health", "spanish": "salud" },
+          { "english": "body", "spanish": "cuerpo" },
+          { "english": "head", "spanish": "cabeza" },
+          { "english": "face", "spanish": "cara" },
+          { "english": "eyes", "spanish": "ojos" },
+          { "english": "nose", "spanish": "nariz" },
+          { "english": "mouth", "spanish": "boca" },
+          { "english": "ears", "spanish": "oídos" },
+          { "english": "neck", "spanish": "cuello" },
+          { "english": "shoulders", "spanish": "hombros" },
+          { "english": "arms", "spanish": "brazos" },
+          { "english": "hands", "spanish": "manos" },
+          { "english": "fingers", "spanish": "dedos" },
+          { "english": "legs", "spanish": "piernas" },
+          { "english": "feet", "spanish": "pies" }
+        ],
+        "listening": [
+          {
+            "audio": "My head hurts",
+            "options": ["My head hurts", "My back hurts", "My arm hurts", "My leg hurts"],
+            "answer": "My head hurts"
+          },
+          {
+            "audio": "I hurt my hand at work",
+            "options": ["I hurt my hand at work", "I hurt my foot at work", "I hurt my back at work", "I hurt my shoulder at work"],
+            "answer": "I hurt my hand at work"
+          },
+          {
+            "audio": "How is your health?",
+            "options": ["How is your health?", "How is your work?", "How is your family?", "How is your day?"],
+            "answer": "How is your health?"
+          },
+          {
+            "audio": "I need to see a doctor",
+            "options": ["I need to see a doctor", "I need to see a dentist", "I need to see a nurse", "I need to see a specialist"],
+            "answer": "I need to see a doctor"
+          },
+          {
+            "audio": "My eyes are tired from reading",
+            "options": ["My eyes are tired from reading", "My hands are tired from writing", "My feet are tired from walking", "My back is tired from sitting"],
+            "answer": "My eyes are tired from reading"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My head", "My back", "My arm"],
+            "suffix": "hurts after working long hours.",
+            "answer": "My head",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I injured", "I hurt", "I damaged"],
+            "suffix": "my hand while using the machine.",
+            "answer": "I injured",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Good health", "Being healthy", "Taking care of health"],
+            "suffix": "is very important for workers.",
+            "answer": "Good health",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My eyes", "My hands", "My feet"],
+            "suffix": "are very tired after a long day.",
+            "answer": "My eyes",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Workers should", "Employees must", "Everyone needs to"],
+            "suffix": "protect their body parts from injury.",
+            "answer": "Workers should",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Common Health Problems → Problemas de salud comunes",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "sick", "spanish": "enfermo" },
+          { "english": "ill", "spanish": "enfermo" },
+          { "english": "pain", "spanish": "dolor" },
+          { "english": "headache", "spanish": "dolor de cabeza" },
+          { "english": "stomachache", "spanish": "dolor de estómago" },
+          { "english": "backache", "spanish": "dolor de espalda" },
+          { "english": "fever", "spanish": "fiebre" },
+          { "english": "cold", "spanish": "resfriado" },
+          { "english": "cough", "spanish": "tos" },
+          { "english": "sore throat", "spanish": "dolor de garganta" },
+          { "english": "tired", "spanish": "cansado" },
+          { "english": "dizzy", "spanish": "mareado" },
+          { "english": "nauseous", "spanish": "con náuseas" },
+          { "english": "injury", "spanish": "lesión" },
+          { "english": "accident", "spanish": "accidente" }
+        ],
+        "listening": [
+          {
+            "audio": "I have a terrible headache",
+            "options": ["I have a terrible headache", "I have a terrible stomachache", "I have a terrible backache", "I have a terrible toothache"],
+            "answer": "I have a terrible headache"
+          },
+          {
+            "audio": "She is sick with a cold",
+            "options": ["She is sick with a cold", "She is sick with fever", "She is sick with flu", "She is sick with allergies"],
+            "answer": "She is sick with a cold"
+          },
+          {
+            "audio": "I feel dizzy and nauseous",
+            "options": ["I feel dizzy and nauseous", "I feel tired and sleepy", "I feel happy and energetic", "I feel sad and worried"],
+            "answer": "I feel dizzy and nauseous"
+          },
+          {
+            "audio": "There was an accident at the factory",
+            "options": ["There was an accident at the factory", "There was a meeting at the factory", "There was a problem at the factory", "There was a fire at the factory"],
+            "answer": "There was an accident at the factory"
+          },
+          {
+            "audio": "My back hurts from lifting heavy boxes",
+            "options": ["from lifting heavy boxes", "from sitting too long", "from standing too much", "from walking too far"],
+            "answer": "from lifting heavy boxes"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I feel", "I am", "I'm getting"],
+            "suffix": "sick and need to go home.",
+            "answer": "I feel",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I have", "I'm suffering from", "I got"],
+            "suffix": "a bad headache from stress.",
+            "answer": "I have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Workers often get", "Employees sometimes have", "People can develop"],
+            "suffix": "back pain from heavy lifting.",
+            "answer": "Workers often get",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["When you're sick", "If you feel ill", "When you have pain"],
+            "suffix": "you should rest and see a doctor.",
+            "answer": "When you're sick",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Workplace accidents", "Job injuries", "Work-related injuries"],
+            "suffix": "can be prevented with proper safety.",
+            "answer": "Workplace accidents",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "At the Doctor's Office → En la oficina del doctor",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "doctor", "spanish": "doctor" },
+          { "english": "nurse", "spanish": "enfermera" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "clinic", "spanish": "clínica" },
+          { "english": "hospital", "spanish": "hospital" },
+          { "english": "emergency room", "spanish": "sala de emergencias" },
+          { "english": "examination", "spanish": "examen" },
+          { "english": "medicine", "spanish": "medicina" },
+          { "english": "prescription", "spanish": "receta" },
+          { "english": "treatment", "spanish": "tratamiento" },
+          { "english": "symptoms", "spanish": "síntomas" },
+          { "english": "diagnosis", "spanish": "diagnóstico" },
+          { "english": "patient", "spanish": "paciente" },
+          { "english": "medical insurance", "spanish": "seguro médico" },
+          { "english": "health card", "spanish": "tarjeta de salud" }
+        ],
+        "listening": [
+          {
+            "audio": "I need to make an appointment",
+            "options": ["I need to make an appointment", "I need to cancel an appointment", "I need to change an appointment", "I need to confirm an appointment"],
+            "answer": "I need to make an appointment"
+          },
+          {
+            "audio": "What are your symptoms?",
+            "options": ["What are your symptoms?", "What is your name?", "What is your address?", "What is your problem?"],
+            "answer": "What are your symptoms?"
+          },
+          {
+            "audio": "The doctor will see you now",
+            "options": ["The doctor will see you now", "The nurse will see you now", "The dentist will see you now", "The specialist will see you now"],
+            "answer": "The doctor will see you now"
+          },
+          {
+            "audio": "Do you have medical insurance?",
+            "options": ["Do you have medical insurance?", "Do you have a health card?", "Do you have identification?", "Do you have a prescription?"],
+            "answer": "Do you have medical insurance?"
+          },
+          {
+            "audio": "Take this medicine twice a day",
+            "options": ["Take this medicine twice a day", "Take this medicine once a day", "Take this medicine three times a day", "Take this medicine every day"],
+            "answer": "Take this medicine twice a day"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I have", "I made", "I scheduled"],
+            "suffix": "an appointment with the doctor tomorrow.",
+            "answer": "I have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The doctor", "The nurse", "The medical staff"],
+            "suffix": "will examine you and give a diagnosis.",
+            "answer": "The doctor",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please bring", "Don't forget", "Remember to bring"],
+            "suffix": "your health card and identification.",
+            "answer": "Please bring",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The prescription", "The medicine", "The treatment"],
+            "suffix": "will help you feel better quickly.",
+            "answer": "The prescription",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["CCSS provides", "Social security covers", "The health system offers"],
+            "suffix": "medical care for all workers.",
+            "answer": "CCSS provides",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Health and Safety → Salud y seguridad en el trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "workplace safety", "spanish": "seguridad laboral" },
+          { "english": "occupational health", "spanish": "salud ocupacional" },
+          { "english": "safety equipment", "spanish": "equipo de seguridad" },
+          { "english": "first aid", "spanish": "primeros auxilios" },
+          { "english": "emergency", "spanish": "emergencia" },
+          { "english": "accident report", "spanish": "reporte de accidente" },
+          { "english": "safety training", "spanish": "capacitación en seguridad" },
+          { "english": "work injury", "spanish": "lesión laboral" },
+          { "english": "prevention", "spanish": "prevención" },
+          { "english": "safety rules", "spanish": "reglas de seguridad" },
+          { "english": "hazard", "spanish": "peligro" },
+          { "english": "risk", "spanish": "riesgo" },
+          { "english": "safe", "spanish": "seguro" },
+          { "english": "dangerous", "spanish": "peligroso" },
+          { "english": "protect", "spanish": "proteger" }
+        ],
+        "listening": [
+          {
+            "audio": "Always follow safety rules at work",
+            "options": ["Always follow safety rules at work", "Always wear safety equipment at work", "Always report accidents at work", "Always attend safety training at work"],
+            "answer": "Always follow safety rules at work"
+          },
+          {
+            "audio": "There's a first aid kit in the office",
+            "options": ["There's a first aid kit in the office", "There's a safety manual in the office", "There's an emergency phone in the office", "There's a fire extinguisher in the office"],
+            "answer": "There's a first aid kit in the office"
+          },
+          {
+            "audio": "Report all accidents immediately",
+            "options": ["Report all accidents immediately", "Report all injuries immediately", "Report all problems immediately", "Report all incidents immediately"],
+            "answer": "Report all accidents immediately"
+          },
+          {
+            "audio": "This machine is dangerous without protection",
+            "options": ["This machine is dangerous without protection", "This machine is safe with protection", "This machine is broken without protection", "This machine is expensive without protection"],
+            "answer": "This machine is dangerous without protection"
+          },
+          {
+            "audio": "Safety training is mandatory for all workers",
+            "options": ["mandatory for all workers", "optional for all workers", "expensive for all workers", "difficult for all workers"],
+            "answer": "mandatory for all workers"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Workplace safety", "Job safety", "Occupational safety"],
+            "suffix": "is the responsibility of everyone.",
+            "answer": "Workplace safety",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["All workers", "Every employee", "Each person"],
+            "suffix": "must attend safety training regularly.",
+            "answer": "All workers",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["If you have", "When you get", "In case of"],
+            "suffix": "a work injury, report it immediately.",
+            "answer": "If you have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["First aid kits", "Safety equipment", "Emergency supplies"],
+            "suffix": "must be available in all work areas.",
+            "answer": "First aid kits",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Prevention", "Safety measures", "Protective equipment"],
+            "suffix": "helps avoid workplace accidents.",
+            "answer": "Prevention",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Health Services in Costa Rica → Servicios de salud en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "CCSS", "spanish": "CCSS" },
+          { "english": "social security", "spanish": "seguridad social" },
+          { "english": "public hospital", "spanish": "hospital público" },
+          { "english": "private clinic", "spanish": "clínica privada" },
+          { "english": "EBAIS", "spanish": "EBAIS" },
+          { "english": "health center", "spanish": "centro de salud" },
+          { "english": "emergency", "spanish": "emergencia" },
+          { "english": "911", "spanish": "911" },
+          { "english": "Red Cross", "spanish": "Cruz Roja" },
+          { "english": "ambulance", "spanish": "ambulancia" },
+          { "english": "pharmacy", "spanish": "farmacia" },
+          { "english": "generic medicine", "spanish": "medicina genérica" },
+          { "english": "health coverage", "spanish": "cobertura de salud" },
+          { "english": "medical care", "spanish": "atención médica" },
+          { "english": "universal healthcare", "spanish": "salud universal" }
+        ],
+        "listening": [
+          {
+            "audio": "Costa Rica has universal healthcare",
+            "options": ["Costa Rica has universal healthcare", "Costa Rica has expensive healthcare", "Costa Rica has private healthcare", "Costa Rica has limited healthcare"],
+            "answer": "Costa Rica has universal healthcare"
+          },
+          {
+            "audio": "CCSS covers all workers in Costa Rica",
+            "options": ["CCSS covers all workers in Costa Rica", "CCSS covers some workers in Costa Rica", "CCSS covers rich workers in Costa Rica", "CCSS covers foreign workers in Costa Rica"],
+            "answer": "CCSS covers all workers in Costa Rica"
+          },
+          {
+            "audio": "Call 911 for medical emergencies",
+            "options": ["Call 911 for medical emergencies", "Call 911 for police emergencies", "Call 911 for fire emergencies", "Call 911 for all emergencies"],
+            "answer": "Call 911 for medical emergencies"
+          },
+          {
+            "audio": "The EBAIS is the local health center",
+            "options": ["The EBAIS is the local health center", "The EBAIS is the main hospital", "The EBAIS is the emergency room", "The EBAIS is the pharmacy"],
+            "answer": "The EBAIS is the local health center"
+          },
+          {
+            "audio": "Generic medicines are cheaper at pharmacies",
+            "options": ["Generic medicines are cheaper at pharmacies", "Brand medicines are cheaper at pharmacies", "All medicines are expensive at pharmacies", "No medicines are available at pharmacies"],
+            "answer": "Generic medicines are cheaper at pharmacies"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["All workers", "Every employee", "Each person"],
+            "suffix": "in Costa Rica has access to CCSS healthcare.",
+            "answer": "All workers",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["For emergencies", "In urgent cases", "When it's serious"],
+            "suffix": "you should call 911 immediately.",
+            "answer": "For emergencies",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The local EBAIS", "Your health center", "The community clinic"],
+            "suffix": "provides basic medical care.",
+            "answer": "The local EBAIS",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rica's", "The country's", "Our nation's"],
+            "suffix": "healthcare system is one of the best in Latin America.",
+            "answer": "Costa Rica's",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Public hospitals", "CCSS hospitals", "Government hospitals"],
+            "suffix": "provide free medical care to all citizens.",
+            "answer": "Public hospitals",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

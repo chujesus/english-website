@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 14,
+  "sections": [
+    {
+      "title": "Emerging Technologies and Future Engineering → Tecnologías emergentes e ingeniería futura",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Quantum computing promises exponential advances in computational problem-solving capabilities",
+          "spanish": "La computación cuántica promete avances exponenciales en capacidades de resolución de problemas computacionales"
+        },
+        {
+          "english": "Artificial general intelligence represents the next frontier in machine cognition",
+          "spanish": "La inteligencia artificial general representa la próxima frontera en cognición de máquinas"
+        },
+        {
+          "english": "Brain-computer interfaces enable direct neural control of external devices",
+          "spanish": "Las interfaces cerebro-computadora permiten control neural directo de dispositivos externos"
+        },
+        {
+          "english": "Molecular manufacturing assembles products atom by atom with precision",
+          "spanish": "La manufactura molecular ensambla productos átomo por átomo con precisión"
+        },
+        {
+          "english": "Digital twins create virtual replicas for real-time monitoring and optimization",
+          "spanish": "Los gemelos digitales crean réplicas virtuales para monitoreo y optimización en tiempo real"
+        },
+        {
+          "english": "Synthetic biology engineers biological systems for novel applications",
+          "spanish": "La biología sintética diseña sistemas biológicos para aplicaciones novedosas"
+        },
+        {
+          "english": "Metamaterial engineering creates substances with properties not found in nature",
+          "spanish": "La ingeniería de metamateriales crea sustancias con propiedades no encontradas en la naturaleza"
+        },
+        {
+          "english": "Space elevators could revolutionize access to orbital and interplanetary destinations",
+          "spanish": "Los elevadores espaciales podrían revolucionar acceso a destinos orbitales e interplanetarios"
+        },
+        {
+          "english": "Fusion energy technology promises clean, abundant power generation",
+          "spanish": "La tecnología de energía de fusión promete generación de energía limpia y abundante"
+        },
+        {
+          "english": "Augmented reality overlays digital information onto physical environments seamlessly",
+          "spanish": "La realidad aumentada superpone información digital sobre ambientes físicos sin problemas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How could quantum computing transform engineering problem-solving?",
+          "options": ["It could solve complex optimization and simulation problems exponentially faster", "It will replace all classical computers immediately", "It only works for simple calculations"],
+          "answer": 0
+        },
+        {
+          "audio": "What potential do brain-computer interfaces offer for engineering applications?",
+          "options": ["Direct neural control of machines and enhanced human-machine collaboration", "They can read all human thoughts", "They only work for medical applications"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are digital twins important for future engineering systems?",
+          "options": ["They enable real-time monitoring, prediction, and optimization of complex systems", "They replace all physical testing", "They only work for simple devices"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Quantum",
+          "suffix": "could solve certain problems exponentially faster than classical computers.",
+          "answer": "computing",
+          "selected": false,
+          "feedback": "Quantum computing represents a paradigm shift in computational capabilities."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "provide virtual representations that mirror real-world systems in real-time.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins are becoming essential for complex system management."
+        },
+        {
+          "prefix": "Synthetic",
+          "suffix": "engineers biological systems to perform specific functions or produce desired products.",
+          "answer": "biology",
+          "selected": false,
+          "feedback": "Synthetic biology combines engineering principles with biological systems."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Human Factors Engineering → Ingeniería avanzada de factores humanos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Ergonomic design principles optimize human-machine interfaces for safety and efficiency",
+          "spanish": "Los principios de diseño ergonómico optimizan interfaces humano-máquina para seguridad y eficiencia"
+        },
+        {
+          "english": "Cognitive load assessment evaluates mental workload in complex systems",
+          "spanish": "La evaluación de carga cognitiva evalúa carga de trabajo mental en sistemas complejos"
+        },
+        {
+          "english": "User experience design creates intuitive and satisfying product interactions",
+          "spanish": "El diseño de experiencia de usuario crea interacciones de producto intuitivas y satisfactorias"
+        },
+        {
+          "english": "Human error analysis identifies failure modes and prevention strategies",
+          "spanish": "El análisis de error humano identifica modos de falla y estrategias de prevención"
+        },
+        {
+          "english": "Biometric monitoring systems track physiological responses in real-time",
+          "spanish": "Los sistemas de monitoreo biométrico rastrean respuestas fisiológicas en tiempo real"
+        },
+        {
+          "english": "Accessibility design ensures products are usable by people with diverse abilities",
+          "spanish": "El diseño de accesibilidad asegura que productos sean utilizables por personas con habilidades diversas"
+        },
+        {
+          "english": "Situational awareness training improves operator performance in critical environments",
+          "spanish": "El entrenamiento de conciencia situacional mejora rendimiento del operador en ambientes críticos"
+        },
+        {
+          "english": "Anthropometric data guides design for human physical characteristics",
+          "spanish": "Los datos antropométricos guían diseño para características físicas humanas"
+        },
+        {
+          "english": "Workload distribution algorithms balance tasks among human operators",
+          "spanish": "Los algoritmos de distribución de carga de trabajo equilibran tareas entre operadores humanos"
+        },
+        {
+          "english": "Stress analysis methodologies evaluate human performance under pressure",
+          "spanish": "Las metodologías de análisis de estrés evalúan rendimiento humano bajo presión"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is cognitive load assessment important in system design?",
+          "options": ["It ensures operators aren't overwhelmed with information, improving safety and performance", "It makes systems more complex", "It eliminates all user interfaces"],
+          "answer": 0
+        },
+        {
+          "audio": "How does human error analysis improve system safety?",
+          "options": ["It identifies potential failure points and helps design error-prevention measures", "It eliminates all human involvement", "It blames operators for all problems"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does accessibility design play in engineering?",
+          "options": ["It ensures products are usable by people with different abilities and limitations", "It makes products more expensive", "It only benefits disabled users"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Ergonomic",
+          "suffix": "considers human capabilities and limitations to optimize system performance.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Ergonomic design is essential for safe and efficient human-machine interaction."
+        },
+        {
+          "prefix": "Cognitive",
+          "suffix": "helps designers understand mental workload requirements for complex tasks.",
+          "answer": "load",
+          "selected": false,
+          "feedback": "Managing cognitive load is crucial for effective system design."
+        },
+        {
+          "prefix": "Situational",
+          "suffix": "helps operators maintain understanding of dynamic environments and conditions.",
+          "answer": "awareness",
+          "selected": false,
+          "feedback": "Situational awareness is critical for safety in complex operational environments."
+        }
+      ]
+    },
+    {
+      "title": "Interdisciplinary Engineering Integration → Integración interdisciplinaria de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Systems thinking approaches consider interactions between multiple engineering disciplines",
+          "spanish": "Los enfoques de pensamiento sistémico consideran interacciones entre múltiples disciplinas de ingeniería"
+        },
+        {
+          "english": "Multidisciplinary optimization coordinates design across different engineering domains",
+          "spanish": "La optimización multidisciplinaria coordina diseño a través de diferentes dominios de ingeniería"
+        },
+        {
+          "english": "Cross-functional collaboration integrates diverse expertise for complex projects",
+          "spanish": "La colaboración cross-funcional integra experiencia diversa para proyectos complejos"
+        },
+        {
+          "english": "Technology convergence creates new possibilities through disciplinary integration",
+          "spanish": "La convergencia tecnológica crea nuevas posibilidades a través de integración disciplinaria"
+        },
+        {
+          "english": "Concurrent engineering approaches coordinate simultaneous development activities",
+          "spanish": "Los enfoques de ingeniería concurrente coordinan actividades de desarrollo simultáneas"
+        },
+        {
+          "english": "Trade-off analysis balances competing objectives across system components",
+          "spanish": "El análisis de trade-off equilibra objetivos competidores a través de componentes del sistema"
+        },
+        {
+          "english": "Interface management ensures compatibility between different subsystems",
+          "spanish": "La gestión de interfaces asegura compatibilidad entre diferentes subsistemas"
+        },
+        {
+          "english": "Knowledge integration combines insights from multiple technical domains",
+          "spanish": "La integración de conocimiento combina conocimientos de múltiples dominios técnicos"
+        },
+        {
+          "english": "System architecture defines overall structure and component relationships",
+          "spanish": "La arquitectura del sistema define estructura general y relaciones de componentes"
+        },
+        {
+          "english": "Holistic design considers entire system lifecycle and stakeholder needs",
+          "spanish": "El diseño holístico considera todo el ciclo de vida del sistema y necesidades de partes interesadas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is systems thinking important for complex engineering projects?",
+          "options": ["It considers interactions and dependencies between different parts of the system", "It focuses only on individual components", "It eliminates the need for specialization"],
+          "answer": 0
+        },
+        {
+          "audio": "How does concurrent engineering improve development efficiency?",
+          "options": ["It allows parallel development activities instead of sequential processes", "It makes development take longer", "It eliminates all collaboration"],
+          "answer": 0
+        },
+        {
+          "audio": "What challenges arise in multidisciplinary optimization?",
+          "options": ["Balancing different objectives and constraints from various engineering domains", "All disciplines have identical objectives", "It only works for simple problems"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Systems",
+          "suffix": "considers the whole system rather than just individual components.",
+          "answer": "thinking",
+          "selected": false,
+          "feedback": "Systems thinking is essential for understanding complex interdisciplinary projects."
+        },
+        {
+          "prefix": "Multidisciplinary",
+          "suffix": "coordinates design decisions across different engineering specialties.",
+          "answer": "optimization",
+          "selected": false,
+          "feedback": "MDO helps achieve optimal solutions for complex multi-domain problems."
+        },
+        {
+          "prefix": "Concurrent",
+          "suffix": "enables parallel development activities to reduce overall project time.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Concurrent engineering is crucial for efficient product development."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Materials and Manufacturing Integration → Integración avanzada de materiales y manufactura",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Materials informatics accelerates discovery through computational screening and prediction",
+          "spanish": "La informática de materiales acelera descubrimiento a través de selección computacional y predicción"
+        },
+        {
+          "english": "Process-structure-property relationships guide material design for specific applications",
+          "spanish": "Las relaciones proceso-estructura-propiedad guían diseño de materiales para aplicaciones específicas"
+        },
+        {
+          "english": "Advanced characterization techniques reveal material behavior at multiple scales",
+          "spanish": "Las técnicas de caracterización avanzadas revelan comportamiento de materiales a múltiples escalas"
+        },
+        {
+          "english": "Sustainable material selection considers environmental impact throughout lifecycle",
+          "spanish": "La selección sostenible de materiales considera impacto ambiental a través del ciclo de vida"
+        },
+        {
+          "english": "Manufacturing constraints influence material design and performance optimization",
+          "spanish": "Las restricciones de manufactura influyen diseño de materiales y optimización de rendimiento"
+        },
+        {
+          "english": "High-throughput experimentation enables rapid material property evaluation",
+          "spanish": "La experimentación de alto rendimiento permite evaluación rápida de propiedades de materiales"
+        },
+        {
+          "english": "Computational modeling predicts material behavior before physical testing",
+          "spanish": "El modelado computacional predice comportamiento de materiales antes de pruebas físicas"
+        },
+        {
+          "english": "Material genome initiatives systematize material discovery and development",
+          "spanish": "Las iniciativas de genoma de materiales sistematizan descubrimiento y desarrollo de materiales"
+        },
+        {
+          "english": "Quality control protocols ensure consistent material properties in production",
+          "spanish": "Los protocolos de control de calidad aseguran propiedades consistentes de materiales en producción"
+        },
+        {
+          "english": "Circular material flows minimize waste through recycling and reuse strategies",
+          "spanish": "Los flujos circulares de materiales minimizan desperdicio a través de estrategias de reciclaje y reutilización"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does materials informatics change material development?",
+          "options": ["It uses data science and AI to accelerate material discovery and optimization", "It eliminates all experimental work", "It only works for simple materials"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are process-structure-property relationships important?",
+          "options": ["They help engineers understand how manufacturing affects material performance", "They make all materials identical", "They only apply to metals"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does high-throughput experimentation play in materials science?",
+          "options": ["It enables rapid testing of many material compositions and conditions", "It makes experiments more expensive", "It eliminates the need for analysis"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Global Engineering Ethics and Responsibility → Ética global de ingeniería y responsabilidad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Engineering ethics frameworks guide professional conduct in complex global contexts",
+          "spanish": "Los marcos de ética de ingeniería guían conducta profesional en contextos globales complejos"
+        },
+        {
+          "english": "Social impact assessment evaluates engineering projects' effects on communities",
+          "spanish": "La evaluación de impacto social evalúa efectos de proyectos de ingeniería en comunidades"
+        },
+        {
+          "english": "Sustainable development goals align engineering practice with global priorities",
+          "spanish": "Los objetivos de desarrollo sostenible alinean práctica de ingeniería con prioridades globales"
+        },
+        {
+          "english": "Technology assessment analyzes broader implications of engineering innovations",
+          "spanish": "La evaluación de tecnología analiza implicaciones más amplias de innovaciones de ingeniería"
+        },
+        {
+          "english": "Cultural sensitivity ensures appropriate technology transfer and implementation",
+          "spanish": "La sensibilidad cultural asegura transferencia e implementación apropiada de tecnología"
+        },
+        {
+          "english": "Risk communication bridges technical expertise and public understanding",
+          "spanish": "La comunicación de riesgo conecta experiencia técnica y comprensión pública"
+        },
+        {
+          "english": "Environmental justice addresses equitable distribution of technological benefits",
+          "spanish": "La justicia ambiental aborda distribución equitativa de beneficios tecnológicos"
+        },
+        {
+          "english": "Professional responsibility extends beyond technical competence to societal impact",
+          "spanish": "La responsabilidad profesional se extiende más allá de competencia técnica a impacto social"
+        },
+        {
+          "english": "Whistleblower protection safeguards engineers reporting safety or ethical concerns",
+          "spanish": "La protección de denunciantes salvaguarda ingenieros reportando preocupaciones de seguridad o éticas"
+        },
+        {
+          "english": "Global collaboration requires understanding diverse ethical and cultural frameworks",
+          "spanish": "La colaboración global requiere comprensión de marcos éticos y culturales diversos"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Engineering",
+          "suffix": "provide guidance for professional decision-making in complex situations.",
+          "answer": "ethics",
+          "selected": false,
+          "feedback": "Engineering ethics are fundamental to responsible professional practice."
+        },
+        {
+          "prefix": "Social impact",
+          "suffix": "helps engineers understand the broader consequences of their work.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Social impact assessment is essential for responsible engineering practice."
+        },
+        {
+          "prefix": "Professional",
+          "suffix": "includes considering the welfare of society and the environment.",
+          "answer": "responsibility",
+          "selected": false,
+          "feedback": "Professional responsibility extends beyond technical competence to societal well-being."
+        }
+      ]
+    }
+  ]
+}
+]
+

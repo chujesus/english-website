@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 10,
+  "sections": [
+    {
+      "title": "Working with Materials → Trabajando con materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Metal is strong and durable",
+          "spanish": "El metal es fuerte y duradero"
+        },
+        {
+          "english": "Plastic is lightweight and flexible",
+          "spanish": "El plástico es liviano y flexible"
+        },
+        {
+          "english": "Wood is natural and easy to work with",
+          "spanish": "La madera es natural y fácil de trabajar"
+        },
+        {
+          "english": "Glass is transparent and fragile",
+          "spanish": "El vidrio es transparente y frágil"
+        },
+        {
+          "english": "Rubber is elastic and waterproof",
+          "spanish": "El caucho es elástico e impermeable"
+        },
+        {
+          "english": "Ceramic is heat-resistant",
+          "spanish": "La cerámica es resistente al calor"
+        },
+        {
+          "english": "Composite materials combine properties",
+          "spanish": "Los materiales compuestos combinan propiedades"
+        },
+        {
+          "english": "Choose the right material for each job",
+          "spanish": "Escoge el material correcto para cada trabajo"
+        },
+        {
+          "english": "Material properties affect performance",
+          "spanish": "Las propiedades del material afectan el rendimiento"
+        },
+        {
+          "english": "Cost and availability matter too",
+          "spanish": "El costo y disponibilidad también importan"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why would you choose metal for construction?",
+          "options": ["It's cheap", "It's strong and durable", "It's light"],
+          "answer": 1
+        },
+        {
+          "audio": "What makes plastic useful in manufacturing?",
+          "options": ["It's lightweight and flexible", "It's very expensive", "It's always black"],
+          "answer": 0
+        },
+        {
+          "audio": "When would you use heat-resistant materials?",
+          "options": ["In cold environments", "Near high temperatures", "For decoration only"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The",
+          "suffix": "of a material determine its best applications.",
+          "answer": "properties",
+          "selected": false,
+          "feedback": "Understanding material properties helps engineers choose the best material for each application."
+        },
+        {
+          "prefix": "Always select materials based on",
+          "suffix": "requirements and environment.",
+          "answer": "project",
+          "selected": false,
+          "feedback": "Project requirements guide material selection to ensure optimal performance."
+        },
+        {
+          "prefix": "Composite materials",
+          "suffix": "the best features of different materials.",
+          "answer": "combine",
+          "selected": false,
+          "feedback": "Composite materials offer advantages by combining beneficial properties from multiple materials."
+        }
+      ]
+    },
+    {
+      "title": "Material Properties and Characteristics → Propiedades y características de materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "This material is very hard",
+          "spanish": "Este material es muy duro"
+        },
+        {
+          "english": "The surface is smooth and polished",
+          "spanish": "La superficie es lisa y pulida"
+        },
+        {
+          "english": "It feels rough to the touch",
+          "spanish": "Se siente áspero al tacto"
+        },
+        {
+          "english": "The material is brittle and breaks easily",
+          "spanish": "El material es frágil y se rompe fácilmente"
+        },
+        {
+          "english": "This coating is corrosion-resistant",
+          "spanish": "Este recubrimiento es resistente a la corrosión"
+        },
+        {
+          "english": "The material conducts electricity well",
+          "spanish": "El material conduce bien la electricidad"
+        },
+        {
+          "english": "It's an excellent thermal insulator",
+          "spanish": "Es un excelente aislante térmico"
+        },
+        {
+          "english": "The material has high tensile strength",
+          "spanish": "El material tiene alta resistencia a la tensión"
+        },
+        {
+          "english": "It's chemically inert and stable",
+          "spanish": "Es químicamente inerte y estable"
+        },
+        {
+          "english": "The density affects the weight",
+          "spanish": "La densidad afecta el peso"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does tensile strength measure?",
+          "options": ["Color intensity", "Resistance to pulling forces", "Temperature tolerance"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is electrical conductivity important?",
+          "options": ["For electrical applications", "For decoration", "For taste"],
+          "answer": 0
+        },
+        {
+          "audio": "What does chemically inert mean?",
+          "options": ["Very reactive", "Does not react easily", "Changes color"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Materials with high",
+          "suffix": "strength resist breaking under stress.",
+          "answer": "tensile",
+          "selected": false,
+          "feedback": "Tensile strength measures a material's ability to resist forces that try to pull it apart."
+        },
+        {
+          "prefix": "Good electrical",
+          "suffix": "makes materials useful for wiring.",
+          "answer": "conductivity",
+          "selected": false,
+          "feedback": "Electrical conductivity determines how well electricity flows through a material."
+        },
+        {
+          "prefix": "Thermal",
+          "suffix": "prevent heat transfer in buildings.",
+          "answer": "insulators",
+          "selected": false,
+          "feedback": "Thermal insulators block heat transfer, making them essential for energy efficiency."
+        }
+      ]
+    },
+    {
+      "title": "Material Testing and Selection → Pruebas y selección de materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "We test materials before using them",
+          "spanish": "Probamos los materiales antes de usarlos"
+        },
+        {
+          "english": "Stress tests show maximum load capacity",
+          "spanish": "Las pruebas de estrés muestran capacidad máxima de carga"
+        },
+        {
+          "english": "Fatigue testing simulates repeated use",
+          "spanish": "Las pruebas de fatiga simulan uso repetido"
+        },
+        {
+          "english": "Impact tests measure shock resistance",
+          "spanish": "Las pruebas de impacto miden resistencia al choque"
+        },
+        {
+          "english": "Corrosion tests evaluate degradation",
+          "spanish": "Las pruebas de corrosión evalúan degradación"
+        },
+        {
+          "english": "Temperature cycling tests thermal stability",
+          "spanish": "Los ciclos de temperatura prueban estabilidad térmica"
+        },
+        {
+          "english": "Quality certificates document test results",
+          "spanish": "Los certificados de calidad documentan resultados de pruebas"
+        },
+        {
+          "english": "Material selection depends on application",
+          "spanish": "La selección de material depende de la aplicación"
+        },
+        {
+          "english": "Cost-benefit analysis guides decisions",
+          "spanish": "El análisis costo-beneficio guía decisiones"
+        },
+        {
+          "english": "Safety factors ensure reliable performance",
+          "spanish": "Los factores de seguridad aseguran rendimiento confiable"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why do we test materials before use?",
+          "options": ["To waste time", "To ensure they meet requirements", "To make them expensive"],
+          "answer": 1
+        },
+        {
+          "audio": "What does fatigue testing simulate?",
+          "options": ["Single use", "Repeated stress over time", "Color changes"],
+          "answer": 1
+        },
+        {
+          "audio": "What helps guide material selection decisions?",
+          "options": ["Random choice", "Application requirements and cost", "Color preference"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Material",
+          "suffix": "ensure products will perform safely.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Material testing verifies that materials can handle expected stresses and conditions."
+        },
+        {
+          "prefix": "Engineers use",
+          "suffix": "factors to prevent failures.",
+          "answer": "safety",
+          "selected": false,
+          "feedback": "Safety factors provide extra margin above minimum requirements to prevent failures."
+        },
+        {
+          "prefix": "Proper material",
+          "suffix": "prevents costly failures later.",
+          "answer": "selection",
+          "selected": false,
+          "feedback": "Choosing the right material from the start prevents problems and reduces long-term costs."
+        }
+      ]
+    },
+    {
+      "title": "Working with Different Materials → Trabajando con diferentes materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Welding joins metal pieces together",
+          "spanish": "La soldadura une piezas de metal"
+        },
+        {
+          "english": "Sanding makes wood surfaces smooth",
+          "spanish": "Lijar hace las superficies de madera lisas"
+        },
+        {
+          "english": "Drilling creates holes in materials",
+          "spanish": "Perforar crea agujeros en materiales"
+        },
+        {
+          "english": "Cutting shapes materials to size",
+          "spanish": "Cortar da forma a los materiales a medida"
+        },
+        {
+          "english": "Polishing improves surface finish",
+          "spanish": "Pulir mejora el acabado de superficie"
+        },
+        {
+          "english": "Bending changes material shape",
+          "spanish": "Doblar cambia la forma del material"
+        },
+        {
+          "english": "Gluing bonds different materials",
+          "spanish": "Pegar une diferentes materiales"
+        },
+        {
+          "english": "Painting protects and decorates",
+          "spanish": "Pintar protege y decora"
+        },
+        {
+          "english": "Machining achieves precise dimensions",
+          "spanish": "El maquinado logra dimensiones precisas"
+        },
+        {
+          "english": "Heat treatment changes properties",
+          "spanish": "El tratamiento térmico cambia propiedades"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of welding?",
+          "options": ["To separate metals", "To join metals permanently", "To paint metals"],
+          "answer": 1
+        },
+        {
+          "audio": "Why might you sand a wood surface?",
+          "options": ["To make it smooth", "To make it dirty", "To break it"],
+          "answer": 0
+        },
+        {
+          "audio": "What does machining accomplish?",
+          "options": ["Rough shaping", "Precise dimensions", "Color changes"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Material Safety and Handling → Seguridad y manejo de materiales",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Always wear safety equipment",
+          "spanish": "Siempre usa equipo de seguridad"
+        },
+        {
+          "english": "Read material safety data sheets",
+          "spanish": "Lee las hojas de datos de seguridad del material"
+        },
+        {
+          "english": "Store materials in proper conditions",
+          "spanish": "Almacena materiales en condiciones apropiadas"
+        },
+        {
+          "english": "Some materials are toxic",
+          "spanish": "Algunos materiales son tóxicos"
+        },
+        {
+          "english": "Handle sharp materials carefully",
+          "spanish": "Maneja materiales cortantes cuidadosamente"
+        },
+        {
+          "english": "Keep flammable materials away from heat",
+          "spanish": "Mantén materiales inflamables lejos del calor"
+        },
+        {
+          "english": "Use proper ventilation with chemicals",
+          "spanish": "Usa ventilación apropiada con químicos"
+        },
+        {
+          "english": "Dispose of waste materials correctly",
+          "spanish": "Desecha materiales de desecho correctamente"
+        },
+        {
+          "english": "Report material hazards immediately",
+          "spanish": "Reporta peligros de materiales inmediatamente"
+        },
+        {
+          "english": "Training prevents material accidents",
+          "spanish": "La capacitación previene accidentes con materiales"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always read",
+          "suffix": "data sheets before handling new materials.",
+          "answer": "safety",
+          "selected": false,
+          "feedback": "Safety data sheets contain critical information about hazards and proper handling procedures."
+        },
+        {
+          "prefix": "Proper",
+          "suffix": "prevents material contamination and degradation.",
+          "answer": "storage",
+          "selected": false,
+          "feedback": "Correct storage conditions maintain material quality and prevent safety hazards."
+        },
+        {
+          "prefix": "Good",
+          "suffix": "removes harmful fumes and particles from the air.",
+          "answer": "ventilation",
+          "selected": false,
+          "feedback": "Adequate ventilation protects workers from inhaling dangerous substances during material processing."
+        }
+      ]
+    }
+  ]
+}
+]
+

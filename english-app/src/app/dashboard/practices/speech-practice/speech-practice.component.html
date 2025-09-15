@@ -1,0 +1,39 @@
+<div class="modal-body text-center">
+    <p class="text-muted mb-1">Sentence {{ currentIndex + 1 }} of {{ targetSentences.length }}</p>
+    <h3 class="fw-semibold text-dark mb-4">{{ targetSentences[currentIndex] }}</h3>
+
+    <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+        <button class="btn btn-outline-primary rounded-pill px-4" (click)="playSentence(currentIndex)">
+            ▶️ Listen
+        </button>
+
+        <button class="btn rounded-pill px-4"
+            [ngClass]="speakingIndex === currentIndex ? 'btn-danger' : 'btn-outline-secondary'"
+            (click)="recognizeWithDeepgram(currentIndex)">
+            {{ speakingIndex === currentIndex ? '⏹ Stop' : '🎤 Speak' }}
+        </button>
+    </div>
+    <div *ngIf="recognizedTexts[currentIndex]">
+        <p class="mb-1">You said: <strong>"{{ recognizedTexts[currentIndex] }}"</strong></p>
+        <p *ngIf="isCorrectList[currentIndex] === true" class="text-success fw-bold">✅ Correct!</p>
+        <p *ngIf="isCorrectList[currentIndex] === false" class="text-danger fw-bold">❌ Try again</p>
+        <div class="progress" style="height: 10px;">
+            <div class="progress-bar" role="progressbar" [style.width.%]="similarityList[currentIndex]"
+                [ngClass]="{ 'bg-success': similarityList[currentIndex] >= 90,
+                'bg-warning': similarityList[currentIndex] >= 70 && similarityList[currentIndex] < 90, 'bg-danger': similarityList[currentIndex] < 70 }">
+            </div>
+        </div>
+        <p class="text-muted">Similarity: {{ similarityList[currentIndex] }}%</p>
+    </div>
+</div>
+
+<div class="modal-footer d-flex justify-content-between border-0">
+    <button class="btn btn-outline-secondary rounded-pill" [disabled]="currentIndex === 0" (click)="previous()">
+        ◀ Previous
+    </button>
+
+    <button class="btn btn-outline-primary rounded-pill" [disabled]="currentIndex === targetSentences.length - 1"
+        (click)="next()">
+        Next ▶
+    </button>
+</div>

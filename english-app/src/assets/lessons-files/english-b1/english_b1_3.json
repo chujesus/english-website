@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 3,
+  "sections": [
+    {
+      "title": "Following Instructions → Siguiendo instrucciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "First, ensure all safety measures are in place",
+          "spanish": "Primero, asegúrese de que todas las medidas de seguridad estén en su lugar"
+        },
+        {
+          "english": "Next, verify the equipment specifications",
+          "spanish": "Luego, verifique las especificaciones del equipo"
+        },
+        {
+          "english": "Then, proceed with the calibration process",
+          "spanish": "Después, proceda con el proceso de calibración"
+        },
+        {
+          "english": "Subsequently, test all connections thoroughly",
+          "spanish": "Posteriormente, pruebe todas las conexiones exhaustivamente"
+        },
+        {
+          "english": "Finally, document the results accurately",
+          "spanish": "Finalmente, documente los resultados con precisión"
+        },
+        {
+          "english": "Before beginning, read through all instructions",
+          "spanish": "Antes de comenzar, lea todas las instrucciones"
+        },
+        {
+          "english": "While performing the task, monitor progress carefully",
+          "spanish": "Mientras realiza la tarea, monitoree el progreso cuidadosamente"
+        },
+        {
+          "english": "After completion, clean and organize the workspace",
+          "spanish": "Después de completar, limpie y organice el espacio de trabajo"
+        },
+        {
+          "english": "In case of anomalies, stop and consult the manual",
+          "spanish": "En caso de anomalías, deténgase y consulte el manual"
+        },
+        {
+          "english": "Once verified, proceed to the next step",
+          "spanish": "Una vez verificado, proceda al siguiente paso"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Listen to these installation instructions and identify the correct sequence.",
+          "options": ["Power on, connect, test", "Connect, test, power on", "Test, connect, power on"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you do if you encounter an unexpected reading during testing?",
+          "options": ["Continue with the procedure", "Stop and investigate the cause", "Ignore the reading"],
+          "answer": 1
+        },
+        {
+          "audio": "When should documentation be completed in a technical procedure?",
+          "options": ["Before starting", "During the process", "After completion"],
+          "answer": 2
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always follow the prescribed",
+          "suffix": "to ensure consistent results.",
+          "answer": "sequence",
+          "selected": false,
+          "feedback": "Following the correct sequence is crucial for achieving reliable and consistent results."
+        },
+        {
+          "prefix": "If any step is unclear,",
+          "suffix": "clarification before proceeding.",
+          "answer": "seek",
+          "selected": false,
+          "feedback": "Seeking clarification prevents mistakes and ensures proper execution of procedures."
+        },
+        {
+          "prefix": "Each completed step should be",
+          "suffix": "off on the checklist.",
+          "answer": "checked",
+          "selected": false,
+          "feedback": "Checking off completed steps helps track progress and prevents omissions."
+        }
+      ]
+    },
+    {
+      "title": "Giving Step-by-Step Technical Instructions → Dando instrucciones técnicas paso a paso",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "To begin with, gather all necessary tools and materials",
+          "spanish": "Para empezar, reúna todas las herramientas y materiales necesarios"
+        },
+        {
+          "english": "The initial step involves checking system requirements",
+          "spanish": "El paso inicial involucra verificar los requisitos del sistema"
+        },
+        {
+          "english": "Moving on to the next phase, configure the parameters",
+          "spanish": "Pasando a la siguiente fase, configure los parámetros"
+        },
+        {
+          "english": "At this point, it's crucial to monitor the indicators",
+          "spanish": "En este punto, es crucial monitorear los indicadores"
+        },
+        {
+          "english": "Upon completion of this stage, verify the settings",
+          "spanish": "Al completar esta etapa, verifique las configuraciones"
+        },
+        {
+          "english": "The procedure requires careful attention to detail",
+          "spanish": "El procedimiento requiere atención cuidadosa a los detalles"
+        },
+        {
+          "english": "It's important to maintain consistent pressure throughout",
+          "spanish": "Es importante mantener presión constante durante todo el proceso"
+        },
+        {
+          "english": "Should any irregularities occur, immediately pause the operation",
+          "spanish": "Si ocurre alguna irregularidad, pause inmediatamente la operación"
+        },
+        {
+          "english": "The final step consists of performing a complete system check",
+          "spanish": "El paso final consiste en realizar una verificación completa del sistema"
+        },
+        {
+          "english": "Remember to record all measurements and observations",
+          "spanish": "Recuerde registrar todas las mediciones y observaciones"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the most important aspect when giving technical instructions?",
+          "options": ["Speaking quickly", "Being clear and precise", "Using complex vocabulary"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you handle questions during instruction delivery?",
+          "options": ["Ignore them", "Answer them immediately", "Save them for the end"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you do if someone doesn't understand a step?",
+          "options": ["Repeat it exactly", "Explain it differently", "Skip to the next step"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "When explaining procedures, use",
+          "suffix": "language that everyone can understand.",
+          "answer": "clear",
+          "selected": false,
+          "feedback": "Clear language ensures that instructions are understood by all team members."
+        },
+        {
+          "prefix": "Break down complex tasks into",
+          "suffix": "manageable steps.",
+          "answer": "smaller",
+          "selected": false,
+          "feedback": "Breaking tasks into smaller steps makes them easier to follow and complete."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "that the listener understands before moving on.",
+          "answer": "confirm",
+          "selected": false,
+          "feedback": "Confirming understanding prevents mistakes and ensures successful task completion."
+        }
+      ]
+    },
+    {
+      "title": "Understanding Complex Procedures → Entendiendo procedimientos complejos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Multi-step procedures require careful planning",
+          "spanish": "Los procedimientos de múltiples pasos requieren planificación cuidadosa"
+        },
+        {
+          "english": "Dependencies between steps must be identified",
+          "spanish": "Las dependencias entre pasos deben ser identificadas"
+        },
+        {
+          "english": "Critical control points need special attention",
+          "spanish": "Los puntos de control críticos necesitan atención especial"
+        },
+        {
+          "english": "Parallel processes can increase efficiency",
+          "spanish": "Los procesos paralelos pueden aumentar la eficiencia"
+        },
+        {
+          "english": "Quality checkpoints ensure standards are met",
+          "spanish": "Los puntos de control de calidad aseguran que se cumplan los estándares"
+        },
+        {
+          "english": "Contingency plans address potential issues",
+          "spanish": "Los planes de contingencia abordan problemas potenciales"
+        },
+        {
+          "english": "Resource allocation affects timeline success",
+          "spanish": "La asignación de recursos afecta el éxito del cronograma"
+        },
+        {
+          "english": "Communication protocols prevent misunderstandings",
+          "spanish": "Los protocolos de comunicación previenen malentendidos"
+        },
+        {
+          "english": "Regular reviews maintain procedure effectiveness",
+          "spanish": "Las revisiones regulares mantienen la efectividad del procedimiento"
+        },
+        {
+          "english": "Training ensures consistent implementation",
+          "spanish": "La capacitación asegura una implementación consistente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes a procedure complex?",
+          "options": ["Length only", "Multiple interconnected steps", "Expensive equipment"],
+          "answer": 1
+        },
+        {
+          "audio": "How can you manage dependencies in complex procedures?",
+          "options": ["Ignore them", "Map them clearly", "Handle them later"],
+          "answer": 1
+        },
+        {
+          "audio": "Why are quality checkpoints important in complex procedures?",
+          "options": ["To slow down the process", "To catch errors early", "To increase costs"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Complex procedures often involve",
+          "suffix": "systems working together.",
+          "answer": "multiple",
+          "selected": false,
+          "feedback": "Complex procedures typically require coordination between multiple systems or components."
+        },
+        {
+          "prefix": "Before starting a complex procedure,",
+          "suffix": "all prerequisites are met.",
+          "answer": "ensure",
+          "selected": false,
+          "feedback": "Ensuring prerequisites are met prevents delays and errors during complex procedures."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "during complex procedures helps identify problems early.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Regular monitoring allows for early detection and correction of problems."
+        }
+      ]
+    },
+    {
+      "title": "Procedure Documentation and Compliance → Documentación de procedimientos y cumplimiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Standard Operating Procedures (SOPs)",
+          "spanish": "Procedimientos Operativos Estándar (POE)"
+        },
+        {
+          "english": "Work instructions and guidelines",
+          "spanish": "Instrucciones de trabajo y pautas"
+        },
+        {
+          "english": "Quality assurance protocols",
+          "spanish": "Protocolos de aseguramiento de calidad"
+        },
+        {
+          "english": "Regulatory compliance requirements",
+          "spanish": "Requisitos de cumplimiento regulatorio"
+        },
+        {
+          "english": "Audit trail documentation",
+          "spanish": "Documentación de rastro de auditoría"
+        },
+        {
+          "english": "Version control and updates",
+          "spanish": "Control de versiones y actualizaciones"
+        },
+        {
+          "english": "Training records and certifications",
+          "spanish": "Registros de capacitación y certificaciones"
+        },
+        {
+          "english": "Deviation reports and investigations",
+          "spanish": "Reportes de desviaciones e investigaciones"
+        },
+        {
+          "english": "Continuous improvement initiatives",
+          "spanish": "Iniciativas de mejora continua"
+        },
+        {
+          "english": "Best practice sharing mechanisms",
+          "spanish": "Mecanismos de intercambio de mejores prácticas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of Standard Operating Procedures?",
+          "options": ["To complicate work", "To ensure consistency and quality", "To slow down production"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is version control important for procedures?",
+          "options": ["To track changes and ensure current information", "To create more paperwork", "To confuse workers"],
+          "answer": 0
+        },
+        {
+          "audio": "What should happen when a procedure doesn't work as expected?",
+          "options": ["Ignore the problem", "Document and investigate the deviation", "Change it immediately"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Training Others on Procedures → Capacitando a otros en procedimientos",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Assess the trainee's current knowledge level",
+          "spanish": "Evalúe el nivel de conocimiento actual del aprendiz"
+        },
+        {
+          "english": "Adapt your teaching style to different learning preferences",
+          "spanish": "Adapte su estilo de enseñanza a diferentes preferencias de aprendizaje"
+        },
+        {
+          "english": "Provide hands-on practice opportunities",
+          "spanish": "Proporcione oportunidades de práctica práctica"
+        },
+        {
+          "english": "Encourage questions and active participation",
+          "spanish": "Fomente preguntas y participación activa"
+        },
+        {
+          "english": "Use visual aids and demonstrations",
+          "spanish": "Use ayudas visuales y demostraciones"
+        },
+        {
+          "english": "Provide immediate feedback and correction",
+          "spanish": "Proporcione retroalimentación inmediata y corrección"
+        },
+        {
+          "english": "Gradually increase complexity and responsibility",
+          "spanish": "Aumente gradualmente la complejidad y responsabilidad"
+        },
+        {
+          "english": "Document training progress and competency",
+          "spanish": "Documente el progreso de capacitación y competencia"
+        },
+        {
+          "english": "Establish mentoring relationships",
+          "spanish": "Establezca relaciones de mentoría"
+        },
+        {
+          "english": "Create a supportive learning environment",
+          "spanish": "Cree un ambiente de aprendizaje de apoyo"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Effective training requires",
+          "suffix": "to individual learning styles.",
+          "answer": "adaptation",
+          "selected": false,
+          "feedback": "Adapting to different learning styles makes training more effective for all trainees."
+        },
+        {
+          "prefix": "Trainees learn best through",
+          "suffix": "experience and practice.",
+          "answer": "hands-on",
+          "selected": false,
+          "feedback": "Hands-on experience helps trainees better understand and retain procedural knowledge."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "helps trainees improve their performance.",
+          "answer": "feedback",
+          "selected": false,
+          "feedback": "Regular feedback helps trainees understand what they're doing well and what needs improvement."
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 8,
+  "sections": [
+    {
+      "title": "Reporting Technical Problems → Reportando problemas técnicos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "The machine is not working",
+          "spanish": "La máquina no está funcionando"
+        },
+        {
+          "english": "There is a problem with the system",
+          "spanish": "Hay un problema con el sistema"
+        },
+        {
+          "english": "The computer has crashed",
+          "spanish": "La computadora se ha colgado"
+        },
+        {
+          "english": "The motor is making strange noises",
+          "spanish": "El motor está haciendo ruidos extraños"
+        },
+        {
+          "english": "There is a leak in the pipe",
+          "spanish": "Hay una fuga en la tubería"
+        },
+        {
+          "english": "The equipment stopped suddenly",
+          "spanish": "El equipo se detuvo de repente"
+        },
+        {
+          "english": "I found a damaged wire",
+          "spanish": "Encontré un cable dañado"
+        },
+        {
+          "english": "The temperature is too high",
+          "spanish": "La temperatura está muy alta"
+        },
+        {
+          "english": "The screen is not responding",
+          "spanish": "La pantalla no está respondiendo"
+        },
+        {
+          "english": "Something is wrong with the connection",
+          "spanish": "Algo está mal con la conexión"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should you do when you find a technical problem?",
+          "options": ["Ignore it", "Report it immediately", "Try to fix it yourself"],
+          "answer": 1
+        },
+        {
+          "audio": "Who should you contact when equipment stops working?",
+          "options": ["Your supervisor", "Security", "Accounting"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is it important to report problems quickly?",
+          "options": ["To prevent bigger issues", "To get attention", "To waste time"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "When equipment malfunctions,",
+          "suffix": "it to your supervisor immediately.",
+          "answer": "report",
+          "selected": false,
+          "feedback": "Quick reporting prevents small problems from becoming major failures."
+        },
+        {
+          "prefix": "If you see a",
+          "suffix": "wire, don't touch it.",
+          "answer": "damaged",
+          "selected": false,
+          "feedback": "Damaged wires can be dangerous and should be handled by qualified personnel."
+        },
+        {
+          "prefix": "Strange",
+          "suffix": "from machines often indicate problems.",
+          "answer": "noises",
+          "selected": false,
+          "feedback": "Unusual sounds are often early warning signs of mechanical problems."
+        }
+      ]
+    },
+    {
+      "title": "Describing Malfunctions → Describiendo fallas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "The machine won't start",
+          "spanish": "La máquina no arranca"
+        },
+        {
+          "english": "It keeps shutting down",
+          "spanish": "Se sigue apagando"
+        },
+        {
+          "english": "The display shows an error message",
+          "spanish": "La pantalla muestra un mensaje de error"
+        },
+        {
+          "english": "It's running very slowly",
+          "spanish": "Está funcionando muy lentamente"
+        },
+        {
+          "english": "The parts don't fit properly",
+          "spanish": "Las partes no encajan bien"
+        },
+        {
+          "english": "There's no power to the device",
+          "spanish": "No hay energía en el dispositivo"
+        },
+        {
+          "english": "The connection is loose",
+          "spanish": "La conexión está floja"
+        },
+        {
+          "english": "It's overheating frequently",
+          "spanish": "Se está sobrecalentando frecuentemente"
+        },
+        {
+          "english": "The pressure is dropping",
+          "spanish": "La presión está bajando"
+        },
+        {
+          "english": "It produces defective parts",
+          "spanish": "Produce partes defectuosas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What could cause a machine to overheat?",
+          "options": ["Poor ventilation", "Too much power", "Both options"],
+          "answer": 2
+        },
+        {
+          "audio": "If a machine keeps shutting down, what might be wrong?",
+          "options": ["Electrical problem", "Overheating", "Both could be causes"],
+          "answer": 2
+        },
+        {
+          "audio": "Why is it important to describe problems clearly?",
+          "options": ["To help technicians understand and fix them", "To blame someone", "To avoid work"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "When a machine",
+          "suffix": "starting, check the power supply first.",
+          "answer": "won't",
+          "selected": false,
+          "feedback": "Power supply issues are often the cause when machines won't start."
+        },
+        {
+          "prefix": "If the display shows an",
+          "suffix": "message, write it down exactly.",
+          "answer": "error",
+          "selected": false,
+          "feedback": "Recording exact error messages helps technicians diagnose problems faster."
+        },
+        {
+          "prefix": "Machines that",
+          "suffix": "frequently may have cooling problems.",
+          "answer": "overheat",
+          "selected": false,
+          "feedback": "Frequent overheating often indicates problems with cooling systems."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Reporting → Reportes de emergencia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Emergency! Please help!",
+          "spanish": "Â¡Emergencia! Â¡Por favor ayuda!"
+        },
+        {
+          "english": "Call the emergency number",
+          "spanish": "Llame al número de emergencia"
+        },
+        {
+          "english": "There's been an accident",
+          "spanish": "Ha habido un accidente"
+        },
+        {
+          "english": "Someone is injured",
+          "spanish": "Alguien está herido"
+        },
+        {
+          "english": "We need medical assistance",
+          "spanish": "Necesitamos asistencia médica"
+        },
+        {
+          "english": "There's a fire in the workshop",
+          "spanish": "Hay un incendio en el taller"
+        },
+        {
+          "english": "Evacuate the building immediately",
+          "spanish": "Evacúen el edificio inmediatamente"
+        },
+        {
+          "english": "Turn off all equipment",
+          "spanish": "Apaguen todo el equipo"
+        },
+        {
+          "english": "The area is dangerous",
+          "spanish": "El área es peligrosa"
+        },
+        {
+          "english": "Follow emergency procedures",
+          "spanish": "Sigan los procedimientos de emergencia"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What's the first thing to do in an emergency?",
+          "options": ["Take photos", "Ensure safety", "Find the supervisor"],
+          "answer": 1
+        },
+        {
+          "audio": "When should you call emergency services?",
+          "options": ["Only for fires", "For any serious emergency", "Never"],
+          "answer": 1
+        },
+        {
+          "audio": "Who should coordinate emergency evacuations?",
+          "options": ["Anyone available", "Trained emergency personnel", "The newest employee"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "In any emergency, your first priority is",
+          "suffix": "safety.",
+          "answer": "personal",
+          "selected": false,
+          "feedback": "Personal safety is always the top priority in emergency situations."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "emergency procedures when there's danger.",
+          "answer": "follow",
+          "selected": false,
+          "feedback": "Emergency procedures are designed to protect lives and minimize damage."
+        },
+        {
+          "prefix": "If someone is injured,",
+          "suffix": "medical help immediately.",
+          "answer": "call",
+          "selected": false,
+          "feedback": "Quick medical response can be critical for injured persons."
+        }
+      ]
+    },
+    {
+      "title": "Problem Documentation → Documentación de problemas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Write an incident report",
+          "spanish": "Escriba un reporte de incidente"
+        },
+        {
+          "english": "Record the date and time",
+          "spanish": "Registre la fecha y hora"
+        },
+        {
+          "english": "Describe what happened",
+          "spanish": "Describa lo que pasó"
+        },
+        {
+          "english": "Include all relevant details",
+          "spanish": "Incluya todos los detalles relevantes"
+        },
+        {
+          "english": "Take photos if possible",
+          "spanish": "Tome fotos si es posible"
+        },
+        {
+          "english": "Get witness statements",
+          "spanish": "Obtenga declaraciones de testigos"
+        },
+        {
+          "english": "Sign and date the report",
+          "spanish": "Firme y feche el reporte"
+        },
+        {
+          "english": "Submit it to your supervisor",
+          "spanish": "Entrégueselo a su supervisor"
+        },
+        {
+          "english": "Keep a copy for records",
+          "spanish": "Mantenga una copia para los registros"
+        },
+        {
+          "english": "Follow up on actions taken",
+          "spanish": "Haga seguimiento a las acciones tomadas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is documentation important after problems occur?",
+          "options": ["For legal protection", "To prevent future issues", "Both reasons"],
+          "answer": 2
+        },
+        {
+          "audio": "What information should be included in incident reports?",
+          "options": ["Only the problem", "All relevant details", "Personal opinions"],
+          "answer": 1
+        },
+        {
+          "audio": "Who should receive copies of incident reports?",
+          "options": ["Only you", "Supervisors and safety personnel", "Everyone"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Follow-up Actions → Acciones de seguimiento",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Check if the problem is fixed",
+          "spanish": "Verifique si el problema está resuelto"
+        },
+        {
+          "english": "Test the repaired equipment",
+          "spanish": "Pruebe el equipo reparado"
+        },
+        {
+          "english": "Monitor for recurring issues",
+          "spanish": "Monitoree por problemas recurrentes"
+        },
+        {
+          "english": "Update maintenance records",
+          "spanish": "Actualice los registros de mantenimiento"
+        },
+        {
+          "english": "Schedule preventive maintenance",
+          "spanish": "Programe mantenimiento preventivo"
+        },
+        {
+          "english": "Train staff on new procedures",
+          "spanish": "Capacite al personal en nuevos procedimientos"
+        },
+        {
+          "english": "Review safety protocols",
+          "spanish": "Revise los protocolos de seguridad"
+        },
+        {
+          "english": "Implement corrective measures",
+          "spanish": "Implemente medidas correctivas"
+        },
+        {
+          "english": "Document lessons learned",
+          "spanish": "Documente las lecciones aprendidas"
+        },
+        {
+          "english": "Share information with the team",
+          "spanish": "Comparta información con el equipo"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "After repairs are completed,",
+          "suffix": "the equipment thoroughly.",
+          "answer": "test",
+          "selected": false,
+          "feedback": "Testing ensures repairs were successful and equipment is safe to use."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "maintenance records after any work is done.",
+          "answer": "update",
+          "selected": false,
+          "feedback": "Updated records help track equipment history and plan future maintenance."
+        },
+        {
+          "prefix": "Sharing",
+          "suffix": "with the team helps prevent similar problems.",
+          "answer": "information",
+          "selected": false,
+          "feedback": "Information sharing helps the entire team learn from experiences and avoid similar issues."
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+@use "./assets/scss/uws-schools-app";
+
+body {
+    overflow-x: hidden;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+
+        .input-group-text {
+            width: 2.7rem;
+        }
+    }
+
+    .box-none:focus {
+        box-shadow: none !important;
+    }
+
+    .btn:hover,
+    .btn:active {
+        color: #fff;
+    }
+
+    .btn-dashboard {
+        color: #ef8157;
+        background-color: transparent;
+        border: 1px solid #ef8157;
+        transition: background-color 0.3s ease;
+
+        &:hover,
+        &:active {
+            background-color: #ef8157;
+            color: #fff;
+        }
+    }
+
+    .span-action:hover,
+    .form-check:hover,
+    .form-check-input:hover,
+    .form-check-label:hover {
+        cursor: pointer;
+    }
+
+    .jumbotron {
+        background-color: #e9ecef;
+    }
+
+    .btn-unstyled {
+        background: none; /* Transparent background */
+        border: none; /* No border */
+        color: inherit; /* Inherit text color from parent */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        padding: 0; /* No padding */
+    }
+
+    .bg-white {
+        min-height: calc(100vh - 20%);
+    }
+}
+
+@media (max-width: 1079px) {
+    .icono-feather-custom {
+        stroke-width: 2px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .icono-feather-custom {
+        stroke-width: 1px;
+    }
+}

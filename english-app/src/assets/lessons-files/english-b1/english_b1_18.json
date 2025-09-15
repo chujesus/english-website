@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 18,
+  "sections": [
+    {
+      "title": "Advanced Transportation Systems → Sistemas de transporte avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Intelligent transportation systems optimize traffic flow",
+          "spanish": "Los sistemas de transporte inteligentes optimizan flujo de tráfico"
+        },
+        {
+          "english": "Autonomous vehicles use sensors and AI for navigation",
+          "spanish": "Los vehículos autónomos usan sensores e IA para navegación"
+        },
+        {
+          "english": "Electric vehicle charging infrastructure supports clean mobility",
+          "spanish": "La infraestructura de carga para vehículos eléctricos apoya movilidad limpia"
+        },
+        {
+          "english": "Traffic management systems reduce congestion",
+          "spanish": "Los sistemas de gestión de tráfico reducen congestión"
+        },
+        {
+          "english": "Public transit optimization improves urban mobility",
+          "spanish": "La optimización del transporte público mejora movilidad urbana"
+        },
+        {
+          "english": "Connected vehicle technology enables communication",
+          "spanish": "La tecnología de vehículos conectados permite comunicación"
+        },
+        {
+          "english": "Alternative fuel systems reduce emissions",
+          "spanish": "Los sistemas de combustibles alternativos reducen emisiones"
+        },
+        {
+          "english": "Multimodal transportation integrates different modes",
+          "spanish": "El transporte multimodal integra diferentes modos"
+        },
+        {
+          "english": "Smart parking systems optimize space utilization",
+          "spanish": "Los sistemas de estacionamiento inteligente optimizan utilización de espacio"
+        },
+        {
+          "english": "Transportation analytics improve system performance",
+          "spanish": "Los análisis de transporte mejoran rendimiento del sistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do intelligent transportation systems improve traffic?",
+          "options": ["They use real-time data to optimize signal timing and route guidance", "They eliminate all vehicles", "They make traffic slower"],
+          "answer": 0
+        },
+        {
+          "audio": "What challenges do autonomous vehicles need to overcome?",
+          "options": ["They must safely navigate complex traffic situations and weather conditions", "They are already perfect", "They only work on highways"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is electric vehicle charging infrastructure important?",
+          "options": ["It enables widespread adoption of clean transportation", "It only works for gasoline cars", "It increases emissions"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Intelligent transportation",
+          "suffix": "use technology to improve safety, efficiency, and environmental impact.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "ITS integrate technology to optimize transportation networks."
+        },
+        {
+          "prefix": "Autonomous",
+          "suffix": "promise to reduce accidents and improve transportation efficiency.",
+          "answer": "vehicles",
+          "selected": false,
+          "feedback": "Autonomous vehicles could transform how we think about transportation."
+        },
+        {
+          "prefix": "Connected vehicle",
+          "suffix": "enables vehicle-to-vehicle and vehicle-to-infrastructure communication.",
+          "answer": "technology",
+          "selected": false,
+          "feedback": "Connected vehicles enable coordinated and safer transportation systems."
+        }
+      ]
+    },
+    {
+      "title": "Energy Storage and Battery Technology → Almacenamiento de energía y tecnología de baterías",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Lithium-ion batteries provide high energy density",
+          "spanish": "Las baterías de ion-litio proporcionan alta densidad de energía"
+        },
+        {
+          "english": "Battery management systems monitor cell performance",
+          "spanish": "Los sistemas de gestión de baterías monitorean rendimiento de celdas"
+        },
+        {
+          "english": "Grid-scale storage balances renewable energy supply",
+          "spanish": "El almacenamiento a escala de red equilibra suministro de energía renovable"
+        },
+        {
+          "english": "Thermal management prevents battery overheating",
+          "spanish": "La gestión térmica previene sobrecalentamiento de baterías"
+        },
+        {
+          "english": "Fast charging technology reduces charging time",
+          "spanish": "La tecnología de carga rápida reduce tiempo de carga"
+        },
+        {
+          "english": "Battery recycling recovers valuable materials",
+          "spanish": "El reciclaje de baterías recupera materiales valiosos"
+        },
+        {
+          "english": "Solid-state batteries offer improved safety",
+          "spanish": "Las baterías de estado sólido ofrecen seguridad mejorada"
+        },
+        {
+          "english": "Energy density optimization maximizes storage capacity",
+          "spanish": "La optimización de densidad de energía maximiza capacidad de almacenamiento"
+        },
+        {
+          "english": "Cycle life testing predicts battery longevity",
+          "spanish": "Las pruebas de vida útil predicen longevidad de baterías"
+        },
+        {
+          "english": "Smart charging systems optimize energy usage",
+          "spanish": "Los sistemas de carga inteligente optimizan uso de energía"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes lithium-ion batteries popular for portable devices?",
+          "options": ["They have high energy density and rechargeable capability", "They are the heaviest option", "They never need charging"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is thermal management important for batteries?",
+          "options": ["It prevents overheating that could damage cells or cause safety issues", "It makes batteries colder", "It is not necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "How does grid-scale storage help renewable energy?",
+          "options": ["It stores excess energy when production is high for use when demand is high", "It eliminates renewable energy", "It makes energy more expensive"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Battery management",
+          "suffix": "ensure safe and optimal operation of battery packs.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "BMS are critical for battery safety and performance optimization."
+        },
+        {
+          "prefix": "Grid-scale",
+          "suffix": "enables integration of intermittent renewable energy sources.",
+          "answer": "storage",
+          "selected": false,
+          "feedback": "Large-scale storage is essential for renewable energy grid integration."
+        },
+        {
+          "prefix": "Fast charging",
+          "suffix": "reduces the time needed to recharge electric vehicle batteries.",
+          "answer": "technology",
+          "selected": false,
+          "feedback": "Fast charging addresses one of the main barriers to EV adoption."
+        }
+      ]
+    },
+    {
+      "title": "Water Engineering and Treatment Systems → Ingeniería del agua y sistemas de tratamiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Water treatment plants remove contaminants and pathogens",
+          "spanish": "Las plantas de tratamiento de agua remueven contaminantes y patógenos"
+        },
+        {
+          "english": "Desalination systems convert seawater to fresh water",
+          "spanish": "Los sistemas de desalinización convierten agua de mar en agua dulce"
+        },
+        {
+          "english": "Membrane filtration separates particles by size",
+          "spanish": "La filtración por membrana separa partículas por tamaño"
+        },
+        {
+          "english": "Advanced oxidation processes destroy organic pollutants",
+          "spanish": "Los procesos de oxidación avanzada destruyen contaminantes orgánicos"
+        },
+        {
+          "english": "Biological treatment uses microorganisms to purify water",
+          "spanish": "El tratamiento biológico usa microorganismos para purificar agua"
+        },
+        {
+          "english": "Water quality monitoring ensures safety standards",
+          "spanish": "El monitoreo de calidad del agua asegura estándares de seguridad"
+        },
+        {
+          "english": "Stormwater management prevents urban flooding",
+          "spanish": "La gestión de aguas pluviales previene inundaciones urbanas"
+        },
+        {
+          "english": "Wastewater recycling conserves water resources",
+          "spanish": "El reciclaje de aguas residuales conserva recursos hídricos"
+        },
+        {
+          "english": "Smart water networks optimize distribution",
+          "spanish": "Las redes de agua inteligentes optimizan distribución"
+        },
+        {
+          "english": "Water-energy nexus considers integrated systems",
+          "spanish": "El nexo agua-energía considera sistemas integrados"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do water treatment plants make water safe to drink?",
+          "options": ["They remove harmful contaminants, bacteria, and chemicals", "They add more contaminants", "They only change the color"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of desalination?",
+          "options": ["To remove salt from seawater to create fresh water", "To add salt to fresh water", "To store seawater"],
+          "answer": 0
+        },
+        {
+          "audio": "How does biological water treatment work?",
+          "options": ["It uses beneficial microorganisms to break down pollutants", "It uses only chemicals", "It eliminates all biology"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Water treatment",
+          "suffix": "use multiple processes to ensure water meets safety standards.",
+          "answer": "plants",
+          "selected": false,
+          "feedback": "Water treatment plants are essential for public health protection."
+        },
+        {
+          "prefix": "Membrane",
+          "suffix": "provides precise separation of contaminants from water.",
+          "answer": "filtration",
+          "selected": false,
+          "feedback": "Membrane technology offers advanced water purification capabilities."
+        },
+        {
+          "prefix": "Smart water",
+          "suffix": "use sensors and analytics to optimize water distribution efficiency.",
+          "answer": "networks",
+          "selected": false,
+          "feedback": "Smart water systems enable real-time monitoring and control."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Sensing and Measurement → Detección y medición avanzadas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Wireless sensor networks enable distributed monitoring",
+          "spanish": "Las redes de sensores inalámbricos permiten monitoreo distribuido"
+        },
+        {
+          "english": "MEMS sensors provide miniaturized sensing capabilities",
+          "spanish": "Los sensores MEMS proporcionan capacidades de detección miniaturizadas"
+        },
+        {
+          "english": "Optical sensors use light for measurement",
+          "spanish": "Los sensores ópticos usan luz para medición"
+        },
+        {
+          "english": "Smart sensors integrate processing with sensing",
+          "spanish": "Los sensores inteligentes integran procesamiento con detección"
+        },
+        {
+          "english": "Multi-sensor fusion combines different measurement types",
+          "spanish": "La fusión multi-sensor combina diferentes tipos de medición"
+        },
+        {
+          "english": "Remote sensing monitors large areas from distance",
+          "spanish": "La detección remota monitorea grandes áreas desde distancia"
+        },
+        {
+          "english": "Calibration standards ensure measurement accuracy",
+          "spanish": "Los estándares de calibración aseguran precisión de medición"
+        },
+        {
+          "english": "Signal processing extracts useful information",
+          "spanish": "El procesamiento de señales extrae información útil"
+        },
+        {
+          "english": "Real-time monitoring enables immediate response",
+          "spanish": "El monitoreo en tiempo real permite respuesta inmediata"
+        },
+        {
+          "english": "Predictive analytics anticipate system changes",
+          "spanish": "Los análisis predictivos anticipan cambios del sistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantages do wireless sensor networks offer?",
+          "options": ["They enable monitoring in locations where wired connections are impractical", "They require more cables", "They only work indoors"],
+          "answer": 0
+        },
+        {
+          "audio": "How do MEMS sensors benefit modern devices?",
+          "options": ["They provide sensing capabilities in very small packages", "They are always large", "They don't work"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is sensor fusion important?",
+          "options": ["It combines multiple sensors to provide more accurate and reliable information", "It eliminates sensors", "It complicates systems"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Additive Manufacturing Applications → Aplicaciones de manufactura aditiva",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Aerospace components benefit from weight reduction",
+          "spanish": "Los componentes aeroespaciales se benefician de reducción de peso"
+        },
+        {
+          "english": "Medical implants can be customized for individual patients",
+          "spanish": "Los implantes médicos pueden personalizarse para pacientes individuales"
+        },
+        {
+          "english": "Prototyping accelerates product development cycles",
+          "spanish": "El prototipado acelera ciclos de desarrollo de productos"
+        },
+        {
+          "english": "Tooling applications reduce manufacturing lead times",
+          "spanish": "Las aplicaciones de herramental reducen tiempos de entrega de manufactura"
+        },
+        {
+          "english": "Complex geometries enable new design possibilities",
+          "spanish": "Las geometrías complejas permiten nuevas posibilidades de diseño"
+        },
+        {
+          "english": "On-demand production eliminates inventory needs",
+          "spanish": "La producción bajo demanda elimina necesidades de inventario"
+        },
+        {
+          "english": "Multi-material printing creates functional assemblies",
+          "spanish": "La impresión multi-material crea ensambles funcionales"
+        },
+        {
+          "english": "Repair applications extend component life",
+          "spanish": "Las aplicaciones de reparación extienden vida de componentes"
+        },
+        {
+          "english": "Educational models enhance learning experiences",
+          "spanish": "Los modelos educativos mejoran experiencias de aprendizaje"
+        },
+        {
+          "english": "Sustainable manufacturing reduces material waste",
+          "spanish": "La manufactura sostenible reduce desperdicio de materiales"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Aerospace",
+          "suffix": "can be optimized for weight while maintaining strength.",
+          "answer": "components",
+          "selected": false,
+          "feedback": "Additive manufacturing enables lightweight aerospace parts with complex internal structures."
+        },
+        {
+          "prefix": "Medical",
+          "suffix": "can be tailored to individual patient anatomy for better outcomes.",
+          "answer": "implants",
+          "selected": false,
+          "feedback": "3D printing enables personalized medical devices and implants."
+        },
+        {
+          "prefix": "On-demand",
+          "suffix": "enables manufacturing only when and where products are needed.",
+          "answer": "production",
+          "selected": false,
+          "feedback": "Additive manufacturing enables flexible, on-demand production strategies."
+        }
+      ]
+    }
+  ]
+}
+]
+

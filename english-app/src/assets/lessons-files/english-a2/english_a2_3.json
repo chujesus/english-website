@@ -1,0 +1,408 @@
+[
+  {
+    "cefrLevel": "A2",
+    "lessonId": 3,
+    "sections": [
+    {
+      "title": "Asking and Giving Directions in the Workplace → Pidiendo y dando direcciones en el lugar de trabajo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Go straight ahead",
+          "spanish": "Vaya derecho"
+        },
+        {
+          "english": "Turn left at the office",
+          "spanish": "Gire a la izquierda en la oficina"
+        },
+        {
+          "english": "Turn right at the lab",
+          "spanish": "Gire a la derecha en el laboratorio"
+        },
+        {
+          "english": "The workshop is upstairs",
+          "spanish": "El taller está arriba"
+        },
+        {
+          "english": "The storage room is downstairs",
+          "spanish": "El almacén está abajo"
+        },
+        {
+          "english": "It's next to the cafeteria",
+          "spanish": "Está al lado de la cafetería"
+        },
+        {
+          "english": "The supervisor's office is on the second floor",
+          "spanish": "La oficina del supervisor está en el segundo piso"
+        },
+        {
+          "english": "Walk to the end of the hallway",
+          "spanish": "Camine hasta el final del pasillo"
+        },
+        {
+          "english": "The exit is behind the building",
+          "spanish": "La salida está detrás del edificio"
+        },
+        {
+          "english": "You can find the tools over there",
+          "spanish": "Puede encontrar las herramientas allá"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Where is the main laboratory?",
+          "options": ["Next to the office", "Upstairs", "In the basement"],
+          "answer": 1
+        },
+        {
+          "audio": "How do I get to the workshop?",
+          "options": ["Turn left and go straight", "It's on the right", "Go downstairs"],
+          "answer": 0
+        },
+        {
+          "audio": "Is the cafeteria on this floor?",
+          "options": ["Yes, at the end", "No, it's upstairs", "No, it's outside"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "To get to the lab, go",
+          "suffix": "and turn right.",
+          "answer": "straight",
+          "selected": false,
+          "feedback": "Use 'straight' to indicate going forward without turning."
+        },
+        {
+          "prefix": "The storage room is",
+          "suffix": "the main building.",
+          "answer": "behind",
+          "selected": false,
+          "feedback": "Use 'behind' to indicate something is at the back of another location."
+        },
+        {
+          "prefix": "Walk",
+          "suffix": "the hallway to find the office.",
+          "answer": "down",
+          "selected": false,
+          "feedback": "Use 'down' when moving along a hallway or corridor."
+        }
+      ]
+    },
+    {
+      "title": "Location and Facility Vocabulary → Vocabulario de ubicación y instalaciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Main entrance",
+          "spanish": "Entrada principal"
+        },
+        {
+          "english": "Emergency exit",
+          "spanish": "Salida de emergencia"
+        },
+        {
+          "english": "Reception desk",
+          "spanish": "Recepción"
+        },
+        {
+          "english": "Conference room",
+          "spanish": "Sala de conferencias"
+        },
+        {
+          "english": "Parking lot",
+          "spanish": "Estacionamiento"
+        },
+        {
+          "english": "Break room",
+          "spanish": "Sala de descanso"
+        },
+        {
+          "english": "Assembly line",
+          "spanish": "Línea de ensamblaje"
+        },
+        {
+          "english": "Quality control area",
+          "spanish": "Área de control de calidad"
+        },
+        {
+          "english": "Loading dock",
+          "spanish": "Muelle de carga"
+        },
+        {
+          "english": "Administrative offices",
+          "spanish": "Oficinas administrativas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Where do visitors park their cars?",
+          "options": ["In the parking lot", "Behind the building", "Next to the lab"],
+          "answer": 0
+        },
+        {
+          "audio": "Where is the emergency exit located?",
+          "options": ["Near the entrance", "At the end of each hallway", "Only upstairs"],
+          "answer": 1
+        },
+        {
+          "audio": "Which area controls product quality?",
+          "options": ["Assembly line", "Quality control area", "Storage room"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "All visitors must register at the",
+          "suffix": "desk.",
+          "answer": "reception",
+          "selected": false,
+          "feedback": "The reception desk is where visitors check in."
+        },
+        {
+          "prefix": "Trucks load and unload at the",
+          "suffix": "area.",
+          "answer": "loading dock",
+          "selected": false,
+          "feedback": "The loading dock is where vehicles are loaded and unloaded."
+        },
+        {
+          "prefix": "Workers take breaks in the",
+          "suffix": "room.",
+          "answer": "break",
+          "selected": false,
+          "feedback": "The break room is where employees rest during work breaks."
+        }
+      ]
+    },
+    {
+      "title": "Understanding Maps and Floor Plans → Entendiendo mapas y planos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Building map",
+          "spanish": "Mapa del edificio"
+        },
+        {
+          "english": "Floor plan",
+          "spanish": "Plano de planta"
+        },
+        {
+          "english": "You are here",
+          "spanish": "Usted está aquí"
+        },
+        {
+          "english": "North, south, east, west",
+          "spanish": "Norte, sur, este, oeste"
+        },
+        {
+          "english": "Legend",
+          "spanish": "Leyenda"
+        },
+        {
+          "english": "Scale",
+          "spanish": "Escala"
+        },
+        {
+          "english": "Grid reference",
+          "spanish": "Referencia de cuadrícula"
+        },
+        {
+          "english": "Route",
+          "spanish": "Ruta"
+        },
+        {
+          "english": "Shortest path",
+          "spanish": "Camino más corto"
+        },
+        {
+          "english": "Distance",
+          "spanish": "Distancia"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "According to the map, where is the workshop?",
+          "options": ["Section A2", "Section B1", "Section C3"],
+          "answer": 0
+        },
+        {
+          "audio": "What does the legend show?",
+          "options": ["Building colors", "Symbol meanings", "Room numbers"],
+          "answer": 1
+        },
+        {
+          "audio": "How can you find the shortest route?",
+          "options": ["Use the scale", "Follow the colored lines", "Check the grid"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Look at the",
+          "suffix": "to understand the symbols on the map.",
+          "answer": "legend",
+          "selected": false,
+          "feedback": "The legend explains what symbols and colors mean on a map."
+        },
+        {
+          "prefix": "The red dot shows",
+          "suffix": "you are.",
+          "answer": "where",
+          "selected": false,
+          "feedback": "'You are here' markers help you locate your current position."
+        },
+        {
+          "prefix": "Use the",
+          "suffix": "to measure distances on the map.",
+          "answer": "scale",
+          "selected": false,
+          "feedback": "The scale helps convert map measurements to real distances."
+        }
+      ]
+    },
+    {
+      "title": "Asking for Help with Directions → Pidiendo ayuda con direcciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Excuse me, can you help me?",
+          "spanish": "Disculpe, ¿puede ayudarme?"
+        },
+        {
+          "english": "I'm looking for the maintenance office",
+          "spanish": "Busco la oficina de mantenimiento"
+        },
+        {
+          "english": "Could you tell me where it is?",
+          "spanish": "¿Podría decirme dónde está?"
+        },
+        {
+          "english": "Is it far from here?",
+          "spanish": "¿Está lejos de aquí?"
+        },
+        {
+          "english": "How long does it take to walk there?",
+          "spanish": "¿Cuánto tiempo se tarda caminando?"
+        },
+        {
+          "english": "Thank you for your help",
+          "spanish": "Gracias por su ayuda"
+        },
+        {
+          "english": "Sorry, I don't know",
+          "spanish": "Lo siento, no lo sé"
+        },
+        {
+          "english": "Let me show you on the map",
+          "spanish": "Déjeme mostrarle en el mapa"
+        },
+        {
+          "english": "Follow me, I'll take you there",
+          "spanish": "Síganme, lo llevaré ahí"
+        },
+        {
+          "english": "You're welcome",
+          "spanish": "De nada"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Could you tell me where the computer lab is?",
+          "options": ["It's on the second floor", "I don't know", "Follow the signs"],
+          "answer": 0
+        },
+        {
+          "audio": "Is the cafeteria far from here?",
+          "options": ["Yes, very far", "No, just 5 minutes", "I'm not sure"],
+          "answer": 1
+        },
+        {
+          "audio": "How do I get to the parking lot?",
+          "options": ["Take the elevator", "Go outside and turn left", "Ask at reception"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Workplace Areas and Departments → Áreas y departamentos del lugar de trabajo",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Human resources department",
+          "spanish": "Departamento de recursos humanos"
+        },
+        {
+          "english": "Accounting office",
+          "spanish": "Oficina de contabilidad"
+        },
+        {
+          "english": "Production floor",
+          "spanish": "Planta de producción"
+        },
+        {
+          "english": "Research and development",
+          "spanish": "Investigación y desarrollo"
+        },
+        {
+          "english": "Quality assurance",
+          "spanish": "Aseguramiento de calidad"
+        },
+        {
+          "english": "Maintenance department",
+          "spanish": "Departamento de mantenimiento"
+        },
+        {
+          "english": "Security office",
+          "spanish": "Oficina de seguridad"
+        },
+        {
+          "english": "Training center",
+          "spanish": "Centro de capacitación"
+        },
+        {
+          "english": "Medical clinic",
+          "spanish": "Clínica médica"
+        },
+        {
+          "english": "Supply warehouse",
+          "spanish": "Almacén de suministros"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "New employees report to",
+          "suffix": "on their first day.",
+          "answer": "human resources",
+          "selected": false,
+          "feedback": "Human resources handles new employee orientation and paperwork."
+        },
+        {
+          "prefix": "If you get injured, go to the",
+          "suffix": "immediately.",
+          "answer": "medical clinic",
+          "selected": false,
+          "feedback": "The medical clinic provides first aid and medical attention for workplace injuries."
+        },
+        {
+          "prefix": "The",
+          "suffix": "department ensures products meet standards.",
+          "answer": "quality assurance",
+          "selected": false,
+          "feedback": "Quality assurance checks that products meet required specifications and standards."
+        }
+      ]
+    }
+  ]
+}
+]

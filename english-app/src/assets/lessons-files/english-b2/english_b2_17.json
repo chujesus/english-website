@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 17,
+  "sections": [
+    {
+      "title": "Advanced Instrumentation and Control → Instrumentación y control avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Smart sensors integrate measurement, processing, and communication capabilities",
+          "spanish": "Los sensores inteligentes integran capacidades de medición, procesamiento y comunicación"
+        },
+        {
+          "english": "Process control systems optimize manufacturing operations through automated regulation",
+          "spanish": "Los sistemas de control de procesos optimizan operaciones de manufactura a través de regulación automatizada"
+        },
+        {
+          "english": "Distributed control architectures enhance system reliability and maintainability",
+          "spanish": "Las arquitecturas de control distribuido mejoran confiabilidad y mantenibilidad del sistema"
+        },
+        {
+          "english": "Advanced PID controllers adapt parameters dynamically for optimal performance",
+          "spanish": "Los controladores PID avanzados adaptan parámetros dinámicamente para rendimiento óptimo"
+        },
+        {
+          "english": "Industrial communication protocols enable seamless data exchange between devices",
+          "spanish": "Los protocolos de comunicación industrial permiten intercambio de datos sin problemas entre dispositivos"
+        },
+        {
+          "english": "Human-machine interfaces provide intuitive operator control and monitoring",
+          "spanish": "Las interfaces humano-máquina proporcionan control y monitoreo intuitivo del operador"
+        },
+        {
+          "english": "Safety instrumented systems implement critical protection functions automatically",
+          "spanish": "Los sistemas instrumentados de seguridad implementan funciones de protección críticas automáticamente"
+        },
+        {
+          "english": "Fieldbus networks connect field instruments to central control systems",
+          "spanish": "Las redes fieldbus conectan instrumentos de campo a sistemas de control centrales"
+        },
+        {
+          "english": "Calibration management ensures measurement accuracy and regulatory compliance",
+          "spanish": "La gestión de calibración asegura precisión de medición y cumplimiento regulatorio"
+        },
+        {
+          "english": "Condition monitoring systems track equipment health for predictive maintenance",
+          "spanish": "Los sistemas de monitoreo de condiciones rastrean salud de equipos para mantenimiento predictivo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do smart sensors improve instrumentation systems?",
+          "options": ["They combine sensing, processing, and communication in a single device", "They eliminate all measurement errors", "They only work in perfect conditions"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do distributed control systems offer?",
+          "options": ["Better reliability, scalability, and local decision-making capability", "They centralize all control functions", "They eliminate human operators"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are industrial communication protocols important?",
+          "options": ["They enable different devices and systems to communicate effectively", "They make all devices identical", "They eliminate the need for networks"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Smart",
+          "suffix": "combine multiple functions in compact, intelligent measurement devices.",
+          "answer": "sensors",
+          "selected": false,
+          "feedback": "Smart sensors are revolutionizing industrial instrumentation and monitoring."
+        },
+        {
+          "prefix": "Process control",
+          "suffix": "automatically regulate industrial processes to maintain desired conditions.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Process control systems are essential for efficient industrial operations."
+        },
+        {
+          "prefix": "Human-machine",
+          "suffix": "provide the critical link between operators and automated systems.",
+          "answer": "interfaces",
+          "selected": false,
+          "feedback": "HMI design is crucial for effective human-automation interaction."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Optimization and Decision Making → Optimización avanzada y toma de decisiones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Multi-objective optimization balances competing design requirements simultaneously",
+          "spanish": "La optimización multi-objetivo equilibra requerimientos de diseño competidores simultáneamente"
+        },
+        {
+          "english": "Genetic algorithms evolve solutions through computational natural selection",
+          "spanish": "Los algoritmos genéticos evolucionan soluciones a través de selección natural computacional"
+        },
+        {
+          "english": "Linear programming optimizes resource allocation within constraint boundaries",
+          "spanish": "La programación lineal optimiza asignación de recursos dentro de límites de restricciones"
+        },
+        {
+          "english": "Decision support systems combine data analysis with expert knowledge",
+          "spanish": "Los sistemas de apoyo a decisiones combinan análisis de datos con conocimiento experto"
+        },
+        {
+          "english": "Sensitivity analysis evaluates parameter influence on optimal solutions",
+          "spanish": "El análisis de sensibilidad evalúa influencia de parámetros en soluciones óptimas"
+        },
+        {
+          "english": "Stochastic optimization handles uncertainty in problem parameters",
+          "spanish": "La optimización estocástica maneja incertidumbre en parámetros del problema"
+        },
+        {
+          "english": "Game theory analyzes strategic interactions between decision makers",
+          "spanish": "La teoría de juegos analiza interacciones estratégicas entre tomadores de decisiones"
+        },
+        {
+          "english": "Machine learning optimization adapts algorithms through experience",
+          "spanish": "La optimización de aprendizaje automático adapta algoritmos a través de experiencia"
+        },
+        {
+          "english": "Robust optimization maintains performance despite parameter variations",
+          "spanish": "La optimización robusta mantiene rendimiento a pesar de variaciones de parámetros"
+        },
+        {
+          "english": "Real-time optimization adjusts operations continuously for peak efficiency",
+          "spanish": "La optimización en tiempo real ajusta operaciones continuamente para máxima eficiencia"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does multi-objective optimization handle conflicting requirements?",
+          "options": ["It finds Pareto-optimal solutions that balance trade-offs between objectives", "It eliminates all conflicts", "It focuses on only one objective"],
+          "answer": 0
+        },
+        {
+          "audio": "What makes genetic algorithms effective for complex optimization problems?",
+          "options": ["They explore solution spaces effectively and can handle non-linear problems", "They always find perfect solutions", "They only work for simple problems"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is robust optimization important for real-world applications?",
+          "options": ["It ensures solutions remain good even when conditions change unexpectedly", "It eliminates all uncertainties", "It only works in controlled environments"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Multi-objective",
+          "suffix": "helps engineers make decisions when multiple conflicting goals exist.",
+          "answer": "optimization",
+          "selected": false,
+          "feedback": "Multi-objective optimization is essential for complex engineering design decisions."
+        },
+        {
+          "prefix": "Genetic",
+          "suffix": "mimic natural evolution to find optimal solutions for complex problems.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Genetic algorithms are powerful tools for complex optimization problems."
+        },
+        {
+          "prefix": "Decision support",
+          "suffix": "help managers make better choices by analyzing complex data and scenarios.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "DSS combine human expertise with computational analysis for better decisions."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Computational Methods → Métodos computacionales avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Finite element analysis discretizes complex geometries for numerical solution",
+          "spanish": "El análisis de elementos finitos discretiza geometrías complejas para solución numérica"
+        },
+        {
+          "english": "Computational fluid dynamics simulates fluid behavior in engineering systems",
+          "spanish": "La dinámica computacional de fluidos simula comportamiento de fluidos en sistemas de ingeniería"
+        },
+        {
+          "english": "High-performance computing enables massive parallel processing capabilities",
+          "spanish": "La computación de alto rendimiento permite capacidades de procesamiento paralelo masivo"
+        },
+        {
+          "english": "Molecular dynamics modeling simulates material behavior at atomic scales",
+          "spanish": "El modelado de dinámica molecular simula comportamiento de materiales a escalas atómicas"
+        },
+        {
+          "english": "Monte Carlo methods solve probabilistic problems through random sampling",
+          "spanish": "Los métodos Monte Carlo resuelven problemas probabilísticos a través de muestreo aleatorio"
+        },
+        {
+          "english": "Mesh generation algorithms create computational grids for numerical analysis",
+          "spanish": "Los algoritmos de generación de mallas crean rejillas computacionales para análisis numérico"
+        },
+        {
+          "english": "Parallel algorithms distribute computational workload across multiple processors",
+          "spanish": "Los algoritmos paralelos distribuyen carga computacional a través de múltiples procesadores"
+        },
+        {
+          "english": "Numerical integration techniques approximate solutions to complex equations",
+          "spanish": "Las técnicas de integración numérica aproximan soluciones a ecuaciones complejas"
+        },
+        {
+          "english": "Cloud computing platforms provide scalable computational resources",
+          "spanish": "Las plataformas de computación en la nube proporcionan recursos computacionales escalables"
+        },
+        {
+          "english": "Algorithm optimization improves computational efficiency and accuracy",
+          "spanish": "La optimización de algoritmos mejora eficiencia computacional y precisión"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does finite element analysis help engineers solve complex problems?",
+          "options": ["It breaks complex shapes into smaller elements that can be analyzed mathematically", "It eliminates all mathematical complexity", "It only works for simple geometries"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages does high-performance computing offer for engineering analysis?",
+          "options": ["It enables solving larger, more complex problems in less time", "It makes all computers identical", "It eliminates the need for algorithms"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are Monte Carlo methods useful for engineering applications?",
+          "options": ["They can handle uncertainty and complex probability distributions", "They eliminate all randomness", "They only work for simple calculations"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Finite element",
+          "suffix": "enables engineers to analyze complex structures and systems numerically.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "FEA is fundamental to modern engineering design and analysis."
+        },
+        {
+          "prefix": "High-performance",
+          "suffix": "makes it possible to solve problems that were previously computationally intractable.",
+          "answer": "computing",
+          "selected": false,
+          "feedback": "HPC is enabling breakthrough advances in computational engineering."
+        },
+        {
+          "prefix": "Monte Carlo",
+          "suffix": "use random sampling to solve problems involving uncertainty and probability.",
+          "answer": "methods",
+          "selected": false,
+          "feedback": "Monte Carlo methods are essential for uncertainty quantification in engineering."
+        }
+      ]
+    },
+    {
+      "title": "Technology Assessment and Evaluation → Evaluación y valoración de tecnología",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Technology assessment frameworks evaluate impacts of emerging technologies systematically",
+          "spanish": "Los marcos de evaluación de tecnología evalúan impactos de tecnologías emergentes sistemáticamente"
+        },
+        {
+          "english": "Cost-benefit analysis quantifies economic viability of technology investments",
+          "spanish": "El análisis costo-beneficio cuantifica viabilidad económica de inversiones tecnológicas"
+        },
+        {
+          "english": "Life cycle assessment measures environmental impacts across technology lifecycles",
+          "spanish": "La evaluación del ciclo de vida mide impactos ambientales a través de ciclos de vida tecnológicos"
+        },
+        {
+          "english": "Technology readiness assessment gauges maturity levels of developing technologies",
+          "spanish": "La evaluación de preparación tecnológica mide niveles de madurez de tecnologías en desarrollo"
+        },
+        {
+          "english": "Risk assessment methodologies identify potential negative consequences",
+          "spanish": "Las metodologías de evaluación de riesgo identifican potenciales consecuencias negativas"
+        },
+        {
+          "english": "Social impact evaluation considers effects on communities and stakeholders",
+          "spanish": "La evaluación de impacto social considera efectos en comunidades y partes interesadas"
+        },
+        {
+          "english": "Technology roadmapping visualizes development pathways and timelines",
+          "spanish": "El roadmapping de tecnología visualiza rutas de desarrollo y cronogramas"
+        },
+        {
+          "english": "Comparative analysis evaluates alternatives against multiple criteria",
+          "spanish": "El análisis comparativo evalúa alternativas contra múltiples criterios"
+        },
+        {
+          "english": "Expert elicitation captures professional judgment in assessment processes",
+          "spanish": "La elicitación de expertos captura juicio profesional en procesos de evaluación"
+        },
+        {
+          "english": "Uncertainty quantification characterizes confidence levels in assessments",
+          "spanish": "La cuantificación de incertidumbre caracteriza niveles de confianza en evaluaciones"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is technology assessment important for engineering decisions?",
+          "options": ["It helps evaluate potential impacts before implementing new technologies", "It eliminates all technology risks", "It speeds up all technology adoption"],
+          "answer": 0
+        },
+        {
+          "audio": "How does life cycle assessment support sustainable engineering?",
+          "options": ["It evaluates environmental impacts from material extraction to disposal", "It only considers manufacturing costs", "It eliminates all environmental concerns"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does expert elicitation play in technology evaluation?",
+          "options": ["It captures professional knowledge and experience for better assessments", "It eliminates the need for data", "It replaces all analysis methods"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Advanced Project Leadership and Management → Liderazgo y gestión avanzada de proyectos",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Transformational leadership inspires teams to exceed performance expectations",
+          "spanish": "El liderazgo transformacional inspira equipos a exceder expectativas de rendimiento"
+        },
+        {
+          "english": "Agile project management adapts to changing requirements and priorities",
+          "spanish": "La gestión ágil de proyectos se adapta a requerimientos y prioridades cambiantes"
+        },
+        {
+          "english": "Stakeholder engagement strategies ensure alignment with project objectives",
+          "spanish": "Las estrategias de participación de partes interesadas aseguran alineación con objetivos del proyecto"
+        },
+        {
+          "english": "Risk management frameworks identify and mitigate potential project threats",
+          "spanish": "Los marcos de gestión de riesgo identifican y mitigan amenazas potenciales del proyecto"
+        },
+        {
+          "english": "Resource optimization maximizes efficiency within budget constraints",
+          "spanish": "La optimización de recursos maximiza eficiencia dentro de restricciones presupuestarias"
+        },
+        {
+          "english": "Change management processes control scope modifications systematically",
+          "spanish": "Los procesos de gestión de cambios controlan modificaciones de alcance sistemáticamente"
+        },
+        {
+          "english": "Performance measurement systems track progress against established baselines",
+          "spanish": "Los sistemas de medición de rendimiento rastrean progreso contra líneas base establecidas"
+        },
+        {
+          "english": "Communication planning ensures effective information flow among stakeholders",
+          "spanish": "La planificación de comunicación asegura flujo efectivo de información entre partes interesadas"
+        },
+        {
+          "english": "Quality assurance processes maintain deliverable standards throughout execution",
+          "spanish": "Los procesos de aseguramiento de calidad mantienen estándares de entregables a través de la ejecución"
+        },
+        {
+          "english": "Lessons learned documentation captures knowledge for future projects",
+          "spanish": "La documentación de lecciones aprendidas captura conocimiento para proyectos futuros"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Transformational",
+          "suffix": "motivates teams to achieve extraordinary results through inspiration and vision.",
+          "answer": "leadership",
+          "selected": false,
+          "feedback": "Transformational leadership is particularly effective for complex engineering projects."
+        },
+        {
+          "prefix": "Stakeholder",
+          "suffix": "ensures that all interested parties are informed and aligned with project goals.",
+          "answer": "engagement",
+          "selected": false,
+          "feedback": "Effective stakeholder engagement is crucial for project success."
+        },
+        {
+          "prefix": "Risk",
+          "suffix": "helps project managers anticipate and prepare for potential challenges.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Risk management is essential for successful project delivery."
+        }
+      ]
+    }
+  ]
+}
+]
+

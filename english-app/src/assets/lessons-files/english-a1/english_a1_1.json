@@ -1,0 +1,460 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 1,
+    "sections": [
+      {
+        "title": "Personal Identity → Identidad personal",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "name", "spanish": "nombre" },
+          { "english": "first name", "spanish": "nombre de pila" },
+          { "english": "last name", "spanish": "apellido" },
+          { "english": "full name", "spanish": "nombre completo" },
+          { "english": "age", "spanish": "edad" },
+          { "english": "birthday", "spanish": "cumpleaños" },
+          { "english": "date of birth", "spanish": "fecha de nacimiento" },
+          { "english": "ID number", "spanish": "número de cédula" },
+          { "english": "address", "spanish": "dirección" },
+          { "english": "phone number", "spanish": "número de teléfono" },
+          { "english": "email address", "spanish": "correo electrónico" },
+          { "english": "marital status", "spanish": "estado civil" },
+          { "english": "single", "spanish": "soltero/a" },
+          { "english": "married", "spanish": "casado/a" },
+          { "english": "divorced", "spanish": "divorciado/a" }
+        ],
+        "listening": [
+          {
+            "audio": "What is your full name?",
+            "options": ["What is your full name?", "What is your address?", "What is your age?", "What is your job?"],
+            "answer": "What is your full name?"
+          },
+          {
+            "audio": "My first name is Carlos",
+            "options": ["My first name is Carlos", "My last name is Carlos", "My age is Carlos", "My job is Carlos"],
+            "answer": "My first name is Carlos"
+          },
+          {
+            "audio": "I am 28 years old",
+            "options": ["I am 28 years old", "I am 18 years old", "I am 38 years old", "I am 48 years old"],
+            "answer": "I am 28 years old"
+          },
+          {
+            "audio": "What is your phone number?",
+            "options": ["What is your phone number?", "What is your email address?", "What is your ID number?", "What is your birthday?"],
+            "answer": "What is your phone number?"
+          },
+          {
+            "audio": "I am single",
+            "options": ["I am single", "I am married", "I am divorced", "I am tired"],
+            "answer": "I am single"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My first name", "My last name", "My full name"],
+            "suffix": "is María González.",
+            "answer": "My full name",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am 25", "I am 35", "I am 45"],
+            "suffix": "years old and I work in a factory.",
+            "answer": "I am 25",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My phone number", "My email address", "My ID number"],
+            "suffix": "is 8834-5678.",
+            "answer": "My phone number",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am single", "I am married", "I am divorced"],
+            "suffix": "and I live with my family.",
+            "answer": "I am single",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My address", "My birthday", "My job"],
+            "suffix": "is 200 meters south of the church, Cartago.",
+            "answer": "My address",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Nationality and Origin → Nacionalidad y origen",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "nationality", "spanish": "nacionalidad" },
+          { "english": "country", "spanish": "país" },
+          { "english": "Costa Rica", "spanish": "Costa Rica" },
+          { "english": "Costa Rican", "spanish": "costarricense" },
+          { "english": "Nicaragua", "spanish": "Nicaragua" },
+          { "english": "Nicaraguan", "spanish": "nicaragüense" },
+          { "english": "Panama", "spanish": "Panamá" },
+          { "english": "Panamanian", "spanish": "panameño/a" },
+          { "english": "Guatemala", "spanish": "Guatemala" },
+          { "english": "Guatemalan", "spanish": "guatemalteco/a" },
+          { "english": "El Salvador", "spanish": "El Salvador" },
+          { "english": "Salvadoran", "spanish": "salvadoreño/a" },
+          { "english": "Honduras", "spanish": "Honduras" },
+          { "english": "Honduran", "spanish": "hondureño/a" },
+          { "english": "I am from", "spanish": "Soy de" },
+          { "english": "I come from", "spanish": "Vengo de" },
+          { "english": "I was born in", "spanish": "Nací en" }
+        ],
+        "listening": [
+          {
+            "audio": "Where are you from?",
+            "options": ["Where are you from?", "What is your nationality?", "Where do you live?", "Where do you work?"],
+            "answer": "Where are you from?"
+          },
+          {
+            "audio": "I am from Costa Rica",
+            "options": ["I am from Costa Rica", "I am from Nicaragua", "I am from Panama", "I am from Guatemala"],
+            "answer": "I am from Costa Rica"
+          },
+          {
+            "audio": "I am Costa Rican",
+            "options": ["I am Costa Rican", "I am Nicaraguan", "I am Panamanian", "I am American"],
+            "answer": "I am Costa Rican"
+          },
+          {
+            "audio": "What is your nationality?",
+            "options": ["What is your nationality?", "What is your name?", "What is your job?", "What is your age?"],
+            "answer": "What is your nationality?"
+          },
+          {
+            "audio": "I was born in San José",
+            "options": ["I was born in San José", "I live in San José", "I work in San José", "I study in San José"],
+            "answer": "I was born in San José"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I am from", "I come from", "I was born in"],
+            "suffix": "Cartago, Costa Rica.",
+            "answer": "I am from",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am Costa Rican", "I am Nicaraguan", "I am Panamanian"],
+            "suffix": "but I work in Costa Rica.",
+            "answer": "I am Nicaraguan",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Where are you from?", "What is your nationality?", "Where do you live?"],
+            "suffix": "I am from Alajuela.",
+            "answer": "Where are you from?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My country", "My nationality", "My hometown"],
+            "suffix": "is very beautiful.",
+            "answer": "My country",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I was born in", "I come from", "I live in"],
+            "suffix": "a small town near Puntarenas.",
+            "answer": "I was born in",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Occupation and Work → Ocupación y trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "job", "spanish": "trabajo" },
+          { "english": "occupation", "spanish": "ocupación" },
+          { "english": "profession", "spanish": "profesión" },
+          { "english": "work", "spanish": "trabajar" },
+          { "english": "worker", "spanish": "trabajador/a" },
+          { "english": "mechanic", "spanish": "mecánico/a" },
+          { "english": "electrician", "spanish": "electricista" },
+          { "english": "welder", "spanish": "soldador/a" },
+          { "english": "carpenter", "spanish": "carpintero/a" },
+          { "english": "plumber", "spanish": "fontanero/a" },
+          { "english": "cook", "spanish": "cocinero/a" },
+          { "english": "secretary", "spanish": "secretario/a" },
+          { "english": "security guard", "spanish": "guarda de seguridad" },
+          { "english": "cleaner", "spanish": "limpiador/a" },
+          { "english": "driver", "spanish": "conductor/a" },
+          { "english": "factory worker", "spanish": "operario/a de fábrica" },
+          { "english": "construction worker", "spanish": "obrero/a de construcción" },
+          { "english": "technician", "spanish": "técnico/a" },
+          { "english": "student", "spanish": "estudiante" },
+          { "english": "unemployed", "spanish": "desempleado/a" }
+        ],
+        "listening": [
+          {
+            "audio": "What do you do?",
+            "options": ["What do you do?", "Where do you work?", "What is your job?", "Do you like your job?"],
+            "answer": "What do you do?"
+          },
+          {
+            "audio": "I am a mechanic",
+            "options": ["I am a mechanic", "I am an electrician", "I am a welder", "I am a carpenter"],
+            "answer": "I am a mechanic"
+          },
+          {
+            "audio": "I work in a factory",
+            "options": ["I work in a factory", "I work in an office", "I work in a garage", "I work in a restaurant"],
+            "answer": "I work in a factory"
+          },
+          {
+            "audio": "What is your profession?",
+            "options": ["What is your profession?", "What is your name?", "What is your age?", "What is your address?"],
+            "answer": "What is your profession?"
+          },
+          {
+            "audio": "I am a student at IPEC",
+            "options": ["I am a student at IPEC", "I am a teacher at IPEC", "I work at IPEC", "I study at INA"],
+            "answer": "I am a student at IPEC"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I am a mechanic", "I am an electrician", "I am a welder"],
+            "suffix": "and I work in a garage.",
+            "answer": "I am a mechanic",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What do you do?", "What is your job?", "Where do you work?"],
+            "suffix": "I am a factory worker.",
+            "answer": "What do you do?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work in", "I study at", "I live near"],
+            "suffix": "a technical school in Cartago.",
+            "answer": "I study at",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My job", "My profession", "My occupation"],
+            "suffix": "is very important for my family.",
+            "answer": "My job",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am unemployed", "I am a student", "I am retired"],
+            "suffix": "but I am looking for work.",
+            "answer": "I am unemployed",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Family Information → Información familiar",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "family", "spanish": "familia" },
+          { "english": "father", "spanish": "padre" },
+          { "english": "mother", "spanish": "madre" },
+          { "english": "parents", "spanish": "padres" },
+          { "english": "son", "spanish": "hijo" },
+          { "english": "daughter", "spanish": "hija" },
+          { "english": "children", "spanish": "hijos" },
+          { "english": "brother", "spanish": "hermano" },
+          { "english": "sister", "spanish": "hermana" },
+          { "english": "siblings", "spanish": "hermanos" },
+          { "english": "husband", "spanish": "esposo" },
+          { "english": "wife", "spanish": "esposa" },
+          { "english": "grandfather", "spanish": "abuelo" },
+          { "english": "grandmother", "spanish": "abuela" },
+          { "english": "grandparents", "spanish": "abuelos" },
+          { "english": "uncle", "spanish": "tío" },
+          { "english": "aunt", "spanish": "tía" },
+          { "english": "cousin", "spanish": "primo/a" },
+          { "english": "only child", "spanish": "hijo único" },
+          { "english": "large family", "spanish": "familia numerosa" }
+        ],
+        "listening": [
+          {
+            "audio": "Do you have children?",
+            "options": ["Do you have children?", "Do you have siblings?", "Do you have parents?", "Do you have a job?"],
+            "answer": "Do you have children?"
+          },
+          {
+            "audio": "I have two sons",
+            "options": ["I have two sons", "I have two daughters", "I have two brothers", "I have two sisters"],
+            "answer": "I have two sons"
+          },
+          {
+            "audio": "My family is large",
+            "options": ["My family is large", "My family is small", "My family is happy", "My family is working"],
+            "answer": "My family is large"
+          },
+          {
+            "audio": "How many siblings do you have?",
+            "options": ["How many siblings do you have?", "How many children do you have?", "How many cousins do you have?", "How many jobs do you have?"],
+            "answer": "How many siblings do you have?"
+          },
+          {
+            "audio": "I am an only child",
+            "options": ["I am an only child", "I have one child", "I want children", "I like children"],
+            "answer": "I am an only child"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I have two children", "I have three children", "I have four children"],
+            "suffix": "and they study at the local school.",
+            "answer": "I have two children",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My father", "My mother", "My brother"],
+            "suffix": "works as a carpenter in San José.",
+            "answer": "My father",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Do you have children?", "Do you have siblings?", "Do you have parents?"],
+            "suffix": "Yes, I have one daughter.",
+            "answer": "Do you have children?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My wife", "My husband", "My partner"],
+            "suffix": "also works at the same factory.",
+            "answer": "My wife",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am an only child", "I have many siblings", "I have one sister"],
+            "suffix": "but I have many cousins.",
+            "answer": "I am an only child",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Personal Preferences and Skills → Preferencias y habilidades personales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "hobby", "spanish": "pasatiempo" },
+          { "english": "interest", "spanish": "interés" },
+          { "english": "skill", "spanish": "habilidad" },
+          { "english": "like", "spanish": "gustar" },
+          { "english": "love", "spanish": "encantar" },
+          { "english": "enjoy", "spanish": "disfrutar" },
+          { "english": "prefer", "spanish": "preferir" },
+          { "english": "hate", "spanish": "odiar" },
+          { "english": "dislike", "spanish": "no gustar" },
+          { "english": "sports", "spanish": "deportes" },
+          { "english": "football", "spanish": "fútbol" },
+          { "english": "music", "spanish": "música" },
+          { "english": "reading", "spanish": "lectura" },
+          { "english": "cooking", "spanish": "cocinar" },
+          { "english": "dancing", "spanish": "bailar" },
+          { "english": "watching TV", "spanish": "ver televisión" },
+          { "english": "learning", "spanish": "aprender" },
+          { "english": "working with hands", "spanish": "trabajar con las manos" },
+          { "english": "fixing things", "spanish": "reparar cosas" },
+          { "english": "helping people", "spanish": "ayudar a la gente" }
+        ],
+        "listening": [
+          {
+            "audio": "What do you like to do?",
+            "options": ["What do you like to do?", "What do you do for work?", "What do you want to do?", "What do you have to do?"],
+            "answer": "What do you like to do?"
+          },
+          {
+            "audio": "I like fixing cars",
+            "options": ["I like fixing cars", "I like driving cars", "I like washing cars", "I like buying cars"],
+            "answer": "I like fixing cars"
+          },
+          {
+            "audio": "My hobby is reading",
+            "options": ["My hobby is reading", "My hobby is writing", "My hobby is working", "My hobby is sleeping"],
+            "answer": "My hobby is reading"
+          },
+          {
+            "audio": "I enjoy learning English",
+            "options": ["I enjoy learning English", "I enjoy teaching English", "I enjoy speaking English", "I enjoy writing English"],
+            "answer": "I enjoy learning English"
+          },
+          {
+            "audio": "I prefer working with my hands",
+            "options": ["I prefer working with my hands", "I prefer working in an office", "I prefer working at night", "I prefer working alone"],
+            "answer": "I prefer working with my hands"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I like", "I love", "I enjoy"],
+            "suffix": "working as a mechanic because I can fix things.",
+            "answer": "I enjoy",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My hobby", "My interest", "My skill"],
+            "suffix": "is playing football on weekends.",
+            "answer": "My hobby",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What do you like to do?", "What is your hobby?", "What do you enjoy?"],
+            "suffix": "I like cooking traditional Costa Rican food.",
+            "answer": "What do you like to do?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I prefer", "I like", "I love"],
+            "suffix": "jobs where I can help people.",
+            "answer": "I prefer",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am good at", "I can", "I know how to"],
+            "suffix": "repairing electrical equipment.",
+            "answer": "I am good at",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

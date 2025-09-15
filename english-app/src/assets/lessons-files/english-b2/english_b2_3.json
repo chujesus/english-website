@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 3,
+  "sections": [
+    {
+      "title": "Meetings and Negotiations → Reuniones y negociaciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "I'd like to call this meeting to order",
+          "spanish": "Me gustaría llamar al orden esta reunión"
+        },
+        {
+          "english": "Let's begin by reviewing the agenda",
+          "spanish": "Comencemos revisando la agenda"
+        },
+        {
+          "english": "I propose we consider alternative solutions",
+          "spanish": "Propongo que consideremos soluciones alternativas"
+        },
+        {
+          "english": "Could we explore the possibility of compromise?",
+          "spanish": "Â¿Podríamos explorar la posibilidad de un compromiso?"
+        },
+        {
+          "english": "I'd like to table this discussion for now",
+          "spanish": "Me gustaría posponer esta discusión por ahora"
+        },
+        {
+          "english": "Let's establish some ground rules for this negotiation",
+          "spanish": "Establezcamos algunas reglas básicas para esta negociación"
+        },
+        {
+          "english": "We need to find a mutually beneficial agreement",
+          "spanish": "Necesitamos encontrar un acuerdo mutuamente beneficioso"
+        },
+        {
+          "english": "I suggest we adjourn and reconvene tomorrow",
+          "spanish": "Sugiero que aplazemos y nos reunamos de nuevo mañana"
+        },
+        {
+          "english": "Can we reach a consensus on this matter?",
+          "spanish": "Â¿Podemos llegar a un consenso sobre este asunto?"
+        },
+        {
+          "english": "Let me summarize the key points we've discussed",
+          "spanish": "Permíteme resumir los puntos clave que hemos discutido"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What's the most important aspect of successful negotiations?",
+          "options": ["Winning at all costs", "Finding mutually beneficial solutions", "Being the loudest speaker"],
+          "answer": 1
+        },
+        {
+          "audio": "How should disagreements be handled in professional meetings?",
+          "options": ["Avoid them completely", "Address them respectfully and constructively", "Let the boss decide everything"],
+          "answer": 1
+        },
+        {
+          "audio": "What makes a meeting productive?",
+          "options": ["Clear agenda, active participation, and defined outcomes", "Long duration", "Many participants"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Effective meetings require",
+          "suffix": "preparation and clear objectives.",
+          "answer": "thorough",
+          "selected": false,
+          "feedback": "Thorough preparation ensures meetings are productive and achieve their intended goals."
+        },
+        {
+          "prefix": "During negotiations, it's important to",
+          "suffix": "carefully and understand all perspectives.",
+          "answer": "listen",
+          "selected": false,
+          "feedback": "Active listening helps build understanding and leads to better negotiation outcomes."
+        },
+        {
+          "prefix": "All parties should",
+          "suffix": "the final agreement and next steps.",
+          "answer": "confirm",
+          "selected": false,
+          "feedback": "Confirming agreements ensures everyone understands their commitments and responsibilities."
+        }
+      ]
+    },
+    {
+      "title": "Conflict Resolution and Diplomacy → Resolución de conflictos y diplomacia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "I understand your concerns, and I'd like to address them",
+          "spanish": "Entiendo tus preocupaciones y me gustaría abordarlas"
+        },
+        {
+          "english": "Perhaps we could find a middle ground on this issue",
+          "spanish": "Tal vez podríamos encontrar un término medio en este tema"
+        },
+        {
+          "english": "Let's focus on our common objectives",
+          "spanish": "Enfoquémonos en nuestros objetivos comunes"
+        },
+        {
+          "english": "I appreciate your perspective, however, I see it differently",
+          "spanish": "Aprecio tu perspectiva, sin embargo, lo veo de manera diferente"
+        },
+        {
+          "english": "Could we step back and look at the bigger picture?",
+          "spanish": "Â¿Podríamos dar un paso atrás y ver el panorama general?"
+        },
+        {
+          "english": "I'd like to propose a compromise solution",
+          "spanish": "Me gustaría proponer una solución de compromiso"
+        },
+        {
+          "english": "Let's try to separate the people from the problem",
+          "spanish": "Tratemos de separar a las personas del problema"
+        },
+        {
+          "english": "What would it take to make this work for everyone?",
+          "spanish": "Â¿Qué se necesitaría para que esto funcione para todos?"
+        },
+        {
+          "english": "I think we're making progress toward a resolution",
+          "spanish": "Creo que estamos progresando hacia una resolución"
+        },
+        {
+          "english": "Can we agree to disagree on this particular point?",
+          "spanish": "Â¿Podemos acordar estar en desacuerdo en este punto particular?"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What's the first step in resolving workplace conflicts?",
+          "options": ["Assign blame", "Understand all perspectives involved", "Escalate to management"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you respond when someone disagrees with your technical approach?",
+          "options": ["Ignore their input", "Listen and discuss the merits of both approaches", "Insist you're right"],
+          "answer": 1
+        },
+        {
+          "audio": "What makes diplomatic communication effective?",
+          "options": ["Being indirect", "Balancing honesty with respect", "Avoiding difficult topics"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Successful conflict resolution requires",
+          "suffix": "and a willingness to compromise.",
+          "answer": "patience",
+          "selected": false,
+          "feedback": "Patience allows all parties to express their views and work toward mutually acceptable solutions."
+        },
+        {
+          "prefix": "When disagreements arise, focus on",
+          "suffix": "rather than personal positions.",
+          "answer": "interests",
+          "selected": false,
+          "feedback": "Focusing on underlying interests rather than fixed positions opens up more solution possibilities."
+        },
+        {
+          "prefix": "Diplomatic language helps",
+          "suffix": "tension while addressing important issues.",
+          "answer": "reduce",
+          "selected": false,
+          "feedback": "Diplomatic communication reduces tension and creates a more collaborative problem-solving environment."
+        }
+      ]
+    },
+    {
+      "title": "Building Consensus and Agreement → Construyendo consenso y acuerdo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Let's identify the areas where we already agree",
+          "spanish": "Identifiquemos las áreas donde ya estamos de acuerdo"
+        },
+        {
+          "english": "What are the non-negotiable requirements for each party?",
+          "spanish": "Â¿Cuáles son los requisitos no negociables para cada parte?"
+        },
+        {
+          "english": "I think we can build on this foundation",
+          "spanish": "Creo que podemos construir sobre esta base"
+        },
+        {
+          "english": "Are there any concerns that haven't been addressed?",
+          "spanish": "Â¿Hay alguna preocupación que no se haya abordado?"
+        },
+        {
+          "english": "Let's test this proposal against our criteria",
+          "spanish": "Probemos esta propuesta contra nuestros criterios"
+        },
+        {
+          "english": "I believe we're close to reaching an agreement",
+          "spanish": "Creo que estamos cerca de llegar a un acuerdo"
+        },
+        {
+          "english": "Could everyone confirm their understanding of the terms?",
+          "spanish": "Â¿Podrían todos confirmar su entendimiento de los términos?"
+        },
+        {
+          "english": "What implementation challenges do you foresee?",
+          "spanish": "Â¿Qué desafíos de implementación prevén?"
+        },
+        {
+          "english": "How will we measure the success of this agreement?",
+          "spanish": "Â¿Cómo mediremos el éxito de este acuerdo?"
+        },
+        {
+          "english": "Let's establish a timeline for the next steps",
+          "spanish": "Establezcamos un cronograma para los próximos pasos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What's essential for building consensus in team meetings?",
+          "options": ["Majority vote", "Everyone having a voice and finding common ground", "Following the leader"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you handle persistent disagreements?",
+          "options": ["Force a decision", "Explore underlying concerns and seek creative solutions", "Postpone indefinitely"],
+          "answer": 1
+        },
+        {
+          "audio": "When is consensus-building most important?",
+          "options": ["For routine decisions", "For complex issues affecting multiple stakeholders", "Never"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Building consensus requires",
+          "suffix": "from all stakeholders in the process.",
+          "answer": "participation",
+          "selected": false,
+          "feedback": "Active participation from all stakeholders ensures that diverse perspectives are considered."
+        },
+        {
+          "prefix": "Successful agreements must be",
+          "suffix": "by all parties involved.",
+          "answer": "supported",
+          "selected": false,
+          "feedback": "Support from all parties is essential for successful implementation of agreements."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "helps ensure agreements remain on track.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "Ongoing communication maintains alignment and addresses issues before they become problems."
+        }
+      ]
+    },
+    {
+      "title": "Stakeholder Management → Gestión de partes interesadas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Key stakeholder identification and analysis",
+          "spanish": "Identificación y análisis de partes interesadas clave"
+        },
+        {
+          "english": "Influence and interest mapping",
+          "spanish": "Mapeo de influencia e interés"
+        },
+        {
+          "english": "Communication strategy development",
+          "spanish": "Desarrollo de estrategia de comunicación"
+        },
+        {
+          "english": "Expectation management and alignment",
+          "spanish": "Gestión y alineación de expectativas"
+        },
+        {
+          "english": "Regular feedback and consultation processes",
+          "spanish": "Procesos regulares de retroalimentación y consulta"
+        },
+        {
+          "english": "Change management and adaptation",
+          "spanish": "Gestión de cambios y adaptación"
+        },
+        {
+          "english": "Conflict prevention and early intervention",
+          "spanish": "Prevención de conflictos e intervención temprana"
+        },
+        {
+          "english": "Performance monitoring and reporting",
+          "spanish": "Monitoreo de desempeño y reportes"
+        },
+        {
+          "english": "Relationship building and maintenance",
+          "spanish": "Construcción y mantenimiento de relaciones"
+        },
+        {
+          "english": "Strategic partnership development",
+          "spanish": "Desarrollo de alianzas estratégicas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is stakeholder analysis important for project success?",
+          "options": ["It's not important", "It helps identify potential support and opposition", "It delays projects"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you handle competing stakeholder interests?",
+          "options": ["Choose sides", "Find win-win solutions through dialogue", "Ignore the conflicts"],
+          "answer": 1
+        },
+        {
+          "audio": "What's the key to maintaining stakeholder relationships?",
+          "options": ["Regular communication and delivering on commitments", "Avoiding contact", "Making promises you can't keep"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Cross-Cultural Communication → Comunicación intercultural",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Cultural awareness and sensitivity",
+          "spanish": "Conciencia y sensibilidad cultural"
+        },
+        {
+          "english": "Communication style adaptation",
+          "spanish": "Adaptación del estilo de comunicación"
+        },
+        {
+          "english": "Time orientation and scheduling flexibility",
+          "spanish": "Orientación temporal y flexibilidad de horarios"
+        },
+        {
+          "english": "Hierarchy and decision-making processes",
+          "spanish": "Jerarquía y procesos de toma de decisiones"
+        },
+        {
+          "english": "Non-verbal communication differences",
+          "spanish": "Diferencias en comunicación no verbal"
+        },
+        {
+          "english": "Language barriers and interpretation",
+          "spanish": "Barreras idiomáticas e interpretación"
+        },
+        {
+          "english": "Conflict resolution approaches",
+          "spanish": "Enfoques de resolución de conflictos"
+        },
+        {
+          "english": "Trust building across cultures",
+          "spanish": "Construcción de confianza entre culturas"
+        },
+        {
+          "english": "Virtual collaboration challenges",
+          "spanish": "Desafíos de colaboración virtual"
+        },
+        {
+          "english": "Inclusive meeting practices",
+          "spanish": "Prácticas de reuniones inclusivas"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Cross-cultural communication requires",
+          "suffix": "and respect for different perspectives.",
+          "answer": "patience",
+          "selected": false,
+          "feedback": "Patience allows for understanding and adaptation to different cultural communication styles."
+        },
+        {
+          "prefix": "When working with international teams,",
+          "suffix": "cultural differences in communication styles.",
+          "answer": "consider",
+          "selected": false,
+          "feedback": "Considering cultural differences helps avoid misunderstandings and improves collaboration."
+        },
+        {
+          "prefix": "Building trust across cultures takes",
+          "suffix": "and consistent respectful interaction.",
+          "answer": "time",
+          "selected": false,
+          "feedback": "Cultural trust develops gradually through consistent, respectful, and reliable interactions."
+        }
+      ]
+    }
+  ]
+}
+]
+

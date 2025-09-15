@@ -1,0 +1,557 @@
+[
+  {
+    "title": "Advanced Workplace Communication",
+    "objective": "Learn to express ideas clearly in formal and informal workplace settings using appropriate register.",
+    "examples": [
+      "I’d like to clarify the project requirements.",
+      "Let me walk you through the process."
+    ],
+    "keywords": [
+      "communication",
+      "register",
+      "clarify",
+      "explain",
+      "tone"
+    ],
+    "learningOutcome": "Learn to express ideas clearly in formal and informal workplace settings using appropriate register.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Professional Emails and Reports",
+    "objective": "Write detailed emails and technical reports using formal structures and technical language.",
+    "examples": [
+      "Attached you will find the updated schedule.",
+      "The report outlines the system performance."
+    ],
+    "keywords": [
+      "email",
+      "report",
+      "subject",
+      "attachment",
+      "overview"
+    ],
+    "learningOutcome": "Write detailed emails and technical reports using formal structures and technical language.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Technical Presentations",
+    "objective": "Prepare and deliver structured presentations on technical topics using appropriate vocabulary and transitions.",
+    "examples": [
+      "In this slide, we can see the workflow stages.",
+      "To summarize, the system saves 30% energy."
+    ],
+    "keywords": [
+      "presentation",
+      "slides",
+      "conclusion",
+      "introduction",
+      "overview"
+    ],
+    "learningOutcome": "Prepare and deliver structured presentations on technical topics using appropriate vocabulary and transitions.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Meetings and Negotiations",
+    "objective": "Participate effectively in meetings and negotiate roles, tasks, and solutions.",
+    "examples": [
+      "I suggest we assign two technicians to this task.",
+      "Can we reach an agreement on the deadline?"
+    ],
+    "keywords": [
+      "meeting",
+      "suggest",
+      "negotiate",
+      "agreement",
+      "deadline"
+    ],
+    "learningOutcome": "Participate effectively in meetings and negotiate roles, tasks, and solutions.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Project Planning and Management",
+    "objective": "Discuss project phases, milestones, responsibilities, and risks using future and conditional forms.",
+    "examples": [
+      "If we don’t deliver on time, we risk a penalty.",
+      "The next milestone is the system integration."
+    ],
+    "keywords": [
+      "project",
+      "milestone",
+      "planning",
+      "risk",
+      "responsibility"
+    ],
+    "learningOutcome": "Discuss project phases, milestones, responsibilities, and risks using future and conditional forms.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Troubleshooting and Diagnostics",
+    "objective": "Describe complex problems, diagnostic procedures, and possible solutions.",
+    "examples": [
+      "We suspect a failure in the pressure sensor.",
+      "Run a diagnostic before replacing the part."
+    ],
+    "keywords": [
+      "troubleshoot",
+      "diagnostic",
+      "sensor",
+      "failure",
+      "solution"
+    ],
+    "learningOutcome": "Describe complex problems, diagnostic procedures, and possible solutions.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Workplace Procedures and Protocols",
+    "objective": "Explain company policies, standard operating procedures, and workplace protocols.",
+    "examples": [
+      "According to the protocol, all incidents must be reported immediately.",
+      "This procedure minimizes contamination risk."
+    ],
+    "keywords": [
+      "protocol",
+      "procedure",
+      "policy",
+      "regulation",
+      "incident"
+    ],
+    "learningOutcome": "Explain company policies, standard operating procedures, and workplace protocols.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Specialized Vocabulary in Your Field",
+    "objective": "Use advanced vocabulary specific to your technical specialty (e.g., electronics, mechanics, agronomy).",
+    "examples": [
+      "The PLC system controls the conveyor belt.",
+      "We apply phytosanitary treatments monthly."
+    ],
+    "keywords": [
+      "terminology",
+      "field-specific",
+      "industry",
+      "technical term"
+    ],
+    "learningOutcome": "Use advanced vocabulary specific to your technical specialty (e.g., electronics, mechanics, agronomy).",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Data Analysis and Interpretation",
+    "objective": "Understand and describe charts, graphs, trends, and technical data in reports and discussions.",
+    "examples": [
+      "As shown in the chart, the voltage drops after 10 seconds.",
+      "This trend indicates increased efficiency."
+    ],
+    "keywords": [
+      "chart",
+      "graph",
+      "data",
+      "trend",
+      "analyze"
+    ],
+    "learningOutcome": "Understand and describe charts, graphs, trends, and technical data in reports and discussions.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Environmental Responsibility and Sustainability",
+    "objective": "Discuss sustainable practices and environmental impact in the technical sector.",
+    "examples": [
+      "We implemented a solar energy system to reduce emissions.",
+      "Sustainable design reduces energy consumption."
+    ],
+    "keywords": [
+      "sustainability",
+      "environment",
+      "green",
+      "carbon footprint"
+    ],
+    "learningOutcome": "Discuss sustainable practices and environmental impact in the technical sector.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Job Applications and Resumes",
+    "objective": "Write advanced resumes and cover letters tailored to technical job opportunities.",
+    "examples": [
+      "My experience includes automation system installation.",
+      "Enclosed is my resume for the maintenance role."
+    ],
+    "keywords": [
+      "resume",
+      "cover letter",
+      "experience",
+      "job",
+      "application"
+    ],
+    "learningOutcome": "Write advanced resumes and cover letters tailored to technical job opportunities.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Advanced Interview Skills",
+    "objective": "Respond confidently to complex interview questions and describe qualifications fluently.",
+    "examples": [
+      "I developed strong troubleshooting skills during my internship.",
+      "One of my strengths is attention to detail."
+    ],
+    "keywords": [
+      "interview",
+      "skills",
+      "strength",
+      "weakness",
+      "qualifications"
+    ],
+    "learningOutcome": "Respond confidently to complex interview questions and describe qualifications fluently.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Conflict Resolution and Ethics",
+    "objective": "Learn to express opinions, manage disagreements, and refer to ethical considerations.",
+    "examples": [
+      "I understand your point, but I believe we should follow protocol.",
+      "Let’s find a compromise solution."
+    ],
+    "keywords": [
+      "ethics",
+      "conflict",
+      "resolve",
+      "respect",
+      "listen"
+    ],
+    "learningOutcome": "Learn to express opinions, manage disagreements, and refer to ethical considerations.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Describing Past Projects",
+    "objective": "Talk about previous tasks and achievements using past perfect and narrative tenses.",
+    "examples": [
+      "We had already tested the circuit before replacing the component.",
+      "The system malfunctioned because the settings were incorrect."
+    ],
+    "keywords": [
+      "past project",
+      "experience",
+      "achievement",
+      "narrate",
+      "timeline"
+    ],
+    "learningOutcome": "Talk about previous tasks and achievements using past perfect and narrative tenses.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Using Conditionals in Technical Contexts",
+    "objective": "Apply first, second, and third conditionals to explain technical hypotheses or consequences.",
+    "examples": [
+      "If the valve had been closed, there wouldn’t have been a leak.",
+      "If we increase the voltage, the motor runs faster."
+    ],
+    "keywords": [
+      "conditional",
+      "if",
+      "consequence",
+      "hypothesis"
+    ],
+    "learningOutcome": "Apply first, second, and third conditionals to explain technical hypotheses or consequences.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Expressing Probability and Uncertainty",
+    "objective": "Use modal verbs and probability structures to describe likely outcomes and predictions.",
+    "examples": [
+      "The temperature might rise above the safety threshold.",
+      "It’s likely that the pressure will stabilize."
+    ],
+    "keywords": [
+      "may",
+      "might",
+      "probably",
+      "likely",
+      "uncertain"
+    ],
+    "learningOutcome": "Use modal verbs and probability structures to describe likely outcomes and predictions.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Explaining Complex Processes",
+    "objective": "Describe step-by-step procedures and technical systems using passive voice and linking phrases.",
+    "examples": [
+      "First, the machine is assembled.",
+      "Then, the product is tested for defects."
+    ],
+    "keywords": [
+      "passive",
+      "steps",
+      "process",
+      "sequence"
+    ],
+    "learningOutcome": "Describe step-by-step procedures and technical systems using passive voice and linking phrases.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Professional Networking and Collaboration",
+    "objective": "Engage in professional conversations and introduce yourself at technical events.",
+    "examples": [
+      "I’m working on automation projects at TEC.",
+      "Would you like to connect on LinkedIn?"
+    ],
+    "keywords": [
+      "networking",
+      "introduce",
+      "connect",
+      "event",
+      "collaborate"
+    ],
+    "learningOutcome": "Engage in professional conversations and introduce yourself at technical events.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Reading and Responding to Technical Specifications",
+    "objective": "Interpret and respond to technical specifications and requirements in professional documents.",
+    "examples": [
+      "The system must support a minimum of 120 volts.",
+      "Ensure compliance with ISO standards."
+    ],
+    "keywords": [
+      "specification",
+      "requirement",
+      "standard",
+      "ISO"
+    ],
+    "learningOutcome": "Interpret and respond to technical specifications and requirements in professional documents.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  },
+  {
+    "title": "Capstone Presentation and Evaluation",
+    "objective": "Prepare and present a final integrated task that combines speaking, writing, reading, and listening.",
+    "examples": [
+      "Read a work order, complete a checklist, and write a summary.",
+      "Present your solution to a technical problem in pairs."
+    ],
+    "keywords": [
+      "presentation",
+      "integration",
+      "evaluation",
+      "capstone",
+      "project"
+    ],
+    "learningOutcome": "Prepare and present a final integrated task that combines speaking, writing, reading, and listening.",
+    "cefrLevel": "B2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "professional",
+      "communication"
+    ]
+  }
+]

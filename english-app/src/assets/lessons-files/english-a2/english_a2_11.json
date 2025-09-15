@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 11,
+  "sections": [
+    {
+      "title": "Basic Electronics and Circuits → Electrónica básica y circuitos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Electricity flows through conductors",
+          "spanish": "La electricidad fluye a través de conductores"
+        },
+        {
+          "english": "Resistors control current flow",
+          "spanish": "Las resistencias controlan el flujo de corriente"
+        },
+        {
+          "english": "Capacitors store electrical energy",
+          "spanish": "Los capacitores almacenan energía eléctrica"
+        },
+        {
+          "english": "Switches open and close circuits",
+          "spanish": "Los interruptores abren y cierran circuitos"
+        },
+        {
+          "english": "LEDs indicate power status",
+          "spanish": "Los LEDs indican estado de energía"
+        },
+        {
+          "english": "Batteries provide DC power",
+          "spanish": "Las baterías proporcionan energía DC"
+        },
+        {
+          "english": "Transformers change voltage levels",
+          "spanish": "Los transformadores cambian niveles de voltaje"
+        },
+        {
+          "english": "Fuses protect circuits from overload",
+          "spanish": "Los fusibles protegen circuitos de sobrecarga"
+        },
+        {
+          "english": "Multimeters measure electrical values",
+          "spanish": "Los multímetros miden valores eléctricos"
+        },
+        {
+          "english": "Ground connections ensure safety",
+          "spanish": "Las conexiones a tierra aseguran seguridad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main function of a resistor?",
+          "options": ["To store energy", "To control current flow", "To provide power"],
+          "answer": 1
+        },
+        {
+          "audio": "Why are fuses important in electrical circuits?",
+          "options": ["They protect against overload", "They increase current", "They store electricity"],
+          "answer": 0
+        },
+        {
+          "audio": "What does a multimeter do?",
+          "options": ["Generates electricity", "Measures electrical values", "Stores power"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always check that",
+          "suffix": "are properly connected before powering on.",
+          "answer": "circuits",
+          "selected": false,
+          "feedback": "Proper circuit connections prevent short circuits and equipment damage."
+        },
+        {
+          "prefix": "Use a",
+          "suffix": "to measure voltage and current safely.",
+          "answer": "multimeter",
+          "selected": false,
+          "feedback": "Multimeters are essential tools for troubleshooting electrical problems."
+        },
+        {
+          "prefix": "Install",
+          "suffix": "to protect circuits from excessive current.",
+          "answer": "fuses",
+          "selected": false,
+          "feedback": "Fuses prevent damage by breaking the circuit when current exceeds safe levels."
+        }
+      ]
+    },
+    {
+      "title": "Computer Hardware and Components → Hardware de computadora y componentes",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "The motherboard connects all components",
+          "spanish": "La tarjeta madre conecta todos los componentes"
+        },
+        {
+          "english": "RAM stores temporary data",
+          "spanish": "La RAM almacena datos temporales"
+        },
+        {
+          "english": "The hard drive saves permanent files",
+          "spanish": "El disco duro guarda archivos permanentes"
+        },
+        {
+          "english": "The CPU processes instructions",
+          "spanish": "El CPU procesa instrucciones"
+        },
+        {
+          "english": "Graphics cards handle video output",
+          "spanish": "Las tarjetas gráficas manejan salida de video"
+        },
+        {
+          "english": "Power supplies convert AC to DC",
+          "spanish": "Las fuentes de poder convierten AC a DC"
+        },
+        {
+          "english": "Cooling fans prevent overheating",
+          "spanish": "Los ventiladores de enfriamiento previenen sobrecalentamiento"
+        },
+        {
+          "english": "USB ports connect external devices",
+          "spanish": "Los puertos USB conectan dispositivos externos"
+        },
+        {
+          "english": "Network cards enable internet connection",
+          "spanish": "Las tarjetas de red permiten conexión a internet"
+        },
+        {
+          "english": "BIOS controls basic functions",
+          "spanish": "El BIOS controla funciones básicas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main function of RAM in a computer?",
+          "options": ["Permanent storage", "Temporary data storage", "Video processing"],
+          "answer": 1
+        },
+        {
+          "audio": "Why do computers need cooling fans?",
+          "options": ["To prevent overheating", "To make noise", "To save power"],
+          "answer": 0
+        },
+        {
+          "audio": "What does a power supply do?",
+          "options": ["Stores data", "Converts AC to DC power", "Processes instructions"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The",
+          "suffix": "is the main circuit board that connects all components.",
+          "answer": "motherboard",
+          "selected": false,
+          "feedback": "The motherboard provides connections and communication paths for all computer components."
+        },
+        {
+          "prefix": "Install enough",
+          "suffix": "to handle all your programs and files.",
+          "answer": "RAM",
+          "selected": false,
+          "feedback": "Adequate RAM ensures smooth operation when running multiple programs."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "prevents dust buildup and overheating.",
+          "answer": "cleaning",
+          "selected": false,
+          "feedback": "Clean components operate more efficiently and last longer."
+        }
+      ]
+    },
+    {
+      "title": "Network Setup and Configuration → Configuración y setup de redes",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Routers connect different networks",
+          "spanish": "Los routers conectan diferentes redes"
+        },
+        {
+          "english": "Switches connect multiple devices",
+          "spanish": "Los switches conectan múltiples dispositivos"
+        },
+        {
+          "english": "IP addresses identify network devices",
+          "spanish": "Las direcciones IP identifican dispositivos de red"
+        },
+        {
+          "english": "Ethernet cables carry network signals",
+          "spanish": "Los cables Ethernet llevan señales de red"
+        },
+        {
+          "english": "WiFi provides wireless connectivity",
+          "spanish": "El WiFi proporciona conectividad inalámbrica"
+        },
+        {
+          "english": "Firewalls protect against threats",
+          "spanish": "Los firewalls protegen contra amenazas"
+        },
+        {
+          "english": "DHCP assigns IP addresses automatically",
+          "spanish": "El DHCP asigna direcciones IP automáticamente"
+        },
+        {
+          "english": "Passwords secure network access",
+          "spanish": "Las contraseñas aseguran acceso a la red"
+        },
+        {
+          "english": "Bandwidth affects connection speed",
+          "spanish": "El ancho de banda afecta velocidad de conexión"
+        },
+        {
+          "english": "Network troubleshooting identifies problems",
+          "spanish": "La resolución de problemas de red identifica problemas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the difference between a router and a switch?",
+          "options": ["No difference", "Routers connect networks, switches connect devices", "They do opposite functions"],
+          "answer": 1
+        },
+        {
+          "audio": "Why do devices need IP addresses?",
+          "options": ["For identification on the network", "To store data", "To process information"],
+          "answer": 0
+        },
+        {
+          "audio": "What does DHCP do?",
+          "options": ["Automatically assigns IP addresses", "Blocks internet access", "Stores files"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Configure",
+          "suffix": "to protect your network from unauthorized access.",
+          "answer": "firewalls",
+          "selected": false,
+          "feedback": "Firewalls are essential for network security and threat prevention."
+        },
+        {
+          "prefix": "Use strong",
+          "suffix": "to secure wireless network connections.",
+          "answer": "passwords",
+          "selected": false,
+          "feedback": "Strong passwords prevent unauthorized access to network resources."
+        },
+        {
+          "prefix": "Check network",
+          "suffix": "when troubleshooting connection problems.",
+          "answer": "cables",
+          "selected": false,
+          "feedback": "Physical cable connections are often the source of network problems."
+        }
+      ]
+    },
+    {
+      "title": "Software Installation and Maintenance → Instalación y mantenimiento de software",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Install software from trusted sources",
+          "spanish": "Instala software de fuentes confiables"
+        },
+        {
+          "english": "Read license agreements carefully",
+          "spanish": "Lee acuerdos de licencia cuidadosamente"
+        },
+        {
+          "english": "Update programs regularly for security",
+          "spanish": "Actualiza programas regularmente por seguridad"
+        },
+        {
+          "english": "Create backups before major changes",
+          "spanish": "Crea respaldos antes de cambios importantes"
+        },
+        {
+          "english": "Uninstall unused programs to save space",
+          "spanish": "Desinstala programas no usados para ahorrar espacio"
+        },
+        {
+          "english": "Scan for malware weekly",
+          "spanish": "Escanea por malware semanalmente"
+        },
+        {
+          "english": "Restart computers after updates",
+          "spanish": "Reinicia computadoras después de actualizaciones"
+        },
+        {
+          "english": "Monitor system performance regularly",
+          "spanish": "Monitorea rendimiento del sistema regularmente"
+        },
+        {
+          "english": "Document software configurations",
+          "spanish": "Documenta configuraciones de software"
+        },
+        {
+          "english": "Train users on new software features",
+          "spanish": "Entrena usuarios en nuevas características de software"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is it important to update software regularly?",
+          "options": ["For security and bug fixes", "To use more memory", "To slow down the computer"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you create backups?",
+          "options": ["Never", "Before making major changes", "Only when problems occur"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you do with unused programs?",
+          "options": ["Keep them forever", "Uninstall them to save space", "Hide them"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Digital Security and Privacy → Seguridad digital y privacidad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Use strong, unique passwords",
+          "spanish": "Usa contraseñas fuertes y únicas"
+        },
+        {
+          "english": "Enable two-factor authentication",
+          "spanish": "Habilita autenticación de dos factores"
+        },
+        {
+          "english": "Keep personal information private",
+          "spanish": "Mantén información personal privada"
+        },
+        {
+          "english": "Avoid clicking suspicious links",
+          "spanish": "Evita hacer clic en enlaces sospechosos"
+        },
+        {
+          "english": "Update antivirus software regularly",
+          "spanish": "Actualiza software antivirus regularmente"
+        },
+        {
+          "english": "Use secure networks for sensitive data",
+          "spanish": "Usa redes seguras para datos sensibles"
+        },
+        {
+          "english": "Encrypt important files",
+          "spanish": "Encripta archivos importantes"
+        },
+        {
+          "english": "Log out of accounts when finished",
+          "spanish": "Cierra sesión de cuentas cuando termines"
+        },
+        {
+          "english": "Report security incidents immediately",
+          "spanish": "Reporta incidentes de seguridad inmediatamente"
+        },
+        {
+          "english": "Educate others about digital safety",
+          "spanish": "Educa a otros sobre seguridad digital"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always use",
+          "suffix": "passwords that include numbers, letters, and symbols.",
+          "answer": "strong",
+          "selected": false,
+          "feedback": "Strong passwords are the first line of defense against unauthorized access."
+        },
+        {
+          "prefix": "Enable",
+          "suffix": "authentication for additional account security.",
+          "answer": "two-factor",
+          "selected": false,
+          "feedback": "Two-factor authentication adds an extra layer of security beyond passwords."
+        },
+        {
+          "prefix": "Never share",
+          "suffix": "information with unknown or untrusted sources.",
+          "answer": "personal",
+          "selected": false,
+          "feedback": "Protecting personal information prevents identity theft and fraud."
+        }
+      ]
+    }
+  ]
+}
+]
+

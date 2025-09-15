@@ -1,0 +1,449 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 3,
+    "sections": [
+      {
+        "title": "Numbers 0-20 → Números del 0 al 20",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "zero", "spanish": "cero" },
+          { "english": "one", "spanish": "uno" },
+          { "english": "two", "spanish": "dos" },
+          { "english": "three", "spanish": "tres" },
+          { "english": "four", "spanish": "cuatro" },
+          { "english": "five", "spanish": "cinco" },
+          { "english": "six", "spanish": "seis" },
+          { "english": "seven", "spanish": "siete" },
+          { "english": "eight", "spanish": "ocho" },
+          { "english": "nine", "spanish": "nueve" },
+          { "english": "ten", "spanish": "diez" },
+          { "english": "eleven", "spanish": "once" },
+          { "english": "twelve", "spanish": "doce" },
+          { "english": "thirteen", "spanish": "trece" },
+          { "english": "fourteen", "spanish": "catorce" },
+          { "english": "fifteen", "spanish": "quince" },
+          { "english": "sixteen", "spanish": "dieciséis" },
+          { "english": "seventeen", "spanish": "diecisiete" },
+          { "english": "eighteen", "spanish": "dieciocho" },
+          { "english": "nineteen", "spanish": "diecinueve" },
+          { "english": "twenty", "spanish": "veinte" }
+        ],
+        "listening": [
+          {
+            "audio": "five",
+            "options": ["five", "four", "six", "nine"],
+            "answer": "five"
+          },
+          {
+            "audio": "thirteen",
+            "options": ["thirteen", "fourteen", "fifteen", "thirty"],
+            "answer": "thirteen"
+          },
+          {
+            "audio": "eighteen",
+            "options": ["eighteen", "eight", "eighty", "nineteen"],
+            "answer": "eighteen"
+          },
+          {
+            "audio": "twenty",
+            "options": ["twenty", "twelve", "two", "ten"],
+            "answer": "twenty"
+          },
+          {
+            "audio": "zero",
+            "options": ["zero", "seven", "two", "ten"],
+            "answer": "zero"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I have", "There are", "We need"],
+            "suffix": "five tools in my toolbox.",
+            "answer": "I have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["ten", "eleven", "twelve"],
+            "suffix": "students are in the workshop today.",
+            "answer": "twelve",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The machine has", "I counted", "There are"],
+            "suffix": "fifteen screws missing.",
+            "answer": "The machine has",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["zero", "one", "two"],
+            "suffix": "mistakes on this form.",
+            "answer": "zero",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We work", "The shift is", "Class starts at"],
+            "suffix": "eight hours every day.",
+            "answer": "We work",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Numbers 21-100 → Números del 21 al 100",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "twenty-one", "spanish": "veintiuno" },
+          { "english": "twenty-five", "spanish": "veinticinco" },
+          { "english": "thirty", "spanish": "treinta" },
+          { "english": "thirty-five", "spanish": "treinta y cinco" },
+          { "english": "forty", "spanish": "cuarenta" },
+          { "english": "forty-eight", "spanish": "cuarenta y ocho" },
+          { "english": "fifty", "spanish": "cincuenta" },
+          { "english": "sixty", "spanish": "sesenta" },
+          { "english": "seventy", "spanish": "setenta" },
+          { "english": "eighty", "spanish": "ochenta" },
+          { "english": "ninety", "spanish": "noventa" },
+          { "english": "one hundred", "spanish": "cien" },
+          { "english": "How many?", "spanish": "¿Cuántos?" },
+          { "english": "Count from", "spanish": "Contar desde" },
+          { "english": "Count to", "spanish": "Contar hasta" }
+        ],
+        "listening": [
+          {
+            "audio": "thirty-five",
+            "options": ["thirty-five", "twenty-five", "forty-five", "fifty-five"],
+            "answer": "thirty-five"
+          },
+          {
+            "audio": "sixty",
+            "options": ["sixty", "sixteen", "seventy", "six"],
+            "answer": "sixty"
+          },
+          {
+            "audio": "eighty-seven",
+            "options": ["eighty-seven", "seventy-eight", "ninety-seven", "eighty-eight"],
+            "answer": "eighty-seven"
+          },
+          {
+            "audio": "How many students?",
+            "options": ["How many students?", "How old are you?", "What time is it?", "How much is it?"],
+            "answer": "How many students?"
+          },
+          {
+            "audio": "one hundred",
+            "options": ["one hundred", "ten", "thousand", "ninety"],
+            "answer": "one hundred"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["twenty-five", "thirty-five", "forty-five"],
+            "suffix": "workers are in this factory.",
+            "answer": "forty-five",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How many", "Count the", "There are"],
+            "suffix": "parts do we need for this repair?",
+            "answer": "How many",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The maximum speed is", "The temperature is", "The weight is"],
+            "suffix": "ninety kilometers per hour.",
+            "answer": "The maximum speed is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am", "My father is", "The supervisor is"],
+            "suffix": "fifty-two years old.",
+            "answer": "My father is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Count from one", "Start at zero", "Begin with twenty"],
+            "suffix": "to one hundred.",
+            "answer": "Count from one",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Phone Numbers → Números de teléfono",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "phone number", "spanish": "número de teléfono" },
+          { "english": "telephone", "spanish": "teléfono" },
+          { "english": "cell phone", "spanish": "teléfono celular" },
+          { "english": "mobile", "spanish": "móvil" },
+          { "english": "home phone", "spanish": "teléfono de casa" },
+          { "english": "work phone", "spanish": "teléfono del trabajo" },
+          { "english": "area code", "spanish": "código de área" },
+          { "english": "country code", "spanish": "código de país" },
+          { "english": "What's your number?", "spanish": "¿Cuál es tu número?" },
+          { "english": "Can you repeat?", "spanish": "¿Puedes repetir?" },
+          { "english": "Say it slowly", "spanish": "Dilo despacio" },
+          { "english": "My number is", "spanish": "Mi número es" },
+          { "english": "Call me at", "spanish": "Llámame al" },
+          { "english": "emergency", "spanish": "emergencia" },
+          { "english": "extension", "spanish": "extensión" }
+        ],
+        "listening": [
+          {
+            "audio": "What's your phone number?",
+            "options": ["What's your phone number?", "What's your address?", "What's your name?", "What's your job?"],
+            "answer": "What's your phone number?"
+          },
+          {
+            "audio": "eight-eight-three-four-five-six-seven-eight",
+            "options": ["8834-5678", "8843-5687", "8384-5768", "8348-5876"],
+            "answer": "8834-5678"
+          },
+          {
+            "audio": "Can you repeat your number?",
+            "options": ["Can you repeat your number?", "Can you spell your number?", "Can you write your number?", "Can you say your number?"],
+            "answer": "Can you repeat your number?"
+          },
+          {
+            "audio": "My cell phone is",
+            "options": ["My cell phone is", "My home phone is", "My work phone is", "My friend's phone is"],
+            "answer": "My cell phone is"
+          },
+          {
+            "audio": "Call me in an emergency",
+            "options": ["Call me in an emergency", "Call me at work", "Call me at home", "Call me tomorrow"],
+            "answer": "Call me in an emergency"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My phone number", "My cell phone", "My home number"],
+            "suffix": "is 2234-5678.",
+            "answer": "My phone number",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What's your number?", "Can I have your number?", "Give me your number."],
+            "suffix": "It's 8856-4321.",
+            "answer": "What's your number?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can you repeat", "Say again", "One more time"],
+            "suffix": "your phone number, please?",
+            "answer": "Can you repeat",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Call me at", "My work number is", "Contact me at"],
+            "suffix": "extension 245.",
+            "answer": "Call me at",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["In case of emergency", "For urgent matters", "If you need help"],
+            "suffix": "call 911.",
+            "answer": "In case of emergency",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Measurements and Quantities → Medidas y cantidades",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "meter", "spanish": "metro" },
+          { "english": "centimeter", "spanish": "centímetro" },
+          { "english": "kilometer", "spanish": "kilómetro" },
+          { "english": "inch", "spanish": "pulgada" },
+          { "english": "foot", "spanish": "pie" },
+          { "english": "kilogram", "spanish": "kilogramo" },
+          { "english": "gram", "spanish": "gramo" },
+          { "english": "pound", "spanish": "libra" },
+          { "english": "liter", "spanish": "litro" },
+          { "english": "gallon", "spanish": "galón" },
+          { "english": "How much?", "spanish": "¿Cuánto?" },
+          { "english": "How many?", "spanish": "¿Cuántos?" },
+          { "english": "quantity", "spanish": "cantidad" },
+          { "english": "size", "spanish": "tamaño" },
+          { "english": "weight", "spanish": "peso" }
+        ],
+        "listening": [
+          {
+            "audio": "How many meters?",
+            "options": ["How many meters?", "How many kilograms?", "How many liters?", "How many hours?"],
+            "answer": "How many meters?"
+          },
+          {
+            "audio": "Five kilograms",
+            "options": ["Five kilograms", "Five kilometers", "Five meters", "Five liters"],
+            "answer": "Five kilograms"
+          },
+          {
+            "audio": "Twenty centimeters",
+            "options": ["Twenty centimeters", "Twenty kilometers", "Twenty meters", "Twenty inches"],
+            "answer": "Twenty centimeters"
+          },
+          {
+            "audio": "What's the weight?",
+            "options": ["What's the weight?", "What's the size?", "What's the length?", "What's the time?"],
+            "answer": "What's the weight?"
+          },
+          {
+            "audio": "Fifty liters of fuel",
+            "options": ["Fifty liters of fuel", "Fifty gallons of fuel", "Fifty kilos of fuel", "Fifty meters of fuel"],
+            "answer": "Fifty liters of fuel"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The pipe is", "We need", "Cut"],
+            "suffix": "three meters long.",
+            "answer": "The pipe is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How many", "Count the", "We have"],
+            "suffix": "kilograms does this machine weigh?",
+            "answer": "How many",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Add", "Pour", "Use"],
+            "suffix": "two liters of oil to the engine.",
+            "answer": "Add",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The bolt is", "Measure", "It's"],
+            "suffix": "eight centimeters.",
+            "answer": "The bolt is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What's the size", "What's the weight", "What's the quantity"],
+            "suffix": "of this electrical wire?",
+            "answer": "What's the size",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Time and Schedules → Tiempo y horarios",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "time", "spanish": "tiempo / hora" },
+          { "english": "hour", "spanish": "hora" },
+          { "english": "minute", "spanish": "minuto" },
+          { "english": "second", "spanish": "segundo" },
+          { "english": "What time is it?", "spanish": "¿Qué hora es?" },
+          { "english": "It's one o'clock", "spanish": "Es la una" },
+          { "english": "It's two o'clock", "spanish": "Son las dos" },
+          { "english": "half past", "spanish": "y media" },
+          { "english": "quarter past", "spanish": "y cuarto" },
+          { "english": "quarter to", "spanish": "menos cuarto" },
+          { "english": "morning", "spanish": "mañana" },
+          { "english": "afternoon", "spanish": "tarde" },
+          { "english": "evening", "spanish": "noche" },
+          { "english": "break time", "spanish": "hora del descanso" },
+          { "english": "lunch time", "spanish": "hora del almuerzo" }
+        ],
+        "listening": [
+          {
+            "audio": "What time is it?",
+            "options": ["What time is it?", "What day is it?", "What date is it?", "What month is it?"],
+            "answer": "What time is it?"
+          },
+          {
+            "audio": "It's eight thirty",
+            "options": ["It's eight thirty", "It's seven thirty", "It's nine thirty", "It's eight fifteen"],
+            "answer": "It's eight thirty"
+          },
+          {
+            "audio": "Break time is at ten",
+            "options": ["Break time is at ten", "Lunch time is at ten", "Work starts at ten", "Class ends at ten"],
+            "answer": "Break time is at ten"
+          },
+          {
+            "audio": "Quarter past three",
+            "options": ["Quarter past three", "Quarter to three", "Half past three", "Three o'clock"],
+            "answer": "Quarter past three"
+          },
+          {
+            "audio": "We finish at five",
+            "options": ["We finish at five", "We start at five", "We break at five", "We eat at five"],
+            "answer": "We finish at five"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Work starts", "Class begins", "The shift starts"],
+            "suffix": "at seven in the morning.",
+            "answer": "Work starts",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What time", "When", "At what time"],
+            "suffix": "do we have lunch?",
+            "answer": "What time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It's", "The time is", "Right now it's"],
+            "suffix": "half past twelve.",
+            "answer": "It's",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Break time", "Lunch time", "Finish time"],
+            "suffix": "is at three o'clock.",
+            "answer": "Break time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work", "My shift is", "The class lasts"],
+            "suffix": "eight hours every day.",
+            "answer": "I work",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

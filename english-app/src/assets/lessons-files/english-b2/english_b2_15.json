@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 15,
+  "sections": [
+    {
+      "title": "Advanced Thermal and Fluid Engineering → Ingeniería térmica y de fluidos avanzada",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Heat exchanger optimization maximizes thermal efficiency while minimizing pressure losses",
+          "spanish": "La optimización de intercambiadores de calor maximiza eficiencia térmica mientras minimiza pérdidas de presión"
+        },
+        {
+          "english": "Computational fluid dynamics enables detailed analysis of complex flow phenomena",
+          "spanish": "La dinámica computacional de fluidos permite análisis detallado de fenómenos complejos de flujo"
+        },
+        {
+          "english": "Phase change heat transfer enhances thermal management in advanced systems",
+          "spanish": "La transferencia de calor de cambio de fase mejora gestión térmica en sistemas avanzados"
+        },
+        {
+          "english": "Turbomachinery design optimizes energy conversion efficiency in rotating equipment",
+          "spanish": "El diseño de turbomaquinaria optimiza eficiencia de conversión de energía en equipos rotativos"
+        },
+        {
+          "english": "Microfluidics manipulates small-volume fluid flows for precision applications",
+          "spanish": "La microfluídica manipula flujos de fluidos de pequeño volumen para aplicaciones de precisión"
+        },
+        {
+          "english": "Thermal barrier coatings protect components from extreme temperature environments",
+          "spanish": "Los recubrimientos de barrera térmica protegen componentes de ambientes de temperatura extrema"
+        },
+        {
+          "english": "Multiphase flow modeling predicts behavior of gas-liquid-solid mixtures",
+          "spanish": "El modelado de flujo multifásico predice comportamiento de mezclas gas-líquido-sólido"
+        },
+        {
+          "english": "Advanced cooling techniques manage heat dissipation in high-power systems",
+          "spanish": "Las técnicas de enfriamiento avanzadas gestionan disipación de calor en sistemas de alta potencia"
+        },
+        {
+          "english": "Thermodynamic cycle optimization improves power generation efficiency",
+          "spanish": "La optimización de ciclos termodinámicos mejora eficiencia de generación de energía"
+        },
+        {
+          "english": "Heat pipe technology enables efficient thermal management with passive operation",
+          "spanish": "La tecnología de tubos de calor permite gestión térmica eficiente con operación pasiva"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does computational fluid dynamics benefit thermal system design?",
+          "options": ["It predicts fluid behavior and heat transfer without expensive physical testing", "It eliminates all fluid motion", "It only works for simple geometries"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do phase change materials offer for thermal management?",
+          "options": ["They store and release large amounts of thermal energy at constant temperature", "They eliminate all temperature variations", "They only work once"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is microfluidics important for modern engineering applications?",
+          "options": ["It enables precise control of small fluid volumes for analysis and manufacturing", "It only works with water", "It makes systems larger"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Heat exchanger",
+          "suffix": "improves thermal performance while reducing energy consumption.",
+          "answer": "optimization",
+          "selected": false,
+          "feedback": "Heat exchanger optimization is crucial for energy-efficient thermal systems."
+        },
+        {
+          "prefix": "Phase change",
+          "suffix": "provides high thermal energy storage density for temperature regulation.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Phase change materials are increasingly important for thermal management."
+        },
+        {
+          "prefix": "Turbomachinery",
+          "suffix": "focuses on optimizing energy conversion in pumps, compressors, and turbines.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Turbomachinery design is essential for efficient energy conversion systems."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Communications and Signal Processing → Comunicaciones avanzadas y procesamiento de señales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "5G networks enable ultra-low latency communications for real-time applications",
+          "spanish": "Las redes 5G permiten comunicaciones de latencia ultra-baja para aplicaciones en tiempo real"
+        },
+        {
+          "english": "Massive MIMO systems use hundreds of antennas for spectral efficiency improvements",
+          "spanish": "Los sistemas MIMO masivos usan cientos de antenas para mejoras de eficiencia espectral"
+        },
+        {
+          "english": "Software-defined networking provides flexible network configuration and management",
+          "spanish": "Las redes definidas por software proporcionan configuración y gestión flexible de red"
+        },
+        {
+          "english": "Machine learning enhances signal processing through adaptive algorithms",
+          "spanish": "El aprendizaje automático mejora procesamiento de señales a través de algoritmos adaptativos"
+        },
+        {
+          "english": "Optical fiber communications achieve ultra-high bandwidth data transmission",
+          "spanish": "Las comunicaciones de fibra óptica logran transmisión de datos de ancho de banda ultra-alto"
+        },
+        {
+          "english": "Error correction codes ensure reliable data transmission over noisy channels",
+          "spanish": "Los códigos de corrección de errores aseguran transmisión confiable de datos sobre canales ruidosos"
+        },
+        {
+          "english": "Beamforming techniques focus radio frequency energy for improved coverage",
+          "spanish": "Las técnicas de beamforming enfocan energía de radiofrecuencia para cobertura mejorada"
+        },
+        {
+          "english": "Cognitive radio systems adapt transmission parameters based on spectrum availability",
+          "spanish": "Los sistemas de radio cognitiva adaptan parámetros de transmisión basados en disponibilidad de espectro"
+        },
+        {
+          "english": "Network security protocols protect communications from cyber threats",
+          "spanish": "Los protocolos de seguridad de red protegen comunicaciones de amenazas cibernéticas"
+        },
+        {
+          "english": "Internet of Things connectivity enables ubiquitous device communication",
+          "spanish": "La conectividad del Internet de las Cosas permite comunicación ubicua de dispositivos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do 5G networks improve upon previous generation technologies?",
+          "options": ["They provide much higher speeds, lower latency, and support for more connected devices", "They only work indoors", "They eliminate all previous networks"],
+          "answer": 0
+        },
+        {
+          "audio": "What benefits do massive MIMO systems provide?",
+          "options": ["They dramatically increase network capacity and coverage through many antennas", "They make phones heavier", "They only work for voice calls"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is software-defined networking important for modern communications?",
+          "options": ["It enables flexible, programmable network management and rapid service deployment", "It eliminates all hardware", "It makes networks slower"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "5G",
+          "suffix": "support ultra-reliable low-latency communications for critical applications.",
+          "answer": "networks",
+          "selected": false,
+          "feedback": "5G networks are enabling new applications requiring real-time communication."
+        },
+        {
+          "prefix": "Massive",
+          "suffix": "use large antenna arrays to serve many users simultaneously with high efficiency.",
+          "answer": "MIMO",
+          "selected": false,
+          "feedback": "Massive MIMO is a key technology for 5G and beyond wireless systems."
+        },
+        {
+          "prefix": "Cognitive",
+          "suffix": "intelligently adapt their transmission characteristics based on environmental conditions.",
+          "answer": "radio",
+          "selected": false,
+          "feedback": "Cognitive radio enables more efficient use of radio spectrum resources."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Power Electronics and Energy Conversion → Electrónica de potencia avanzada y conversión de energía",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Wide bandgap semiconductors enable higher efficiency power conversion systems",
+          "spanish": "Los semiconductores de brecha de banda ancha permiten sistemas de conversión de energía de mayor eficiencia"
+        },
+        {
+          "english": "Power factor correction improves electrical system efficiency and power quality",
+          "spanish": "La corrección del factor de potencia mejora eficiencia del sistema eléctrico y calidad de energía"
+        },
+        {
+          "english": "Multilevel inverters reduce harmonic distortion in power conversion",
+          "spanish": "Los inversores multinivel reducen distorsión armónica en conversión de energía"
+        },
+        {
+          "english": "Soft switching techniques minimize power losses during switching transitions",
+          "spanish": "Las técnicas de conmutación suave minimizan pérdidas de energía durante transiciones de conmutación"
+        },
+        {
+          "english": "Grid-tied inverters enable renewable energy integration into power systems",
+          "spanish": "Los inversores conectados a red permiten integración de energía renovable en sistemas de energía"
+        },
+        {
+          "english": "Motor drive systems optimize electric machine performance and efficiency",
+          "spanish": "Los sistemas de accionamiento de motores optimizan rendimiento y eficiencia de máquinas eléctricas"
+        },
+        {
+          "english": "Wireless power transfer eliminates physical connections for energy transmission",
+          "spanish": "La transferencia inalámbrica de energía elimina conexiones físicas para transmisión de energía"
+        },
+        {
+          "english": "Energy harvesting circuits capture ambient energy for low-power devices",
+          "spanish": "Los circuitos de recolección de energía capturan energía ambiental para dispositivos de baja potencia"
+        },
+        {
+          "english": "Thermal management systems prevent overheating in high-power electronics",
+          "spanish": "Los sistemas de gestión térmica previenen sobrecalentamiento en electrónica de alta potencia"
+        },
+        {
+          "english": "Digital control algorithms optimize power converter performance dynamically",
+          "spanish": "Los algoritmos de control digital optimizan rendimiento de convertidores de energía dinámicamente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do wide bandgap semiconductors improve power electronics?",
+          "options": ["They operate at higher temperatures and frequencies with lower losses", "They only work at low voltages", "They eliminate all electrical resistance"],
+          "answer": 0
+        },
+        {
+          "audio": "What role do grid-tied inverters play in renewable energy systems?",
+          "options": ["They convert DC from solar panels or batteries to AC compatible with the grid", "They block all renewable energy", "They only work with fossil fuels"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is soft switching important in power electronics?",
+          "options": ["It reduces switching losses and electromagnetic interference", "It makes switching slower", "It eliminates all electronic switches"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Wide bandgap",
+          "suffix": "enable more efficient and compact power electronic systems.",
+          "answer": "semiconductors",
+          "selected": false,
+          "feedback": "Wide bandgap materials like SiC and GaN are revolutionizing power electronics."
+        },
+        {
+          "prefix": "Power factor",
+          "suffix": "reduces reactive power and improves overall system efficiency.",
+          "answer": "correction",
+          "selected": false,
+          "feedback": "Power factor correction is important for efficient electrical systems."
+        },
+        {
+          "prefix": "Wireless power",
+          "suffix": "enables contactless energy transmission for mobile and embedded devices.",
+          "answer": "transfer",
+          "selected": false,
+          "feedback": "Wireless power transfer is enabling new applications and user experiences."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Sensing and Measurement Systems → Sistemas avanzados de sensado y medición",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "MEMS sensors enable miniaturized measurement systems with high precision",
+          "spanish": "Los sensores MEMS permiten sistemas de medición miniaturizados con alta precisión"
+        },
+        {
+          "english": "Optical sensing techniques provide non-contact measurement capabilities",
+          "spanish": "Las técnicas de sensado óptico proporcionan capacidades de medición sin contacto"
+        },
+        {
+          "english": "Wireless sensor networks enable distributed monitoring of large systems",
+          "spanish": "Las redes de sensores inalámbricos permiten monitoreo distribuido de sistemas grandes"
+        },
+        {
+          "english": "Smart sensor fusion combines multiple measurement sources for accuracy",
+          "spanish": "La fusión de sensores inteligentes combina múltiples fuentes de medición para precisión"
+        },
+        {
+          "english": "Machine learning algorithms extract patterns from complex sensor data",
+          "spanish": "Los algoritmos de aprendizaje automático extraen patrones de datos complejos de sensores"
+        },
+        {
+          "english": "Calibration systems ensure measurement accuracy and traceability",
+          "spanish": "Los sistemas de calibración aseguran precisión de medición y trazabilidad"
+        },
+        {
+          "english": "Edge computing processes sensor data locally for real-time responses",
+          "spanish": "El edge computing procesa datos de sensores localmente para respuestas en tiempo real"
+        },
+        {
+          "english": "Self-diagnostic sensors detect their own malfunctions and degradation",
+          "spanish": "Los sensores auto-diagnósticos detectan sus propias fallas y degradación"
+        },
+        {
+          "english": "Ultra-sensitive detectors enable measurement of minute physical quantities",
+          "spanish": "Los detectores ultra-sensibles permiten medición de cantidades físicas minúsculas"
+        },
+        {
+          "english": "Environmental monitoring systems track ecosystem health and changes",
+          "spanish": "Los sistemas de monitoreo ambiental rastrean salud y cambios del ecosistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantages do MEMS sensors offer over traditional sensors?",
+          "options": ["They're smaller, lighter, consume less power, and can be mass-produced cheaply", "They're always more expensive", "They only work in laboratories"],
+          "answer": 0
+        },
+        {
+          "audio": "How does sensor fusion improve measurement systems?",
+          "options": ["It combines data from multiple sensors to achieve better accuracy and reliability", "It reduces the number of sensors needed", "It makes systems more complex"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is edge computing important for sensor networks?",
+          "options": ["It enables real-time processing and reduces bandwidth requirements", "It centralizes all data processing", "It eliminates all sensors"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "International Engineering Standards and Quality → Estándares internacionales de ingeniería y calidad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "ISO certification demonstrates adherence to international quality standards",
+          "spanish": "La certificación ISO demuestra adherencia a estándares internacionales de calidad"
+        },
+        {
+          "english": "Quality management systems ensure consistent product and service delivery",
+          "spanish": "Los sistemas de gestión de calidad aseguran entrega consistente de productos y servicios"
+        },
+        {
+          "english": "Conformity assessment validates compliance with technical specifications",
+          "spanish": "La evaluación de conformidad valida cumplimiento con especificaciones técnicas"
+        },
+        {
+          "english": "Accreditation bodies verify competence of testing and certification laboratories",
+          "spanish": "Los organismos de acreditación verifican competencia de laboratorios de pruebas y certificación"
+        },
+        {
+          "english": "Mutual recognition agreements facilitate international trade and cooperation",
+          "spanish": "Los acuerdos de reconocimiento mutuo facilitan comercio internacional y cooperación"
+        },
+        {
+          "english": "Risk-based approaches prioritize quality control efforts effectively",
+          "spanish": "Los enfoques basados en riesgo priorizan esfuerzos de control de calidad efectivamente"
+        },
+        {
+          "english": "Continuous improvement methodologies drive ongoing quality enhancement",
+          "spanish": "Las metodologías de mejora continua impulsan mejora de calidad continua"
+        },
+        {
+          "english": "Stakeholder engagement ensures quality standards meet user needs",
+          "spanish": "La participación de partes interesadas asegura que estándares de calidad cumplan necesidades del usuario"
+        },
+        {
+          "english": "Regulatory compliance protects public safety and environmental interests",
+          "spanish": "El cumplimiento regulatorio protege seguridad pública e intereses ambientales"
+        },
+        {
+          "english": "Global harmonization reduces technical barriers to international trade",
+          "spanish": "La armonización global reduce barreras técnicas al comercio internacional"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "ISO",
+          "suffix": "provides international recognition of quality management capabilities.",
+          "answer": "certification",
+          "selected": false,
+          "feedback": "ISO certification is widely recognized for demonstrating quality management."
+        },
+        {
+          "prefix": "Quality management",
+          "suffix": "provide frameworks for consistent organizational performance.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "QMS implementation is fundamental to modern quality assurance."
+        },
+        {
+          "prefix": "Continuous",
+          "suffix": "drives organizations to enhance their processes and outcomes systematically.",
+          "answer": "improvement",
+          "selected": false,
+          "feedback": "Continuous improvement is a core principle of modern quality management."
+        }
+      ]
+    }
+  ]
+}
+]
+

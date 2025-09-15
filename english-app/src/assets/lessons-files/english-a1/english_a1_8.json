@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 8,
+    "sections": [
+      {
+        "title": "Rooms in the House → Habitaciones de la casa",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "living room", "spanish": "sala" },
+          { "english": "kitchen", "spanish": "cocina" },
+          { "english": "bedroom", "spanish": "dormitorio" },
+          { "english": "bathroom", "spanish": "baño" },
+          { "english": "dining room", "spanish": "comedor" },
+          { "english": "garage", "spanish": "garaje" },
+          { "english": "yard", "spanish": "patio" },
+          { "english": "garden", "spanish": "jardín" },
+          { "english": "office", "spanish": "oficina" },
+          { "english": "balcony", "spanish": "balcón" },
+          { "english": "hall", "spanish": "pasillo" },
+          { "english": "stairs", "spanish": "escaleras" },
+          { "english": "roof", "spanish": "techo" },
+          { "english": "window", "spanish": "ventana" },
+          { "english": "door", "spanish": "puerta" }
+        ],
+        "listening": [
+          { "audio": "The sofa is in the living room.", "options": ["living room", "bedroom", "kitchen", "bathroom"], "answer": "living room" },
+          { "audio": "I cook in the kitchen.", "options": ["kitchen", "dining room", "garage", "yard"], "answer": "kitchen" },
+          { "audio": "My bedroom is upstairs.", "options": ["bedroom", "bathroom", "office", "balcony"], "answer": "bedroom" },
+          { "audio": "The bathroom is next to the bedroom.", "options": ["bathroom", "kitchen", "living room", "garage"], "answer": "bathroom" },
+          { "audio": "We eat in the dining room.", "options": ["dining room", "kitchen", "living room", "yard"], "answer": "dining room" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["The sofa is", "The table is", "The bed is"], "suffix": "in the living room.", "answer": "The sofa is", "selected": "", "feedback": "" },
+          { "prefix": ["I cook", "I eat", "I sleep"], "suffix": "in the kitchen.", "answer": "I cook", "selected": "", "feedback": "" },
+          { "prefix": ["My bedroom is", "My office is", "My garage is"], "suffix": "upstairs.", "answer": "My bedroom is", "selected": "", "feedback": "" },
+          { "prefix": ["The bathroom is", "The kitchen is", "The living room is"], "suffix": "next to the bedroom.", "answer": "The bathroom is", "selected": "", "feedback": "" },
+          { "prefix": ["We eat", "We cook", "We sleep"], "suffix": "in the dining room.", "answer": "We eat", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Furniture and Appliances → Muebles y electrodomésticos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "sofa", "spanish": "sofá" },
+          { "english": "table", "spanish": "mesa" },
+          { "english": "chair", "spanish": "silla" },
+          { "english": "bed", "spanish": "cama" },
+          { "english": "refrigerator", "spanish": "refrigerador" },
+          { "english": "stove", "spanish": "cocina" },
+          { "english": "oven", "spanish": "horno" },
+          { "english": "microwave", "spanish": "microondas" },
+          { "english": "washing machine", "spanish": "lavadora" },
+          { "english": "dryer", "spanish": "secadora" },
+          { "english": "lamp", "spanish": "lámpara" },
+          { "english": "fan", "spanish": "ventilador" },
+          { "english": "TV", "spanish": "televisor" },
+          { "english": "radio", "spanish": "radio" },
+          { "english": "computer", "spanish": "computadora" }
+        ],
+        "listening": [
+          { "audio": "The refrigerator is in the kitchen.", "options": ["refrigerator", "stove", "oven", "microwave"], "answer": "refrigerator" },
+          { "audio": "I sleep on the bed.", "options": ["bed", "sofa", "chair", "table"], "answer": "bed" },
+          { "audio": "The TV is in the living room.", "options": ["TV", "radio", "computer", "lamp"], "answer": "TV" },
+          { "audio": "The lamp is on the table.", "options": ["lamp", "fan", "dryer", "washing machine"], "answer": "lamp" },
+          { "audio": "The microwave is next to the oven.", "options": ["microwave", "oven", "stove", "refrigerator"], "answer": "microwave" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["The refrigerator is", "The stove is", "The oven is"], "suffix": "in the kitchen.", "answer": "The refrigerator is", "selected": "", "feedback": "" },
+          { "prefix": ["I sleep", "I rest", "I read"], "suffix": "on the bed.", "answer": "I sleep", "selected": "", "feedback": "" },
+          { "prefix": ["The TV is", "The radio is", "The computer is"], "suffix": "in the living room.", "answer": "The TV is", "selected": "", "feedback": "" },
+          { "prefix": ["The lamp is", "The fan is", "The dryer is"], "suffix": "on the table.", "answer": "The lamp is", "selected": "", "feedback": "" },
+          { "prefix": ["The microwave is", "The oven is", "The stove is"], "suffix": "next to the oven.", "answer": "The microwave is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Household Chores → Quehaceres domésticos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "clean", "spanish": "limpiar" },
+          { "english": "wash", "spanish": "lavar" },
+          { "english": "cook", "spanish": "cocinar" },
+          { "english": "sweep", "spanish": "barrer" },
+          { "english": "mop", "spanish": "trapear" },
+          { "english": "iron", "spanish": "planchar" },
+          { "english": "vacuum", "spanish": "aspirar" },
+          { "english": "make the bed", "spanish": "hacer la cama" },
+          { "english": "set the table", "spanish": "poner la mesa" },
+          { "english": "feed the pets", "spanish": "alimentar las mascotas" },
+          { "english": "water the plants", "spanish": "regar las plantas" },
+          { "english": "take out the trash", "spanish": "sacar la basura" },
+          { "english": "organize", "spanish": "organizar" },
+          { "english": "fix", "spanish": "arreglar" },
+          { "english": "rest", "spanish": "descansar" }
+        ],
+        "listening": [
+          { "audio": "I clean the house every Saturday.", "options": ["clean", "wash", "cook", "sweep"], "answer": "clean" },
+          { "audio": "She washes the dishes after dinner.", "options": ["washes", "cooks", "sweeps", "mops"], "answer": "washes" },
+          { "audio": "He vacuums the living room.", "options": ["vacuums", "irons", "makes the bed", "sets the table"], "answer": "vacuums" },
+          { "audio": "We feed the pets in the morning.", "options": ["feed the pets", "water the plants", "take out the trash", "organize"], "answer": "feed the pets" },
+          { "audio": "I rest after cleaning.", "options": ["rest", "fix", "mop", "vacuum"], "answer": "rest" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I clean", "I wash", "I cook"], "suffix": "the house every Saturday.", "answer": "I clean", "selected": "", "feedback": "" },
+          { "prefix": ["She washes", "She cooks", "She sweeps"], "suffix": "the dishes after dinner.", "answer": "She washes", "selected": "", "feedback": "" },
+          { "prefix": ["He vacuums", "He irons", "He makes the bed"], "suffix": "the living room.", "answer": "He vacuums", "selected": "", "feedback": "" },
+          { "prefix": ["We feed the pets", "We water the plants", "We take out the trash"], "suffix": "in the morning.", "answer": "We feed the pets", "selected": "", "feedback": "" },
+          { "prefix": ["I rest", "I fix", "I mop"], "suffix": "after cleaning.", "answer": "I rest", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Describing the House → Describiendo la casa",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "big", "spanish": "grande" },
+          { "english": "small", "spanish": "pequeño" },
+          { "english": "comfortable", "spanish": "cómodo" },
+          { "english": "modern", "spanish": "moderno" },
+          { "english": "old", "spanish": "viejo" },
+          { "english": "new", "spanish": "nuevo" },
+          { "english": "clean", "spanish": "limpio" },
+          { "english": "messy", "spanish": "desordenado" },
+          { "english": "bright", "spanish": "brillante" },
+          { "english": "dark", "spanish": "oscuro" },
+          { "english": "quiet", "spanish": "silencioso" },
+          { "english": "noisy", "spanish": "ruidoso" },
+          { "english": "safe", "spanish": "seguro" },
+          { "english": "unsafe", "spanish": "inseguro" },
+          { "english": "spacious", "spanish": "espacioso" }
+        ],
+        "listening": [
+          { "audio": "My house is big and comfortable.", "options": ["big and comfortable", "small and old", "modern and bright", "messy and noisy"], "answer": "big and comfortable" },
+          { "audio": "The kitchen is clean and modern.", "options": ["clean and modern", "old and messy", "bright and noisy", "dark and unsafe"], "answer": "clean and modern" },
+          { "audio": "The living room is bright and spacious.", "options": ["bright and spacious", "dark and noisy", "small and old", "comfortable and safe"], "answer": "bright and spacious" },
+          { "audio": "The bedroom is quiet and safe.", "options": ["quiet and safe", "noisy and unsafe", "bright and spacious", "messy and noisy"], "answer": "quiet and safe" },
+          { "audio": "The garage is old and messy.", "options": ["old and messy", "new and clean", "modern and bright", "spacious and safe"], "answer": "old and messy" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My house is", "My kitchen is", "My living room is"], "suffix": "big and comfortable.", "answer": "My house is", "selected": "", "feedback": "" },
+          { "prefix": ["The kitchen is", "The bedroom is", "The garage is"], "suffix": "clean and modern.", "answer": "The kitchen is", "selected": "", "feedback": "" },
+          { "prefix": ["The living room is", "The bedroom is", "The kitchen is"], "suffix": "bright and spacious.", "answer": "The living room is", "selected": "", "feedback": "" },
+          { "prefix": ["The bedroom is", "The living room is", "The kitchen is"], "suffix": "quiet and safe.", "answer": "The bedroom is", "selected": "", "feedback": "" },
+          { "prefix": ["The garage is", "The kitchen is", "The living room is"], "suffix": "old and messy.", "answer": "The garage is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Home and Work → Casa y trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "home office", "spanish": "oficina en casa" },
+          { "english": "workspace", "spanish": "espacio de trabajo" },
+          { "english": "tools", "spanish": "herramientas" },
+          { "english": "equipment", "spanish": "equipo" },
+          { "english": "computer", "spanish": "computadora" },
+          { "english": "desk", "spanish": "escritorio" },
+          { "english": "chair", "spanish": "silla" },
+          { "english": "documents", "spanish": "documentos" },
+          { "english": "printer", "spanish": "impresora" },
+          { "english": "internet", "spanish": "internet" },
+          { "english": "phone", "spanish": "teléfono" },
+          { "english": "meeting", "spanish": "reunión" },
+          { "english": "call", "spanish": "llamada" },
+          { "english": "project", "spanish": "proyecto" },
+          { "english": "report", "spanish": "informe" }
+        ],
+        "listening": [
+          { "audio": "I work in my home office.", "options": ["home office", "workspace", "garage", "kitchen"], "answer": "home office" },
+          { "audio": "My workspace is organized.", "options": ["workspace", "home office", "garage", "kitchen"], "answer": "workspace" },
+          { "audio": "I use my computer for work.", "options": ["computer", "printer", "phone", "desk"], "answer": "computer" },
+          { "audio": "I print documents for my project.", "options": ["documents", "project", "report", "meeting"], "answer": "documents" },
+          { "audio": "I have a meeting by phone.", "options": ["phone", "internet", "desk", "chair"], "answer": "phone" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I work", "I study", "I rest"], "suffix": "in my home office.", "answer": "I work", "selected": "", "feedback": "" },
+          { "prefix": ["My workspace is", "My garage is", "My kitchen is"], "suffix": "organized.", "answer": "My workspace is", "selected": "", "feedback": "" },
+          { "prefix": ["I use my computer", "I use my printer", "I use my phone"], "suffix": "for work.", "answer": "I use my computer", "selected": "", "feedback": "" },
+          { "prefix": ["I print documents", "I print reports", "I print projects"], "suffix": "for my project.", "answer": "I print documents", "selected": "", "feedback": "" },
+          { "prefix": ["I have a meeting", "I have a call", "I have a project"], "suffix": "by phone.", "answer": "I have a meeting", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

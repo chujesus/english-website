@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 17,
+    "sections": [
+      {
+        "title": "Money and Banking → Dinero y banca",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "money", "spanish": "dinero" },
+          { "english": "cash", "spanish": "efectivo" },
+          { "english": "colones", "spanish": "colones" },
+          { "english": "dollars", "spanish": "dólares" },
+          { "english": "bank", "spanish": "banco" },
+          { "english": "account", "spanish": "cuenta" },
+          { "english": "savings account", "spanish": "cuenta de ahorros" },
+          { "english": "checking account", "spanish": "cuenta corriente" },
+          { "english": "credit card", "spanish": "tarjeta de crédito" },
+          { "english": "debit card", "spanish": "tarjeta de débito" },
+          { "english": "ATM", "spanish": "cajero automático" },
+          { "english": "deposit", "spanish": "depósito" },
+          { "english": "withdrawal", "spanish": "retiro" },
+          { "english": "balance", "spanish": "saldo" },
+          { "english": "salary", "spanish": "salario" }
+        ],
+        "listening": [
+          {
+            "audio": "How much money do you have?",
+            "options": ["How much money do you have?", "How much time do you have?", "How much work do you have?", "How much food do you have?"],
+            "answer": "How much money do you have?"
+          },
+          {
+            "audio": "I need to go to the bank",
+            "options": ["I need to go to the bank", "I need to go to the store", "I need to go to the hospital", "I need to go to the school"],
+            "answer": "I need to go to the bank"
+          },
+          {
+            "audio": "Can I pay with a credit card?",
+            "options": ["Can I pay with a credit card?", "Can I pay with cash?", "Can I pay with a check?", "Can I pay later?"],
+            "answer": "Can I pay with a credit card?"
+          },
+          {
+            "audio": "The ATM is out of order",
+            "options": ["The ATM is out of order", "The ATM is working fine", "The ATM is very busy", "The ATM is closed"],
+            "answer": "The ATM is out of order"
+          },
+          {
+            "audio": "My salary is deposited every two weeks",
+            "options": ["every two weeks", "every week", "every month", "every day"],
+            "answer": "every two weeks"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I keep", "I save", "I deposit"],
+            "suffix": "my money in a savings account.",
+            "answer": "I keep",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How much", "What is", "What's"],
+            "suffix": "is your account balance?",
+            "answer": "How much",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I use", "I prefer", "I always use"],
+            "suffix": "my debit card to buy groceries.",
+            "answer": "I use",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The bank", "The ATM", "The teller"],
+            "suffix": "is open from 9 AM to 4 PM.",
+            "answer": "The bank",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My employer", "The company", "My boss"],
+            "suffix": "pays my salary every month.",
+            "answer": "My employer",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Shopping and Prices → Compras y precios",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "price", "spanish": "precio" },
+          { "english": "cost", "spanish": "costo" },
+          { "english": "expensive", "spanish": "caro" },
+          { "english": "cheap", "spanish": "barato" },
+          { "english": "free", "spanish": "gratis" },
+          { "english": "discount", "spanish": "descuento" },
+          { "english": "sale", "spanish": "oferta" },
+          { "english": "receipt", "spanish": "recibo" },
+          { "english": "change", "spanish": "cambio" },
+          { "english": "total", "spanish": "total" },
+          { "english": "tax", "spanish": "impuesto" },
+          { "english": "bill", "spanish": "cuenta" },
+          { "english": "budget", "spanish": "presupuesto" },
+          { "english": "spend", "spanish": "gastar" },
+          { "english": "save", "spanish": "ahorrar" }
+        ],
+        "listening": [
+          {
+            "audio": "How much does this cost?",
+            "options": ["How much does this cost?", "How much does this weigh?", "How big is this?", "How old is this?"],
+            "answer": "How much does this cost?"
+          },
+          {
+            "audio": "This shirt is too expensive",
+            "options": ["This shirt is too expensive", "This shirt is too cheap", "This shirt is too small", "This shirt is too big"],
+            "answer": "This shirt is too expensive"
+          },
+          {
+            "audio": "Is there a discount for students?",
+            "options": ["Is there a discount for students?", "Is there a discount for workers?", "Is there a discount for seniors?", "Is there a discount for families?"],
+            "answer": "Is there a discount for students?"
+          },
+          {
+            "audio": "Please give me the receipt",
+            "options": ["Please give me the receipt", "Please give me the change", "Please give me the total", "Please give me the bill"],
+            "answer": "Please give me the receipt"
+          },
+          {
+            "audio": "I need to save money for my studies",
+            "options": ["I need to save money for my studies", "I need to spend money on my studies", "I need to borrow money for my studies", "I need to earn money for my studies"],
+            "answer": "I need to save money for my studies"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["This is", "That's", "It's"],
+            "suffix": "too expensive for my budget.",
+            "answer": "This is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can you give me", "I need", "Please give me"],
+            "suffix": "a receipt for this purchase?",
+            "answer": "Can you give me",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["There's a sale", "There's a discount", "There's an offer"],
+            "suffix": "on electronics this week.",
+            "answer": "There's a sale",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I want to save", "I need to save", "I try to save"],
+            "suffix": "money for my future education.",
+            "answer": "I want to save",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The total", "The final price", "The amount"],
+            "suffix": "includes tax and service charges.",
+            "answer": "The total",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Budgeting and Personal Finances → Presupuesto y finanzas personales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "budget", "spanish": "presupuesto" },
+          { "english": "income", "spanish": "ingresos" },
+          { "english": "expenses", "spanish": "gastos" },
+          { "english": "rent", "spanish": "alquiler" },
+          { "english": "utilities", "spanish": "servicios públicos" },
+          { "english": "electricity", "spanish": "electricidad" },
+          { "english": "water", "spanish": "agua" },
+          { "english": "phone bill", "spanish": "cuenta de teléfono" },
+          { "english": "internet", "spanish": "internet" },
+          { "english": "transportation", "spanish": "transporte" },
+          { "english": "food", "spanish": "comida" },
+          { "english": "education", "spanish": "educación" },
+          { "english": "healthcare", "spanish": "salud" },
+          { "english": "emergency fund", "spanish": "fondo de emergencia" },
+          { "english": "financial planning", "spanish": "planificación financiera" }
+        ],
+        "listening": [
+          {
+            "audio": "I need to make a monthly budget",
+            "options": ["I need to make a monthly budget", "I need to make a weekly budget", "I need to make a yearly budget", "I need to make a daily budget"],
+            "answer": "I need to make a monthly budget"
+          },
+          {
+            "audio": "My biggest expense is rent",
+            "options": ["My biggest expense is rent", "My biggest expense is food", "My biggest expense is transportation", "My biggest expense is education"],
+            "answer": "My biggest expense is rent"
+          },
+          {
+            "audio": "How much do you spend on utilities?",
+            "options": ["How much do you spend on utilities?", "How much do you spend on food?", "How much do you spend on rent?", "How much do you spend on transportation?"],
+            "answer": "How much do you spend on utilities?"
+          },
+          {
+            "audio": "I save 10% of my income",
+            "options": ["I save 10% of my income", "I save 20% of my income", "I save 5% of my income", "I save 15% of my income"],
+            "answer": "I save 10% of my income"
+          },
+          {
+            "audio": "It's important to have an emergency fund",
+            "options": ["It's important to have an emergency fund", "It's important to have a savings account", "It's important to have a budget", "It's important to have insurance"],
+            "answer": "It's important to have an emergency fund"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My monthly budget", "My personal budget", "My family budget"],
+            "suffix": "includes all my basic expenses.",
+            "answer": "My monthly budget",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I spend", "I pay", "I allocate"],
+            "suffix": "₡150,000 per month on rent.",
+            "answer": "I spend",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Utilities like", "Services such as", "Bills including"],
+            "suffix": "electricity and water cost about ₡25,000.",
+            "answer": "Utilities like",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I try to save", "I want to save", "I plan to save"],
+            "suffix": "at least 15% of my salary.",
+            "answer": "I try to save",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Financial planning", "Managing money", "Budgeting"],
+            "suffix": "helps me achieve my educational goals.",
+            "answer": "Financial planning",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Payments and Transactions → Pagos y transacciones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "payment", "spanish": "pago" },
+          { "english": "transaction", "spanish": "transacción" },
+          { "english": "pay", "spanish": "pagar" },
+          { "english": "buy", "spanish": "comprar" },
+          { "english": "purchase", "spanish": "compra" },
+          { "english": "sell", "spanish": "vender" },
+          { "english": "cashier", "spanish": "cajero" },
+          { "english": "checkout", "spanish": "caja" },
+          { "english": "invoice", "spanish": "factura" },
+          { "english": "online payment", "spanish": "pago en línea" },
+          { "english": "wire transfer", "spanish": "transferencia" },
+          { "english": "installment", "spanish": "cuota" },
+          { "english": "loan", "spanish": "préstamo" },
+          { "english": "interest", "spanish": "interés" },
+          { "english": "commission", "spanish": "comisión" }
+        ],
+        "listening": [
+          {
+            "audio": "How would you like to pay?",
+            "options": ["How would you like to pay?", "What would you like to buy?", "When would you like to pay?", "Where would you like to pay?"],
+            "answer": "How would you like to pay?"
+          },
+          {
+            "audio": "I'll pay with my debit card",
+            "options": ["I'll pay with my debit card", "I'll pay with my credit card", "I'll pay with cash", "I'll pay with a check"],
+            "answer": "I'll pay with my debit card"
+          },
+          {
+            "audio": "The transaction was successful",
+            "options": ["The transaction was successful", "The transaction failed", "The transaction is pending", "The transaction was cancelled"],
+            "answer": "The transaction was successful"
+          },
+          {
+            "audio": "Can I pay in installments?",
+            "options": ["Can I pay in installments?", "Can I pay with cash?", "Can I pay online?", "Can I pay later?"],
+            "answer": "Can I pay in installments?"
+          },
+          {
+            "audio": "There's a commission for wire transfers",
+            "options": ["There's a commission for wire transfers", "There's no charge for wire transfers", "Wire transfers are free", "Wire transfers are expensive"],
+            "answer": "There's a commission for wire transfers"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I prefer to pay", "I like to pay", "I usually pay"],
+            "suffix": "with my debit card for security.",
+            "answer": "I prefer to pay",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The cashier", "The clerk", "The employee"],
+            "suffix": "processed my payment quickly.",
+            "answer": "The cashier",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Online payments", "Digital transactions", "Electronic payments"],
+            "suffix": "are very convenient and fast.",
+            "answer": "Online payments",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need", "I want", "I'm looking for"],
+            "suffix": "a loan to pay for my technical education.",
+            "answer": "I need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Banks charge", "Financial institutions collect", "There is"],
+            "suffix": "interest on loans and credit cards.",
+            "answer": "Banks charge",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Financial Services in Costa Rica → Servicios financieros en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Banco Nacional", "spanish": "Banco Nacional" },
+          { "english": "Banco de Costa Rica", "spanish": "Banco de Costa Rica" },
+          { "english": "BCR", "spanish": "BCR" },
+          { "english": "state bank", "spanish": "banco estatal" },
+          { "english": "private bank", "spanish": "banco privado" },
+          { "english": "cooperative", "spanish": "cooperativa" },
+          { "english": "credit union", "spanish": "cooperativa de crédito" },
+          { "english": "SINPE", "spanish": "SINPE" },
+          { "english": "mobile payment", "spanish": "pago móvil" },
+          { "english": "digital wallet", "spanish": "billetera digital" },
+          { "english": "branch", "spanish": "sucursal" },
+          { "english": "customer service", "spanish": "servicio al cliente" },
+          { "english": "financial education", "spanish": "educación financiera" },
+          { "english": "microfinance", "spanish": "microfinanzas" },
+          { "english": "financial inclusion", "spanish": "inclusión financiera" }
+        ],
+        "listening": [
+          {
+            "audio": "Banco Nacional is a state bank",
+            "options": ["Banco Nacional is a state bank", "Banco Nacional is a private bank", "Banco Nacional is a foreign bank", "Banco Nacional is a small bank"],
+            "answer": "Banco Nacional is a state bank"
+          },
+          {
+            "audio": "I use SINPE to transfer money",
+            "options": ["I use SINPE to transfer money", "I use SINPE to save money", "I use SINPE to borrow money", "I use SINPE to exchange money"],
+            "answer": "I use SINPE to transfer money"
+          },
+          {
+            "audio": "There's a bank branch near IPEC",
+            "options": ["There's a bank branch near IPEC", "There's an ATM near IPEC", "There's a cooperative near IPEC", "There's a credit union near IPEC"],
+            "answer": "There's a bank branch near IPEC"
+          },
+          {
+            "audio": "Cooperatives help rural communities",
+            "options": ["Cooperatives help rural communities", "Banks help rural communities", "ATMs help rural communities", "Credit cards help rural communities"],
+            "answer": "Cooperatives help rural communities"
+          },
+          {
+            "audio": "Financial education is important for students",
+            "options": ["Financial education is important for students", "Financial services are expensive for students", "Financial planning is difficult for students", "Financial aid is available for students"],
+            "answer": "Financial education is important for students"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Most Costa Ricans", "Many people", "A lot of workers"],
+            "suffix": "use state banks like Banco Nacional.",
+            "answer": "Most Costa Ricans",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["SINPE allows", "The system enables", "This service lets"],
+            "suffix": "instant money transfers between banks.",
+            "answer": "SINPE allows",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Credit unions", "Cooperatives", "Financial cooperatives"],
+            "suffix": "serve many rural communities in Costa Rica.",
+            "answer": "Credit unions",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Mobile payments", "Digital banking", "Electronic transactions"],
+            "suffix": "are becoming more popular in Costa Rica.",
+            "answer": "Mobile payments",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical students", "Young workers", "IPEC graduates"],
+            "suffix": "need to understand basic financial concepts.",
+            "answer": "Technical students",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

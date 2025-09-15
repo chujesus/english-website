@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 6,
+  "sections": [
+    {
+      "title": "Advanced Equipment Operation → Operación avanzada de equipos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Multi-function equipment requires specialized training",
+          "spanish": "El equipo multifunción requiere entrenamiento especializado"
+        },
+        {
+          "english": "Operating parameters must be carefully controlled",
+          "spanish": "Los parámetros de operación deben controlarse cuidadosamente"
+        },
+        {
+          "english": "Precision instruments demand careful handling",
+          "spanish": "Los instrumentos de precisión requieren manejo cuidadoso"
+        },
+        {
+          "english": "Automated systems reduce operator workload",
+          "spanish": "Los sistemas automatizados reducen la carga de trabajo del operador"
+        },
+        {
+          "english": "Remote monitoring enables off-site supervision",
+          "spanish": "El monitoreo remoto permite supervisión fuera del sitio"
+        },
+        {
+          "english": "Predictive algorithms anticipate maintenance needs",
+          "spanish": "Los algoritmos predictivos anticipan necesidades de mantenimiento"
+        },
+        {
+          "english": "Safety interlocks prevent dangerous operations",
+          "spanish": "Los enclavamientos de seguridad previenen operaciones peligrosas"
+        },
+        {
+          "english": "Calibration ensures measurement accuracy",
+          "spanish": "La calibración asegura precisión de medición"
+        },
+        {
+          "english": "Documentation records operational history",
+          "spanish": "La documentación registra historial operacional"
+        },
+        {
+          "english": "Emergency procedures protect personnel and equipment",
+          "spanish": "Los procedimientos de emergencia protegen personal y equipo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why do complex equipment systems require specialized training?",
+          "options": ["To waste time", "To ensure safe and effective operation", "To make jobs harder"],
+          "answer": 1
+        },
+        {
+          "audio": "What is the purpose of safety interlocks?",
+          "options": ["To prevent dangerous operations automatically", "To slow down production", "To increase costs"],
+          "answer": 0
+        },
+        {
+          "audio": "How do predictive algorithms help with maintenance?",
+          "options": ["They break equipment", "They anticipate when maintenance is needed", "They are useless"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Specialized",
+          "suffix": "is essential for operating complex equipment safely.",
+          "answer": "training",
+          "selected": false,
+          "feedback": "Proper training ensures operators understand equipment capabilities and safety requirements."
+        },
+        {
+          "prefix": "Safety",
+          "suffix": "automatically prevent hazardous conditions.",
+          "answer": "interlocks",
+          "selected": false,
+          "feedback": "Safety interlocks provide automatic protection against dangerous operating conditions."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "maintains instrument accuracy and reliability.",
+          "answer": "calibration",
+          "selected": false,
+          "feedback": "Calibration ensures that measurements remain accurate over time."
+        }
+      ]
+    },
+    {
+      "title": "Manufacturing Process Control → Control de procesos de manufactura",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Process variables affect product quality significantly",
+          "spanish": "Las variables del proceso afectan significativamente la calidad del producto"
+        },
+        {
+          "english": "Closed-loop control systems maintain stability",
+          "spanish": "Los sistemas de control de lazo cerrado mantienen estabilidad"
+        },
+        {
+          "english": "Feedback sensors monitor process conditions",
+          "spanish": "Los sensores de retroalimentación monitorean condiciones del proceso"
+        },
+        {
+          "english": "Control algorithms adjust parameters automatically",
+          "spanish": "Los algoritmos de control ajustan parámetros automáticamente"
+        },
+        {
+          "english": "Statistical process control identifies trends",
+          "spanish": "El control estadístico de procesos identifica tendencias"
+        },
+        {
+          "english": "Process capability studies assess performance",
+          "spanish": "Los estudios de capacidad de proceso evalúan rendimiento"
+        },
+        {
+          "english": "Temperature and pressure require precise control",
+          "spanish": "La temperatura y presión requieren control preciso"
+        },
+        {
+          "english": "Flow rate optimization improves efficiency",
+          "spanish": "La optimización de tasa de flujo mejora eficiencia"
+        },
+        {
+          "english": "Quality control charts track process stability",
+          "spanish": "Las gráficas de control de calidad rastrean estabilidad del proceso"
+        },
+        {
+          "english": "Process optimization reduces waste and costs",
+          "spanish": "La optimización de procesos reduce desperdicios y costos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantage do closed-loop control systems provide?",
+          "options": ["They are more expensive", "They automatically maintain stable conditions", "They require more operators"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is statistical process control important?",
+          "options": ["It identifies trends and prevents quality problems", "It makes work harder", "It wastes time"],
+          "answer": 0
+        },
+        {
+          "audio": "How do feedback sensors help in process control?",
+          "options": ["They monitor actual conditions and provide data", "They break easily", "They are decorative"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Process",
+          "suffix": "must be carefully controlled to ensure consistent quality.",
+          "answer": "variables",
+          "selected": false,
+          "feedback": "Key process variables like temperature, pressure, and flow rate directly impact product quality."
+        },
+        {
+          "prefix": "Feedback",
+          "suffix": "provide real-time information about process conditions.",
+          "answer": "sensors",
+          "selected": false,
+          "feedback": "Sensors enable control systems to respond quickly to changing conditions."
+        },
+        {
+          "prefix": "Statistical process",
+          "suffix": "helps identify when processes are going out of control.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "SPC uses statistical methods to detect process variations before they cause quality problems."
+        }
+      ]
+    },
+    {
+      "title": "Quality Assurance and Testing → Aseguramiento de calidad y pruebas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Comprehensive testing validates product performance",
+          "spanish": "Las pruebas comprensivas validan el rendimiento del producto"
+        },
+        {
+          "english": "Non-destructive testing preserves sample integrity",
+          "spanish": "Las pruebas no destructivas preservan la integridad de la muestra"
+        },
+        {
+          "english": "Accelerated life testing predicts durability",
+          "spanish": "Las pruebas de vida acelerada predicen durabilidad"
+        },
+        {
+          "english": "Environmental testing simulates operating conditions",
+          "spanish": "Las pruebas ambientales simulan condiciones de operación"
+        },
+        {
+          "english": "Metrology ensures measurement traceability",
+          "spanish": "La metrología asegura trazabilidad de medición"
+        },
+        {
+          "english": "Statistical sampling represents population characteristics",
+          "spanish": "El muestreo estadístico representa características de la población"
+        },
+        {
+          "english": "Certificate of compliance documents conformity",
+          "spanish": "El certificado de cumplimiento documenta conformidad"
+        },
+        {
+          "english": "Corrective action prevents recurring defects",
+          "spanish": "La acción correctiva previene defectos recurrentes"
+        },
+        {
+          "english": "Continuous improvement enhances quality systems",
+          "spanish": "La mejora continua mejora los sistemas de calidad"
+        },
+        {
+          "english": "Customer feedback drives quality initiatives",
+          "spanish": "La retroalimentación del cliente impulsa iniciativas de calidad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the advantage of non-destructive testing?",
+          "options": ["It's cheaper", "It preserves the tested sample for use", "It takes longer"],
+          "answer": 1
+        },
+        {
+          "audio": "Why perform accelerated life testing?",
+          "options": ["To predict how long products will last", "To break products quickly", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "What does measurement traceability ensure?",
+          "options": ["Measurements can be linked to recognized standards", "Measurements are wrong", "Nothing important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Comprehensive",
+          "suffix": "ensures products meet all performance requirements.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Thorough testing validates that products will perform as expected in real-world conditions."
+        },
+        {
+          "prefix": "Statistical",
+          "suffix": "allows quality assessment without testing every unit.",
+          "answer": "sampling",
+          "selected": false,
+          "feedback": "Proper sampling techniques provide reliable quality information efficiently."
+        },
+        {
+          "prefix": "Corrective",
+          "suffix": "addresses root causes to prevent problem recurrence.",
+          "answer": "action",
+          "selected": false,
+          "feedback": "Effective corrective action eliminates the source of quality problems permanently."
+        }
+      ]
+    },
+    {
+      "title": "Technical Documentation and Standards → Documentación técnica y estándares",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Technical specifications define product requirements",
+          "spanish": "Las especificaciones técnicas definen requisitos del producto"
+        },
+        {
+          "english": "Industry standards ensure compatibility and safety",
+          "spanish": "Los estándares de la industria aseguran compatibilidad y seguridad"
+        },
+        {
+          "english": "Detailed drawings communicate design intent",
+          "spanish": "Los dibujos detallados comunican la intención del diseño"
+        },
+        {
+          "english": "Revision control tracks document changes",
+          "spanish": "El control de revisión rastrea cambios en documentos"
+        },
+        {
+          "english": "Work instructions guide operator procedures",
+          "spanish": "Las instrucciones de trabajo guían procedimientos del operador"
+        },
+        {
+          "english": "Inspection checklists ensure thoroughness",
+          "spanish": "Las listas de verificación de inspección aseguran exhaustividad"
+        },
+        {
+          "english": "Material certificates verify quality",
+          "spanish": "Los certificados de material verifican calidad"
+        },
+        {
+          "english": "Regulatory compliance prevents legal issues",
+          "spanish": "El cumplimiento regulatorio previene problemas legales"
+        },
+        {
+          "english": "Training records document competency",
+          "spanish": "Los registros de entrenamiento documentan competencia"
+        },
+        {
+          "english": "Document control ensures current information",
+          "spanish": "El control de documentos asegura información actual"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are industry standards important?",
+          "options": ["They ensure compatibility and safety across products", "They make things more expensive", "They are unnecessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of revision control?",
+          "options": ["To confuse people", "To track changes and maintain document history", "To delete documents"],
+          "answer": 1
+        },
+        {
+          "audio": "How do work instructions help operators?",
+          "options": ["They provide step-by-step guidance for procedures", "They make work harder", "They are ignored"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Environmental and Sustainability Considerations → Consideraciones ambientales y de sostenibilidad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Sustainable practices reduce environmental impact",
+          "spanish": "Las prácticas sostenibles reducen el impacto ambiental"
+        },
+        {
+          "english": "Renewable energy sources power operations",
+          "spanish": "Las fuentes de energía renovable alimentan operaciones"
+        },
+        {
+          "english": "Waste reduction minimizes disposal costs",
+          "spanish": "La reducción de desperdicios minimiza costos de disposición"
+        },
+        {
+          "english": "Recycling programs recover valuable materials",
+          "spanish": "Los programas de reciclaje recuperan materiales valiosos"
+        },
+        {
+          "english": "Environmental monitoring tracks compliance",
+          "spanish": "El monitoreo ambiental rastrea cumplimiento"
+        },
+        {
+          "english": "Green manufacturing processes reduce pollution",
+          "spanish": "Los procesos de manufactura verde reducen contaminación"
+        },
+        {
+          "english": "Life cycle assessment evaluates total impact",
+          "spanish": "La evaluación del ciclo de vida evalúa impacto total"
+        },
+        {
+          "english": "Carbon footprint reduction combats climate change",
+          "spanish": "La reducción de huella de carbono combate el cambio climático"
+        },
+        {
+          "english": "Eco-friendly materials replace harmful substances",
+          "spanish": "Los materiales ecológicos reemplazan sustancias dañinas"
+        },
+        {
+          "english": "Sustainability reporting demonstrates responsibility",
+          "spanish": "Los reportes de sostenibilidad demuestran responsabilidad"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Sustainable",
+          "suffix": "help companies reduce their environmental footprint.",
+          "answer": "practices",
+          "selected": false,
+          "feedback": "Sustainable practices benefit both the environment and long-term business success."
+        },
+        {
+          "prefix": "Renewable",
+          "suffix": "sources provide clean alternatives to fossil fuels.",
+          "answer": "energy",
+          "selected": false,
+          "feedback": "Renewable energy reduces greenhouse gas emissions and operating costs."
+        },
+        {
+          "prefix": "Environmental",
+          "suffix": "ensures operations comply with regulations.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Continuous monitoring helps maintain compliance and identify improvement opportunities."
+        }
+      ]
+    }
+  ]
+}
+]
+

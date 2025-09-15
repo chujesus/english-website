@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 4,
+    "sections": [
+      {
+        "title": "Days of the Week → Días de la semana",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Monday", "spanish": "lunes" },
+          { "english": "Tuesday", "spanish": "martes" },
+          { "english": "Wednesday", "spanish": "miércoles" },
+          { "english": "Thursday", "spanish": "jueves" },
+          { "english": "Friday", "spanish": "viernes" },
+          { "english": "Saturday", "spanish": "sábado" },
+          { "english": "Sunday", "spanish": "domingo" },
+          { "english": "today", "spanish": "hoy" },
+          { "english": "tomorrow", "spanish": "mañana" },
+          { "english": "yesterday", "spanish": "ayer" },
+          { "english": "weekday", "spanish": "día de semana" },
+          { "english": "weekend", "spanish": "fin de semana" },
+          { "english": "What day is it?", "spanish": "¿Qué día es?" },
+          { "english": "Today is", "spanish": "Hoy es" },
+          { "english": "work day", "spanish": "día de trabajo" }
+        ],
+        "listening": [
+          {
+            "audio": "What day is today?",
+            "options": ["What day is today?", "What time is it?", "What date is it?", "What month is it?"],
+            "answer": "What day is today?"
+          },
+          {
+            "audio": "Today is Wednesday",
+            "options": ["Today is Wednesday", "Today is Thursday", "Today is Tuesday", "Today is Monday"],
+            "answer": "Today is Wednesday"
+          },
+          {
+            "audio": "I work on weekdays",
+            "options": ["I work on weekdays", "I work on weekends", "I work on Sundays", "I work at night"],
+            "answer": "I work on weekdays"
+          },
+          {
+            "audio": "My classes are on Friday",
+            "options": ["My classes are on Friday", "My classes are on Monday", "My classes are on Saturday", "My classes are on Sunday"],
+            "answer": "My classes are on Friday"
+          },
+          {
+            "audio": "We have overtime on Saturday",
+            "options": ["We have overtime on Saturday", "We have overtime on Sunday", "We have overtime on Friday", "We have overtime on Monday"],
+            "answer": "We have overtime on Saturday"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Today is", "Tomorrow is", "Yesterday was"],
+            "suffix": "Monday and I have to work.",
+            "answer": "Today is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work from Monday", "Classes are from Tuesday", "The factory opens from"],
+            "suffix": "to Friday every week.",
+            "answer": "I work from Monday",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What day", "Which day", "On what day"],
+            "suffix": "do you have your English class?",
+            "answer": "What day",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Saturday", "Sunday", "Friday"],
+            "suffix": "and Sunday are my days off.",
+            "answer": "Saturday",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["On weekdays", "On weekends", "On Mondays"],
+            "suffix": "I attend technical classes at IPEC.",
+            "answer": "On weekdays",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Months of the Year → Meses del año",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "January", "spanish": "enero" },
+          { "english": "February", "spanish": "febrero" },
+          { "english": "March", "spanish": "marzo" },
+          { "english": "April", "spanish": "abril" },
+          { "english": "May", "spanish": "mayo" },
+          { "english": "June", "spanish": "junio" },
+          { "english": "July", "spanish": "julio" },
+          { "english": "August", "spanish": "agosto" },
+          { "english": "September", "spanish": "septiembre" },
+          { "english": "October", "spanish": "octubre" },
+          { "english": "November", "spanish": "noviembre" },
+          { "english": "December", "spanish": "diciembre" },
+          { "english": "this month", "spanish": "este mes" },
+          { "english": "next month", "spanish": "el próximo mes" },
+          { "english": "last month", "spanish": "el mes pasado" }
+        ],
+        "listening": [
+          {
+            "audio": "What month is it?",
+            "options": ["What month is it?", "What day is it?", "What year is it?", "What time is it?"],
+            "answer": "What month is it?"
+          },
+          {
+            "audio": "My birthday is in July",
+            "options": ["My birthday is in July", "My birthday is in June", "My birthday is in January", "My birthday is in May"],
+            "answer": "My birthday is in July"
+          },
+          {
+            "audio": "School starts in March",
+            "options": ["School starts in March", "School starts in February", "School starts in April", "School starts in May"],
+            "answer": "School starts in March"
+          },
+          {
+            "audio": "The dry season is from December to April",
+            "options": ["December to April", "June to October", "January to May", "March to July"],
+            "answer": "December to April"
+          },
+          {
+            "audio": "We have vacation in December",
+            "options": ["We have vacation in December", "We have vacation in November", "We have vacation in January", "We have vacation in February"],
+            "answer": "We have vacation in December"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["This month is", "We are in", "It is"],
+            "suffix": "July and it's very hot.",
+            "answer": "This month is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My course starts", "Classes begin", "Work begins"],
+            "suffix": "in March at IPEC.",
+            "answer": "My course starts",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["In Costa Rica,", "Here,", "During"],
+            "suffix": "December is the holiday season.",
+            "answer": "In Costa Rica,",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["January", "February", "March"],
+            "suffix": "is the first month of the year.",
+            "answer": "January",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The rainy season", "Wet weather", "Heavy rains"],
+            "suffix": "is from May to November.",
+            "answer": "The rainy season",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Dates and Birthdays → Fechas y cumpleaños",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "date", "spanish": "fecha" },
+          { "english": "birthday", "spanish": "cumpleaños" },
+          { "english": "first", "spanish": "primero" },
+          { "english": "second", "spanish": "segundo" },
+          { "english": "third", "spanish": "tercero" },
+          { "english": "fourth", "spanish": "cuarto" },
+          { "english": "fifth", "spanish": "quinto" },
+          { "english": "tenth", "spanish": "décimo" },
+          { "english": "fifteenth", "spanish": "quinceavo" },
+          { "english": "twentieth", "spanish": "vigésimo" },
+          { "english": "thirtieth", "spanish": "trigésimo" },
+          { "english": "What's the date?", "spanish": "¿Cuál es la fecha?" },
+          { "english": "When is your birthday?", "spanish": "¿Cuándo es tu cumpleaños?" },
+          { "english": "My birthday is on", "spanish": "Mi cumpleaños es el" },
+          { "english": "I was born on", "spanish": "Nací el" }
+        ],
+        "listening": [
+          {
+            "audio": "What's the date today?",
+            "options": ["What's the date today?", "What day is today?", "What time is it?", "What month is it?"],
+            "answer": "What's the date today?"
+          },
+          {
+            "audio": "My birthday is on July fifteenth",
+            "options": ["July fifteenth", "June fifteenth", "July fifth", "July twentieth"],
+            "answer": "July fifteenth"
+          },
+          {
+            "audio": "When is your birthday?",
+            "options": ["When is your birthday?", "Where is your birthday?", "What is your birthday?", "How is your birthday?"],
+            "answer": "When is your birthday?"
+          },
+          {
+            "audio": "I was born on March third",
+            "options": ["March third", "March thirteenth", "March thirtieth", "May third"],
+            "answer": "March third"
+          },
+          {
+            "audio": "Today is the twentieth",
+            "options": ["Today is the twentieth", "Today is the twelfth", "Today is the second", "Today is the tenth"],
+            "answer": "Today is the twentieth"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Today is", "The date is", "It is"],
+            "suffix": "March fifteenth, 2025.",
+            "answer": "Today is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My birthday is", "I was born", "I celebrate"],
+            "suffix": "on October tenth.",
+            "answer": "My birthday is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["When is", "What date is", "On what day is"],
+            "suffix": "your son's birthday?",
+            "answer": "When is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The course starts", "Classes begin", "Work begins"],
+            "suffix": "on February first.",
+            "answer": "The course starts",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Independence Day", "Christmas", "New Year"],
+            "suffix": "is on September fifteenth in Costa Rica.",
+            "answer": "Independence Day",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Work Schedules and Appointments → Horarios de trabajo y citas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "meeting", "spanish": "reunión" },
+          { "english": "shift", "spanish": "turno" },
+          { "english": "morning shift", "spanish": "turno de mañana" },
+          { "english": "evening shift", "spanish": "turno de tarde" },
+          { "english": "night shift", "spanish": "turno de noche" },
+          { "english": "overtime", "spanish": "horas extra" },
+          { "english": "day off", "spanish": "día libre" },
+          { "english": "holiday", "spanish": "feriado" },
+          { "english": "vacation", "spanish": "vacaciones" },
+          { "english": "deadline", "spanish": "fecha límite" },
+          { "english": "due date", "spanish": "fecha de vencimiento" },
+          { "english": "training", "spanish": "capacitación" },
+          { "english": "class schedule", "spanish": "horario de clases" }
+        ],
+        "listening": [
+          {
+            "audio": "What's your work schedule?",
+            "options": ["What's your work schedule?", "What's your phone number?", "What's your address?", "What's your name?"],
+            "answer": "What's your work schedule?"
+          },
+          {
+            "audio": "I work the morning shift",
+            "options": ["I work the morning shift", "I work the evening shift", "I work the night shift", "I work overtime"],
+            "answer": "I work the morning shift"
+          },
+          {
+            "audio": "My appointment is on Friday",
+            "options": ["My appointment is on Friday", "My appointment is on Monday", "My appointment is on Sunday", "My appointment is on Tuesday"],
+            "answer": "My appointment is on Friday"
+          },
+          {
+            "audio": "The deadline is next Monday",
+            "options": ["The deadline is next Monday", "The deadline is next Friday", "The deadline is this Monday", "The deadline is last Monday"],
+            "answer": "The deadline is next Monday"
+          },
+          {
+            "audio": "We have training on Wednesday",
+            "options": ["We have training on Wednesday", "We have a meeting on Wednesday", "We have overtime on Wednesday", "We have vacation on Wednesday"],
+            "answer": "We have training on Wednesday"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My work schedule", "My shift", "My hours"],
+            "suffix": "is Monday to Friday from 7 AM to 3 PM.",
+            "answer": "My work schedule",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I have an appointment", "I have a meeting", "I have training"],
+            "suffix": "with my supervisor on Thursday.",
+            "answer": "I have an appointment",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The project deadline", "The course ends", "The payment is due"],
+            "suffix": "is on December fifteenth.",
+            "answer": "The project deadline",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Saturday", "Sunday", "Monday"],
+            "suffix": "is my day off this week.",
+            "answer": "Sunday",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We work overtime", "We have holidays", "We get vacation"],
+            "suffix": "during busy periods in the factory.",
+            "answer": "We work overtime",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Seasons and Weather → Estaciones y clima",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "season", "spanish": "estación" },
+          { "english": "dry season", "spanish": "estación seca" },
+          { "english": "rainy season", "spanish": "estación lluviosa" },
+          { "english": "weather", "spanish": "clima" },
+          { "english": "hot", "spanish": "caliente" },
+          { "english": "cold", "spanish": "frío" },
+          { "english": "warm", "spanish": "cálido" },
+          { "english": "cool", "spanish": "fresco" },
+          { "english": "sunny", "spanish": "soleado" },
+          { "english": "cloudy", "spanish": "nublado" },
+          { "english": "rainy", "spanish": "lluvioso" },
+          { "english": "windy", "spanish": "ventoso" },
+          { "english": "humid", "spanish": "húmedo" },
+          { "english": "How's the weather?", "spanish": "¿Cómo está el clima?" },
+          { "english": "It's very hot today", "spanish": "Hace mucho calor hoy" }
+        ],
+        "listening": [
+          {
+            "audio": "How's the weather today?",
+            "options": ["How's the weather today?", "What's the temperature?", "Is it raining?", "What season is it?"],
+            "answer": "How's the weather today?"
+          },
+          {
+            "audio": "It's very hot and humid",
+            "options": ["It's very hot and humid", "It's cold and windy", "It's warm and sunny", "It's cool and cloudy"],
+            "answer": "It's very hot and humid"
+          },
+          {
+            "audio": "The dry season is from December to April",
+            "options": ["December to April", "May to November", "June to October", "January to March"],
+            "answer": "December to April"
+          },
+          {
+            "audio": "It rains a lot in September",
+            "options": ["It rains a lot in September", "It's sunny in September", "It's cold in September", "It's windy in September"],
+            "answer": "It rains a lot in September"
+          },
+          {
+            "audio": "We can't work outside when it's raining",
+            "options": ["when it's raining", "when it's sunny", "when it's hot", "when it's cold"],
+            "answer": "when it's raining"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["It's very hot", "It's quite warm", "It's extremely humid"],
+            "suffix": "during the dry season in Guanacaste.",
+            "answer": "It's very hot",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How's the weather", "What's the climate like", "Is it hot"],
+            "suffix": "in your hometown?",
+            "answer": "How's the weather",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We can't work outside", "Construction stops", "The factory closes"],
+            "suffix": "when it's raining heavily.",
+            "answer": "We can't work outside",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The rainy season", "Wet weather", "Heavy rains"],
+            "suffix": "affects our work schedule.",
+            "answer": "The rainy season",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["In Costa Rica", "Here", "During winter"],
+            "suffix": "the weather is warm all year round.",
+            "answer": "In Costa Rica",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

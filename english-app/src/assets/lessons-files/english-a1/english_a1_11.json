@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 11,
+    "sections": [
+      {
+        "title": "Food and Drinks → Comida y bebidas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "food", "spanish": "comida" },
+          { "english": "breakfast", "spanish": "desayuno" },
+          { "english": "lunch", "spanish": "almuerzo" },
+          { "english": "dinner", "spanish": "cena" },
+          { "english": "snack", "spanish": "merienda" },
+          { "english": "bread", "spanish": "pan" },
+          { "english": "rice", "spanish": "arroz" },
+          { "english": "beans", "spanish": "frijoles" },
+          { "english": "meat", "spanish": "carne" },
+          { "english": "chicken", "spanish": "pollo" },
+          { "english": "fish", "spanish": "pescado" },
+          { "english": "vegetables", "spanish": "vegetales" },
+          { "english": "fruit", "spanish": "fruta" },
+          { "english": "water", "spanish": "agua" },
+          { "english": "coffee", "spanish": "café" }
+        ],
+        "listening": [
+          {
+            "audio": "What do you eat for breakfast?",
+            "options": ["What do you eat for breakfast?", "What do you eat for lunch?", "What do you eat for dinner?", "What do you drink?"],
+            "answer": "What do you eat for breakfast?"
+          },
+          {
+            "audio": "I eat rice and beans every day",
+            "options": ["I eat rice and beans every day", "I eat bread and butter every day", "I eat meat and fish every day", "I eat fruit and vegetables every day"],
+            "answer": "I eat rice and beans every day"
+          },
+          {
+            "audio": "Do you like coffee?",
+            "options": ["Do you like coffee?", "Do you like water?", "Do you like juice?", "Do you like milk?"],
+            "answer": "Do you like coffee?"
+          },
+          {
+            "audio": "We have lunch at 12 PM",
+            "options": ["We have lunch at 12 PM", "We have breakfast at 12 PM", "We have dinner at 12 PM", "We have snacks at 12 PM"],
+            "answer": "We have lunch at 12 PM"
+          },
+          {
+            "audio": "Gallo pinto is a typical Costa Rican food",
+            "options": ["typical Costa Rican food", "typical Mexican food", "typical American food", "typical European food"],
+            "answer": "typical Costa Rican food"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I eat", "We eat", "They eat"],
+            "suffix": "gallo pinto for breakfast every morning.",
+            "answer": "I eat",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What do you", "What does he", "What does she"],
+            "suffix": "have for lunch today?",
+            "answer": "What do you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I drink", "I like", "I need"],
+            "suffix": "coffee to start my work day.",
+            "answer": "I drink",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["For dinner", "At dinner", "During dinner"],
+            "suffix": "we usually eat rice, beans and meat.",
+            "answer": "For dinner",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rican food", "Traditional food", "Local food"],
+            "suffix": "includes rice, beans, and plantains.",
+            "answer": "Costa Rican food",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Meals and Eating Habits → Comidas y hábitos alimenticios",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "meal", "spanish": "comida" },
+          { "english": "eat", "spanish": "comer" },
+          { "english": "drink", "spanish": "beber" },
+          { "english": "hungry", "spanish": "hambriento" },
+          { "english": "thirsty", "spanish": "sediento" },
+          { "english": "delicious", "spanish": "delicioso" },
+          { "english": "tasty", "spanish": "sabroso" },
+          { "english": "healthy", "spanish": "saludable" },
+          { "english": "fresh", "spanish": "fresco" },
+          { "english": "hot", "spanish": "caliente" },
+          { "english": "cold", "spanish": "frío" },
+          { "english": "sweet", "spanish": "dulce" },
+          { "english": "salty", "spanish": "salado" },
+          { "english": "spicy", "spanish": "picante" },
+          { "english": "bitter", "spanish": "amargo" }
+        ],
+        "listening": [
+          {
+            "audio": "I am hungry",
+            "options": ["I am hungry", "I am thirsty", "I am tired", "I am happy"],
+            "answer": "I am hungry"
+          },
+          {
+            "audio": "This food is delicious",
+            "options": ["This food is delicious", "This food is terrible", "This food is cold", "This food is expensive"],
+            "answer": "This food is delicious"
+          },
+          {
+            "audio": "Are you thirsty?",
+            "options": ["Are you thirsty?", "Are you hungry?", "Are you tired?", "Are you busy?"],
+            "answer": "Are you thirsty?"
+          },
+          {
+            "audio": "The coffee is very hot",
+            "options": ["The coffee is very hot", "The coffee is very cold", "The coffee is very sweet", "The coffee is very bitter"],
+            "answer": "The coffee is very hot"
+          },
+          {
+            "audio": "I like spicy food",
+            "options": ["I like spicy food", "I like sweet food", "I like salty food", "I like bitter food"],
+            "answer": "I like spicy food"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I am", "She is", "We are"],
+            "suffix": "hungry, let's eat something.",
+            "answer": "I am",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This meal", "This food", "This dish"],
+            "suffix": "is very tasty and healthy.",
+            "answer": "This meal",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Are you", "Is he", "Is she"],
+            "suffix": "thirsty? Do you want some water?",
+            "answer": "Are you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The soup is", "The coffee is", "The tea is"],
+            "suffix": "too hot to drink right now.",
+            "answer": "The soup is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I don't like", "I hate", "I avoid"],
+            "suffix": "spicy food because it hurts my stomach.",
+            "answer": "I don't like",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Cafeteria → Cafetería del trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "cafeteria", "spanish": "cafetería" },
+          { "english": "menu", "spanish": "menú" },
+          { "english": "lunch break", "spanish": "hora del almuerzo" },
+          { "english": "order", "spanish": "ordenar" },
+          { "english": "serve", "spanish": "servir" },
+          { "english": "plate", "spanish": "plato" },
+          { "english": "cup", "spanish": "taza" },
+          { "english": "glass", "spanish": "vaso" },
+          { "english": "fork", "spanish": "tenedor" },
+          { "english": "knife", "spanish": "cuchillo" },
+          { "english": "spoon", "spanish": "cuchara" },
+          { "english": "napkin", "spanish": "servilleta" },
+          { "english": "tray", "spanish": "bandeja" },
+          { "english": "cashier", "spanish": "cajero" },
+          { "english": "receipt", "spanish": "recibo" }
+        ],
+        "listening": [
+          {
+            "audio": "What's on the menu today?",
+            "options": ["What's on the menu today?", "What time is lunch?", "Where is the cafeteria?", "How much is lunch?"],
+            "answer": "What's on the menu today?"
+          },
+          {
+            "audio": "I need a fork and knife",
+            "options": ["I need a fork and knife", "I need a cup and glass", "I need a plate and napkin", "I need a tray and spoon"],
+            "answer": "I need a fork and knife"
+          },
+          {
+            "audio": "The lunch break is at 12:30",
+            "options": ["The lunch break is at 12:30", "The lunch break is at 11:30", "The lunch break is at 1:30", "The lunch break is at 2:30"],
+            "answer": "The lunch break is at 12:30"
+          },
+          {
+            "audio": "Can I have the receipt please?",
+            "options": ["Can I have the receipt please?", "Can I have the menu please?", "Can I have the check please?", "Can I have the napkin please?"],
+            "answer": "Can I have the receipt please?"
+          },
+          {
+            "audio": "The cafeteria serves good food",
+            "options": ["The cafeteria serves good food", "The cafeteria serves bad food", "The cafeteria serves expensive food", "The cafeteria serves cold food"],
+            "answer": "The cafeteria serves good food"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Let's go to", "Let's eat at", "Let's meet at"],
+            "suffix": "the cafeteria for lunch today.",
+            "answer": "Let's go to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I order", "I want", "I choose"],
+            "suffix": "the same meal every day at work.",
+            "answer": "I order",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please give me", "I need", "Can I have"],
+            "suffix": "a fork, knife, and napkin.",
+            "answer": "Please give me",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Our lunch break", "The break time", "Lunch time"],
+            "suffix": "is from 12:00 to 1:00 PM.",
+            "answer": "Our lunch break",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The cashier", "The server", "The cook"],
+            "suffix": "gives me the receipt after I pay.",
+            "answer": "The cashier",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Shopping for Food → Comprando comida",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "supermarket", "spanish": "supermercado" },
+          { "english": "grocery store", "spanish": "tienda de comestibles" },
+          { "english": "market", "spanish": "mercado" },
+          { "english": "shopping list", "spanish": "lista de compras" },
+          { "english": "basket", "spanish": "canasta" },
+          { "english": "cart", "spanish": "carrito" },
+          { "english": "aisle", "spanish": "pasillo" },
+          { "english": "checkout", "spanish": "caja" },
+          { "english": "price", "spanish": "precio" },
+          { "english": "expensive", "spanish": "caro" },
+          { "english": "cheap", "spanish": "barato" },
+          { "english": "fresh", "spanish": "fresco" },
+          { "english": "frozen", "spanish": "congelado" },
+          { "english": "organic", "spanish": "orgánico" },
+          { "english": "sale", "spanish": "oferta" }
+        ],
+        "listening": [
+          {
+            "audio": "Where is the supermarket?",
+            "options": ["Where is the supermarket?", "Where is the bank?", "Where is the hospital?", "Where is the school?"],
+            "answer": "Where is the supermarket?"
+          },
+          {
+            "audio": "I need a shopping cart",
+            "options": ["I need a shopping cart", "I need a shopping list", "I need a shopping basket", "I need a shopping bag"],
+            "answer": "I need a shopping cart"
+          },
+          {
+            "audio": "The vegetables are fresh today",
+            "options": ["The vegetables are fresh today", "The vegetables are expensive today", "The vegetables are frozen today", "The vegetables are organic today"],
+            "answer": "The vegetables are fresh today"
+          },
+          {
+            "audio": "This bread is on sale",
+            "options": ["This bread is on sale", "This bread is expensive", "This bread is fresh", "This bread is frozen"],
+            "answer": "This bread is on sale"
+          },
+          {
+            "audio": "Let's go to the checkout",
+            "options": ["Let's go to the checkout", "Let's go to the market", "Let's go to the aisle", "Let's go to the store"],
+            "answer": "Let's go to the checkout"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I go to", "I shop at", "I buy food at"],
+            "suffix": "the supermarket every Saturday.",
+            "answer": "I go to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please get", "Please take", "Please bring"],
+            "suffix": "a shopping cart for our groceries.",
+            "answer": "Please get",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The fruits", "The vegetables", "The meat"],
+            "suffix": "in this market are always fresh.",
+            "answer": "The fruits",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This food is", "This item is", "This product is"],
+            "suffix": "too expensive, let's find something cheaper.",
+            "answer": "This food is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["There's a sale", "There's a discount", "There's an offer"],
+            "suffix": "on rice and beans this week.",
+            "answer": "There's a sale",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Costa Rican Traditional Food → Comida tradicional costarricense",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "gallo pinto", "spanish": "gallo pinto" },
+          { "english": "casado", "spanish": "casado" },
+          { "english": "plantain", "spanish": "plátano" },
+          { "english": "black beans", "spanish": "frijoles negros" },
+          { "english": "white rice", "spanish": "arroz blanco" },
+          { "english": "fried plantain", "spanish": "plátano frito" },
+          { "english": "salad", "spanish": "ensalada" },
+          { "english": "tortilla", "spanish": "tortilla" },
+          { "english": "cheese", "spanish": "queso" },
+          { "english": "sour cream", "spanish": "natilla" },
+          { "english": "pork", "spanish": "cerdo" },
+          { "english": "beef", "spanish": "res" },
+          { "english": "traditional", "spanish": "tradicional" },
+          { "english": "typical", "spanish": "típico" },
+          { "english": "local", "spanish": "local" }
+        ],
+        "listening": [
+          {
+            "audio": "Gallo pinto is the most popular breakfast in Costa Rica",
+            "options": ["most popular breakfast", "most expensive breakfast", "most healthy breakfast", "most difficult breakfast"],
+            "answer": "most popular breakfast"
+          },
+          {
+            "audio": "A casado includes rice, beans, meat and salad",
+            "options": ["rice, beans, meat and salad", "rice, beans, soup and bread", "meat, fish, vegetables and fruit", "coffee, milk, sugar and bread"],
+            "answer": "rice, beans, meat and salad"
+          },
+          {
+            "audio": "Do you like fried plantains?",
+            "options": ["Do you like fried plantains?", "Do you like fresh plantains?", "Do you like green plantains?", "Do you like sweet plantains?"],
+            "answer": "Do you like fried plantains?"
+          },
+          {
+            "audio": "Traditional Costa Rican food is delicious",
+            "options": ["Traditional Costa Rican food is delicious", "Traditional Mexican food is delicious", "Traditional American food is delicious", "Traditional European food is delicious"],
+            "answer": "Traditional Costa Rican food is delicious"
+          },
+          {
+            "audio": "We eat tortillas with cheese and sour cream",
+            "options": ["with cheese and sour cream", "with meat and beans", "with rice and plantains", "with salad and vegetables"],
+            "answer": "with cheese and sour cream"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Gallo pinto", "Casado", "Traditional food"],
+            "suffix": "is very popular in Costa Rica.",
+            "answer": "Gallo pinto",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I eat", "I love", "I prefer"],
+            "suffix": "gallo pinto every morning for breakfast.",
+            "answer": "I eat",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["A typical casado", "A traditional meal", "A complete lunch"],
+            "suffix": "has rice, beans, meat, plantain and salad.",
+            "answer": "A typical casado",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rican cuisine", "Local food", "Traditional cooking"],
+            "suffix": "uses a lot of rice and beans.",
+            "answer": "Costa Rican cuisine",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["For lunch", "At work", "In restaurants"],
+            "suffix": "we often order a casado with meat.",
+            "answer": "For lunch",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

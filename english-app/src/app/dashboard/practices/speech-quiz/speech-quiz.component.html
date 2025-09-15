@@ -1,0 +1,43 @@
+<div class="container text-center" *ngIf="listening.length > 0">
+    <ng-container *ngIf="!showSummary">
+        <div class="mb-4">
+            <button class="btn btn-primary rounded-pill px-4 py-2 fs-4" (click)="playAudio()">
+                🔊
+            </button>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3" *ngFor="let option of listening[currentQuestionIndex].options">
+                <button class="btn w-100 py-3 border shadow-sm" [ngClass]="{
+            'btn-success': selectedAnswer === option && isCorrect,
+            'btn-danger': selectedAnswer === option && isCorrect === false,
+            'btn-light': selectedAnswer !== option }" (click)="selectAnswer(option)">
+                    {{ option }}
+                </button>
+            </div>
+            <div style="height: 30px;">
+                <div *ngIf="selectedAnswer">
+                    <p *ngIf="isCorrect" class="text-success fw-bold fs-5">✅ Correct!</p>
+                    <p *ngIf="isCorrect === false" class="text-danger fw-bold fs-5">❌ Incorrect. Try next!</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-outline-secondary mt-3" (click)="nextOrFinish()">
+            {{ currentQuestionIndex < listening.length - 1 ? 'Next ▶️' : 'Check Results ✅' }} </button>
+    </ng-container>
+
+    <ng-container *ngIf="showSummary">
+        <h4 class="text-primary mb-4">📊 Quiz Summary</h4>
+        <ul class="list-group text-start">
+            <li class="list-group-item d-flex justify-content-between align-items-center"
+                *ngFor="let result of summaryResults; let i = index">
+                Question {{ i + 1 }}:
+                <span [ngClass]="{ 'text-success': result.correct, 'text-danger': !result.correct }">
+                    {{ result.correct ? '✅ Correct' : '❌ Incorrect' }}
+                </span>
+            </li>
+        </ul>
+        <button class="btn btn-secondary mt-4" (click)="resetQuiz()">🔁 Try Again</button>
+    </ng-container>
+</div>

@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 12,
+    "sections": [
+      {
+        "title": "Clothing and Accessories → Ropa y accesorios",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "clothes", "spanish": "ropa" },
+          { "english": "shirt", "spanish": "camisa" },
+          { "english": "pants", "spanish": "pantalones" },
+          { "english": "dress", "spanish": "vestido" },
+          { "english": "skirt", "spanish": "falda" },
+          { "english": "jacket", "spanish": "chaqueta" },
+          { "english": "shoes", "spanish": "zapatos" },
+          { "english": "socks", "spanish": "calcetines" },
+          { "english": "hat", "spanish": "sombrero" },
+          { "english": "belt", "spanish": "cinturón" },
+          { "english": "tie", "spanish": "corbata" },
+          { "english": "watch", "spanish": "reloj" },
+          { "english": "glasses", "spanish": "lentes" },
+          { "english": "uniform", "spanish": "uniforme" },
+          { "english": "safety gear", "spanish": "equipo de seguridad" }
+        ],
+        "listening": [
+          {
+            "audio": "What are you wearing today?",
+            "options": ["What are you wearing today?", "What are you eating today?", "What are you doing today?", "What are you studying today?"],
+            "answer": "What are you wearing today?"
+          },
+          {
+            "audio": "I am wearing a blue shirt",
+            "options": ["I am wearing a blue shirt", "I am wearing a red shirt", "I am wearing a white shirt", "I am wearing a black shirt"],
+            "answer": "I am wearing a blue shirt"
+          },
+          {
+            "audio": "Do you have safety shoes?",
+            "options": ["Do you have safety shoes?", "Do you have dress shoes?", "Do you have running shoes?", "Do you have old shoes?"],
+            "answer": "Do you have safety shoes?"
+          },
+          {
+            "audio": "Workers must wear uniforms",
+            "options": ["Workers must wear uniforms", "Workers must wear suits", "Workers must wear casual clothes", "Workers must wear formal clothes"],
+            "answer": "Workers must wear uniforms"
+          },
+          {
+            "audio": "I need new work boots",
+            "options": ["I need new work boots", "I need new dress shoes", "I need new sandals", "I need new sneakers"],
+            "answer": "I need new work boots"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I wear", "I put on", "I have"],
+            "suffix": "my work uniform every morning.",
+            "answer": "I wear",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What clothes", "What uniform", "What outfit"],
+            "suffix": "do you wear to work?",
+            "answer": "What clothes",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety shoes", "Work boots", "Protective footwear"],
+            "suffix": "are required in the factory.",
+            "answer": "Safety shoes",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["She is wearing", "She has on", "She put on"],
+            "suffix": "a beautiful dress for the meeting.",
+            "answer": "She is wearing",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Don't forget", "Remember", "Make sure"],
+            "suffix": "to wear your safety gear at work.",
+            "answer": "Don't forget",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Colors and Sizes → Colores y tallas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "color", "spanish": "color" },
+          { "english": "red", "spanish": "rojo" },
+          { "english": "blue", "spanish": "azul" },
+          { "english": "green", "spanish": "verde" },
+          { "english": "yellow", "spanish": "amarillo" },
+          { "english": "black", "spanish": "negro" },
+          { "english": "white", "spanish": "blanco" },
+          { "english": "brown", "spanish": "café" },
+          { "english": "gray", "spanish": "gris" },
+          { "english": "size", "spanish": "talla" },
+          { "english": "small", "spanish": "pequeño" },
+          { "english": "medium", "spanish": "mediano" },
+          { "english": "large", "spanish": "grande" },
+          { "english": "extra large", "spanish": "extra grande" },
+          { "english": "extra small", "spanish": "extra pequeño" }
+        ],
+        "listening": [
+          {
+            "audio": "What color is your shirt?",
+            "options": ["What color is your shirt?", "What size is your shirt?", "What type is your shirt?", "What brand is your shirt?"],
+            "answer": "What color is your shirt?"
+          },
+          {
+            "audio": "My uniform is blue and white",
+            "options": ["My uniform is blue and white", "My uniform is red and black", "My uniform is green and yellow", "My uniform is brown and gray"],
+            "answer": "My uniform is blue and white"
+          },
+          {
+            "audio": "What size do you need?",
+            "options": ["What size do you need?", "What color do you need?", "What type do you need?", "What brand do you need?"],
+            "answer": "What size do you need?"
+          },
+          {
+            "audio": "I wear a medium size",
+            "options": ["I wear a medium size", "I wear a small size", "I wear a large size", "I wear an extra large size"],
+            "answer": "I wear a medium size"
+          },
+          {
+            "audio": "The safety vest is orange",
+            "options": ["The safety vest is orange", "The safety vest is yellow", "The safety vest is green", "The safety vest is red"],
+            "answer": "The safety vest is orange"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My favorite color", "The best color", "The most popular color"],
+            "suffix": "for work clothes is blue.",
+            "answer": "My favorite color",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What size", "Which size", "What's your size"],
+            "suffix": "shirt do you wear?",
+            "answer": "What size",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need", "I want", "I prefer"],
+            "suffix": "a large size uniform for work.",
+            "answer": "I need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The company uniform", "Our work clothes", "The safety gear"],
+            "suffix": "is blue and has the company logo.",
+            "answer": "The company uniform",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Black shoes", "Brown boots", "White sneakers"],
+            "suffix": "go well with any work uniform.",
+            "answer": "Black shoes",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Work Uniforms and Safety Gear → Uniformes de trabajo y equipo de seguridad",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "work uniform", "spanish": "uniforme de trabajo" },
+          { "english": "safety vest", "spanish": "chaleco de seguridad" },
+          { "english": "hard hat", "spanish": "casco de seguridad" },
+          { "english": "safety boots", "spanish": "botas de seguridad" },
+          { "english": "gloves", "spanish": "guantes" },
+          { "english": "protective glasses", "spanish": "lentes protectores" },
+          { "english": "ear protection", "spanish": "protección auditiva" },
+          { "english": "face mask", "spanish": "mascarilla" },
+          { "english": "apron", "spanish": "delantal" },
+          { "english": "coveralls", "spanish": "overol" },
+          { "english": "reflective", "spanish": "reflectivo" },
+          { "english": "required", "spanish": "requerido" },
+          { "english": "mandatory", "spanish": "obligatorio" },
+          { "english": "safety first", "spanish": "seguridad primero" },
+          { "english": "protection", "spanish": "protección" }
+        ],
+        "listening": [
+          {
+            "audio": "All workers must wear safety gear",
+            "options": ["All workers must wear safety gear", "All workers must wear uniforms", "All workers must wear badges", "All workers must wear watches"],
+            "answer": "All workers must wear safety gear"
+          },
+          {
+            "audio": "Where is your hard hat?",
+            "options": ["Where is your hard hat?", "Where is your safety vest?", "Where is your uniform?", "Where is your badge?"],
+            "answer": "Where is your hard hat?"
+          },
+          {
+            "audio": "Safety boots are mandatory in this area",
+            "options": ["Safety boots are mandatory in this area", "Safety vests are mandatory in this area", "Hard hats are mandatory in this area", "Gloves are mandatory in this area"],
+            "answer": "Safety boots are mandatory in this area"
+          },
+          {
+            "audio": "Do you have protective glasses?",
+            "options": ["Do you have protective glasses?", "Do you have safety gloves?", "Do you have ear protection?", "Do you have a face mask?"],
+            "answer": "Do you have protective glasses?"
+          },
+          {
+            "audio": "The reflective vest helps drivers see you",
+            "options": ["helps drivers see you", "helps you see better", "helps protect your chest", "helps keep you warm"],
+            "answer": "helps drivers see you"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Every worker", "All employees", "Each person"],
+            "suffix": "must wear the complete safety gear.",
+            "answer": "Every worker",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Put on", "Wear", "Use"],
+            "suffix": "your hard hat before entering the construction site.",
+            "answer": "Put on",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety boots", "Protective footwear", "Work boots"],
+            "suffix": "protect your feet from heavy objects.",
+            "answer": "Safety boots",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Don't forget", "Remember", "Always wear"],
+            "suffix": "your protective glasses when using machines.",
+            "answer": "Don't forget",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The company provides", "The employer gives", "We receive"],
+            "suffix": "all the safety equipment for free.",
+            "answer": "The company provides",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Shopping for Clothes → Comprando ropa",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "store", "spanish": "tienda" },
+          { "english": "shopping", "spanish": "compras" },
+          { "english": "try on", "spanish": "probarse" },
+          { "english": "fitting room", "spanish": "probador" },
+          { "english": "buy", "spanish": "comprar" },
+          { "english": "sell", "spanish": "vender" },
+          { "english": "price", "spanish": "precio" },
+          { "english": "discount", "spanish": "descuento" },
+          { "english": "sale", "spanish": "rebaja" },
+          { "english": "cash", "spanish": "efectivo" },
+          { "english": "credit card", "spanish": "tarjeta de crédito" },
+          { "english": "receipt", "spanish": "recibo" },
+          { "english": "change", "spanish": "cambio" },
+          { "english": "size", "spanish": "talla" },
+          { "english": "fit", "spanish": "quedar" }
+        ],
+        "listening": [
+          {
+            "audio": "Can I try this on?",
+            "options": ["Can I try this on?", "Can I buy this?", "Can I return this?", "Can I exchange this?"],
+            "answer": "Can I try this on?"
+          },
+          {
+            "audio": "Where is the fitting room?",
+            "options": ["Where is the fitting room?", "Where is the cashier?", "Where is the exit?", "Where is the bathroom?"],
+            "answer": "Where is the fitting room?"
+          },
+          {
+            "audio": "How much does this cost?",
+            "options": ["How much does this cost?", "How big is this?", "How old is this?", "How heavy is this?"],
+            "answer": "How much does this cost?"
+          },
+          {
+            "audio": "Do you accept credit cards?",
+            "options": ["Do you accept credit cards?", "Do you accept cash only?", "Do you accept checks?", "Do you accept returns?"],
+            "answer": "Do you accept credit cards?"
+          },
+          {
+            "audio": "This shirt doesn't fit me",
+            "options": ["This shirt doesn't fit me", "This shirt is too expensive", "This shirt is too old", "This shirt is too small"],
+            "answer": "This shirt doesn't fit me"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I want to", "I need to", "I'm going to"],
+            "suffix": "buy new work clothes this weekend.",
+            "answer": "I want to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can I", "May I", "Could I"],
+            "suffix": "try on this uniform before buying it?",
+            "answer": "Can I",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How much", "What's the price", "What does"],
+            "suffix": "does this safety vest cost?",
+            "answer": "How much",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'll pay", "I want to pay", "I prefer to pay"],
+            "suffix": "with cash, not credit card.",
+            "answer": "I'll pay",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This size", "This uniform", "This shirt"],
+            "suffix": "fits me perfectly for work.",
+            "answer": "This size",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Describing Clothing → Describiendo la ropa",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "comfortable", "spanish": "cómodo" },
+          { "english": "uncomfortable", "spanish": "incómodo" },
+          { "english": "tight", "spanish": "apretado" },
+          { "english": "loose", "spanish": "suelto" },
+          { "english": "clean", "spanish": "limpio" },
+          { "english": "dirty", "spanish": "sucio" },
+          { "english": "new", "spanish": "nuevo" },
+          { "english": "old", "spanish": "viejo" },
+          { "english": "formal", "spanish": "formal" },
+          { "english": "casual", "spanish": "casual" },
+          { "english": "professional", "spanish": "profesional" },
+          { "english": "stylish", "spanish": "elegante" },
+          { "english": "simple", "spanish": "sencillo" },
+          { "english": "practical", "spanish": "práctico" },
+          { "english": "durable", "spanish": "duradero" }
+        ],
+        "listening": [
+          {
+            "audio": "These shoes are very comfortable",
+            "options": ["These shoes are very comfortable", "These shoes are very expensive", "These shoes are very old", "These shoes are very small"],
+            "answer": "These shoes are very comfortable"
+          },
+          {
+            "audio": "My uniform is too tight",
+            "options": ["My uniform is too tight", "My uniform is too loose", "My uniform is too dirty", "My uniform is too old"],
+            "answer": "My uniform is too tight"
+          },
+          {
+            "audio": "I need to wash my work clothes",
+            "options": ["I need to wash my work clothes", "I need to buy new work clothes", "I need to iron my work clothes", "I need to repair my work clothes"],
+            "answer": "I need to wash my work clothes"
+          },
+          {
+            "audio": "This jacket looks professional",
+            "options": ["This jacket looks professional", "This jacket looks casual", "This jacket looks old", "This jacket looks expensive"],
+            "answer": "This jacket looks professional"
+          },
+          {
+            "audio": "Work clothes should be practical",
+            "options": ["Work clothes should be practical", "Work clothes should be fashionable", "Work clothes should be expensive", "Work clothes should be colorful"],
+            "answer": "Work clothes should be practical"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My work boots", "My safety shoes", "My work uniform"],
+            "suffix": "are very comfortable for long hours.",
+            "answer": "My work boots",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This shirt is", "This uniform is", "This jacket is"],
+            "suffix": "too tight, I need a larger size.",
+            "answer": "This shirt is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I always keep", "I make sure", "I want"],
+            "suffix": "my work clothes clean and professional.",
+            "answer": "I always keep",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["For work", "At the office", "In meetings"],
+            "suffix": "I wear formal and professional clothes.",
+            "answer": "For work",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Work uniforms", "Safety gear", "Professional clothes"],
+            "suffix": "should be practical and durable.",
+            "answer": "Work uniforms",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

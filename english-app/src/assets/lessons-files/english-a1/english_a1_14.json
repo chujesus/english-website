@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 14,
+    "sections": [
+      {
+        "title": "Places in the City → Lugares en la ciudad",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "city", "spanish": "ciudad" },
+          { "english": "downtown", "spanish": "centro" },
+          { "english": "bank", "spanish": "banco" },
+          { "english": "hospital", "spanish": "hospital" },
+          { "english": "pharmacy", "spanish": "farmacia" },
+          { "english": "supermarket", "spanish": "supermercado" },
+          { "english": "restaurant", "spanish": "restaurante" },
+          { "english": "school", "spanish": "escuela" },
+          { "english": "university", "spanish": "universidad" },
+          { "english": "library", "spanish": "biblioteca" },
+          { "english": "park", "spanish": "parque" },
+          { "english": "church", "spanish": "iglesia" },
+          { "english": "police station", "spanish": "estación de policía" },
+          { "english": "fire station", "spanish": "estación de bomberos" },
+          { "english": "post office", "spanish": "correos" }
+        ],
+        "listening": [
+          {
+            "audio": "Where is the nearest bank?",
+            "options": ["Where is the nearest bank?", "Where is the nearest hospital?", "Where is the nearest school?", "Where is the nearest restaurant?"],
+            "answer": "Where is the nearest bank?"
+          },
+          {
+            "audio": "The hospital is downtown",
+            "options": ["The hospital is downtown", "The hospital is uptown", "The hospital is outside", "The hospital is nearby"],
+            "answer": "The hospital is downtown"
+          },
+          {
+            "audio": "I need to go to the pharmacy",
+            "options": ["I need to go to the pharmacy", "I need to go to the bank", "I need to go to the supermarket", "I need to go to the restaurant"],
+            "answer": "I need to go to the pharmacy"
+          },
+          {
+            "audio": "The technical school is near the park",
+            "options": ["near the park", "near the bank", "near the hospital", "near the church"],
+            "answer": "near the park"
+          },
+          {
+            "audio": "Where can I find a good restaurant?",
+            "options": ["Where can I find a good restaurant?", "Where can I find a good hotel?", "Where can I find a good store?", "Where can I find a good school?"],
+            "answer": "Where can I find a good restaurant?"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The bank", "The hospital", "The school"],
+            "suffix": "is located in the center of the city.",
+            "answer": "The bank",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need to go", "I have to visit", "I want to go"],
+            "suffix": "to the pharmacy to buy medicine.",
+            "answer": "I need to go",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Where is", "Where can I find", "Do you know where"],
+            "suffix": "the nearest supermarket?",
+            "answer": "Where is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["IPEC is", "The technical school is", "Our college is"],
+            "suffix": "close to several restaurants.",
+            "answer": "IPEC is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["San José", "The capital", "Downtown"],
+            "suffix": "has many important government buildings.",
+            "answer": "San José",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Shopping Centers and Stores → Centros comerciales y tiendas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "shopping center", "spanish": "centro comercial" },
+          { "english": "mall", "spanish": "centro comercial" },
+          { "english": "store", "spanish": "tienda" },
+          { "english": "shop", "spanish": "tienda" },
+          { "english": "clothing store", "spanish": "tienda de ropa" },
+          { "english": "bookstore", "spanish": "librería" },
+          { "english": "electronics store", "spanish": "tienda de electrónicos" },
+          { "english": "hardware store", "spanish": "ferretería" },
+          { "english": "bakery", "spanish": "panadería" },
+          { "english": "butcher shop", "spanish": "carnicería" },
+          { "english": "market", "spanish": "mercado" },
+          { "english": "department store", "spanish": "tienda por departamentos" },
+          { "english": "convenience store", "spanish": "tienda de conveniencia" },
+          { "english": "open", "spanish": "abierto" },
+          { "english": "closed", "spanish": "cerrado" }
+        ],
+        "listening": [
+          {
+            "audio": "The mall is open until 10 PM",
+            "options": ["The mall is open until 10 PM", "The mall is closed until 10 PM", "The mall opens at 10 PM", "The mall closes at 10 AM"],
+            "answer": "The mall is open until 10 PM"
+          },
+          {
+            "audio": "I need to buy tools at the hardware store",
+            "options": ["buy tools at the hardware store", "buy clothes at the clothing store", "buy books at the bookstore", "buy bread at the bakery"],
+            "answer": "buy tools at the hardware store"
+          },
+          {
+            "audio": "Is the electronics store open today?",
+            "options": ["Is the electronics store open today?", "Is the clothing store open today?", "Is the bookstore open today?", "Is the bakery open today?"],
+            "answer": "Is the electronics store open today?"
+          },
+          {
+            "audio": "The Central Market has fresh vegetables",
+            "options": ["The Central Market has fresh vegetables", "The Central Market has fresh meat", "The Central Market has fresh bread", "The Central Market has fresh fish"],
+            "answer": "The Central Market has fresh vegetables"
+          },
+          {
+            "audio": "Shopping centers are very popular in San José",
+            "options": ["very popular in San José", "very expensive in San José", "very crowded in San José", "very modern in San José"],
+            "answer": "very popular in San José"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I usually shop", "I like to buy", "I prefer to go"],
+            "suffix": "at the mall on weekends.",
+            "answer": "I usually shop",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The hardware store", "The electronics store", "The bookstore"],
+            "suffix": "has everything I need for my project.",
+            "answer": "The hardware store",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What time", "When", "At what time"],
+            "suffix": "does the shopping center open?",
+            "answer": "What time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The Central Market", "The local market", "The farmers market"],
+            "suffix": "is a good place to buy fresh food.",
+            "answer": "The Central Market",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Most stores", "Many shops", "All the stores"],
+            "suffix": "in the mall are closed on holidays.",
+            "answer": "Most stores",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Government Offices and Services → Oficinas gubernamentales y servicios",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "government office", "spanish": "oficina gubernamental" },
+          { "english": "city hall", "spanish": "municipalidad" },
+          { "english": "courthouse", "spanish": "tribunal" },
+          { "english": "immigration office", "spanish": "oficina de migración" },
+          { "english": "social security", "spanish": "seguridad social" },
+          { "english": "CCSS", "spanish": "CCSS" },
+          { "english": "INA", "spanish": "INA" },
+          { "english": "MEP", "spanish": "MEP" },
+          { "english": "public service", "spanish": "servicio público" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "form", "spanish": "formulario" },
+          { "english": "document", "spanish": "documento" },
+          { "english": "identification", "spanish": "identificación" },
+          { "english": "certificate", "spanish": "certificado" },
+          { "english": "permit", "spanish": "permiso" }
+        ],
+        "listening": [
+          {
+            "audio": "I need to renew my ID at the civil registry",
+            "options": ["renew my ID at the civil registry", "get my passport at immigration", "pay taxes at the treasury", "register at city hall"],
+            "answer": "renew my ID at the civil registry"
+          },
+          {
+            "audio": "Do you have an appointment?",
+            "options": ["Do you have an appointment?", "Do you have the documents?", "Do you have identification?", "Do you have the forms?"],
+            "answer": "Do you have an appointment?"
+          },
+          {
+            "audio": "The social security office is closed today",
+            "options": ["The social security office is closed today", "The immigration office is closed today", "The city hall is closed today", "The courthouse is closed today"],
+            "answer": "The social security office is closed today"
+          },
+          {
+            "audio": "Please fill out this form completely",
+            "options": ["Please fill out this form completely", "Please bring these documents", "Please make an appointment", "Please wait in line"],
+            "answer": "Please fill out this form completely"
+          },
+          {
+            "audio": "INA offers technical training programs",
+            "options": ["offers technical training programs", "offers university degrees", "offers language courses", "offers business training"],
+            "answer": "offers technical training programs"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I need to go", "I have to visit", "I must go"],
+            "suffix": "to the government office tomorrow.",
+            "answer": "I need to go",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Do you have", "Did you bring", "Can you show me"],
+            "suffix": "all the required documents?",
+            "answer": "Do you have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The CCSS office", "The social security office", "The health office"],
+            "suffix": "helps workers with medical insurance.",
+            "answer": "The CCSS office",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical students", "IPEC students", "Vocational students"],
+            "suffix": "often get training through INA programs.",
+            "answer": "Technical students",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please make", "You need", "I recommend"],
+            "suffix": "an appointment before going to government offices.",
+            "answer": "Please make",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Entertainment and Recreation → Entretenimiento y recreación",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "cinema", "spanish": "cine" },
+          { "english": "movie theater", "spanish": "cine" },
+          { "english": "theater", "spanish": "teatro" },
+          { "english": "museum", "spanish": "museo" },
+          { "english": "art gallery", "spanish": "galería de arte" },
+          { "english": "stadium", "spanish": "estadio" },
+          { "english": "sports center", "spanish": "centro deportivo" },
+          { "english": "gym", "spanish": "gimnasio" },
+          { "english": "swimming pool", "spanish": "piscina" },
+          { "english": "recreation center", "spanish": "centro recreativo" },
+          { "english": "concert", "spanish": "concierto" },
+          { "english": "festival", "spanish": "festival" },
+          { "english": "entertainment", "spanish": "entretenimiento" },
+          { "english": "fun", "spanish": "diversión" },
+          { "english": "leisure", "spanish": "ocio" }
+        ],
+        "listening": [
+          {
+            "audio": "Let's go to the movies tonight",
+            "options": ["Let's go to the movies tonight", "Let's go to the theater tonight", "Let's go to the museum tonight", "Let's go to the concert tonight"],
+            "answer": "Let's go to the movies tonight"
+          },
+          {
+            "audio": "The National Theater is downtown",
+            "options": ["The National Theater is downtown", "The National Museum is downtown", "The National Stadium is downtown", "The National Library is downtown"],
+            "answer": "The National Theater is downtown"
+          },
+          {
+            "audio": "Do you like going to museums?",
+            "options": ["Do you like going to museums?", "Do you like going to concerts?", "Do you like going to festivals?", "Do you like going to theaters?"],
+            "answer": "Do you like going to museums?"
+          },
+          {
+            "audio": "The stadium is full for the soccer game",
+            "options": ["for the soccer game", "for the concert", "for the festival", "for the ceremony"],
+            "answer": "for the soccer game"
+          },
+          {
+            "audio": "There's a festival in the central park",
+            "options": ["There's a festival in the central park", "There's a concert in the central park", "There's a movie in the central park", "There's a game in the central park"],
+            "answer": "There's a festival in the central park"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["On weekends", "In my free time", "After work"],
+            "suffix": "I like to go to the cinema.",
+            "answer": "On weekends",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The National Theater", "The Municipal Theater", "The local theater"],
+            "suffix": "has excellent cultural performances.",
+            "answer": "The National Theater",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Many people", "Lots of families", "Young people"],
+            "suffix": "enjoy visiting museums on Sundays.",
+            "answer": "Many people",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The sports center", "The recreation center", "The community center"],
+            "suffix": "offers activities for all ages.",
+            "answer": "The sports center",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rica", "San José", "The capital"],
+            "suffix": "has many cultural events throughout the year.",
+            "answer": "Costa Rica",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Asking for Information → Pidiendo información",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "information", "spanish": "información" },
+          { "english": "help", "spanish": "ayuda" },
+          { "english": "excuse me", "spanish": "disculpe" },
+          { "english": "where is", "spanish": "dónde está" },
+          { "english": "how far", "spanish": "qué tan lejos" },
+          { "english": "how long", "spanish": "cuánto tiempo" },
+          { "english": "what time", "spanish": "qué hora" },
+          { "english": "open hours", "spanish": "horario de apertura" },
+          { "english": "address", "spanish": "dirección" },
+          { "english": "phone number", "spanish": "número de teléfono" },
+          { "english": "website", "spanish": "sitio web" },
+          { "english": "tourist information", "spanish": "información turística" },
+          { "english": "map", "spanish": "mapa" },
+          { "english": "brochure", "spanish": "folleto" },
+          { "english": "guide", "spanish": "guía" }
+        ],
+        "listening": [
+          {
+            "audio": "Excuse me, can you help me?",
+            "options": ["Excuse me, can you help me?", "Excuse me, where are you going?", "Excuse me, what time is it?", "Excuse me, how are you?"],
+            "answer": "Excuse me, can you help me?"
+          },
+          {
+            "audio": "What are the opening hours?",
+            "options": ["What are the opening hours?", "What is the address?", "What is the phone number?", "What is the website?"],
+            "answer": "What are the opening hours?"
+          },
+          {
+            "audio": "How far is it from here?",
+            "options": ["How far is it from here?", "How long does it take?", "How much does it cost?", "How often do they open?"],
+            "answer": "How far is it from here?"
+          },
+          {
+            "audio": "Do you have a map of the city?",
+            "options": ["Do you have a map of the city?", "Do you have information about hotels?", "Do you have a guide book?", "Do you have a brochure?"],
+            "answer": "Do you have a map of the city?"
+          },
+          {
+            "audio": "Where can I find tourist information?",
+            "options": ["Where can I find tourist information?", "Where can I find a restaurant?", "Where can I find a hotel?", "Where can I find a taxi?"],
+            "answer": "Where can I find tourist information?"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Excuse me", "Sorry", "Pardon me"],
+            "suffix": "could you tell me where the bank is?",
+            "answer": "Excuse me",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What time", "When", "At what time"],
+            "suffix": "does the museum open on Sundays?",
+            "answer": "What time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can you give me", "Do you have", "Could I get"],
+            "suffix": "information about bus schedules?",
+            "answer": "Can you give me",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How long", "How much time", "How many minutes"],
+            "suffix": "does it take to walk to downtown?",
+            "answer": "How long",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The tourist office", "The information center", "The help desk"],
+            "suffix": "has maps and brochures about the city.",
+            "answer": "The tourist office",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

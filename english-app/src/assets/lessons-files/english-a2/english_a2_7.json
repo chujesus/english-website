@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 7,
+  "sections": [
+    {
+      "title": "Daily Work Routines → Rutinas diarias de trabajo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "I start work at 7:00 AM",
+          "spanish": "Empiezo a trabajar a las 7:00 AM"
+        },
+        {
+          "english": "First, I check my equipment",
+          "spanish": "Primero, reviso mi equipo"
+        },
+        {
+          "english": "I clean my workspace every morning",
+          "spanish": "Limpio mi área de trabajo cada mañana"
+        },
+        {
+          "english": "We have a team meeting at noon",
+          "spanish": "Tenemos una reunión de equipo al mediodía"
+        },
+        {
+          "english": "I take a break at 10:00 AM",
+          "spanish": "Tomo un descanso a las 10:00 AM"
+        },
+        {
+          "english": "We finish work at 5:00 PM",
+          "spanish": "Terminamos el trabajo a las 5:00 PM"
+        },
+        {
+          "english": "I always wear my safety uniform",
+          "spanish": "Siempre uso mi uniforme de seguridad"
+        },
+        {
+          "english": "We inspect the machines daily",
+          "spanish": "Inspeccionamos las máquinas diariamente"
+        },
+        {
+          "english": "I record my activities in the logbook",
+          "spanish": "Registro mis actividades en el libro de registro"
+        },
+        {
+          "english": "Every evening, I organize my tools",
+          "spanish": "Cada tarde, organizo mis herramientas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What time do you usually start your workday?",
+          "options": ["At 6:00 AM", "At 7:00 AM", "At 8:00 AM"],
+          "answer": 1
+        },
+        {
+          "audio": "How often do you clean your workspace?",
+          "options": ["Once a week", "Every day", "Never"],
+          "answer": 1
+        },
+        {
+          "audio": "When do you take your lunch break?",
+          "options": ["At 11:00 AM", "At 12:00 PM", "At 1:00 PM"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Every morning, I",
+          "suffix": "my equipment before starting work.",
+          "answer": "check",
+          "selected": false,
+          "feedback": "Checking equipment daily ensures everything is working properly and safely."
+        },
+        {
+          "prefix": "We",
+          "suffix": "our tools at the end of each day.",
+          "answer": "organize",
+          "selected": false,
+          "feedback": "Organizing tools daily helps maintain efficiency and prevents loss."
+        },
+        {
+          "prefix": "I always",
+          "suffix": "my activities in the logbook.",
+          "answer": "record",
+          "selected": false,
+          "feedback": "Recording activities provides documentation and helps track progress."
+        }
+      ]
+    },
+    {
+      "title": "Workshop Tasks and Activities → Tareas y actividades del taller",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Assemble components",
+          "spanish": "Ensamblar componentes"
+        },
+        {
+          "english": "Test electrical circuits",
+          "spanish": "Probar circuitos eléctricos"
+        },
+        {
+          "english": "Calibrate instruments",
+          "spanish": "Calibrar instrumentos"
+        },
+        {
+          "english": "Maintain equipment",
+          "spanish": "Mantener equipo"
+        },
+        {
+          "english": "Measure dimensions",
+          "spanish": "Medir dimensiones"
+        },
+        {
+          "english": "Install software",
+          "spanish": "Instalar software"
+        },
+        {
+          "english": "Document procedures",
+          "spanish": "Documentar procedimientos"
+        },
+        {
+          "english": "Troubleshoot problems",
+          "spanish": "Solucionar problemas"
+        },
+        {
+          "english": "Prepare materials",
+          "spanish": "Preparar materiales"
+        },
+        {
+          "english": "Complete quality checks",
+          "spanish": "Completar verificaciones de calidad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What do you do after assembling components?",
+          "options": ["Store them", "Test them", "Sell them"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is it important to calibrate instruments?",
+          "options": ["For accurate measurements", "To save time", "To look professional"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you document procedures?",
+          "options": ["Never", "After completing them", "Only when asked"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Before testing, we must",
+          "suffix": "all components properly.",
+          "answer": "assemble",
+          "selected": false,
+          "feedback": "Proper assembly is essential before testing to ensure accurate results."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "instruments before taking measurements.",
+          "answer": "calibrate",
+          "selected": false,
+          "feedback": "Calibration ensures instruments provide accurate and reliable measurements."
+        },
+        {
+          "prefix": "We",
+          "suffix": "quality checks after every project.",
+          "answer": "complete",
+          "selected": false,
+          "feedback": "Quality checks ensure work meets required standards and specifications."
+        }
+      ]
+    },
+    {
+      "title": "Time Management at Work → Gestión del tiempo en el trabajo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Plan your day in advance",
+          "spanish": "Planifique su día con anticipación"
+        },
+        {
+          "english": "Set priorities for tasks",
+          "spanish": "Establezca prioridades para las tareas"
+        },
+        {
+          "english": "Manage deadlines effectively",
+          "spanish": "Maneje los plazos efectivamente"
+        },
+        {
+          "english": "Avoid unnecessary delays",
+          "spanish": "Evite retrasos innecesarios"
+        },
+        {
+          "english": "Use time efficiently",
+          "spanish": "Use el tiempo eficientemente"
+        },
+        {
+          "english": "Complete urgent tasks first",
+          "spanish": "Complete las tareas urgentes primero"
+        },
+        {
+          "english": "Take scheduled breaks",
+          "spanish": "Tome descansos programados"
+        },
+        {
+          "english": "Monitor your progress",
+          "spanish": "Monitoree su progreso"
+        },
+        {
+          "english": "Stay focused on objectives",
+          "spanish": "Manténgase enfocado en los objetivos"
+        },
+        {
+          "english": "Review daily accomplishments",
+          "spanish": "Revise los logros diarios"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should you do first when planning your workday?",
+          "options": ["Start working immediately", "Set priorities", "Take a break"],
+          "answer": 1
+        },
+        {
+          "audio": "How can you avoid missing deadlines?",
+          "options": ["Ignore them", "Plan and monitor progress", "Work faster"],
+          "answer": 1
+        },
+        {
+          "audio": "Why are scheduled breaks important?",
+          "options": ["To waste time", "To maintain productivity and focus", "To avoid work"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Good time management requires",
+          "suffix": "and organization.",
+          "answer": "planning",
+          "selected": false,
+          "feedback": "Planning helps you organize tasks and use time more effectively."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "urgent tasks before less important ones.",
+          "answer": "complete",
+          "selected": false,
+          "feedback": "Prioritizing urgent tasks ensures critical work is completed on time."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "helps you stay on track with your goals.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Monitoring progress allows you to adjust plans and meet objectives."
+        }
+      ]
+    },
+    {
+      "title": "Internship and Work Experience → Pasantías y experiencia laboral",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "I'm doing an internship at the factory",
+          "spanish": "Estoy haciendo una pasantía en la fábrica"
+        },
+        {
+          "english": "My supervisor teaches me new skills",
+          "spanish": "Mi supervisor me enseña nuevas habilidades"
+        },
+        {
+          "english": "I learn something new every day",
+          "spanish": "Aprendo algo nuevo cada día"
+        },
+        {
+          "english": "The work experience is very valuable",
+          "spanish": "La experiencia laboral es muy valiosa"
+        },
+        {
+          "english": "I practice what I learned in school",
+          "spanish": "Practico lo que aprendí en la escuela"
+        },
+        {
+          "english": "I'm gaining practical experience",
+          "spanish": "Estoy ganando experiencia práctica"
+        },
+        {
+          "english": "The company offers good training",
+          "spanish": "La empresa ofrece buena capacitación"
+        },
+        {
+          "english": "I work with experienced technicians",
+          "spanish": "Trabajo con técnicos experimentados"
+        },
+        {
+          "english": "This internship helps my career",
+          "spanish": "Esta pasantía ayuda a mi carrera"
+        },
+        {
+          "english": "I hope to get a job here later",
+          "spanish": "Espero conseguir un trabajo aquí más tarde"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main benefit of doing an internship?",
+          "options": ["Getting paid", "Gaining practical experience", "Avoiding school"],
+          "answer": 1
+        },
+        {
+          "audio": "Who usually supervises interns?",
+          "options": ["Other students", "Experienced workers", "Nobody"],
+          "answer": 1
+        },
+        {
+          "audio": "How can internships help your career?",
+          "options": ["They provide real work experience", "They're just for fun", "They waste time"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Workplace Habits and Behaviors → Hábitos y comportamientos laborales",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Arrive on time every day",
+          "spanish": "Llegue a tiempo todos los días"
+        },
+        {
+          "english": "Keep your workspace clean",
+          "spanish": "Mantenga su espacio de trabajo limpio"
+        },
+        {
+          "english": "Follow safety procedures",
+          "spanish": "Siga los procedimientos de seguridad"
+        },
+        {
+          "english": "Be respectful to colleagues",
+          "spanish": "Sea respetuoso con los colegas"
+        },
+        {
+          "english": "Ask questions when uncertain",
+          "spanish": "Haga preguntas cuando tenga dudas"
+        },
+        {
+          "english": "Complete tasks on schedule",
+          "spanish": "Complete las tareas a tiempo"
+        },
+        {
+          "english": "Communicate clearly with others",
+          "spanish": "Comuníquese claramente con otros"
+        },
+        {
+          "english": "Take responsibility for your work",
+          "spanish": "Tome responsabilidad por su trabajo"
+        },
+        {
+          "english": "Show initiative and enthusiasm",
+          "spanish": "Muestre iniciativa y entusiasmo"
+        },
+        {
+          "english": "Learn from your mistakes",
+          "spanish": "Aprenda de sus errores"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Good employees always",
+          "suffix": "on time to work.",
+          "answer": "arrive",
+          "selected": false,
+          "feedback": "Punctuality shows respect for the job and colleagues."
+        },
+        {
+          "prefix": "When you don't understand something,",
+          "suffix": "questions to learn.",
+          "answer": "ask",
+          "selected": false,
+          "feedback": "Asking questions shows you want to learn and do the job correctly."
+        },
+        {
+          "prefix": "Taking",
+          "suffix": "for your work shows professionalism.",
+          "answer": "responsibility",
+          "selected": false,
+          "feedback": "Taking responsibility demonstrates maturity and reliability in the workplace."
+        }
+      ]
+    }
+  ]
+}
+]
+

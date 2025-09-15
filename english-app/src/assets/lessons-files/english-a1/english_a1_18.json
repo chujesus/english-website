@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 18,
+    "sections": [
+      {
+        "title": "Technology and Computers → Tecnología y computadoras",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "computer", "spanish": "computadora" },
+          { "english": "laptop", "spanish": "laptop" },
+          { "english": "tablet", "spanish": "tableta" },
+          { "english": "smartphone", "spanish": "teléfono inteligente" },
+          { "english": "internet", "spanish": "internet" },
+          { "english": "website", "spanish": "sitio web" },
+          { "english": "email", "spanish": "correo electrónico" },
+          { "english": "password", "spanish": "contraseña" },
+          { "english": "keyboard", "spanish": "teclado" },
+          { "english": "mouse", "spanish": "ratón" },
+          { "english": "screen", "spanish": "pantalla" },
+          { "english": "printer", "spanish": "impresora" },
+          { "english": "software", "spanish": "software" },
+          { "english": "application", "spanish": "aplicación" },
+          { "english": "file", "spanish": "archivo" }
+        ],
+        "listening": [
+          {
+            "audio": "Do you know how to use a computer?",
+            "options": ["Do you know how to use a computer?", "Do you have a computer?", "Do you like computers?", "Do you need a computer?"],
+            "answer": "Do you know how to use a computer?"
+          },
+          {
+            "audio": "I need to check my email",
+            "options": ["I need to check my email", "I need to send an email", "I need to delete my email", "I need to create an email"],
+            "answer": "I need to check my email"
+          },
+          {
+            "audio": "The internet is not working",
+            "options": ["The internet is not working", "The computer is not working", "The printer is not working", "The phone is not working"],
+            "answer": "The internet is not working"
+          },
+          {
+            "audio": "Can you help me with this software?",
+            "options": ["Can you help me with this software?", "Can you help me with this computer?", "Can you help me with this website?", "Can you help me with this application?"],
+            "answer": "Can you help me with this software?"
+          },
+          {
+            "audio": "I forgot my password",
+            "options": ["I forgot my password", "I lost my password", "I changed my password", "I created a password"],
+            "answer": "I forgot my password"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I use", "I work with", "I need"],
+            "suffix": "a computer every day at work.",
+            "answer": "I use",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please turn on", "Please start", "Please open"],
+            "suffix": "the computer and check your email.",
+            "answer": "Please turn on",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The internet", "The connection", "The network"],
+            "suffix": "is very slow today.",
+            "answer": "The internet",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need to learn", "I want to learn", "I should learn"],
+            "suffix": "how to use this new software.",
+            "answer": "I need to learn",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Modern workplaces", "Today's jobs", "Technical careers"],
+            "suffix": "require basic computer skills.",
+            "answer": "Modern workplaces",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Social Media and Communication → Redes sociales y comunicación",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "social media", "spanish": "redes sociales" },
+          { "english": "Facebook", "spanish": "Facebook" },
+          { "english": "WhatsApp", "spanish": "WhatsApp" },
+          { "english": "Instagram", "spanish": "Instagram" },
+          { "english": "YouTube", "spanish": "YouTube" },
+          { "english": "message", "spanish": "mensaje" },
+          { "english": "text", "spanish": "texto" },
+          { "english": "chat", "spanish": "chat" },
+          { "english": "video call", "spanish": "videollamada" },
+          { "english": "post", "spanish": "publicación" },
+          { "english": "share", "spanish": "compartir" },
+          { "english": "like", "spanish": "me gusta" },
+          { "english": "comment", "spanish": "comentario" },
+          { "english": "follow", "spanish": "seguir" },
+          { "english": "profile", "spanish": "perfil" }
+        ],
+        "listening": [
+          {
+            "audio": "Do you use WhatsApp?",
+            "options": ["Do you use WhatsApp?", "Do you use Facebook?", "Do you use Instagram?", "Do you use YouTube?"],
+            "answer": "Do you use WhatsApp?"
+          },
+          {
+            "audio": "I received a message from my teacher",
+            "options": ["I received a message from my teacher", "I sent a message to my teacher", "I deleted a message from my teacher", "I read a message from my teacher"],
+            "answer": "I received a message from my teacher"
+          },
+          {
+            "audio": "Let's have a video call",
+            "options": ["Let's have a video call", "Let's send a text", "Let's write an email", "Let's make a phone call"],
+            "answer": "Let's have a video call"
+          },
+          {
+            "audio": "She posted a photo on Instagram",
+            "options": ["She posted a photo on Instagram", "She posted a video on YouTube", "She shared a link on Facebook", "She sent a message on WhatsApp"],
+            "answer": "She posted a photo on Instagram"
+          },
+          {
+            "audio": "Social media helps us stay connected",
+            "options": ["helps us stay connected", "makes us waste time", "is dangerous for privacy", "is only for young people"],
+            "answer": "helps us stay connected"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I use", "I check", "I browse"],
+            "suffix": "social media to stay in touch with friends.",
+            "answer": "I use",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["WhatsApp is", "This app is", "The application is"],
+            "suffix": "very popular in Costa Rica.",
+            "answer": "WhatsApp is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I received", "I got", "Someone sent me"],
+            "suffix": "an important message from my supervisor.",
+            "answer": "I received",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Video calls", "Online meetings", "Digital communication"],
+            "suffix": "are useful for remote work.",
+            "answer": "Video calls",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Be careful", "Be cautious", "Be safe"],
+            "suffix": "about what you share on social media.",
+            "answer": "Be careful",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Online Learning and Digital Tools → Aprendizaje en línea y herramientas digitales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "online learning", "spanish": "aprendizaje en línea" },
+          { "english": "digital tools", "spanish": "herramientas digitales" },
+          { "english": "e-learning", "spanish": "aprendizaje electrónico" },
+          { "english": "virtual classroom", "spanish": "aula virtual" },
+          { "english": "video conference", "spanish": "videoconferencia" },
+          { "english": "Zoom", "spanish": "Zoom" },
+          { "english": "Google Meet", "spanish": "Google Meet" },
+          { "english": "platform", "spanish": "plataforma" },
+          { "english": "course", "spanish": "curso" },
+          { "english": "tutorial", "spanish": "tutorial" },
+          { "english": "download", "spanish": "descargar" },
+          { "english": "upload", "spanish": "subir" },
+          { "english": "assignment", "spanish": "tarea" },
+          { "english": "quiz", "spanish": "cuestionario" },
+          { "english": "certificate", "spanish": "certificado" }
+        ],
+        "listening": [
+          {
+            "audio": "I'm taking an online English course",
+            "options": ["I'm taking an online English course", "I'm teaching an online English course", "I'm creating an online English course", "I'm finishing an online English course"],
+            "answer": "I'm taking an online English course"
+          },
+          {
+            "audio": "The virtual classroom starts at 7 PM",
+            "options": ["The virtual classroom starts at 7 PM", "The virtual classroom ends at 7 PM", "The virtual classroom is at 7 AM", "The virtual classroom lasts 7 hours"],
+            "answer": "The virtual classroom starts at 7 PM"
+          },
+          {
+            "audio": "Can you download this file?",
+            "options": ["Can you download this file?", "Can you upload this file?", "Can you delete this file?", "Can you open this file?"],
+            "answer": "Can you download this file?"
+          },
+          {
+            "audio": "The assignment is due tomorrow",
+            "options": ["The assignment is due tomorrow", "The assignment was due yesterday", "The assignment is due next week", "The assignment is due today"],
+            "answer": "The assignment is due tomorrow"
+          },
+          {
+            "audio": "Online learning is very convenient",
+            "options": ["Online learning is very convenient", "Online learning is very difficult", "Online learning is very expensive", "Online learning is very boring"],
+            "answer": "Online learning is very convenient"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I prefer", "I like", "I enjoy"],
+            "suffix": "online learning because it's flexible.",
+            "answer": "I prefer",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The course", "The class", "The lesson"],
+            "suffix": "is available on the digital platform.",
+            "answer": "The course",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please download", "You need to download", "Don't forget to download"],
+            "suffix": "the materials before the next class.",
+            "answer": "Please download",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Many technical students", "A lot of workers", "IPEC students"],
+            "suffix": "use digital tools for learning.",
+            "answer": "Many technical students",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Video conferences", "Online meetings", "Virtual classes"],
+            "suffix": "allow students to learn from home.",
+            "answer": "Video conferences",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technology in the Workplace → Tecnología en el lugar de trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "workplace technology", "spanish": "tecnología laboral" },
+          { "english": "automation", "spanish": "automatización" },
+          { "english": "digital skills", "spanish": "habilidades digitales" },
+          { "english": "database", "spanish": "base de datos" },
+          { "english": "spreadsheet", "spanish": "hoja de cálculo" },
+          { "english": "presentation", "spanish": "presentación" },
+          { "english": "backup", "spanish": "respaldo" },
+          { "english": "cloud storage", "spanish": "almacenamiento en la nube" },
+          { "english": "security", "spanish": "seguridad" },
+          { "english": "network", "spanish": "red" },
+          { "english": "server", "spanish": "servidor" },
+          { "english": "update", "spanish": "actualización" },
+          { "english": "troubleshoot", "spanish": "solucionar problemas" },
+          { "english": "IT support", "spanish": "soporte técnico" },
+          { "english": "remote work", "spanish": "trabajo remoto" }
+        ],
+        "listening": [
+          {
+            "audio": "All workers need basic digital skills",
+            "options": ["All workers need basic digital skills", "All workers have basic digital skills", "Some workers need basic digital skills", "No workers need basic digital skills"],
+            "answer": "All workers need basic digital skills"
+          },
+          {
+            "audio": "The server is down today",
+            "options": ["The server is down today", "The server is working today", "The server is new today", "The server is fast today"],
+            "answer": "The server is down today"
+          },
+          {
+            "audio": "Please backup your files regularly",
+            "options": ["Please backup your files regularly", "Please delete your files regularly", "Please update your files regularly", "Please share your files regularly"],
+            "answer": "Please backup your files regularly"
+          },
+          {
+            "audio": "I need help from IT support",
+            "options": ["I need help from IT support", "I need help from my supervisor", "I need help from my colleague", "I need help from my teacher"],
+            "answer": "I need help from IT support"
+          },
+          {
+            "audio": "Remote work requires good technology",
+            "options": ["Remote work requires good technology", "Remote work requires good communication", "Remote work requires good planning", "Remote work requires good training"],
+            "answer": "Remote work requires good technology"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Digital skills", "Computer skills", "Technology skills"],
+            "suffix": "are essential in modern workplaces.",
+            "answer": "Digital skills",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I use", "I work with", "I manage"],
+            "suffix": "spreadsheets to organize data at work.",
+            "answer": "I use",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It's important to", "You should", "We must"],
+            "suffix": "backup important files every day.",
+            "answer": "It's important to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["When technology problems occur", "If computers don't work", "When systems fail"],
+            "suffix": "we call IT support for help.",
+            "answer": "When technology problems occur",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Cloud storage", "Online backup", "Digital storage"],
+            "suffix": "keeps our files safe and accessible.",
+            "answer": "Cloud storage",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technology in Costa Rica → Tecnología en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "digital divide", "spanish": "brecha digital" },
+          { "english": "internet access", "spanish": "acceso a internet" },
+          { "english": "fiber optic", "spanish": "fibra óptica" },
+          { "english": "broadband", "spanish": "banda ancha" },
+          { "english": "mobile coverage", "spanish": "cobertura móvil" },
+          { "english": "ICE", "spanish": "ICE" },
+          { "english": "telecommunications", "spanish": "telecomunicaciones" },
+          { "english": "digital government", "spanish": "gobierno digital" },
+          { "english": "e-government", "spanish": "gobierno electrónico" },
+          { "english": "tech industry", "spanish": "industria tecnológica" },
+          { "english": "call center", "spanish": "centro de llamadas" },
+          { "english": "software development", "spanish": "desarrollo de software" },
+          { "english": "digital transformation", "spanish": "transformación digital" },
+          { "english": "innovation", "spanish": "innovación" },
+          { "english": "startup", "spanish": "empresa emergente" }
+        ],
+        "listening": [
+          {
+            "audio": "Costa Rica has good internet infrastructure",
+            "options": ["Costa Rica has good internet infrastructure", "Costa Rica has poor internet infrastructure", "Costa Rica has expensive internet", "Costa Rica has slow internet"],
+            "answer": "Costa Rica has good internet infrastructure"
+          },
+          {
+            "audio": "ICE provides telecommunications services",
+            "options": ["ICE provides telecommunications services", "ICE provides electricity only", "ICE provides water services", "ICE provides transportation"],
+            "answer": "ICE provides telecommunications services"
+          },
+          {
+            "audio": "The government is promoting digital services",
+            "options": ["The government is promoting digital services", "The government is reducing digital services", "The government is ignoring digital services", "The government is blocking digital services"],
+            "answer": "The government is promoting digital services"
+          },
+          {
+            "audio": "Many call centers operate in Costa Rica",
+            "options": ["Many call centers operate in Costa Rica", "Few call centers operate in Costa Rica", "No call centers operate in Costa Rica", "Call centers are leaving Costa Rica"],
+            "answer": "Many call centers operate in Costa Rica"
+          },
+          {
+            "audio": "Technology creates new job opportunities",
+            "options": ["Technology creates new job opportunities", "Technology eliminates all jobs", "Technology makes work more difficult", "Technology is not important for jobs"],
+            "answer": "Technology creates new job opportunities"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Costa Rica", "The country", "Our nation"],
+            "suffix": "is becoming a technology hub in Central America.",
+            "answer": "Costa Rica",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Internet access", "Broadband connection", "Digital connectivity"],
+            "suffix": "is available in most parts of the country.",
+            "answer": "Internet access",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The tech industry", "Technology companies", "Digital businesses"],
+            "suffix": "provides many employment opportunities.",
+            "answer": "The tech industry",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Digital transformation", "Technology adoption", "Innovation"],
+            "suffix": "is changing how Costa Ricans work and study.",
+            "answer": "Digital transformation",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical students", "IPEC graduates", "Young professionals"],
+            "suffix": "have good opportunities in the technology sector.",
+            "answer": "Technical students",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

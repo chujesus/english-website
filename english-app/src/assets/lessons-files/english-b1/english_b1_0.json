@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "B1",
+    "lessonId": 0,
+    "sections": [
+      {
+        "title": "Workplace Communication and Professional Interactions → Comunicación laboral e interacciones profesionales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I'd like to discuss the project timeline", "spanish": "Me gustaría discutir el cronograma del proyecto" },
+          { "english": "Could you please clarify your requirements?", "spanish": "¿Podrías aclarar tus requisitos, por favor?" },
+          { "english": "We need to coordinate our efforts", "spanish": "Necesitamos coordinar nuestros esfuerzos" },
+          { "english": "I suggest we schedule a follow-up meeting", "spanish": "Sugiero que programemos una reunión de seguimiento" },
+          { "english": "The deadline has been moved forward", "spanish": "La fecha límite se ha adelantado" },
+          { "english": "I'm responsible for quality control", "spanish": "Soy responsable del control de calidad" },
+          { "english": "We should prioritize safety procedures", "spanish": "Deberíamos priorizar los procedimientos de seguridad" },
+          { "english": "I recommend implementing new protocols", "spanish": "Recomiendo implementar nuevos protocolos" },
+          { "english": "The performance indicators show improvement", "spanish": "Los indicadores de rendimiento muestran mejora" },
+          { "english": "We've been working efficiently as a team", "spanish": "Hemos estado trabajando eficientemente como equipo" },
+          { "english": "I appreciate your professional approach", "spanish": "Aprecio tu enfoque profesional" },
+          { "english": "Let's establish clear communication channels", "spanish": "Establezcamos canales de comunicación claros" },
+          { "english": "The project is progressing according to plan", "spanish": "El proyecto está progresando según el plan" },
+          { "english": "I'd be happy to provide additional support", "spanish": "Me complacería brindar apoyo adicional" },
+          { "english": "We need to address these concerns immediately", "spanish": "Necesitamos abordar estas preocupaciones inmediatamente" }
+        ],
+        "listening": [
+          {
+            "audio": "I believe we should reconsider our approach to this technical challenge",
+            "options": ["reconsider our approach", "abandon the current project", "hire external consultants", "postpone the implementation"],
+            "answer": "reconsider our approach"
+          },
+          {
+            "audio": "The client has expressed satisfaction with our progress so far",
+            "options": ["satisfaction with our progress", "concerns about the timeline", "doubts about our capabilities", "interest in additional services"],
+            "answer": "satisfaction with our progress"
+          },
+          {
+            "audio": "We've successfully integrated the new software into our workflow",
+            "options": ["integrated the new software", "replaced the old equipment", "trained the entire team", "completed the safety audit"],
+            "answer": "integrated the new software"
+          },
+          {
+            "audio": "I'd like to propose a more efficient method for data collection",
+            "options": ["propose a more efficient method", "eliminate the current process", "outsource the entire operation", "increase the budget allocation"],
+            "answer": "propose a more efficient method"
+          },
+          {
+            "audio": "The preliminary results exceed our initial expectations",
+            "options": ["exceed our initial expectations", "match our minimum requirements", "fall short of our goals", "require significant modifications"],
+            "answer": "exceed our initial expectations"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I'd like to", "I would prefer to", "I'm interested in"],
+            "suffix": "discuss the implementation strategy.",
+            "answer": "I'd like to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Could you", "Would you mind", "Would it be possible to"],
+            "suffix": "elaborate on your technical specifications?",
+            "answer": "Could you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We should", "We ought to", "We need to"],
+            "suffix": "establish clear objectives for this phase.",
+            "answer": "We should",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I recommend", "I suggest", "I propose"],
+            "suffix": "conducting a comprehensive review.",
+            "answer": "I recommend",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The team has been", "The group has been", "The staff has been"],
+            "suffix": "working diligently on this project.",
+            "answer": "The team has been",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technical Descriptions and Process Explanations → Descripciones técnicas y explicaciones de procesos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The system operates according to specific parameters", "spanish": "El sistema opera según parámetros específicos" },
+          { "english": "First, we calibrate the instruments", "spanish": "Primero, calibramos los instrumentos" },
+          { "english": "Subsequently, we monitor the temperature", "spanish": "Posteriormente, monitoreamos la temperatura" },
+          { "english": "The process involves several sequential steps", "spanish": "El proceso involucra varios pasos secuenciales" },
+          { "english": "We utilize advanced diagnostic equipment", "spanish": "Utilizamos equipo de diagnóstico avanzado" },
+          { "english": "The mechanism functions through hydraulic pressure", "spanish": "El mecanismo funciona mediante presión hidráulica" },
+          { "english": "Regular maintenance prevents component failure", "spanish": "El mantenimiento regular previene fallas de componentes" },
+          { "english": "The output depends on input variables", "spanish": "La salida depende de las variables de entrada" },
+          { "english": "We analyze data to identify patterns", "spanish": "Analizamos datos para identificar patrones" },
+          { "english": "The specifications require precise measurements", "spanish": "Las especificaciones requieren medidas precisas" },
+          { "english": "Quality control ensures product consistency", "spanish": "El control de calidad asegura consistencia del producto" },
+          { "english": "The procedure must be followed exactly", "spanish": "El procedimiento debe seguirse exactamente" },
+          { "english": "We document all modifications thoroughly", "spanish": "Documentamos todas las modificaciones a fondo" },
+          { "english": "The equipment requires specialized training", "spanish": "El equipo requiere entrenamiento especializado" },
+          { "english": "Performance optimization is an ongoing process", "spanish": "La optimización del rendimiento es un proceso continuo" }
+        ],
+        "listening": [
+          {
+            "audio": "The manufacturing process begins with raw material inspection",
+            "options": ["raw material inspection", "final product testing", "equipment calibration", "worker safety briefing"],
+            "answer": "raw material inspection"
+          },
+          {
+            "audio": "Once the system reaches optimal temperature, we initiate the next phase",
+            "options": ["initiate the next phase", "shut down the equipment", "reduce the pressure", "contact the supervisor"],
+            "answer": "initiate the next phase"
+          },
+          {
+            "audio": "The diagnostic software automatically detects irregularities in the system",
+            "options": ["automatically detects irregularities", "manually records all measurements", "continuously monitors temperature only", "periodically updates the database"],
+            "answer": "automatically detects irregularities"
+          },
+          {
+            "audio": "Preventive maintenance should be performed according to the manufacturer's schedule",
+            "options": ["manufacturer's schedule", "supervisor's preferences", "worker's availability", "equipment's age"],
+            "answer": "manufacturer's schedule"
+          },
+          {
+            "audio": "The quality assurance protocol includes multiple verification stages",
+            "options": ["multiple verification stages", "single inspection point", "random sampling only", "visual examination exclusively"],
+            "answer": "multiple verification stages"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The process", "The procedure", "The operation"],
+            "suffix": "requires careful attention to detail.",
+            "answer": "The process",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["First, we", "Initially, we", "To begin, we"],
+            "suffix": "verify all safety protocols are in place.",
+            "answer": "First, we",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The system", "The equipment", "The machinery"],
+            "suffix": "operates efficiently under normal conditions.",
+            "answer": "The system",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Regular maintenance", "Routine inspection", "Preventive care"],
+            "suffix": "extends the equipment's operational life.",
+            "answer": "Regular maintenance",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Quality control", "Performance monitoring", "System analysis"],
+            "suffix": "ensures optimal results consistently.",
+            "answer": "Quality control",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Problem-Solving and Troubleshooting → Resolución de problemas y diagnóstico",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "We need to identify the root cause", "spanish": "Necesitamos identificar la causa raíz" },
+          { "english": "I suggest we analyze the symptoms systematically", "spanish": "Sugiero que analicemos los síntomas sistemáticamente" },
+          { "english": "The malfunction appears to be intermittent", "spanish": "La falla parece ser intermitente" },
+          { "english": "Have you checked the electrical connections?", "spanish": "¿Has revisado las conexiones eléctricas?" },
+          { "english": "We should eliminate potential causes one by one", "spanish": "Deberíamos eliminar las causas potenciales una por una" },
+          { "english": "The diagnostic test indicates a sensor failure", "spanish": "La prueba de diagnóstico indica una falla del sensor" },
+          { "english": "I recommend replacing the faulty component", "spanish": "Recomiendo reemplazar el componente defectuoso" },
+          { "english": "Let's verify our hypothesis with additional tests", "spanish": "Verifiquemos nuestra hipótesis con pruebas adicionales" },
+          { "english": "The error message provides valuable information", "spanish": "El mensaje de error proporciona información valiosa" },
+          { "english": "We've successfully resolved the technical issue", "spanish": "Hemos resuelto exitosamente el problema técnico" },
+          { "english": "Prevention is more cost-effective than repair", "spanish": "La prevención es más rentable que la reparación" },
+          { "english": "Document the solution for future reference", "spanish": "Documenta la solución para referencia futura" },
+          { "english": "The backup system activated automatically", "spanish": "El sistema de respaldo se activó automáticamente" },
+          { "english": "We need to monitor performance closely", "spanish": "Necesitamos monitorear el rendimiento de cerca" },
+          { "english": "The repair was completed within the deadline", "spanish": "La reparación se completó dentro del plazo" }
+        ],
+        "listening": [
+          {
+            "audio": "When troubleshooting, always start with the most obvious causes",
+            "options": ["start with the most obvious causes", "check the most complex systems first", "replace all components immediately", "contact external technical support"],
+            "answer": "start with the most obvious causes"
+          },
+          {
+            "audio": "The equipment stopped functioning after the power surge yesterday",
+            "options": ["after the power surge yesterday", "during routine maintenance today", "when the temperature dropped", "before the shift change"],
+            "answer": "after the power surge yesterday"
+          },
+          {
+            "audio": "I've isolated the problem to the control unit's microprocessor",
+            "options": ["control unit's microprocessor", "main power supply circuit", "cooling system fan motor", "user interface display panel"],
+            "answer": "control unit's microprocessor"
+          },
+          {
+            "audio": "We'll need to order a replacement part from the manufacturer",
+            "options": ["order a replacement part", "repair the existing component", "upgrade the entire system", "implement a temporary solution"],
+            "answer": "order a replacement part"
+          },
+          {
+            "audio": "The preventive maintenance schedule should be updated accordingly",
+            "options": ["preventive maintenance schedule", "emergency response protocol", "staff training program", "equipment operation manual"],
+            "answer": "preventive maintenance schedule"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["We need to", "We must", "We should"],
+            "suffix": "investigate the cause of this malfunction.",
+            "answer": "We need to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The problem", "The issue", "The malfunction"],
+            "suffix": "seems to be related to software configuration.",
+            "answer": "The problem",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I suggest", "I recommend", "I propose"],
+            "suffix": "conducting a comprehensive diagnostic test.",
+            "answer": "I suggest",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Have you", "Did you", "Could you"],
+            "suffix": "verified the sensor calibration recently?",
+            "answer": "Have you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The solution", "The fix", "The repair"],
+            "suffix": "will require specialized expertise.",
+            "answer": "The solution",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Email and Report Writing → Redacción de correos e informes",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I'm writing to inform you about the project status", "spanish": "Escribo para informarte sobre el estado del proyecto" },
+          { "english": "Please find attached the technical specifications", "spanish": "Por favor encuentra adjuntas las especificaciones técnicas" },
+          { "english": "According to our analysis, the results are promising", "spanish": "Según nuestro análisis, los resultados son prometedores" },
+          { "english": "I would appreciate your feedback on this proposal", "spanish": "Agradecería tus comentarios sobre esta propuesta" },
+          { "english": "The implementation phase will commence next week", "spanish": "La fase de implementación comenzará la próxima semana" },
+          { "english": "We have encountered some unexpected challenges", "spanish": "Hemos encontrado algunos desafíos inesperados" },
+          { "english": "I recommend scheduling a review meeting", "spanish": "Recomiendo programar una reunión de revisión" },
+          { "english": "The preliminary findings indicate significant improvement", "spanish": "Los hallazgos preliminares indican una mejora significativa" },
+          { "english": "Please confirm receipt of this communication", "spanish": "Por favor confirma la recepción de esta comunicación" },
+          { "english": "We need to coordinate our efforts more effectively", "spanish": "Necesitamos coordinar nuestros esfuerzos más efectivamente" },
+          { "english": "The report summarizes our main conclusions", "spanish": "El informe resume nuestras principales conclusiones" },
+          { "english": "I look forward to your prompt response", "spanish": "Espero tu pronta respuesta" },
+          { "english": "The data supports our initial hypothesis", "spanish": "Los datos apoyan nuestra hipótesis inicial" },
+          { "english": "Thank you for your continued collaboration", "spanish": "Gracias por tu colaboración continua" },
+          { "english": "Best regards and professional greetings", "spanish": "Saludos cordiales y profesionales" }
+        ],
+        "listening": [
+          {
+            "audio": "I'm pleased to report that the project is ahead of schedule",
+            "options": ["ahead of schedule", "behind the timeline", "exactly on time", "requiring extension"],
+            "answer": "ahead of schedule"
+          },
+          {
+            "audio": "The attached documentation contains all relevant technical details",
+            "options": ["all relevant technical details", "basic overview information", "preliminary draft notes", "simplified summary points"],
+            "answer": "all relevant technical details"
+          },
+          {
+            "audio": "We recommend proceeding with phase two of the implementation",
+            "options": ["proceeding with phase two", "postponing the next stage", "revising the current plan", "canceling the project"],
+            "answer": "proceeding with phase two"
+          },
+          {
+            "audio": "Please review the safety protocols before the next meeting",
+            "options": ["safety protocols before the next meeting", "financial reports by tomorrow", "technical manuals this week", "training materials immediately"],
+            "answer": "safety protocols before the next meeting"
+          },
+          {
+            "audio": "Your expertise would be valuable for the troubleshooting process",
+            "options": ["valuable for the troubleshooting process", "helpful for the training program", "necessary for the safety audit", "important for the quality review"],
+            "answer": "valuable for the troubleshooting process"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I'm writing to", "I'm contacting you to", "I wanted to"],
+            "suffix": "update you on our recent progress.",
+            "answer": "I'm writing to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Please find", "I've attached", "Enclosed you'll find"],
+            "suffix": "the requested technical documentation.",
+            "answer": "Please find",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["According to", "Based on", "Following"],
+            "suffix": "our preliminary analysis, the system is functioning well.",
+            "answer": "According to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I would appreciate", "I'd be grateful for", "I'm hoping for"],
+            "suffix": "your professional input on this matter.",
+            "answer": "I would appreciate",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Thank you for", "I appreciate", "I'm grateful for"],
+            "suffix": "your continued support and collaboration.",
+            "answer": "Thank you for",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Safety Procedures and Workplace Protocols → Procedimientos de seguridad y protocolos laborales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Safety protocols must be followed strictly", "spanish": "Los protocolos de seguridad deben seguirse estrictamente" },
+          { "english": "Personal protective equipment is mandatory", "spanish": "El equipo de protección personal es obligatorio" },
+          { "english": "We conduct regular safety inspections", "spanish": "Realizamos inspecciones de seguridad regulares" },
+          { "english": "Emergency procedures have been updated", "spanish": "Los procedimientos de emergencia han sido actualizados" },
+          { "english": "Risk assessment is performed before each task", "spanish": "La evaluación de riesgos se realiza antes de cada tarea" },
+          { "english": "Lockout tagout procedures prevent accidents", "spanish": "Los procedimientos de bloqueo y etiquetado previenen accidentes" },
+          { "english": "Safety training is required for all personnel", "spanish": "El entrenamiento de seguridad es requerido para todo el personal" },
+          { "english": "Incident reports must be filed immediately", "spanish": "Los reportes de incidentes deben presentarse inmediatamente" },
+          { "english": "We maintain comprehensive safety records", "spanish": "Mantenemos registros de seguridad comprehensivos" },
+          { "english": "Environmental protection is our priority", "spanish": "La protección ambiental es nuestra prioridad" },
+          { "english": "Hazardous materials require special handling", "spanish": "Los materiales peligrosos requieren manejo especial" },
+          { "english": "Safety committees meet monthly", "spanish": "Los comités de seguridad se reúnen mensualmente" },
+          { "english": "Continuous improvement enhances workplace safety", "spanish": "La mejora continua mejora la seguridad laboral" },
+          { "english": "Zero tolerance policy for safety violations", "spanish": "Política de tolerancia cero para violaciones de seguridad" },
+          { "english": "Safety performance indicators are monitored", "spanish": "Los indicadores de rendimiento de seguridad son monitoreados" }
+        ],
+        "listening": [
+          {
+            "audio": "All workers must complete safety orientation before starting work",
+            "options": ["complete safety orientation", "submit medical certificates", "pass technical examinations", "attend management meetings"],
+            "answer": "complete safety orientation"
+          },
+          {
+            "audio": "The safety data sheets are updated annually by the manufacturer",
+            "options": ["updated annually by the manufacturer", "reviewed monthly by supervisors", "checked weekly by workers", "verified daily by inspectors"],
+            "answer": "updated annually by the manufacturer"
+          },
+          {
+            "audio": "Emergency evacuation routes are clearly marked throughout the facility",
+            "options": ["clearly marked throughout the facility", "posted only at main entrances", "available in the office only", "distributed during orientation"],
+            "answer": "clearly marked throughout the facility"
+          },
+          {
+            "audio": "Near-miss incidents should be reported even if no injury occurred",
+            "options": ["even if no injury occurred", "only when someone gets hurt", "just for serious accidents", "exclusively to insurance companies"],
+            "answer": "even if no injury occurred"
+          },
+          {
+            "audio": "The safety committee includes representatives from all departments",
+            "options": ["representatives from all departments", "only management personnel", "external safety consultants", "government safety inspectors"],
+            "answer": "representatives from all departments"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Safety procedures", "Security protocols", "Protection measures"],
+            "suffix": "are essential for workplace well-being.",
+            "answer": "Safety procedures",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["All employees", "Every worker", "Each team member"],
+            "suffix": "must wear appropriate protective equipment.",
+            "answer": "All employees",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Regular training", "Continuous education", "Ongoing instruction"],
+            "suffix": "keeps safety awareness at optimal levels.",
+            "answer": "Regular training",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Emergency responses", "Crisis procedures", "Safety protocols"],
+            "suffix": "should be practiced regularly.",
+            "answer": "Emergency responses",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Risk assessments", "Hazard evaluations", "Safety analyses"],
+            "suffix": "help prevent workplace accidents effectively.",
+            "answer": "Risk assessments",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

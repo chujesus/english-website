@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 9,
+    "sections": [
+      {
+        "title": "Physical Appearance → Apariencia física",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "tall", "spanish": "alto/a" },
+          { "english": "short", "spanish": "bajo/a" },
+          { "english": "thin", "spanish": "delgado/a" },
+          { "english": "fat", "spanish": "gordo/a" },
+          { "english": "young", "spanish": "joven" },
+          { "english": "old", "spanish": "viejo/a" },
+          { "english": "strong", "spanish": "fuerte" },
+          { "english": "weak", "spanish": "débil" },
+          { "english": "beautiful", "spanish": "hermoso/a" },
+          { "english": "handsome", "spanish": "guapo" },
+          { "english": "pretty", "spanish": "bonita" },
+          { "english": "ugly", "spanish": "feo/a" },
+          { "english": "average", "spanish": "promedio" },
+          { "english": "fit", "spanish": "en forma" },
+          { "english": "healthy", "spanish": "saludable" }
+        ],
+        "listening": [
+          { "audio": "She is tall and friendly.", "options": ["tall", "short", "thin", "fat"], "answer": "tall" },
+          { "audio": "He is short and strong.", "options": ["short", "tall", "weak", "old"], "answer": "short" },
+          { "audio": "My friend is young and thin.", "options": ["young and thin", "old and fat", "strong and fit", "average and healthy"], "answer": "young and thin" },
+          { "audio": "My boss is old and healthy.", "options": ["old and healthy", "young and fit", "strong and weak", "beautiful and ugly"], "answer": "old and healthy" },
+          { "audio": "My colleague is fit and handsome.", "options": ["fit and handsome", "thin and pretty", "ugly and average", "strong and weak"], "answer": "fit and handsome" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["She is", "He is", "My friend is"], "suffix": "tall and friendly.", "answer": "She is", "selected": "", "feedback": "" },
+          { "prefix": ["He is", "She is", "My boss is"], "suffix": "short and strong.", "answer": "He is", "selected": "", "feedback": "" },
+          { "prefix": ["My friend is", "My colleague is", "My boss is"], "suffix": "young and thin.", "answer": "My friend is", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My colleague is", "My friend is"], "suffix": "old and healthy.", "answer": "My boss is", "selected": "", "feedback": "" },
+          { "prefix": ["My colleague is", "My friend is", "My boss is"], "suffix": "fit and handsome.", "answer": "My colleague is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Hair and Eyes → Cabello y ojos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "hair", "spanish": "cabello" },
+          { "english": "short hair", "spanish": "cabello corto" },
+          { "english": "long hair", "spanish": "cabello largo" },
+          { "english": "curly hair", "spanish": "cabello rizado" },
+          { "english": "straight hair", "spanish": "cabello liso" },
+          { "english": "black hair", "spanish": "cabello negro" },
+          { "english": "brown hair", "spanish": "cabello castaño" },
+          { "english": "blond hair", "spanish": "cabello rubio" },
+          { "english": "gray hair", "spanish": "cabello gris" },
+          { "english": "bald", "spanish": "calvo" },
+          { "english": "eyes", "spanish": "ojos" },
+          { "english": "brown eyes", "spanish": "ojos marrones" },
+          { "english": "blue eyes", "spanish": "ojos azules" },
+          { "english": "green eyes", "spanish": "ojos verdes" },
+          { "english": "big eyes", "spanish": "ojos grandes" }
+        ],
+        "listening": [
+          { "audio": "He has short black hair.", "options": ["short black hair", "long brown hair", "curly blond hair", "gray hair"], "answer": "short black hair" },
+          { "audio": "She has long curly hair.", "options": ["long curly hair", "short straight hair", "black hair", "brown hair"], "answer": "long curly hair" },
+          { "audio": "My friend has blue eyes.", "options": ["blue eyes", "brown eyes", "green eyes", "big eyes"], "answer": "blue eyes" },
+          { "audio": "My boss is bald.", "options": ["bald", "gray hair", "black hair", "brown hair"], "answer": "bald" },
+          { "audio": "My colleague has big brown eyes.", "options": ["big brown eyes", "small green eyes", "blue eyes", "gray eyes"], "answer": "big brown eyes" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["He has", "She has", "My friend has"], "suffix": "short black hair.", "answer": "He has", "selected": "", "feedback": "" },
+          { "prefix": ["She has", "He has", "My boss has"], "suffix": "long curly hair.", "answer": "She has", "selected": "", "feedback": "" },
+          { "prefix": ["My friend has", "My colleague has", "My boss has"], "suffix": "blue eyes.", "answer": "My friend has", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My colleague is", "My friend is"], "suffix": "bald.", "answer": "My boss is", "selected": "", "feedback": "" },
+          { "prefix": ["My colleague has", "My friend has", "My boss has"], "suffix": "big brown eyes.", "answer": "My colleague has", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Personality → Personalidad",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "kind", "spanish": "amable" },
+          { "english": "friendly", "spanish": "amigable" },
+          { "english": "funny", "spanish": "gracioso/a" },
+          { "english": "serious", "spanish": "serio/a" },
+          { "english": "hardworking", "spanish": "trabajador/a" },
+          { "english": "honest", "spanish": "honesto/a" },
+          { "english": "patient", "spanish": "paciente" },
+          { "english": "generous", "spanish": "generoso/a" },
+          { "english": "polite", "spanish": "educado/a" },
+          { "english": "respectful", "spanish": "respetuoso/a" },
+          { "english": "strict", "spanish": "estricto/a" },
+          { "english": "helpful", "spanish": "servicial" },
+          { "english": "distant", "spanish": "distante" },
+          { "english": "close", "spanish": "cercano/a" },
+          { "english": "supportive", "spanish": "apoyador/a" }
+        ],
+        "listening": [
+          { "audio": "She is kind and helpful.", "options": ["kind and helpful", "strict and serious", "funny and generous", "patient and polite"], "answer": "kind and helpful" },
+          { "audio": "He is serious and hardworking.", "options": ["serious and hardworking", "funny and generous", "kind and helpful", "patient and polite"], "answer": "serious and hardworking" },
+          { "audio": "My friend is funny and friendly.", "options": ["funny and friendly", "serious and strict", "kind and helpful", "polite and respectful"], "answer": "funny and friendly" },
+          { "audio": "My boss is honest and respectful.", "options": ["honest and respectful", "strict and serious", "kind and helpful", "funny and generous"], "answer": "honest and respectful" },
+          { "audio": "My colleague is patient and generous.", "options": ["patient and generous", "funny and friendly", "serious and hardworking", "kind and helpful"], "answer": "patient and generous" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["She is", "He is", "My friend is"], "suffix": "kind and helpful.", "answer": "She is", "selected": "", "feedback": "" },
+          { "prefix": ["He is", "She is", "My boss is"], "suffix": "serious and hardworking.", "answer": "He is", "selected": "", "feedback": "" },
+          { "prefix": ["My friend is", "My colleague is", "My boss is"], "suffix": "funny and friendly.", "answer": "My friend is", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My colleague is", "My friend is"], "suffix": "honest and respectful.", "answer": "My boss is", "selected": "", "feedback": "" },
+          { "prefix": ["My colleague is", "My friend is", "My boss is"], "suffix": "patient and generous.", "answer": "My colleague is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Describing People at Work → Describiendo personas en el trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "supervisor", "spanish": "supervisor/a" },
+          { "english": "manager", "spanish": "gerente" },
+          { "english": "colleague", "spanish": "colega" },
+          { "english": "employee", "spanish": "empleado/a" },
+          { "english": "client", "spanish": "cliente" },
+          { "english": "customer", "spanish": "cliente" },
+          { "english": "team", "spanish": "equipo" },
+          { "english": "group", "spanish": "grupo" },
+          { "english": "boss", "spanish": "jefe/a" },
+          { "english": "worker", "spanish": "trabajador/a" },
+          { "english": "technician", "spanish": "técnico/a" },
+          { "english": "student", "spanish": "estudiante" },
+          { "english": "teacher", "spanish": "profesor/a" },
+          { "english": "friend", "spanish": "amigo/a" },
+          { "english": "partner", "spanish": "pareja" }
+        ],
+        "listening": [
+          { "audio": "My supervisor is strict and honest.", "options": ["supervisor", "manager", "colleague", "employee"], "answer": "supervisor" },
+          { "audio": "My manager is friendly and helpful.", "options": ["manager", "supervisor", "colleague", "employee"], "answer": "manager" },
+          { "audio": "My colleague is hardworking and patient.", "options": ["colleague", "employee", "client", "customer"], "answer": "colleague" },
+          { "audio": "My boss is serious and respectful.", "options": ["boss", "worker", "technician", "student"], "answer": "boss" },
+          { "audio": "My team is supportive and close.", "options": ["team", "group", "friend", "partner"], "answer": "team" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My supervisor is", "My manager is", "My colleague is"], "suffix": "strict and honest.", "answer": "My supervisor is", "selected": "", "feedback": "" },
+          { "prefix": ["My manager is", "My supervisor is", "My colleague is"], "suffix": "friendly and helpful.", "answer": "My manager is", "selected": "", "feedback": "" },
+          { "prefix": ["My colleague is", "My employee is", "My client is"], "suffix": "hardworking and patient.", "answer": "My colleague is", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My worker is", "My technician is"], "suffix": "serious and respectful.", "answer": "My boss is", "selected": "", "feedback": "" },
+          { "prefix": ["My team is", "My group is", "My friend is"], "suffix": "supportive and close.", "answer": "My team is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Describing People in Costa Rica → Describiendo personas en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "tico", "spanish": "tico/a" },
+          { "english": "friendly", "spanish": "amigable" },
+          { "english": "hardworking", "spanish": "trabajador/a" },
+          { "english": "helpful", "spanish": "servicial" },
+          { "english": "polite", "spanish": "educado/a" },
+          { "english": "respectful", "spanish": "respetuoso/a" },
+          { "english": "patient", "spanish": "paciente" },
+          { "english": "generous", "spanish": "generoso/a" },
+          { "english": "funny", "spanish": "gracioso/a" },
+          { "english": "kind", "spanish": "amable" },
+          { "english": "honest", "spanish": "honesto/a" },
+          { "english": "serious", "spanish": "serio/a" },
+          { "english": "strict", "spanish": "estricto/a" },
+          { "english": "close", "spanish": "cercano/a" },
+          { "english": "supportive", "spanish": "apoyador/a" }
+        ],
+        "listening": [
+          { "audio": "Costa Ricans are friendly and hardworking.", "options": ["friendly and hardworking", "serious and strict", "funny and generous", "patient and polite"], "answer": "friendly and hardworking" },
+          { "audio": "My colleagues are helpful and polite.", "options": ["helpful and polite", "serious and strict", "funny and generous", "patient and polite"], "answer": "helpful and polite" },
+          { "audio": "My friends are respectful and patient.", "options": ["respectful and patient", "serious and strict", "funny and generous", "patient and polite"], "answer": "respectful and patient" },
+          { "audio": "My family is generous and funny.", "options": ["generous and funny", "serious and strict", "funny and generous", "patient and polite"], "answer": "generous and funny" },
+          { "audio": "My boss is honest and kind.", "options": ["honest and kind", "serious and strict", "funny and generous", "patient and polite"], "answer": "honest and kind" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["Costa Ricans are", "My colleagues are", "My friends are"], "suffix": "friendly and hardworking.", "answer": "Costa Ricans are", "selected": "", "feedback": "" },
+          { "prefix": ["My colleagues are", "My friends are", "My family is"], "suffix": "helpful and polite.", "answer": "My colleagues are", "selected": "", "feedback": "" },
+          { "prefix": ["My friends are", "My family is", "My boss is"], "suffix": "respectful and patient.", "answer": "My friends are", "selected": "", "feedback": "" },
+          { "prefix": ["My family is", "My boss is", "My colleagues are"], "suffix": "generous and funny.", "answer": "My family is", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My family is", "My friends are"], "suffix": "honest and kind.", "answer": "My boss is", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

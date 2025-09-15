@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 10,
+    "sections": [
+      {
+        "title": "Hobbies and Interests → Pasatiempos e intereses",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "hobby", "spanish": "pasatiempo" },
+          { "english": "interest", "spanish": "interés" },
+          { "english": "play", "spanish": "jugar" },
+          { "english": "watch", "spanish": "ver" },
+          { "english": "read", "spanish": "leer" },
+          { "english": "listen", "spanish": "escuchar" },
+          { "english": "draw", "spanish": "dibujar" },
+          { "english": "paint", "spanish": "pintar" },
+          { "english": "dance", "spanish": "bailar" },
+          { "english": "sing", "spanish": "cantar" },
+          { "english": "cook", "spanish": "cocinar" },
+          { "english": "travel", "spanish": "viajar" },
+          { "english": "swim", "spanish": "nadar" },
+          { "english": "exercise", "spanish": "ejercitarse" },
+          { "english": "garden", "spanish": "jardinería" }
+        ],
+        "listening": [
+          { "audio": "I like playing soccer.", "options": ["playing soccer", "watching TV", "reading books", "drawing"], "answer": "playing soccer" },
+          { "audio": "She loves reading books.", "options": ["reading books", "playing soccer", "watching TV", "drawing"], "answer": "reading books" },
+          { "audio": "He enjoys cooking.", "options": ["cooking", "dancing", "singing", "traveling"], "answer": "cooking" },
+          { "audio": "We watch movies on weekends.", "options": ["watch movies", "play soccer", "read books", "draw"], "answer": "watch movies" },
+          { "audio": "They exercise every morning.", "options": ["exercise", "swim", "garden", "paint"], "answer": "exercise" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I like", "I love", "I enjoy"], "suffix": "playing soccer.", "answer": "I like", "selected": "", "feedback": "" },
+          { "prefix": ["She loves", "She likes", "She enjoys"], "suffix": "reading books.", "answer": "She loves", "selected": "", "feedback": "" },
+          { "prefix": ["He enjoys", "He likes", "He loves"], "suffix": "cooking.", "answer": "He enjoys", "selected": "", "feedback": "" },
+          { "prefix": ["We watch", "We play", "We read"], "suffix": "movies on weekends.", "answer": "We watch", "selected": "", "feedback": "" },
+          { "prefix": ["They exercise", "They swim", "They garden"], "suffix": "every morning.", "answer": "They exercise", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Free Time Activities → Actividades en el tiempo libre",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "go out", "spanish": "salir" },
+          { "english": "visit friends", "spanish": "visitar amigos" },
+          { "english": "go to the movies", "spanish": "ir al cine" },
+          { "english": "go to the park", "spanish": "ir al parque" },
+          { "english": "play sports", "spanish": "practicar deportes" },
+          { "english": "watch TV", "spanish": "ver televisión" },
+          { "english": "listen to music", "spanish": "escuchar música" },
+          { "english": "read books", "spanish": "leer libros" },
+          { "english": "draw", "spanish": "dibujar" },
+          { "english": "paint", "spanish": "pintar" },
+          { "english": "dance", "spanish": "bailar" },
+          { "english": "sing", "spanish": "cantar" },
+          { "english": "cook", "spanish": "cocinar" },
+          { "english": "travel", "spanish": "viajar" },
+          { "english": "exercise", "spanish": "ejercitarse" }
+        ],
+        "listening": [
+          { "audio": "I go out with friends on Saturdays.", "options": ["go out", "visit friends", "go to the movies", "go to the park"], "answer": "go out" },
+          { "audio": "We play sports in the park.", "options": ["play sports", "watch TV", "listen to music", "read books"], "answer": "play sports" },
+          { "audio": "She listens to music every day.", "options": ["listen to music", "watch TV", "read books", "draw"], "answer": "listen to music" },
+          { "audio": "He reads books at night.", "options": ["read books", "draw", "paint", "dance"], "answer": "read books" },
+          { "audio": "They travel during vacations.", "options": ["travel", "exercise", "cook", "sing"], "answer": "travel" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I go out", "I visit friends", "I go to the movies"], "suffix": "with friends on Saturdays.", "answer": "I go out", "selected": "", "feedback": "" },
+          { "prefix": ["We play sports", "We watch TV", "We listen to music"], "suffix": "in the park.", "answer": "We play sports", "selected": "", "feedback": "" },
+          { "prefix": ["She listens to music", "She watches TV", "She reads books"], "suffix": "every day.", "answer": "She listens to music", "selected": "", "feedback": "" },
+          { "prefix": ["He reads books", "He draws", "He paints"], "suffix": "at night.", "answer": "He reads books", "selected": "", "feedback": "" },
+          { "prefix": ["They travel", "They exercise", "They cook"], "suffix": "during vacations.", "answer": "They travel", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Sports and Games → Deportes y juegos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "soccer", "spanish": "fútbol" },
+          { "english": "basketball", "spanish": "baloncesto" },
+          { "english": "volleyball", "spanish": "voleibol" },
+          { "english": "baseball", "spanish": "béisbol" },
+          { "english": "tennis", "spanish": "tenis" },
+          { "english": "swimming", "spanish": "natación" },
+          { "english": "running", "spanish": "correr" },
+          { "english": "cycling", "spanish": "ciclismo" },
+          { "english": "walking", "spanish": "caminar" },
+          { "english": "playing games", "spanish": "jugar juegos" },
+          { "english": "board games", "spanish": "juegos de mesa" },
+          { "english": "cards", "spanish": "cartas" },
+          { "english": "chess", "spanish": "ajedrez" },
+          { "english": "video games", "spanish": "videojuegos" },
+          { "english": "team", "spanish": "equipo" }
+        ],
+        "listening": [
+          { "audio": "I play soccer with my friends.", "options": ["soccer", "basketball", "volleyball", "baseball"], "answer": "soccer" },
+          { "audio": "She swims every morning.", "options": ["swims", "runs", "cycles", "walks"], "answer": "swims" },
+          { "audio": "We play board games on Sundays.", "options": ["board games", "cards", "chess", "video games"], "answer": "board games" },
+          { "audio": "He runs in the park.", "options": ["runs", "walks", "cycles", "swims"], "answer": "runs" },
+          { "audio": "They play video games at home.", "options": ["video games", "board games", "cards", "chess"], "answer": "video games" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I play soccer", "I play basketball", "I play volleyball"], "suffix": "with my friends.", "answer": "I play soccer", "selected": "", "feedback": "" },
+          { "prefix": ["She swims", "She runs", "She cycles"], "suffix": "every morning.", "answer": "She swims", "selected": "", "feedback": "" },
+          { "prefix": ["We play board games", "We play cards", "We play chess"], "suffix": "on Sundays.", "answer": "We play board games", "selected": "", "feedback": "" },
+          { "prefix": ["He runs", "He walks", "He cycles"], "suffix": "in the park.", "answer": "He runs", "selected": "", "feedback": "" },
+          { "prefix": ["They play video games", "They play board games", "They play cards"], "suffix": "at home.", "answer": "They play video games", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Hobbies in Costa Rica → Pasatiempos en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "fishing", "spanish": "pescar" },
+          { "english": "surfing", "spanish": "surfear" },
+          { "english": "hiking", "spanish": "senderismo" },
+          { "english": "birdwatching", "spanish": "observación de aves" },
+          { "english": "dancing", "spanish": "bailar" },
+          { "english": "cooking", "spanish": "cocinar" },
+          { "english": "gardening", "spanish": "jardinería" },
+          { "english": "playing music", "spanish": "tocar música" },
+          { "english": "playing soccer", "spanish": "jugar fútbol" },
+          { "english": "watching TV", "spanish": "ver televisión" },
+          { "english": "reading", "spanish": "leer" },
+          { "english": "traveling", "spanish": "viajar" },
+          { "english": "swimming", "spanish": "nadar" },
+          { "english": "cycling", "spanish": "ciclismo" },
+          { "english": "exercising", "spanish": "ejercitarse" }
+        ],
+        "listening": [
+          { "audio": "Fishing is popular in Costa Rica.", "options": ["fishing", "surfing", "hiking", "birdwatching"], "answer": "fishing" },
+          { "audio": "People go surfing on the Pacific coast.", "options": ["surfing", "fishing", "hiking", "birdwatching"], "answer": "surfing" },
+          { "audio": "Hiking is common in the mountains.", "options": ["hiking", "fishing", "surfing", "birdwatching"], "answer": "hiking" },
+          { "audio": "Birdwatching is a favorite activity.", "options": ["birdwatching", "fishing", "surfing", "hiking"], "answer": "birdwatching" },
+          { "audio": "Dancing is a traditional hobby.", "options": ["dancing", "cooking", "gardening", "playing music"], "answer": "dancing" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["Fishing is", "Surfing is", "Hiking is"], "suffix": "popular in Costa Rica.", "answer": "Fishing is", "selected": "", "feedback": "" },
+          { "prefix": ["People go surfing", "People go fishing", "People go hiking"], "suffix": "on the Pacific coast.", "answer": "People go surfing", "selected": "", "feedback": "" },
+          { "prefix": ["Hiking is", "Fishing is", "Surfing is"], "suffix": "common in the mountains.", "answer": "Hiking is", "selected": "", "feedback": "" },
+          { "prefix": ["Birdwatching is", "Fishing is", "Surfing is"], "suffix": "a favorite activity.", "answer": "Birdwatching is", "selected": "", "feedback": "" },
+          { "prefix": ["Dancing is", "Cooking is", "Gardening is"], "suffix": "a traditional hobby.", "answer": "Dancing is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Talking about Free Time → Hablando del tiempo libre",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "What do you do in your free time?", "spanish": "¿Qué haces en tu tiempo libre?" },
+          { "english": "I like", "spanish": "Me gusta" },
+          { "english": "I love", "spanish": "Me encanta" },
+          { "english": "I enjoy", "spanish": "Disfruto" },
+          { "english": "My favorite hobby is", "spanish": "Mi pasatiempo favorito es" },
+          { "english": "I spend time", "spanish": "Paso tiempo" },
+          { "english": "with family", "spanish": "con la familia" },
+          { "english": "with friends", "spanish": "con amigos" },
+          { "english": "at home", "spanish": "en casa" },
+          { "english": "outside", "spanish": "afuera" },
+          { "english": "on weekends", "spanish": "los fines de semana" },
+          { "english": "after work", "spanish": "después del trabajo" },
+          { "english": "after class", "spanish": "después de clase" },
+          { "english": "during vacation", "spanish": "durante vacaciones" },
+          { "english": "in the morning", "spanish": "en la mañana" }
+        ],
+        "listening": [
+          { "audio": "What do you do in your free time?", "options": ["What do you do in your free time?", "What do you do at work?", "What do you do at home?", "What do you do on weekends?"], "answer": "What do you do in your free time?" },
+          { "audio": "I like spending time with family.", "options": ["spending time with family", "spending time with friends", "spending time at home", "spending time outside"], "answer": "spending time with family" },
+          { "audio": "My favorite hobby is reading.", "options": ["reading", "playing soccer", "watching TV", "drawing"], "answer": "reading" },
+          { "audio": "I enjoy cooking after work.", "options": ["cooking after work", "cooking after class", "cooking on weekends", "cooking during vacation"], "answer": "cooking after work" },
+          { "audio": "I spend time outside on weekends.", "options": ["outside on weekends", "at home on weekends", "with family on weekends", "with friends on weekends"], "answer": "outside on weekends" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["What do you do in your free time?", "What do you do at work?", "What do you do at home?"], "suffix": "I like spending time with family.", "answer": "What do you do in your free time?", "selected": "", "feedback": "" },
+          { "prefix": ["My favorite hobby is", "My favorite sport is", "My favorite activity is"], "suffix": "reading.", "answer": "My favorite hobby is", "selected": "", "feedback": "" },
+          { "prefix": ["I enjoy cooking after work", "I enjoy cooking after class", "I enjoy cooking on weekends"], "suffix": "with my family.", "answer": "I enjoy cooking after work", "selected": "", "feedback": "" },
+          { "prefix": ["I spend time outside on weekends", "I spend time at home on weekends", "I spend time with family on weekends"], "suffix": "doing sports.", "answer": "I spend time outside on weekends", "selected": "", "feedback": "" },
+          { "prefix": ["I like", "I love", "I enjoy"], "suffix": "playing soccer in the morning.", "answer": "I like", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

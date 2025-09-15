@@ -1,0 +1,81 @@
+<main>
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+            <a [routerLink]="[ '/dashboard' ]"
+                class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
+                    role="img">
+                    <title>Modules</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM44 72V24h8l7 16 7-16h8v48h-8V44l-7 16-7-16v28h-8z"
+                        fill="currentColor">
+                    </path>
+                </svg>
+                <span class="fs-4">Modules</span>
+            </a>
+        </header>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <div class="h-100 p-5 text-bg-dark rounded-3">
+                    <h2>English A1 – Beginner English Skills</h2>
+                    <p>
+                        Develop essential communication abilities to introduce yourself, describe everyday situations,
+                        and follow simple instructions in English.
+                    </p>
+                    <button class="btn btn-outline-light" [routerLink]="['/dashboard/courses']"
+                        [queryParams]="{ id: 0, title: 'English A1 – Beginner English Skills' }">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h4>English A2 – Basic Communication Skills</h4>
+                    <p>
+                        Strengthen your ability to give instructions, describe simple technical processes, and
+                        understand vocabulary related to real-life work environments.
+                    </p>
+                    <button class="btn btn-outline-secondary" [routerLink]="['/dashboard/courses']"
+                        [queryParams]="{ id: 1, title: 'English A2 – Basic Communication Skills' }">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h4>English B1 – Intermediate Communication Skills</h4>
+                    <p>
+                        Improve your confidence in workplace communication by preparing short presentations,
+                        handling client interactions, and writing clear technical notes and messages.
+                    </p>
+                    <button class="btn btn-outline-secondary" [routerLink]="['/dashboard/courses']"
+                        [queryParams]="{ id: 2, title: 'English B1 – Intermediate Communication Skills' }">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <h4>English B2 – Technical English Skills</h4>
+                <p>
+                    Enhance your ability to communicate effectively in professional contexts through reporting,
+                    technical writing, team discussions, and problem-solving in English.
+                </p>
+                <button class="btn btn-outline-secondary" [routerLink]="['/dashboard/courses']"
+                    [queryParams]="{ id: 3, title: 'English B2 – Technical English Skills' }">
+                    View Details
+                </button>
+            </div>
+        </div>
+
+        <footer class="pt-3 mt-4 text-body-secondary border-top">
+            &copy; 2025
+        </footer>
+    </div>
+</main>

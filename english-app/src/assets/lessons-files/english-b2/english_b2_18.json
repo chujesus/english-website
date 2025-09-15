@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 18,
+  "sections": [
+    {
+      "title": "Advanced Engineering Economics and Finance → Economía e ingeniería financiera avanzada",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Net present value analysis evaluates investment profitability over time",
+          "spanish": "El análisis de valor presente neto evalúa rentabilidad de inversiones a través del tiempo"
+        },
+        {
+          "english": "Internal rate of return determines project financial attractiveness",
+          "spanish": "La tasa interna de retorno determina atractivo financiero del proyecto"
+        },
+        {
+          "english": "Sensitivity analysis assesses parameter impact on economic outcomes",
+          "spanish": "El análisis de sensibilidad evalúa impacto de parámetros en resultados económicos"
+        },
+        {
+          "english": "Real options valuation captures flexibility value in investment decisions",
+          "spanish": "La valoración de opciones reales captura valor de flexibilidad en decisiones de inversión"
+        },
+        {
+          "english": "Life cycle cost analysis optimizes total ownership expenses",
+          "spanish": "El análisis de costo del ciclo de vida optimiza gastos totales de propiedad"
+        },
+        {
+          "english": "Capital budgeting strategies allocate financial resources efficiently",
+          "spanish": "Las estrategias de presupuestación de capital asignan recursos financieros eficientemente"
+        },
+        {
+          "english": "Risk-adjusted discount rates account for uncertainty in cash flows",
+          "spanish": "Las tasas de descuento ajustadas por riesgo consideran incertidumbre en flujos de efectivo"
+        },
+        {
+          "english": "Economic value added measures true shareholder wealth creation",
+          "spanish": "El valor económico agregado mide creación real de riqueza para accionistas"
+        },
+        {
+          "english": "Monte Carlo simulation models financial uncertainty quantitatively",
+          "spanish": "La simulación Monte Carlo modela incertidumbre financiera cuantitativamente"
+        },
+        {
+          "english": "Total cost of ownership encompasses all lifecycle expenses",
+          "spanish": "El costo total de propiedad abarca todos los gastos del ciclo de vida"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does net present value help in engineering investment decisions?",
+          "options": ["It compares the present value of future cash flows to initial investment costs", "It eliminates all financial risks", "It only considers immediate costs"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages does real options valuation offer?",
+          "options": ["It values the flexibility to make future decisions as conditions change", "It eliminates all uncertainty", "It only works for financial instruments"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is life cycle cost analysis important for engineering projects?",
+          "options": ["It considers all costs from acquisition through disposal, not just initial investment", "It only looks at purchase price", "It eliminates all maintenance costs"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Net present",
+          "suffix": "helps engineers determine whether investments will create value over time.",
+          "answer": "value",
+          "selected": false,
+          "feedback": "NPV analysis is fundamental to engineering economic decision-making."
+        },
+        {
+          "prefix": "Internal rate",
+          "suffix": "shows the effective annual return that an investment will generate.",
+          "answer": "of return",
+          "selected": false,
+          "feedback": "IRR is a key metric for comparing investment alternatives."
+        },
+        {
+          "prefix": "Life cycle",
+          "suffix": "considers all expenses throughout a system's operational lifetime.",
+          "answer": "cost",
+          "selected": false,
+          "feedback": "LCC analysis ensures optimal long-term economic decisions."
+        }
+      ]
+    },
+    {
+      "title": "Global Technology Transfer and Commercialization → Transferencia global de tecnología y comercialización",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Technology transfer mechanisms bridge academic research and commercial applications",
+          "spanish": "Los mecanismos de transferencia de tecnología conectan investigación académica y aplicaciones comerciales"
+        },
+        {
+          "english": "Intellectual property licensing strategies monetize research investments effectively",
+          "spanish": "Las estrategias de licenciamiento de propiedad intelectual monetizan inversiones de investigación efectivamente"
+        },
+        {
+          "english": "Startup incubation programs accelerate technology commercialization processes",
+          "spanish": "Los programas de incubación de startups aceleran procesos de comercialización de tecnología"
+        },
+        {
+          "english": "Market assessment evaluates commercial viability of new technologies",
+          "spanish": "La evaluación de mercado evalúa viabilidad comercial de nuevas tecnologías"
+        },
+        {
+          "english": "Cross-border technology collaboration enables global innovation networks",
+          "spanish": "La colaboración tecnológica transfronteriza permite redes de innovación globales"
+        },
+        {
+          "english": "Venture capital funding supports high-growth technology companies",
+          "spanish": "El financiamiento de capital de riesgo apoya compañías tecnológicas de alto crecimiento"
+        },
+        {
+          "english": "Technology scouting identifies promising innovations for acquisition",
+          "spanish": "El technology scouting identifica innovaciones prometedoras para adquisición"
+        },
+        {
+          "english": "Innovation ecosystems foster collaborative technology development",
+          "spanish": "Los ecosistemas de innovación fomentan desarrollo tecnológico colaborativo"
+        },
+        {
+          "english": "Regulatory compliance ensures technology meets international standards",
+          "spanish": "El cumplimiento regulatorio asegura que la tecnología cumpla estándares internacionales"
+        },
+        {
+          "english": "Technology valuation methodologies determine fair market prices",
+          "spanish": "Las metodologías de valoración de tecnología determinan precios justos de mercado"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do technology transfer offices facilitate commercialization?",
+          "options": ["They help convert university research into marketable products and services", "They prevent all technology transfer", "They only focus on basic research"],
+          "answer": 0
+        },
+        {
+          "audio": "What role do innovation ecosystems play in technology development?",
+          "options": ["They create networks that support collaboration between researchers and industry", "They isolate organizations from each other", "They eliminate all competition"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is market assessment crucial for technology commercialization?",
+          "options": ["It determines whether there's sufficient demand to justify commercial development", "It guarantees market success", "It eliminates all market risks"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Technology",
+          "suffix": "helps move innovations from laboratories to real-world applications.",
+          "answer": "transfer",
+          "selected": false,
+          "feedback": "Technology transfer is essential for realizing the benefits of research investments."
+        },
+        {
+          "prefix": "Intellectual property",
+          "suffix": "allows organizations to generate revenue from their technological innovations.",
+          "answer": "licensing",
+          "selected": false,
+          "feedback": "IP licensing is a key mechanism for monetizing research and development."
+        },
+        {
+          "prefix": "Innovation",
+          "suffix": "bring together diverse stakeholders to accelerate technology development.",
+          "answer": "ecosystems",
+          "selected": false,
+          "feedback": "Innovation ecosystems are crucial for fostering collaborative innovation."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Materials Characterization → Caracterización avanzada de materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Scanning electron microscopy reveals material microstructure at high magnification",
+          "spanish": "La microscopía electrónica de barrido revela microestructura de materiales a alta magnificación"
+        },
+        {
+          "english": "X-ray diffraction identifies crystalline phases and structural properties",
+          "spanish": "La difracción de rayos X identifica fases cristalinas y propiedades estructurales"
+        },
+        {
+          "english": "Mechanical testing determines strength, stiffness, and failure characteristics",
+          "spanish": "Las pruebas mecánicas determinan resistencia, rigidez y características de falla"
+        },
+        {
+          "english": "Thermal analysis measures temperature-dependent material behavior",
+          "spanish": "El análisis térmico mide comportamiento de materiales dependiente de temperatura"
+        },
+        {
+          "english": "Spectroscopic techniques analyze chemical composition and bonding",
+          "spanish": "Las técnicas espectroscópicas analizan composición química y enlaces"
+        },
+        {
+          "english": "Fatigue testing evaluates material performance under cyclic loading",
+          "spanish": "Las pruebas de fatiga evalúan rendimiento de materiales bajo carga cíclica"
+        },
+        {
+          "english": "Surface analysis characterizes interface properties and modifications",
+          "spanish": "El análisis de superficie caracteriza propiedades de interfaces y modificaciones"
+        },
+        {
+          "english": "Nanoindentation measures mechanical properties at small scales",
+          "spanish": "La nanoindentación mide propiedades mecánicas a escalas pequeñas"
+        },
+        {
+          "english": "Corrosion testing assesses material degradation in service environments",
+          "spanish": "Las pruebas de corrosión evalúan degradación de materiales en ambientes de servicio"
+        },
+        {
+          "english": "Non-destructive evaluation detects flaws without damaging specimens",
+          "spanish": "La evaluación no destructiva detecta fallas sin dañar especímenes"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does scanning electron microscopy benefit materials engineering?",
+          "options": ["It provides detailed images of material structure at very high magnifications", "It only works with metals", "It destroys all samples during examination"],
+          "answer": 0
+        },
+        {
+          "audio": "What information does X-ray diffraction provide about materials?",
+          "options": ["It reveals crystal structure, phase composition, and lattice parameters", "It only measures thickness", "It changes material properties permanently"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is fatigue testing important for engineering materials?",
+          "options": ["It predicts how materials will perform under repeated loading conditions", "It only tests materials once", "It eliminates all material failures"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Scanning electron",
+          "suffix": "provides high-resolution images that reveal material microstructure details.",
+          "answer": "microscopy",
+          "selected": false,
+          "feedback": "SEM is an essential tool for understanding material structure-property relationships."
+        },
+        {
+          "prefix": "X-ray",
+          "suffix": "identifies crystalline phases and provides structural information about materials.",
+          "answer": "diffraction",
+          "selected": false,
+          "feedback": "XRD is fundamental for understanding crystal structure in materials."
+        },
+        {
+          "prefix": "Non-destructive",
+          "suffix": "allows inspection of materials and components without causing damage.",
+          "answer": "evaluation",
+          "selected": false,
+          "feedback": "NDE techniques are crucial for quality control and safety assessment."
+        }
+      ]
+    },
+    {
+      "title": "Emerging Engineering Technologies → Tecnologías emergentes de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Additive manufacturing enables rapid prototyping and complex geometry production",
+          "spanish": "La manufactura aditiva permite prototipado rápido y producción de geometría compleja"
+        },
+        {
+          "english": "Internet of Things connects physical devices for intelligent system integration",
+          "spanish": "El Internet de las Cosas conecta dispositivos físicos para integración inteligente de sistemas"
+        },
+        {
+          "english": "Artificial intelligence enhances engineering design and decision-making processes",
+          "spanish": "La inteligencia artificial mejora procesos de diseño de ingeniería y toma de decisiones"
+        },
+        {
+          "english": "Blockchain technology ensures secure and transparent data management",
+          "spanish": "La tecnología blockchain asegura gestión de datos segura y transparente"
+        },
+        {
+          "english": "Augmented reality overlays digital information onto physical environments",
+          "spanish": "La realidad aumentada superpone información digital sobre ambientes físicos"
+        },
+        {
+          "english": "Edge computing processes data locally for real-time system responses",
+          "spanish": "El edge computing procesa datos localmente para respuestas del sistema en tiempo real"
+        },
+        {
+          "english": "Digital twins create virtual replicas for system monitoring and optimization",
+          "spanish": "Los gemelos digitales crean réplicas virtuales para monitoreo y optimización de sistemas"
+        },
+        {
+          "english": "5G networks enable ultra-low latency communication for critical applications",
+          "spanish": "Las redes 5G permiten comunicación de latencia ultra-baja para aplicaciones críticas"
+        },
+        {
+          "english": "Quantum sensors achieve unprecedented measurement precision and sensitivity",
+          "spanish": "Los sensores cuánticos logran precisión y sensibilidad de medición sin precedentes"
+        },
+        {
+          "english": "Robotic process automation streamlines repetitive engineering tasks",
+          "spanish": "La automatización robótica de procesos optimiza tareas repetitivas de ingeniería"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How is additive manufacturing changing product development?",
+          "options": ["It enables rapid prototyping and production of complex geometries impossible with traditional methods", "It only works with plastic materials", "It makes all manufacturing slower"],
+          "answer": 0
+        },
+        {
+          "audio": "What benefits does the Internet of Things provide for engineering systems?",
+          "options": ["It enables remote monitoring, control, and optimization of connected devices", "It makes all devices more expensive", "It eliminates the need for human operators"],
+          "answer": 0
+        },
+        {
+          "audio": "How do digital twins improve system management?",
+          "options": ["They provide real-time virtual models for monitoring, analysis, and optimization", "They replace all physical systems", "They only work for simple devices"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Professional Development and Career Management → Desarrollo profesional y gestión de carrera",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Continuous learning ensures professional competence in rapidly evolving fields",
+          "spanish": "El aprendizaje continuo asegura competencia profesional en campos que evolucionan rápidamente"
+        },
+        {
+          "english": "Professional networking builds relationships that advance career opportunities",
+          "spanish": "Las redes profesionales construyen relaciones que avanzan oportunidades de carrera"
+        },
+        {
+          "english": "Technical leadership skills bridge engineering expertise and management responsibilities",
+          "spanish": "Las habilidades de liderazgo técnico conectan experiencia en ingeniería y responsabilidades de gestión"
+        },
+        {
+          "english": "Industry certification validates specialized knowledge and competencies",
+          "spanish": "La certificación de la industria valida conocimiento especializado y competencias"
+        },
+        {
+          "english": "Mentorship programs accelerate professional development through guidance",
+          "spanish": "Los programas de mentoría aceleran desarrollo profesional a través de orientación"
+        },
+        {
+          "english": "Cross-functional experience broadens engineering perspective and capabilities",
+          "spanish": "La experiencia cross-funcional amplía perspectiva y capacidades de ingeniería"
+        },
+        {
+          "english": "Professional ethics guide decision-making in complex engineering situations",
+          "spanish": "La ética profesional guía toma de decisiones en situaciones complejas de ingeniería"
+        },
+        {
+          "english": "Communication skills enable effective collaboration and knowledge transfer",
+          "spanish": "Las habilidades de comunicación permiten colaboración efectiva y transferencia de conocimiento"
+        },
+        {
+          "english": "Innovation mindset drives creative problem-solving and technological advancement",
+          "spanish": "La mentalidad de innovación impulsa resolución creativa de problemas y avance tecnológico"
+        },
+        {
+          "english": "Global competency prepares engineers for international collaboration",
+          "spanish": "La competencia global prepara ingenieros para colaboración internacional"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Continuous",
+          "suffix": "is essential for maintaining relevance in rapidly changing technology fields.",
+          "answer": "learning",
+          "selected": false,
+          "feedback": "Continuous learning is crucial for career success in dynamic engineering fields."
+        },
+        {
+          "prefix": "Professional",
+          "suffix": "creates opportunities for collaboration, knowledge sharing, and career advancement.",
+          "answer": "networking",
+          "selected": false,
+          "feedback": "Professional networks are invaluable for career development and opportunities."
+        },
+        {
+          "prefix": "Technical",
+          "suffix": "combines engineering expertise with management and people skills.",
+          "answer": "leadership",
+          "selected": false,
+          "feedback": "Technical leadership is essential for advancing to senior engineering roles."
+        }
+      ]
+    }
+  ]
+}
+]
+

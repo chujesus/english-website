@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "B1",
+    "lessonId": 1,
+    "sections": [
+      {
+        "title": "Advanced Tools and Equipment Management → Gestión avanzada de herramientas y equipo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The precision measurement tools require careful calibration", "spanish": "Las herramientas de medición de precisión requieren calibración cuidadosa" },
+          { "english": "We should implement a preventive maintenance schedule", "spanish": "Deberíamos implementar un horario de mantenimiento preventivo" },
+          { "english": "The diagnostic equipment has enhanced our troubleshooting capabilities", "spanish": "El equipo de diagnóstico ha mejorado nuestras capacidades de solución de problemas" },
+          { "english": "Regular inspection prevents premature equipment failure", "spanish": "La inspección regular previene fallas prematuras del equipo" },
+          { "english": "The automated inventory system tracks tool usage efficiently", "spanish": "El sistema de inventario automatizado rastrea el uso de herramientas eficientemente" },
+          { "english": "Proper storage conditions extend tool lifespan significantly", "spanish": "Las condiciones de almacenamiento adecuadas extienden la vida útil de las herramientas significativamente" },
+          { "english": "We need to upgrade our testing equipment to meet new standards", "spanish": "Necesitamos actualizar nuestro equipo de prueba para cumplir nuevos estándares" },
+          { "english": "The ergonomic design reduces operator fatigue during extended use", "spanish": "El diseño ergonómico reduce la fatiga del operador durante uso prolongado" },
+          { "english": "Training programs ensure proper equipment handling procedures", "spanish": "Los programas de entrenamiento aseguran procedimientos adecuados de manejo de equipo" },
+          { "english": "Digital multimeters provide more accurate readings than analog versions", "spanish": "Los multímetros digitales proporcionan lecturas más precisas que versiones analógicas" },
+          { "english": "The tool management system reduces downtime and improves efficiency", "spanish": "El sistema de gestión de herramientas reduce tiempo de inactividad y mejora eficiencia" },
+          { "english": "Specialized equipment requires certified technicians for operation", "spanish": "El equipo especializado requiere técnicos certificados para operación" },
+          { "english": "We maintain detailed records of all equipment maintenance activities", "spanish": "Mantenemos registros detallados de todas las actividades de mantenimiento de equipo" },
+          { "english": "The investment in quality tools pays off through increased productivity", "spanish": "La inversión en herramientas de calidad se paga a través de mayor productividad" },
+          { "english": "Modern equipment often incorporates smart technology for enhanced performance", "spanish": "El equipo moderno a menudo incorpora tecnología inteligente para rendimiento mejorado" }
+        ],
+        "listening": [
+          {
+            "audio": "The new oscilloscope features advanced signal analysis capabilities that will improve our electronic testing procedures",
+            "options": ["advanced signal analysis capabilities", "basic voltage measurement only", "simple visual display functions", "standard frequency detection"],
+            "answer": "advanced signal analysis capabilities"
+          },
+          {
+            "audio": "Preventive maintenance schedules should be based on manufacturer recommendations and actual usage patterns",
+            "options": ["manufacturer recommendations and actual usage patterns", "calendar dates only", "random inspection intervals", "emergency repair needs"],
+            "answer": "manufacturer recommendations and actual usage patterns"
+          },
+          {
+            "audio": "The tool crib system ensures that all equipment is properly checked out and returned in good condition",
+            "options": ["properly checked out and returned in good condition", "available without any tracking", "stored permanently in one location", "shared among all departments freely"],
+            "answer": "properly checked out and returned in good condition"
+          },
+          {
+            "audio": "Precision instruments require climate-controlled storage environments to maintain their accuracy",
+            "options": ["climate-controlled storage environments", "any available storage space", "outdoor storage facilities", "temporary storage solutions"],
+            "answer": "climate-controlled storage environments"
+          },
+          {
+            "audio": "The equipment training program includes both theoretical knowledge and hands-on practice sessions",
+            "options": ["theoretical knowledge and hands-on practice", "classroom instruction only", "practical experience exclusively", "online modules exclusively"],
+            "answer": "theoretical knowledge and hands-on practice"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The precision", "The accuracy", "The reliability"],
+            "suffix": "of measuring instruments directly affects product quality.",
+            "answer": "The precision",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Regular maintenance", "Scheduled service", "Preventive care"],
+            "suffix": "prevents costly emergency repairs.",
+            "answer": "Regular maintenance",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Advanced diagnostic", "Sophisticated testing", "Modern analytical"],
+            "suffix": "equipment enhances our problem-solving capabilities.",
+            "answer": "Advanced diagnostic",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Proper training", "Adequate instruction", "Comprehensive education"],
+            "suffix": "ensures safe and effective equipment operation.",
+            "answer": "Proper training",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The tool", "The equipment", "The instrument"],
+            "suffix": "inventory system tracks usage and availability.",
+            "answer": "The tool",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Safety at Work - Advanced Protocols → Seguridad en el trabajo - Protocolos avanzados",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Comprehensive risk assessments identify potential hazards before they become problems", "spanish": "Las evaluaciones de riesgo comprensivas identifican peligros potenciales antes de que se conviertan en problemas" },
+          { "english": "The hierarchy of controls prioritizes elimination over personal protective equipment", "spanish": "La jerarquía de controles prioriza la eliminación sobre el equipo de protección personal" },
+          { "english": "Behavioral safety programs focus on changing unsafe work practices", "spanish": "Los programas de seguridad conductual se enfocan en cambiar prácticas de trabajo inseguras" },
+          { "english": "Near-miss reporting systems help prevent serious accidents before they occur", "spanish": "Los sistemas de reporte de casi accidentes ayudan a prevenir accidentes serios antes de que ocurran" },
+          { "english": "Safety culture development requires commitment from all organizational levels", "spanish": "El desarrollo de cultura de seguridad requiere compromiso de todos los niveles organizacionales" },
+          { "english": "Incident investigation techniques determine root causes rather than immediate factors", "spanish": "Las técnicas de investigación de incidentes determinan causas raíz en lugar de factores inmediatos" },
+          { "english": "Continuous improvement methodologies enhance safety performance over time", "spanish": "Las metodologías de mejora continua mejoran el rendimiento de seguridad con el tiempo" },
+          { "english": "Emergency response procedures must be practiced regularly to ensure effectiveness", "spanish": "Los procedimientos de respuesta de emergencia deben practicarse regularmente para asegurar efectividad" },
+          { "english": "Job safety analysis breaks down tasks to identify specific hazards", "spanish": "El análisis de seguridad del trabajo desglosa tareas para identificar peligros específicos" },
+          { "english": "Safety audits provide objective assessments of workplace conditions", "spanish": "Las auditorías de seguridad proporcionan evaluaciones objetivas de condiciones del lugar de trabajo" },
+          { "english": "Ergonomic assessments reduce the risk of musculoskeletal disorders", "spanish": "Las evaluaciones ergonómicas reducen el riesgo de trastornos musculoesqueléticos" },
+          { "english": "Lock-out tag-out procedures protect workers during equipment maintenance", "spanish": "Los procedimientos de bloqueo y etiquetado protegen trabajadores durante mantenimiento de equipo" },
+          { "english": "Environmental monitoring ensures compliance with occupational health standards", "spanish": "El monitoreo ambiental asegura cumplimiento con estándares de salud ocupacional" },
+          { "english": "Safety training programs must be tailored to specific job requirements", "spanish": "Los programas de entrenamiento de seguridad deben adaptarse a requisitos específicos del trabajo" },
+          { "english": "Leading indicators predict future safety performance more effectively than lagging indicators", "spanish": "Los indicadores adelantados predicen el rendimiento futuro de seguridad más efectivamente que indicadores rezagados" }
+        ],
+        "listening": [
+          {
+            "audio": "The safety management system integrates hazard identification, risk assessment, and control implementation",
+            "options": ["hazard identification, risk assessment, and control implementation", "basic safety rules and regulations only", "emergency response procedures exclusively", "personal protective equipment requirements"],
+            "answer": "hazard identification, risk assessment, and control implementation"
+          },
+          {
+            "audio": "Behavioral observation programs help identify unsafe practices before they result in incidents",
+            "options": ["identify unsafe practices before they result in incidents", "document accidents after they occur", "provide basic safety training", "maintain safety equipment inventory"],
+            "answer": "identify unsafe practices before they result in incidents"
+          },
+          {
+            "audio": "The permit-to-work system controls high-risk activities through systematic authorization procedures",
+            "options": ["controls high-risk activities through systematic authorization", "allows unrestricted access to all areas", "eliminates the need for safety precautions", "simplifies all work procedures"],
+            "answer": "controls high-risk activities through systematic authorization"
+          },
+          {
+            "audio": "Safety performance indicators should measure both leading and lagging safety metrics",
+            "options": ["both leading and lagging safety metrics", "only accident rates and injuries", "just compliance with regulations", "basic training completion rates"],
+            "answer": "both leading and lagging safety metrics"
+          },
+          {
+            "audio": "The safety committee includes representatives from management, supervision, and front-line workers",
+            "options": ["management, supervision, and front-line workers", "only management personnel", "external safety consultants exclusively", "government safety inspectors"],
+            "answer": "management, supervision, and front-line workers"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Risk assessment", "Hazard evaluation", "Safety analysis"],
+            "suffix": "forms the foundation of effective safety management.",
+            "answer": "Risk assessment",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety culture", "Workplace safety", "Organizational safety"],
+            "suffix": "requires leadership commitment and employee engagement.",
+            "answer": "Safety culture",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Emergency procedures", "Crisis response", "Safety protocols"],
+            "suffix": "must be clearly communicated and regularly practiced.",
+            "answer": "Emergency procedures",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Continuous improvement", "Ongoing enhancement", "Progressive development"],
+            "suffix": "drives safety performance toward excellence.",
+            "answer": "Continuous improvement",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety training", "Security education", "Protection instruction"],
+            "suffix": "should be job-specific and competency-based.",
+            "answer": "Safety training",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Following Complex Instructions → Siguiendo instrucciones complejas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Before beginning the procedure, ensure all safety precautions are in place", "spanish": "Antes de comenzar el procedimiento, asegúrate de que todas las precauciones de seguridad estén en su lugar" },
+          { "english": "The sequence of operations must be followed precisely to avoid complications", "spanish": "La secuencia de operaciones debe seguirse precisamente para evitar complicaciones" },
+          { "english": "If unexpected conditions arise, stop immediately and consult the supervisor", "spanish": "Si surgen condiciones inesperadas, detente inmediatamente y consulta al supervisor" },
+          { "english": "The critical control points require special attention throughout the process", "spanish": "Los puntos de control críticos requieren atención especial durante todo el proceso" },
+          { "english": "Documentation of each step provides traceability and quality assurance", "spanish": "La documentación de cada paso proporciona trazabilidad y aseguramiento de calidad" },
+          { "english": "When in doubt about any instruction, seek clarification before proceeding", "spanish": "Cuando tengas dudas sobre cualquier instrucción, busca aclaración antes de proceder" },
+          { "english": "The tolerance levels specified must not be exceeded under any circumstances", "spanish": "Los niveles de tolerancia especificados no deben excederse bajo ninguna circunstancia" },
+          { "english": "Cross-reference the work order with the technical specifications", "spanish": "Haz referencia cruzada de la orden de trabajo con las especificaciones técnicas" },
+          { "english": "Quality checkpoints are integrated throughout the workflow", "spanish": "Los puntos de control de calidad están integrados a través del flujo de trabajo" },
+          { "english": "The completion criteria must be met before advancing to the next phase", "spanish": "Los criterios de completación deben cumplirse antes de avanzar a la siguiente fase" },
+          { "english": "Alternative procedures are available if primary methods prove unsuitable", "spanish": "Los procedimientos alternativos están disponibles si los métodos primarios resultan inadecuados" },
+          { "english": "Coordination with other departments may be required for certain operations", "spanish": "La coordinación con otros departamentos puede requerirse para ciertas operaciones" },
+          { "english": "The revision level of all documents should be verified before use", "spanish": "El nivel de revisión de todos los documentos debe verificarse antes del uso" },
+          { "english": "Final inspection confirms that all requirements have been satisfied", "spanish": "La inspección final confirma que todos los requisitos han sido satisfechos" },
+          { "english": "Proper handover procedures ensure continuity between shifts", "spanish": "Los procedimientos de transferencia adecuados aseguran continuidad entre turnos" }
+        ],
+        "listening": [
+          {
+            "audio": "The multi-step calibration procedure requires precise timing and environmental conditions",
+            "options": ["precise timing and environmental conditions", "basic tools and standard workspace", "minimal preparation and simple tools", "general knowledge and experience only"],
+            "answer": "precise timing and environmental conditions"
+          },
+          {
+            "audio": "Should any parameter fall outside the specified range, immediately halt the process and notify quality control",
+            "options": ["immediately halt the process and notify quality control", "continue working and document the deviation", "adjust the parameters and keep working", "ignore minor variations and proceed"],
+            "answer": "immediately halt the process and notify quality control"
+          },
+          {
+            "audio": "The work instruction includes decision trees for handling various scenarios that may occur",
+            "options": ["decision trees for handling various scenarios", "basic step-by-step procedures only", "simple troubleshooting tips", "general guidelines and suggestions"],
+            "answer": "decision trees for handling various scenarios"
+          },
+          {
+            "audio": "Prior to equipment startup, verify that all interlocks are functional and safety systems are active",
+            "options": ["all interlocks are functional and safety systems are active", "basic power connections are made", "operators are present and ready", "tools and materials are available"],
+            "answer": "all interlocks are functional and safety systems are active"
+          },
+          {
+            "audio": "The procedure requires coordination between mechanical, electrical, and quality assurance teams",
+            "options": ["mechanical, electrical, and quality assurance teams", "only mechanical technicians", "just electrical specialists", "individual workers independently"],
+            "answer": "mechanical, electrical, and quality assurance teams"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Before starting", "Prior to beginning", "At the outset"],
+            "suffix": "any procedure, review all safety requirements.",
+            "answer": "Before starting",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The sequence", "The order", "The progression"],
+            "suffix": "of operations is critical for successful completion.",
+            "answer": "The sequence",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["If problems", "Should issues", "When difficulties"],
+            "suffix": "arise, consult the troubleshooting guide.",
+            "answer": "If problems",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Quality control", "Inspection points", "Verification steps"],
+            "suffix": "are embedded throughout the process.",
+            "answer": "Quality control",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["All procedures", "Every operation", "Each task"],
+            "suffix": "must be documented for traceability.",
+            "answer": "All procedures",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Work Orders and Request Management → Gestión de órdenes de trabajo y solicitudes",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The work order system prioritizes tasks based on urgency and resource availability", "spanish": "El sistema de órdenes de trabajo prioriza tareas basándose en urgencia y disponibilidad de recursos" },
+          { "english": "Detailed job descriptions ensure technicians understand scope and requirements", "spanish": "Las descripciones detalladas del trabajo aseguran que los técnicos entiendan el alcance y requisitos" },
+          { "english": "Resource planning involves scheduling personnel, tools, and materials", "spanish": "La planificación de recursos involucra programar personal, herramientas y materiales" },
+          { "english": "Progress tracking provides real-time visibility into job completion status", "spanish": "El seguimiento del progreso proporciona visibilidad en tiempo real del estado de completación del trabajo" },
+          { "english": "Quality standards must be maintained regardless of time pressures", "spanish": "Los estándares de calidad deben mantenerse independientemente de presiones de tiempo" },
+          { "english": "Communication protocols keep all stakeholders informed of work progress", "spanish": "Los protocolos de comunicación mantienen a todas las partes interesadas informadas del progreso del trabajo" },
+          { "english": "Change orders require proper authorization before implementation", "spanish": "Las órdenes de cambio requieren autorización adecuada antes de la implementación" },
+          { "english": "Cost tracking ensures projects remain within approved budgets", "spanish": "El seguimiento de costos asegura que los proyectos permanezcan dentro de presupuestos aprobados" },
+          { "english": "Preventive maintenance requests help avoid emergency situations", "spanish": "Las solicitudes de mantenimiento preventivo ayudan a evitar situaciones de emergencia" },
+          { "english": "Work completion requires customer sign-off and documentation", "spanish": "La completación del trabajo requiere aprobación del cliente y documentación" },
+          { "english": "The backlog management system optimizes workflow and resource utilization", "spanish": "El sistema de gestión de trabajo pendiente optimiza flujo de trabajo y utilización de recursos" },
+          { "english": "Performance metrics measure efficiency and customer satisfaction", "spanish": "Las métricas de rendimiento miden eficiencia y satisfacción del cliente" },
+          { "english": "Emergency work orders bypass normal approval processes", "spanish": "Las órdenes de trabajo de emergencia evitan procesos de aprobación normales" },
+          { "english": "Skills matching ensures appropriate technicians are assigned to specific jobs", "spanish": "La coincidencia de habilidades asegura que técnicos apropiados sean asignados a trabajos específicos" },
+          { "english": "Regular review meetings address process improvements and challenges", "spanish": "Las reuniones de revisión regulares abordan mejoras de proceso y desafíos" }
+        ],
+        "listening": [
+          {
+            "audio": "The computerized maintenance management system automates work order creation and tracking processes",
+            "options": ["automates work order creation and tracking", "requires manual data entry for all tasks", "operates independently of scheduling", "focuses only on emergency repairs"],
+            "answer": "automates work order creation and tracking"
+          },
+          {
+            "audio": "Priority levels are assigned based on equipment criticality and potential impact on operations",
+            "options": ["equipment criticality and potential impact on operations", "first-come, first-served basis", "technician availability only", "customer preferences exclusively"],
+            "answer": "equipment criticality and potential impact on operations"
+          },
+          {
+            "audio": "The work request approval workflow includes technical review and budget authorization",
+            "options": ["technical review and budget authorization", "automatic approval for all requests", "manager approval only", "no approval process required"],
+            "answer": "technical review and budget authorization"
+          },
+          {
+            "audio": "Key performance indicators track both efficiency metrics and customer satisfaction scores",
+            "options": ["efficiency metrics and customer satisfaction scores", "only completion times", "just cost information", "basic task counts only"],
+            "answer": "efficiency metrics and customer satisfaction scores"
+          },
+          {
+            "audio": "Mobile work order systems enable real-time updates from field technicians",
+            "options": ["real-time updates from field technicians", "weekly status reports only", "monthly summary information", "annual performance reviews"],
+            "answer": "real-time updates from field technicians"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The work order", "The job request", "The service order"],
+            "suffix": "contains all necessary details for task completion.",
+            "answer": "The work order",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Priority assignment", "Task scheduling", "Work prioritization"],
+            "suffix": "ensures critical jobs receive immediate attention.",
+            "answer": "Priority assignment",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Resource allocation", "Personnel assignment", "Material planning"],
+            "suffix": "optimizes efficiency and minimizes delays.",
+            "answer": "Resource allocation",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Progress monitoring", "Status tracking", "Completion oversight"],
+            "suffix": "provides visibility into work advancement.",
+            "answer": "Progress monitoring",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Customer approval", "Client sign-off", "User acceptance"],
+            "suffix": "confirms satisfactory job completion.",
+            "answer": "Customer approval",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Measurements and Technical Units → Medidas y unidades técnicas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Precision measurements require calibrated instruments and controlled conditions", "spanish": "Las mediciones de precisión requieren instrumentos calibrados y condiciones controladas" },
+          { "english": "The metric system provides standardized units for international consistency", "spanish": "El sistema métrico proporciona unidades estandarizadas para consistencia internacional" },
+          { "english": "Dimensional tolerances define acceptable variation limits for manufactured components", "spanish": "Las tolerancias dimensionales definen límites de variación aceptables para componentes manufacturados" },
+          { "english": "Converting between measurement systems requires careful attention to accuracy", "spanish": "Convertir entre sistemas de medición requiere atención cuidadosa a la precisión" },
+          { "english": "Statistical analysis of measurements helps identify trends and anomalies", "spanish": "El análisis estadístico de mediciones ayuda a identificar tendencias y anomalías" },
+          { "english": "Environmental factors can significantly affect measurement accuracy", "spanish": "Los factores ambientales pueden afectar significativamente la precisión de medición" },
+          { "english": "Measurement uncertainty quantifies the reliability of test results", "spanish": "La incertidumbre de medición cuantifica la confiabilidad de resultados de pruebas" },
+          { "english": "Traceability ensures measurements can be linked to national standards", "spanish": "La trazabilidad asegura que las mediciones puedan vincularse a estándares nacionales" },
+          { "english": "Automated measurement systems reduce human error and improve consistency", "spanish": "Los sistemas de medición automatizados reducen error humano y mejoran consistencia" },
+          { "english": "Quality control relies heavily on accurate and precise measurements", "spanish": "El control de calidad depende en gran medida de mediciones precisas y exactas" },
+          { "english": "Measurement planning ensures appropriate instruments and procedures are selected", "spanish": "La planificación de medición asegura que se seleccionen instrumentos y procedimientos apropiados" },
+          { "english": "Documentation of measurement procedures enables consistent results", "spanish": "La documentación de procedimientos de medición permite resultados consistentes" },
+          { "english": "Regular calibration schedules maintain measurement system integrity", "spanish": "Los horarios de calibración regulares mantienen la integridad del sistema de medición" },
+          { "english": "Measurement capability studies evaluate system performance and limitations", "spanish": "Los estudios de capacidad de medición evalúan rendimiento y limitaciones del sistema" },
+          { "english": "International standards harmonize measurement practices across industries", "spanish": "Los estándares internacionales armonizan prácticas de medición a través de industrias" }
+        ],
+        "listening": [
+          {
+            "audio": "The micrometer provides measurements accurate to within one thousandth of a millimeter",
+            "options": ["accurate to within one thousandth of a millimeter", "precise to the nearest centimeter", "reliable within ten percent tolerance", "consistent to the millimeter level"],
+            "answer": "accurate to within one thousandth of a millimeter"
+          },
+          {
+            "audio": "Temperature compensation is essential when measuring materials that expand or contract",
+            "options": ["when measuring materials that expand or contract", "only during summer months", "for plastic components exclusively", "in high-humidity environments"],
+            "answer": "when measuring materials that expand or contract"
+          },
+          {
+            "audio": "The coordinate measuring machine uses touch probes to determine three-dimensional geometry",
+            "options": ["touch probes to determine three-dimensional geometry", "laser beams for surface scanning only", "visual inspection for quality control", "magnetic sensors for metal detection"],
+            "answer": "touch probes to determine three-dimensional geometry"
+          },
+          {
+            "audio": "Gage repeatability and reproducibility studies evaluate measurement system performance",
+            "options": ["evaluate measurement system performance", "train new operators exclusively", "calibrate instruments automatically", "document quality procedures"],
+            "answer": "evaluate measurement system performance"
+          },
+          {
+            "audio": "Statistical process control uses measurement data to monitor manufacturing consistency",
+            "options": ["monitor manufacturing consistency", "predict equipment failures", "schedule maintenance activities", "train production workers"],
+            "answer": "monitor manufacturing consistency"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Accurate measurements", "Precise readings", "Reliable data"],
+            "suffix": "form the foundation of quality control.",
+            "answer": "Accurate measurements",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Calibration", "Standardization", "Verification"],
+            "suffix": "ensures measurement instruments provide correct results.",
+            "answer": "Calibration",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Dimensional tolerances", "Size specifications", "Geometric limits"],
+            "suffix": "define acceptable product variation.",
+            "answer": "Dimensional tolerances",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Environmental conditions", "Operating parameters", "Ambient factors"],
+            "suffix": "can influence measurement accuracy.",
+            "answer": "Environmental conditions",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Measurement uncertainty", "Reading reliability", "Data confidence"],
+            "suffix": "indicates the quality of test results.",
+            "answer": "Measurement uncertainty",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

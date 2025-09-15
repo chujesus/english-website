@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A2",
+    "lessonId": 0,
+    "sections": [
+      {
+        "title": "Introductions and Workplace Greetings → Presentaciones y saludos laborales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Nice to meet you", "spanish": "Mucho gusto en conocerte" },
+          { "english": "I'm a student at the technical college", "spanish": "Soy estudiante del colegio técnico" },
+          { "english": "What's your position here?", "spanish": "¿Cuál es tu puesto aquí?" },
+          { "english": "I work in the maintenance department", "spanish": "Trabajo en el departamento de mantenimiento" },
+          { "english": "How long have you been working here?", "spanish": "¿Cuánto tiempo llevas trabajando aquí?" },
+          { "english": "I started working here last month", "spanish": "Empecé a trabajar aquí el mes pasado" },
+          { "english": "This is my supervisor", "spanish": "Este es mi supervisor" },
+          { "english": "Let me introduce you to my colleague", "spanish": "Déjame presentarte a mi colega" },
+          { "english": "She's the team leader", "spanish": "Ella es la líder del equipo" },
+          { "english": "We're doing an internship", "spanish": "Estamos haciendo una práctica profesional" },
+          { "english": "I'm learning industrial maintenance", "spanish": "Estoy aprendiendo mantenimiento industrial" },
+          { "english": "What shift do you work?", "spanish": "¿En qué turno trabajas?" },
+          { "english": "I work the morning shift", "spanish": "Trabajo en el turno de la mañana" },
+          { "english": "Welcome to our workshop", "spanish": "Bienvenido a nuestro taller" },
+          { "english": "Have a good day at work", "spanish": "Que tengas un buen día de trabajo" }
+        ],
+        "listening": [
+          {
+            "audio": "Hello, I'm Maria. I'm a student at IPEC studying electronics",
+            "options": ["studying electronics", "studying mechanics", "studying computing", "studying administration"],
+            "answer": "studying electronics"
+          },
+          {
+            "audio": "Nice to meet you, Maria. I'm Carlos, the workshop supervisor",
+            "options": ["workshop supervisor", "department manager", "team leader", "technical instructor"],
+            "answer": "workshop supervisor"
+          },
+          {
+            "audio": "How long have you been working here at the factory?",
+            "options": ["working here at the factory", "studying at the college", "living in this city", "learning this trade"],
+            "answer": "working here at the factory"
+          },
+          {
+            "audio": "I started working here about six months ago",
+            "options": ["six months ago", "six weeks ago", "six years ago", "six days ago"],
+            "answer": "six months ago"
+          },
+          {
+            "audio": "Let me introduce you to the other technicians on our team",
+            "options": ["other technicians on our team", "other students in our class", "other supervisors in the company", "other workers in this shift"],
+            "answer": "other technicians on our team"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Nice to meet you", "Good to meet you", "Pleased to meet you"],
+            "suffix": ". I'm studying at SINDEA.",
+            "answer": "Nice to meet you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work in", "I'm assigned to", "I belong to"],
+            "suffix": "the electrical maintenance department.",
+            "answer": "I work in",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This is", "Let me introduce", "I'd like you to meet"],
+            "suffix": "my supervisor, Engineer Ramirez.",
+            "answer": "This is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How long", "How much time", "Since when"],
+            "suffix": "have you been working here?",
+            "answer": "How long",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I started", "I began", "I commenced"],
+            "suffix": "working here last year.",
+            "answer": "I started",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Describing Your Technical Specialty → Describiendo tu especialidad técnica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I'm studying industrial electronics", "spanish": "Estoy estudiando electrónica industrial" },
+          { "english": "My specialty is automotive mechanics", "spanish": "Mi especialidad es mecánica automotriz" },
+          { "english": "We learn how to repair machines", "spanish": "Aprendemos cómo reparar máquinas" },
+          { "english": "I'm training to be a technician", "spanish": "Me estoy capacitando para ser técnico" },
+          { "english": "Our program includes practical workshops", "spanish": "Nuestro programa incluye talleres prácticos" },
+          { "english": "I'm good at troubleshooting problems", "spanish": "Soy bueno resolviendo problemas" },
+          { "english": "We study electrical circuits", "spanish": "Estudiamos circuitos eléctricos" },
+          { "english": "I'm learning to use diagnostic equipment", "spanish": "Estoy aprendiendo a usar equipo de diagnóstico" },
+          { "english": "My field requires precision and attention", "spanish": "Mi campo requiere precisión y atención" },
+          { "english": "I enjoy working with my hands", "spanish": "Disfruto trabajar con mis manos" },
+          { "english": "Technical skills are very important", "spanish": "Las habilidades técnicas son muy importantes" },
+          { "english": "I'm completing my certification", "spanish": "Estoy completando mi certificación" },
+          { "english": "We practice safety procedures daily", "spanish": "Practicamos procedimientos de seguridad a diario" },
+          { "english": "I want to specialize in robotics", "spanish": "Quiero especializarme en robótica" },
+          { "english": "Our teachers are experienced professionals", "spanish": "Nuestros profesores son profesionales experimentados" }
+        ],
+        "listening": [
+          {
+            "audio": "I'm studying industrial electronics at the technical college",
+            "options": ["industrial electronics", "computer science", "mechanical engineering", "business administration"],
+            "answer": "industrial electronics"
+          },
+          {
+            "audio": "We learn how to install and maintain electrical systems",
+            "options": ["install and maintain electrical systems", "design and build computers", "repair and service vehicles", "manage and organize projects"],
+            "answer": "install and maintain electrical systems"
+          },
+          {
+            "audio": "My specialty focuses on automation and control systems",
+            "options": ["automation and control systems", "communication and networks", "manufacturing and production", "quality and inspection"],
+            "answer": "automation and control systems"
+          },
+          {
+            "audio": "I'm training to become a certified industrial technician",
+            "options": ["certified industrial technician", "licensed electrical engineer", "professional project manager", "qualified safety inspector"],
+            "answer": "certified industrial technician"
+          },
+          {
+            "audio": "Our program includes both theory and hands-on practice",
+            "options": ["theory and hands-on practice", "lectures and written exams", "research and development", "meetings and presentations"],
+            "answer": "theory and hands-on practice"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I'm studying", "I'm learning", "I'm specializing in"],
+            "suffix": "industrial maintenance at IPEC.",
+            "answer": "I'm studying",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My field", "My specialty", "My area"],
+            "suffix": "requires good problem-solving skills.",
+            "answer": "My field",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We learn", "We study", "We practice"],
+            "suffix": "how to repair and maintain equipment.",
+            "answer": "We learn",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'm training", "I'm preparing", "I'm getting ready"],
+            "suffix": "to work in a modern factory.",
+            "answer": "I'm training",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical skills", "Practical knowledge", "Hands-on experience"],
+            "suffix": "are essential in our profession.",
+            "answer": "Technical skills",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Tools and Equipment → Herramientas y equipo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I need a screwdriver", "spanish": "Necesito un destornillador" },
+          { "english": "Can you hand me the wrench?", "spanish": "¿Me puedes pasar la llave inglesa?" },
+          { "english": "This multimeter is not working", "spanish": "Este multímetro no está funcionando" },
+          { "english": "Where are the safety goggles?", "spanish": "¿Dónde están las gafas de seguridad?" },
+          { "english": "I'm using a drill to make holes", "spanish": "Estoy usando un taladro para hacer agujeros" },
+          { "english": "The hammer is on the workbench", "spanish": "El martillo está en la mesa de trabajo" },
+          { "english": "Please bring the toolbox", "spanish": "Por favor trae la caja de herramientas" },
+          { "english": "We need new cutting tools", "spanish": "Necesitamos nuevas herramientas de corte" },
+          { "english": "The measuring tape is 5 meters long", "spanish": "La cinta métrica mide 5 metros" },
+          { "english": "I'm checking with the level", "spanish": "Estoy verificando con el nivel" },
+          { "english": "These pliers are very useful", "spanish": "Estas pinzas son muy útiles" },
+          { "english": "The welding equipment is expensive", "spanish": "El equipo de soldadura es caro" },
+          { "english": "I need to calibrate this instrument", "spanish": "Necesito calibrar este instrumento" },
+          { "english": "The power tools are in the cabinet", "spanish": "Las herramientas eléctricas están en el gabinete" },
+          { "english": "Always check your tools before use", "spanish": "Siempre revisa tus herramientas antes de usarlas" }
+        ],
+        "listening": [
+          {
+            "audio": "Can you hand me the Phillips screwdriver from the toolbox?",
+            "options": ["Phillips screwdriver", "flathead screwdriver", "electric screwdriver", "magnetic screwdriver"],
+            "answer": "Phillips screwdriver"
+          },
+          {
+            "audio": "I need to measure the voltage with this digital multimeter",
+            "options": ["measure the voltage", "check the current", "test the resistance", "verify the frequency"],
+            "answer": "measure the voltage"
+          },
+          {
+            "audio": "Don't forget to wear your safety goggles in the workshop",
+            "options": ["safety goggles", "work gloves", "hard hat", "safety shoes"],
+            "answer": "safety goggles"
+          },
+          {
+            "audio": "The pneumatic drill is much faster than the manual one",
+            "options": ["pneumatic drill", "electric drill", "battery drill", "hammer drill"],
+            "answer": "pneumatic drill"
+          },
+          {
+            "audio": "We keep all the precision instruments in a locked cabinet",
+            "options": ["precision instruments", "power tools", "safety equipment", "spare parts"],
+            "answer": "precision instruments"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I need", "I require", "I'm looking for"],
+            "suffix": "a socket wrench to remove this bolt.",
+            "answer": "I need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The multimeter", "The oscilloscope", "The meter"],
+            "suffix": "shows the electrical measurements clearly.",
+            "answer": "The multimeter",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety equipment", "Protective gear", "Safety tools"],
+            "suffix": "must be used at all times.",
+            "answer": "Safety equipment",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This drill", "This tool", "This equipment"],
+            "suffix": "is designed for heavy-duty work.",
+            "answer": "This drill",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["All tools", "Every instrument", "Each piece of equipment"],
+            "suffix": "should be properly maintained.",
+            "answer": "All tools",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Instructions and Commands → Instrucciones y comandos laborales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Please turn off the machine", "spanish": "Por favor apaga la máquina" },
+          { "english": "Check the oil level first", "spanish": "Revisa el nivel de aceite primero" },
+          { "english": "Don't touch the hot surface", "spanish": "No toques la superficie caliente" },
+          { "english": "Follow the safety procedures", "spanish": "Sigue los procedimientos de seguridad" },
+          { "english": "Make sure to disconnect the power", "spanish": "Asegúrate de desconectar la electricidad" },
+          { "english": "Clean the workspace after use", "spanish": "Limpia el área de trabajo después de usar" },
+          { "english": "Report any problems immediately", "spanish": "Reporta cualquier problema inmediatamente" },
+          { "english": "Wear your protective equipment", "spanish": "Usa tu equipo de protección" },
+          { "english": "Read the manual carefully", "spanish": "Lee el manual cuidadosamente" },
+          { "english": "Ask for help if you're not sure", "spanish": "Pide ayuda si no estás seguro" },
+          { "english": "Double-check your measurements", "spanish": "Verifica dos veces tus medidas" },
+          { "english": "Keep your tools organized", "spanish": "Mantén tus herramientas organizadas" },
+          { "english": "Start with the basic procedures", "spanish": "Comienza con los procedimientos básicos" },
+          { "english": "Pay attention to the details", "spanish": "Presta atención a los detalles" },
+          { "english": "Complete the task step by step", "spanish": "Completa la tarea paso a paso" }
+        ],
+        "listening": [
+          {
+            "audio": "Before starting the machine, make sure all safety guards are in place",
+            "options": ["all safety guards are in place", "the power is connected properly", "all tools are ready to use", "the workspace is completely clean"],
+            "answer": "all safety guards are in place"
+          },
+          {
+            "audio": "Please check the pressure gauge before operating the equipment",
+            "options": ["check the pressure gauge", "verify the temperature reading", "examine the oil level", "inspect the electrical connections"],
+            "answer": "check the pressure gauge"
+          },
+          {
+            "audio": "Don't forget to disconnect the power supply when you finish",
+            "options": ["disconnect the power supply", "turn off the lights", "close the main valve", "remove the safety guards"],
+            "answer": "disconnect the power supply"
+          },
+          {
+            "audio": "If you notice any unusual sounds, stop the machine immediately",
+            "options": ["stop the machine immediately", "call the supervisor quickly", "check the manual first", "reduce the operating speed"],
+            "answer": "stop the machine immediately"
+          },
+          {
+            "audio": "Always follow the lockout tagout procedures for safety",
+            "options": ["lockout tagout procedures", "maintenance schedule requirements", "quality control standards", "environmental protection rules"],
+            "answer": "lockout tagout procedures"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Please turn off", "Make sure to stop", "Don't forget to shut down"],
+            "suffix": "the equipment before leaving.",
+            "answer": "Please turn off",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Check", "Verify", "Inspect"],
+            "suffix": "all connections before starting.",
+            "answer": "Check",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Follow", "Comply with", "Observe"],
+            "suffix": "the safety procedures at all times.",
+            "answer": "Follow",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Report", "Inform about", "Notify of"],
+            "suffix": "any problems to the supervisor.",
+            "answer": "Report",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Wear", "Use", "Put on"],
+            "suffix": "your personal protective equipment.",
+            "answer": "Wear",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Safety and Signs → Seguridad laboral y señales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "This area is restricted", "spanish": "Esta área está restringida" },
+          { "english": "Danger: High voltage", "spanish": "Peligro: Alto voltaje" },
+          { "english": "Emergency exit is clearly marked", "spanish": "La salida de emergencia está claramente marcada" },
+          { "english": "Fire extinguisher location", "spanish": "Ubicación del extintor" },
+          { "english": "First aid kit is in the office", "spanish": "El botiquín está en la oficina" },
+          { "english": "Caution: Wet floor", "spanish": "Precaución: Piso mojado" },
+          { "english": "Hard hat required in this area", "spanish": "Casco requerido en esta área" },
+          { "english": "No smoking in the workshop", "spanish": "No fumar en el taller" },
+          { "english": "Safety goggles must be worn", "spanish": "Se deben usar gafas de seguridad" },
+          { "english": "Authorized personnel only", "spanish": "Solo personal autorizado" },
+          { "english": "Lockout tagout in progress", "spanish": "Bloqueo y etiquetado en proceso" },
+          { "english": "Emergency shower is available", "spanish": "Ducha de emergencia disponible" },
+          { "english": "Warning: Moving machinery", "spanish": "Advertencia: Maquinaria en movimiento" },
+          { "english": "Safety meeting at 2 PM", "spanish": "Reunión de seguridad a las 2 PM" },
+          { "english": "Report accidents immediately", "spanish": "Reportar accidentes inmediatamente" }
+        ],
+        "listening": [
+          {
+            "audio": "All visitors must wear safety glasses in the production area",
+            "options": ["wear safety glasses", "sign the visitor log", "attend the safety briefing", "carry identification cards"],
+            "answer": "wear safety glasses"
+          },
+          {
+            "audio": "The emergency alarm will sound for thirty seconds during the test",
+            "options": ["thirty seconds", "thirty minutes", "three minutes", "thirteen seconds"],
+            "answer": "thirty seconds"
+          },
+          {
+            "audio": "Never bypass or disable any safety device on the equipment",
+            "options": ["bypass or disable safety devices", "operate equipment without training", "work alone in dangerous areas", "ignore warning signs and signals"],
+            "answer": "bypass or disable safety devices"
+          },
+          {
+            "audio": "The safety data sheets are kept in the supervisor's office",
+            "options": ["supervisor's office", "main warehouse", "first aid station", "equipment storage room"],
+            "answer": "supervisor's office"
+          },
+          {
+            "audio": "In case of emergency, proceed to the assembly point in the parking lot",
+            "options": ["assembly point in the parking lot", "main entrance of the building", "safety office on the second floor", "nearest exit from your location"],
+            "answer": "assembly point in the parking lot"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["This area", "This zone", "This section"],
+            "suffix": "requires special safety equipment.",
+            "answer": "This area",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Emergency exits", "Fire exits", "Safety exits"],
+            "suffix": "must be kept clear at all times.",
+            "answer": "Emergency exits",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Safety training", "Security briefing", "Protection instruction"],
+            "suffix": "is mandatory for all employees.",
+            "answer": "Safety training",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Report", "Notify", "Inform about"],
+            "suffix": "any safety hazards immediately.",
+            "answer": "Report",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Personal protective equipment", "Safety gear", "Protection equipment"],
+            "suffix": "must be worn in designated areas.",
+            "answer": "Personal protective equipment",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

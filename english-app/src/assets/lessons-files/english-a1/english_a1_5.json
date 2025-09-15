@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 5,
+    "sections": [
+      {
+        "title": "Telling the Time → Diciendo la hora",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "What time is it?", "spanish": "¿Qué hora es?" },
+          { "english": "o'clock", "spanish": "en punto" },
+          { "english": "half past", "spanish": "y media" },
+          { "english": "quarter past", "spanish": "y cuarto" },
+          { "english": "quarter to", "spanish": "menos cuarto" },
+          { "english": "a.m.", "spanish": "a.m." },
+          { "english": "p.m.", "spanish": "p.m." },
+          { "english": "minute", "spanish": "minuto" },
+          { "english": "hour", "spanish": "hora" },
+          { "english": "clock", "spanish": "reloj" },
+          { "english": "early", "spanish": "temprano" },
+          { "english": "late", "spanish": "tarde" },
+          { "english": "on time", "spanish": "a tiempo" },
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "shift", "spanish": "turno" }
+        ],
+        "listening": [
+          { "audio": "What time is it?", "options": ["What time is it?", "What day is it?", "What month is it?", "What year is it?"], "answer": "What time is it?" },
+          { "audio": "It's half past three", "options": ["It's half past three", "It's three o'clock", "It's quarter past three", "It's quarter to three"], "answer": "It's half past three" },
+          { "audio": "The meeting is at nine a.m.", "options": ["nine a.m.", "ten a.m.", "eight a.m.", "nine p.m."], "answer": "nine a.m." },
+          { "audio": "Lunch break is at twelve o'clock", "options": ["twelve o'clock", "one o'clock", "eleven o'clock", "twelve thirty"], "answer": "twelve o'clock" },
+          { "audio": "My shift starts at six p.m.", "options": ["six p.m.", "six a.m.", "seven p.m.", "five p.m."], "answer": "six p.m." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["It's", "The time is", "Right now it's"], "suffix": "eight o'clock in the morning.", "answer": "It's", "selected": "", "feedback": "" },
+          { "prefix": ["Lunch break is", "Work ends", "Class finishes"], "suffix": "at one p.m.", "answer": "Lunch break is", "selected": "", "feedback": "" },
+          { "prefix": ["The meeting starts", "The class begins", "The shift starts"], "suffix": "at quarter past nine.", "answer": "The meeting starts", "selected": "", "feedback": "" },
+          { "prefix": ["I arrive", "I leave", "I finish"], "suffix": "work at five thirty p.m.", "answer": "I leave", "selected": "", "feedback": "" },
+          { "prefix": ["On time", "Late", "Early"], "suffix": "for my appointment at IPEC.", "answer": "On time", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Time Expressions → Expresiones de tiempo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "morning", "spanish": "mañana" },
+          { "english": "afternoon", "spanish": "tarde" },
+          { "english": "evening", "spanish": "noche" },
+          { "english": "night", "spanish": "noche" },
+          { "english": "today", "spanish": "hoy" },
+          { "english": "tomorrow", "spanish": "mañana" },
+          { "english": "yesterday", "spanish": "ayer" },
+          { "english": "now", "spanish": "ahora" },
+          { "english": "later", "spanish": "más tarde" },
+          { "english": "soon", "spanish": "pronto" },
+          { "english": "always", "spanish": "siempre" },
+          { "english": "never", "spanish": "nunca" },
+          { "english": "sometimes", "spanish": "a veces" },
+          { "english": "usually", "spanish": "usualmente" },
+          { "english": "often", "spanish": "a menudo" }
+        ],
+        "listening": [
+          { "audio": "I work in the morning", "options": ["morning", "afternoon", "evening", "night"], "answer": "morning" },
+          { "audio": "My class is in the afternoon", "options": ["afternoon", "morning", "evening", "night"], "answer": "afternoon" },
+          { "audio": "We have a meeting tomorrow", "options": ["tomorrow", "today", "yesterday", "now"], "answer": "tomorrow" },
+          { "audio": "I usually arrive early", "options": ["usually", "always", "never", "sometimes"], "answer": "usually" },
+          { "audio": "I never work on Sundays", "options": ["never", "always", "sometimes", "often"], "answer": "never" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I work", "I study", "I rest"], "suffix": "in the evening.", "answer": "I work", "selected": "", "feedback": "" },
+          { "prefix": ["Today", "Tomorrow", "Yesterday"], "suffix": "is my day off.", "answer": "Today", "selected": "", "feedback": "" },
+          { "prefix": ["I always", "I never", "I sometimes"], "suffix": "eat breakfast before work.", "answer": "I always", "selected": "", "feedback": "" },
+          { "prefix": ["Now", "Later", "Soon"], "suffix": "I will call my supervisor.", "answer": "Now", "selected": "", "feedback": "" },
+          { "prefix": ["Usually", "Often", "Sometimes"], "suffix": "I finish work at 4 p.m.", "answer": "Usually", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Schedules and Appointments → Horarios y citas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "meeting", "spanish": "reunión" },
+          { "english": "class", "spanish": "clase" },
+          { "english": "work", "spanish": "trabajo" },
+          { "english": "shift", "spanish": "turno" },
+          { "english": "break", "spanish": "descanso" },
+          { "english": "lunch", "spanish": "almuerzo" },
+          { "english": "deadline", "spanish": "fecha límite" },
+          { "english": "due date", "spanish": "fecha de vencimiento" },
+          { "english": "vacation", "spanish": "vacaciones" },
+          { "english": "holiday", "spanish": "feriado" },
+          { "english": "day off", "spanish": "día libre" },
+          { "english": "training", "spanish": "capacitación" },
+          { "english": "class schedule", "spanish": "horario de clases" }
+        ],
+        "listening": [
+          { "audio": "My appointment is at ten o'clock", "options": ["ten o'clock", "nine o'clock", "eleven o'clock", "twelve o'clock"], "answer": "ten o'clock" },
+          { "audio": "The meeting is on Friday", "options": ["Friday", "Monday", "Wednesday", "Thursday"], "answer": "Friday" },
+          { "audio": "My shift starts at six a.m.", "options": ["six a.m.", "seven a.m.", "eight a.m.", "six p.m."], "answer": "six a.m." },
+          { "audio": "Lunch break is at noon", "options": ["noon", "midnight", "morning", "afternoon"], "answer": "noon" },
+          { "audio": "The deadline is next Monday", "options": ["next Monday", "next Friday", "this Monday", "last Monday"], "answer": "next Monday" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My work schedule", "My shift", "My hours"], "suffix": "is Monday to Friday from 7 AM to 3 PM.", "answer": "My work schedule", "selected": "", "feedback": "" },
+          { "prefix": ["I have an appointment", "I have a meeting", "I have training"], "suffix": "with my supervisor on Thursday.", "answer": "I have an appointment", "selected": "", "feedback": "" },
+          { "prefix": ["The project deadline", "The course ends", "The payment is due"], "suffix": "is on December fifteenth.", "answer": "The project deadline", "selected": "", "feedback": "" },
+          { "prefix": ["Saturday", "Sunday", "Monday"], "suffix": "is my day off this week.", "answer": "Sunday", "selected": "", "feedback": "" },
+          { "prefix": ["We work overtime", "We have holidays", "We get vacation"], "suffix": "during busy periods in the factory.", "answer": "We work overtime", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Time in the Workplace → El tiempo en el trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "shift", "spanish": "turno" },
+          { "english": "overtime", "spanish": "horas extra" },
+          { "english": "break", "spanish": "descanso" },
+          { "english": "deadline", "spanish": "fecha límite" },
+          { "english": "due date", "spanish": "fecha de vencimiento" },
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "meeting", "spanish": "reunión" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "vacation", "spanish": "vacaciones" },
+          { "english": "holiday", "spanish": "feriado" },
+          { "english": "day off", "spanish": "día libre" },
+          { "english": "training", "spanish": "capacitación" },
+          { "english": "class schedule", "spanish": "horario de clases" },
+          { "english": "work hours", "spanish": "horas de trabajo" },
+          { "english": "factory", "spanish": "fábrica" }
+        ],
+        "listening": [
+          { "audio": "My shift starts at seven a.m.", "options": ["seven a.m.", "eight a.m.", "six a.m.", "seven p.m."], "answer": "seven a.m." },
+          { "audio": "We have a meeting at two p.m.", "options": ["two p.m.", "three p.m.", "one p.m.", "four p.m."], "answer": "two p.m." },
+          { "audio": "The deadline is next Friday", "options": ["next Friday", "next Monday", "this Friday", "last Friday"], "answer": "next Friday" },
+          { "audio": "Lunch break is at noon", "options": ["noon", "midnight", "morning", "afternoon"], "answer": "noon" },
+          { "audio": "We work overtime in December", "options": ["December", "January", "February", "March"], "answer": "December" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My work hours", "My schedule", "My shift"], "suffix": "are from 8 AM to 5 PM.", "answer": "My work hours", "selected": "", "feedback": "" },
+          { "prefix": ["I have a meeting", "I have an appointment", "I have training"], "suffix": "at 10 a.m. in the factory.", "answer": "I have a meeting", "selected": "", "feedback": "" },
+          { "prefix": ["The deadline", "The due date", "The payment date"], "suffix": "is next Monday.", "answer": "The deadline", "selected": "", "feedback": "" },
+          { "prefix": ["We work overtime", "We have holidays", "We get vacation"], "suffix": "in December.", "answer": "We work overtime", "selected": "", "feedback": "" },
+          { "prefix": ["Lunch break", "Rest time", "Break time"], "suffix": "is at noon.", "answer": "Lunch break", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Time for Technical Training → Tiempo para capacitación técnica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "training", "spanish": "capacitación" },
+          { "english": "class", "spanish": "clase" },
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "appointment", "spanish": "cita" },
+          { "english": "meeting", "spanish": "reunión" },
+          { "english": "shift", "spanish": "turno" },
+          { "english": "break", "spanish": "descanso" },
+          { "english": "lunch", "spanish": "almuerzo" },
+          { "english": "deadline", "spanish": "fecha límite" },
+          { "english": "due date", "spanish": "fecha de vencimiento" },
+          { "english": "vacation", "spanish": "vacaciones" },
+          { "english": "holiday", "spanish": "feriado" },
+          { "english": "day off", "spanish": "día libre" },
+          { "english": "class schedule", "spanish": "horario de clases" },
+          { "english": "work hours", "spanish": "horas de trabajo" }
+        ],
+        "listening": [
+          { "audio": "My training starts at eight a.m.", "options": ["eight a.m.", "nine a.m.", "seven a.m.", "eight p.m."], "answer": "eight a.m." },
+          { "audio": "The class is at ten o'clock", "options": ["ten o'clock", "nine o'clock", "eleven o'clock", "twelve o'clock"], "answer": "ten o'clock" },
+          { "audio": "The meeting is on Wednesday", "options": ["Wednesday", "Monday", "Friday", "Thursday"], "answer": "Wednesday" },
+          { "audio": "Lunch break is at noon", "options": ["noon", "midnight", "morning", "afternoon"], "answer": "noon" },
+          { "audio": "The deadline is next Friday", "options": ["next Friday", "next Monday", "this Friday", "last Friday"], "answer": "next Friday" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My training schedule", "My class schedule", "My work schedule"], "suffix": "is Monday to Friday from 8 AM to 2 PM.", "answer": "My training schedule", "selected": "", "feedback": "" },
+          { "prefix": ["I have a class", "I have a meeting", "I have training"], "suffix": "at 10 a.m. at IPEC.", "answer": "I have a class", "selected": "", "feedback": "" },
+          { "prefix": ["The deadline", "The due date", "The payment date"], "suffix": "is next Friday.", "answer": "The deadline", "selected": "", "feedback": "" },
+          { "prefix": ["Lunch break", "Rest time", "Break time"], "suffix": "is at noon.", "answer": "Lunch break", "selected": "", "feedback": "" },
+          { "prefix": ["We work overtime", "We have holidays", "We get vacation"], "suffix": "in December.", "answer": "We work overtime", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

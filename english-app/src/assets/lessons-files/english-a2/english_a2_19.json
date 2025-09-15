@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 19,
+  "sections": [
+    {
+      "title": "Career Development and Job Search → Desarrollo profesional y búsqueda de empleo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Write a clear resume",
+          "spanish": "Escribe un currículum claro"
+        },
+        {
+          "english": "Search for job opportunities",
+          "spanish": "Busca oportunidades de trabajo"
+        },
+        {
+          "english": "Prepare for job interviews",
+          "spanish": "Prepárate para entrevistas de trabajo"
+        },
+        {
+          "english": "Dress professionally for interviews",
+          "spanish": "Vístete profesionalmente para entrevistas"
+        },
+        {
+          "english": "Ask thoughtful questions",
+          "spanish": "Haz preguntas reflexivas"
+        },
+        {
+          "english": "Follow up after interviews",
+          "spanish": "Da seguimiento después de entrevistas"
+        },
+        {
+          "english": "Network with industry professionals",
+          "spanish": "Haz networking con profesionales de la industria"
+        },
+        {
+          "english": "Develop relevant skills",
+          "spanish": "Desarrolla habilidades relevantes"
+        },
+        {
+          "english": "Set career goals",
+          "spanish": "Establece metas profesionales"
+        },
+        {
+          "english": "Seek feedback for improvement",
+          "spanish": "Busca retroalimentación para mejora"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should a good resume include?",
+          "options": ["Relevant experience, skills, and contact information", "Personal secrets", "Irrelevant information"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is it important to prepare for job interviews?",
+          "options": ["To make a good impression and show interest", "It's not necessary", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of networking?",
+          "options": ["To build professional relationships and find opportunities", "To bother people", "To waste time"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Write a",
+          "suffix": "resume that highlights your relevant experience.",
+          "answer": "clear",
+          "selected": false,
+          "feedback": "A clear, well-organized resume helps employers quickly understand your qualifications."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "for job interviews to show professionalism.",
+          "answer": "prepare",
+          "selected": false,
+          "feedback": "Preparation demonstrates professionalism and genuine interest in the position."
+        },
+        {
+          "prefix": "Set realistic career",
+          "suffix": "to guide your professional development.",
+          "answer": "goals",
+          "selected": false,
+          "feedback": "Clear career goals help you make decisions and plan your professional growth."
+        }
+      ]
+    },
+    {
+      "title": "Professional Communication Skills → Habilidades de comunicación profesional",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Speak clearly and confidently",
+          "spanish": "Habla claramente y con confianza"
+        },
+        {
+          "english": "Listen actively to others",
+          "spanish": "Escucha activamente a otros"
+        },
+        {
+          "english": "Give presentations effectively",
+          "spanish": "Presenta efectivamente"
+        },
+        {
+          "english": "Write professional emails",
+          "spanish": "Escribe correos profesionales"
+        },
+        {
+          "english": "Participate in team meetings",
+          "spanish": "Participa en reuniones de equipo"
+        },
+        {
+          "english": "Provide constructive feedback",
+          "spanish": "Proporciona retroalimentación constructiva"
+        },
+        {
+          "english": "Resolve conflicts diplomatically",
+          "spanish": "Resuelve conflictos diplomáticamente"
+        },
+        {
+          "english": "Use appropriate body language",
+          "spanish": "Usa lenguaje corporal apropiado"
+        },
+        {
+          "english": "Adapt communication style",
+          "spanish": "Adapta estilo de comunicación"
+        },
+        {
+          "english": "Build rapport with colleagues",
+          "spanish": "Construye rapport con colegas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes communication effective in the workplace?",
+          "options": ["Clarity, respect, and active listening", "Talking loudly", "Using complex words"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is active listening important?",
+          "options": ["It shows respect and helps understand others", "It's not important", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "How should you handle workplace conflicts?",
+          "options": ["Diplomatically and professionally", "Aggressively", "Ignore them"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Speak",
+          "suffix": "and confidently to communicate effectively.",
+          "answer": "clearly",
+          "selected": false,
+          "feedback": "Clear communication prevents misunderstandings and builds professional credibility."
+        },
+        {
+          "prefix": "Listen",
+          "suffix": "to understand others' perspectives.",
+          "answer": "actively",
+          "selected": false,
+          "feedback": "Active listening demonstrates respect and improves workplace relationships."
+        },
+        {
+          "prefix": "Adapt your",
+          "suffix": "style to different audiences and situations.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "Adapting communication style improves effectiveness with different people and contexts."
+        }
+      ]
+    },
+    {
+      "title": "Workplace Ethics and Professionalism → Ética laboral y profesionalismo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Arrive at work on time",
+          "spanish": "Llega al trabajo puntualmente"
+        },
+        {
+          "english": "Complete tasks responsibly",
+          "spanish": "Completa tareas responsablemente"
+        },
+        {
+          "english": "Respect colleagues and customers",
+          "spanish": "Respeta colegas y clientes"
+        },
+        {
+          "english": "Maintain professional appearance",
+          "spanish": "Mantén apariencia profesional"
+        },
+        {
+          "english": "Keep confidential information private",
+          "spanish": "Mantén información confidencial privada"
+        },
+        {
+          "english": "Follow company policies",
+          "spanish": "Sigue políticas de la empresa"
+        },
+        {
+          "english": "Take responsibility for mistakes",
+          "spanish": "Toma responsabilidad por errores"
+        },
+        {
+          "english": "Avoid conflicts of interest",
+          "spanish": "Evita conflictos de interés"
+        },
+        {
+          "english": "Treat everyone fairly",
+          "spanish": "Trata a todos justamente"
+        },
+        {
+          "english": "Continuously improve your skills",
+          "spanish": "Mejora continuamente tus habilidades"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is punctuality important in the workplace?",
+          "options": ["It shows respect and reliability", "It doesn't matter", "To annoy people"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you do when you make a mistake at work?",
+          "options": ["Take responsibility and work to fix it", "Blame others", "Hide it"],
+          "answer": 0
+        },
+        {
+          "audio": "Why maintain confidentiality at work?",
+          "options": ["To protect sensitive information and build trust", "It's not important", "To create problems"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always arrive at work",
+          "suffix": "to show respect and reliability.",
+          "answer": "on time",
+          "selected": false,
+          "feedback": "Punctuality demonstrates professionalism and respect for colleagues and customers."
+        },
+        {
+          "prefix": "Take",
+          "suffix": "for your mistakes and work to correct them.",
+          "answer": "responsibility",
+          "selected": false,
+          "feedback": "Taking responsibility for mistakes shows integrity and helps build trust."
+        },
+        {
+          "prefix": "Treat all colleagues and customers with equal",
+          "suffix": "and respect.",
+          "answer": "fairness",
+          "selected": false,
+          "feedback": "Fair treatment creates a positive work environment and builds strong relationships."
+        }
+      ]
+    },
+    {
+      "title": "Time Management and Productivity → Gestión del tiempo y productividad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Prioritize important tasks first",
+          "spanish": "Prioriza tareas importantes primero"
+        },
+        {
+          "english": "Create daily work schedules",
+          "spanish": "Crea horarios de trabajo diarios"
+        },
+        {
+          "english": "Avoid unnecessary distractions",
+          "spanish": "Evita distracciones innecesarias"
+        },
+        {
+          "english": "Use time management tools",
+          "spanish": "Usa herramientas de gestión del tiempo"
+        },
+        {
+          "english": "Set realistic deadlines",
+          "spanish": "Establece fechas límite realistas"
+        },
+        {
+          "english": "Take regular breaks",
+          "spanish": "Toma descansos regulares"
+        },
+        {
+          "english": "Delegate when appropriate",
+          "spanish": "Delega cuando sea apropiado"
+        },
+        {
+          "english": "Track time spent on tasks",
+          "spanish": "Rastrea tiempo gastado en tareas"
+        },
+        {
+          "english": "Organize your workspace",
+          "spanish": "Organiza tu espacio de trabajo"
+        },
+        {
+          "english": "Review and adjust methods",
+          "spanish": "Revisa y ajusta métodos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why should you prioritize important tasks first?",
+          "options": ["To ensure critical work gets completed", "It doesn't matter", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "How do regular breaks help productivity?",
+          "options": ["They help maintain focus and prevent burnout", "They waste time", "They don't help"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the benefit of tracking time spent on tasks?",
+          "options": ["To understand how time is used and improve efficiency", "To confuse yourself", "No benefit"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Continuous Learning and Professional Growth → Aprendizaje continuo y crecimiento profesional",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Attend training workshops regularly",
+          "spanish": "Asiste a talleres de entrenamiento regularmente"
+        },
+        {
+          "english": "Read industry publications",
+          "spanish": "Lee publicaciones de la industria"
+        },
+        {
+          "english": "Learn new technologies",
+          "spanish": "Aprende nuevas tecnologías"
+        },
+        {
+          "english": "Seek mentorship opportunities",
+          "spanish": "Busca oportunidades de mentoría"
+        },
+        {
+          "english": "Join professional associations",
+          "spanish": "Ãšnete a asociaciones profesionales"
+        },
+        {
+          "english": "Practice new skills regularly",
+          "spanish": "Practica nuevas habilidades regularmente"
+        },
+        {
+          "english": "Get feedback on performance",
+          "spanish": "Obtén retroalimentación sobre rendimiento"
+        },
+        {
+          "english": "Set learning goals",
+          "spanish": "Establece metas de aprendizaje"
+        },
+        {
+          "english": "Share knowledge with others",
+          "spanish": "Comparte conocimiento con otros"
+        },
+        {
+          "english": "Stay current with industry trends",
+          "spanish": "Mantente actualizado con tendencias de la industria"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Attend",
+          "suffix": "workshops to learn new skills and techniques.",
+          "answer": "training",
+          "selected": false,
+          "feedback": "Training workshops provide opportunities to learn from experts and stay current."
+        },
+        {
+          "prefix": "Seek",
+          "suffix": "opportunities to learn from experienced professionals.",
+          "answer": "mentorship",
+          "selected": false,
+          "feedback": "Mentors provide guidance, advice, and support for professional development."
+        },
+        {
+          "prefix": "Set clear",
+          "suffix": "goals to guide your professional development.",
+          "answer": "learning",
+          "selected": false,
+          "feedback": "Learning goals provide direction and motivation for continuous improvement."
+        }
+      ]
+    }
+  ]
+}
+]
+

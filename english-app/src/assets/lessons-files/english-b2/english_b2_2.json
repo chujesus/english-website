@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 2,
+  "sections": [
+    {
+      "title": "Technical Presentations → Presentaciones técnicas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "I'd like to begin by outlining the key objectives",
+          "spanish": "Me gustaría comenzar delineando los objetivos clave"
+        },
+        {
+          "english": "As you can see from this slide, the data indicates",
+          "spanish": "Como pueden ver en esta diapositiva, los datos indican"
+        },
+        {
+          "english": "Moving on to the next point, we need to consider",
+          "spanish": "Pasando al siguiente punto, necesitamos considerar"
+        },
+        {
+          "english": "This graph clearly demonstrates the correlation between",
+          "spanish": "Este gráfico demuestra claramente la correlación entre"
+        },
+        {
+          "english": "To summarize the main findings, we've established that",
+          "spanish": "Para resumir los hallazgos principales, hemos establecido que"
+        },
+        {
+          "english": "The implications of these results suggest",
+          "spanish": "Las implicaciones de estos resultados sugieren"
+        },
+        {
+          "english": "In terms of implementation, we recommend",
+          "spanish": "En términos de implementación, recomendamos"
+        },
+        {
+          "english": "The cost-benefit analysis reveals significant advantages",
+          "spanish": "El análisis costo-beneficio revela ventajas significativas"
+        },
+        {
+          "english": "Looking ahead, we anticipate several challenges",
+          "spanish": "Mirando hacia adelante, anticipamos varios desafíos"
+        },
+        {
+          "english": "I'd be happy to address any questions you might have",
+          "spanish": "Estaré encantado de abordar cualquier pregunta que puedan tener"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the most effective way to begin a technical presentation?",
+          "options": ["Start with conclusions", "Outline objectives and agenda", "Begin with technical details"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you handle complex data in presentations?",
+          "options": ["Show all raw data", "Use visual aids and summaries", "Avoid data completely"],
+          "answer": 1
+        },
+        {
+          "audio": "What's the best approach for concluding a technical presentation?",
+          "options": ["End abruptly", "Summarize key points and invite questions", "Introduce new topics"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Effective presentations should",
+          "suffix": "complex information into digestible segments.",
+          "answer": "break down",
+          "selected": false,
+          "feedback": "Breaking down complex information helps the audience understand and retain key points."
+        },
+        {
+          "prefix": "Visual aids should",
+          "suffix": "your spoken words, not replace them.",
+          "answer": "complement",
+          "selected": false,
+          "feedback": "Visual aids work best when they support and enhance your verbal presentation."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "time for questions and discussion at the end.",
+          "answer": "allow",
+          "selected": false,
+          "feedback": "Allowing time for questions engages the audience and clarifies any misunderstandings."
+        }
+      ]
+    },
+    {
+      "title": "Structuring Technical Content → Estructurando contenido técnico",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Executive summary and key takeaways",
+          "spanish": "Resumen ejecutivo y puntos clave"
+        },
+        {
+          "english": "Problem statement and background context",
+          "spanish": "Planteamiento del problema y contexto de antecedentes"
+        },
+        {
+          "english": "Methodology and approach description",
+          "spanish": "Descripción de metodología y enfoque"
+        },
+        {
+          "english": "Data analysis and interpretation",
+          "spanish": "Análisis e interpretación de datos"
+        },
+        {
+          "english": "Results presentation and visualization",
+          "spanish": "Presentación de resultados y visualización"
+        },
+        {
+          "english": "Risk assessment and mitigation strategies",
+          "spanish": "Evaluación de riesgos y estrategias de mitigación"
+        },
+        {
+          "english": "Implementation timeline and milestones",
+          "spanish": "Cronograma de implementación e hitos"
+        },
+        {
+          "english": "Resource allocation and budget considerations",
+          "spanish": "Asignación de recursos y consideraciones presupuestarias"
+        },
+        {
+          "english": "Recommendations and next steps",
+          "spanish": "Recomendaciones y próximos pasos"
+        },
+        {
+          "english": "Appendices and supporting documentation",
+          "spanish": "Apéndices y documentación de apoyo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is it important to include an executive summary in technical presentations?",
+          "options": ["To fill time", "To provide a quick overview for decision-makers", "To repeat information"],
+          "answer": 1
+        },
+        {
+          "audio": "What should be included in the methodology section?",
+          "options": ["Only results", "Detailed approach and procedures", "Personal opinions"],
+          "answer": 1
+        },
+        {
+          "audio": "How should recommendations be presented?",
+          "options": ["Vaguely", "With clear justification and action items", "Without supporting data"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The",
+          "suffix": "should provide a clear overview for executives who may not read the full report.",
+          "answer": "executive summary",
+          "selected": false,
+          "feedback": "An executive summary gives busy decision-makers the key information they need quickly."
+        },
+        {
+          "prefix": "Supporting data should be",
+          "suffix": "in appendices to keep the main presentation focused.",
+          "answer": "included",
+          "selected": false,
+          "feedback": "Appendices allow you to provide detailed support without cluttering the main presentation."
+        },
+        {
+          "prefix": "Each recommendation should be",
+          "suffix": "by data and include specific action items.",
+          "answer": "supported",
+          "selected": false,
+          "feedback": "Data-supported recommendations with clear actions are more likely to be implemented."
+        }
+      ]
+    },
+    {
+      "title": "Using Visual Aids and Technology → Usando ayudas visuales y tecnología",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Interactive dashboards and real-time data",
+          "spanish": "Tableros interactivos y datos en tiempo real"
+        },
+        {
+          "english": "3D models and virtual reality demonstrations",
+          "spanish": "Modelos 3D y demostraciones de realidad virtual"
+        },
+        {
+          "english": "Animated process flows and simulations",
+          "spanish": "Flujos de procesos animados y simulaciones"
+        },
+        {
+          "english": "Comparative charts and trend analysis",
+          "spanish": "Gráficos comparativos y análisis de tendencias"
+        },
+        {
+          "english": "Live demonstrations and prototypes",
+          "spanish": "Demostraciones en vivo y prototipos"
+        },
+        {
+          "english": "Cloud-based collaboration tools",
+          "spanish": "Herramientas de colaboración basadas en la nube"
+        },
+        {
+          "english": "Mobile-responsive presentation platforms",
+          "spanish": "Plataformas de presentación responsivas para móviles"
+        },
+        {
+          "english": "Audio-visual integration and multimedia",
+          "spanish": "Integración audiovisual y multimedia"
+        },
+        {
+          "english": "Audience response systems and polling",
+          "spanish": "Sistemas de respuesta de audiencia y encuestas"
+        },
+        {
+          "english": "Screen sharing and remote collaboration",
+          "spanish": "Compartir pantalla y colaboración remota"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantage do interactive presentations offer over static ones?",
+          "options": ["They're easier to create", "They engage audiences and allow exploration", "They require less preparation"],
+          "answer": 1
+        },
+        {
+          "audio": "When should you use live demonstrations in technical presentations?",
+          "options": ["Never", "When showing functionality or proof of concept", "Only for entertainment"],
+          "answer": 1
+        },
+        {
+          "audio": "How can audience response systems improve presentations?",
+          "options": ["By replacing the presenter", "By gathering real-time feedback and engagement", "By making them longer"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Technology should",
+          "suffix": "your message, not distract from it.",
+          "answer": "enhance",
+          "selected": false,
+          "feedback": "Technology works best when it supports and strengthens your core message."
+        },
+        {
+          "prefix": "Always have a",
+          "suffix": "plan in case technology fails during your presentation.",
+          "answer": "backup",
+          "selected": false,
+          "feedback": "Technical difficulties can occur, so having alternatives ensures your presentation continues smoothly."
+        },
+        {
+          "prefix": "Interactive elements should be",
+          "suffix": "and relevant to your audience's needs.",
+          "answer": "meaningful",
+          "selected": false,
+          "feedback": "Interactive features should add value and engagement, not just novelty."
+        }
+      ]
+    },
+    {
+      "title": "Handling Questions and Discussions → Manejando preguntas y discusiones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Thank you for that insightful question",
+          "spanish": "Gracias por esa pregunta perspicaz"
+        },
+        {
+          "english": "Let me clarify that point for you",
+          "spanish": "Permíteme aclarar ese punto para ti"
+        },
+        {
+          "english": "That's an excellent observation",
+          "spanish": "Esa es una excelente observación"
+        },
+        {
+          "english": "I'd like to address that concern directly",
+          "spanish": "Me gustaría abordar esa preocupación directamente"
+        },
+        {
+          "english": "Could you elaborate on your specific concern?",
+          "spanish": "Â¿Podrías elaborar sobre tu preocupación específica?"
+        },
+        {
+          "english": "I'll need to research that and get back to you",
+          "spanish": "Necesitaré investigar eso y comunicarme contigo"
+        },
+        {
+          "english": "Let me break that down into components",
+          "spanish": "Permíteme dividir eso en componentes"
+        },
+        {
+          "english": "Based on the data we've presented",
+          "spanish": "Basándose en los datos que hemos presentado"
+        },
+        {
+          "english": "I appreciate your perspective on this matter",
+          "spanish": "Aprecio tu perspectiva sobre este asunto"
+        },
+        {
+          "english": "Would anyone else like to share their thoughts?",
+          "spanish": "Â¿Alguien más quisiera compartir sus pensamientos?"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How should you respond when you don't know the answer to a question?",
+          "options": ["Make something up", "Admit it and offer to follow up", "Ignore the question"],
+          "answer": 1
+        },
+        {
+          "audio": "What's the best way to handle challenging or critical questions?",
+          "options": ["Get defensive", "Listen carefully and address concerns respectfully", "Change the subject"],
+          "answer": 1
+        },
+        {
+          "audio": "How can you encourage more audience participation?",
+          "options": ["Ask direct questions and create safe spaces for discussion", "Talk louder", "Speed up the presentation"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Virtual and Remote Presentations → Presentaciones virtuales y remotas",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Technical setup and equipment testing",
+          "spanish": "Configuración técnica y prueba de equipo"
+        },
+        {
+          "english": "Engagement strategies for remote audiences",
+          "spanish": "Estrategias de participación para audiencias remotas"
+        },
+        {
+          "english": "Managing time zones and global participation",
+          "spanish": "Manejando zonas horarias y participación global"
+        },
+        {
+          "english": "Screen sharing and annotation tools",
+          "spanish": "Herramientas para compartir pantalla y anotaciones"
+        },
+        {
+          "english": "Breakout rooms and collaborative activities",
+          "spanish": "Salas de trabajo en grupos y actividades colaborativas"
+        },
+        {
+          "english": "Recording and post-presentation resources",
+          "spanish": "Grabación y recursos post-presentación"
+        },
+        {
+          "english": "Bandwidth considerations and backup plans",
+          "spanish": "Consideraciones de ancho de banda y planes de respaldo"
+        },
+        {
+          "english": "Virtual whiteboarding and brainstorming",
+          "spanish": "Pizarra virtual y lluvia de ideas"
+        },
+        {
+          "english": "Chat moderation and Q&A management",
+          "spanish": "Moderación de chat y manejo de preguntas y respuestas"
+        },
+        {
+          "english": "Follow-up communication and resource sharing",
+          "spanish": "Comunicación de seguimiento e intercambio de recursos"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Virtual presentations require",
+          "suffix": "technical preparation than in-person events.",
+          "answer": "more",
+          "selected": false,
+          "feedback": "Virtual presentations need extra technical setup and testing to ensure smooth delivery."
+        },
+        {
+          "prefix": "Engagement techniques must be",
+          "suffix": "for remote audiences who may have more distractions.",
+          "answer": "adapted",
+          "selected": false,
+          "feedback": "Remote audiences need different engagement strategies to maintain attention and participation."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "your technology and have backup options available.",
+          "answer": "test",
+          "selected": false,
+          "feedback": "Testing technology beforehand prevents technical issues during the actual presentation."
+        }
+      ]
+    }
+  ]
+}
+]
+

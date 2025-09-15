@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 8,
+  "sections": [
+    {
+      "title": "Advanced Manufacturing Processes → Procesos de manufactura avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Computer numerical control machines execute precise operations",
+          "spanish": "Las máquinas de control numérico computarizado ejecutan operaciones precisas"
+        },
+        {
+          "english": "Lean manufacturing eliminates waste and inefficiencies",
+          "spanish": "La manufactura esbelta elimina desperdicios e ineficiencias"
+        },
+        {
+          "english": "Six Sigma methodology reduces process variations",
+          "spanish": "La metodología Seis Sigma reduce variaciones del proceso"
+        },
+        {
+          "english": "Just-in-time production minimizes inventory costs",
+          "spanish": "La producción justo a tiempo minimiza costos de inventario"
+        },
+        {
+          "english": "Total productive maintenance maximizes equipment efficiency",
+          "spanish": "El mantenimiento productivo total maximiza eficiencia del equipo"
+        },
+        {
+          "english": "Statistical process control monitors quality continuously",
+          "spanish": "El control estadístico del proceso monitorea calidad continuamente"
+        },
+        {
+          "english": "Flexible manufacturing systems adapt to demand changes",
+          "spanish": "Los sistemas de manufactura flexible se adaptan a cambios de demanda"
+        },
+        {
+          "english": "Value stream mapping identifies improvement opportunities",
+          "spanish": "El mapeo de flujo de valor identifica oportunidades de mejora"
+        },
+        {
+          "english": "Cellular manufacturing organizes workflow efficiently",
+          "spanish": "La manufactura celular organiza flujo de trabajo eficientemente"
+        },
+        {
+          "english": "Continuous improvement drives operational excellence",
+          "spanish": "La mejora continua impulsa excelencia operacional"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main objective of lean manufacturing?",
+          "options": ["To eliminate waste and maximize value for customers", "To increase inventory levels", "To slow down production"],
+          "answer": 0
+        },
+        {
+          "audio": "How does Six Sigma improve manufacturing processes?",
+          "options": ["By reducing defects and process variations to near zero", "By increasing variations", "By ignoring quality metrics"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is just-in-time production effective?",
+          "options": ["It reduces inventory costs while maintaining quality", "It requires large storage spaces", "It increases waste"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Lean",
+          "suffix": "focuses on maximizing customer value while minimizing waste.",
+          "answer": "manufacturing",
+          "selected": false,
+          "feedback": "Lean manufacturing principles help organizations achieve efficiency and quality simultaneously."
+        },
+        {
+          "prefix": "Statistical process",
+          "suffix": "uses data to monitor and maintain consistent quality standards.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "SPC enables early detection and correction of quality issues before they become problems."
+        },
+        {
+          "prefix": "Flexible manufacturing",
+          "suffix": "can quickly reconfigure to produce different products efficiently.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "FMS provides the agility needed to respond to changing market demands."
+        }
+      ]
+    },
+    {
+      "title": "Energy Systems and Power Generation → Sistemas de energía y generación de potencia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Combined cycle power plants achieve high efficiency",
+          "spanish": "Las plantas de energía de ciclo combinado logran alta eficiencia"
+        },
+        {
+          "english": "Cogeneration systems produce electricity and useful heat",
+          "spanish": "Los sistemas de cogeneración producen electricidad y calor útil"
+        },
+        {
+          "english": "Photovoltaic arrays convert sunlight directly to electricity",
+          "spanish": "Los arreglos fotovoltaicos convierten luz solar directamente a electricidad"
+        },
+        {
+          "english": "Wind turbines harness kinetic energy from air movement",
+          "spanish": "Las turbinas eólicas aprovechan energía cinética del movimiento del aire"
+        },
+        {
+          "english": "Hydroelectric generators utilize flowing water power",
+          "spanish": "Los generadores hidroeléctricos utilizan poder del agua fluyente"
+        },
+        {
+          "english": "Geothermal systems extract earth's internal heat",
+          "spanish": "Los sistemas geotérmicos extraen calor interno de la tierra"
+        },
+        {
+          "english": "Energy storage solutions balance supply and demand",
+          "spanish": "Las soluciones de almacenamiento de energía equilibran oferta y demanda"
+        },
+        {
+          "english": "Smart grids optimize power distribution networks",
+          "spanish": "Las redes inteligentes optimizan redes de distribución de energía"
+        },
+        {
+          "english": "Power electronics control electrical energy flow",
+          "spanish": "La electrónica de potencia controla flujo de energía eléctrica"
+        },
+        {
+          "english": "Demand response programs manage consumption patterns",
+          "spanish": "Los programas de respuesta a la demanda gestionan patrones de consumo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do combined cycle power plants achieve high efficiency?",
+          "options": ["They use waste heat from gas turbines to power steam turbines", "They use only one type of turbine", "They waste more energy"],
+          "answer": 0
+        },
+        {
+          "audio": "What makes smart grids more efficient than traditional grids?",
+          "options": ["They use real-time data to optimize power distribution", "They use more cables", "They are completely manual"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is energy storage important for renewable energy?",
+          "options": ["It balances intermittent generation with continuous demand", "It wastes energy", "It makes systems more complex"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Combined cycle",
+          "suffix": "maximize energy efficiency by using multiple thermodynamic cycles.",
+          "answer": "plants",
+          "selected": false,
+          "feedback": "Combined cycle plants achieve higher efficiency by capturing and using waste heat."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "enable two-way communication between utilities and consumers.",
+          "answer": "grids",
+          "selected": false,
+          "feedback": "Smart grids provide real-time monitoring and control capabilities for optimal efficiency."
+        },
+        {
+          "prefix": "Energy",
+          "suffix": "technologies help integrate variable renewable energy sources.",
+          "answer": "storage",
+          "selected": false,
+          "feedback": "Storage systems are crucial for managing the intermittent nature of renewable energy."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Communication Networks → Redes de comunicación avanzadas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Fiber optic cables transmit data using light pulses",
+          "spanish": "Los cables de fibra óptica transmiten datos usando pulsos de luz"
+        },
+        {
+          "english": "Wireless protocols enable mobile device connectivity",
+          "spanish": "Los protocolos inalámbricos permiten conectividad de dispositivos móviles"
+        },
+        {
+          "english": "Network topology determines data routing efficiency",
+          "spanish": "La topología de red determina eficiencia del enrutamiento de datos"
+        },
+        {
+          "english": "Bandwidth allocation manages traffic prioritization",
+          "spanish": "La asignación de ancho de banda gestiona priorización de tráfico"
+        },
+        {
+          "english": "Quality of service protocols guarantee performance levels",
+          "spanish": "Los protocolos de calidad de servicio garantizan niveles de rendimiento"
+        },
+        {
+          "english": "Network security protocols protect data transmission",
+          "spanish": "Los protocolos de seguridad de red protegen transmisión de datos"
+        },
+        {
+          "english": "Load balancing distributes traffic across multiple paths",
+          "spanish": "El balanceamiento de carga distribuye tráfico a través de múltiples rutas"
+        },
+        {
+          "english": "Redundancy systems ensure network reliability",
+          "spanish": "Los sistemas de redundancia aseguran confiabilidad de la red"
+        },
+        {
+          "english": "Latency optimization improves real-time applications",
+          "spanish": "La optimización de latencia mejora aplicaciones en tiempo real"
+        },
+        {
+          "english": "Network monitoring tools analyze performance metrics",
+          "spanish": "Las herramientas de monitoreo de red analizan métricas de rendimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are fiber optic cables preferred for long-distance communication?",
+          "options": ["They transmit data faster with less signal loss", "They are cheaper", "They are easier to install"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of Quality of Service protocols?",
+          "options": ["To guarantee specific performance levels for different types of traffic", "To slow down networks", "To make networks more complex"],
+          "answer": 0
+        },
+        {
+          "audio": "How does load balancing improve network performance?",
+          "options": ["It distributes traffic to prevent any single path from becoming overloaded", "It creates more traffic", "It eliminates redundancy"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Fiber optic",
+          "suffix": "provide high-speed data transmission with minimal signal degradation.",
+          "answer": "cables",
+          "selected": false,
+          "feedback": "Fiber optics use light to carry information, offering superior speed and reliability."
+        },
+        {
+          "prefix": "Quality of",
+          "suffix": "protocols ensure critical applications receive priority network access.",
+          "answer": "service",
+          "selected": false,
+          "feedback": "QoS mechanisms are essential for maintaining performance in congested networks."
+        },
+        {
+          "prefix": "Network",
+          "suffix": "tools provide insights for optimizing performance and troubleshooting issues.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Monitoring tools are crucial for maintaining optimal network performance and reliability."
+        }
+      ]
+    },
+    {
+      "title": "Process Optimization and Analytics → Optimización de procesos y análisis",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Statistical analysis reveals process performance patterns",
+          "spanish": "El análisis estadístico revela patrones de rendimiento del proceso"
+        },
+        {
+          "english": "Data mining extracts insights from large datasets",
+          "spanish": "La minería de datos extrae conocimientos de grandes conjuntos de datos"
+        },
+        {
+          "english": "Machine learning algorithms predict process outcomes",
+          "spanish": "Los algoritmos de aprendizaje automático predicen resultados del proceso"
+        },
+        {
+          "english": "Process simulation models test optimization strategies",
+          "spanish": "Los modelos de simulación de procesos prueban estrategias de optimización"
+        },
+        {
+          "english": "Real-time monitoring enables immediate corrections",
+          "spanish": "El monitoreo en tiempo real permite correcciones inmediatas"
+        },
+        {
+          "english": "Performance indicators measure operational efficiency",
+          "spanish": "Los indicadores de rendimiento miden eficiencia operacional"
+        },
+        {
+          "english": "Root cause analysis identifies problem sources",
+          "spanish": "El análisis de causa raíz identifica fuentes de problemas"
+        },
+        {
+          "english": "Optimization algorithms maximize system performance",
+          "spanish": "Los algoritmos de optimización maximizan rendimiento del sistema"
+        },
+        {
+          "english": "Predictive maintenance reduces unplanned downtime",
+          "spanish": "El mantenimiento predictivo reduce tiempo de inactividad no planificado"
+        },
+        {
+          "english": "Benchmarking compares performance against standards",
+          "spanish": "La evaluación comparativa compara rendimiento contra estándares"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does data mining help process optimization?",
+          "options": ["It discovers hidden patterns and relationships in process data", "It makes data more complex", "It eliminates all data"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage does predictive maintenance offer?",
+          "options": ["It prevents equipment failures before they occur", "It increases maintenance costs", "It requires more manual work"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is real-time monitoring important for process control?",
+          "options": ["It allows immediate response to deviations from optimal conditions", "It slows down processes", "It complicates operations"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Innovation Management and Technology Transfer → Gestión de innovación y transferencia de tecnología",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Research and development drives technological advancement",
+          "spanish": "La investigación y desarrollo impulsa avance tecnológico"
+        },
+        {
+          "english": "Intellectual property protection secures innovations",
+          "spanish": "La protección de propiedad intelectual asegura innovaciones"
+        },
+        {
+          "english": "Technology assessment evaluates commercial potential",
+          "spanish": "La evaluación de tecnología evalúa potencial comercial"
+        },
+        {
+          "english": "Innovation pipelines manage development stages",
+          "spanish": "Los pipelines de innovación gestionan etapas de desarrollo"
+        },
+        {
+          "english": "Collaborative partnerships accelerate technology transfer",
+          "spanish": "Las alianzas colaborativas aceleran transferencia de tecnología"
+        },
+        {
+          "english": "Market analysis identifies commercialization opportunities",
+          "spanish": "El análisis de mercado identifica oportunidades de comercialización"
+        },
+        {
+          "english": "Prototype development validates technical concepts",
+          "spanish": "El desarrollo de prototipos valida conceptos técnicos"
+        },
+        {
+          "english": "Scaling strategies enable mass production",
+          "spanish": "Las estrategias de escalamiento permiten producción en masa"
+        },
+        {
+          "english": "Innovation metrics measure progress and success",
+          "spanish": "Las métricas de innovación miden progreso y éxito"
+        },
+        {
+          "english": "Startup incubators support emerging technologies",
+          "spanish": "Las incubadoras de startups apoyan tecnologías emergentes"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Research and",
+          "suffix": "activities generate new knowledge and technological solutions.",
+          "answer": "development",
+          "selected": false,
+          "feedback": "R&D is the foundation of technological progress and competitive advantage."
+        },
+        {
+          "prefix": "Technology",
+          "suffix": "helps determine whether innovations have viable commercial applications.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Technology assessment bridges the gap between research and market application."
+        },
+        {
+          "prefix": "Innovation",
+          "suffix": "provide structured approaches to managing development from concept to market.",
+          "answer": "pipelines",
+          "selected": false,
+          "feedback": "Innovation pipelines ensure systematic and efficient technology development."
+        }
+      ]
+    }
+  ]
+}
+]
+

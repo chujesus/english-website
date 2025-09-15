@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 12,
+  "sections": [
+    {
+      "title": "Advanced Computational Fluid Dynamics → Dinámica computacional de fluidos avanzada",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Turbulence modeling captures complex fluid flow behaviors in engineering simulations",
+          "spanish": "El modelado de turbulencia captura comportamientos complejos de flujo de fluidos en simulaciones de ingeniería"
+        },
+        {
+          "english": "Mesh generation algorithms create computational grids for numerical flow analysis",
+          "spanish": "Los algoritmos de generación de mallas crean rejillas computacionales para análisis numérico de flujo"
+        },
+        {
+          "english": "Large Eddy Simulation resolves turbulent structures with unprecedented accuracy",
+          "spanish": "La Simulación de Grandes Remolinos resuelve estructuras turbulentas con precisión sin precedentes"
+        },
+        {
+          "english": "Multiphase flow simulations model interactions between different fluid phases",
+          "spanish": "Las simulaciones de flujo multifásico modelan interacciones entre diferentes fases de fluidos"
+        },
+        {
+          "english": "Heat transfer analysis optimizes thermal management in engineering systems",
+          "spanish": "El análisis de transferencia de calor optimiza gestión térmica en sistemas de ingeniería"
+        },
+        {
+          "english": "Adaptive mesh refinement improves solution accuracy in critical flow regions",
+          "spanish": "El refinamiento adaptivo de malla mejora precisión de solución en regiones críticas de flujo"
+        },
+        {
+          "english": "Parallel computing accelerates complex fluid dynamics calculations significantly",
+          "spanish": "La computación paralela acelera cálculos complejos de dinámica de fluidos significativamente"
+        },
+        {
+          "english": "Boundary condition specification defines flow behavior at domain interfaces",
+          "spanish": "La especificación de condiciones de frontera define comportamiento de flujo en interfaces del dominio"
+        },
+        {
+          "english": "Validation studies verify computational results against experimental measurements",
+          "spanish": "Los estudios de validación verifican resultados computacionales contra mediciones experimentales"
+        },
+        {
+          "english": "High-performance computing enables detailed analysis of complex flow phenomena",
+          "spanish": "La computación de alto rendimiento permite análisis detallado de fenómenos complejos de flujo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What challenges does turbulence modeling address in CFD?",
+          "options": ["It captures chaotic flow behavior that's difficult to predict analytically", "It eliminates all fluid motion", "It only works for laminar flows"],
+          "answer": 0
+        },
+        {
+          "audio": "How does Large Eddy Simulation differ from traditional turbulence models?",
+          "options": ["It directly resolves large turbulent structures while modeling smaller scales", "It ignores all turbulent effects", "It only works for 2D problems"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is validation important in computational fluid dynamics?",
+          "options": ["It ensures that simulation results accurately represent real-world phenomena", "It makes simulations run faster", "It eliminates the need for experiments"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Turbulence",
+          "suffix": "is essential for accurately predicting complex flow behaviors in engineering applications.",
+          "answer": "modeling",
+          "selected": false,
+          "feedback": "Turbulence modeling is one of the most challenging aspects of CFD."
+        },
+        {
+          "prefix": "Mesh",
+          "suffix": "determines the spatial resolution and accuracy of CFD simulations.",
+          "answer": "generation",
+          "selected": false,
+          "feedback": "Quality mesh generation is crucial for accurate CFD results."
+        },
+        {
+          "prefix": "Parallel",
+          "suffix": "enables CFD simulations of unprecedented size and complexity.",
+          "answer": "computing",
+          "selected": false,
+          "feedback": "Modern CFD relies heavily on parallel computing for complex problems."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Structural Engineering and Design → Ingeniería estructural avanzada y diseño",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Finite element analysis predicts structural behavior under complex loading conditions",
+          "spanish": "El análisis de elementos finitos predice comportamiento estructural bajo condiciones de carga complejas"
+        },
+        {
+          "english": "Performance-based design optimizes structures for specific functionality requirements",
+          "spanish": "El diseño basado en rendimiento optimiza estructuras para requerimientos específicos de funcionalidad"
+        },
+        {
+          "english": "Seismic isolation systems protect buildings from earthquake-induced ground motion",
+          "spanish": "Los sistemas de aislamiento sísmico protegen edificios de movimiento del suelo inducido por terremotos"
+        },
+        {
+          "english": "Dynamic analysis evaluates structural response to time-varying loads",
+          "spanish": "El análisis dinámico evalúa respuesta estructural a cargas que varían con el tiempo"
+        },
+        {
+          "english": "Composite materials combine different properties for optimal structural performance",
+          "spanish": "Los materiales compuestos combinan diferentes propiedades para rendimiento estructural óptimo"
+        },
+        {
+          "english": "Structural health monitoring systems detect damage and deterioration in real-time",
+          "spanish": "Los sistemas de monitoreo de salud estructural detectan daño y deterioro en tiempo real"
+        },
+        {
+          "english": "Nonlinear analysis captures large deformation and material yielding effects",
+          "spanish": "El análisis no lineal captura efectos de deformación grande y fluencia de materiales"
+        },
+        {
+          "english": "Probabilistic design accounts for uncertainties in loads and material properties",
+          "spanish": "El diseño probabilístico considera incertidumbres en cargas y propiedades de materiales"
+        },
+        {
+          "english": "Topology optimization determines optimal material distribution for structural efficiency",
+          "spanish": "La optimización topológica determina distribución óptima de material para eficiencia estructural"
+        },
+        {
+          "english": "Life cycle assessment guides sustainable structural design decisions",
+          "spanish": "La evaluación del ciclo de vida guía decisiones de diseño estructural sostenible"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does finite element analysis benefit structural engineering?",
+          "options": ["It predicts stress, strain, and deformation in complex structures before construction", "It eliminates the need for physical testing", "It only works for simple geometries"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do seismic isolation systems provide?",
+          "options": ["They reduce earthquake forces transmitted to the structure, improving safety", "They prevent all earthquake damage", "They only work for small buildings"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is structural health monitoring important?",
+          "options": ["It provides early warning of structural problems, enabling preventive maintenance", "It makes structures maintenance-free", "It only works on new buildings"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Finite element",
+          "suffix": "divides complex structures into smaller elements for mathematical analysis.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "FEA is fundamental to modern structural engineering and design."
+        },
+        {
+          "prefix": "Performance-based",
+          "suffix": "focuses on achieving specific structural performance objectives rather than prescriptive rules.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Performance-based design allows for more innovative and efficient structures."
+        },
+        {
+          "prefix": "Topology",
+          "suffix": "uses mathematical algorithms to find the most efficient structural configurations.",
+          "answer": "optimization",
+          "selected": false,
+          "feedback": "Topology optimization leads to innovative and material-efficient designs."
+        }
+      ]
+    },
+    {
+      "title": "Electromagnetic Field Theory and Applications → Teoría de campos electromagnéticos y aplicaciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Maxwell's equations govern electromagnetic field propagation and interaction",
+          "spanish": "Las ecuaciones de Maxwell gobiernan propagación e interacción de campos electromagnéticos"
+        },
+        {
+          "english": "Antenna design principles optimize electromagnetic radiation patterns",
+          "spanish": "Los principios de diseño de antenas optimizan patrones de radiación electromagnética"
+        },
+        {
+          "english": "Electromagnetic compatibility ensures devices operate without mutual interference",
+          "spanish": "La compatibilidad electromagnética asegura que dispositivos operen sin interferencia mutua"
+        },
+        {
+          "english": "Waveguide theory describes electromagnetic wave propagation in confined structures",
+          "spanish": "La teoría de guías de onda describe propagación de ondas electromagnéticas en estructuras confinadas"
+        },
+        {
+          "english": "Microwave engineering enables high-frequency communication and radar systems",
+          "spanish": "La ingeniería de microondas permite sistemas de comunicación de alta frecuencia y radar"
+        },
+        {
+          "english": "Electromagnetic simulation predicts field distributions in complex geometries",
+          "spanish": "La simulación electromagnética predice distribuciones de campo en geometrías complejas"
+        },
+        {
+          "english": "RF circuit design optimizes high-frequency electronic component performance",
+          "spanish": "El diseño de circuitos RF optimiza rendimiento de componentes electrónicos de alta frecuencia"
+        },
+        {
+          "english": "Metamaterial engineering creates artificial electromagnetic properties",
+          "spanish": "La ingeniería de metamateriales crea propiedades electromagnéticas artificiales"
+        },
+        {
+          "english": "Electromagnetic shielding protects sensitive electronics from interference",
+          "spanish": "El blindaje electromagnético protege electrónicos sensibles de interferencia"
+        },
+        {
+          "english": "Wireless power transfer enables contactless energy transmission",
+          "spanish": "La transferencia inalámbrica de energía permite transmisión de energía sin contacto"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do Maxwell's equations impact electromagnetic engineering?",
+          "options": ["They provide the fundamental mathematical framework for all electromagnetic phenomena", "They only apply to static fields", "They're not relevant to modern technology"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does electromagnetic compatibility play in modern electronics?",
+          "options": ["It ensures devices don't interfere with each other electromagnetically", "It makes devices faster", "It eliminates all electromagnetic effects"],
+          "answer": 0
+        },
+        {
+          "audio": "How do metamaterials differ from conventional materials?",
+          "options": ["Their electromagnetic properties come from structure rather than chemical composition", "They're always more expensive", "They only work at specific frequencies"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Maxwell's",
+          "suffix": "form the mathematical foundation of electromagnetic field theory.",
+          "answer": "equations",
+          "selected": false,
+          "feedback": "Maxwell's equations are fundamental to understanding electromagnetic phenomena."
+        },
+        {
+          "prefix": "Electromagnetic",
+          "suffix": "prevents devices from interfering with each other's operation.",
+          "answer": "compatibility",
+          "selected": false,
+          "feedback": "EMC is crucial for reliable operation of modern electronic systems."
+        },
+        {
+          "prefix": "Wireless power",
+          "suffix": "eliminates the need for physical connections in energy transmission.",
+          "answer": "transfer",
+          "selected": false,
+          "feedback": "Wireless power transfer is enabling new applications in many fields."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Signal Processing and Communications → Procesamiento avanzado de señales y comunicaciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Digital signal processing transforms analog signals into discrete mathematical representations",
+          "spanish": "El procesamiento digital de señales transforma señales analógicas en representaciones matemáticas discretas"
+        },
+        {
+          "english": "Fourier analysis decomposes complex signals into frequency domain components",
+          "spanish": "El análisis de Fourier descompone señales complejas en componentes del dominio de frecuencia"
+        },
+        {
+          "english": "Adaptive filtering adjusts parameters automatically to optimize signal quality",
+          "spanish": "El filtrado adaptivo ajusta parámetros automáticamente para optimizar calidad de señal"
+        },
+        {
+          "english": "MIMO systems use multiple antennas for improved communication capacity",
+          "spanish": "Los sistemas MIMO usan múltiples antenas para capacidad de comunicación mejorada"
+        },
+        {
+          "english": "Error correction codes ensure reliable data transmission over noisy channels",
+          "spanish": "Los códigos de corrección de errores aseguran transmisión confiable de datos sobre canales ruidosos"
+        },
+        {
+          "english": "Software-defined radio enables flexible communication system implementation",
+          "spanish": "La radio definida por software permite implementación flexible de sistemas de comunicación"
+        },
+        {
+          "english": "Beamforming techniques focus signal energy in specific spatial directions",
+          "spanish": "Las técnicas de beamforming enfocan energía de señal en direcciones espaciales específicas"
+        },
+        {
+          "english": "Channel estimation algorithms characterize communication link properties",
+          "spanish": "Los algoritmos de estimación de canal caracterizan propiedades de enlaces de comunicación"
+        },
+        {
+          "english": "Compressed sensing reconstructs signals from limited measurement samples",
+          "spanish": "El sensado comprimido reconstruye señales de muestras limitadas de medición"
+        },
+        {
+          "english": "Massive MIMO architectures scale antenna arrays for next-generation networks",
+          "spanish": "Las arquitecturas MIMO masivas escalan arreglos de antenas para redes de próxima generación"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does digital signal processing benefit modern communications?",
+          "options": ["It enables flexible, programmable processing of signals with high precision", "It only works with analog signals", "It makes communication systems more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do MIMO systems provide?",
+          "options": ["They increase data rates and improve signal reliability using multiple antennas", "They reduce the number of antennas needed", "They only work in perfect conditions"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is beamforming important for wireless communications?",
+          "options": ["It directs signal energy toward intended receivers, improving efficiency and reducing interference", "It eliminates all signal reflections", "It only works for satellite communications"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Innovation in Medical Technology → Innovación en tecnología médica",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Medical imaging systems provide non-invasive visualization of internal body structures",
+          "spanish": "Los sistemas de imagen médica proporcionan visualización no invasiva de estructuras corporales internas"
+        },
+        {
+          "english": "Implantable devices restore lost physiological functions through biointegration",
+          "spanish": "Los dispositivos implantables restauran funciones fisiológicas perdidas a través de biointegración"
+        },
+        {
+          "english": "Telemedicine platforms enable remote healthcare delivery and monitoring",
+          "spanish": "Las plataformas de telemedicina permiten entrega y monitoreo remoto de atención médica"
+        },
+        {
+          "english": "Precision medicine tailors treatments based on individual genetic profiles",
+          "spanish": "La medicina de precisión adapta tratamientos basados en perfiles genéticos individuales"
+        },
+        {
+          "english": "Robotic surgery systems enhance precision and minimize invasive procedures",
+          "spanish": "Los sistemas de cirugía robótica mejoran precisión y minimizan procedimientos invasivos"
+        },
+        {
+          "english": "Wearable health monitors track vital signs continuously for preventive care",
+          "spanish": "Los monitores de salud portátiles rastrean signos vitales continuamente para cuidado preventivo"
+        },
+        {
+          "english": "Artificial organs replace failed biological systems with engineered alternatives",
+          "spanish": "Los órganos artificiales reemplazan sistemas biológicos fallidos con alternativas diseñadas"
+        },
+        {
+          "english": "Gene therapy techniques modify genetic material to treat inherited diseases",
+          "spanish": "Las técnicas de terapia génica modifican material genético para tratar enfermedades hereditarias"
+        },
+        {
+          "english": "Drug delivery systems optimize therapeutic agent distribution and timing",
+          "spanish": "Los sistemas de entrega de medicamentos optimizan distribución y temporización de agentes terapéuticos"
+        },
+        {
+          "english": "Medical AI assists diagnosis and treatment planning through pattern recognition",
+          "spanish": "La IA médica asiste diagnóstico y planificación de tratamiento a través de reconocimiento de patrones"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Medical",
+          "suffix": "allows doctors to see inside the body without surgery.",
+          "answer": "imaging",
+          "selected": false,
+          "feedback": "Medical imaging has revolutionized diagnosis and treatment planning."
+        },
+        {
+          "prefix": "Precision",
+          "suffix": "uses genetic information to customize treatments for individual patients.",
+          "answer": "medicine",
+          "selected": false,
+          "feedback": "Precision medicine represents a paradigm shift toward personalized healthcare."
+        },
+        {
+          "prefix": "Robotic",
+          "suffix": "enables minimally invasive procedures with enhanced precision.",
+          "answer": "surgery",
+          "selected": false,
+          "feedback": "Robotic surgery systems are transforming surgical procedures."
+        }
+      ]
+    }
+  ]
+}
+]
+

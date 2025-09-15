@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 7,
+    "sections": [
+      {
+        "title": "Family Members → Miembros de la familia",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "mother", "spanish": "madre" },
+          { "english": "father", "spanish": "padre" },
+          { "english": "sister", "spanish": "hermana" },
+          { "english": "brother", "spanish": "hermano" },
+          { "english": "parents", "spanish": "padres" },
+          { "english": "children", "spanish": "hijos" },
+          { "english": "son", "spanish": "hijo" },
+          { "english": "daughter", "spanish": "hija" },
+          { "english": "wife", "spanish": "esposa" },
+          { "english": "husband", "spanish": "esposo" },
+          { "english": "grandfather", "spanish": "abuelo" },
+          { "english": "grandmother", "spanish": "abuela" },
+          { "english": "uncle", "spanish": "tío" },
+          { "english": "aunt", "spanish": "tía" },
+          { "english": "cousin", "spanish": "primo/a" }
+        ],
+        "listening": [
+          { "audio": "My sister is a doctor.", "options": ["sister", "brother", "mother", "father"], "answer": "sister" },
+          { "audio": "I have two brothers.", "options": ["brothers", "sisters", "sons", "daughters"], "answer": "brothers" },
+          { "audio": "My parents live in Cartago.", "options": ["parents", "children", "grandparents", "cousins"], "answer": "parents" },
+          { "audio": "My uncle works in a factory.", "options": ["uncle", "aunt", "father", "brother"], "answer": "uncle" },
+          { "audio": "My cousin studies at IPEC.", "options": ["cousin", "brother", "sister", "friend"], "answer": "cousin" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My mother", "My father", "My sister"], "suffix": "is a nurse.", "answer": "My mother", "selected": "", "feedback": "" },
+          { "prefix": ["I have two brothers", "I have two sisters", "I have two cousins"], "suffix": "and we all live together.", "answer": "I have two brothers", "selected": "", "feedback": "" },
+          { "prefix": ["My parents", "My grandparents", "My uncle"], "suffix": "live in Cartago.", "answer": "My parents", "selected": "", "feedback": "" },
+          { "prefix": ["My cousin", "My friend", "My neighbor"], "suffix": "studies at IPEC.", "answer": "My cousin", "selected": "", "feedback": "" },
+          { "prefix": ["My wife", "My husband", "My daughter"], "suffix": "works in a hospital.", "answer": "My wife", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Relationships → Relaciones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "friend", "spanish": "amigo/a" },
+          { "english": "partner", "spanish": "pareja" },
+          { "english": "colleague", "spanish": "colega" },
+          { "english": "neighbor", "spanish": "vecino/a" },
+          { "english": "boss", "spanish": "jefe/a" },
+          { "english": "employee", "spanish": "empleado/a" },
+          { "english": "team", "spanish": "equipo" },
+          { "english": "classmate", "spanish": "compañero/a de clase" },
+          { "english": "teacher", "spanish": "profesor/a" },
+          { "english": "student", "spanish": "estudiante" },
+          { "english": "manager", "spanish": "gerente" },
+          { "english": "supervisor", "spanish": "supervisor/a" },
+          { "english": "client", "spanish": "cliente" },
+          { "english": "customer", "spanish": "cliente" },
+          { "english": "group", "spanish": "grupo" }
+        ],
+        "listening": [
+          { "audio": "My colleague helps me at work.", "options": ["colleague", "boss", "employee", "manager"], "answer": "colleague" },
+          { "audio": "My neighbor is very friendly.", "options": ["neighbor", "friend", "partner", "classmate"], "answer": "neighbor" },
+          { "audio": "My boss is strict.", "options": ["boss", "manager", "supervisor", "employee"], "answer": "boss" },
+          { "audio": "My team works together.", "options": ["team", "group", "classmate", "client"], "answer": "team" },
+          { "audio": "My teacher is from San José.", "options": ["teacher", "student", "manager", "supervisor"], "answer": "teacher" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My colleague", "My boss", "My manager"], "suffix": "helps me at work.", "answer": "My colleague", "selected": "", "feedback": "" },
+          { "prefix": ["My neighbor", "My friend", "My partner"], "suffix": "is very friendly.", "answer": "My neighbor", "selected": "", "feedback": "" },
+          { "prefix": ["My boss", "My manager", "My supervisor"], "suffix": "is strict.", "answer": "My boss", "selected": "", "feedback": "" },
+          { "prefix": ["My team", "My group", "My classmate"], "suffix": "works together.", "answer": "My team", "selected": "", "feedback": "" },
+          { "prefix": ["My teacher", "My student", "My supervisor"], "suffix": "is from San José.", "answer": "My teacher", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Family Activities → Actividades familiares",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "eat together", "spanish": "comer juntos" },
+          { "english": "go out", "spanish": "salir" },
+          { "english": "visit", "spanish": "visitar" },
+          { "english": "celebrate", "spanish": "celebrar" },
+          { "english": "help", "spanish": "ayudar" },
+          { "english": "talk", "spanish": "hablar" },
+          { "english": "play", "spanish": "jugar" },
+          { "english": "work together", "spanish": "trabajar juntos" },
+          { "english": "study together", "spanish": "estudiar juntos" },
+          { "english": "share", "spanish": "compartir" },
+          { "english": "support", "spanish": "apoyar" },
+          { "english": "invite", "spanish": "invitar" },
+          { "english": "organize", "spanish": "organizar" },
+          { "english": "plan", "spanish": "planear" },
+          { "english": "enjoy", "spanish": "disfrutar" }
+        ],
+        "listening": [
+          { "audio": "We eat together every Sunday.", "options": ["eat together", "go out", "visit", "celebrate"], "answer": "eat together" },
+          { "audio": "We celebrate birthdays in July.", "options": ["celebrate", "visit", "help", "talk"], "answer": "celebrate" },
+          { "audio": "We work together in the family business.", "options": ["work together", "study together", "play", "share"], "answer": "work together" },
+          { "audio": "We visit our grandparents in Cartago.", "options": ["visit", "invite", "organize", "plan"], "answer": "visit" },
+          { "audio": "We enjoy family time on weekends.", "options": ["enjoy", "plan", "organize", "support"], "answer": "enjoy" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["We eat together", "We go out", "We visit"], "suffix": "every Sunday.", "answer": "We eat together", "selected": "", "feedback": "" },
+          { "prefix": ["We celebrate", "We help", "We talk"], "suffix": "birthdays in July.", "answer": "We celebrate", "selected": "", "feedback": "" },
+          { "prefix": ["We work together", "We study together", "We play"], "suffix": "in the family business.", "answer": "We work together", "selected": "", "feedback": "" },
+          { "prefix": ["We visit", "We invite", "We organize"], "suffix": "our grandparents in Cartago.", "answer": "We visit", "selected": "", "feedback": "" },
+          { "prefix": ["We enjoy", "We plan", "We organize"], "suffix": "family time on weekends.", "answer": "We enjoy", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Describing Relationships → Describiendo relaciones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "close", "spanish": "cercano/a" },
+          { "english": "distant", "spanish": "distante" },
+          { "english": "friendly", "spanish": "amigable" },
+          { "english": "supportive", "spanish": "apoyador/a" },
+          { "english": "strict", "spanish": "estricto/a" },
+          { "english": "kind", "spanish": "amable" },
+          { "english": "helpful", "spanish": "servicial" },
+          { "english": "funny", "spanish": "gracioso/a" },
+          { "english": "serious", "spanish": "serio/a" },
+          { "english": "hardworking", "spanish": "trabajador/a" },
+          { "english": "honest", "spanish": "honesto/a" },
+          { "english": "patient", "spanish": "paciente" },
+          { "english": "generous", "spanish": "generoso/a" },
+          { "english": "polite", "spanish": "educado/a" },
+          { "english": "respectful", "spanish": "respetuoso/a" }
+        ],
+        "listening": [
+          { "audio": "My father is strict.", "options": ["strict", "kind", "funny", "serious"], "answer": "strict" },
+          { "audio": "My mother is kind and helpful.", "options": ["kind and helpful", "strict and serious", "funny and generous", "patient and polite"], "answer": "kind and helpful" },
+          { "audio": "My brother is hardworking.", "options": ["hardworking", "funny", "serious", "polite"], "answer": "hardworking" },
+          { "audio": "My sister is friendly and funny.", "options": ["friendly and funny", "serious and strict", "kind and helpful", "polite and respectful"], "answer": "friendly and funny" },
+          { "audio": "My boss is honest and respectful.", "options": ["honest and respectful", "strict and serious", "kind and helpful", "funny and generous"], "answer": "honest and respectful" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["My father is", "My mother is", "My brother is"], "suffix": "strict.", "answer": "My father is", "selected": "", "feedback": "" },
+          { "prefix": ["My mother is", "My sister is", "My aunt is"], "suffix": "kind and helpful.", "answer": "My mother is", "selected": "", "feedback": "" },
+          { "prefix": ["My brother is", "My cousin is", "My friend is"], "suffix": "hardworking.", "answer": "My brother is", "selected": "", "feedback": "" },
+          { "prefix": ["My sister is", "My friend is", "My neighbor is"], "suffix": "friendly and funny.", "answer": "My sister is", "selected": "", "feedback": "" },
+          { "prefix": ["My boss is", "My manager is", "My supervisor is"], "suffix": "honest and respectful.", "answer": "My boss is", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Family and Work → Familia y trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "family business", "spanish": "negocio familiar" },
+          { "english": "work together", "spanish": "trabajar juntos" },
+          { "english": "support", "spanish": "apoyar" },
+          { "english": "help", "spanish": "ayudar" },
+          { "english": "plan", "spanish": "planear" },
+          { "english": "organize", "spanish": "organizar" },
+          { "english": "share", "spanish": "compartir" },
+          { "english": "learn", "spanish": "aprender" },
+          { "english": "teach", "spanish": "enseñar" },
+          { "english": "grow", "spanish": "crecer" },
+          { "english": "improve", "spanish": "mejorar" },
+          { "english": "communicate", "spanish": "comunicar" },
+          { "english": "solve problems", "spanish": "resolver problemas" },
+          { "english": "make decisions", "spanish": "tomar decisiones" },
+          { "english": "celebrate", "spanish": "celebrar" }
+        ],
+        "listening": [
+          { "audio": "We work together in the family business.", "options": ["work together", "support", "help", "plan"], "answer": "work together" },
+          { "audio": "We support each other at work.", "options": ["support", "help", "plan", "organize"], "answer": "support" },
+          { "audio": "We share responsibilities.", "options": ["share", "learn", "teach", "grow"], "answer": "share" },
+          { "audio": "We solve problems together.", "options": ["solve problems", "make decisions", "communicate", "celebrate"], "answer": "solve problems" },
+          { "audio": "We celebrate achievements as a team.", "options": ["celebrate", "plan", "organize", "grow"], "answer": "celebrate" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["We work together", "We support", "We help"], "suffix": "in the family business.", "answer": "We work together", "selected": "", "feedback": "" },
+          { "prefix": ["We support", "We help", "We plan"], "suffix": "each other at work.", "answer": "We support", "selected": "", "feedback": "" },
+          { "prefix": ["We share", "We learn", "We teach"], "suffix": "responsibilities.", "answer": "We share", "selected": "", "feedback": "" },
+          { "prefix": ["We solve problems", "We make decisions", "We communicate"], "suffix": "together.", "answer": "We solve problems", "selected": "", "feedback": "" },
+          { "prefix": ["We celebrate", "We plan", "We organize"], "suffix": "achievements as a team.", "answer": "We celebrate", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

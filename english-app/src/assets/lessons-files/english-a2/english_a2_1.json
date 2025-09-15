@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A2",
+    "lessonId": 1,
+    "sections": [
+      {
+        "title": "Asking and Giving Directions → Pidiendo y dando direcciones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Where is the workshop?", "spanish": "¿Dónde está el taller?" },
+          { "english": "Go straight and turn left", "spanish": "Ve derecho y dobla a la izquierda" },
+          { "english": "It's on the second floor", "spanish": "Está en el segundo piso" },
+          { "english": "Take the elevator to the third floor", "spanish": "Toma el elevador al tercer piso" },
+          { "english": "The cafeteria is next to the library", "spanish": "La cafetería está al lado de la biblioteca" },
+          { "english": "Walk down the hallway", "spanish": "Camina por el pasillo" },
+          { "english": "Turn right at the end", "spanish": "Dobla a la derecha al final" },
+          { "english": "It's across from the main office", "spanish": "Está enfrente de la oficina principal" },
+          { "english": "Go past the security desk", "spanish": "Pasa por el escritorio de seguridad" },
+          { "english": "The entrance is on your left", "spanish": "La entrada está a tu izquierda" },
+          { "english": "Can you show me the way?", "spanish": "¿Me puedes mostrar el camino?" },
+          { "english": "I'm looking for the computer lab", "spanish": "Estoy buscando el laboratorio de computación" },
+          { "english": "Follow me, I'll show you", "spanish": "Sígueme, te muestro" },
+          { "english": "It's not far from here", "spanish": "No está lejos de aquí" },
+          { "english": "You can't miss it", "spanish": "No lo puedes perder" }
+        ],
+        "listening": [
+          {
+            "audio": "Excuse me, where is the industrial workshop located?",
+            "options": ["industrial workshop", "computer laboratory", "main cafeteria", "administrative office"],
+            "answer": "industrial workshop"
+          },
+          {
+            "audio": "Go straight down this hallway and turn left at the end",
+            "options": ["turn left at the end", "turn right at the beginning", "go up the stairs", "take the elevator down"],
+            "answer": "turn left at the end"
+          },
+          {
+            "audio": "The electronics lab is on the second floor, room 205",
+            "options": ["room 205", "room 305", "room 105", "room 405"],
+            "answer": "room 205"
+          },
+          {
+            "audio": "Take the stairs up and you'll see it across from the library",
+            "options": ["across from the library", "next to the cafeteria", "behind the main office", "inside the workshop area"],
+            "answer": "across from the library"
+          },
+          {
+            "audio": "If you get lost, just ask any teacher for directions",
+            "options": ["ask any teacher", "look for a map", "call security", "return to reception"],
+            "answer": "ask any teacher"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Where is", "How do I find", "Can you locate"],
+            "suffix": "the mechanical workshop?",
+            "answer": "Where is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Go straight", "Walk forward", "Continue ahead"],
+            "suffix": "and then turn right.",
+            "answer": "Go straight",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It's on", "You'll find it on", "It's located on"],
+            "suffix": "the first floor near the entrance.",
+            "answer": "It's on",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Take", "Use", "Go by"],
+            "suffix": "the elevator to the third floor.",
+            "answer": "Take",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Follow me", "Come with me", "I'll show you"],
+            "suffix": ", the lab is this way.",
+            "answer": "Follow me",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Reporting Problems and Malfunctions → Reportando problemas y fallas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The machine is not working", "spanish": "La máquina no está funcionando" },
+          { "english": "There's a problem with the motor", "spanish": "Hay un problema con el motor" },
+          { "english": "The screen is blank", "spanish": "La pantalla está en blanco" },
+          { "english": "I can't start the equipment", "spanish": "No puedo encender el equipo" },
+          { "english": "The system crashed", "spanish": "El sistema se colgó" },
+          { "english": "There's no power to this unit", "spanish": "No hay energía en esta unidad" },
+          { "english": "The belt is broken", "spanish": "La correa está rota" },
+          { "english": "I hear a strange noise", "spanish": "Escucho un ruido extraño" },
+          { "english": "The temperature is too high", "spanish": "La temperatura está muy alta" },
+          { "english": "Something is leaking oil", "spanish": "Algo está goteando aceite" },
+          { "english": "The button doesn't respond", "spanish": "El botón no responde" },
+          { "english": "We need to call maintenance", "spanish": "Necesitamos llamar a mantenimiento" },
+          { "english": "This needs immediate attention", "spanish": "Esto necesita atención inmediata" },
+          { "english": "When did this problem start?", "spanish": "¿Cuándo empezó este problema?" },
+          { "english": "I noticed it this morning", "spanish": "Lo noté esta mañana" }
+        ],
+        "listening": [
+          {
+            "audio": "The CNC machine stopped working during the night shift",
+            "options": ["CNC machine stopped working", "air compressor started leaking", "electrical panel overheated", "conveyor belt broke down"],
+            "answer": "CNC machine stopped working"
+          },
+          {
+            "audio": "I think there's an electrical problem with this equipment",
+            "options": ["electrical problem", "mechanical failure", "software error", "cooling system issue"],
+            "answer": "electrical problem"
+          },
+          {
+            "audio": "The warning light has been flashing red for ten minutes",
+            "options": ["flashing red for ten minutes", "showing green continuously", "turning on and off randomly", "staying yellow since yesterday"],
+            "answer": "flashing red for ten minutes"
+          },
+          {
+            "audio": "We should shut down the line until the technician arrives",
+            "options": ["shut down the line", "continue working carefully", "try to fix it ourselves", "ignore the problem"],
+            "answer": "shut down the line"
+          },
+          {
+            "audio": "Please fill out the maintenance request form immediately",
+            "options": ["maintenance request form", "incident report document", "safety inspection checklist", "equipment log book"],
+            "answer": "maintenance request form"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The machine", "This equipment", "The system"],
+            "suffix": "is not working properly.",
+            "answer": "The machine",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["There's a problem", "There's an issue", "There's trouble"],
+            "suffix": "with the electrical connection.",
+            "answer": "There's a problem",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I can't", "I'm unable to", "I cannot"],
+            "suffix": "start the motor.",
+            "answer": "I can't",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We need", "We require", "We must get"],
+            "suffix": "technical assistance immediately.",
+            "answer": "We need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["When did", "What time did", "At what point did"],
+            "suffix": "you first notice the problem?",
+            "answer": "When did",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Describing Daily Routines → Describiendo rutinas diarias",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I arrive at work at 7 AM", "spanish": "Llego al trabajo a las 7 AM" },
+          { "english": "First, I check my equipment", "spanish": "Primero, reviso mi equipo" },
+          { "english": "We have a morning meeting", "spanish": "Tenemos una reunión matutina" },
+          { "english": "I start working on projects", "spanish": "Empiezo a trabajar en proyectos" },
+          { "english": "I take a break at 10 o'clock", "spanish": "Tomo un descanso a las 10" },
+          { "english": "Lunch break is from 12 to 1", "spanish": "El almuerzo es de 12 a 1" },
+          { "english": "I usually eat in the cafeteria", "spanish": "Usualmente como en la cafetería" },
+          { "english": "In the afternoon, I attend classes", "spanish": "En la tarde, asisto a clases" },
+          { "english": "We practice in the workshop", "spanish": "Practicamos en el taller" },
+          { "english": "I clean my workspace before leaving", "spanish": "Limpio mi área de trabajo antes de irme" },
+          { "english": "I finish work at 5 PM", "spanish": "Termino el trabajo a las 5 PM" },
+          { "english": "Sometimes I work overtime", "spanish": "A veces trabajo horas extra" },
+          { "english": "I study at home in the evening", "spanish": "Estudio en casa por la noche" },
+          { "english": "I go to bed around 10 PM", "spanish": "Me acuesto alrededor de las 10 PM" },
+          { "english": "Every day is different", "spanish": "Cada día es diferente" }
+        ],
+        "listening": [
+          {
+            "audio": "I usually start my workday by checking the production schedule",
+            "options": ["checking the production schedule", "reviewing safety procedures", "attending the morning briefing", "inspecting all the equipment"],
+            "answer": "checking the production schedule"
+          },
+          {
+            "audio": "After lunch, we typically work on practical exercises in the lab",
+            "options": ["practical exercises in the lab", "theoretical lessons in class", "group discussions in teams", "individual study sessions"],
+            "answer": "practical exercises in the lab"
+          },
+          {
+            "audio": "At the end of each shift, I write a brief report",
+            "options": ["write a brief report", "clean all the tools", "check the inventory", "update the log book"],
+            "answer": "write a brief report"
+          },
+          {
+            "audio": "During break time, most students go to the cafeteria",
+            "options": ["go to the cafeteria", "stay in the classroom", "visit the library", "walk in the courtyard"],
+            "answer": "go to the cafeteria"
+          },
+          {
+            "audio": "We always finish the day with a safety check",
+            "options": ["safety check", "team meeting", "equipment cleaning", "progress review"],
+            "answer": "safety check"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I arrive", "I get to work", "I come in"],
+            "suffix": "at the factory every morning.",
+            "answer": "I arrive",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["First, I", "Initially, I", "To start, I"],
+            "suffix": "put on my safety equipment.",
+            "answer": "First, I",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["During lunch", "At lunchtime", "For lunch"],
+            "suffix": "I usually eat with my classmates.",
+            "answer": "During lunch",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["In the afternoon", "After lunch", "Later in the day"],
+            "suffix": "we have practical workshops.",
+            "answer": "In the afternoon",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I finish", "I end", "I complete"],
+            "suffix": "my studies at 4 PM.",
+            "answer": "I finish",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Scheduling and Appointments → Programación y citas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Can we schedule a meeting?", "spanish": "¿Podemos programar una reunión?" },
+          { "english": "What time works for you?", "spanish": "¿Qué hora te funciona?" },
+          { "english": "I'm available tomorrow morning", "spanish": "Estoy disponible mañana por la mañana" },
+          { "english": "Let's meet at 2 PM", "spanish": "Reunámonos a las 2 PM" },
+          { "english": "I have an appointment with the supervisor", "spanish": "Tengo una cita con el supervisor" },
+          { "english": "Can we reschedule for next week?", "spanish": "¿Podemos reprogramar para la próxima semana?" },
+          { "english": "The training session is on Friday", "spanish": "La sesión de entrenamiento es el viernes" },
+          { "english": "I need to check my calendar", "spanish": "Necesito revisar mi calendario" },
+          { "english": "Are you free this afternoon?", "spanish": "¿Estás libre esta tarde?" },
+          { "english": "I'm sorry, I'm busy then", "spanish": "Lo siento, estoy ocupado entonces" },
+          { "english": "How about next Tuesday?", "spanish": "¿Qué tal el próximo martes?" },
+          { "english": "That works perfectly for me", "spanish": "Eso me funciona perfectamente" },
+          { "english": "I'll send you a calendar invitation", "spanish": "Te enviaré una invitación de calendario" },
+          { "english": "Don't forget about our meeting", "spanish": "No olvides nuestra reunión" },
+          { "english": "I'll be there on time", "spanish": "Estaré ahí a tiempo" }
+        ],
+        "listening": [
+          {
+            "audio": "I need to schedule a meeting with the project team for next week",
+            "options": ["project team for next week", "department manager today", "safety coordinator tomorrow", "training instructor this week"],
+            "answer": "project team for next week"
+          },
+          {
+            "audio": "Are you available for a workshop session this Thursday afternoon?",
+            "options": ["Thursday afternoon", "Friday morning", "Wednesday evening", "Tuesday lunchtime"],
+            "answer": "Thursday afternoon"
+          },
+          {
+            "audio": "I'm sorry, but I have to reschedule our appointment",
+            "options": ["reschedule our appointment", "cancel the meeting completely", "change the meeting location", "invite more participants"],
+            "answer": "reschedule our appointment"
+          },
+          {
+            "audio": "The technical review meeting is confirmed for 9 AM sharp",
+            "options": ["9 AM sharp", "10 AM approximately", "11 AM exactly", "8 AM precisely"],
+            "answer": "9 AM sharp"
+          },
+          {
+            "audio": "Please check your email for the updated schedule",
+            "options": ["check your email", "look at the bulletin board", "ask your supervisor", "call the main office"],
+            "answer": "check your email"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Can we", "Could we", "Would it be possible to"],
+            "suffix": "schedule a meeting for tomorrow?",
+            "answer": "Can we",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What time", "When", "At what hour"],
+            "suffix": "is convenient for you?",
+            "answer": "What time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'm available", "I'm free", "I have time"],
+            "suffix": "on Wednesday morning.",
+            "answer": "I'm available",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Let's meet", "We can meet", "How about meeting"],
+            "suffix": "in the conference room.",
+            "answer": "Let's meet",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need to", "I have to", "I must"],
+            "suffix": "reschedule our appointment.",
+            "answer": "I need to",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Telephone and Email Communication → Comunicación telefónica y por correo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Good morning, this is Maria speaking", "spanish": "Buenos días, habla María" },
+          { "english": "Can I speak to the supervisor?", "spanish": "¿Puedo hablar con el supervisor?" },
+          { "english": "Please hold on a moment", "spanish": "Por favor espera un momento" },
+          { "english": "I'm calling about the equipment", "spanish": "Llamo por el equipo" },
+          { "english": "Can you transfer me to extension 205?", "spanish": "¿Me puedes transferir a la extensión 205?" },
+          { "english": "I'll send you an email with details", "spanish": "Te enviaré un correo con detalles" },
+          { "english": "Did you receive my message?", "spanish": "¿Recibiste mi mensaje?" },
+          { "english": "Thank you for your email", "spanish": "Gracias por tu correo" },
+          { "english": "I'm writing to confirm the appointment", "spanish": "Escribo para confirmar la cita" },
+          { "english": "Please find attached the documents", "spanish": "Por favor encuentra adjuntos los documentos" },
+          { "english": "I'll get back to you soon", "spanish": "Te responderé pronto" },
+          { "english": "Could you repeat that, please?", "spanish": "¿Podrías repetir eso, por favor?" },
+          { "english": "The connection is not very clear", "spanish": "La conexión no está muy clara" },
+          { "english": "I'll call you back later", "spanish": "Te llamaré más tarde" },
+          { "english": "Best regards, have a good day", "spanish": "Saludos cordiales, que tengas buen día" }
+        ],
+        "listening": [
+          {
+            "audio": "Hello, this is the technical support department, how can I help you?",
+            "options": ["technical support department", "human resources office", "student services center", "maintenance workshop"],
+            "answer": "technical support department"
+          },
+          {
+            "audio": "I'm calling to report a problem with the computer network",
+            "options": ["computer network", "telephone system", "air conditioning", "security cameras"],
+            "answer": "computer network"
+          },
+          {
+            "audio": "Could you please send me the installation manual by email?",
+            "options": ["installation manual by email", "safety procedures by fax", "user guide by post", "technical drawings by hand"],
+            "answer": "installation manual by email"
+          },
+          {
+            "audio": "I'm sorry, but the line is busy right now, please try again later",
+            "options": ["line is busy right now", "person is in a meeting", "office is closed today", "system is under maintenance"],
+            "answer": "line is busy right now"
+          },
+          {
+            "audio": "Thank you for calling, we'll follow up with you tomorrow",
+            "options": ["follow up with you tomorrow", "call you back this afternoon", "send you information today", "schedule a meeting next week"],
+            "answer": "follow up with you tomorrow"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Good morning", "Hello", "Hi there"],
+            "suffix": ", this is Carlos from maintenance.",
+            "answer": "Good morning",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can I", "May I", "Could I"],
+            "suffix": "speak to the department manager?",
+            "answer": "Can I",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'm calling", "I'm phoning", "I'm contacting you"],
+            "suffix": "about the equipment order.",
+            "answer": "I'm calling",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'll send", "I'll email", "I'll forward"],
+            "suffix": "you the technical specifications.",
+            "answer": "I'll send",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Thank you", "Thanks", "I appreciate"],
+            "suffix": "for your quick response.",
+            "answer": "Thank you",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

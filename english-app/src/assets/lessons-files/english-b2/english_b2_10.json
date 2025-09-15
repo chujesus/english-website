@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 10,
+  "sections": [
+    {
+      "title": "Artificial Intelligence and Machine Learning Applications → Aplicaciones de inteligencia artificial y aprendizaje automático",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Deep learning architectures enable pattern recognition in complex datasets",
+          "spanish": "Las arquitecturas de aprendizaje profundo permiten reconocimiento de patrones en conjuntos de datos complejos"
+        },
+        {
+          "english": "Natural language processing transforms unstructured text into actionable insights",
+          "spanish": "El procesamiento de lenguaje natural transforma texto no estructurado en conocimientos accionables"
+        },
+        {
+          "english": "Computer vision systems interpret and analyze visual information automatically",
+          "spanish": "Los sistemas de visión por computadora interpretan y analizan información visual automáticamente"
+        },
+        {
+          "english": "Reinforcement learning algorithms optimize decision-making through trial and error",
+          "spanish": "Los algoritmos de aprendizaje por refuerzo optimizan toma de decisiones a través de ensayo y error"
+        },
+        {
+          "english": "Generative AI models create new content based on learned patterns",
+          "spanish": "Los modelos de IA generativa crean contenido nuevo basado en patrones aprendidos"
+        },
+        {
+          "english": "Predictive analytics forecast future trends using historical data patterns",
+          "spanish": "Los análisis predictivos pronostican tendencias futuras usando patrones de datos históricos"
+        },
+        {
+          "english": "Automated machine learning democratizes AI development for non-experts",
+          "spanish": "El aprendizaje automático automatizado democratiza desarrollo de IA para no expertos"
+        },
+        {
+          "english": "Edge AI deployment enables real-time processing on local devices",
+          "spanish": "El despliegue de IA en el edge permite procesamiento en tiempo real en dispositivos locales"
+        },
+        {
+          "english": "Explainable AI techniques make machine learning decisions transparent and interpretable",
+          "spanish": "Las técnicas de IA explicable hacen decisiones de aprendizaje automático transparentes e interpretables"
+        },
+        {
+          "english": "Federated learning preserves privacy while enabling collaborative model training",
+          "spanish": "El aprendizaje federado preserva privacidad mientras permite entrenamiento colaborativo de modelos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do deep learning architectures differ from traditional machine learning?",
+          "options": ["They use multiple layers to automatically learn complex features from raw data", "They only work with small datasets", "They require manual feature engineering"],
+          "answer": 0
+        },
+        {
+          "audio": "What makes reinforcement learning unique among AI approaches?",
+          "options": ["It learns through interaction with an environment, receiving rewards or penalties", "It only uses labeled data", "It doesn't require any training"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is explainable AI important in engineering applications?",
+          "options": ["It helps engineers understand and trust AI decisions in critical systems", "It makes AI systems run faster", "It eliminates all errors"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Deep",
+          "suffix": "can automatically discover complex patterns without manual feature engineering.",
+          "answer": "learning",
+          "selected": false,
+          "feedback": "Deep learning has revolutionized pattern recognition across many engineering domains."
+        },
+        {
+          "prefix": "Computer",
+          "suffix": "enables machines to understand and interpret visual information like humans.",
+          "answer": "vision",
+          "selected": false,
+          "feedback": "Computer vision has numerous applications in engineering inspection and automation."
+        },
+        {
+          "prefix": "Explainable",
+          "suffix": "is crucial for building trust in AI systems used in critical engineering applications.",
+          "answer": "AI",
+          "selected": false,
+          "feedback": "Explainability is essential for AI adoption in safety-critical engineering systems."
+        }
+      ]
+    },
+    {
+      "title": "Quantum Computing and Advanced Computing Paradigms → Computación cuántica y paradigmas de computación avanzada",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Quantum superposition enables simultaneous exploration of multiple solution states",
+          "spanish": "La superposición cuántica permite exploración simultánea de múltiples estados de solución"
+        },
+        {
+          "english": "Quantum entanglement creates correlations that exceed classical information limits",
+          "spanish": "El entrelazamiento cuántico crea correlaciones que exceden límites de información clásica"
+        },
+        {
+          "english": "Quantum algorithms solve specific problems exponentially faster than classical approaches",
+          "spanish": "Los algoritmos cuánticos resuelven problemas específicos exponencialmente más rápido que enfoques clásicos"
+        },
+        {
+          "english": "Quantum error correction maintains computational integrity despite qubit decoherence",
+          "spanish": "La corrección de errores cuánticos mantiene integridad computacional a pesar de decoherencia de qubits"
+        },
+        {
+          "english": "Hybrid quantum-classical systems leverage strengths of both computing paradigms",
+          "spanish": "Los sistemas híbridos cuántico-clásicos aprovechan fortalezas de ambos paradigmas de computación"
+        },
+        {
+          "english": "Quantum cryptography provides theoretically unbreakable communication security",
+          "spanish": "La criptografía cuántica proporciona seguridad de comunicación teóricamente inquebrantable"
+        },
+        {
+          "english": "Quantum simulation models complex physical systems beyond classical capabilities",
+          "spanish": "La simulación cuántica modela sistemas físicos complejos más allá de capacidades clásicas"
+        },
+        {
+          "english": "Neuromorphic computing mimics brain architecture for energy-efficient processing",
+          "spanish": "La computación neuromórfica imita arquitectura cerebral para procesamiento energéticamente eficiente"
+        },
+        {
+          "english": "Optical computing utilizes photons for high-speed parallel processing",
+          "spanish": "La computación óptica utiliza fotones para procesamiento paralelo de alta velocidad"
+        },
+        {
+          "english": "DNA computing stores and processes information using biological molecules",
+          "spanish": "La computación de ADN almacena y procesa información usando moléculas biológicas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes quantum computing potentially revolutionary?",
+          "options": ["It can solve certain problems exponentially faster than classical computers", "It replaces all classical computers", "It only works for simple calculations"],
+          "answer": 0
+        },
+        {
+          "audio": "How does quantum superposition benefit computation?",
+          "options": ["It allows qubits to exist in multiple states simultaneously, enabling parallel processing", "It makes computers smaller", "It eliminates all computational errors"],
+          "answer": 0
+        },
+        {
+          "audio": "What challenges does quantum computing currently face?",
+          "options": ["Maintaining quantum states and correcting errors in noisy quantum systems", "Finding applications for quantum computers", "Making quantum computers cheaper than smartphones"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Quantum",
+          "suffix": "allows qubits to represent multiple states simultaneously, unlike classical bits.",
+          "answer": "superposition",
+          "selected": false,
+          "feedback": "Superposition is a fundamental quantum property that enables quantum computational advantages."
+        },
+        {
+          "prefix": "Quantum",
+          "suffix": "connects particles in ways that classical physics cannot explain or replicate.",
+          "answer": "entanglement",
+          "selected": false,
+          "feedback": "Entanglement is crucial for many quantum computing algorithms and quantum communication."
+        },
+        {
+          "prefix": "Hybrid quantum-classical",
+          "suffix": "combine the best aspects of both computing paradigms for practical applications.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Hybrid approaches are likely to be the first practical quantum computing implementations."
+        }
+      ]
+    },
+    {
+      "title": "Biotechnology and Bioengineering Applications → Aplicaciones de biotecnología y bioingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Synthetic biology engineers biological systems for novel applications and functions",
+          "spanish": "La biología sintética diseña sistemas biológicos para aplicaciones y funciones novedosas"
+        },
+        {
+          "english": "Bioprocess engineering optimizes cellular manufacturing for pharmaceutical production",
+          "spanish": "La ingeniería de bioprocesos optimiza manufactura celular para producción farmacéutica"
+        },
+        {
+          "english": "Tissue engineering creates functional biological constructs for regenerative medicine",
+          "spanish": "La ingeniería de tejidos crea construcciones biológicas funcionales para medicina regenerativa"
+        },
+        {
+          "english": "Biomaterials design combines biological principles with engineering properties",
+          "spanish": "El diseño de biomateriales combina principios biológicos con propiedades de ingeniería"
+        },
+        {
+          "english": "Genetic engineering techniques modify organisms for beneficial characteristics",
+          "spanish": "Las técnicas de ingeniería genética modifican organismos para características beneficiosas"
+        },
+        {
+          "english": "Biomedical devices integrate electronics with biological systems seamlessly",
+          "spanish": "Los dispositivos biomédicos integran electrónica con sistemas biológicos sin problemas"
+        },
+        {
+          "english": "Bioinformatics processes biological data using computational methods and algorithms",
+          "spanish": "La bioinformática procesa datos biológicos usando métodos computacionales y algoritmos"
+        },
+        {
+          "english": "Biosensors detect biological molecules with high specificity and sensitivity",
+          "spanish": "Los biosensores detectan moléculas biológicas con alta especificidad y sensibilidad"
+        },
+        {
+          "english": "Environmental biotechnology applies biological processes to pollution remediation",
+          "spanish": "La biotecnología ambiental aplica procesos biológicos a remediación de contaminación"
+        },
+        {
+          "english": "Personalized medicine tailors treatments based on individual genetic profiles",
+          "spanish": "La medicina personalizada adapta tratamientos basados en perfiles genéticos individuales"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does synthetic biology differ from traditional biotechnology?",
+          "options": ["It designs and constructs new biological parts and systems from scratch", "It only studies existing biological systems", "It eliminates the need for biology"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does tissue engineering play in regenerative medicine?",
+          "options": ["It creates replacement tissues and organs to restore function lost to disease or injury", "It only studies tissue structure", "It prevents all tissue damage"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are biosensors important for healthcare applications?",
+          "options": ["They provide rapid, specific detection of disease markers and health indicators", "They replace all medical tests", "They only work in laboratories"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Synthetic",
+          "suffix": "enables the design and construction of new biological systems with desired properties.",
+          "answer": "biology",
+          "selected": false,
+          "feedback": "Synthetic biology represents a new frontier in engineering biological systems."
+        },
+        {
+          "prefix": "Tissue",
+          "suffix": "combines cells, scaffolds, and growth factors to create functional biological constructs.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Tissue engineering offers promising solutions for organ replacement and regenerative medicine."
+        },
+        {
+          "prefix": "Personalized",
+          "suffix": "uses genetic information to optimize treatment effectiveness for individual patients.",
+          "answer": "medicine",
+          "selected": false,
+          "feedback": "Personalized medicine represents a paradigm shift toward individualized healthcare."
+        }
+      ]
+    },
+    {
+      "title": "Space Technology and Aerospace Engineering → Tecnología espacial e ingeniería aeroespacial",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Spacecraft propulsion systems enable precise orbital maneuvers and interplanetary travel",
+          "spanish": "Los sistemas de propulsión de naves espaciales permiten maniobras orbitales precisas y viaje interplanetario"
+        },
+        {
+          "english": "Satellite constellations provide global coverage for communication and earth observation",
+          "spanish": "Las constelaciones de satélites proporcionan cobertura global para comunicación y observación terrestre"
+        },
+        {
+          "english": "Space manufacturing utilizes microgravity environments for unique material properties",
+          "spanish": "La manufactura espacial utiliza ambientes de microgravedad para propiedades únicas de materiales"
+        },
+        {
+          "english": "Planetary exploration missions advance scientific understanding of celestial bodies",
+          "spanish": "Las misiones de exploración planetaria avanzan comprensión científica de cuerpos celestes"
+        },
+        {
+          "english": "Space debris mitigation strategies protect active satellites and space stations",
+          "spanish": "Las estrategias de mitigación de basura espacial protegen satélites activos y estaciones espaciales"
+        },
+        {
+          "english": "Hypersonic vehicle design challenges conventional aerodynamic principles",
+          "spanish": "El diseño de vehículos hipersónicos desafía principios aerodinámicos convencionales"
+        },
+        {
+          "english": "In-situ resource utilization reduces dependency on Earth-based supply chains",
+          "spanish": "La utilización de recursos in-situ reduce dependencia en cadenas de suministro basadas en la Tierra"
+        },
+        {
+          "english": "Autonomous navigation systems enable precision landing on planetary surfaces",
+          "spanish": "Los sistemas de navegación autónoma permiten aterrizaje de precisión en superficies planetarias"
+        },
+        {
+          "english": "Radiation shielding protects astronauts and electronics from cosmic radiation",
+          "spanish": "El blindaje contra radiación protege astronautas y electrónicos de radiación cósmica"
+        },
+        {
+          "english": "Reusable launch systems dramatically reduce space access costs",
+          "spanish": "Los sistemas de lanzamiento reutilizables reducen dramáticamente costos de acceso al espacio"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do satellite constellations benefit global communications?",
+          "options": ["They provide seamless coverage and low-latency connectivity worldwide", "They only work in certain regions", "They replace all terrestrial networks"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages does space manufacturing offer?",
+          "options": ["Microgravity enables creation of materials with properties impossible on Earth", "It's always cheaper than Earth-based manufacturing", "It eliminates all manufacturing challenges"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is space debris mitigation important for space exploration?",
+          "options": ["Debris poses collision risks that could cascade and make space unusable", "Debris improves spacecraft performance", "Debris only affects old satellites"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Energy Systems and Smart Grid Technology → Sistemas de energía y tecnología de red inteligente",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Smart grid technologies enable bidirectional power flow and demand response",
+          "spanish": "Las tecnologías de red inteligente permiten flujo de energía bidireccional y respuesta a la demanda"
+        },
+        {
+          "english": "Energy storage systems provide grid stability and renewable energy integration",
+          "spanish": "Los sistemas de almacenamiento de energía proporcionan estabilidad de red e integración de energía renovable"
+        },
+        {
+          "english": "Microgrids offer localized energy independence and resilience",
+          "spanish": "Las microrredes ofrecen independencia energética localizada y resistencia"
+        },
+        {
+          "english": "Power electronics enable efficient energy conversion and distribution",
+          "spanish": "La electrónica de potencia permite conversión y distribución eficiente de energía"
+        },
+        {
+          "english": "Grid cybersecurity protects critical infrastructure from digital threats",
+          "spanish": "La ciberseguridad de red protege infraestructura crítica de amenazas digitales"
+        },
+        {
+          "english": "Renewable energy forecasting optimizes grid operations and market participation",
+          "spanish": "El pronóstico de energía renovable optimiza operaciones de red y participación en el mercado"
+        },
+        {
+          "english": "Electric vehicle integration transforms transportation and energy sectors",
+          "spanish": "La integración de vehículos eléctricos transforma sectores de transporte y energía"
+        },
+        {
+          "english": "Energy management systems optimize consumption patterns and costs",
+          "spanish": "Los sistemas de gestión de energía optimizan patrones de consumo y costos"
+        },
+        {
+          "english": "Grid modernization enhances reliability and accommodates distributed generation",
+          "spanish": "La modernización de red mejora confiabilidad y acomoda generación distribuida"
+        },
+        {
+          "english": "Virtual power plants aggregate distributed resources for grid services",
+          "spanish": "Las plantas de energía virtuales agregan recursos distribuidos para servicios de red"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Smart",
+          "suffix": "enable two-way communication and automated control of electrical power systems.",
+          "answer": "grids",
+          "selected": false,
+          "feedback": "Smart grids are essential for integrating renewable energy and improving efficiency."
+        },
+        {
+          "prefix": "Energy storage",
+          "suffix": "help balance supply and demand variations in renewable energy systems.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Energy storage is crucial for enabling high renewable energy penetration."
+        },
+        {
+          "prefix": "Virtual power",
+          "suffix": "coordinate multiple distributed energy resources as a single controllable entity.",
+          "answer": "plants",
+          "selected": false,
+          "feedback": "Virtual power plants optimize distributed energy resources through intelligent coordination."
+        }
+      ]
+    }
+  ]
+}
+]
+

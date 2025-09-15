@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 16,
+  "sections": [
+    {
+      "title": "Advanced Power Electronics and Motor Control → Electrónica de potencia avanzada y control de motores",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Variable frequency drives control motor speed efficiently",
+          "spanish": "Los variadores de frecuencia controlan velocidad de motores eficientemente"
+        },
+        {
+          "english": "Power conversion systems interface different voltage levels",
+          "spanish": "Los sistemas de conversión de potencia interfacen diferentes niveles de voltaje"
+        },
+        {
+          "english": "Pulse width modulation regulates power delivery",
+          "spanish": "La modulación por ancho de pulso regula entrega de potencia"
+        },
+        {
+          "english": "Semiconductor switches enable precise control",
+          "spanish": "Los interruptores semiconductores permiten control preciso"
+        },
+        {
+          "english": "Harmonic filtering reduces electrical noise",
+          "spanish": "El filtrado armónico reduce ruido eléctrico"
+        },
+        {
+          "english": "Motor protection systems prevent damage",
+          "spanish": "Los sistemas de protección de motores previenen daños"
+        },
+        {
+          "english": "Regenerative braking recovers energy",
+          "spanish": "El frenado regenerativo recupera energía"
+        },
+        {
+          "english": "Servo systems provide precise positioning",
+          "spanish": "Los sistemas servo proporcionan posicionamiento preciso"
+        },
+        {
+          "english": "Power factor correction improves efficiency",
+          "spanish": "La corrección del factor de potencia mejora eficiencia"
+        },
+        {
+          "english": "Thermal management prevents overheating",
+          "spanish": "La gestión térmica previene sobrecalentamiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do variable frequency drives improve motor efficiency?",
+          "options": ["They adjust motor speed to match load requirements", "They make motors run faster", "They use more energy"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of pulse width modulation?",
+          "options": ["To control the average power delivered to a load", "To make pulses wider", "To eliminate all pulses"],
+          "answer": 0
+        },
+        {
+          "audio": "How does regenerative braking work?",
+          "options": ["It converts kinetic energy back to electrical energy", "It wastes energy", "It only works when accelerating"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Variable frequency",
+          "suffix": "enable energy-efficient motor control across different operating conditions.",
+          "answer": "drives",
+          "selected": false,
+          "feedback": "VFDs optimize motor operation by adjusting frequency and voltage."
+        },
+        {
+          "prefix": "Pulse width",
+          "suffix": "provides precise control of power delivery to electrical loads.",
+          "answer": "modulation",
+          "selected": false,
+          "feedback": "PWM is a fundamental technique in modern power electronics."
+        },
+        {
+          "prefix": "Servo",
+          "suffix": "combine motors, encoders, and controllers for precise motion control.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Servo systems provide high-precision positioning and motion control."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Control Theory and Adaptive Systems → Teoría de control avanzada y sistemas adaptativos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Nonlinear control systems handle complex dynamics",
+          "spanish": "Los sistemas de control no lineales manejan dinámicas complejas"
+        },
+        {
+          "english": "Robust control maintains performance despite uncertainties",
+          "spanish": "El control robusto mantiene rendimiento a pesar de incertidumbres"
+        },
+        {
+          "english": "Adaptive algorithms adjust to changing system parameters",
+          "spanish": "Los algoritmos adaptativos se ajustan a parámetros cambiantes del sistema"
+        },
+        {
+          "english": "Model reference control tracks desired behaviors",
+          "spanish": "El control de referencia de modelo rastrea comportamientos deseados"
+        },
+        {
+          "english": "State space representation describes system dynamics",
+          "spanish": "La representación de espacio de estados describe dinámicas del sistema"
+        },
+        {
+          "english": "Observer design estimates unmeasured states",
+          "spanish": "El diseño de observadores estima estados no medidos"
+        },
+        {
+          "english": "Optimal control minimizes performance indices",
+          "spanish": "El control óptimo minimiza índices de rendimiento"
+        },
+        {
+          "english": "Sliding mode control provides robustness",
+          "spanish": "El control por modo deslizante proporciona robustez"
+        },
+        {
+          "english": "Neural network controllers learn complex mappings",
+          "spanish": "Los controladores de redes neuronales aprenden mapeos complejos"
+        },
+        {
+          "english": "Fuzzy logic handles imprecise information",
+          "spanish": "La lógica difusa maneja información imprecisa"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes nonlinear control different from linear control?",
+          "options": ["It can handle systems where output is not proportional to input", "It only works with straight lines", "It's always simpler"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is robust control important?",
+          "options": ["It maintains good performance even when system parameters change", "It makes systems stronger physically", "It eliminates all uncertainties"],
+          "answer": 0
+        },
+        {
+          "audio": "How do adaptive control systems work?",
+          "options": ["They automatically adjust their parameters as the system changes", "They never change", "They adapt to user preferences only"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Nonlinear",
+          "suffix": "are essential for many real-world applications with complex behavior.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "Nonlinear control addresses the complexity of real-world systems."
+        },
+        {
+          "prefix": "Adaptive",
+          "suffix": "automatically tune controller parameters for optimal performance.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Adaptive algorithms enable controllers to learn and improve over time."
+        },
+        {
+          "prefix": "State space",
+          "suffix": "provides a mathematical framework for modern control design.",
+          "answer": "representation",
+          "selected": false,
+          "feedback": "State space methods enable systematic control system design."
+        }
+      ]
+    },
+    {
+      "title": "Lean Manufacturing and Continuous Improvement → Manufactura esbelta y mejora continua",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Value stream mapping identifies waste in processes",
+          "spanish": "El mapeo de flujo de valor identifica desperdicios en procesos"
+        },
+        {
+          "english": "Kaizen methodology drives incremental improvements",
+          "spanish": "La metodología Kaizen impulsa mejoras incrementales"
+        },
+        {
+          "english": "Just-in-time production minimizes inventory waste",
+          "spanish": "La producción justo a tiempo minimiza desperdicio de inventario"
+        },
+        {
+          "english": "Single minute exchange of dies reduces setup time",
+          "spanish": "El intercambio de matrices en un solo minuto reduce tiempo de configuración"
+        },
+        {
+          "english": "Total productive maintenance maximizes equipment efficiency",
+          "spanish": "El mantenimiento productivo total maximiza eficiencia de equipos"
+        },
+        {
+          "english": "Poka-yoke techniques prevent defects",
+          "spanish": "Las técnicas poka-yoke previenen defectos"
+        },
+        {
+          "english": "Standardized work ensures consistent processes",
+          "spanish": "El trabajo estandarizado asegura procesos consistentes"
+        },
+        {
+          "english": "Cellular manufacturing improves workflow",
+          "spanish": "La manufactura celular mejora flujo de trabajo"
+        },
+        {
+          "english": "Pull systems respond to customer demand",
+          "spanish": "Los sistemas de arrastre responden a demanda del cliente"
+        },
+        {
+          "english": "Visual management enhances process transparency",
+          "spanish": "La gestión visual mejora transparencia del proceso"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main goal of lean manufacturing?",
+          "options": ["To eliminate waste while maintaining or improving quality", "To make products lighter", "To reduce workforce"],
+          "answer": 0
+        },
+        {
+          "audio": "How does value stream mapping help?",
+          "options": ["It visualizes all steps in a process to identify inefficiencies", "It creates more steps", "It maps physical locations only"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the Kaizen philosophy?",
+          "options": ["Continuous improvement through small, incremental changes", "Making large changes quickly", "Avoiding all changes"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Value stream",
+          "suffix": "visualizes all activities required to deliver products to customers.",
+          "answer": "mapping",
+          "selected": false,
+          "feedback": "Value stream mapping reveals opportunities for waste elimination."
+        },
+        {
+          "prefix": "Just-in-time",
+          "suffix": "delivers materials exactly when needed to minimize inventory costs.",
+          "answer": "production",
+          "selected": false,
+          "feedback": "JIT production reduces waste while maintaining production flow."
+        },
+        {
+          "prefix": "Poka-yoke",
+          "suffix": "build quality into processes by preventing errors before they occur.",
+          "answer": "techniques",
+          "selected": false,
+          "feedback": "Poka-yoke methods make it impossible or obvious to make mistakes."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Simulation and Modeling → Simulación y modelado avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Computational fluid dynamics models fluid behavior",
+          "spanish": "La dinámica de fluidos computacional modela comportamiento de fluidos"
+        },
+        {
+          "english": "Finite element methods solve complex engineering problems",
+          "spanish": "Los métodos de elementos finitos resuelven problemas complejos de ingeniería"
+        },
+        {
+          "english": "Multiphysics simulation couples different phenomena",
+          "spanish": "La simulación multifísica acopla diferentes fenómenos"
+        },
+        {
+          "english": "Monte Carlo methods handle uncertainty quantification",
+          "spanish": "Los métodos Monte Carlo manejan cuantificación de incertidumbre"
+        },
+        {
+          "english": "High-performance computing accelerates simulations",
+          "spanish": "La computación de alto rendimiento acelera simulaciones"
+        },
+        {
+          "english": "Model validation ensures simulation accuracy",
+          "spanish": "La validación de modelos asegura precisión de simulación"
+        },
+        {
+          "english": "Optimization algorithms find best design solutions",
+          "spanish": "Los algoritmos de optimización encuentran mejores soluciones de diseño"
+        },
+        {
+          "english": "Parametric studies explore design spaces",
+          "spanish": "Los estudios paramétricos exploran espacios de diseño"
+        },
+        {
+          "english": "Virtual testing reduces physical prototyping needs",
+          "spanish": "Las pruebas virtuales reducen necesidades de prototipado físico"
+        },
+        {
+          "english": "Real-time simulation enables hardware-in-the-loop testing",
+          "spanish": "La simulación en tiempo real permite pruebas con hardware en el bucle"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does computational fluid dynamics help engineers understand?",
+          "options": ["How fluids behave in complex geometries and conditions", "Only the color of fluids", "How to eliminate all fluids"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is model validation important in simulation?",
+          "options": ["It ensures the simulation accurately represents real-world behavior", "It makes models more complex", "It slows down simulation"],
+          "answer": 0
+        },
+        {
+          "audio": "How do Monte Carlo methods handle uncertainty?",
+          "options": ["They use random sampling to explore possible outcomes", "They eliminate uncertainty", "They make everything certain"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Emerging Technologies in Manufacturing → Tecnologías emergentes en manufactura",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Digital twins enable virtual manufacturing optimization",
+          "spanish": "Los gemelos digitales permiten optimización virtual de manufactura"
+        },
+        {
+          "english": "Artificial intelligence optimizes production scheduling",
+          "spanish": "La inteligencia artificial optimiza programación de producción"
+        },
+        {
+          "english": "Collaborative robots work safely with humans",
+          "spanish": "Los robots colaborativos trabajan de manera segura con humanos"
+        },
+        {
+          "english": "Edge computing processes data at source locations",
+          "spanish": "La computación de borde procesa datos en ubicaciones de origen"
+        },
+        {
+          "english": "Advanced materials enable new manufacturing possibilities",
+          "spanish": "Los materiales avanzados permiten nuevas posibilidades de manufactura"
+        },
+        {
+          "english": "Autonomous systems reduce human intervention",
+          "spanish": "Los sistemas autónomos reducen intervención humana"
+        },
+        {
+          "english": "Blockchain technology ensures supply chain transparency",
+          "spanish": "La tecnología blockchain asegura transparencia de cadena de suministro"
+        },
+        {
+          "english": "Augmented reality assists assembly operations",
+          "spanish": "La realidad aumentada asiste operaciones de ensamble"
+        },
+        {
+          "english": "Predictive analytics prevent equipment failures",
+          "spanish": "Los análisis predictivos previenen fallas de equipos"
+        },
+        {
+          "english": "Sustainable manufacturing reduces environmental impact",
+          "spanish": "La manufactura sostenible reduce impacto ambiental"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Digital",
+          "suffix": "create virtual replicas of physical manufacturing systems.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins enable optimization and testing without disrupting real operations."
+        },
+        {
+          "prefix": "Collaborative",
+          "suffix": "combine human flexibility with robotic precision and consistency.",
+          "answer": "robots",
+          "selected": false,
+          "feedback": "Cobots enable safe human-robot collaboration in manufacturing."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "use data patterns to forecast when maintenance will be needed.",
+          "answer": "analytics",
+          "selected": false,
+          "feedback": "Predictive analytics enable proactive maintenance strategies."
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 4,
+  "sections": [
+    {
+      "title": "Tools and Equipment Names → Nombres de herramientas y equipo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Screwdriver",
+          "spanish": "Destornillador"
+        },
+        {
+          "english": "Wrench",
+          "spanish": "Llave inglesa"
+        },
+        {
+          "english": "Pliers",
+          "spanish": "Alicates"
+        },
+        {
+          "english": "Hammer",
+          "spanish": "Martillo"
+        },
+        {
+          "english": "Drill",
+          "spanish": "Taladro"
+        },
+        {
+          "english": "Measuring tape",
+          "spanish": "Cinta métrica"
+        },
+        {
+          "english": "Level",
+          "spanish": "Nivel"
+        },
+        {
+          "english": "Wire cutters",
+          "spanish": "Cortadores de alambre"
+        },
+        {
+          "english": "Multimeter",
+          "spanish": "Multímetro"
+        },
+        {
+          "english": "Safety gloves",
+          "spanish": "Guantes de seguridad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Which tool do you use to measure voltage?",
+          "options": ["Multimeter", "Level", "Measuring tape"],
+          "answer": 0
+        },
+        {
+          "audio": "What do you need to cut wires?",
+          "options": ["Pliers", "Wire cutters", "Screwdriver"],
+          "answer": 1
+        },
+        {
+          "audio": "Which tool helps you make holes?",
+          "options": ["Hammer", "Drill", "Wrench"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Use a",
+          "suffix": "to tighten the bolts.",
+          "answer": "wrench",
+          "selected": false,
+          "feedback": "A wrench is used to grip and turn nuts and bolts."
+        },
+        {
+          "prefix": "Always wear",
+          "suffix": "when handling sharp objects.",
+          "answer": "safety gloves",
+          "selected": false,
+          "feedback": "Safety gloves protect your hands from cuts and injuries."
+        },
+        {
+          "prefix": "Check if the surface is straight with a",
+          "suffix": ".",
+          "answer": "level",
+          "selected": false,
+          "feedback": "A level tool helps you check if surfaces are perfectly horizontal or vertical."
+        }
+      ]
+    },
+    {
+      "title": "Describing Tool Functions → Describiendo funciones de herramientas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "This tool is used for cutting",
+          "spanish": "Esta herramienta se usa para cortar"
+        },
+        {
+          "english": "It measures electrical current",
+          "spanish": "Mide corriente eléctrica"
+        },
+        {
+          "english": "We use it to tighten screws",
+          "spanish": "La usamos para apretar tornillos"
+        },
+        {
+          "english": "It helps you grip objects",
+          "spanish": "Te ayuda a agarrar objetos"
+        },
+        {
+          "english": "This equipment protects workers",
+          "spanish": "Este equipo protege a los trabajadores"
+        },
+        {
+          "english": "It's designed for precision work",
+          "spanish": "Está diseñada para trabajo de precisión"
+        },
+        {
+          "english": "The function is to measure distance",
+          "spanish": "La función es medir distancia"
+        },
+        {
+          "english": "It operates with electricity",
+          "spanish": "Funciona con electricidad"
+        },
+        {
+          "english": "This is a manual tool",
+          "spanish": "Esta es una herramienta manual"
+        },
+        {
+          "english": "It requires proper maintenance",
+          "spanish": "Requiere mantenimiento adecuado"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main function of a multimeter?",
+          "options": ["To cut wires", "To measure electrical values", "To drill holes"],
+          "answer": 1
+        },
+        {
+          "audio": "How do pliers help in electrical work?",
+          "options": ["They measure voltage", "They grip and twist wires", "They provide power"],
+          "answer": 1
+        },
+        {
+          "audio": "Why do we use safety equipment?",
+          "options": ["To work faster", "To protect workers", "To save money"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "A screwdriver is",
+          "suffix": "tightening and loosening screws.",
+          "answer": "used for",
+          "selected": false,
+          "feedback": "We use 'used for' + gerund to describe tool functions."
+        },
+        {
+          "prefix": "This tool",
+          "suffix": "with compressed air.",
+          "answer": "operates",
+          "selected": false,
+          "feedback": "Use 'operates' to describe how a tool or machine works."
+        },
+        {
+          "prefix": "The main",
+          "suffix": "of this equipment is protection.",
+          "answer": "function",
+          "selected": false,
+          "feedback": "Function describes the primary purpose or role of a tool."
+        }
+      ]
+    },
+    {
+      "title": "Equipment Maintenance and Care → Mantenimiento y cuidado del equipo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Clean the tools after use",
+          "spanish": "Limpie las herramientas después del uso"
+        },
+        {
+          "english": "Store equipment properly",
+          "spanish": "Almacene el equipo adecuadamente"
+        },
+        {
+          "english": "Check for damage regularly",
+          "spanish": "Revise daños regularmente"
+        },
+        {
+          "english": "Oil the moving parts",
+          "spanish": "Aceite las partes móviles"
+        },
+        {
+          "english": "Replace worn components",
+          "spanish": "Reemplace componentes desgastados"
+        },
+        {
+          "english": "Follow maintenance schedule",
+          "spanish": "Siga el programa de mantenimiento"
+        },
+        {
+          "english": "Report any problems immediately",
+          "spanish": "Reporte cualquier problema inmediatamente"
+        },
+        {
+          "english": "Keep tools organized",
+          "spanish": "Mantenga las herramientas organizadas"
+        },
+        {
+          "english": "Use proper storage containers",
+          "spanish": "Use contenedores de almacenamiento apropiados"
+        },
+        {
+          "english": "Calibrate measuring instruments",
+          "spanish": "Calibre los instrumentos de medición"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How often should you clean your tools?",
+          "options": ["Once a month", "After each use", "Only when dirty"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you do if you find a damaged tool?",
+          "options": ["Use it carefully", "Report it immediately", "Try to fix it yourself"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is proper storage important?",
+          "options": ["To save space", "To prevent damage and loss", "To look organized"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "your tools after each project.",
+          "answer": "clean",
+          "selected": false,
+          "feedback": "Cleaning tools after use prevents corrosion and maintains their effectiveness."
+        },
+        {
+          "prefix": "Moving parts need regular",
+          "suffix": "to work smoothly.",
+          "answer": "oiling",
+          "selected": false,
+          "feedback": "Oiling moving parts reduces friction and prevents wear."
+        },
+        {
+          "prefix": "Measuring instruments must be",
+          "suffix": "for accurate readings.",
+          "answer": "calibrated",
+          "selected": false,
+          "feedback": "Calibration ensures measuring instruments provide precise and accurate results."
+        }
+      ]
+    },
+    {
+      "title": "Tool Safety and Handling → Seguridad y manejo de herramientas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Wear safety goggles",
+          "spanish": "Use gafas de seguridad"
+        },
+        {
+          "english": "Handle tools carefully",
+          "spanish": "Maneje las herramientas con cuidado"
+        },
+        {
+          "english": "Never use damaged equipment",
+          "spanish": "Nunca use equipo dañado"
+        },
+        {
+          "english": "Keep fingers away from sharp edges",
+          "spanish": "Mantenga los dedos lejos de los bordes afilados"
+        },
+        {
+          "english": "Turn off power before maintenance",
+          "spanish": "Apague la energía antes del mantenimiento"
+        },
+        {
+          "english": "Use the right tool for the job",
+          "spanish": "Use la herramienta correcta para el trabajo"
+        },
+        {
+          "english": "Read safety instructions first",
+          "spanish": "Lea las instrucciones de seguridad primero"
+        },
+        {
+          "english": "Work in well-lit areas",
+          "spanish": "Trabaje en áreas bien iluminadas"
+        },
+        {
+          "english": "Keep workspace clean and organized",
+          "spanish": "Mantenga el área de trabajo limpia y organizada"
+        },
+        {
+          "english": "Report unsafe conditions",
+          "spanish": "Reporte condiciones inseguras"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should you do before using electrical tools?",
+          "options": ["Check the power supply", "Clean the workspace", "Both options"],
+          "answer": 2
+        },
+        {
+          "audio": "When should you wear safety goggles?",
+          "options": ["Only when cutting", "When working with chemicals", "Whenever there's risk to eyes"],
+          "answer": 2
+        },
+        {
+          "audio": "What's the first rule of tool safety?",
+          "options": ["Work fast", "Use proper protective equipment", "Ask for help"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Workshop Organization → Organización del taller",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Tool cabinet",
+          "spanish": "Gabinete de herramientas"
+        },
+        {
+          "english": "Workbench",
+          "spanish": "Mesa de trabajo"
+        },
+        {
+          "english": "Storage shelves",
+          "spanish": "Estantes de almacenamiento"
+        },
+        {
+          "english": "Parts bins",
+          "spanish": "Contenedores de partes"
+        },
+        {
+          "english": "Tool rack",
+          "spanish": "Estante de herramientas"
+        },
+        {
+          "english": "Label everything clearly",
+          "spanish": "Etiquete todo claramente"
+        },
+        {
+          "english": "Return tools to their place",
+          "spanish": "Devuelva las herramientas a su lugar"
+        },
+        {
+          "english": "Inventory list",
+          "spanish": "Lista de inventario"
+        },
+        {
+          "english": "Check-out system",
+          "spanish": "Sistema de préstamo"
+        },
+        {
+          "english": "Keep aisles clear",
+          "spanish": "Mantenga los pasillos despejados"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Each tool should have a",
+          "suffix": "place in the workshop.",
+          "answer": "designated",
+          "selected": false,
+          "feedback": "A designated place means each tool has a specific location where it belongs."
+        },
+        {
+          "prefix": "Use",
+          "suffix": "to identify where tools belong.",
+          "answer": "labels",
+          "selected": false,
+          "feedback": "Labels help everyone know where tools and equipment should be stored."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "tools to their proper location after use.",
+          "answer": "return",
+          "selected": false,
+          "feedback": "Returning tools to their proper place keeps the workshop organized and tools easy to find."
+        }
+      ]
+    }
+  ]
+}
+]
+

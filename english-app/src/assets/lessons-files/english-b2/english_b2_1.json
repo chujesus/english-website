@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "B2",
+    "lessonId": 1,
+    "sections": [
+      {
+        "title": "Professional Emails and Technical Documentation → Correos profesionales y documentación técnica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "I am writing to follow up on our previous discussion regarding the implementation timeline", "spanish": "Escribo para dar seguimiento a nuestra discusión previa respecto al cronograma de implementación" },
+          { "english": "The comprehensive technical documentation encompasses all aspects of system operation and maintenance", "spanish": "La documentación técnica comprensiva abarca todos los aspectos de operación y mantenimiento del sistema" },
+          { "english": "Could you please provide clarification on the specific requirements outlined in your proposal?", "spanish": "¿Podrías proporcionar aclaración sobre los requisitos específicos delineados en tu propuesta?" },
+          { "english": "The attached specifications detail the performance parameters and operational constraints", "spanish": "Las especificaciones adjuntas detallan los parámetros de rendimiento y restricciones operacionales" },
+          { "english": "We have thoroughly reviewed the technical proposal and identified several areas requiring further discussion", "spanish": "Hemos revisado a fondo la propuesta técnica e identificado varias áreas que requieren discusión adicional" },
+          { "english": "The project deliverables must adhere to industry standards and regulatory compliance requirements", "spanish": "Los entregables del proyecto deben adherirse a estándares industriales y requisitos de cumplimiento regulatorio" },
+          { "english": "I would appreciate the opportunity to discuss the technical implications of these modifications", "spanish": "Agradecería la oportunidad de discutir las implicaciones técnicas de estas modificaciones" },
+          { "english": "The documentation revision incorporates feedback from stakeholders and addresses previous concerns", "spanish": "La revisión de documentación incorpora retroalimentación de stakeholders y aborda preocupaciones previas" },
+          { "english": "Please find enclosed the updated technical drawings with dimensional specifications and material requirements", "spanish": "Por favor encuentra adjuntos los dibujos técnicos actualizados con especificaciones dimensionales y requisitos de materiales" },
+          { "english": "The interdisciplinary collaboration has resulted in significant improvements to the original design concept", "spanish": "La colaboración interdisciplinaria ha resultado en mejoras significativas al concepto de diseño original" },
+          { "english": "We must ensure that all documentation maintains consistency with established formatting and style guidelines", "spanish": "Debemos asegurar que toda la documentación mantenga consistencia con pautas establecidas de formato y estilo" },
+          { "english": "The technical report synthesizes research findings and provides actionable recommendations for implementation", "spanish": "El reporte técnico sintetiza hallazgos de investigación y proporciona recomendaciones accionables para implementación" },
+          { "english": "I look forward to your response and the opportunity to advance this initiative collaboratively", "spanish": "Espero tu respuesta y la oportunidad de avanzar esta iniciativa colaborativamente" },
+          { "english": "The documentation control system ensures version management and maintains historical records", "spanish": "El sistema de control de documentación asegura gestión de versiones y mantiene registros históricos" },
+          { "english": "The executive summary highlights key findings and strategic recommendations for organizational consideration", "spanish": "El resumen ejecutivo destaca hallazgos clave y recomendaciones estratégicas para consideración organizacional" }
+        ],
+        "listening": [
+          {
+            "audio": "The technical specification document requires meticulous attention to detail and adherence to industry standards",
+            "options": ["meticulous attention to detail and adherence to industry standards", "basic information and general guidelines only", "simple descriptions and minimal requirements", "informal notes and personal observations"],
+            "answer": "meticulous attention to detail and adherence to industry standards"
+          },
+          {
+            "audio": "The comprehensive project proposal encompasses scope definition, resource allocation, and risk mitigation strategies",
+            "options": ["scope definition, resource allocation, and risk mitigation strategies", "basic project description only", "simple timeline and budget", "general objectives and goals"],
+            "answer": "scope definition, resource allocation, and risk mitigation strategies"
+          },
+          {
+            "audio": "Effective technical communication bridges the gap between complex engineering concepts and practical implementation",
+            "options": ["bridges the gap between complex engineering concepts and practical implementation", "simplifies all technical information", "eliminates unnecessary details completely", "focuses only on theoretical aspects"],
+            "answer": "bridges the gap between complex engineering concepts and practical implementation"
+          },
+          {
+            "audio": "The documentation review process involves multiple stakeholders and iterative refinement cycles",
+            "options": ["multiple stakeholders and iterative refinement cycles", "single reviewer and final approval", "automated checking and validation", "informal feedback and suggestions"],
+            "answer": "multiple stakeholders and iterative refinement cycles"
+          },
+          {
+            "audio": "Professional correspondence should maintain formal tone while conveying technical information clearly and concisely",
+            "options": ["formal tone while conveying technical information clearly", "casual style with minimal technical detail", "complex language with extensive jargon", "informal approach with personal opinions"],
+            "answer": "formal tone while conveying technical information clearly"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The technical", "The comprehensive", "The detailed"],
+            "suffix": "documentation serves as the foundation for project execution.",
+            "answer": "The technical",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Professional correspondence", "Business communication", "Formal writing"],
+            "suffix": "requires clarity, precision, and appropriate tone.",
+            "answer": "Professional correspondence",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The project", "The initiative", "The proposal"],
+            "suffix": "specifications must align with organizational objectives.",
+            "answer": "The project",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Stakeholder feedback", "Client input", "User comments"],
+            "suffix": "enhances the quality and relevance of documentation.",
+            "answer": "Stakeholder feedback",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Version control", "Document management", "Change tracking"],
+            "suffix": "ensures consistency and maintains historical records.",
+            "answer": "Version control",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technical Presentations and Executive Communication → Presentaciones técnicas y comunicación ejecutiva",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Today's presentation will examine the strategic implications of emerging technologies on our operational framework", "spanish": "La presentación de hoy examinará las implicaciones estratégicas de tecnologías emergentes en nuestro marco operacional" },
+          { "english": "The data visualization clearly demonstrates the correlation between process optimization and productivity enhancement", "spanish": "La visualización de datos demuestra claramente la correlación entre optimización de procesos y mejora de productividad" },
+          { "english": "I would like to direct your attention to the cost-benefit analysis presented in the executive summary", "spanish": "Me gustaría dirigir su atención al análisis de costo-beneficio presentado en el resumen ejecutivo" },
+          { "english": "The implementation roadmap encompasses multiple phases with clearly defined milestones and deliverables", "spanish": "El mapa de ruta de implementación abarca múltiples fases con hitos y entregables claramente definidos" },
+          { "english": "Our research methodology incorporates both quantitative analysis and qualitative assessment techniques", "spanish": "Nuestra metodología de investigación incorpora tanto análisis cuantitativo como técnicas de evaluación cualitativa" },
+          { "english": "The competitive analysis reveals significant opportunities for market differentiation and strategic positioning", "spanish": "El análisis competitivo revela oportunidades significativas para diferenciación de mercado y posicionamiento estratégico" },
+          { "english": "Stakeholder engagement throughout the project lifecycle ensures alignment with organizational priorities", "spanish": "El compromiso de stakeholders a través del ciclo de vida del proyecto asegura alineación con prioridades organizacionales" },
+          { "english": "The return on investment projections indicate substantial value creation potential over the next fiscal period", "spanish": "Las proyecciones de retorno de inversión indican potencial sustancial de creación de valor durante el próximo período fiscal" },
+          { "english": "Risk mitigation strategies have been integrated throughout all phases of the proposed implementation", "spanish": "Las estrategias de mitigación de riesgo han sido integradas a través de todas las fases de la implementación propuesta" },
+          { "english": "The scalability assessment demonstrates the solution's capacity to accommodate future growth requirements", "spanish": "La evaluación de escalabilidad demuestra la capacidad de la solución para acomodar requisitos de crecimiento futuro" },
+          { "english": "Performance metrics will be continuously monitored to ensure optimal system operation and efficiency", "spanish": "Las métricas de rendimiento serán monitoreadas continuamente para asegurar operación y eficiencia óptimas del sistema" },
+          { "english": "The change management strategy addresses organizational readiness and facilitates smooth transition processes", "spanish": "La estrategia de gestión de cambio aborda preparación organizacional y facilita procesos de transición suaves" },
+          { "english": "I welcome your questions and look forward to engaging in productive discussion about these recommendations", "spanish": "Doy la bienvenida a sus preguntas y espero participar en discusión productiva sobre estas recomendaciones" },
+          { "english": "The comprehensive training program ensures that personnel possess the necessary competencies for successful implementation", "spanish": "El programa de entrenamiento comprensivo asegura que el personal posea las competencias necesarias para implementación exitosa" },
+          { "english": "Executive sponsorship and leadership commitment are critical success factors for this transformational initiative", "spanish": "El patrocinio ejecutivo y compromiso de liderazgo son factores críticos de éxito para esta iniciativa transformacional" }
+        ],
+        "listening": [
+          {
+            "audio": "The executive presentation should focus on strategic implications rather than technical minutiae",
+            "options": ["strategic implications rather than technical minutiae", "detailed technical specifications only", "operational procedures exclusively", "financial calculations primarily"],
+            "answer": "strategic implications rather than technical minutiae"
+          },
+          {
+            "audio": "The business case must articulate clear value propositions and quantifiable benefits for stakeholder consideration",
+            "options": ["clear value propositions and quantifiable benefits", "technical features and specifications", "operational details and procedures", "implementation timelines exclusively"],
+            "answer": "clear value propositions and quantifiable benefits"
+          },
+          {
+            "audio": "Effective presentation design balances visual appeal with informational content to maintain audience engagement",
+            "options": ["balances visual appeal with informational content", "prioritizes aesthetic design over content", "focuses exclusively on data presentation", "emphasizes text-heavy slides"],
+            "answer": "balances visual appeal with informational content"
+          },
+          {
+            "audio": "The Q&A session provides opportunities for clarification and demonstrates subject matter expertise",
+            "options": ["provides opportunities for clarification and demonstrates expertise", "should be avoided in formal presentations", "distracts from the main message", "complicates the presentation flow"],
+            "answer": "provides opportunities for clarification and demonstrates expertise"
+          },
+          {
+            "audio": "Executive communication requires adaptation of technical content to audience knowledge levels and interests",
+            "options": ["adaptation of technical content to audience knowledge levels", "identical presentation for all audiences", "maximum technical detail regardless of audience", "simplified content without technical substance"],
+            "answer": "adaptation of technical content to audience knowledge levels"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The presentation", "The briefing", "The communication"],
+            "suffix": "strategy must align with executive expectations and objectives.",
+            "answer": "The presentation",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Strategic recommendations", "Executive proposals", "Business initiatives"],
+            "suffix": "require comprehensive analysis and clear justification.",
+            "answer": "Strategic recommendations",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Visual aids", "Graphical elements", "Presentation materials"],
+            "suffix": "enhance understanding and maintain audience engagement.",
+            "answer": "Visual aids",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Executive approval", "Leadership support", "Management endorsement"],
+            "suffix": "is essential for successful project implementation.",
+            "answer": "Executive approval",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The business case", "The value proposition", "The strategic rationale"],
+            "suffix": "must clearly articulate benefits and return on investment.",
+            "answer": "The business case",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Advanced Troubleshooting Methodologies → Metodologías avanzadas de solución de problemas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Systematic troubleshooting methodologies enable efficient identification and resolution of complex technical issues", "spanish": "Las metodologías sistemáticas de solución de problemas permiten identificación y resolución eficiente de problemas técnicos complejos" },
+          { "english": "Root cause analysis techniques delve beyond superficial symptoms to identify underlying systemic factors", "spanish": "Las técnicas de análisis de causa raíz profundizan más allá de síntomas superficiales para identificar factores sistémicos subyacentes" },
+          { "english": "The implementation of predictive analytics facilitates proactive problem prevention rather than reactive responses", "spanish": "La implementación de analítica predictiva facilita prevención proactiva de problemas en lugar de respuestas reactivas" },
+          { "english": "Fault tree analysis provides structured methodology for investigating cascading failures in complex systems", "spanish": "El análisis de árbol de fallas proporciona metodología estructurada para investigar fallas en cascada en sistemas complejos" },
+          { "english": "The correlation between environmental variables and system performance requires comprehensive data analysis", "spanish": "La correlación entre variables ambientales y rendimiento del sistema requiere análisis de datos comprensivo" },
+          { "english": "Advanced diagnostic equipment incorporates artificial intelligence algorithms to enhance problem detection accuracy", "spanish": "El equipo de diagnóstico avanzado incorpora algoritmos de inteligencia artificial para mejorar precisión de detección de problemas" },
+          { "english": "Failure mode and effects analysis systematically examines potential failure mechanisms and their consequences", "spanish": "El análisis de modo de falla y efectos examina sistemáticamente mecanismos de falla potenciales y sus consecuencias" },
+          { "english": "The establishment of performance baselines enables early detection of deviations from normal operating parameters", "spanish": "El establecimiento de líneas base de rendimiento permite detección temprana de desviaciones de parámetros operacionales normales" },
+          { "english": "Condition monitoring technologies provide continuous surveillance of critical system components", "spanish": "Las tecnologías de monitoreo de condición proporcionan vigilancia continua de componentes críticos del sistema" },
+          { "english": "Statistical process control methodologies identify variations that may indicate emerging problems", "spanish": "Las metodologías de control estadístico de procesos identifican variaciones que pueden indicar problemas emergentes" },
+          { "english": "The integration of remote diagnostic capabilities enables expert support without physical presence requirements", "spanish": "La integración de capacidades de diagnóstico remoto permite apoyo experto sin requisitos de presencia física" },
+          { "english": "Multidisciplinary problem-solving teams leverage diverse expertise to address complex technical challenges", "spanish": "Los equipos multidisciplinarios de solución de problemas aprovechan experiencia diversa para abordar desafíos técnicos complejos" },
+          { "english": "Knowledge management systems capture institutional wisdom and facilitate organizational learning from past experiences", "spanish": "Los sistemas de gestión de conocimiento capturan sabiduría institucional y facilitan aprendizaje organizacional de experiencias pasadas" },
+          { "english": "Continuous improvement processes incorporate lessons learned from troubleshooting activities into preventive measures", "spanish": "Los procesos de mejora continua incorporan lecciones aprendidas de actividades de solución de problemas en medidas preventivas" },
+          { "english": "The documentation of troubleshooting procedures creates valuable reference materials for future problem-solving efforts", "spanish": "La documentación de procedimientos de solución de problemas crea materiales de referencia valiosos para esfuerzos futuros de resolución de problemas" }
+        ],
+        "listening": [
+          {
+            "audio": "The sophisticated monitoring system utilizes machine learning algorithms to detect anomalous patterns in operational data",
+            "options": ["machine learning algorithms to detect anomalous patterns", "basic threshold monitoring only", "manual observation techniques", "simple alarm systems exclusively"],
+            "answer": "machine learning algorithms to detect anomalous patterns"
+          },
+          {
+            "audio": "The five-why methodology systematically explores causal relationships to identify fundamental problem sources",
+            "options": ["systematically explores causal relationships to identify fundamental sources", "provides quick fixes for immediate problems", "focuses on symptoms rather than causes", "eliminates the need for detailed investigation"],
+            "answer": "systematically explores causal relationships to identify fundamental sources"
+          },
+          {
+            "audio": "Vibration analysis techniques can detect mechanical problems in rotating equipment before catastrophic failure occurs",
+            "options": ["detect mechanical problems before catastrophic failure occurs", "only identify problems after they happen", "require equipment shutdown for analysis", "provide basic operational status only"],
+            "answer": "detect mechanical problems before catastrophic failure occurs"
+          },
+          {
+            "audio": "The implementation of digital twins enables virtual troubleshooting and predictive maintenance strategies",
+            "options": ["virtual troubleshooting and predictive maintenance strategies", "basic equipment monitoring only", "traditional maintenance scheduling", "reactive repair approaches exclusively"],
+            "answer": "virtual troubleshooting and predictive maintenance strategies"
+          },
+          {
+            "audio": "Cross-functional troubleshooting teams bring together expertise from multiple disciplines to solve complex problems",
+            "options": ["expertise from multiple disciplines to solve complex problems", "single-specialty technical support only", "external consultant services exclusively", "automated problem-solving systems"],
+            "answer": "expertise from multiple disciplines to solve complex problems"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Advanced troubleshooting", "Sophisticated problem-solving", "Complex diagnostic"],
+            "suffix": "methodologies require systematic approaches and analytical thinking.",
+            "answer": "Advanced troubleshooting",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Root cause", "Fundamental", "Underlying"],
+            "suffix": "analysis prevents recurrence of similar problems.",
+            "answer": "Root cause",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Predictive analytics", "Forecasting algorithms", "Prognostic systems"],
+            "suffix": "enable proactive maintenance strategies.",
+            "answer": "Predictive analytics",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Condition monitoring", "Performance surveillance", "System observation"],
+            "suffix": "provides early warning of potential problems.",
+            "answer": "Condition monitoring",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Knowledge management", "Information systems", "Learning platforms"],
+            "suffix": "capture and share troubleshooting expertise.",
+            "answer": "Knowledge management",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Project Planning and Management Excellence → Planificación y gestión de proyectos de excelencia",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Comprehensive project planning establishes clear objectives, scope definition, and resource allocation strategies", "spanish": "La planificación comprensiva de proyectos establece objetivos claros, definición de alcance y estrategias de asignación de recursos" },
+          { "english": "The critical path methodology identifies the sequence of activities that determines overall project duration", "spanish": "La metodología de ruta crítica identifica la secuencia de actividades que determina la duración general del proyecto" },
+          { "english": "Risk management frameworks systematically identify, assess, and mitigate potential threats to project success", "spanish": "Los marcos de gestión de riesgo identifican, evalúan y mitigan sistemáticamente amenazas potenciales al éxito del proyecto" },
+          { "english": "Stakeholder engagement strategies ensure alignment between project deliverables and organizational expectations", "spanish": "Las estrategias de compromiso de stakeholders aseguran alineación entre entregables del proyecto y expectativas organizacionales" },
+          { "english": "The work breakdown structure decomposes complex projects into manageable tasks and work packages", "spanish": "La estructura de desglose del trabajo descompone proyectos complejos en tareas manejables y paquetes de trabajo" },
+          { "english": "Agile methodologies emphasize iterative development and adaptive responses to changing requirements", "spanish": "Las metodologías ágiles enfatizan desarrollo iterativo y respuestas adaptativas a requisitos cambiantes" },
+          { "english": "Quality assurance processes are integrated throughout the project lifecycle to ensure deliverable excellence", "spanish": "Los procesos de aseguramiento de calidad están integrados a través del ciclo de vida del proyecto para asegurar excelencia de entregables" },
+          { "english": "Resource optimization techniques maximize efficiency while maintaining quality standards and timeline adherence", "spanish": "Las técnicas de optimización de recursos maximizan eficiencia mientras mantienen estándares de calidad y adherencia al cronograma" },
+          { "english": "Change management protocols provide structured approaches for handling scope modifications and requirement evolution", "spanish": "Los protocolos de gestión de cambio proporcionan enfoques estructurados para manejar modificaciones de alcance y evolución de requisitos" },
+          { "english": "Performance measurement systems track progress against established baselines and identify corrective actions", "spanish": "Los sistemas de medición de rendimiento rastrean progreso contra líneas base establecidas e identifican acciones correctivas" },
+          { "english": "Cross-functional collaboration enhances problem-solving capabilities and promotes knowledge sharing", "spanish": "La colaboración interfuncional mejora capacidades de solución de problemas y promueve intercambio de conocimiento" },
+          { "english": "Earned value management provides quantitative analysis of project performance and forecasting capabilities", "spanish": "La gestión de valor ganado proporciona análisis cuantitativo de rendimiento del proyecto y capacidades de pronóstico" },
+          { "english": "Lessons learned documentation captures valuable insights for continuous improvement and future project enhancement", "spanish": "La documentación de lecciones aprendidas captura insights valiosos para mejora continua y mejora de proyectos futuros" },
+          { "english": "Technology integration accelerates project execution while maintaining accuracy and quality standards", "spanish": "La integración de tecnología acelera ejecución de proyectos mientras mantiene precisión y estándares de calidad" },
+          { "english": "Portfolio management aligns multiple projects with strategic organizational objectives and resource constraints", "spanish": "La gestión de portafolio alinea múltiples proyectos con objetivos organizacionales estratégicos y restricciones de recursos" }
+        ],
+        "listening": [
+          {
+            "audio": "The project management office provides standardized methodologies and governance frameworks for organizational projects",
+            "options": ["standardized methodologies and governance frameworks", "basic project tracking only", "simple scheduling tools", "informal coordination approaches"],
+            "answer": "standardized methodologies and governance frameworks"
+          },
+          {
+            "audio": "Effective scope management prevents scope creep while accommodating legitimate requirement changes",
+            "options": ["prevents scope creep while accommodating legitimate requirement changes", "rigidly maintains original requirements", "allows unlimited scope expansion", "ignores changing requirements completely"],
+            "answer": "prevents scope creep while accommodating legitimate requirement changes"
+          },
+          {
+            "audio": "The project charter formally authorizes the project and defines high-level objectives and constraints",
+            "options": ["formally authorizes the project and defines high-level objectives", "provides detailed technical specifications", "contains comprehensive budgetary information", "includes complete project schedules"],
+            "answer": "formally authorizes the project and defines high-level objectives"
+          },
+          {
+            "audio": "Continuous monitoring and control processes enable real-time visibility into project health and performance",
+            "options": ["real-time visibility into project health and performance", "periodic status updates only", "end-of-phase reporting exclusively", "informal progress communication"],
+            "answer": "real-time visibility into project health and performance"
+          },
+          {
+            "audio": "The project closure phase includes deliverable acceptance, knowledge transfer, and performance evaluation",
+            "options": ["deliverable acceptance, knowledge transfer, and performance evaluation", "simple project termination only", "basic documentation filing", "immediate resource reallocation"],
+            "answer": "deliverable acceptance, knowledge transfer, and performance evaluation"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Project planning", "Initiative design", "Program development"],
+            "suffix": "requires comprehensive analysis and strategic thinking.",
+            "answer": "Project planning",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Risk management", "Uncertainty mitigation", "Threat assessment"],
+            "suffix": "protects projects from potential adverse impacts.",
+            "answer": "Risk management",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Stakeholder engagement", "Participant involvement", "User collaboration"],
+            "suffix": "ensures project alignment with organizational needs.",
+            "answer": "Stakeholder engagement",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Quality assurance", "Excellence management", "Standards compliance"],
+            "suffix": "maintains deliverable integrity throughout the project.",
+            "answer": "Quality assurance",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Performance monitoring", "Progress tracking", "Status oversight"],
+            "suffix": "enables proactive project management and control.",
+            "answer": "Performance monitoring",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Environmental Responsibility and Sustainable Practices → Responsabilidad ambiental y prácticas sostenibles",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Sustainable development practices integrate environmental stewardship with economic viability and social responsibility", "spanish": "Las prácticas de desarrollo sostenible integran administración ambiental con viabilidad económica y responsabilidad social" },
+          { "english": "Life cycle assessment methodologies evaluate environmental impacts from raw material extraction through disposal", "spanish": "Las metodologías de evaluación de ciclo de vida evalúan impactos ambientales desde extracción de materia prima hasta disposición" },
+          { "english": "Circular economy principles minimize waste generation through resource recovery and regenerative design approaches", "spanish": "Los principios de economía circular minimizan generación de residuos a través de recuperación de recursos y enfoques de diseño regenerativo" },
+          { "english": "Carbon footprint reduction strategies encompass energy efficiency improvements and renewable energy adoption", "spanish": "Las estrategias de reducción de huella de carbono abarcan mejoras de eficiencia energética y adopción de energía renovable" },
+          { "english": "Environmental management systems provide frameworks for systematic environmental performance improvement", "spanish": "Los sistemas de gestión ambiental proporcionan marcos para mejora sistemática del rendimiento ambiental" },
+          { "english": "Green technology innovations offer opportunities for environmental impact reduction while maintaining operational effectiveness", "spanish": "Las innovaciones de tecnología verde ofrecen oportunidades para reducción de impacto ambiental mientras mantienen efectividad operacional" },
+          { "english": "Biodiversity conservation efforts protect ecosystems and maintain environmental balance for future generations", "spanish": "Los esfuerzos de conservación de biodiversidad protegen ecosistemas y mantienen equilibrio ambiental para generaciones futuras" },
+          { "english": "Water stewardship programs optimize usage efficiency and minimize contamination risks through advanced treatment technologies", "spanish": "Los programas de administración del agua optimizan eficiencia de uso y minimizan riesgos de contaminación a través de tecnologías de tratamiento avanzadas" },
+          { "english": "Supply chain sustainability initiatives extend environmental responsibility throughout the entire value network", "spanish": "Las iniciativas de sostenibilidad de cadena de suministro extienden responsabilidad ambiental a través de toda la red de valor" },
+          { "english": "Environmental compliance monitoring ensures adherence to regulatory requirements and industry standards", "spanish": "El monitoreo de cumplimiento ambiental asegura adherencia a requisitos regulatorios y estándares industriales" },
+          { "english": "Climate change adaptation strategies prepare organizations for environmental challenges and emerging risks", "spanish": "Las estrategias de adaptación al cambio climático preparan organizaciones para desafíos ambientales y riesgos emergentes" },
+          { "english": "Sustainable material selection prioritizes renewable resources and minimizes environmental degradation", "spanish": "La selección de materiales sostenibles prioriza recursos renovables y minimiza degradación ambiental" },
+          { "english": "Environmental reporting transparency enables stakeholder awareness and demonstrates organizational commitment", "spanish": "La transparencia de reportes ambientales permite conciencia de stakeholders y demuestra compromiso organizacional" },
+          { "english": "Pollution prevention strategies address root causes rather than end-of-pipe treatment solutions", "spanish": "Las estrategias de prevención de contaminación abordan causas raíz en lugar de soluciones de tratamiento al final del proceso" },
+          { "english": "Corporate environmental responsibility drives innovation and creates competitive advantages in sustainable markets", "spanish": "La responsabilidad ambiental corporativa impulsa innovación y crea ventajas competitivas en mercados sostenibles" }
+        ],
+        "listening": [
+          {
+            "audio": "The triple bottom line approach balances profit, people, and planet considerations in business decision-making",
+            "options": ["balances profit, people, and planet considerations", "focuses exclusively on financial returns", "prioritizes environmental concerns only", "emphasizes social responsibility exclusively"],
+            "answer": "balances profit, people, and planet considerations"
+          },
+          {
+            "audio": "Industrial ecology principles promote symbiotic relationships where waste from one process becomes input for another",
+            "options": ["waste from one process becomes input for another", "complete waste elimination strategies", "traditional linear production models", "increased resource consumption patterns"],
+            "answer": "waste from one process becomes input for another"
+          },
+          {
+            "audio": "The precautionary principle advocates for preventive action in the face of environmental uncertainty",
+            "options": ["preventive action in the face of environmental uncertainty", "reactive responses to confirmed problems", "delayed action until absolute certainty", "risk acceptance without mitigation"],
+            "answer": "preventive action in the face of environmental uncertainty"
+          },
+          {
+            "audio": "Green chemistry methodologies design chemical processes that reduce or eliminate hazardous substance generation",
+            "options": ["reduce or eliminate hazardous substance generation", "increase chemical production efficiency only", "maintain traditional chemical processes", "ignore environmental chemical impacts"],
+            "answer": "reduce or eliminate hazardous substance generation"
+          },
+          {
+            "audio": "Renewable energy integration requires careful grid management and storage technology advancement",
+            "options": ["careful grid management and storage technology advancement", "simple replacement of existing systems", "immediate elimination of fossil fuels", "no infrastructure modifications needed"],
+            "answer": "careful grid management and storage technology advancement"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Environmental sustainability", "Ecological responsibility", "Green practices"],
+            "suffix": "requires long-term thinking and systematic approaches.",
+            "answer": "Environmental sustainability",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Resource efficiency", "Material optimization", "Waste minimization"],
+            "suffix": "reduces environmental impact and operational costs.",
+            "answer": "Resource efficiency",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Climate change", "Global warming", "Environmental degradation"],
+            "suffix": "mitigation requires coordinated international efforts.",
+            "answer": "Climate change",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Sustainable innovation", "Green technology", "Eco-friendly solutions"],
+            "suffix": "creates opportunities for competitive advantage.",
+            "answer": "Sustainable innovation",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Environmental stewardship", "Ecological care", "Planetary responsibility"],
+            "suffix": "ensures resource availability for future generations.",
+            "answer": "Environmental stewardship",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

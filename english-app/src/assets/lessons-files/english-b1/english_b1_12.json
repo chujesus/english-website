@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 12,
+  "sections": [
+    {
+      "title": "Advanced Materials Testing and Characterization → Pruebas avanzadas y caracterización de materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Tensile testing determines material strength and ductility",
+          "spanish": "Las pruebas de tensión determinan resistencia y ductilidad del material"
+        },
+        {
+          "english": "Fatigue testing evaluates material endurance under cyclic loading",
+          "spanish": "Las pruebas de fatiga evalúan resistencia del material bajo carga cíclica"
+        },
+        {
+          "english": "Hardness testing measures material resistance to deformation",
+          "spanish": "Las pruebas de dureza miden resistencia del material a deformación"
+        },
+        {
+          "english": "Impact testing assesses material toughness",
+          "spanish": "Las pruebas de impacto evalúan tenacidad del material"
+        },
+        {
+          "english": "Creep testing examines long-term material behavior",
+          "spanish": "Las pruebas de fluencia examinan comportamiento del material a largo plazo"
+        },
+        {
+          "english": "Microscopy reveals material microstructure",
+          "spanish": "La microscopía revela microestructura del material"
+        },
+        {
+          "english": "Spectroscopy identifies chemical composition",
+          "spanish": "La espectroscopía identifica composición química"
+        },
+        {
+          "english": "Thermal analysis studies temperature-dependent properties",
+          "spanish": "El análisis térmico estudia propiedades dependientes de temperatura"
+        },
+        {
+          "english": "X-ray diffraction determines crystal structure",
+          "spanish": "La difracción de rayos X determina estructura cristalina"
+        },
+        {
+          "english": "Surface analysis characterizes material interfaces",
+          "spanish": "El análisis de superficie caracteriza interfaces de materiales"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does tensile testing reveal about materials?",
+          "options": ["It shows how much force a material can withstand before breaking", "It measures color", "It determines cost"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is fatigue testing important for engineering applications?",
+          "options": ["It predicts how materials behave under repeated loading cycles", "It makes materials tired", "It speeds up testing"],
+          "answer": 0
+        },
+        {
+          "audio": "How does microscopy help in materials characterization?",
+          "options": ["It reveals the internal structure that determines material properties", "It makes materials bigger", "It changes material properties"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Tensile",
+          "suffix": "provides fundamental data about material strength and behavior.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Tensile testing is a cornerstone of materials characterization."
+        },
+        {
+          "prefix": "Fatigue",
+          "suffix": "is crucial for components subjected to repeated loading.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Fatigue testing predicts material performance under cyclic stress conditions."
+        },
+        {
+          "prefix": "Microscopy",
+          "suffix": "enables visualization of material structure at micro and nano scales.",
+          "answer": "techniques",
+          "selected": false,
+          "feedback": "Microscopy techniques reveal structural details that explain material behavior."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Manufacturing Technologies → Tecnologías de manufactura avanzadas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Additive manufacturing builds parts layer by layer",
+          "spanish": "La manufactura aditiva construye partes capa por capa"
+        },
+        {
+          "english": "Computer-integrated manufacturing coordinates production systems",
+          "spanish": "La manufactura integrada por computadora coordina sistemas de producción"
+        },
+        {
+          "english": "Rapid prototyping accelerates product development",
+          "spanish": "El prototipado rápido acelera desarrollo de productos"
+        },
+        {
+          "english": "Precision machining achieves tight tolerances",
+          "spanish": "El maquinado de precisión logra tolerancias estrictas"
+        },
+        {
+          "english": "Surface finishing improves part appearance and function",
+          "spanish": "El acabado superficial mejora apariencia y función de partes"
+        },
+        {
+          "english": "Tool path optimization reduces manufacturing time",
+          "spanish": "La optimización de trayectoria de herramienta reduce tiempo de manufactura"
+        },
+        {
+          "english": "Workholding systems secure parts during machining",
+          "spanish": "Los sistemas de sujeción aseguran partes durante maquinado"
+        },
+        {
+          "english": "Cutting tool selection affects surface quality",
+          "spanish": "La selección de herramientas de corte afecta calidad superficial"
+        },
+        {
+          "english": "Process monitoring detects manufacturing anomalies",
+          "spanish": "El monitoreo de procesos detecta anomalías de manufactura"
+        },
+        {
+          "english": "Digital manufacturing integrates virtual and physical processes",
+          "spanish": "La manufactura digital integra procesos virtuales y físicos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantage does additive manufacturing offer?",
+          "options": ["It can create complex geometries that traditional methods cannot", "It's always faster", "It uses no materials"],
+          "answer": 0
+        },
+        {
+          "audio": "How does computer-integrated manufacturing improve production?",
+          "options": ["It coordinates all manufacturing systems for optimal efficiency", "It eliminates all computers", "It slows down production"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is rapid prototyping valuable in product development?",
+          "options": ["It allows quick testing and iteration of design concepts", "It makes final products", "It eliminates design"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Additive",
+          "suffix": "enables production of complex geometries impossible with traditional methods.",
+          "answer": "manufacturing",
+          "selected": false,
+          "feedback": "Additive manufacturing revolutionizes design possibilities and customization."
+        },
+        {
+          "prefix": "Rapid",
+          "suffix": "speeds up product development by enabling quick design validation.",
+          "answer": "prototyping",
+          "selected": false,
+          "feedback": "Rapid prototyping accelerates the design iteration process."
+        },
+        {
+          "prefix": "Process",
+          "suffix": "helps maintain quality and detect problems early in manufacturing.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Process monitoring enables real-time quality control and optimization."
+        }
+      ]
+    },
+    {
+      "title": "Instrumentation and Measurement Systems → Instrumentación y sistemas de medición",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Precision instruments provide accurate measurements",
+          "spanish": "Los instrumentos de precisión proporcionan mediciones precisas"
+        },
+        {
+          "english": "Calibration ensures measurement accuracy and traceability",
+          "spanish": "La calibración asegura precisión y trazabilidad de mediciones"
+        },
+        {
+          "english": "Data acquisition systems collect and process measurements",
+          "spanish": "Los sistemas de adquisición de datos recolectan y procesan mediciones"
+        },
+        {
+          "english": "Signal conditioning prepares sensor outputs for analysis",
+          "spanish": "El acondicionamiento de señales prepara salidas de sensores para análisis"
+        },
+        {
+          "english": "Measurement uncertainty quantifies confidence levels",
+          "spanish": "La incertidumbre de medición cuantifica niveles de confianza"
+        },
+        {
+          "english": "Transducers convert physical quantities to electrical signals",
+          "spanish": "Los transductores convierten cantidades físicas a señales eléctricas"
+        },
+        {
+          "english": "Virtual instruments combine hardware and software capabilities",
+          "spanish": "Los instrumentos virtuales combinan capacidades de hardware y software"
+        },
+        {
+          "english": "Metrology standards ensure measurement consistency",
+          "spanish": "Los estándares de metrología aseguran consistencia de mediciones"
+        },
+        {
+          "english": "Automatic test equipment streamlines measurement processes",
+          "spanish": "El equipo de pruebas automático optimiza procesos de medición"
+        },
+        {
+          "english": "Statistical analysis validates measurement results",
+          "spanish": "El análisis estadístico valida resultados de mediciones"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is calibration essential for measurement instruments?",
+          "options": ["It ensures measurements are accurate and traceable to standards", "It makes instruments more expensive", "It slows down measurements"],
+          "answer": 0
+        },
+        {
+          "audio": "What do data acquisition systems accomplish?",
+          "options": ["They automatically collect, digitize, and store measurement data", "They only display data", "They eliminate the need for sensors"],
+          "answer": 0
+        },
+        {
+          "audio": "How do transducers enable measurement systems?",
+          "options": ["They convert physical phenomena into electrical signals for processing", "They only measure electricity", "They make noise"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Precision",
+          "suffix": "are essential for accurate characterization in engineering applications.",
+          "answer": "instruments",
+          "selected": false,
+          "feedback": "Precision instruments enable reliable and repeatable measurements."
+        },
+        {
+          "prefix": "Data acquisition",
+          "suffix": "enable automated collection and analysis of measurement data.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "DAQ systems provide efficient and accurate data collection capabilities."
+        },
+        {
+          "prefix": "Measurement",
+          "suffix": "helps engineers understand the reliability of their data.",
+          "answer": "uncertainty",
+          "selected": false,
+          "feedback": "Understanding measurement uncertainty is crucial for proper data interpretation."
+        }
+      ]
+    },
+    {
+      "title": "Engineering Economics and Project Management → Economía de ingeniería y gestión de proyectos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Cost-benefit analysis evaluates project economic viability",
+          "spanish": "El análisis costo-beneficio evalúa viabilidad económica del proyecto"
+        },
+        {
+          "english": "Present value calculations compare future cash flows",
+          "spanish": "Los cálculos de valor presente comparan flujos de efectivo futuros"
+        },
+        {
+          "english": "Life cycle costing considers total ownership expenses",
+          "spanish": "El costeo de ciclo de vida considera gastos totales de propiedad"
+        },
+        {
+          "english": "Risk assessment identifies potential financial impacts",
+          "spanish": "La evaluación de riesgo identifica impactos financieros potenciales"
+        },
+        {
+          "english": "Budget management controls project expenditures",
+          "spanish": "La gestión de presupuesto controla gastos del proyecto"
+        },
+        {
+          "english": "Schedule optimization minimizes project duration",
+          "spanish": "La optimización de cronograma minimiza duración del proyecto"
+        },
+        {
+          "english": "Resource allocation maximizes efficiency",
+          "spanish": "La asignación de recursos maximiza eficiencia"
+        },
+        {
+          "english": "Performance metrics track project progress",
+          "spanish": "Las métricas de rendimiento rastrean progreso del proyecto"
+        },
+        {
+          "english": "Value engineering optimizes design for cost effectiveness",
+          "spanish": "La ingeniería de valor optimiza diseño para efectividad de costos"
+        },
+        {
+          "english": "Return on investment measures project profitability",
+          "spanish": "El retorno de inversión mide rentabilidad del proyecto"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does cost-benefit analysis help determine?",
+          "options": ["Whether a project's benefits justify its costs", "Only the project costs", "The project timeline"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is life cycle costing important?",
+          "options": ["It considers all costs over the entire life of a system", "It only looks at initial costs", "It eliminates maintenance costs"],
+          "answer": 0
+        },
+        {
+          "audio": "How does value engineering benefit projects?",
+          "options": ["It optimizes designs to provide maximum value at minimum cost", "It increases project costs", "It ignores functionality"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Professional Ethics and Engineering Standards → Ética profesional y estándares de ingeniería",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Engineering codes of ethics guide professional conduct",
+          "spanish": "Los códigos de ética de ingeniería guían conducta profesional"
+        },
+        {
+          "english": "Safety standards protect public welfare",
+          "spanish": "Los estándares de seguridad protegen bienestar público"
+        },
+        {
+          "english": "Professional responsibility requires ethical decision-making",
+          "spanish": "La responsabilidad profesional requiere toma de decisiones éticas"
+        },
+        {
+          "english": "Quality standards ensure reliable engineering solutions",
+          "spanish": "Los estándares de calidad aseguran soluciones de ingeniería confiables"
+        },
+        {
+          "english": "Environmental stewardship considers ecological impact",
+          "spanish": "La administración ambiental considera impacto ecológico"
+        },
+        {
+          "english": "Intellectual property rights protect innovations",
+          "spanish": "Los derechos de propiedad intelectual protegen innovaciones"
+        },
+        {
+          "english": "Conflict of interest policies maintain objectivity",
+          "spanish": "Las políticas de conflicto de intereses mantienen objetividad"
+        },
+        {
+          "english": "Continuing education maintains professional competency",
+          "spanish": "La educación continua mantiene competencia profesional"
+        },
+        {
+          "english": "Whistleblower protection encourages safety reporting",
+          "spanish": "La protección de denunciantes fomenta reportes de seguridad"
+        },
+        {
+          "english": "Global standards facilitate international cooperation",
+          "spanish": "Los estándares globales facilitan cooperación internacional"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Engineering codes of",
+          "suffix": "establish fundamental principles for professional behavior.",
+          "answer": "ethics",
+          "selected": false,
+          "feedback": "Ethical codes provide guidelines for responsible engineering practice."
+        },
+        {
+          "prefix": "Professional",
+          "suffix": "requires engineers to prioritize public safety and welfare.",
+          "answer": "responsibility",
+          "selected": false,
+          "feedback": "Professional responsibility is central to ethical engineering practice."
+        },
+        {
+          "prefix": "Continuing",
+          "suffix": "ensures engineers stay current with technological advances.",
+          "answer": "education",
+          "selected": false,
+          "feedback": "Lifelong learning is essential for maintaining professional competence."
+        }
+      ]
+    }
+  ]
+}
+]
+

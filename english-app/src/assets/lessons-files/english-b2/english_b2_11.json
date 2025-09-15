@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 11,
+  "sections": [
+    {
+      "title": "Advanced Materials Science and Nanotechnology → Ciencia avanzada de materiales y nanotecnología",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Nanostructured materials exhibit unique properties due to quantum confinement effects",
+          "spanish": "Los materiales nanoestructurados exhiben propiedades únicas debido a efectos de confinamiento cuántico"
+        },
+        {
+          "english": "Self-assembling systems organize spontaneously into ordered structures",
+          "spanish": "Los sistemas auto-ensamblantes se organizan espontáneamente en estructuras ordenadas"
+        },
+        {
+          "english": "Smart materials respond dynamically to environmental stimuli and conditions",
+          "spanish": "Los materiales inteligentes responden dinámicamente a estímulos y condiciones ambientales"
+        },
+        {
+          "english": "Carbon nanotube composites offer exceptional strength-to-weight ratios",
+          "spanish": "Los compuestos de nanotubos de carbono ofrecen relaciones excepcionales resistencia-peso"
+        },
+        {
+          "english": "Metamaterials manipulate electromagnetic waves through engineered microstructures",
+          "spanish": "Los metamateriales manipulan ondas electromagnéticas a través de microestructuras diseñadas"
+        },
+        {
+          "english": "Molecular electronics enable computing at the atomic scale",
+          "spanish": "La electrónica molecular permite computación a escala atómica"
+        },
+        {
+          "english": "Biocompatible materials integrate seamlessly with living biological systems",
+          "spanish": "Los materiales biocompatibles se integran sin problemas con sistemas biológicos vivos"
+        },
+        {
+          "english": "Additive manufacturing creates complex geometries impossible with traditional methods",
+          "spanish": "La manufactura aditiva crea geometrías complejas imposibles con métodos tradicionales"
+        },
+        {
+          "english": "Surface functionalization tailors material properties for specific applications",
+          "spanish": "La funcionalización de superficie adapta propiedades de materiales para aplicaciones específicas"
+        },
+        {
+          "english": "Quantum dots enable precise control of optical and electronic properties",
+          "spanish": "Los puntos cuánticos permiten control preciso de propiedades ópticas y electrónicas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do quantum confinement effects change material properties at the nanoscale?",
+          "options": ["They alter electronic and optical properties by restricting electron movement in small dimensions", "They make materials heavier", "They eliminate all material properties"],
+          "answer": 0
+        },
+        {
+          "audio": "What makes metamaterials unique compared to conventional materials?",
+          "options": ["Their properties come from engineered structure rather than chemical composition", "They're always more expensive", "They only work at room temperature"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are smart materials important for engineering applications?",
+          "options": ["They can adapt their properties in response to changing conditions automatically", "They never break or wear out", "They eliminate the need for sensors"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Nanostructured",
+          "suffix": "can have properties dramatically different from their bulk counterparts.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Nanoscale effects often produce superior or novel material properties."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "can change their properties in response to external stimuli like temperature or electric fields.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Smart materials enable adaptive and responsive engineering systems."
+        },
+        {
+          "prefix": "Carbon nanotube",
+          "suffix": "combine exceptional mechanical properties with electrical conductivity.",
+          "answer": "composites",
+          "selected": false,
+          "feedback": "Carbon nanotube composites represent advanced materials for demanding applications."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Robotics and Automation Systems → Robótica avanzada y sistemas de automatización",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Collaborative robots safely interact with humans in shared workspaces",
+          "spanish": "Los robots colaborativos interactúan de manera segura con humanos en espacios de trabajo compartidos"
+        },
+        {
+          "english": "Autonomous navigation systems enable robots to operate in unknown environments",
+          "spanish": "Los sistemas de navegación autónoma permiten a robots operar en ambientes desconocidos"
+        },
+        {
+          "english": "Machine learning enhances robot perception and decision-making capabilities",
+          "spanish": "El aprendizaje automático mejora capacidades de percepción y toma de decisiones de robots"
+        },
+        {
+          "english": "Swarm robotics coordinates multiple robots for complex collective behaviors",
+          "spanish": "La robótica de enjambre coordina múltiples robots para comportamientos colectivos complejos"
+        },
+        {
+          "english": "Soft robotics utilizes flexible materials for safe human-robot interaction",
+          "spanish": "La robótica suave utiliza materiales flexibles para interacción segura humano-robot"
+        },
+        {
+          "english": "Haptic feedback systems provide tactile sensation for remote manipulation",
+          "spanish": "Los sistemas de retroalimentación háptica proporcionan sensación táctil para manipulación remota"
+        },
+        {
+          "english": "Bio-inspired robotics mimics natural systems for improved performance",
+          "spanish": "La robótica bio-inspirada imita sistemas naturales para rendimiento mejorado"
+        },
+        {
+          "english": "Predictive maintenance algorithms optimize robot operation and reliability",
+          "spanish": "Los algoritmos de mantenimiento predictivo optimizan operación y confiabilidad de robots"
+        },
+        {
+          "english": "Edge computing enables real-time robot control and response",
+          "spanish": "El edge computing permite control y respuesta de robots en tiempo real"
+        },
+        {
+          "english": "Human-robot interfaces facilitate intuitive control and programming",
+          "spanish": "Las interfaces humano-robot facilitan control y programación intuitivos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantages do collaborative robots offer in manufacturing?",
+          "options": ["They can work alongside humans safely, increasing flexibility and productivity", "They replace all human workers", "They only work in isolation"],
+          "answer": 0
+        },
+        {
+          "audio": "How does swarm robotics benefit from collective behavior?",
+          "options": ["Multiple simple robots can accomplish complex tasks through coordination", "Each robot works completely independently", "It only works with identical robots"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is soft robotics important for human-robot interaction?",
+          "options": ["Soft materials reduce injury risk and enable safer physical contact", "They're cheaper to manufacture", "They move faster than rigid robots"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Collaborative",
+          "suffix": "are designed with safety features that allow them to work alongside humans.",
+          "answer": "robots",
+          "selected": false,
+          "feedback": "Collaborative robots are transforming manufacturing through safe human-robot cooperation."
+        },
+        {
+          "prefix": "Swarm",
+          "suffix": "demonstrates how simple individual agents can create complex collective behaviors.",
+          "answer": "robotics",
+          "selected": false,
+          "feedback": "Swarm robotics takes inspiration from biological systems like ant colonies."
+        },
+        {
+          "prefix": "Haptic",
+          "suffix": "allows operators to feel forces and textures when controlling robots remotely.",
+          "answer": "feedback",
+          "selected": false,
+          "feedback": "Haptic feedback is crucial for precise robotic manipulation tasks."
+        }
+      ]
+    },
+    {
+      "title": "Autonomous Systems and Control Theory → Sistemas autónomos y teoría de control",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Model predictive control optimizes system performance over future time horizons",
+          "spanish": "El control predictivo de modelos optimiza rendimiento del sistema sobre horizontes de tiempo futuros"
+        },
+        {
+          "english": "Adaptive control systems adjust parameters automatically based on changing conditions",
+          "spanish": "Los sistemas de control adaptivo ajustan parámetros automáticamente basados en condiciones cambiantes"
+        },
+        {
+          "english": "Sensor fusion combines multiple data sources for improved state estimation",
+          "spanish": "La fusión de sensores combina múltiples fuentes de datos para estimación mejorada de estado"
+        },
+        {
+          "english": "Nonlinear control techniques handle complex system dynamics and constraints",
+          "spanish": "Las técnicas de control no lineal manejan dinámicas complejas del sistema y restricciones"
+        },
+        {
+          "english": "Fault detection algorithms identify system malfunctions before catastrophic failure",
+          "spanish": "Los algoritmos de detección de fallas identifican mal funcionamientos del sistema antes de falla catastrófica"
+        },
+        {
+          "english": "Distributed control systems coordinate multiple subsystems for global objectives",
+          "spanish": "Los sistemas de control distribuido coordinan múltiples subsistemas para objetivos globales"
+        },
+        {
+          "english": "Real-time optimization balances performance objectives with operational constraints",
+          "spanish": "La optimización en tiempo real equilibra objetivos de rendimiento con restricciones operacionales"
+        },
+        {
+          "english": "Robust control maintains stability despite model uncertainties and disturbances",
+          "spanish": "El control robusto mantiene estabilidad a pesar de incertidumbres del modelo y perturbaciones"
+        },
+        {
+          "english": "Machine learning controllers adapt to complex environments through experience",
+          "spanish": "Los controladores de aprendizaje automático se adaptan a ambientes complejos a través de experiencia"
+        },
+        {
+          "english": "Safety-critical systems require rigorous verification and validation processes",
+          "spanish": "Los sistemas críticos de seguridad requieren procesos rigurosos de verificación y validación"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does model predictive control improve system performance?",
+          "options": ["It predicts future behavior and optimizes control actions over a time horizon", "It only reacts to current conditions", "It eliminates all system disturbances"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the advantage of sensor fusion in autonomous systems?",
+          "options": ["It combines data from multiple sensors to create more accurate and reliable information", "It reduces the number of sensors needed", "It makes sensors more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is robust control important for real-world applications?",
+          "options": ["It maintains performance even when system models are imperfect or conditions change", "It only works in laboratory conditions", "It eliminates the need for feedback"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Model predictive",
+          "suffix": "uses mathematical models to predict and optimize future system behavior.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "MPC is widely used in process industries and autonomous systems."
+        },
+        {
+          "prefix": "Sensor",
+          "suffix": "improves accuracy by combining information from multiple measurement sources.",
+          "answer": "fusion",
+          "selected": false,
+          "feedback": "Sensor fusion is essential for reliable autonomous system operation."
+        },
+        {
+          "prefix": "Fault",
+          "suffix": "enables proactive maintenance and prevents system failures.",
+          "answer": "detection",
+          "selected": false,
+          "feedback": "Early fault detection is crucial for system reliability and safety."
+        }
+      ]
+    },
+    {
+      "title": "Environmental Engineering and Sustainability → Ingeniería ambiental y sostenibilidad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Water treatment technologies remove contaminants through physical, chemical, and biological processes",
+          "spanish": "Las tecnologías de tratamiento de agua remueven contaminantes a través de procesos físicos, químicos y biológicos"
+        },
+        {
+          "english": "Air quality monitoring systems track pollutants and support public health decisions",
+          "spanish": "Los sistemas de monitoreo de calidad del aire rastrean contaminantes y apoyan decisiones de salud pública"
+        },
+        {
+          "english": "Waste-to-energy conversion transforms municipal solid waste into useful power",
+          "spanish": "La conversión de residuos a energía transforma residuos sólidos municipales en energía útil"
+        },
+        {
+          "english": "Phytoremediation uses plants to extract pollutants from contaminated environments",
+          "spanish": "La fitorremediación usa plantas para extraer contaminantes de ambientes contaminados"
+        },
+        {
+          "english": "Carbon capture and storage technologies mitigate greenhouse gas emissions",
+          "spanish": "Las tecnologías de captura y almacenamiento de carbono mitigan emisiones de gases de efecto invernadero"
+        },
+        {
+          "english": "Green infrastructure integrates natural systems with urban development",
+          "spanish": "La infraestructura verde integra sistemas naturales con desarrollo urbano"
+        },
+        {
+          "english": "Environmental impact assessments evaluate project effects on ecosystems",
+          "spanish": "Las evaluaciones de impacto ambiental evalúan efectos de proyectos en ecosistemas"
+        },
+        {
+          "english": "Renewable energy systems reduce dependence on fossil fuel resources",
+          "spanish": "Los sistemas de energía renovable reducen dependencia en recursos de combustibles fósiles"
+        },
+        {
+          "english": "Circular economy principles minimize waste through resource recovery and reuse",
+          "spanish": "Los principios de economía circular minimizan residuos a través de recuperación y reutilización de recursos"
+        },
+        {
+          "english": "Climate adaptation strategies prepare infrastructure for changing environmental conditions",
+          "spanish": "Las estrategias de adaptación climática preparan infraestructura para condiciones ambientales cambiantes"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does phytoremediation help clean contaminated sites?",
+          "options": ["Plants absorb or break down pollutants, providing a natural and cost-effective cleanup method", "It only works for water contamination", "It makes contamination worse"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does green infrastructure play in urban planning?",
+          "options": ["It uses natural systems to manage stormwater, reduce pollution, and improve quality of life", "It only involves planting trees", "It replaces all traditional infrastructure"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is carbon capture and storage important for climate change?",
+          "options": ["It removes CO2 from the atmosphere or prevents its release, helping reduce global warming", "It increases carbon emissions", "It only works for small facilities"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Data Analytics and Business Intelligence → Análisis de datos e inteligencia de negocios",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Big data analytics extract insights from massive, complex datasets",
+          "spanish": "Los análisis de big data extraen conocimientos de conjuntos de datos masivos y complejos"
+        },
+        {
+          "english": "Data visualization techniques transform numerical information into intuitive graphics",
+          "spanish": "Las técnicas de visualización de datos transforman información numérica en gráficos intuitivos"
+        },
+        {
+          "english": "Predictive modeling forecasts future trends based on historical patterns",
+          "spanish": "El modelado predictivo pronostica tendencias futuras basadas en patrones históricos"
+        },
+        {
+          "english": "Real-time analytics enable immediate decision-making from streaming data",
+          "spanish": "Los análisis en tiempo real permiten toma de decisiones inmediata de datos en streaming"
+        },
+        {
+          "english": "Data mining discovers hidden patterns and relationships in large databases",
+          "spanish": "La minería de datos descubre patrones ocultos y relaciones en grandes bases de datos"
+        },
+        {
+          "english": "Statistical modeling quantifies relationships between variables and outcomes",
+          "spanish": "El modelado estadístico cuantifica relaciones entre variables y resultados"
+        },
+        {
+          "english": "Dashboard systems provide executive-level visibility into key performance indicators",
+          "spanish": "Los sistemas de dashboard proporcionan visibilidad a nivel ejecutivo de indicadores clave de rendimiento"
+        },
+        {
+          "english": "Data governance frameworks ensure quality, security, and compliance",
+          "spanish": "Los marcos de gobernanza de datos aseguran calidad, seguridad y cumplimiento"
+        },
+        {
+          "english": "Machine learning algorithms automatically improve through experience with data",
+          "spanish": "Los algoritmos de aprendizaje automático mejoran automáticamente a través de experiencia con datos"
+        },
+        {
+          "english": "Data warehousing integrates information from multiple sources for analysis",
+          "spanish": "El almacenamiento de datos integra información de múltiples fuentes para análisis"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Big data",
+          "suffix": "can process volume, velocity, and variety of data beyond traditional database capabilities.",
+          "answer": "analytics",
+          "selected": false,
+          "feedback": "Big data analytics handles the 3 Vs: Volume, Velocity, and Variety of modern data."
+        },
+        {
+          "prefix": "Data",
+          "suffix": "makes complex information accessible through charts, graphs, and interactive displays.",
+          "answer": "visualization",
+          "selected": false,
+          "feedback": "Data visualization is crucial for communicating insights to stakeholders."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "uses statistical techniques to forecast future outcomes based on historical data.",
+          "answer": "modeling",
+          "selected": false,
+          "feedback": "Predictive modeling helps organizations anticipate and prepare for future scenarios."
+        }
+      ]
+    }
+  ]
+}
+]
+

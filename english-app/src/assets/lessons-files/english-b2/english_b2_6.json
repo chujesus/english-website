@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 6,
+  "sections": [
+    {
+      "title": "Advanced Financial Management → Gestión financiera avanzada",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Capital allocation strategies optimize resource utilization",
+          "spanish": "Las estrategias de asignación de capital optimizan la utilización de recursos"
+        },
+        {
+          "english": "Financial modeling predicts investment outcomes",
+          "spanish": "El modelado financiero predice resultados de inversión"
+        },
+        {
+          "english": "Risk management frameworks protect organizational assets",
+          "spanish": "Los marcos de gestión de riesgo protegen activos organizacionales"
+        },
+        {
+          "english": "Cash flow optimization maintains operational liquidity",
+          "spanish": "La optimización del flujo de efectivo mantiene liquidez operacional"
+        },
+        {
+          "english": "Performance metrics drive value creation",
+          "spanish": "Las métricas de rendimiento impulsan creación de valor"
+        },
+        {
+          "english": "Budget variance analysis identifies operational inefficiencies",
+          "spanish": "El análisis de varianza presupuestaria identifica ineficiencias operacionales"
+        },
+        {
+          "english": "Investment portfolio diversification minimizes risk exposure",
+          "spanish": "La diversificación del portafolio de inversión minimiza exposición al riesgo"
+        },
+        {
+          "english": "Working capital management ensures adequate resources",
+          "spanish": "La gestión de capital de trabajo asegura recursos adecuados"
+        },
+        {
+          "english": "Financial compliance prevents regulatory violations",
+          "spanish": "El cumplimiento financiero previene violaciones regulatorias"
+        },
+        {
+          "english": "Merger and acquisition strategies expand market presence",
+          "spanish": "Las estrategias de fusión y adquisición expanden presencia en el mercado"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is capital allocation strategy crucial for organizations?",
+          "options": ["It wastes resources", "It optimizes resource utilization for maximum return", "It complicates operations"],
+          "answer": 1
+        },
+        {
+          "audio": "How does financial modeling support decision-making?",
+          "options": ["It predicts potential outcomes of investment decisions", "It creates confusion", "It eliminates all risk"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of portfolio diversification?",
+          "options": ["To increase risk", "To minimize risk exposure across investments", "To concentrate investments"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Capital",
+          "suffix": "strategies ensure resources are invested in the highest-return opportunities.",
+          "answer": "allocation",
+          "selected": false,
+          "feedback": "Effective capital allocation directs limited resources toward projects with the best risk-adjusted returns."
+        },
+        {
+          "prefix": "Risk management",
+          "suffix": "help organizations identify and mitigate potential threats.",
+          "answer": "frameworks",
+          "selected": false,
+          "feedback": "Comprehensive risk frameworks provide systematic approaches to managing various types of risks."
+        },
+        {
+          "prefix": "Cash flow",
+          "suffix": "ensures organizations have sufficient liquidity for operations.",
+          "answer": "optimization",
+          "selected": false,
+          "feedback": "Optimized cash flow management prevents liquidity crises and reduces financing costs."
+        }
+      ]
+    },
+    {
+      "title": "International Business and Market Expansion → Negocios internacionales y expansión de mercado",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Global market penetration requires strategic localization",
+          "spanish": "La penetración del mercado global requiere localización estratégica"
+        },
+        {
+          "english": "Cultural intelligence facilitates international negotiations",
+          "spanish": "La inteligencia cultural facilita negociaciones internacionales"
+        },
+        {
+          "english": "Regulatory compliance varies across jurisdictions",
+          "spanish": "El cumplimiento regulatorio varía entre jurisdicciones"
+        },
+        {
+          "english": "Currency hedging mitigates foreign exchange risks",
+          "spanish": "La cobertura de divisas mitiga riesgos de cambio extranjero"
+        },
+        {
+          "english": "Joint ventures enable market entry partnerships",
+          "spanish": "Las empresas conjuntas permiten asociaciones de entrada al mercado"
+        },
+        {
+          "english": "Supply chain globalization reduces production costs",
+          "spanish": "La globalización de la cadena de suministro reduce costos de producción"
+        },
+        {
+          "english": "Export documentation ensures customs compliance",
+          "spanish": "La documentación de exportación asegura cumplimiento aduanero"
+        },
+        {
+          "english": "Market research identifies international opportunities",
+          "spanish": "La investigación de mercado identifica oportunidades internacionales"
+        },
+        {
+          "english": "Transfer pricing optimizes tax efficiency",
+          "spanish": "Los precios de transferencia optimizan eficiencia fiscal"
+        },
+        {
+          "english": "Political risk assessment evaluates investment stability",
+          "spanish": "La evaluación de riesgo político evalúa estabilidad de inversión"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is cultural intelligence important in international business?",
+          "options": ["It's not important", "It facilitates better communication and negotiations", "It creates barriers"],
+          "answer": 1
+        },
+        {
+          "audio": "How does currency hedging help international businesses?",
+          "options": ["It protects against foreign exchange rate fluctuations", "It increases currency risk", "It eliminates all financial risk"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage do joint ventures provide for market entry?",
+          "options": ["They enable partnerships with local expertise", "They increase complexity only", "They guarantee success"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Global market",
+          "suffix": "requires understanding local customs and preferences.",
+          "answer": "penetration",
+          "selected": false,
+          "feedback": "Successful global expansion requires adapting products and strategies to local markets."
+        },
+        {
+          "prefix": "Currency",
+          "suffix": "protects international businesses from exchange rate volatility.",
+          "answer": "hedging",
+          "selected": false,
+          "feedback": "Hedging strategies use financial instruments to minimize currency exchange risks."
+        },
+        {
+          "prefix": "Political risk",
+          "suffix": "helps investors understand potential instability in target markets.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Political risk evaluation considers factors like government stability and policy changes."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Manufacturing and Industry 4.0 → Manufactura avanzada e Industria 4.0",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Smart factories integrate cyber-physical systems",
+          "spanish": "Las fábricas inteligentes integran sistemas ciberfísicos"
+        },
+        {
+          "english": "Predictive maintenance algorithms prevent equipment failures",
+          "spanish": "Los algoritmos de mantenimiento predictivo previenen fallas de equipo"
+        },
+        {
+          "english": "Digital twins simulate real-world manufacturing processes",
+          "spanish": "Los gemelos digitales simulan procesos de manufactura del mundo real"
+        },
+        {
+          "english": "Additive manufacturing enables mass customization",
+          "spanish": "La manufactura aditiva permite personalización masiva"
+        },
+        {
+          "english": "Autonomous robotics increase production efficiency",
+          "spanish": "La robótica autónoma aumenta eficiencia de producción"
+        },
+        {
+          "english": "Real-time quality monitoring ensures consistent output",
+          "spanish": "El monitoreo de calidad en tiempo real asegura producción consistente"
+        },
+        {
+          "english": "Supply chain visibility improves demand response",
+          "spanish": "La visibilidad de la cadena de suministro mejora respuesta a la demanda"
+        },
+        {
+          "english": "Edge computing processes data at source locations",
+          "spanish": "La computación de borde procesa datos en ubicaciones de origen"
+        },
+        {
+          "english": "Augmented reality assists operator training and maintenance",
+          "spanish": "La realidad aumentada asiste entrenamiento de operadores y mantenimiento"
+        },
+        {
+          "english": "Blockchain technology ensures supply chain traceability",
+          "spanish": "La tecnología blockchain asegura trazabilidad de la cadena de suministro"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What are the main benefits of smart factories?",
+          "options": ["Increased complexity only", "Integration of digital and physical systems for optimization", "Higher costs without benefits"],
+          "answer": 1
+        },
+        {
+          "audio": "How do digital twins help manufacturing?",
+          "options": ["They simulate processes to test changes without disrupting production", "They replace physical equipment", "They slow down operations"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage does predictive maintenance provide?",
+          "options": ["It prevents unexpected equipment failures", "It increases maintenance costs", "It breaks equipment faster"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Smart",
+          "suffix": "combine digital technology with physical manufacturing systems.",
+          "answer": "factories",
+          "selected": false,
+          "feedback": "Smart factories use IoT, AI, and automation to create highly efficient production systems."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "create virtual replicas of physical manufacturing processes.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins enable testing and optimization without disrupting actual production."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "uses data analysis to anticipate equipment maintenance needs.",
+          "answer": "maintenance",
+          "selected": false,
+          "feedback": "Predictive maintenance reduces downtime and extends equipment life through proactive care."
+        }
+      ]
+    },
+    {
+      "title": "Sustainable Development and ESG Strategy → Desarrollo sostenible y estrategia ESG",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Environmental, social, and governance criteria guide investment decisions",
+          "spanish": "Los criterios ambientales, sociales y de gobernanza guían decisiones de inversión"
+        },
+        {
+          "english": "Carbon neutrality commitments address climate change concerns",
+          "spanish": "Los compromisos de neutralidad de carbono abordan preocupaciones del cambio climático"
+        },
+        {
+          "english": "Circular economy principles minimize waste and maximize resource efficiency",
+          "spanish": "Los principios de economía circular minimizan desperdicios y maximizan eficiencia de recursos"
+        },
+        {
+          "english": "Stakeholder capitalism balances profit with social responsibility",
+          "spanish": "El capitalismo de partes interesadas equilibra ganancia con responsabilidad social"
+        },
+        {
+          "english": "Sustainable supply chains ensure ethical sourcing practices",
+          "spanish": "Las cadenas de suministro sostenibles aseguran prácticas de abastecimiento ético"
+        },
+        {
+          "english": "Impact investing generates positive social and environmental outcomes",
+          "spanish": "La inversión de impacto genera resultados sociales y ambientales positivos"
+        },
+        {
+          "english": "Diversity and inclusion initiatives promote workplace equity",
+          "spanish": "Las iniciativas de diversidad e inclusión promueven equidad en el lugar de trabajo"
+        },
+        {
+          "english": "Green technology adoption reduces environmental footprint",
+          "spanish": "La adopción de tecnología verde reduce huella ambiental"
+        },
+        {
+          "english": "Transparency reporting builds stakeholder trust",
+          "spanish": "Los reportes de transparencia construyen confianza de las partes interesadas"
+        },
+        {
+          "english": "Long-term value creation supersedes short-term profit maximization",
+          "spanish": "La creación de valor a largo plazo supera la maximización de ganancias a corto plazo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What do ESG criteria evaluate in investment decisions?",
+          "options": ["Only financial returns", "Environmental, social, and governance factors", "Market volatility only"],
+          "answer": 1
+        },
+        {
+          "audio": "How does the circular economy benefit sustainability?",
+          "options": ["It minimizes waste and maximizes resource reuse", "It increases waste production", "It ignores environmental concerns"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the goal of impact investing?",
+          "options": ["To generate positive social and environmental outcomes", "To maximize profits only", "To avoid all risks"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Crisis Management and Business Continuity → Gestión de crisis y continuidad de negocio",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Business continuity planning ensures operational resilience",
+          "spanish": "La planificación de continuidad de negocio asegura resistencia operacional"
+        },
+        {
+          "english": "Crisis communication strategies maintain stakeholder confidence",
+          "spanish": "Las estrategias de comunicación de crisis mantienen confianza de las partes interesadas"
+        },
+        {
+          "english": "Disaster recovery protocols restore critical operations",
+          "spanish": "Los protocolos de recuperación de desastres restauran operaciones críticas"
+        },
+        {
+          "english": "Risk assessment identifies potential vulnerabilities",
+          "spanish": "La evaluación de riesgos identifica vulnerabilidades potenciales"
+        },
+        {
+          "english": "Emergency response teams coordinate crisis management",
+          "spanish": "Los equipos de respuesta de emergencia coordinan gestión de crisis"
+        },
+        {
+          "english": "Supply chain redundancy prevents disruption cascades",
+          "spanish": "La redundancia de la cadena de suministro previene cascadas de interrupción"
+        },
+        {
+          "english": "Scenario planning prepares for multiple contingencies",
+          "spanish": "La planificación de escenarios prepara para múltiples contingencias"
+        },
+        {
+          "english": "Insurance coverage mitigates financial exposure",
+          "spanish": "La cobertura de seguros mitiga exposición financiera"
+        },
+        {
+          "english": "Regular drills test emergency preparedness",
+          "spanish": "Los simulacros regulares prueban preparación de emergencia"
+        },
+        {
+          "english": "Lessons learned improve future crisis response",
+          "spanish": "Las lecciones aprendidas mejoran respuesta futura a crisis"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Business continuity",
+          "suffix": "ensures organizations can maintain operations during disruptions.",
+          "answer": "planning",
+          "selected": false,
+          "feedback": "Effective continuity planning enables organizations to recover quickly from various types of crises."
+        },
+        {
+          "prefix": "Crisis",
+          "suffix": "strategies help maintain trust and confidence during difficult times.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "Clear, honest communication during crises prevents panic and maintains stakeholder support."
+        },
+        {
+          "prefix": "Supply chain",
+          "suffix": "provides alternative sources when primary suppliers fail.",
+          "answer": "redundancy",
+          "selected": false,
+          "feedback": "Redundant supply chains ensure continued operations even when some suppliers are disrupted."
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 14,
+  "sections": [
+    {
+      "title": "Office Administration Basics → Fundamentos de administración de oficina",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Answer phones professionally",
+          "spanish": "Contesta teléfonos profesionalmente"
+        },
+        {
+          "english": "Schedule appointments efficiently",
+          "spanish": "Programa citas eficientemente"
+        },
+        {
+          "english": "File documents in order",
+          "spanish": "Archiva documentos en orden"
+        },
+        {
+          "english": "Send and receive emails",
+          "spanish": "Envía y recibe correos electrónicos"
+        },
+        {
+          "english": "Manage office supplies",
+          "spanish": "Gestiona suministros de oficina"
+        },
+        {
+          "english": "Greet visitors politely",
+          "spanish": "Saluda visitantes cortésmente"
+        },
+        {
+          "english": "Process incoming mail",
+          "spanish": "Procesa correo entrante"
+        },
+        {
+          "english": "Maintain confidentiality",
+          "spanish": "Mantén confidencialidad"
+        },
+        {
+          "english": "Update contact information",
+          "spanish": "Actualiza información de contacto"
+        },
+        {
+          "english": "Support team members",
+          "spanish": "Apoya miembros del equipo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How should you answer business phone calls?",
+          "options": ["Say hello only", "Greet professionally with company name", "Don't answer"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is filing documents important?",
+          "options": ["To keep information organized and accessible", "To waste paper", "It's not important"],
+          "answer": 0
+        },
+        {
+          "audio": "What does maintaining confidentiality mean?",
+          "options": ["Sharing all information", "Keeping sensitive information private", "Talking loudly"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always answer",
+          "suffix": "within three rings when possible.",
+          "answer": "phones",
+          "selected": false,
+          "feedback": "Prompt phone answering demonstrates professionalism and good customer service."
+        },
+        {
+          "prefix": "Keep all",
+          "suffix": "organized and easily accessible.",
+          "answer": "files",
+          "selected": false,
+          "feedback": "Well-organized filing systems save time and improve office efficiency."
+        },
+        {
+          "prefix": "Maintain",
+          "suffix": "of sensitive company and client information.",
+          "answer": "confidentiality",
+          "selected": false,
+          "feedback": "Confidentiality builds trust and protects business relationships."
+        }
+      ]
+    },
+    {
+      "title": "Data Entry and Record Keeping → Entrada de datos y mantenimiento de registros",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Type data accurately and quickly",
+          "spanish": "Teclea datos con precisión y rapidez"
+        },
+        {
+          "english": "Verify information before saving",
+          "spanish": "Verifica información antes de guardar"
+        },
+        {
+          "english": "Use spreadsheet software efficiently",
+          "spanish": "Usa software de hojas de cálculo eficientemente"
+        },
+        {
+          "english": "Create backup copies regularly",
+          "spanish": "Crea copias de respaldo regularmente"
+        },
+        {
+          "english": "Sort and filter data properly",
+          "spanish": "Ordena y filtra datos apropiadamente"
+        },
+        {
+          "english": "Follow data entry protocols",
+          "spanish": "Sigue protocolos de entrada de datos"
+        },
+        {
+          "english": "Protect sensitive information",
+          "spanish": "Protege información sensible"
+        },
+        {
+          "english": "Update records promptly",
+          "spanish": "Actualiza registros prontamente"
+        },
+        {
+          "english": "Generate reports from databases",
+          "spanish": "Genera reportes de bases de datos"
+        },
+        {
+          "english": "Check for duplicate entries",
+          "spanish": "Revisa por entradas duplicadas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is accuracy important in data entry?",
+          "options": ["Errors can lead to wrong decisions and problems", "Speed is more important", "It doesn't matter"],
+          "answer": 0
+        },
+        {
+          "audio": "How often should you create backup copies?",
+          "options": ["Never", "Regularly, according to company policy", "Only when the computer breaks"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you do before saving new data?",
+          "options": ["Save immediately", "Verify the information is correct", "Delete old data"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "information carefully before entering it into systems.",
+          "answer": "verify",
+          "selected": false,
+          "feedback": "Verification prevents errors that can cause problems later in business processes."
+        },
+        {
+          "prefix": "Create",
+          "suffix": "copies to protect against data loss.",
+          "answer": "backup",
+          "selected": false,
+          "feedback": "Regular backups ensure important data can be recovered if systems fail."
+        },
+        {
+          "prefix": "Follow company",
+          "suffix": "for consistent data entry procedures.",
+          "answer": "protocols",
+          "selected": false,
+          "feedback": "Standardized protocols ensure data consistency and quality across the organization."
+        }
+      ]
+    },
+    {
+      "title": "Business Communication → Comunicación empresarial",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Write clear and concise emails",
+          "spanish": "Escribe correos claros y concisos"
+        },
+        {
+          "english": "Use appropriate business language",
+          "spanish": "Usa lenguaje empresarial apropiado"
+        },
+        {
+          "english": "Respond to messages promptly",
+          "spanish": "Responde mensajes prontamente"
+        },
+        {
+          "english": "Format documents professionally",
+          "spanish": "Formatea documentos profesionalmente"
+        },
+        {
+          "english": "Proofread before sending",
+          "spanish": "Revisa antes de enviar"
+        },
+        {
+          "english": "Use proper subject lines",
+          "spanish": "Usa líneas de asunto apropiadas"
+        },
+        {
+          "english": "Include necessary attachments",
+          "spanish": "Incluye archivos adjuntos necesarios"
+        },
+        {
+          "english": "Copy relevant team members",
+          "spanish": "Copia miembros relevantes del equipo"
+        },
+        {
+          "english": "Maintain professional tone",
+          "spanish": "Mantén tono profesional"
+        },
+        {
+          "english": "Follow company communication policies",
+          "spanish": "Sigue políticas de comunicación de la empresa"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes a good email subject line?",
+          "options": ["It clearly describes the email content", "It's very long", "It uses all capital letters"],
+          "answer": 0
+        },
+        {
+          "audio": "Why should you proofread before sending messages?",
+          "options": ["To catch errors and ensure clarity", "To make them longer", "It's not necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "How quickly should you respond to business emails?",
+          "options": ["Within a week", "Within 24-48 hours", "Never"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "your messages before sending them.",
+          "answer": "proofread",
+          "selected": false,
+          "feedback": "Proofreading catches errors and ensures your message is clear and professional."
+        },
+        {
+          "prefix": "Use",
+          "suffix": "subject lines that clearly describe the content.",
+          "answer": "descriptive",
+          "selected": false,
+          "feedback": "Clear subject lines help recipients prioritize and organize their email."
+        },
+        {
+          "prefix": "Maintain a",
+          "suffix": "tone in all business communications.",
+          "answer": "professional",
+          "selected": false,
+          "feedback": "Professional tone builds credibility and maintains business relationships."
+        }
+      ]
+    },
+    {
+      "title": "Meeting and Event Coordination → Coordinación de reuniones y eventos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Schedule meetings at convenient times",
+          "spanish": "Programa reuniones en horarios convenientes"
+        },
+        {
+          "english": "Reserve appropriate meeting rooms",
+          "spanish": "Reserva salas de reunión apropiadas"
+        },
+        {
+          "english": "Send calendar invitations",
+          "spanish": "Envía invitaciones de calendario"
+        },
+        {
+          "english": "Prepare meeting agendas",
+          "spanish": "Prepara agendas de reunión"
+        },
+        {
+          "english": "Set up audio-visual equipment",
+          "spanish": "Configura equipo audiovisual"
+        },
+        {
+          "english": "Arrange catering if needed",
+          "spanish": "Organiza catering si es necesario"
+        },
+        {
+          "english": "Take meeting minutes",
+          "spanish": "Toma minutos de reunión"
+        },
+        {
+          "english": "Distribute action items",
+          "spanish": "Distribuye elementos de acción"
+        },
+        {
+          "english": "Follow up on decisions",
+          "spanish": "Da seguimiento a decisiones"
+        },
+        {
+          "english": "Coordinate with external vendors",
+          "spanish": "Coordina con proveedores externos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should you include in a meeting agenda?",
+          "options": ["Topics to be discussed and time allocations", "Only the meeting time", "Personal opinions"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is it important to take meeting minutes?",
+          "options": ["To record decisions and action items", "To waste paper", "It's not important"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you send meeting invitations?",
+          "options": ["Well in advance to allow planning", "At the last minute", "After the meeting"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Financial and Accounting Support → Apoyo financiero y contable",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Process invoices accurately",
+          "spanish": "Procesa facturas con precisión"
+        },
+        {
+          "english": "Track expenses and receipts",
+          "spanish": "Rastrea gastos y recibos"
+        },
+        {
+          "english": "Reconcile bank statements",
+          "spanish": "Concilia estados de cuenta bancarios"
+        },
+        {
+          "english": "Prepare basic financial reports",
+          "spanish": "Prepara reportes financieros básicos"
+        },
+        {
+          "english": "Handle petty cash transactions",
+          "spanish": "Maneja transacciones de caja chica"
+        },
+        {
+          "english": "File tax documents properly",
+          "spanish": "Archiva documentos de impuestos apropiadamente"
+        },
+        {
+          "english": "Assist with budget tracking",
+          "spanish": "Asiste con seguimiento de presupuesto"
+        },
+        {
+          "english": "Process payroll information",
+          "spanish": "Procesa información de nómina"
+        },
+        {
+          "english": "Maintain financial records",
+          "spanish": "Mantén registros financieros"
+        },
+        {
+          "english": "Support audit preparations",
+          "spanish": "Apoya preparaciones de auditoría"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "invoices carefully for accuracy before processing.",
+          "answer": "check",
+          "selected": false,
+          "feedback": "Accurate invoice processing prevents payment errors and maintains vendor relationships."
+        },
+        {
+          "prefix": "Keep all",
+          "suffix": "and receipts organized for tax purposes.",
+          "answer": "expenses",
+          "selected": false,
+          "feedback": "Organized expense records are essential for tax preparation and business deductions."
+        },
+        {
+          "prefix": "Maintain accurate",
+          "suffix": "records for compliance and decision-making.",
+          "answer": "financial",
+          "selected": false,
+          "feedback": "Accurate financial records support business decisions and regulatory compliance."
+        }
+      ]
+    }
+  ]
+}
+]
+

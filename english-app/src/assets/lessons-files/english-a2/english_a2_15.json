@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 15,
+  "sections": [
+    {
+      "title": "Food Service and Hospitality → Servicio de alimentos y hospitalidad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Greet guests warmly",
+          "spanish": "Saluda huéspedes calurosamente"
+        },
+        {
+          "english": "Take orders accurately",
+          "spanish": "Toma órdenes con precisión"
+        },
+        {
+          "english": "Serve food promptly",
+          "spanish": "Sirve comida prontamente"
+        },
+        {
+          "english": "Check on customer satisfaction",
+          "spanish": "Verifica satisfacción del cliente"
+        },
+        {
+          "english": "Handle special dietary requests",
+          "spanish": "Maneja solicitudes dietéticas especiales"
+        },
+        {
+          "english": "Process payments efficiently",
+          "spanish": "Procesa pagos eficientemente"
+        },
+        {
+          "english": "Maintain clean dining areas",
+          "spanish": "Mantén áreas de comedor limpias"
+        },
+        {
+          "english": "Follow food safety protocols",
+          "spanish": "Sigue protocolos de seguridad alimentaria"
+        },
+        {
+          "english": "Upsell menu items appropriately",
+          "spanish": "Ofrece artículos del menú apropiadamente"
+        },
+        {
+          "english": "Handle complaints professionally",
+          "spanish": "Maneja quejas profesionalmente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the most important aspect of food service?",
+          "options": ["Speed only", "Customer satisfaction and food safety", "Making money"],
+          "answer": 1
+        },
+        {
+          "audio": "How should you handle special dietary requests?",
+          "options": ["Ignore them", "Check with the kitchen and accommodate when possible", "Tell customers to go elsewhere"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is food safety important?",
+          "options": ["To prevent illness and maintain reputation", "It's not important", "To slow down service"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "guests warmly to create a positive first impression.",
+          "answer": "greet",
+          "selected": false,
+          "feedback": "A warm greeting sets the tone for the entire dining experience."
+        },
+        {
+          "prefix": "Follow",
+          "suffix": "safety protocols to prevent foodborne illness.",
+          "answer": "food",
+          "selected": false,
+          "feedback": "Food safety protocols protect customers and maintain business reputation."
+        },
+        {
+          "prefix": "Handle customer",
+          "suffix": "professionally to maintain good relationships.",
+          "answer": "complaints",
+          "selected": false,
+          "feedback": "Professional complaint handling can turn negative experiences into positive ones."
+        }
+      ]
+    },
+    {
+      "title": "Kitchen Operations and Food Preparation → Operaciones de cocina y preparación de alimentos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Wash hands frequently",
+          "spanish": "Lávate las manos frecuentemente"
+        },
+        {
+          "english": "Keep work surfaces clean",
+          "spanish": "Mantén superficies de trabajo limpias"
+        },
+        {
+          "english": "Store food at proper temperatures",
+          "spanish": "Almacena comida a temperaturas apropiadas"
+        },
+        {
+          "english": "Use separate cutting boards",
+          "spanish": "Usa tablas de cortar separadas"
+        },
+        {
+          "english": "Follow recipe instructions exactly",
+          "spanish": "Sigue instrucciones de recetas exactamente"
+        },
+        {
+          "english": "Check food temperatures while cooking",
+          "spanish": "Revisa temperaturas de comida mientras cocinas"
+        },
+        {
+          "english": "Label and date all containers",
+          "spanish": "Etiqueta y fecha todos los contenedores"
+        },
+        {
+          "english": "Rotate stock using FIFO method",
+          "spanish": "Rota stock usando método FIFO"
+        },
+        {
+          "english": "Clean equipment after each use",
+          "spanish": "Limpia equipo después de cada uso"
+        },
+        {
+          "english": "Report equipment problems immediately",
+          "spanish": "Reporta problemas de equipo inmediatamente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why should you wash hands frequently in the kitchen?",
+          "options": ["To prevent contamination and spread of bacteria", "To waste water", "It's not necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What does FIFO mean in food service?",
+          "options": ["First In, First Out - use older ingredients first", "Fast In, Fast Out", "Final In, Final Out"],
+          "answer": 0
+        },
+        {
+          "audio": "Why use separate cutting boards?",
+          "options": ["To prevent cross-contamination between different foods", "To make more work", "It's not important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "hands before handling food to prevent contamination.",
+          "answer": "wash",
+          "selected": false,
+          "feedback": "Hand washing is the most effective way to prevent foodborne illness transmission."
+        },
+        {
+          "prefix": "Store food at",
+          "suffix": "temperatures to prevent bacterial growth.",
+          "answer": "proper",
+          "selected": false,
+          "feedback": "Correct storage temperatures keep food safe and maintain quality."
+        },
+        {
+          "prefix": "Use the",
+          "suffix": "method to ensure older ingredients are used first.",
+          "answer": "FIFO",
+          "selected": false,
+          "feedback": "FIFO rotation prevents food waste and ensures freshness."
+        }
+      ]
+    },
+    {
+      "title": "Hotel and Accommodation Services → Servicios de hotel y alojamiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Check guests in and out efficiently",
+          "spanish": "Registra huéspedes de entrada y salida eficientemente"
+        },
+        {
+          "english": "Provide local information",
+          "spanish": "Proporciona información local"
+        },
+        {
+          "english": "Handle room service requests",
+          "spanish": "Maneja solicitudes de servicio a la habitación"
+        },
+        {
+          "english": "Maintain guest privacy",
+          "spanish": "Mantén privacidad del huésped"
+        },
+        {
+          "english": "Process reservations accurately",
+          "spanish": "Procesa reservaciones con precisión"
+        },
+        {
+          "english": "Coordinate with housekeeping",
+          "spanish": "Coordina con limpieza"
+        },
+        {
+          "english": "Handle payment and billing",
+          "spanish": "Maneja pago y facturación"
+        },
+        {
+          "english": "Respond to guest complaints",
+          "spanish": "Responde a quejas de huéspedes"
+        },
+        {
+          "english": "Ensure security protocols",
+          "spanish": "Asegura protocolos de seguridad"
+        },
+        {
+          "english": "Offer additional services",
+          "spanish": "Ofrece servicios adicionales"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What information should you provide to hotel guests?",
+          "options": ["Local attractions, restaurants, and services", "Personal opinions only", "Nothing"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is guest privacy important?",
+          "options": ["To build trust and comply with regulations", "It's not important", "To make work harder"],
+          "answer": 0
+        },
+        {
+          "audio": "How should you handle guest complaints?",
+          "options": ["Listen carefully and work to resolve issues", "Ignore them", "Argue with guests"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Process",
+          "suffix": "accurately to ensure smooth guest experiences.",
+          "answer": "reservations",
+          "selected": false,
+          "feedback": "Accurate reservations prevent overbooking and disappointed guests."
+        },
+        {
+          "prefix": "Maintain guest",
+          "suffix": "by not sharing personal information.",
+          "answer": "privacy",
+          "selected": false,
+          "feedback": "Protecting guest privacy builds trust and complies with privacy laws."
+        },
+        {
+          "prefix": "Coordinate with",
+          "suffix": "to ensure rooms are ready for new guests.",
+          "answer": "housekeeping",
+          "selected": false,
+          "feedback": "Good coordination ensures rooms meet cleanliness and readiness standards."
+        }
+      ]
+    },
+    {
+      "title": "Event Planning and Catering → Planificación de eventos y catering",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Plan events according to client needs",
+          "spanish": "Planifica eventos según necesidades del cliente"
+        },
+        {
+          "english": "Coordinate venue arrangements",
+          "spanish": "Coordina arreglos del lugar"
+        },
+        {
+          "english": "Manage catering logistics",
+          "spanish": "Gestiona logística de catering"
+        },
+        {
+          "english": "Set up decorations and equipment",
+          "spanish": "Configura decoraciones y equipo"
+        },
+        {
+          "english": "Supervise event timeline",
+          "spanish": "Supervisa cronograma del evento"
+        },
+        {
+          "english": "Handle last-minute changes",
+          "spanish": "Maneja cambios de último minuto"
+        },
+        {
+          "english": "Coordinate with vendors",
+          "spanish": "Coordina con proveedores"
+        },
+        {
+          "english": "Ensure safety regulations compliance",
+          "spanish": "Asegura cumplimiento de regulaciones de seguridad"
+        },
+        {
+          "english": "Manage event budget",
+          "spanish": "Gestiona presupuesto del evento"
+        },
+        {
+          "english": "Evaluate event success",
+          "spanish": "Evalúa éxito del evento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is most important when planning events?",
+          "options": ["Understanding and meeting client expectations", "Making it expensive", "Using only your own ideas"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is timeline management crucial for events?",
+          "options": ["To ensure everything happens on schedule", "To confuse people", "It's not important"],
+          "answer": 0
+        },
+        {
+          "audio": "How should you handle last-minute changes?",
+          "options": ["Stay calm and adapt quickly", "Panic", "Cancel the event"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Tourism and Travel Services → Servicios de turismo y viajes",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Provide travel information and recommendations",
+          "spanish": "Proporciona información y recomendaciones de viaje"
+        },
+        {
+          "english": "Book flights and accommodations",
+          "spanish": "Reserva vuelos y alojamientos"
+        },
+        {
+          "english": "Plan itineraries for tourists",
+          "spanish": "Planifica itinerarios para turistas"
+        },
+        {
+          "english": "Arrange transportation services",
+          "spanish": "Organiza servicios de transporte"
+        },
+        {
+          "english": "Assist with travel documentation",
+          "spanish": "Asiste con documentación de viaje"
+        },
+        {
+          "english": "Handle travel insurance matters",
+          "spanish": "Maneja asuntos de seguro de viaje"
+        },
+        {
+          "english": "Provide cultural information",
+          "spanish": "Proporciona información cultural"
+        },
+        {
+          "english": "Resolve travel problems",
+          "spanish": "Resuelve problemas de viaje"
+        },
+        {
+          "english": "Promote local attractions",
+          "spanish": "Promociona atracciones locales"
+        },
+        {
+          "english": "Ensure customer satisfaction",
+          "spanish": "Asegura satisfacción del cliente"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always provide accurate",
+          "suffix": "information to help travelers make good decisions.",
+          "answer": "travel",
+          "selected": false,
+          "feedback": "Accurate information helps travelers have safe and enjoyable experiences."
+        },
+        {
+          "prefix": "Plan detailed",
+          "suffix": "that match client interests and budget.",
+          "answer": "itineraries",
+          "selected": false,
+          "feedback": "Well-planned itineraries maximize enjoyment and minimize travel stress."
+        },
+        {
+          "prefix": "Be prepared to",
+          "suffix": "travel problems quickly and efficiently.",
+          "answer": "resolve",
+          "selected": false,
+          "feedback": "Quick problem resolution maintains customer satisfaction and trust."
+        }
+      ]
+    }
+  ]
+}
+]
+

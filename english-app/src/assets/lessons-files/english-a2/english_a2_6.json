@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 6,
+  "sections": [
+    {
+      "title": "Workplace Safety Signs and Symbols → Señales y símbolos de seguridad laboral",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Warning sign",
+          "spanish": "Señal de advertencia"
+        },
+        {
+          "english": "Danger zone",
+          "spanish": "Zona de peligro"
+        },
+        {
+          "english": "No entry",
+          "spanish": "Prohibido el paso"
+        },
+        {
+          "english": "Hard hat required",
+          "spanish": "Casco requerido"
+        },
+        {
+          "english": "Safety goggles mandatory",
+          "spanish": "Gafas de seguridad obligatorias"
+        },
+        {
+          "english": "Emergency exit",
+          "spanish": "Salida de emergencia"
+        },
+        {
+          "english": "Fire extinguisher",
+          "spanish": "Extintor de incendios"
+        },
+        {
+          "english": "First aid station",
+          "spanish": "Estación de primeros auxilios"
+        },
+        {
+          "english": "High voltage",
+          "spanish": "Alto voltaje"
+        },
+        {
+          "english": "Authorized personnel only",
+          "spanish": "Solo personal autorizado"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "This sign means you must wear protective equipment in this area.",
+          "options": ["Optional equipment", "Mandatory equipment", "No equipment needed"],
+          "answer": 1
+        },
+        {
+          "audio": "The red triangle with exclamation mark indicates a warning.",
+          "options": ["Information", "Warning", "Permission"],
+          "answer": 1
+        },
+        {
+          "audio": "Green signs with arrows show the way to emergency exits.",
+          "options": ["Entrance", "Emergency exit", "Storage room"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The",
+          "suffix": "symbol warns of electrical danger.",
+          "answer": "lightning",
+          "selected": false,
+          "feedback": "Lightning bolt symbols indicate electrical hazards and high voltage areas."
+        },
+        {
+          "prefix": "Always follow",
+          "suffix": "signs to stay safe at work.",
+          "answer": "safety",
+          "selected": false,
+          "feedback": "Safety signs provide important information to protect workers from hazards."
+        },
+        {
+          "prefix": "Red signs usually indicate",
+          "suffix": "or prohibited actions.",
+          "answer": "danger",
+          "selected": false,
+          "feedback": "Red is universally used to signal danger, emergency, or prohibition."
+        }
+      ]
+    },
+    {
+      "title": "Personal Protective Equipment (PPE) → Equipo de protección personal",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Safety helmet",
+          "spanish": "Casco de seguridad"
+        },
+        {
+          "english": "Safety boots",
+          "spanish": "Botas de seguridad"
+        },
+        {
+          "english": "Protective gloves",
+          "spanish": "Guantes protectores"
+        },
+        {
+          "english": "Safety vest",
+          "spanish": "Chaleco de seguridad"
+        },
+        {
+          "english": "Ear protection",
+          "spanish": "Protección auditiva"
+        },
+        {
+          "english": "Respirator mask",
+          "spanish": "Mascarilla respiratoria"
+        },
+        {
+          "english": "Cut-resistant gloves",
+          "spanish": "Guantes resistentes a cortes"
+        },
+        {
+          "english": "Chemical-resistant suit",
+          "spanish": "Traje resistente a químicos"
+        },
+        {
+          "english": "Fall protection harness",
+          "spanish": "Arnés de protección contra caídas"
+        },
+        {
+          "english": "Face shield",
+          "spanish": "Protector facial"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Which PPE protects your head from falling objects?",
+          "options": ["Safety goggles", "Safety helmet", "Ear protection"],
+          "answer": 1
+        },
+        {
+          "audio": "What should you wear when working with loud machinery?",
+          "options": ["Safety vest", "Ear protection", "Face shield"],
+          "answer": 1
+        },
+        {
+          "audio": "Which equipment prevents cuts to your hands?",
+          "options": ["Cut-resistant gloves", "Safety boots", "Respirator"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always wear",
+          "suffix": "when entering construction areas.",
+          "answer": "safety helmets",
+          "selected": false,
+          "feedback": "Safety helmets protect your head from falling objects and impacts."
+        },
+        {
+          "prefix": "Use",
+          "suffix": "when working with chemicals.",
+          "answer": "protective gloves",
+          "selected": false,
+          "feedback": "Protective gloves prevent chemical burns and skin contact with hazardous substances."
+        },
+        {
+          "prefix": "High-visibility",
+          "suffix": "help others see you in low light.",
+          "answer": "safety vests",
+          "selected": false,
+          "feedback": "Safety vests with reflective materials make workers visible in poor lighting conditions."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Procedures and Protocols → Procedimientos y protocolos de emergencia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Fire drill",
+          "spanish": "Simulacro de incendio"
+        },
+        {
+          "english": "Evacuation route",
+          "spanish": "Ruta de evacuación"
+        },
+        {
+          "english": "Assembly point",
+          "spanish": "Punto de reunión"
+        },
+        {
+          "english": "Emergency contact",
+          "spanish": "Contacto de emergencia"
+        },
+        {
+          "english": "Incident report",
+          "spanish": "Reporte de incidente"
+        },
+        {
+          "english": "Medical emergency",
+          "spanish": "Emergencia médica"
+        },
+        {
+          "english": "Chemical spill",
+          "spanish": "Derrame químico"
+        },
+        {
+          "english": "Power outage",
+          "spanish": "Corte de energía"
+        },
+        {
+          "english": "Equipment failure",
+          "spanish": "Falla de equipo"
+        },
+        {
+          "english": "Emergency shutdown",
+          "spanish": "Parada de emergencia"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "When the fire alarm sounds, what should you do first?",
+          "options": ["Call the fire department", "Stop work and evacuate", "Look for the fire"],
+          "answer": 1
+        },
+        {
+          "audio": "Where should you go during an evacuation?",
+          "options": ["To your car", "To the assembly point", "To the cafeteria"],
+          "answer": 1
+        },
+        {
+          "audio": "Who should you notify about workplace injuries?",
+          "options": ["Your family", "Your supervisor", "The security guard"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "During a fire emergency,",
+          "suffix": "the building immediately.",
+          "answer": "evacuate",
+          "selected": false,
+          "feedback": "Evacuation is the first priority during fire emergencies to ensure personal safety."
+        },
+        {
+          "prefix": "All workplace accidents must be",
+          "suffix": "within 24 hours.",
+          "answer": "reported",
+          "selected": false,
+          "feedback": "Prompt reporting of accidents is required by law and company policy."
+        },
+        {
+          "prefix": "Know the location of",
+          "suffix": "exits in your work area.",
+          "answer": "emergency",
+          "selected": false,
+          "feedback": "Knowing emergency exit locations is essential for quick evacuation during emergencies."
+        }
+      ]
+    },
+    {
+      "title": "Hazard Identification → Identificación de peligros",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Electrical hazard",
+          "spanish": "Peligro eléctrico"
+        },
+        {
+          "english": "Chemical exposure",
+          "spanish": "Exposición química"
+        },
+        {
+          "english": "Slip and fall risk",
+          "spanish": "Riesgo de resbalones y caídas"
+        },
+        {
+          "english": "Moving machinery",
+          "spanish": "Maquinaria en movimiento"
+        },
+        {
+          "english": "Hot surfaces",
+          "spanish": "Superficies calientes"
+        },
+        {
+          "english": "Noise pollution",
+          "spanish": "Contaminación acústica"
+        },
+        {
+          "english": "Poor lighting",
+          "spanish": "Iluminación deficiente"
+        },
+        {
+          "english": "Unstable structures",
+          "spanish": "Estructuras inestables"
+        },
+        {
+          "english": "Confined spaces",
+          "spanish": "Espacios confinados"
+        },
+        {
+          "english": "Ergonomic risks",
+          "spanish": "Riesgos ergonómicos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Wet floors can cause what type of accident?",
+          "options": ["Electrical shock", "Slips and falls", "Chemical burns"],
+          "answer": 1
+        },
+        {
+          "audio": "What hazard is associated with exposed electrical wires?",
+          "options": ["Fire risk", "Electrical shock", "Both"],
+          "answer": 2
+        },
+        {
+          "audio": "Why is proper lifting technique important?",
+          "options": ["To work faster", "To prevent back injury", "To save energy"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Safety Rules and Regulations → Reglas y regulaciones de seguridad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "No smoking in work areas",
+          "spanish": "No fumar en áreas de trabajo"
+        },
+        {
+          "english": "Keep emergency exits clear",
+          "spanish": "Mantenga despejadas las salidas de emergencia"
+        },
+        {
+          "english": "Report all accidents immediately",
+          "spanish": "Reporte todos los accidentes inmediatamente"
+        },
+        {
+          "english": "Follow lockout/tagout procedures",
+          "spanish": "Siga los procedimientos de bloqueo/etiquetado"
+        },
+        {
+          "english": "Maintain three points of contact on ladders",
+          "spanish": "Mantenga tres puntos de contacto en escaleras"
+        },
+        {
+          "english": "Never bypass safety devices",
+          "spanish": "Nunca omita los dispositivos de seguridad"
+        },
+        {
+          "english": "Use proper lifting techniques",
+          "spanish": "Use técnicas apropiadas de levantamiento"
+        },
+        {
+          "english": "Keep work areas clean and organized",
+          "spanish": "Mantenga las áreas de trabajo limpias y organizadas"
+        },
+        {
+          "english": "Attend all safety training sessions",
+          "spanish": "Asista a todas las sesiones de capacitación en seguridad"
+        },
+        {
+          "english": "Test safety equipment regularly",
+          "spanish": "Pruebe el equipo de seguridad regularmente"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "All employees must",
+          "suffix": "safety training before starting work.",
+          "answer": "complete",
+          "selected": false,
+          "feedback": "Safety training is mandatory for all employees before they begin working."
+        },
+        {
+          "prefix": "Emergency exits must remain",
+          "suffix": "at all times.",
+          "answer": "clear",
+          "selected": false,
+          "feedback": "Clear emergency exits ensure safe evacuation during emergencies."
+        },
+        {
+          "prefix": "Safety equipment must be",
+          "suffix": "and maintained regularly.",
+          "answer": "inspected",
+          "selected": false,
+          "feedback": "Regular inspection ensures safety equipment functions properly when needed."
+        }
+      ]
+    }
+  ]
+}
+]
+

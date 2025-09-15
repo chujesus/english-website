@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 12,
+  "sections": [
+    {
+      "title": "Basic Mechanical Systems → Sistemas mecánicos básicos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Gears transfer rotational motion",
+          "spanish": "Los engranajes transfieren movimiento rotacional"
+        },
+        {
+          "english": "Pulleys change direction of force",
+          "spanish": "Las poleas cambian dirección de fuerza"
+        },
+        {
+          "english": "Levers multiply applied force",
+          "spanish": "Las palancas multiplican fuerza aplicada"
+        },
+        {
+          "english": "Springs store mechanical energy",
+          "spanish": "Los resortes almacenan energía mecánica"
+        },
+        {
+          "english": "Bearings reduce friction",
+          "spanish": "Los rodamientos reducen fricción"
+        },
+        {
+          "english": "Belts connect rotating shafts",
+          "spanish": "Las correas conectan ejes rotatorios"
+        },
+        {
+          "english": "Clutches engage and disengage power",
+          "spanish": "Los embragues conectan y desconectan potencia"
+        },
+        {
+          "english": "Brakes stop moving parts",
+          "spanish": "Los frenos detienen partes móviles"
+        },
+        {
+          "english": "Lubrication prevents wear",
+          "spanish": "La lubricación previene desgaste"
+        },
+        {
+          "english": "Alignment ensures smooth operation",
+          "spanish": "La alineación asegura operación suave"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main purpose of gears?",
+          "options": ["To store energy", "To transfer rotational motion", "To stop movement"],
+          "answer": 1
+        },
+        {
+          "audio": "Why do we use bearings in mechanical systems?",
+          "options": ["To reduce friction", "To increase friction", "To add weight"],
+          "answer": 0
+        },
+        {
+          "audio": "What does lubrication do for moving parts?",
+          "options": ["Makes them heavier", "Prevents wear and reduces friction", "Stops them from moving"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Regular",
+          "suffix": "extends the life of mechanical components.",
+          "answer": "lubrication",
+          "selected": false,
+          "feedback": "Proper lubrication reduces friction and prevents premature wear of moving parts."
+        },
+        {
+          "prefix": "Check",
+          "suffix": "regularly to ensure smooth power transmission.",
+          "answer": "belts",
+          "selected": false,
+          "feedback": "Belt tension and condition directly affect system efficiency and reliability."
+        },
+        {
+          "prefix": "Proper shaft",
+          "suffix": "prevents vibration and premature bearing failure.",
+          "answer": "alignment",
+          "selected": false,
+          "feedback": "Misaligned shafts cause excessive wear and energy loss in mechanical systems."
+        }
+      ]
+    },
+    {
+      "title": "Automotive Maintenance Basics → Fundamentos de mantenimiento automotriz",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Check engine oil regularly",
+          "spanish": "Revisa el aceite del motor regularmente"
+        },
+        {
+          "english": "Monitor tire pressure monthly",
+          "spanish": "Monitorea la presión de las llantas mensualmente"
+        },
+        {
+          "english": "Replace air filters when dirty",
+          "spanish": "Reemplaza filtros de aire cuando estén sucios"
+        },
+        {
+          "english": "Test battery voltage periodically",
+          "spanish": "Prueba voltaje de batería periódicamente"
+        },
+        {
+          "english": "Inspect brake pads for wear",
+          "spanish": "Inspecciona pastillas de freno por desgaste"
+        },
+        {
+          "english": "Change transmission fluid as scheduled",
+          "spanish": "Cambia fluido de transmisión según programa"
+        },
+        {
+          "english": "Clean fuel injectors annually",
+          "spanish": "Limpia inyectores de combustible anualmente"
+        },
+        {
+          "english": "Check coolant levels before trips",
+          "spanish": "Revisa niveles de refrigerante antes de viajes"
+        },
+        {
+          "english": "Rotate tires to ensure even wear",
+          "spanish": "Rota llantas para asegurar desgaste uniforme"
+        },
+        {
+          "english": "Follow manufacturer maintenance schedules",
+          "spanish": "Sigue programas de mantenimiento del fabricante"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How often should you check tire pressure?",
+          "options": ["Weekly", "Monthly", "Yearly"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is it important to change engine oil regularly?",
+          "options": ["To lubricate and protect engine parts", "To make the car look better", "To increase fuel consumption"],
+          "answer": 0
+        },
+        {
+          "audio": "What happens if you don't replace worn brake pads?",
+          "options": ["Nothing", "Reduced braking performance and safety", "Better fuel economy"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Check",
+          "suffix": "oil level and color monthly to monitor engine health.",
+          "answer": "engine",
+          "selected": false,
+          "feedback": "Engine oil is essential for lubrication and protection of internal engine components."
+        },
+        {
+          "prefix": "Maintain proper",
+          "suffix": "pressure to improve fuel economy and tire life.",
+          "answer": "tire",
+          "selected": false,
+          "feedback": "Correct tire pressure optimizes contact with the road and reduces unnecessary wear."
+        },
+        {
+          "prefix": "Replace",
+          "suffix": "filters regularly to ensure clean air enters the engine.",
+          "answer": "air",
+          "selected": false,
+          "feedback": "Clean air filters improve engine performance and fuel efficiency."
+        }
+      ]
+    },
+    {
+      "title": "Building Construction and Trades → Construcción de edificios y oficios",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Foundations support the entire structure",
+          "spanish": "Los cimientos soportan toda la estructura"
+        },
+        {
+          "english": "Concrete must cure properly",
+          "spanish": "El concreto debe curar apropiadamente"
+        },
+        {
+          "english": "Rebar reinforces concrete strength",
+          "spanish": "La varilla refuerza la resistencia del concreto"
+        },
+        {
+          "english": "Electrical wiring follows safety codes",
+          "spanish": "El cableado eléctrico sigue códigos de seguridad"
+        },
+        {
+          "english": "Plumbing systems carry water and waste",
+          "spanish": "Los sistemas de plomería llevan agua y desechos"
+        },
+        {
+          "english": "Insulation controls temperature",
+          "spanish": "El aislamiento controla temperatura"
+        },
+        {
+          "english": "Roofing protects from weather",
+          "spanish": "El techado protege del clima"
+        },
+        {
+          "english": "Windows provide light and ventilation",
+          "spanish": "Las ventanas proporcionan luz y ventilación"
+        },
+        {
+          "english": "Paint protects and beautifies surfaces",
+          "spanish": "La pintura protege y embellece superficies"
+        },
+        {
+          "english": "Building inspections ensure code compliance",
+          "spanish": "Las inspecciones de edificios aseguran cumplimiento de códigos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are foundations critical in construction?",
+          "options": ["They support the entire building structure", "They are decorative only", "They are optional"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of rebar in concrete?",
+          "options": ["To make it heavier", "To reinforce and strengthen concrete", "To change its color"],
+          "answer": 1
+        },
+        {
+          "audio": "Why must electrical work follow safety codes?",
+          "options": ["To prevent fires and electrical hazards", "To make it more expensive", "To slow down construction"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Strong",
+          "suffix": "are essential for building stability and safety.",
+          "answer": "foundations",
+          "selected": false,
+          "feedback": "Foundations transfer the building's weight safely to the ground below."
+        },
+        {
+          "prefix": "Proper",
+          "suffix": "installation reduces energy costs and improves comfort.",
+          "answer": "insulation",
+          "selected": false,
+          "feedback": "Good insulation maintains indoor temperature and reduces heating/cooling costs."
+        },
+        {
+          "prefix": "Building",
+          "suffix": "verify that construction meets safety standards.",
+          "answer": "inspections",
+          "selected": false,
+          "feedback": "Regular inspections ensure work complies with building codes and safety requirements."
+        }
+      ]
+    },
+    {
+      "title": "Industrial Equipment Operation → Operación de equipo industrial",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Read operation manuals thoroughly",
+          "spanish": "Lee manuales de operación completamente"
+        },
+        {
+          "english": "Follow lockout/tagout procedures",
+          "spanish": "Sigue procedimientos de bloqueo/etiquetado"
+        },
+        {
+          "english": "Wear required personal protective equipment",
+          "spanish": "Usa equipo de protección personal requerido"
+        },
+        {
+          "english": "Perform pre-operation safety checks",
+          "spanish": "Realiza verificaciones de seguridad pre-operación"
+        },
+        {
+          "english": "Monitor gauges and indicators",
+          "spanish": "Monitorea medidores e indicadores"
+        },
+        {
+          "english": "Record operational data",
+          "spanish": "Registra datos operacionales"
+        },
+        {
+          "english": "Report unusual sounds or vibrations",
+          "spanish": "Reporta sonidos o vibraciones inusuales"
+        },
+        {
+          "english": "Shut down equipment properly",
+          "spanish": "Apaga equipo apropiadamente"
+        },
+        {
+          "english": "Clean work areas after use",
+          "spanish": "Limpia áreas de trabajo después del uso"
+        },
+        {
+          "english": "Document maintenance needs",
+          "spanish": "Documenta necesidades de mantenimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is it important to read operation manuals?",
+          "options": ["To understand safe and proper equipment operation", "To waste time", "They are not important"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you do if you hear unusual equipment sounds?",
+          "options": ["Ignore them", "Report them immediately", "Turn up the music"],
+          "answer": 1
+        },
+        {
+          "audio": "When should you perform safety checks?",
+          "options": ["Never", "Before operating equipment", "Only when problems occur"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Energy Systems and Efficiency → Sistemas de energía y eficiencia",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Solar panels convert sunlight to electricity",
+          "spanish": "Los paneles solares convierten luz solar en electricidad"
+        },
+        {
+          "english": "Wind turbines generate renewable power",
+          "spanish": "Las turbinas de viento generan energía renovable"
+        },
+        {
+          "english": "Energy audits identify waste",
+          "spanish": "Las auditorías de energía identifican desperdicios"
+        },
+        {
+          "english": "LED lights consume less power",
+          "spanish": "Las luces LED consumen menos energía"
+        },
+        {
+          "english": "Insulation reduces heat loss",
+          "spanish": "El aislamiento reduce pérdida de calor"
+        },
+        {
+          "english": "Smart thermostats optimize temperature",
+          "spanish": "Los termostatos inteligentes optimizan temperatura"
+        },
+        {
+          "english": "Energy storage systems save excess power",
+          "spanish": "Los sistemas de almacenamiento de energía guardan energía excesiva"
+        },
+        {
+          "english": "Power factor correction improves efficiency",
+          "spanish": "La corrección del factor de potencia mejora eficiencia"
+        },
+        {
+          "english": "Demand response reduces peak usage",
+          "spanish": "La respuesta a la demanda reduce uso pico"
+        },
+        {
+          "english": "Energy monitoring tracks consumption",
+          "spanish": "El monitoreo de energía rastrea consumo"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Renewable",
+          "suffix": "sources reduce dependence on fossil fuels.",
+          "answer": "energy",
+          "selected": false,
+          "feedback": "Renewable energy sources provide sustainable alternatives to traditional power generation."
+        },
+        {
+          "prefix": "Energy",
+          "suffix": "help identify opportunities to reduce consumption.",
+          "answer": "audits",
+          "selected": false,
+          "feedback": "Energy audits reveal where energy is being wasted and how to improve efficiency."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "automatically adjust temperature for optimal efficiency.",
+          "answer": "thermostats",
+          "selected": false,
+          "feedback": "Smart thermostats learn usage patterns and optimize heating/cooling automatically."
+        }
+      ]
+    }
+  ]
+}
+]
+

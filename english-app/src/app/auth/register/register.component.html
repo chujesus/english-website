@@ -1,0 +1,176 @@
+<div class="body">
+    <div class="row vh-100 justify-content-center align-items-center d-flex">
+        <div class="col-12 col-md-7">
+            <a class="m-1" routerLink="/login" aria-label="home"><i
+                    class="fas fa-sign-in-alt fa-2x text-warning"></i></a>
+            <div class="card card-size">
+                <div class="card-body">
+                    <form autocomplete="off" [formGroup]="form_subscribe" (ngSubmit)="continue()">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <h4 class="text-center text-dark">Agregar Usuario</h4>
+                            </div>
+                            <div class="form-group">
+                                <p class="mb-1 uws-message-id-validate">
+                                    <small class="text-muted">
+                                        *Cédula debe contener 9 dígitos, sin espacios ni caracteres adicionales
+                                        <strong>(ej:501230123)</strong>.
+                                    </small>
+                                </p>
+
+                                <div class="input-group">
+                                    <span class="input-group-text" id="identification"><i
+                                            class="fas fa-address-card"></i></span>
+                                    <input type="text" class="form-control" formControlName="identification"
+                                        placeholder="Ingrese su número de identificación" aria-label="identification"
+                                        aria-describedby="identification" [class.is-invalid]="IDNoValid"
+                                        (keyup)="getIdentification($event)">
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="IDNoValid" class="text-danger">
+                                    La identificación es requerida
+                                    <br>
+                                </small>
+                                <small *ngIf="isIDAvailable" class="text-danger">
+                                    El número de cédula ya está en uso
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="name"><i class="fas fa-user"></i></span>
+                                    <input class="form-control" type="text" formControlName="name"
+                                        placeholder="Nombre completo" aria-label="name" aria-describedby="name"
+                                        [class.is-invalid]="nameNoValid" [readonly]="isReadOnly" />
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="nameNoValid && isReadOnly == false" class="text-danger">
+                                    El nombre es requerido
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="first_name"><i class="fas fa-user"></i></span>
+                                    <input class="form-control" type="text" formControlName="first_name"
+                                        aria-label="first_name" aria-describedby="first_name"
+                                        placeholder="Primer apellido" [class.is-invalid]="firstNameNoValid"
+                                        [readonly]="isReadOnly" />
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="firstNameNoValid && isReadOnly == false" class="text-danger">
+                                    El primer apellido es requerido
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="last_name"><i class="fas fa-user"></i></span>
+                                    <input class="form-control" type="text" formControlName="last_name"
+                                        aria-label="last_name" aria-describedby="last_name"
+                                        placeholder="Segundo apellido" [class.is-invalid]="lastNameNoValid"
+                                        [readonly]="isReadOnly" />
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="lastNameNoValid && isReadOnly == false" class="text-danger">
+                                    El segundo apellido es requerido
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="phone"><i class="fas fa-mobile-alt"></i></span>
+                                    <input class="form-control" type="text" formControlName="phone" aria-label="phone"
+                                        aria-describedby="phone" placeholder="Ingrese el teléfono"
+                                        [class.is-invalid]="phoneNoValid" (keypress)="validNumber($event)" />
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="phoneNoValid" class="text-danger">
+                                    El teléfono es requerido
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="email"><i class="fas fa-envelope"></i></span>
+                                    <input class="form-control" type="email" formControlName="email" aria-label="email"
+                                        aria-describedby="email" placeholder="Ingrese correo electrónico"
+                                        [class.is-invalid]="emailRequired" (keyup)="getEmail($event)"
+                                        autocomplete="email" />
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="emailRequired" class="text-danger">
+                                    Correo eléctronico es requerido
+                                    <br />
+                                </small>
+                                <small *ngIf="isMailAvailable" class="text-danger">
+                                    Correo eléctronico no está disponible
+                                    <br />
+                                </small>
+                                <small *ngIf="emailNoValid?.errors?.['pattern']" class="text-danger">
+                                    Correo electrónico no válido
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="password"><i class="fas fa-lock"></i></span>
+                                    <input class="form-control" [type]="isChangeType ? 'password' : 'text'"
+                                        formControlName="password" placeholder="Ingrese contraseña"
+                                        aria-label="password" aria-describedby="password"
+                                        [class.is-invalid]="passwordRequire || passwordPatternError"
+                                        autocomplete="new-password" />
+                                    <span class="input-group-text eyeicon" (click)="viewPass()"><i
+                                            [ngClass]="isVisible ? 'fa fa-eye' : 'fa fa-eye-slash'"></i></span>
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="passwordRequire" class="text-danger">
+                                    Contraseña es requerida
+                                    <br>
+                                </small>
+                                <small *ngIf="passwordPatternError" class="text-danger pattern-message">
+                                    La contraseña debe cumplir con los siguientes requisitos:
+                                    <ul>
+                                        <li>Al menos una letra mayúscula.</li>
+                                        <li>Al menos una letra minúscula.</li>
+                                        <li>Al menos un número.</li>
+                                        <li>Debe tener una longitud mínima de 6 caracteres.</li>
+                                    </ul>
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="confirm_password"><i
+                                            class="fas fa-lock"></i></span>
+                                    <input class="form-control" [type]="isChangeRepeatType ? 'password' : 'text'"
+                                        formControlName="confirm_password" placeholder="Confirmar contraseña"
+                                        aria-label="confirm_password" aria-describedby="confirm_password"
+                                        [class.is-invalid]="confirmPasswordRequire || passwordsMatch"
+                                        autocomplete="new-password" />
+                                    <span class="input-group-text eyeicon" (click)="viewRepeatPass()"><i
+                                            [ngClass]="isRepeatVisible ? 'fa fa-eye' : 'fa fa-eye-slash'"></i></span>
+                                    <span class="text-danger ms-1 lead fw-bold">*</span>
+                                </div>
+                                <small *ngIf="confirmPasswordRequire" class="text-danger">
+                                    Contraseñas es requerida
+                                    <br>
+                                </small>
+                                <small *ngIf="passwordsMatch" class="text-danger">
+                                    Contraseñas no coinciden
+                                    <br>
+                                </small>
+                            </div>
+
+                            <div class="form-group d-grid">
+                                <button class="btn btn-primary" type="submit">Agregar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

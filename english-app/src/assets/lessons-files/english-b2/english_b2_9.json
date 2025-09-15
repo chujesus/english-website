@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 9,
+  "sections": [
+    {
+      "title": "Advanced Manufacturing and Industry 4.0 → Manufactura avanzada e Industria 4.0",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Cyber-physical systems integrate computational algorithms with physical processes seamlessly",
+          "spanish": "Los sistemas ciber-físicos integran algoritmos computacionales con procesos físicos sin problemas"
+        },
+        {
+          "english": "Industrial Internet of Things enables unprecedented connectivity and data exchange",
+          "spanish": "El Internet industrial de las cosas permite conectividad y intercambio de datos sin precedentes"
+        },
+        {
+          "english": "Predictive maintenance algorithms minimize unplanned downtime through condition monitoring",
+          "spanish": "Los algoritmos de mantenimiento predictivo minimizan tiempo de inactividad no planificado a través de monitoreo de condiciones"
+        },
+        {
+          "english": "Digital twin technologies create virtual replicas for simulation and optimization",
+          "spanish": "Las tecnologías de gemelo digital crean réplicas virtuales para simulación y optimización"
+        },
+        {
+          "english": "Autonomous manufacturing systems adapt operations through artificial intelligence",
+          "spanish": "Los sistemas de manufactura autónomos adaptan operaciones a través de inteligencia artificial"
+        },
+        {
+          "english": "Edge computing architectures process data locally for real-time decision making",
+          "spanish": "Las arquitecturas de edge computing procesan datos localmente para toma de decisiones en tiempo real"
+        },
+        {
+          "english": "Human-robot collaboration enhances productivity while ensuring worker safety",
+          "spanish": "La colaboración humano-robot mejora productividad mientras asegura seguridad del trabajador"
+        },
+        {
+          "english": "Additive manufacturing techniques enable customized production and rapid prototyping",
+          "spanish": "Las técnicas de manufactura aditiva permiten producción personalizada y prototipado rápido"
+        },
+        {
+          "english": "Supply chain visibility platforms provide end-to-end transparency and traceability",
+          "spanish": "Las plataformas de visibilidad de cadena de suministro proporcionan transparencia y trazabilidad de extremo a extremo"
+        },
+        {
+          "english": "Mass customization strategies balance individual preferences with manufacturing efficiency",
+          "spanish": "Las estrategias de personalización masiva equilibran preferencias individuales con eficiencia de manufactura"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do cyber-physical systems transform traditional manufacturing?",
+          "options": ["They merge digital and physical worlds, enabling smart, adaptive production systems", "They eliminate all human workers", "They make manufacturing more complicated"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do digital twins provide in manufacturing?",
+          "options": ["They allow testing and optimization without disrupting actual production", "They replace physical products entirely", "They only work for simple processes"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is edge computing important for Industry 4.0?",
+          "options": ["It processes data near the source, reducing latency and enabling real-time responses", "It centralizes all data processing", "It eliminates the need for internet connectivity"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Cyber-physical",
+          "suffix": "bridge the gap between digital computation and physical manufacturing processes.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Cyber-physical systems are fundamental to Industry 4.0 transformation."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "enable virtual testing and optimization before implementing changes in physical systems.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins provide powerful simulation capabilities for manufacturing optimization."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "uses data analytics to anticipate equipment failures before they occur.",
+          "answer": "maintenance",
+          "selected": false,
+          "feedback": "Predictive maintenance is key to reducing downtime and maintenance costs."
+        }
+      ]
+    },
+    {
+      "title": "Cybersecurity in Engineering Systems → Ciberseguridad en sistemas de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Zero-trust security architectures verify every access request regardless of location",
+          "spanish": "Las arquitecturas de seguridad de cero confianza verifican cada solicitud de acceso independientemente de la ubicación"
+        },
+        {
+          "english": "Industrial control system security protects critical infrastructure from cyber threats",
+          "spanish": "La seguridad de sistemas de control industrial protege infraestructura crítica de amenazas cibernéticas"
+        },
+        {
+          "english": "Blockchain technologies ensure immutable records and secure transactions",
+          "spanish": "Las tecnologías blockchain aseguran registros inmutables y transacciones seguras"
+        },
+        {
+          "english": "Threat intelligence platforms provide real-time visibility into emerging security risks",
+          "spanish": "Las plataformas de inteligencia de amenazas proporcionan visibilidad en tiempo real de riesgos de seguridad emergentes"
+        },
+        {
+          "english": "Security orchestration automates incident response and remediation processes",
+          "spanish": "La orquestación de seguridad automatiza procesos de respuesta y remediación de incidentes"
+        },
+        {
+          "english": "Penetration testing methodologies identify vulnerabilities before malicious exploitation",
+          "spanish": "Las metodologías de pruebas de penetración identifican vulnerabilidades antes de explotación maliciosa"
+        },
+        {
+          "english": "Encryption protocols protect sensitive data during transmission and storage",
+          "spanish": "Los protocolos de encriptación protegen datos sensibles durante transmisión y almacenamiento"
+        },
+        {
+          "english": "Security awareness training reduces human factors in cybersecurity incidents",
+          "spanish": "El entrenamiento de concientización de seguridad reduce factores humanos en incidentes de ciberseguridad"
+        },
+        {
+          "english": "Incident response frameworks enable rapid containment and recovery from security breaches",
+          "spanish": "Los marcos de respuesta a incidentes permiten contención y recuperación rápida de brechas de seguridad"
+        },
+        {
+          "english": "Risk assessment methodologies quantify cybersecurity threats and mitigation strategies",
+          "spanish": "Las metodologías de evaluación de riesgo cuantifican amenazas de ciberseguridad y estrategias de mitigación"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the principle behind zero-trust security architectures?",
+          "options": ["Never trust, always verify - authenticate and authorize every access attempt", "Trust all internal users completely", "Only verify external users"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is cybersecurity critical for industrial control systems?",
+          "options": ["Attacks on these systems can disrupt critical infrastructure and public safety", "They don't contain sensitive information", "They're completely isolated from networks"],
+          "answer": 0
+        },
+        {
+          "audio": "How does penetration testing improve cybersecurity?",
+          "options": ["It simulates real attacks to identify vulnerabilities before criminals exploit them", "It prevents all cyber attacks", "It only tests software, not hardware"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Zero-trust",
+          "suffix": "assume that threats can come from anywhere, including inside the organization.",
+          "answer": "architectures",
+          "selected": false,
+          "feedback": "Zero-trust security models are essential for modern cybersecurity strategies."
+        },
+        {
+          "prefix": "Industrial control",
+          "suffix": "require specialized security measures due to their critical infrastructure role.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "ICS security is vital for protecting critical infrastructure and public safety."
+        },
+        {
+          "prefix": "Penetration",
+          "suffix": "help organizations discover vulnerabilities before malicious actors find them.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Regular penetration testing is a proactive security measure."
+        }
+      ]
+    },
+    {
+      "title": "Digital Transformation and Enterprise Architecture → Transformación digital y arquitectura empresarial",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Enterprise architecture frameworks align technology initiatives with business objectives",
+          "spanish": "Los marcos de arquitectura empresarial alinean iniciativas tecnológicas with objetivos de negocio"
+        },
+        {
+          "english": "Cloud-native applications leverage distributed computing for scalability and resilience",
+          "spanish": "Las aplicaciones nativas de la nube aprovechan computación distribuida para escalabilidad y resistencia"
+        },
+        {
+          "english": "Microservices architectures decompose monolithic systems into modular components",
+          "spanish": "Las arquitecturas de microservicios descomponen sistemas monolíticos en componentes modulares"
+        },
+        {
+          "english": "API-first strategies enable seamless integration and ecosystem development",
+          "spanish": "Las estrategias API-first permiten integración sin problemas y desarrollo de ecosistemas"
+        },
+        {
+          "english": "DevOps practices accelerate software delivery through automation and collaboration",
+          "spanish": "Las prácticas DevOps aceleran entrega de software a través de automatización y colaboración"
+        },
+        {
+          "english": "Digital platform ecosystems create new business models and value propositions",
+          "spanish": "Los ecosistemas de plataformas digitales crean nuevos modelos de negocio y propuestas de valor"
+        },
+        {
+          "english": "Data governance frameworks ensure quality, privacy, and compliance in digital initiatives",
+          "spanish": "Los marcos de gobernanza de datos aseguran calidad, privacidad y cumplimiento en iniciativas digitales"
+        },
+        {
+          "english": "Agile transformation methodologies adapt organizational culture to digital-first thinking",
+          "spanish": "Las metodologías de transformación ágil adaptan cultura organizacional a pensamiento digital-first"
+        },
+        {
+          "english": "Low-code platforms democratize application development across business functions",
+          "spanish": "Las plataformas de low-code democratizan desarrollo de aplicaciones a través de funciones de negocio"
+        },
+        {
+          "english": "Technology roadmaps guide strategic investments and capability development",
+          "spanish": "Los roadmaps de tecnología guían inversiones estratégicas y desarrollo de capacidades"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do enterprise architecture frameworks benefit organizations?",
+          "options": ["They provide structure for aligning technology investments with business strategy", "They eliminate all technology challenges", "They standardize all software platforms"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do microservices offer over monolithic architectures?",
+          "options": ["Greater flexibility, scalability, and ability to update individual components independently", "They're always simpler to implement", "They require less infrastructure"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are API-first strategies important for digital transformation?",
+          "options": ["They enable seamless integration between systems and support ecosystem development", "They eliminate the need for user interfaces", "They make systems less secure"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Enterprise",
+          "suffix": "provide blueprints for technology transformation and business alignment.",
+          "answer": "architecture",
+          "selected": false,
+          "feedback": "Enterprise architecture is essential for successful digital transformation initiatives."
+        },
+        {
+          "prefix": "Microservices",
+          "suffix": "enable independent development, deployment, and scaling of system components.",
+          "answer": "architectures",
+          "selected": false,
+          "feedback": "Microservices offer flexibility and agility for modern software development."
+        },
+        {
+          "prefix": "DevOps",
+          "suffix": "bridge the gap between development and operations for faster, more reliable software delivery.",
+          "answer": "practices",
+          "selected": false,
+          "feedback": "DevOps is crucial for accelerating digital transformation and improving software quality."
+        }
+      ]
+    },
+    {
+      "title": "Innovation Management and Technology Transfer → Gestión de innovación y transferencia de tecnología",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Open innovation paradigms leverage external partnerships for accelerated development",
+          "spanish": "Los paradigmas de innovación abierta aprovechan alianzas externas para desarrollo acelerado"
+        },
+        {
+          "english": "Technology transfer mechanisms commercialize research discoveries into market applications",
+          "spanish": "Los mecanismos de transferencia de tecnología comercializan descubrimientos de investigación en aplicaciones de mercado"
+        },
+        {
+          "english": "Innovation ecosystems foster collaborative networks between academia and industry",
+          "spanish": "Los ecosistemas de innovación fomentan redes colaborativas entre academia e industria"
+        },
+        {
+          "english": "Intellectual property strategies protect innovations while enabling strategic licensing",
+          "spanish": "Las estrategias de propiedad intelectual protegen innovaciones mientras permiten licenciamiento estratégico"
+        },
+        {
+          "english": "Venture capital funding accelerates startup development and technology scaling",
+          "spanish": "El financiamiento de capital de riesgo acelera desarrollo de startups y escalamiento de tecnología"
+        },
+        {
+          "english": "Innovation metrics quantify research productivity and commercial impact",
+          "spanish": "Las métricas de innovación cuantifican productividad de investigación e impacto comercial"
+        },
+        {
+          "english": "Accelerator programs provide mentorship and resources for early-stage technologies",
+          "spanish": "Los programas aceleradores proporcionan mentoría y recursos para tecnologías en etapa temprana"
+        },
+        {
+          "english": "Cross-industry collaboration enables breakthrough innovations through knowledge fusion",
+          "spanish": "La colaboración cross-industria permite innovaciones revolucionarias a través de fusión de conocimiento"
+        },
+        {
+          "english": "Technology scouting identifies emerging innovations with commercial potential",
+          "spanish": "El technology scouting identifica innovaciones emergentes con potencial comercial"
+        },
+        {
+          "english": "Innovation culture development encourages experimentation and calculated risk-taking",
+          "spanish": "El desarrollo de cultura de innovación fomenta experimentación y toma de riesgos calculados"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What are the benefits of open innovation approaches?",
+          "options": ["Access to external expertise, faster development, and reduced R&D costs", "Complete control over all innovations", "Elimination of external partnerships"],
+          "answer": 0
+        },
+        {
+          "audio": "How do technology transfer offices bridge academia and industry?",
+          "options": ["They help commercialize university research and facilitate industry partnerships", "They only focus on basic research", "They prevent collaboration between sectors"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are innovation ecosystems important for technology development?",
+          "options": ["They create networks that accelerate innovation through collaboration and resource sharing", "They isolate organizations from external influences", "They standardize all innovation processes"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Professional Ethics and Social Responsibility → Ética profesional y responsabilidad social",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Professional codes of ethics guide engineers' decisions and conduct in practice",
+          "spanish": "Los códigos de ética profesional guían decisiones y conducta de ingenieros en la práctica"
+        },
+        {
+          "english": "Social impact assessment evaluates technology effects on communities and society",
+          "spanish": "La evaluación de impacto social evalúa efectos de tecnología en comunidades y sociedad"
+        },
+        {
+          "english": "Whistleblower protection ensures safety reporting without professional retaliation",
+          "spanish": "La protección de denunciantes asegura reporte de seguridad sin represalias profesionales"
+        },
+        {
+          "english": "Corporate social responsibility integrates societal concerns into business operations",
+          "spanish": "La responsabilidad social corporativa integra preocupaciones sociales en operaciones de negocio"
+        },
+        {
+          "english": "Sustainable development goals align engineering projects with global priorities",
+          "spanish": "Los objetivos de desarrollo sostenible alinean proyectos de ingeniería con prioridades globales"
+        },
+        {
+          "english": "Ethical decision-making frameworks help resolve complex moral dilemmas",
+          "spanish": "Los marcos de toma de decisiones éticas ayudan a resolver dilemas morales complejos"
+        },
+        {
+          "english": "Technology assessment methodologies evaluate broader implications of innovation",
+          "spanish": "Las metodologías de evaluación de tecnología evalúan implicaciones más amplias de innovación"
+        },
+        {
+          "english": "Stakeholder engagement ensures diverse perspectives in engineering decisions",
+          "spanish": "La participación de partes interesadas asegura perspectivas diversas en decisiones de ingeniería"
+        },
+        {
+          "english": "Environmental justice principles address equitable distribution of environmental benefits",
+          "spanish": "Los principios de justicia ambiental abordan distribución equitativa de beneficios ambientales"
+        },
+        {
+          "english": "Professional development programs maintain competency and ethical awareness",
+          "spanish": "Los programas de desarrollo profesional mantienen competencia y conciencia ética"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Professional codes",
+          "suffix": "establish standards of conduct and responsibility for engineering practitioners.",
+          "answer": "of ethics",
+          "selected": false,
+          "feedback": "Professional ethics codes are fundamental to engineering practice and public trust."
+        },
+        {
+          "prefix": "Social impact",
+          "suffix": "helps engineers understand the broader consequences of their technical decisions.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Understanding social impacts is essential for responsible engineering practice."
+        },
+        {
+          "prefix": "Sustainable development",
+          "suffix": "provide a framework for addressing global challenges through engineering solutions.",
+          "answer": "goals",
+          "selected": false,
+          "feedback": "The SDGs offer guidance for engineering contributions to global well-being."
+        }
+      ]
+    }
+  ]
+}
+]
+

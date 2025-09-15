@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 13,
+  "sections": [
+    {
+      "title": "Digital Signal Processing and Communications → Procesamiento digital de señales y comunicaciones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Digital filters process signals to remove noise",
+          "spanish": "Los filtros digitales procesan señales para remover ruido"
+        },
+        {
+          "english": "Fourier transforms analyze signal frequency content",
+          "spanish": "Las transformadas de Fourier analizan contenido de frecuencia de señales"
+        },
+        {
+          "english": "Sampling theory determines minimum data rates",
+          "spanish": "La teoría de muestreo determina tasas mínimas de datos"
+        },
+        {
+          "english": "Modulation techniques encode information onto carrier signals",
+          "spanish": "Las técnicas de modulación codifican información en señales portadoras"
+        },
+        {
+          "english": "Error correction codes improve transmission reliability",
+          "spanish": "Los códigos de corrección de errores mejoran confiabilidad de transmisión"
+        },
+        {
+          "english": "Digital compression reduces data storage requirements",
+          "spanish": "La compresión digital reduce requisitos de almacenamiento de datos"
+        },
+        {
+          "english": "Adaptive algorithms adjust to changing conditions",
+          "spanish": "Los algoritmos adaptativos se ajustan a condiciones cambiantes"
+        },
+        {
+          "english": "Real-time processing enables immediate signal analysis",
+          "spanish": "El procesamiento en tiempo real permite análisis inmediato de señales"
+        },
+        {
+          "english": "Wireless protocols enable mobile communications",
+          "spanish": "Los protocolos inalámbricos permiten comunicaciones móviles"
+        },
+        {
+          "english": "Network protocols ensure reliable data transmission",
+          "spanish": "Los protocolos de red aseguran transmisión confiable de datos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of digital filtering?",
+          "options": ["To remove unwanted noise and enhance desired signal components", "To make signals louder", "To slow down processing"],
+          "answer": 0
+        },
+        {
+          "audio": "How do Fourier transforms help in signal analysis?",
+          "options": ["They reveal the frequency components present in a signal", "They make signals digital", "They compress data"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are error correction codes important in digital communications?",
+          "options": ["They detect and correct transmission errors to ensure data integrity", "They make data larger", "They slow down transmission"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Digital",
+          "suffix": "enable precise control of signal characteristics in software.",
+          "answer": "filters",
+          "selected": false,
+          "feedback": "Digital filters offer flexibility and precision in signal processing applications."
+        },
+        {
+          "prefix": "Fourier",
+          "suffix": "convert time-domain signals to frequency-domain representations.",
+          "answer": "transforms",
+          "selected": false,
+          "feedback": "Fourier transforms are fundamental tools for frequency analysis of signals."
+        },
+        {
+          "prefix": "Error correction",
+          "suffix": "are essential for reliable digital communication systems.",
+          "answer": "codes",
+          "selected": false,
+          "feedback": "Error correction enables robust communication over noisy channels."
+        }
+      ]
+    },
+    {
+      "title": "Computer-Aided Design and Engineering → Diseño e ingeniería asistidos por computadora",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "CAD software creates precise technical drawings",
+          "spanish": "El software CAD crea dibujos técnicos precisos"
+        },
+        {
+          "english": "Finite element analysis simulates structural behavior",
+          "spanish": "El análisis de elementos finitos simula comportamiento estructural"
+        },
+        {
+          "english": "Parametric modeling enables design optimization",
+          "spanish": "El modelado paramétrico permite optimización de diseño"
+        },
+        {
+          "english": "Virtual prototyping reduces physical testing needs",
+          "spanish": "El prototipado virtual reduce necesidades de pruebas físicas"
+        },
+        {
+          "english": "Design validation confirms performance requirements",
+          "spanish": "La validación de diseño confirma requisitos de rendimiento"
+        },
+        {
+          "english": "Simulation software predicts system behavior",
+          "spanish": "El software de simulación predice comportamiento del sistema"
+        },
+        {
+          "english": "Collaborative platforms enable team design work",
+          "spanish": "Las plataformas colaborativas permiten trabajo de diseño en equipo"
+        },
+        {
+          "english": "Version control manages design iterations",
+          "spanish": "El control de versiones gestiona iteraciones de diseño"
+        },
+        {
+          "english": "Design optimization algorithms improve performance",
+          "spanish": "Los algoritmos de optimización de diseño mejoran rendimiento"
+        },
+        {
+          "english": "Digital mockups visualize concepts before manufacturing",
+          "spanish": "Las maquetas digitales visualizan conceptos antes de manufactura"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does finite element analysis benefit engineers?",
+          "options": ["It predicts how structures will behave under different conditions", "It only draws pictures", "It makes designs more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage does parametric modeling offer?",
+          "options": ["It allows easy modification of designs by changing parameters", "It makes models more complex", "It eliminates creativity"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is virtual prototyping valuable?",
+          "options": ["It tests designs digitally before building physical prototypes", "It replaces all testing", "It makes prototypes virtual"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "CAD",
+          "suffix": "revolutionized engineering design with precision and efficiency.",
+          "answer": "software",
+          "selected": false,
+          "feedback": "CAD software has transformed how engineers create and modify designs."
+        },
+        {
+          "prefix": "Finite element",
+          "suffix": "enables detailed stress and thermal analysis of complex geometries.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "FEA provides insights into structural performance that guide design decisions."
+        },
+        {
+          "prefix": "Virtual",
+          "suffix": "reduces development time and costs in product design.",
+          "answer": "prototyping",
+          "selected": false,
+          "feedback": "Virtual prototyping accelerates design validation and optimization."
+        }
+      ]
+    },
+    {
+      "title": "Additive Manufacturing and 3D Printing → Manufactura aditiva e impresión 3D",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Layer-by-layer fabrication builds complex geometries",
+          "spanish": "La fabricación capa por capa construye geometrías complejas"
+        },
+        {
+          "english": "Support structures enable overhanging features",
+          "spanish": "Las estructuras de soporte permiten características en voladizo"
+        },
+        {
+          "english": "Material properties vary with printing parameters",
+          "spanish": "Las propiedades del material varían con parámetros de impresión"
+        },
+        {
+          "english": "Post-processing improves surface finish quality",
+          "spanish": "El post-procesamiento mejora calidad del acabado superficial"
+        },
+        {
+          "english": "Design for additive manufacturing optimizes part performance",
+          "spanish": "El diseño para manufactura aditiva optimiza rendimiento de partes"
+        },
+        {
+          "english": "Multi-material printing creates functional assemblies",
+          "spanish": "La impresión multi-material crea ensambles funcionales"
+        },
+        {
+          "english": "Quality control ensures dimensional accuracy",
+          "spanish": "El control de calidad asegura precisión dimensional"
+        },
+        {
+          "english": "Bioprinting creates living tissue structures",
+          "spanish": "La bioimpresión crea estructuras de tejido vivo"
+        },
+        {
+          "english": "Metal printing produces aerospace components",
+          "spanish": "La impresión de metal produce componentes aeroespaciales"
+        },
+        {
+          "english": "Rapid prototyping accelerates product development",
+          "spanish": "El prototipado rápido acelera desarrollo de productos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes additive manufacturing different from traditional methods?",
+          "options": ["It builds parts by adding material layer by layer", "It only removes material", "It's always slower"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are support structures sometimes needed in 3D printing?",
+          "options": ["To hold up overhanging parts during the printing process", "To make parts heavier", "To slow down printing"],
+          "answer": 0
+        },
+        {
+          "audio": "How does design for additive manufacturing differ from traditional design?",
+          "options": ["It takes advantage of AM's ability to create complex internal geometries", "It ignores manufacturing constraints", "It makes designs simpler"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Layer-by-layer",
+          "suffix": "enables creation of internal features impossible with traditional manufacturing.",
+          "answer": "fabrication",
+          "selected": false,
+          "feedback": "Additive manufacturing's layer approach enables unprecedented design freedom."
+        },
+        {
+          "prefix": "Multi-material",
+          "suffix": "allows creation of parts with varying properties in a single build.",
+          "answer": "printing",
+          "selected": false,
+          "feedback": "Multi-material capabilities expand the functional possibilities of 3D printing."
+        },
+        {
+          "prefix": "Rapid",
+          "suffix": "enables quick design iteration and validation in product development.",
+          "answer": "prototyping",
+          "selected": false,
+          "feedback": "Rapid prototyping significantly reduces development time and costs."
+        }
+      ]
+    },
+    {
+      "title": "Industrial Internet of Things (IIoT) → Internet Industrial de las Cosas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Connected sensors enable real-time monitoring",
+          "spanish": "Los sensores conectados permiten monitoreo en tiempo real"
+        },
+        {
+          "english": "Edge computing processes data locally",
+          "spanish": "La computación de borde procesa datos localmente"
+        },
+        {
+          "english": "Cloud platforms aggregate industrial data",
+          "spanish": "Las plataformas en la nube agregan datos industriales"
+        },
+        {
+          "english": "Machine learning algorithms detect anomalies",
+          "spanish": "Los algoritmos de aprendizaje automático detectan anomalías"
+        },
+        {
+          "english": "Predictive analytics forecast equipment failures",
+          "spanish": "Los análisis predictivos pronostican fallas de equipos"
+        },
+        {
+          "english": "Digital twins mirror physical systems",
+          "spanish": "Los gemelos digitales reflejan sistemas físicos"
+        },
+        {
+          "english": "Wireless networks connect distributed devices",
+          "spanish": "Las redes inalámbricas conectan dispositivos distribuidos"
+        },
+        {
+          "english": "Cybersecurity protects industrial networks",
+          "spanish": "La ciberseguridad protege redes industriales"
+        },
+        {
+          "english": "Data visualization reveals operational insights",
+          "spanish": "La visualización de datos revela conocimientos operacionales"
+        },
+        {
+          "english": "Automated responses optimize system performance",
+          "spanish": "Las respuestas automatizadas optimizan rendimiento del sistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does the Industrial Internet of Things improve manufacturing?",
+          "options": ["It provides real-time data for better decision-making and optimization", "It makes machines more complex", "It eliminates all human workers"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of edge computing in IIoT?",
+          "options": ["To process data near its source for faster response times", "To make computing slower", "To eliminate cloud computing"],
+          "answer": 0
+        },
+        {
+          "audio": "How do digital twins benefit industrial operations?",
+          "options": ["They allow virtual testing and optimization of real systems", "They replace physical systems", "They make systems more expensive"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Sustainable Energy Systems → Sistemas de energía sostenible",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Solar photovoltaic systems convert sunlight to electricity",
+          "spanish": "Los sistemas fotovoltaicos solares convierten luz solar en electricidad"
+        },
+        {
+          "english": "Wind energy harnesses atmospheric movement",
+          "spanish": "La energía eólica aprovecha movimiento atmosférico"
+        },
+        {
+          "english": "Energy storage systems balance supply and demand",
+          "spanish": "Los sistemas de almacenamiento de energía equilibran oferta y demanda"
+        },
+        {
+          "english": "Smart grids optimize energy distribution",
+          "spanish": "Las redes inteligentes optimizan distribución de energía"
+        },
+        {
+          "english": "Hydroelectric power utilizes flowing water",
+          "spanish": "La energía hidroeléctrica utiliza agua fluyente"
+        },
+        {
+          "english": "Geothermal systems extract earth's heat",
+          "spanish": "Los sistemas geotérmicos extraen calor de la tierra"
+        },
+        {
+          "english": "Biomass energy converts organic matter",
+          "spanish": "La energía de biomasa convierte materia orgánica"
+        },
+        {
+          "english": "Energy efficiency reduces consumption needs",
+          "spanish": "La eficiencia energética reduce necesidades de consumo"
+        },
+        {
+          "english": "Grid integration connects renewable sources",
+          "spanish": "La integración de red conecta fuentes renovables"
+        },
+        {
+          "english": "Carbon footprint reduction minimizes environmental impact",
+          "spanish": "La reducción de huella de carbono minimiza impacto ambiental"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Solar photovoltaic",
+          "suffix": "provide clean electricity without moving parts or emissions.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "PV systems offer reliable renewable energy with minimal maintenance requirements."
+        },
+        {
+          "prefix": "Energy",
+          "suffix": "technologies are crucial for managing intermittent renewable sources.",
+          "answer": "storage",
+          "selected": false,
+          "feedback": "Storage systems enable renewable energy to provide reliable power on demand."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "enable two-way communication and optimal energy management.",
+          "answer": "grids",
+          "selected": false,
+          "feedback": "Smart grids provide intelligent control of complex energy networks."
+        }
+      ]
+    }
+  ]
+}
+]
+

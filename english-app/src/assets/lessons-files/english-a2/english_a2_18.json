@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 18,
+  "sections": [
+    {
+      "title": "Agricultural Technology and Farming → Tecnología agrícola y agricultura",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Prepare soil for planting",
+          "spanish": "Prepara suelo para sembrar"
+        },
+        {
+          "english": "Plant seeds at proper depth",
+          "spanish": "Siembra semillas a profundidad apropiada"
+        },
+        {
+          "english": "Water crops regularly",
+          "spanish": "Riega cultivos regularmente"
+        },
+        {
+          "english": "Apply fertilizer safely",
+          "spanish": "Aplica fertilizante de manera segura"
+        },
+        {
+          "english": "Monitor plant growth",
+          "spanish": "Monitorea crecimiento de plantas"
+        },
+        {
+          "english": "Control pests and diseases",
+          "spanish": "Controla plagas y enfermedades"
+        },
+        {
+          "english": "Harvest crops at proper time",
+          "spanish": "Cosecha cultivos en tiempo apropiado"
+        },
+        {
+          "english": "Store produce properly",
+          "spanish": "Almacena productos apropiadamente"
+        },
+        {
+          "english": "Maintain farming equipment",
+          "spanish": "Mantén equipo agrícola"
+        },
+        {
+          "english": "Keep accurate farming records",
+          "spanish": "Mantén registros agrícolas precisos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is soil preparation important before planting?",
+          "options": ["It provides the best conditions for seed growth", "It's not necessary", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "When should crops be harvested?",
+          "options": ["At the optimal ripeness for best quality", "Anytime", "Never"],
+          "answer": 0
+        },
+        {
+          "audio": "Why keep farming records?",
+          "options": ["To track costs, yields, and make better decisions", "To waste paper", "It's not important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Properly",
+          "suffix": "soil creates the best conditions for plant growth.",
+          "answer": "prepare",
+          "selected": false,
+          "feedback": "Soil preparation ensures plants have the nutrients and conditions they need to thrive."
+        },
+        {
+          "prefix": "Apply",
+          "suffix": "safely to avoid environmental damage.",
+          "answer": "fertilizer",
+          "selected": false,
+          "feedback": "Safe fertilizer application protects the environment while providing nutrients to crops."
+        },
+        {
+          "prefix": "Monitor",
+          "suffix": "growth to identify problems early.",
+          "answer": "plant",
+          "selected": false,
+          "feedback": "Regular monitoring allows farmers to address issues before they become serious problems."
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy Systems → Sistemas de energía renovable",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Install solar panels correctly",
+          "spanish": "Instala paneles solares correctamente"
+        },
+        {
+          "english": "Connect electrical components safely",
+          "spanish": "Conecta componentes eléctricos de manera segura"
+        },
+        {
+          "english": "Test system performance regularly",
+          "spanish": "Prueba rendimiento del sistema regularmente"
+        },
+        {
+          "english": "Clean panels to maintain efficiency",
+          "spanish": "Limpia paneles para mantener eficiencia"
+        },
+        {
+          "english": "Monitor energy production",
+          "spanish": "Monitorea producción de energía"
+        },
+        {
+          "english": "Replace worn components",
+          "spanish": "Reemplaza componentes desgastados"
+        },
+        {
+          "english": "Follow safety protocols strictly",
+          "spanish": "Sigue protocolos de seguridad estrictamente"
+        },
+        {
+          "english": "Calculate energy savings",
+          "spanish": "Calcula ahorros de energía"
+        },
+        {
+          "english": "Troubleshoot system problems",
+          "spanish": "Diagnostica problemas del sistema"
+        },
+        {
+          "english": "Educate users about system operation",
+          "spanish": "Educa usuarios sobre operación del sistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is proper solar panel installation important?",
+          "options": ["For maximum efficiency and safety", "It doesn't matter", "To make it look nice"],
+          "answer": 0
+        },
+        {
+          "audio": "How often should solar panels be cleaned?",
+          "options": ["Regularly to maintain optimal performance", "Never", "Only when broken"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you monitor in renewable energy systems?",
+          "options": ["Energy production and system performance", "Nothing", "Only costs"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Install",
+          "suffix": "panels at optimal angles for maximum energy capture.",
+          "answer": "solar",
+          "selected": false,
+          "feedback": "Proper installation angle maximizes solar energy collection throughout the day."
+        },
+        {
+          "prefix": "Follow",
+          "suffix": "protocols when working with electrical systems.",
+          "answer": "safety",
+          "selected": false,
+          "feedback": "Safety protocols prevent electrical accidents and ensure worker protection."
+        },
+        {
+          "prefix": "Monitor energy",
+          "suffix": "to verify system performance.",
+          "answer": "production",
+          "selected": false,
+          "feedback": "Monitoring production helps identify problems and optimize system performance."
+        }
+      ]
+    },
+    {
+      "title": "Textile and Clothing Production → Producción textil y de ropa",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Cut fabric pieces accurately",
+          "spanish": "Corta piezas de tela con precisión"
+        },
+        {
+          "english": "Sew seams evenly",
+          "spanish": "Cose costuras uniformemente"
+        },
+        {
+          "english": "Press garments properly",
+          "spanish": "Plancha prendas apropiadamente"
+        },
+        {
+          "english": "Attach buttons and zippers",
+          "spanish": "Pone botones y cremalleras"
+        },
+        {
+          "english": "Check quality during production",
+          "spanish": "Revisa calidad durante producción"
+        },
+        {
+          "english": "Follow pattern instructions",
+          "spanish": "Sigue instrucciones del patrón"
+        },
+        {
+          "english": "Maintain sewing machines",
+          "spanish": "Mantén máquinas de coser"
+        },
+        {
+          "english": "Package finished products",
+          "spanish": "Empaca productos terminados"
+        },
+        {
+          "english": "Meet production deadlines",
+          "spanish": "Cumple fechas límite de producción"
+        },
+        {
+          "english": "Work safely with equipment",
+          "spanish": "Trabaja de manera segura con equipo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is accurate fabric cutting important?",
+          "options": ["It ensures pieces fit together properly", "It doesn't matter", "To waste material"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you check during garment production?",
+          "options": ["Quality of seams, fit, and overall appearance", "Nothing", "Only the color"],
+          "answer": 0
+        },
+        {
+          "audio": "Why maintain sewing machines regularly?",
+          "options": ["To ensure smooth operation and quality stitching", "To waste time", "It's not necessary"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Cut",
+          "suffix": "pieces accurately to ensure proper fit.",
+          "answer": "fabric",
+          "selected": false,
+          "feedback": "Accurate cutting is essential for garments to fit together correctly during assembly."
+        },
+        {
+          "prefix": "Check",
+          "suffix": "throughout production to prevent defects.",
+          "answer": "quality",
+          "selected": false,
+          "feedback": "Continuous quality checking prevents defective products from reaching customers."
+        },
+        {
+          "prefix": "Maintain",
+          "suffix": "machines for consistent performance.",
+          "answer": "sewing",
+          "selected": false,
+          "feedback": "Well-maintained machines produce better quality stitching and work more reliably."
+        }
+      ]
+    },
+    {
+      "title": "Graphic Design and Digital Media → Diseño gráfico y medios digitales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Create visually appealing designs",
+          "spanish": "Crea diseños visualmente atractivos"
+        },
+        {
+          "english": "Use design software effectively",
+          "spanish": "Usa software de diseño efectivamente"
+        },
+        {
+          "english": "Follow brand guidelines",
+          "spanish": "Sigue pautas de marca"
+        },
+        {
+          "english": "Choose appropriate colors and fonts",
+          "spanish": "Escoge colores y fuentes apropiadas"
+        },
+        {
+          "english": "Prepare files for printing",
+          "spanish": "Prepara archivos para impresión"
+        },
+        {
+          "english": "Meet client specifications",
+          "spanish": "Cumple especificaciones del cliente"
+        },
+        {
+          "english": "Create digital presentations",
+          "spanish": "Crea presentaciones digitales"
+        },
+        {
+          "english": "Edit photos professionally",
+          "spanish": "Edita fotos profesionalmente"
+        },
+        {
+          "english": "Design for different media",
+          "spanish": "Diseña para diferentes medios"
+        },
+        {
+          "english": "Stay current with design trends",
+          "spanish": "Mantente actualizado con tendencias de diseño"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes a design visually appealing?",
+          "options": ["Good use of color, balance, and clear communication", "Lots of colors", "Complex layouts"],
+          "answer": 0
+        },
+        {
+          "audio": "Why follow brand guidelines?",
+          "options": ["To maintain consistent brand identity", "To be different", "They're not important"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you consider when preparing files for printing?",
+          "options": ["Resolution, color mode, and file format", "Only the size", "Nothing special"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Web Development and Digital Services → Desarrollo web y servicios digitales",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Write clean, organized code",
+          "spanish": "Escribe código limpio y organizado"
+        },
+        {
+          "english": "Test websites on different browsers",
+          "spanish": "Prueba sitios web en diferentes navegadores"
+        },
+        {
+          "english": "Optimize pages for mobile devices",
+          "spanish": "Optimiza páginas para dispositivos móviles"
+        },
+        {
+          "english": "Update content regularly",
+          "spanish": "Actualiza contenido regularmente"
+        },
+        {
+          "english": "Backup website data frequently",
+          "spanish": "Respalda datos del sitio web frecuentemente"
+        },
+        {
+          "english": "Secure websites against threats",
+          "spanish": "Asegura sitios web contra amenazas"
+        },
+        {
+          "english": "Monitor website performance",
+          "spanish": "Monitorea rendimiento del sitio web"
+        },
+        {
+          "english": "Fix broken links promptly",
+          "spanish": "Arregla enlaces rotos prontamente"
+        },
+        {
+          "english": "Optimize loading speeds",
+          "spanish": "Optimiza velocidades de carga"
+        },
+        {
+          "english": "Provide technical support",
+          "spanish": "Proporciona soporte técnico"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Write",
+          "suffix": "code that is easy to read and maintain.",
+          "answer": "clean",
+          "selected": false,
+          "feedback": "Clean code is easier to debug, update, and maintain over time."
+        },
+        {
+          "prefix": "Test websites on",
+          "suffix": "browsers to ensure compatibility.",
+          "answer": "different",
+          "selected": false,
+          "feedback": "Cross-browser testing ensures websites work properly for all users."
+        },
+        {
+          "prefix": "Optimize pages for",
+          "suffix": "devices as most users browse on phones.",
+          "answer": "mobile",
+          "selected": false,
+          "feedback": "Mobile optimization is essential as most web traffic now comes from mobile devices."
+        }
+      ]
+    }
+  ]
+}
+]
+

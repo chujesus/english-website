@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 2,
+  "sections": [
+    {
+      "title": "Safety at Work → Seguridad en el trabajo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Personal protective equipment",
+          "spanish": "Equipo de protección personal"
+        },
+        {
+          "english": "Risk assessment",
+          "spanish": "Evaluación de riesgos"
+        },
+        {
+          "english": "Hazard identification",
+          "spanish": "Identificación de peligros"
+        },
+        {
+          "english": "Safety protocol",
+          "spanish": "Protocolo de seguridad"
+        },
+        {
+          "english": "Emergency response plan",
+          "spanish": "Plan de respuesta a emergencias"
+        },
+        {
+          "english": "Incident investigation",
+          "spanish": "Investigación de incidentes"
+        },
+        {
+          "english": "Safety compliance",
+          "spanish": "Cumplimiento de seguridad"
+        },
+        {
+          "english": "Workplace inspection",
+          "spanish": "Inspección del lugar de trabajo"
+        },
+        {
+          "english": "Safety training program",
+          "spanish": "Programa de capacitación en seguridad"
+        },
+        {
+          "english": "Preventive measures",
+          "spanish": "Medidas preventivas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of conducting regular risk assessments?",
+          "options": ["To increase productivity", "To identify and prevent workplace hazards", "To reduce costs"],
+          "answer": 1
+        },
+        {
+          "audio": "When should you wear personal protective equipment?",
+          "options": ["Only during inspections", "Whenever there's potential for exposure to hazards", "Only when supervisors are present"],
+          "answer": 1
+        },
+        {
+          "audio": "What should be the first step after a workplace incident?",
+          "options": ["File a report", "Ensure safety and provide medical aid", "Notify insurance"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "All employees must undergo",
+          "suffix": "before operating heavy machinery.",
+          "answer": "safety training",
+          "selected": false,
+          "feedback": "Safety training is essential before operating any potentially dangerous equipment."
+        },
+        {
+          "prefix": "The company has implemented strict",
+          "suffix": "to prevent workplace accidents.",
+          "answer": "safety protocols",
+          "selected": false,
+          "feedback": "Safety protocols are systematic procedures designed to minimize workplace risks."
+        },
+        {
+          "prefix": "Regular workplace inspections help",
+          "suffix": "potential hazards before accidents occur.",
+          "answer": "identify",
+          "selected": false,
+          "feedback": "Proactive identification of hazards through inspections prevents accidents."
+        }
+      ]
+    },
+    {
+      "title": "Communicating Safety Risks → Comunicando riesgos de seguridad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "There is a high voltage warning in this area",
+          "spanish": "Hay una advertencia de alto voltaje en esta área"
+        },
+        {
+          "english": "Please be aware of the potential slip hazard",
+          "spanish": "Tenga en cuenta el posible peligro de resbalones"
+        },
+        {
+          "english": "This chemical requires special handling procedures",
+          "spanish": "Este químico requiere procedimientos especiales de manejo"
+        },
+        {
+          "english": "The noise level exceeds safe limits",
+          "spanish": "El nivel de ruido excede los límites seguros"
+        },
+        {
+          "english": "Confined space entry requires a permit",
+          "spanish": "El ingreso a espacios confinados requiere un permiso"
+        },
+        {
+          "english": "Hot surface - risk of burns",
+          "spanish": "Superficie caliente - riesgo de quemaduras"
+        },
+        {
+          "english": "Moving machinery - keep hands clear",
+          "spanish": "Maquinaria en movimiento - mantenga las manos alejadas"
+        },
+        {
+          "english": "Respiratory protection required in this zone",
+          "spanish": "Protección respiratoria requerida en esta zona"
+        },
+        {
+          "english": "Fall protection must be worn at all times",
+          "spanish": "La protección contra caídas debe usarse en todo momento"
+        },
+        {
+          "english": "Emergency shutdown procedures are posted nearby",
+          "spanish": "Los procedimientos de parada de emergencia están publicados cerca"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "I need to inform you about a potential safety hazard in the workshop.",
+          "options": ["Report it immediately", "Continue working", "Wait until later"],
+          "answer": 0
+        },
+        {
+          "audio": "There's been a chemical spill in the storage area. What's the protocol?",
+          "options": ["Clean it yourself", "Evacuate and call emergency response", "Cover it with sand"],
+          "answer": 1
+        },
+        {
+          "audio": "The safety inspector found several violations during the audit.",
+          "options": ["Ignore the findings", "Address them immediately", "Schedule for next month"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "If you notice any safety hazards,",
+          "suffix": "them to your supervisor immediately.",
+          "answer": "report",
+          "selected": false,
+          "feedback": "Prompt reporting of safety hazards prevents accidents and injuries."
+        },
+        {
+          "prefix": "All employees are",
+          "suffix": "to stop work if they observe unsafe conditions.",
+          "answer": "authorized",
+          "selected": false,
+          "feedback": "Workers have the right and responsibility to stop work when safety is compromised."
+        },
+        {
+          "prefix": "Warning signs must be",
+          "suffix": "in areas with specific hazards.",
+          "answer": "posted",
+          "selected": false,
+          "feedback": "Posted warning signs alert workers to specific hazards in different areas."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Response Procedures → Procedimientos de respuesta a emergencias",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Activate the emergency alarm system",
+          "spanish": "Active el sistema de alarma de emergencia"
+        },
+        {
+          "english": "Coordinate with emergency services",
+          "spanish": "Coordine con los servicios de emergencia"
+        },
+        {
+          "english": "Establish a command center",
+          "spanish": "Establezca un centro de comando"
+        },
+        {
+          "english": "Account for all personnel",
+          "spanish": "Contabilice todo el personal"
+        },
+        {
+          "english": "Implement containment measures",
+          "spanish": "Implemente medidas de contención"
+        },
+        {
+          "english": "Communicate with stakeholders",
+          "spanish": "Comuníquese con las partes interesadas"
+        },
+        {
+          "english": "Document the incident thoroughly",
+          "spanish": "Documente el incidente exhaustivamente"
+        },
+        {
+          "english": "Conduct post-incident analysis",
+          "spanish": "Realice análisis post-incidente"
+        },
+        {
+          "english": "Update emergency procedures",
+          "spanish": "Actualice los procedimientos de emergencia"
+        },
+        {
+          "english": "Provide counseling support",
+          "spanish": "Proporcione apoyo psicológico"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What should be the first priority during any emergency situation?",
+          "options": ["Protect equipment", "Ensure human safety", "Call insurance"],
+          "answer": 1
+        },
+        {
+          "audio": "Who should be notified immediately after activating emergency procedures?",
+          "options": ["Only the manager", "Emergency services and management", "Just security"],
+          "answer": 1
+        },
+        {
+          "audio": "What happens after everyone is safely evacuated?",
+          "options": ["Return to work", "Wait for all-clear signal", "Go home"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "During an emergency, the first priority is always",
+          "suffix": "safety above all else.",
+          "answer": "human",
+          "selected": false,
+          "feedback": "Human safety is the top priority in any emergency situation."
+        },
+        {
+          "prefix": "Emergency response teams must",
+          "suffix": "regularly to maintain readiness.",
+          "answer": "practice",
+          "selected": false,
+          "feedback": "Regular practice ensures emergency response teams can act effectively during real emergencies."
+        },
+        {
+          "prefix": "All emergency incidents require",
+          "suffix": "documentation for regulatory compliance.",
+          "answer": "detailed",
+          "selected": false,
+          "feedback": "Detailed documentation is required by law and helps improve future emergency response."
+        }
+      ]
+    },
+    {
+      "title": "Safety Equipment and Technology → Equipo y tecnología de seguridad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Gas detection systems",
+          "spanish": "Sistemas de detección de gases"
+        },
+        {
+          "english": "Fire suppression equipment",
+          "spanish": "Equipo de supresión de incendios"
+        },
+        {
+          "english": "Emergency communication devices",
+          "spanish": "Dispositivos de comunicación de emergencia"
+        },
+        {
+          "english": "Safety monitoring software",
+          "spanish": "Software de monitoreo de seguridad"
+        },
+        {
+          "english": "Automated shut-off systems",
+          "spanish": "Sistemas de apagado automático"
+        },
+        {
+          "english": "Personal safety devices",
+          "spanish": "Dispositivos de seguridad personal"
+        },
+        {
+          "english": "Environmental monitoring sensors",
+          "spanish": "Sensores de monitoreo ambiental"
+        },
+        {
+          "english": "Emergency lighting systems",
+          "spanish": "Sistemas de iluminación de emergencia"
+        },
+        {
+          "english": "Safety interlock mechanisms",
+          "spanish": "Mecanismos de enclavamiento de seguridad"
+        },
+        {
+          "english": "Incident reporting platforms",
+          "spanish": "Plataformas de reporte de incidentes"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of gas detection systems in industrial facilities?",
+          "options": ["To monitor productivity", "To detect dangerous gas levels", "To control temperature"],
+          "answer": 1
+        },
+        {
+          "audio": "How do safety interlock mechanisms protect workers?",
+          "options": ["By preventing unauthorized access", "By automatically stopping dangerous operations", "By providing better lighting"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is regular calibration of safety equipment important?",
+          "options": ["To reduce costs", "To ensure accurate readings and proper function", "To extend warranty"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Creating a Safety Culture → Creando una cultura de seguridad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Leadership commitment to safety",
+          "spanish": "Compromiso del liderazgo con la seguridad"
+        },
+        {
+          "english": "Employee engagement programs",
+          "spanish": "Programas de participación de empleados"
+        },
+        {
+          "english": "Continuous safety improvement",
+          "spanish": "Mejora continua de la seguridad"
+        },
+        {
+          "english": "Open communication channels",
+          "spanish": "Canales de comunicación abiertos"
+        },
+        {
+          "english": "Recognition and reward systems",
+          "spanish": "Sistemas de reconocimiento y recompensas"
+        },
+        {
+          "english": "Shared responsibility approach",
+          "spanish": "Enfoque de responsabilidad compartida"
+        },
+        {
+          "english": "Learning from incidents",
+          "spanish": "Aprender de los incidentes"
+        },
+        {
+          "english": "Proactive hazard identification",
+          "spanish": "Identificación proactiva de peligros"
+        },
+        {
+          "english": "Safety performance metrics",
+          "spanish": "Métricas de desempeño en seguridad"
+        },
+        {
+          "english": "Behavioral safety programs",
+          "spanish": "Programas de seguridad conductual"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "A strong safety culture requires",
+          "suffix": "from all levels of the organization.",
+          "answer": "commitment",
+          "selected": false,
+          "feedback": "Commitment from management to workers is essential for building a strong safety culture."
+        },
+        {
+          "prefix": "Employees should feel",
+          "suffix": "to report safety concerns without fear of retaliation.",
+          "answer": "empowered",
+          "selected": false,
+          "feedback": "Empowering employees to speak up about safety creates a proactive safety environment."
+        },
+        {
+          "prefix": "Safety performance should be",
+          "suffix": "and celebrated to reinforce positive behaviors.",
+          "answer": "recognized",
+          "selected": false,
+          "feedback": "Recognizing good safety performance encourages continued safe behavior among all workers."
+        }
+      ]
+    }
+  ]
+}
+]
+

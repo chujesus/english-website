@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 5,
+  "sections": [
+    {
+      "title": "Strategic Planning and Implementation → Planificación estratégica e implementación",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Strategic initiatives drive organizational transformation",
+          "spanish": "Las iniciativas estratégicas impulsan la transformación organizacional"
+        },
+        {
+          "english": "Comprehensive market analysis informs decision-making",
+          "spanish": "El análisis integral del mercado informa la toma de decisiones"
+        },
+        {
+          "english": "Stakeholder engagement ensures alignment and buy-in",
+          "spanish": "La participación de partes interesadas asegura alineación y compromiso"
+        },
+        {
+          "english": "Resource allocation optimization maximizes return on investment",
+          "spanish": "La optimización de asignación de recursos maximiza el retorno de inversión"
+        },
+        {
+          "english": "Performance indicators measure strategic progress",
+          "spanish": "Los indicadores de rendimiento miden progreso estratégico"
+        },
+        {
+          "english": "Risk assessment evaluates potential implementation barriers",
+          "spanish": "La evaluación de riesgos evalúa barreras potenciales de implementación"
+        },
+        {
+          "english": "Change management facilitates organizational adaptation",
+          "spanish": "La gestión del cambio facilita la adaptación organizacional"
+        },
+        {
+          "english": "Competitive advantage sustains market position",
+          "spanish": "La ventaja competitiva sostiene la posición en el mercado"
+        },
+        {
+          "english": "Innovation portfolios balance risk and opportunity",
+          "spanish": "Los portafolios de innovación equilibran riesgo y oportunidad"
+        },
+        {
+          "english": "Implementation roadmaps outline execution phases",
+          "spanish": "Las hojas de ruta de implementación delinean fases de ejecución"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is stakeholder engagement crucial in strategic planning?",
+          "options": ["It wastes time", "It ensures alignment and commitment to strategy", "It complicates processes"],
+          "answer": 1
+        },
+        {
+          "audio": "How do performance indicators contribute to strategic success?",
+          "options": ["They measure progress and enable course correction", "They create confusion", "They are unnecessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does change management play in strategic implementation?",
+          "options": ["It prevents change", "It facilitates organizational adaptation to new strategies", "It maintains status quo"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Strategic",
+          "suffix": "require comprehensive planning and systematic execution.",
+          "answer": "initiatives",
+          "selected": false,
+          "feedback": "Strategic initiatives must be carefully planned and executed to achieve organizational transformation."
+        },
+        {
+          "prefix": "Stakeholder",
+          "suffix": "ensures that all parties are aligned with strategic objectives.",
+          "answer": "engagement",
+          "selected": false,
+          "feedback": "Active stakeholder engagement builds consensus and commitment for strategic initiatives."
+        },
+        {
+          "prefix": "Competitive",
+          "suffix": "enables organizations to maintain market leadership.",
+          "answer": "advantage",
+          "selected": false,
+          "feedback": "Sustainable competitive advantage requires continuous innovation and strategic positioning."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Technology Integration → Integración avanzada de tecnología",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Digital transformation revolutionizes business processes",
+          "spanish": "La transformación digital revoluciona los procesos de negocio"
+        },
+        {
+          "english": "Artificial intelligence algorithms optimize complex decisions",
+          "spanish": "Los algoritmos de inteligencia artificial optimizan decisiones complejas"
+        },
+        {
+          "english": "Machine learning models adapt to changing patterns",
+          "spanish": "Los modelos de aprendizaje automático se adaptan a patrones cambiantes"
+        },
+        {
+          "english": "Internet of Things connectivity enables real-time monitoring",
+          "spanish": "La conectividad del Internet de las Cosas permite monitoreo en tiempo real"
+        },
+        {
+          "english": "Blockchain technology ensures data integrity and transparency",
+          "spanish": "La tecnología blockchain asegura integridad y transparencia de datos"
+        },
+        {
+          "english": "Cloud computing infrastructure provides scalable solutions",
+          "spanish": "La infraestructura de computación en la nube proporciona soluciones escalables"
+        },
+        {
+          "english": "Cybersecurity frameworks protect digital assets",
+          "spanish": "Los marcos de ciberseguridad protegen activos digitales"
+        },
+        {
+          "english": "Big data analytics reveals actionable insights",
+          "spanish": "El análisis de big data revela perspectivas accionables"
+        },
+        {
+          "english": "Automation platforms streamline operational workflows",
+          "spanish": "Las plataformas de automatización agilizan flujos de trabajo operacionales"
+        },
+        {
+          "english": "Integration architectures connect disparate systems",
+          "spanish": "Las arquitecturas de integración conectan sistemas dispares"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does artificial intelligence optimize decision-making?",
+          "options": ["By replacing human judgment entirely", "By analyzing complex data patterns to support better decisions", "By making random choices"],
+          "answer": 1
+        },
+        {
+          "audio": "What advantage does IoT connectivity provide?",
+          "options": ["Real-time monitoring and data collection", "Increased complexity", "Higher costs only"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is cybersecurity critical in digital transformation?",
+          "options": ["It protects digital assets from threats", "It slows down processes", "It's not important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Digital",
+          "suffix": "fundamentally changes how organizations operate and deliver value.",
+          "answer": "transformation",
+          "selected": false,
+          "feedback": "Digital transformation goes beyond technology adoption to reimagine business models and processes."
+        },
+        {
+          "prefix": "Machine learning",
+          "suffix": "continuously improve performance as they process more data.",
+          "answer": "models",
+          "selected": false,
+          "feedback": "Machine learning models become more accurate and effective through continuous learning from data."
+        },
+        {
+          "prefix": "Big data",
+          "suffix": "transforms raw information into strategic business intelligence.",
+          "answer": "analytics",
+          "selected": false,
+          "feedback": "Big data analytics uncovers patterns and insights that drive informed decision-making."
+        }
+      ]
+    },
+    {
+      "title": "Global Operations and Supply Chain Management → Operaciones globales y gestión de cadena de suministro",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Supply chain resilience mitigates disruption risks",
+          "spanish": "La resistencia de la cadena de suministro mitiga riesgos de interrupción"
+        },
+        {
+          "english": "Vendor relationship management optimizes partnerships",
+          "spanish": "La gestión de relaciones con proveedores optimiza asociaciones"
+        },
+        {
+          "english": "Logistics optimization reduces transportation costs",
+          "spanish": "La optimización logística reduce costos de transporte"
+        },
+        {
+          "english": "Just-in-time delivery minimizes inventory holding costs",
+          "spanish": "La entrega justo a tiempo minimiza costos de mantener inventario"
+        },
+        {
+          "english": "Quality assurance programs ensure supplier compliance",
+          "spanish": "Los programas de aseguramiento de calidad aseguran cumplimiento del proveedor"
+        },
+        {
+          "english": "Geographic diversification spreads operational risk",
+          "spanish": "La diversificación geográfica distribuye riesgo operacional"
+        },
+        {
+          "english": "Demand forecasting improves inventory management",
+          "spanish": "El pronóstico de demanda mejora la gestión de inventario"
+        },
+        {
+          "english": "Technology integration enables supply chain visibility",
+          "spanish": "La integración tecnológica permite visibilidad de la cadena de suministro"
+        },
+        {
+          "english": "Sustainability initiatives address environmental concerns",
+          "spanish": "Las iniciativas de sostenibilidad abordan preocupaciones ambientales"
+        },
+        {
+          "english": "Performance metrics monitor supply chain efficiency",
+          "spanish": "Las métricas de rendimiento monitorean eficiencia de la cadena de suministro"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the primary benefit of supply chain resilience?",
+          "options": ["Increased costs", "Protection against disruptions and rapid recovery", "Slower operations"],
+          "answer": 1
+        },
+        {
+          "audio": "How does demand forecasting improve operations?",
+          "options": ["It enables better inventory planning and cost reduction", "It complicates planning", "It increases waste"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is geographic diversification important?",
+          "options": ["It spreads risk across multiple locations", "It concentrates all risk", "It eliminates all risk"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Supply chain",
+          "suffix": "protects operations from unexpected disruptions.",
+          "answer": "resilience",
+          "selected": false,
+          "feedback": "Resilient supply chains can adapt quickly to disruptions and maintain operations."
+        },
+        {
+          "prefix": "Vendor relationship",
+          "suffix": "creates strategic partnerships that benefit both parties.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Strong vendor relationships lead to better quality, service, and innovation."
+        },
+        {
+          "prefix": "Technology",
+          "suffix": "provides real-time visibility across the entire supply network.",
+          "answer": "integration",
+          "selected": false,
+          "feedback": "Integrated technology systems enable better coordination and decision-making."
+        }
+      ]
+    },
+    {
+      "title": "Executive Leadership and Decision-Making → Liderazgo ejecutivo y toma de decisiones",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Visionary leadership inspires organizational transformation",
+          "spanish": "El liderazgo visionario inspira transformación organizacional"
+        },
+        {
+          "english": "Data-driven decisions minimize subjective bias",
+          "spanish": "Las decisiones basadas en datos minimizan sesgo subjetivo"
+        },
+        {
+          "english": "Scenario planning prepares for multiple futures",
+          "spanish": "La planificación de escenarios prepara para múltiples futuros"
+        },
+        {
+          "english": "Crisis management demonstrates leadership resilience",
+          "spanish": "La gestión de crisis demuestra resistencia del liderazgo"
+        },
+        {
+          "english": "Cultural transformation requires sustained commitment",
+          "spanish": "La transformación cultural requiere compromiso sostenido"
+        },
+        {
+          "english": "Board governance ensures fiduciary responsibility",
+          "spanish": "La gobernanza de la junta asegura responsabilidad fiduciaria"
+        },
+        {
+          "english": "Succession planning maintains leadership continuity",
+          "spanish": "La planificación de sucesión mantiene continuidad de liderazgo"
+        },
+        {
+          "english": "Ethical leadership builds stakeholder trust",
+          "spanish": "El liderazgo ético construye confianza de las partes interesadas"
+        },
+        {
+          "english": "Innovation culture fosters creative problem-solving",
+          "spanish": "La cultura de innovación fomenta resolución creativa de problemas"
+        },
+        {
+          "english": "Performance accountability drives results",
+          "spanish": "La responsabilidad por el rendimiento impulsa resultados"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What distinguishes visionary leadership from management?",
+          "options": ["Visionary leaders inspire transformation and future-focused thinking", "There is no difference", "Visionary leaders only focus on present tasks"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is scenario planning valuable for executives?",
+          "options": ["It prepares organizations for multiple possible futures", "It wastes time", "It confuses strategy"],
+          "answer": 0
+        },
+        {
+          "audio": "How does ethical leadership benefit organizations?",
+          "options": ["It builds trust and sustainable relationships", "It slows decision-making", "It increases costs"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Innovation Management and R&D Strategy → Gestión de innovación y estrategia de I+D",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Research and development investments fuel future growth",
+          "spanish": "Las inversiones en investigación y desarrollo impulsan crecimiento futuro"
+        },
+        {
+          "english": "Innovation portfolios balance breakthrough and incremental projects",
+          "spanish": "Los portafolios de innovación equilibran proyectos revolucionarios e incrementales"
+        },
+        {
+          "english": "Intellectual property protection secures competitive advantages",
+          "spanish": "La protección de propiedad intelectual asegura ventajas competitivas"
+        },
+        {
+          "english": "Cross-functional collaboration accelerates innovation cycles",
+          "spanish": "La colaboración multifuncional acelera ciclos de innovación"
+        },
+        {
+          "english": "Technology scouting identifies emerging opportunities",
+          "spanish": "El rastreo de tecnología identifica oportunidades emergentes"
+        },
+        {
+          "english": "Open innovation partnerships expand capabilities",
+          "spanish": "Las asociaciones de innovación abierta expanden capacidades"
+        },
+        {
+          "english": "Rapid prototyping validates concepts early",
+          "spanish": "El prototipado rápido valida conceptos tempranamente"
+        },
+        {
+          "english": "Market validation confirms commercial viability",
+          "spanish": "La validación del mercado confirma viabilidad comercial"
+        },
+        {
+          "english": "Innovation metrics track progress and ROI",
+          "spanish": "Las métricas de innovación rastrean progreso y ROI"
+        },
+        {
+          "english": "Disruptive technologies reshape industry landscapes",
+          "spanish": "Las tecnologías disruptivas remodelan paisajes industriales"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Innovation",
+          "suffix": "strategically balance risk and potential returns.",
+          "answer": "portfolios",
+          "selected": false,
+          "feedback": "Balanced innovation portfolios include both safe incremental improvements and risky breakthrough projects."
+        },
+        {
+          "prefix": "Intellectual property",
+          "suffix": "ensures companies can capitalize on their innovations.",
+          "answer": "protection",
+          "selected": false,
+          "feedback": "Strong IP protection prevents competitors from copying innovations and enables licensing opportunities."
+        },
+        {
+          "prefix": "Open innovation",
+          "suffix": "leverage external expertise and resources.",
+          "answer": "partnerships",
+          "selected": false,
+          "feedback": "Partnerships enable access to capabilities and knowledge that would be expensive to develop internally."
+        }
+      ]
+    }
+  ]
+}
+]
+

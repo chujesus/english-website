@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 14,
+  "sections": [
+    {
+      "title": "Advanced Safety Engineering and Risk Management → Ingeniería de seguridad avanzada y gestión de riesgo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Hazard identification systematically finds potential dangers",
+          "spanish": "La identificación de peligros encuentra sistemáticamente peligros potenciales"
+        },
+        {
+          "english": "Risk assessment quantifies probability and consequences",
+          "spanish": "La evaluación de riesgo cuantifica probabilidad y consecuencias"
+        },
+        {
+          "english": "Safety management systems integrate protective measures",
+          "spanish": "Los sistemas de gestión de seguridad integran medidas protectivas"
+        },
+        {
+          "english": "Failure modes analysis identifies critical vulnerabilities",
+          "spanish": "El análisis de modos de falla identifica vulnerabilidades críticas"
+        },
+        {
+          "english": "Emergency response procedures minimize incident impacts",
+          "spanish": "Los procedimientos de respuesta de emergencia minimizan impactos de incidentes"
+        },
+        {
+          "english": "Safety training programs educate personnel",
+          "spanish": "Los programas de entrenamiento de seguridad educan al personal"
+        },
+        {
+          "english": "Protective equipment shields workers from hazards",
+          "spanish": "El equipo protectivo protege trabajadores de peligros"
+        },
+        {
+          "english": "Safety audits verify compliance with standards",
+          "spanish": "Las auditorías de seguridad verifican cumplimiento con estándares"
+        },
+        {
+          "english": "Incident investigation determines root causes",
+          "spanish": "La investigación de incidentes determina causas raíz"
+        },
+        {
+          "english": "Continuous improvement enhances safety performance",
+          "spanish": "La mejora continua mejora rendimiento de seguridad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of hazard identification?",
+          "options": ["To systematically find all potential sources of harm", "To create more hazards", "To ignore safety issues"],
+          "answer": 0
+        },
+        {
+          "audio": "How does risk assessment help in safety management?",
+          "options": ["It quantifies risks to prioritize safety measures", "It eliminates all risks", "It increases dangers"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are emergency response procedures important?",
+          "options": ["They minimize damage and protect people when accidents occur", "They cause emergencies", "They are only paperwork"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Hazard",
+          "suffix": "is the first step in developing effective safety programs.",
+          "answer": "identification",
+          "selected": false,
+          "feedback": "Identifying hazards systematically is fundamental to preventing accidents."
+        },
+        {
+          "prefix": "Risk",
+          "suffix": "helps prioritize safety investments and interventions.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Risk assessment enables data-driven safety decision making."
+        },
+        {
+          "prefix": "Safety management",
+          "suffix": "provide comprehensive frameworks for organizational safety.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "SMS integrate all safety activities into coherent management approaches."
+        }
+      ]
+    },
+    {
+      "title": "Maintenance Engineering and Asset Management → Ingeniería de mantenimiento y gestión de activos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Preventive maintenance reduces equipment failures",
+          "spanish": "El mantenimiento preventivo reduce fallas de equipos"
+        },
+        {
+          "english": "Predictive maintenance uses data to forecast needs",
+          "spanish": "El mantenimiento predictivo usa datos para pronosticar necesidades"
+        },
+        {
+          "english": "Condition monitoring tracks equipment health",
+          "spanish": "El monitoreo de condición rastrea salud de equipos"
+        },
+        {
+          "english": "Maintenance planning optimizes resource allocation",
+          "spanish": "La planificación de mantenimiento optimiza asignación de recursos"
+        },
+        {
+          "english": "Asset lifecycle management maximizes value",
+          "spanish": "La gestión del ciclo de vida de activos maximiza valor"
+        },
+        {
+          "english": "Reliability engineering improves equipment availability",
+          "spanish": "La ingeniería de confiabilidad mejora disponibilidad de equipos"
+        },
+        {
+          "english": "Spare parts management ensures availability",
+          "spanish": "La gestión de partes de repuesto asegura disponibilidad"
+        },
+        {
+          "english": "Maintenance records provide historical data",
+          "spanish": "Los registros de mantenimiento proporcionan datos históricos"
+        },
+        {
+          "english": "Cost optimization balances maintenance expenses",
+          "spanish": "La optimización de costos equilibra gastos de mantenimiento"
+        },
+        {
+          "english": "Performance indicators measure maintenance effectiveness",
+          "spanish": "Los indicadores de rendimiento miden efectividad del mantenimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the difference between preventive and predictive maintenance?",
+          "options": ["Preventive is scheduled, predictive is based on equipment condition", "They are exactly the same", "Predictive is always more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "How does condition monitoring benefit maintenance programs?",
+          "options": ["It provides real-time data about equipment health", "It makes equipment break faster", "It eliminates all maintenance"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is asset lifecycle management important?",
+          "options": ["It optimizes value from acquisition to disposal", "It only focuses on new equipment", "It ignores costs"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Predictive",
+          "suffix": "uses sensors and analytics to optimize maintenance timing.",
+          "answer": "maintenance",
+          "selected": false,
+          "feedback": "Predictive maintenance leverages technology to maintain equipment more efficiently."
+        },
+        {
+          "prefix": "Condition",
+          "suffix": "provides continuous insight into equipment performance.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Condition monitoring enables proactive maintenance decisions."
+        },
+        {
+          "prefix": "Asset lifecycle",
+          "suffix": "considers all costs and benefits over equipment lifetime.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Lifecycle management optimizes total value from assets."
+        }
+      ]
+    },
+    {
+      "title": "Systems Engineering and Integration → Ingeniería de sistemas e integración",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Requirements engineering defines system specifications",
+          "spanish": "La ingeniería de requisitos define especificaciones del sistema"
+        },
+        {
+          "english": "System architecture organizes components and interfaces",
+          "spanish": "La arquitectura del sistema organiza componentes e interfaces"
+        },
+        {
+          "english": "Integration testing validates system interactions",
+          "spanish": "Las pruebas de integración validan interacciones del sistema"
+        },
+        {
+          "english": "Configuration management controls system changes",
+          "spanish": "La gestión de configuración controla cambios del sistema"
+        },
+        {
+          "english": "Life cycle processes guide development stages",
+          "spanish": "Los procesos del ciclo de vida guían etapas de desarrollo"
+        },
+        {
+          "english": "Interface design enables component communication",
+          "spanish": "El diseño de interfaces permite comunicación de componentes"
+        },
+        {
+          "english": "Verification methods confirm requirements compliance",
+          "spanish": "Los métodos de verificación confirman cumplimiento de requisitos"
+        },
+        {
+          "english": "System optimization improves overall performance",
+          "spanish": "La optimización del sistema mejora rendimiento general"
+        },
+        {
+          "english": "Risk management addresses system uncertainties",
+          "spanish": "La gestión de riesgo aborda incertidumbres del sistema"
+        },
+        {
+          "english": "Documentation standards ensure knowledge transfer",
+          "spanish": "Los estándares de documentación aseguran transferencia de conocimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the role of requirements engineering?",
+          "options": ["To clearly define what the system must do and how well", "To build the system", "To test the system"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is system architecture important?",
+          "options": ["It defines how components work together to achieve system goals", "It makes systems more complex", "It is only decorative"],
+          "answer": 0
+        },
+        {
+          "audio": "How does configuration management help system development?",
+          "options": ["It controls and tracks changes to maintain system integrity", "It makes changes randomly", "It prevents all changes"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Requirements",
+          "suffix": "establishes the foundation for all subsequent system development.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Requirements engineering is critical for defining what systems must accomplish."
+        },
+        {
+          "prefix": "System",
+          "suffix": "defines the overall structure and component relationships.",
+          "answer": "architecture",
+          "selected": false,
+          "feedback": "System architecture provides the blueprint for system implementation."
+        },
+        {
+          "prefix": "Integration",
+          "suffix": "ensures all components work together as intended.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Integration testing validates that system components interact correctly."
+        }
+      ]
+    },
+    {
+      "title": "Human Factors Engineering → Ingeniería de factores humanos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Ergonomic design optimizes human-machine interaction",
+          "spanish": "El diseño ergonómico optimiza interacción humano-máquina"
+        },
+        {
+          "english": "User interface design enhances system usability",
+          "spanish": "El diseño de interfaz de usuario mejora usabilidad del sistema"
+        },
+        {
+          "english": "Cognitive workload analysis prevents operator overload",
+          "spanish": "El análisis de carga cognitiva previene sobrecarga del operador"
+        },
+        {
+          "english": "Task analysis breaks down complex operations",
+          "spanish": "El análisis de tareas descompone operaciones complejas"
+        },
+        {
+          "english": "Error prevention strategies reduce human mistakes",
+          "spanish": "Las estrategias de prevención de errores reducen errores humanos"
+        },
+        {
+          "english": "Workplace design considers human capabilities",
+          "spanish": "El diseño del lugar de trabajo considera capacidades humanas"
+        },
+        {
+          "english": "Training programs develop operator competency",
+          "spanish": "Los programas de entrenamiento desarrollan competencia del operador"
+        },
+        {
+          "english": "Situation awareness maintains operator understanding",
+          "spanish": "La conciencia situacional mantiene comprensión del operador"
+        },
+        {
+          "english": "Safety culture promotes responsible behavior",
+          "spanish": "La cultura de seguridad promueve comportamiento responsable"
+        },
+        {
+          "english": "Performance measurement evaluates human-system effectiveness",
+          "spanish": "La medición de rendimiento evalúa efectividad del sistema humano"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the goal of ergonomic design?",
+          "options": ["To optimize the interaction between humans and their work environment", "To make systems more complex", "To eliminate human involvement"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is cognitive workload analysis important?",
+          "options": ["It ensures operators can handle their tasks without being overwhelmed", "It increases mental stress", "It complicates tasks"],
+          "answer": 0
+        },
+        {
+          "audio": "How do error prevention strategies help?",
+          "options": ["They design systems to reduce the likelihood of human mistakes", "They blame operators for errors", "They ignore human limitations"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Technology Transfer and Commercialization → Transferencia de tecnología y comercialización",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Innovation management guides technology development",
+          "spanish": "La gestión de innovación guía desarrollo de tecnología"
+        },
+        {
+          "english": "Market research identifies commercial opportunities",
+          "spanish": "La investigación de mercado identifica oportunidades comerciales"
+        },
+        {
+          "english": "Intellectual property protection secures innovations",
+          "spanish": "La protección de propiedad intelectual asegura innovaciones"
+        },
+        {
+          "english": "Business model development creates value propositions",
+          "spanish": "El desarrollo de modelo de negocio crea propuestas de valor"
+        },
+        {
+          "english": "Technology licensing enables widespread adoption",
+          "spanish": "La licencia de tecnología permite adopción generalizada"
+        },
+        {
+          "english": "Startup incubation supports new ventures",
+          "spanish": "La incubación de startups apoya nuevas empresas"
+        },
+        {
+          "english": "Partnership strategies accelerate commercialization",
+          "spanish": "Las estrategias de alianza aceleran comercialización"
+        },
+        {
+          "english": "Funding mechanisms support technology development",
+          "spanish": "Los mecanismos de financiamiento apoyan desarrollo de tecnología"
+        },
+        {
+          "english": "Regulatory approval ensures market compliance",
+          "spanish": "La aprobación regulatoria asegura cumplimiento del mercado"
+        },
+        {
+          "english": "Scaling strategies enable mass production",
+          "spanish": "Las estrategias de escalamiento permiten producción en masa"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Technology",
+          "suffix": "bridges the gap between research and commercial application.",
+          "answer": "transfer",
+          "selected": false,
+          "feedback": "Technology transfer is essential for converting research into useful products."
+        },
+        {
+          "prefix": "Market",
+          "suffix": "helps identify viable commercial applications for new technologies.",
+          "answer": "research",
+          "selected": false,
+          "feedback": "Market research guides technology development toward commercial success."
+        },
+        {
+          "prefix": "Business model",
+          "suffix": "defines how technology creates and captures value in the market.",
+          "answer": "development",
+          "selected": false,
+          "feedback": "Business models are crucial for successful technology commercialization."
+        }
+      ]
+    }
+  ]
+}
+]
+

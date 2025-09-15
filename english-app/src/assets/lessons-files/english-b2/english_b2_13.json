@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 13,
+  "sections": [
+    {
+      "title": "Advanced Transportation Systems → Sistemas de transporte avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Intelligent transportation systems optimize traffic flow through real-time data analysis",
+          "spanish": "Los sistemas de transporte inteligente optimizan flujo de tráfico a través de análisis de datos en tiempo real"
+        },
+        {
+          "english": "Autonomous vehicle navigation relies on sensor fusion and machine learning algorithms",
+          "spanish": "La navegación de vehículos autónomos depende de fusión de sensores y algoritmos de aprendizaje automático"
+        },
+        {
+          "english": "Electric propulsion systems reduce emissions and improve energy efficiency",
+          "spanish": "Los sistemas de propulsión eléctrica reducen emisiones y mejoran eficiencia energética"
+        },
+        {
+          "english": "Traffic management algorithms dynamically adjust signal timing for optimal flow",
+          "spanish": "Los algoritmos de gestión de tráfico ajustan dinámicamente temporización de señales para flujo óptimo"
+        },
+        {
+          "english": "Vehicle-to-infrastructure communication enables coordinated transportation networks",
+          "spanish": "La comunicación vehículo-a-infraestructura permite redes de transporte coordinadas"
+        },
+        {
+          "english": "Hyperloop technology promises ultra-high-speed ground transportation",
+          "spanish": "La tecnología Hyperloop promete transporte terrestre de velocidad ultra-alta"
+        },
+        {
+          "english": "Predictive maintenance reduces vehicle downtime through condition monitoring",
+          "spanish": "El mantenimiento predictivo reduce tiempo de inactividad de vehículos a través de monitoreo de condiciones"
+        },
+        {
+          "english": "Urban mobility platforms integrate multiple transportation modes seamlessly",
+          "spanish": "Las plataformas de movilidad urbana integran múltiples modos de transporte sin problemas"
+        },
+        {
+          "english": "Sustainable aviation fuels enable carbon-neutral air transportation",
+          "spanish": "Los combustibles de aviación sostenibles permiten transporte aéreo carbono-neutral"
+        },
+        {
+          "english": "Logistics optimization algorithms minimize transportation costs and delivery times",
+          "spanish": "Los algoritmos de optimización logística minimizan costos de transporte y tiempos de entrega"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do intelligent transportation systems improve traffic efficiency?",
+          "options": ["They use real-time data and algorithms to optimize traffic flow and reduce congestion", "They eliminate all traffic lights", "They only work for highways"],
+          "answer": 0
+        },
+        {
+          "audio": "What challenges must autonomous vehicles overcome for widespread adoption?",
+          "options": ["Technical challenges like perception in bad weather, plus regulatory and safety concerns", "They're already perfect and ready for deployment", "They only work in simulation"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is vehicle-to-infrastructure communication important?",
+          "options": ["It enables coordination between vehicles and traffic systems for better efficiency and safety", "It makes vehicles more expensive", "It only works for electric cars"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Intelligent transportation",
+          "suffix": "use data and technology to optimize traffic flow and improve safety.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "ITS integration is crucial for modern urban transportation management."
+        },
+        {
+          "prefix": "Autonomous",
+          "suffix": "must process complex sensor data to navigate safely in dynamic environments.",
+          "answer": "vehicles",
+          "selected": false,
+          "feedback": "Autonomous vehicles represent the future of transportation technology."
+        },
+        {
+          "prefix": "Vehicle-to-infrastructure",
+          "suffix": "enables smart coordination between vehicles and traffic management systems.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "V2I communication is essential for intelligent transportation networks."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Energy Storage and Grid Integration → Almacenamiento avanzado de energía e integración de red",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Battery management systems optimize performance and safety of energy storage",
+          "spanish": "Los sistemas de gestión de baterías optimizan rendimiento y seguridad del almacenamiento de energía"
+        },
+        {
+          "english": "Grid-scale storage enables renewable energy integration and stability",
+          "spanish": "El almacenamiento a escala de red permite integración de energía renovable y estabilidad"
+        },
+        {
+          "english": "Lithium-ion technology dominates modern energy storage applications",
+          "spanish": "La tecnología de ion-litio domina aplicaciones modernas de almacenamiento de energía"
+        },
+        {
+          "english": "Power electronics facilitate bidirectional energy flow in storage systems",
+          "spanish": "La electrónica de potencia facilita flujo de energía bidireccional en sistemas de almacenamiento"
+        },
+        {
+          "english": "Thermal energy storage captures waste heat for later utilization",
+          "spanish": "El almacenamiento de energía térmica captura calor residual para utilización posterior"
+        },
+        {
+          "english": "Pumped hydro storage provides large-scale mechanical energy storage",
+          "spanish": "El almacenamiento hidráulico bombeado proporciona almacenamiento de energía mecánica a gran escala"
+        },
+        {
+          "english": "Energy arbitrage strategies optimize storage charging and discharging cycles",
+          "spanish": "Las estrategias de arbitraje de energía optimizan ciclos de carga y descarga de almacenamiento"
+        },
+        {
+          "english": "Flywheel systems deliver high-power, short-duration energy storage",
+          "spanish": "Los sistemas de volante de inercia entregan almacenamiento de energía de alta potencia y corta duración"
+        },
+        {
+          "english": "Compressed air energy storage converts electricity into mechanical potential",
+          "spanish": "El almacenamiento de energía de aire comprimido convierte electricidad en potencial mecánico"
+        },
+        {
+          "english": "Hybrid energy systems combine multiple storage technologies for optimal performance",
+          "spanish": "Los sistemas de energía híbridos combinan múltiples tecnologías de almacenamiento para rendimiento óptimo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is energy storage crucial for renewable energy integration?",
+          "options": ["It smooths out variable renewable generation and provides grid stability", "It makes renewable energy more expensive", "It eliminates the need for renewable sources"],
+          "answer": 0
+        },
+        {
+          "audio": "How do battery management systems enhance safety?",
+          "options": ["They monitor temperature, voltage, and current to prevent dangerous conditions", "They make batteries last forever", "They eliminate all electrical components"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages does pumped hydro storage offer?",
+          "options": ["It provides large-scale, long-duration storage with high efficiency", "It works everywhere regardless of geography", "It's the cheapest storage technology"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Battery management",
+          "suffix": "monitor and control battery parameters to ensure safe and efficient operation.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "BMS technology is essential for safe battery operation in all applications."
+        },
+        {
+          "prefix": "Grid-scale",
+          "suffix": "enables utilities to balance supply and demand over long time periods.",
+          "answer": "storage",
+          "selected": false,
+          "feedback": "Large-scale storage is crucial for renewable energy integration."
+        },
+        {
+          "prefix": "Energy",
+          "suffix": "takes advantage of time-varying electricity prices to generate revenue.",
+          "answer": "arbitrage",
+          "selected": false,
+          "feedback": "Energy arbitrage creates economic incentives for storage deployment."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Manufacturing Processes → Procesos de manufactura avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Additive manufacturing enables complex geometries impossible with traditional methods",
+          "spanish": "La manufactura aditiva permite geometrías complejas imposibles con métodos tradicionales"
+        },
+        {
+          "english": "Computer numerical control machining provides precision manufacturing capabilities",
+          "spanish": "El maquinado de control numérico computarizado proporciona capacidades de manufactura de precisión"
+        },
+        {
+          "english": "Lean manufacturing principles eliminate waste and optimize production efficiency",
+          "spanish": "Los principios de manufactura lean eliminan desperdicios y optimizan eficiencia de producción"
+        },
+        {
+          "english": "Quality control systems ensure product consistency and defect prevention",
+          "spanish": "Los sistemas de control de calidad aseguran consistencia de productos y prevención de defectos"
+        },
+        {
+          "english": "Flexible manufacturing systems adapt rapidly to changing production requirements",
+          "spanish": "Los sistemas de manufactura flexible se adaptan rápidamente a requerimientos de producción cambiantes"
+        },
+        {
+          "english": "Process automation reduces human error and increases production consistency",
+          "spanish": "La automatización de procesos reduce error humano y aumenta consistencia de producción"
+        },
+        {
+          "english": "Material handling systems optimize workflow and reduce production bottlenecks",
+          "spanish": "Los sistemas de manejo de materiales optimizan flujo de trabajo y reducen cuellos de botella de producción"
+        },
+        {
+          "english": "Statistical process control monitors production quality through data analysis",
+          "spanish": "El control estadístico de procesos monitorea calidad de producción a través de análisis de datos"
+        },
+        {
+          "english": "Supply chain integration coordinates materials flow for efficient production",
+          "spanish": "La integración de cadena de suministro coordina flujo de materiales para producción eficiente"
+        },
+        {
+          "english": "Digital manufacturing platforms enable virtual production planning and optimization",
+          "spanish": "Las plataformas de manufactura digital permiten planificación y optimización de producción virtual"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does additive manufacturing change product design possibilities?",
+          "options": ["It allows creation of complex internal structures and customized products", "It only works with plastic materials", "It's slower than all traditional methods"],
+          "answer": 0
+        },
+        {
+          "audio": "What benefits do flexible manufacturing systems provide?",
+          "options": ["They can quickly switch between different products with minimal downtime", "They only produce one type of product", "They eliminate all human workers"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is statistical process control important in manufacturing?",
+          "options": ["It detects quality problems early and maintains consistent production standards", "It makes products more expensive", "It slows down production"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Additive",
+          "suffix": "builds parts layer by layer, enabling unprecedented design freedom.",
+          "answer": "manufacturing",
+          "selected": false,
+          "feedback": "Additive manufacturing is revolutionizing product design and prototyping."
+        },
+        {
+          "prefix": "Lean",
+          "suffix": "focuses on eliminating waste and maximizing value-added activities.",
+          "answer": "manufacturing",
+          "selected": false,
+          "feedback": "Lean principles are fundamental to modern efficient manufacturing."
+        },
+        {
+          "prefix": "Flexible manufacturing",
+          "suffix": "can rapidly reconfigure to produce different products efficiently.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Flexibility is crucial for responding to market demands quickly."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Control Systems and Optimization → Sistemas de control avanzados y optimización",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Model predictive control optimizes system performance over prediction horizons",
+          "spanish": "El control predictivo de modelos optimiza rendimiento del sistema sobre horizontes de predicción"
+        },
+        {
+          "english": "Adaptive control systems automatically adjust parameters for changing conditions",
+          "spanish": "Los sistemas de control adaptivo ajustan automáticamente parámetros para condiciones cambiantes"
+        },
+        {
+          "english": "Nonlinear control techniques handle complex system dynamics and constraints",
+          "spanish": "Las técnicas de control no lineal manejan dinámicas complejas del sistema y restricciones"
+        },
+        {
+          "english": "Distributed control architectures coordinate multiple subsystems efficiently",
+          "spanish": "Las arquitecturas de control distribuido coordinan múltiples subsistemas eficientemente"
+        },
+        {
+          "english": "Robust control maintains stability despite model uncertainties and disturbances",
+          "spanish": "El control robusto mantiene estabilidad a pesar de incertidumbres del modelo y perturbaciones"
+        },
+        {
+          "english": "Optimization algorithms find optimal solutions for complex engineering problems",
+          "spanish": "Los algoritmos de optimización encuentran soluciones óptimas para problemas complejos de ingeniería"
+        },
+        {
+          "english": "Real-time control systems respond to inputs within strict time constraints",
+          "spanish": "Los sistemas de control en tiempo real responden a entradas dentro de restricciones estrictas de tiempo"
+        },
+        {
+          "english": "Multi-objective optimization balances competing design requirements",
+          "spanish": "La optimización multi-objetivo equilibra requerimientos de diseño competidores"
+        },
+        {
+          "english": "Fault-tolerant control maintains operation despite component failures",
+          "spanish": "El control tolerante a fallas mantiene operación a pesar de fallas de componentes"
+        },
+        {
+          "english": "Stochastic control handles systems with random disturbances and uncertainties",
+          "spanish": "El control estocástico maneja sistemas con perturbaciones aleatorias e incertidumbres"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does model predictive control improve system performance?",
+          "options": ["It predicts future system behavior and optimizes control actions accordingly", "It eliminates all system disturbances", "It only works for simple systems"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantages do distributed control systems offer?",
+          "options": ["They provide better scalability, reliability, and local decision-making capability", "They centralize all control functions", "They eliminate the need for communication"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is robust control important for real-world applications?",
+          "options": ["It maintains performance even when system models are imperfect or conditions change", "It only works in laboratory conditions", "It eliminates all uncertainties"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Professional Project Management in Engineering → Gestión profesional de proyectos en ingeniería",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Agile project management methodologies adapt to changing requirements and priorities",
+          "spanish": "Las metodologías de gestión de proyectos ágiles se adaptan a requerimientos y prioridades cambiantes"
+        },
+        {
+          "english": "Risk assessment frameworks identify potential threats to project success",
+          "spanish": "Los marcos de evaluación de riesgo identifican amenazas potenciales al éxito del proyecto"
+        },
+        {
+          "english": "Stakeholder engagement strategies ensure alignment with project objectives",
+          "spanish": "Las estrategias de participación de partes interesadas aseguran alineación con objetivos del proyecto"
+        },
+        {
+          "english": "Resource optimization algorithms allocate limited resources for maximum efficiency",
+          "spanish": "Los algoritmos de optimización de recursos asignan recursos limitados para máxima eficiencia"
+        },
+        {
+          "english": "Earned value management tracks project performance against planned baselines",
+          "spanish": "La gestión de valor ganado rastrea rendimiento del proyecto contra líneas base planificadas"
+        },
+        {
+          "english": "Critical path analysis identifies task dependencies and schedule constraints",
+          "spanish": "El análisis de ruta crítica identifica dependencias de tareas y restricciones de horario"
+        },
+        {
+          "english": "Quality assurance processes ensure deliverables meet specified requirements",
+          "spanish": "Los procesos de aseguramiento de calidad aseguran que entregables cumplan requerimientos especificados"
+        },
+        {
+          "english": "Change management procedures control project scope and budget modifications",
+          "spanish": "Los procedimientos de gestión de cambios controlan modificaciones de alcance y presupuesto del proyecto"
+        },
+        {
+          "english": "Communication planning establishes information flow between project stakeholders",
+          "spanish": "La planificación de comunicación establece flujo de información entre partes interesadas del proyecto"
+        },
+        {
+          "english": "Project closure activities document lessons learned and transfer knowledge",
+          "spanish": "Las actividades de cierre de proyecto documentan lecciones aprendidas y transfieren conocimiento"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Agile project",
+          "suffix": "enables teams to respond quickly to changing requirements and customer feedback.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Agile methodologies are essential for managing complex engineering projects."
+        },
+        {
+          "prefix": "Risk",
+          "suffix": "helps project managers anticipate and prepare for potential problems.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "Risk assessment is crucial for successful project delivery."
+        },
+        {
+          "prefix": "Stakeholder",
+          "suffix": "ensures that all interested parties are informed and aligned with project goals.",
+          "answer": "engagement",
+          "selected": false,
+          "feedback": "Effective stakeholder engagement is key to project success."
+        }
+      ]
+    }
+  ]
+}
+]
+

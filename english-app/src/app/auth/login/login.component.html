@@ -1,0 +1,64 @@
+<div class="container mt-5"></div>
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center mb-4">Iniciar Sesión</h4>
+
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" [class.is-invalid]="isFieldInvalid('email')" id="email"
+                            formControlName="email" placeholder="tu@email.com">
+                        <div class="invalid-feedback">
+                            <span *ngIf="loginForm.get('email')?.errors?.['required']">El email es requerido</span>
+                            <span *ngIf="loginForm.get('email')?.errors?.['email']">Formato de email inválido</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" [class.is-invalid]="isFieldInvalid('password')"
+                            id="password" formControlName="password" placeholder="Tu contraseña">
+                        <div class="invalid-feedback">
+                            <span *ngIf="loginForm.get('password')?.errors?.['required']">La contraseña es
+                                requerida</span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mb-3">
+                        <button type="submit" class="btn btn-primary" [disabled]="loading || loginForm.invalid">
+                            <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
+                            Iniciar Sesión
+                        </button>
+                    </div>
+
+                    <div class="d-grid gap-2 mb-3">
+                        <button type="button" class="btn btn-outline-danger" [disabled]="loading"
+                            (click)="loginWithGoogle()">
+                            <i class="fab fa-google me-2"></i>
+                            Continuar con Google
+                        </button>
+                    </div>
+
+                    <div class="text-center">
+                        <a routerLink="/auth/forgot-password" class="text-decoration-none">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="text-center">
+                        <span class="text-muted">¿No tienes una cuenta? </span>
+                        <a routerLink="/auth/register" class="text-decoration-none">Regístrate</a>
+                    </div>
+                </form>
+
+                <div *ngIf="errorMessage" class="alert alert-danger mt-3" role="alert">
+                    {{ errorMessage }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

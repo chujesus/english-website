@@ -1,0 +1,560 @@
+[
+  {
+    "title": "Introductions and Greetings",
+    "objective": "Learn to introduce yourself and greet people formally and informally.",
+    "examples": [
+      "Hello, my name is Sarah.",
+      "Nice to meet you!",
+      "How are you?"
+    ],
+    "keywords": [
+      "hello",
+      "hi",
+      "good morning",
+      "nice to meet you",
+      "what's your name?"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to introduce yourself and greet people formally and informally.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Personal Information",
+    "objective": "Learn to ask for and give basic personal information such as name, age, nationality, and occupation.",
+    "examples": [
+      "I am 25 years old.",
+      "I am from Costa Rica.",
+      "I’m a mechanic."
+    ],
+    "keywords": [
+      "name",
+      "age",
+      "country",
+      "nationality",
+      "job"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to ask for and give basic personal information such as name, age, nationality, and occupation.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "The Alphabet and Spelling",
+    "objective": "Learn to recognize and pronounce the English alphabet and spell words, names, and email addresses.",
+    "examples": [
+      "How do you spell your name?",
+      "My email is j-o-h-n at mail dot com."
+    ],
+    "keywords": [
+      "alphabet",
+      "spell",
+      "email",
+      "name",
+      "letters"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to recognize and pronounce the english alphabet and spell words, names, and email addresses.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Numbers and Phone Numbers",
+    "objective": "Learn to count from 1 to 100 and ask for or provide telephone numbers.",
+    "examples": [
+      "My number is 867-5309.",
+      "Can you repeat your number, please?"
+    ],
+    "keywords": [
+      "numbers",
+      "phone",
+      "zero to one hundred",
+      "telephone"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to count from 1 to 100 and ask for or provide telephone numbers.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Days, Months, and Dates",
+    "objective": "Learn to identify days of the week, months of the year, and talk about dates and birthdays.",
+    "examples": [
+      "My birthday is on July 12th.",
+      "Today is Monday."
+    ],
+    "keywords": [
+      "days",
+      "months",
+      "dates",
+      "birthday",
+      "calendar"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to identify days of the week, months of the year, and talk about dates and birthdays.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Telling the Time",
+    "objective": "Learn to ask and tell the time using the 12-hour and 24-hour format.",
+    "examples": [
+      "What time is it?",
+      "It's half past three."
+    ],
+    "keywords": [
+      "clock",
+      "time",
+      "a.m.",
+      "p.m.",
+      "o'clock"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to ask and tell the time using the 12-hour and 24-hour format.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Daily Routines",
+    "objective": "Learn to describe your daily activities using the present simple tense.",
+    "examples": [
+      "I wake up at 6 a.m.",
+      "She goes to work at 8 a.m."
+    ],
+    "keywords": [
+      "wake up",
+      "get dressed",
+      "go to work",
+      "eat breakfast"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe your daily activities using the present simple tense.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Family and Relationships",
+    "objective": "Learn to talk about your family members and describe relationships using basic vocabulary.",
+    "examples": [
+      "My sister is a doctor.",
+      "I have two brothers."
+    ],
+    "keywords": [
+      "mother",
+      "father",
+      "sister",
+      "brother",
+      "family"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about your family members and describe relationships using basic vocabulary.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "At Home and Around the House",
+    "objective": "Learn to describe home and common objects.",
+    "examples": [
+      "The sofa is in the living room.",
+      "I cook in the kitchen."
+    ],
+    "keywords": [
+      "house",
+      "kitchen",
+      "bedroom",
+      "bathroom",
+      "furniture"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe home and common objects.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Describing People",
+    "objective": "Learn to describe people’s appearance and personality using simple adjectives.",
+    "examples": [
+      "She is tall and friendly.",
+      "He has short black hair."
+    ],
+    "keywords": [
+      "tall",
+      "short",
+      "kind",
+      "funny",
+      "hair"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe people’s appearance and personality using simple adjectives.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Hobbies and Free Time",
+    "objective": "Learn to discuss your hobbies and what you like to do in your free time using like/love + verb-ing.",
+    "examples": [
+      "I like playing soccer.",
+      "She loves reading books."
+    ],
+    "keywords": [
+      "hobbies",
+      "free time",
+      "play",
+      "watch",
+      "read"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to discuss your hobbies and what you like to do in your free time using like/love + verb-ing.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Nationalities and Countries",
+    "objective": "Learn to talk about countries, languages, and nationalities.",
+    "examples": [
+      "I am Mexican.",
+      "He is from Brazil."
+    ],
+    "keywords": [
+      "country",
+      "language",
+      "flag",
+      "nationality"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about countries, languages, and nationalities.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Everyday Activities",
+    "objective": "Learn to talk about daily routines and common actions.",
+    "examples": [
+      "I take the bus to work.",
+      "They cook dinner every night."
+    ],
+    "keywords": [
+      "activities",
+      "routine",
+      "every day",
+      "habit"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about daily routines and common actions.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Places in Town and Directions",
+    "objective": "Learn to identify common places in a town and ask for or give basic directions.",
+    "examples": [
+      "The bank is next to the supermarket.",
+      "Turn left at the corner."
+    ],
+    "keywords": [
+      "bank",
+      "school",
+      "library",
+      "directions",
+      "left",
+      "right"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to identify common places in a town and ask for or give basic directions.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Food and Drink",
+    "objective": "Learn to talk about food, drinks, and preferences.",
+    "examples": [
+      "I like apples.",
+      "Do you want coffee or tea?"
+    ],
+    "keywords": [
+      "food",
+      "drink",
+      "fruits",
+      "vegetables",
+      "preferences"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about food, drinks, and preferences.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "At the Restaurant",
+    "objective": "Learn to order food and drinks and understand simple menus.",
+    "examples": [
+      "I’ll have the chicken, please.",
+      "Can I see the menu?"
+    ],
+    "keywords": [
+      "menu",
+      "order",
+      "bill",
+      "waiter",
+      "dish"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to order food and drinks and understand simple menus.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Shopping and Prices",
+    "objective": "Learn to use vocabulary related to shopping and ask for prices and sizes.",
+    "examples": [
+      "How much is this?",
+      "I wear size 10."
+    ],
+    "keywords": [
+      "price",
+      "shop",
+      "size",
+      "clothes",
+      "buy"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to use vocabulary related to shopping and ask for prices and sizes.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Weather and Seasons",
+    "objective": "Learn to describe the weather using common expressions and ask about it in different contexts.",
+    "examples": [
+      "It’s sunny today.",
+      "What’s the weather like?"
+    ],
+    "keywords": [
+      "sunny",
+      "rainy",
+      "cold",
+      "hot",
+      "seasons"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe the weather using common expressions and ask about it in different contexts.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Basic Grammar and Sentence Structure",
+    "objective": "Learn to understand the use of subject pronouns, the verb ‘to be’, simple present, and word order in basic sentences.",
+    "examples": [
+      "She is a teacher.",
+      "I live in San José."
+    ],
+    "keywords": [
+      "subject",
+      "verb",
+      "to be",
+      "simple present",
+      "sentence"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to understand the use of subject pronouns, the verb ‘to be’, simple present, and word order in basic sentences.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Practical Conversations",
+    "objective": "Learn to participate in simple real-life dialogues.",
+    "examples": [
+      "Where is the bus stop?",
+      "How much does it cost?"
+    ],
+    "keywords": [
+      "dialogue",
+      "conversation",
+      "real life",
+      "phrases"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to participate in simple real-life dialogues.",
+    "cefrLevel": "A1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  }
+]

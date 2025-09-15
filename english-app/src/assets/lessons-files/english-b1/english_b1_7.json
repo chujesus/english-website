@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 7,
+  "sections": [
+    {
+      "title": "Advanced Project Management Methodologies → Metodologías avanzadas de gestión de proyectos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Agile methodology emphasizes iterative development",
+          "spanish": "La metodología ágil enfatiza desarrollo iterativo"
+        },
+        {
+          "english": "Scrum framework organizes work into sprints",
+          "spanish": "El marco Scrum organiza trabajo en sprints"
+        },
+        {
+          "english": "Kanban visualizes workflow processes",
+          "spanish": "Kanban visualiza procesos de flujo de trabajo"
+        },
+        {
+          "english": "Critical path analysis identifies project bottlenecks",
+          "spanish": "El análisis de ruta crítica identifica cuellos de botella del proyecto"
+        },
+        {
+          "english": "Risk management matrices assess potential impacts",
+          "spanish": "Las matrices de gestión de riesgo evalúan impactos potenciales"
+        },
+        {
+          "english": "Stakeholder engagement ensures project alignment",
+          "spanish": "La participación de partes interesadas asegura alineación del proyecto"
+        },
+        {
+          "english": "Resource allocation optimization maximizes efficiency",
+          "spanish": "La optimización de asignación de recursos maximiza eficiencia"
+        },
+        {
+          "english": "Change management processes control scope creep",
+          "spanish": "Los procesos de gestión de cambios controlan la expansión del alcance"
+        },
+        {
+          "english": "Performance indicators track project progress",
+          "spanish": "Los indicadores de rendimiento rastrean progreso del proyecto"
+        },
+        {
+          "english": "Lessons learned documentation improves future projects",
+          "spanish": "La documentación de lecciones aprendidas mejora proyectos futuros"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main advantage of Agile methodology?",
+          "options": ["Flexibility and responsiveness to change", "Rigid planning", "Longer development cycles"],
+          "answer": 0
+        },
+        {
+          "audio": "How does critical path analysis help project managers?",
+          "options": ["It identifies the longest sequence of dependent tasks", "It makes projects longer", "It eliminates all risks"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is stakeholder engagement crucial in project management?",
+          "options": ["It ensures project requirements align with business needs", "It complicates projects", "It wastes time"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Agile",
+          "suffix": "allows teams to adapt quickly to changing requirements.",
+          "answer": "methodology",
+          "selected": false,
+          "feedback": "Agile methodology's flexibility makes it ideal for projects with evolving requirements."
+        },
+        {
+          "prefix": "Critical path",
+          "suffix": "helps identify tasks that cannot be delayed without affecting project completion.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Critical path analysis focuses attention on the most important tasks for project timing."
+        },
+        {
+          "prefix": "Risk management",
+          "suffix": "help teams prepare for and mitigate potential problems.",
+          "answer": "matrices",
+          "selected": false,
+          "feedback": "Risk matrices provide structured approaches to evaluating and addressing project risks."
+        }
+      ]
+    },
+    {
+      "title": "Industrial Automation and Control Systems → Automatización industrial y sistemas de control",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Programmable logic controllers execute automated sequences",
+          "spanish": "Los controladores lógicos programables ejecutan secuencias automatizadas"
+        },
+        {
+          "english": "Human-machine interfaces provide operator control",
+          "spanish": "Las interfaces humano-máquina proporcionan control del operador"
+        },
+        {
+          "english": "Distributed control systems manage complex processes",
+          "spanish": "Los sistemas de control distribuido gestionan procesos complejos"
+        },
+        {
+          "english": "SCADA systems monitor remote operations",
+          "spanish": "Los sistemas SCADA monitorean operaciones remotas"
+        },
+        {
+          "english": "Sensor networks collect real-time data",
+          "spanish": "Las redes de sensores recolectan datos en tiempo real"
+        },
+        {
+          "english": "Feedback loops maintain process stability",
+          "spanish": "Los bucles de retroalimentación mantienen estabilidad del proceso"
+        },
+        {
+          "english": "Safety interlocks prevent hazardous conditions",
+          "spanish": "Los enclavamientos de seguridad previenen condiciones peligrosas"
+        },
+        {
+          "english": "Alarm systems notify operators of abnormal conditions",
+          "spanish": "Los sistemas de alarma notifican operadores de condiciones anormales"
+        },
+        {
+          "english": "Data logging enables performance analysis",
+          "spanish": "El registro de datos permite análisis de rendimiento"
+        },
+        {
+          "english": "Predictive algorithms anticipate maintenance needs",
+          "spanish": "Los algoritmos predictivos anticipan necesidades de mantenimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the primary function of a PLC in industrial automation?",
+          "options": ["To execute programmed control sequences automatically", "To replace all human operators", "To increase energy consumption"],
+          "answer": 0
+        },
+        {
+          "audio": "How do SCADA systems benefit industrial operations?",
+          "options": ["They enable remote monitoring and control of processes", "They make systems more complex", "They eliminate the need for maintenance"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are safety interlocks essential in automated systems?",
+          "options": ["They automatically prevent dangerous operating conditions", "They slow down production", "They are optional features"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Programmable logic",
+          "suffix": "provide flexible control solutions for industrial processes.",
+          "answer": "controllers",
+          "selected": false,
+          "feedback": "PLCs offer programmable control that can be easily modified for different applications."
+        },
+        {
+          "prefix": "Feedback",
+          "suffix": "automatically adjust process parameters to maintain desired conditions.",
+          "answer": "loops",
+          "selected": false,
+          "feedback": "Feedback loops are fundamental to maintaining stable, controlled processes."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "use data patterns to forecast when maintenance will be needed.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Predictive algorithms help optimize maintenance schedules and prevent unexpected failures."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Materials Science and Engineering → Ciencia e ingeniería avanzada de materiales",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Nanomaterials exhibit unique properties at molecular scale",
+          "spanish": "Los nanomateriales exhiben propiedades únicas a escala molecular"
+        },
+        {
+          "english": "Composite materials combine advantageous properties",
+          "spanish": "Los materiales compuestos combinan propiedades ventajosas"
+        },
+        {
+          "english": "Smart materials respond to environmental stimuli",
+          "spanish": "Los materiales inteligentes responden a estímulos ambientales"
+        },
+        {
+          "english": "Biomaterials interface safely with living tissues",
+          "spanish": "Los biomateriales interactúan de manera segura con tejidos vivos"
+        },
+        {
+          "english": "Superconductors conduct electricity without resistance",
+          "spanish": "Los superconductores conducen electricidad sin resistencia"
+        },
+        {
+          "english": "Shape-memory alloys return to predetermined forms",
+          "spanish": "Las aleaciones con memoria de forma regresan a formas predeterminadas"
+        },
+        {
+          "english": "Photonic materials manipulate light propagation",
+          "spanish": "Los materiales fotónicos manipulan propagación de luz"
+        },
+        {
+          "english": "Advanced ceramics withstand extreme conditions",
+          "spanish": "Las cerámicas avanzadas resisten condiciones extremas"
+        },
+        {
+          "english": "Metamaterials exhibit engineered electromagnetic properties",
+          "spanish": "Los metamateriales exhiben propiedades electromagnéticas diseñadas"
+        },
+        {
+          "english": "Characterization techniques reveal material structures",
+          "spanish": "Las técnicas de caracterización revelan estructuras de materiales"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes nanomaterials unique compared to bulk materials?",
+          "options": ["They exhibit different properties due to their extremely small size", "They are always more expensive", "They have no practical applications"],
+          "answer": 0
+        },
+        {
+          "audio": "How do smart materials respond to their environment?",
+          "options": ["They change properties in response to stimuli like temperature or electric fields", "They break easily", "They never change"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage do composite materials offer?",
+          "options": ["They combine the best properties of different materials", "They are always lighter", "They are always cheaper"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Nanomaterials demonstrate",
+          "suffix": "properties that differ significantly from bulk materials.",
+          "answer": "unique",
+          "selected": false,
+          "feedback": "The nanoscale introduces quantum effects and surface phenomena that create unique properties."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "can change their properties in response to external conditions.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Smart materials enable adaptive and responsive engineering solutions."
+        },
+        {
+          "prefix": "Composite",
+          "suffix": "engineer materials with optimized property combinations.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Composites allow engineers to design materials with specific property requirements."
+        }
+      ]
+    },
+    {
+      "title": "Sustainable Engineering Practices → Prácticas de ingeniería sostenible",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Life cycle assessment evaluates environmental impact",
+          "spanish": "La evaluación del ciclo de vida evalúa impacto ambiental"
+        },
+        {
+          "english": "Circular economy principles minimize waste generation",
+          "spanish": "Los principios de economía circular minimizan generación de residuos"
+        },
+        {
+          "english": "Renewable energy integration reduces carbon footprint",
+          "spanish": "La integración de energía renovable reduce huella de carbono"
+        },
+        {
+          "english": "Green chemistry develops environmentally benign processes",
+          "spanish": "La química verde desarrolla procesos ambientalmente benignos"
+        },
+        {
+          "english": "Biomimetic design emulates natural solutions",
+          "spanish": "El diseño biomimético emula soluciones naturales"
+        },
+        {
+          "english": "Industrial ecology optimizes resource flows",
+          "spanish": "La ecología industrial optimiza flujos de recursos"
+        },
+        {
+          "english": "Cradle-to-cradle design eliminates waste concepts",
+          "spanish": "El diseño de cuna a cuna elimina conceptos de residuos"
+        },
+        {
+          "english": "Carbon capture technologies mitigate emissions",
+          "spanish": "Las tecnologías de captura de carbono mitigan emisiones"
+        },
+        {
+          "english": "Ecosystem services valuation guides decision-making",
+          "spanish": "La valoración de servicios ecosistémicos guía toma de decisiones"
+        },
+        {
+          "english": "Sustainable supply chains ensure responsible sourcing",
+          "spanish": "Las cadenas de suministro sostenibles aseguran abastecimiento responsable"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does life cycle assessment analyze?",
+          "options": ["Environmental impacts throughout a product's entire lifetime", "Only manufacturing costs", "Only material properties"],
+          "answer": 0
+        },
+        {
+          "audio": "How does circular economy differ from linear economy?",
+          "options": ["It keeps materials in use rather than disposing of them", "It uses more resources", "It generates more waste"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the goal of biomimetic design?",
+          "options": ["To learn from nature's efficient solutions", "To copy animals exactly", "To replace all natural systems"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Emerging Technologies and Future Trends → Tecnologías emergentes y tendencias futuras",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Artificial intelligence transforms decision-making processes",
+          "spanish": "La inteligencia artificial transforma procesos de toma de decisiones"
+        },
+        {
+          "english": "Quantum computing promises exponential processing power",
+          "spanish": "La computación cuántica promete poder de procesamiento exponencial"
+        },
+        {
+          "english": "Biotechnology integrates engineering with biological systems",
+          "spanish": "La biotecnología integra ingeniería con sistemas biológicos"
+        },
+        {
+          "english": "Additive manufacturing enables complex geometries",
+          "spanish": "La manufactura aditiva permite geometrías complejas"
+        },
+        {
+          "english": "Autonomous systems operate without human intervention",
+          "spanish": "Los sistemas autónomos operan sin intervención humana"
+        },
+        {
+          "english": "Internet of Things connects devices globally",
+          "spanish": "El Internet de las Cosas conecta dispositivos globalmente"
+        },
+        {
+          "english": "Augmented reality enhances human perception",
+          "spanish": "La realidad aumentada mejora percepción humana"
+        },
+        {
+          "english": "Blockchain technology ensures data integrity",
+          "spanish": "La tecnología blockchain asegura integridad de datos"
+        },
+        {
+          "english": "Edge computing processes data at source locations",
+          "spanish": "La computación de borde procesa datos en ubicaciones de origen"
+        },
+        {
+          "english": "Digital twins simulate real-world systems",
+          "spanish": "Los gemelos digitales simulan sistemas del mundo real"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Artificial",
+          "suffix": "enables machines to perform tasks requiring human-like intelligence.",
+          "answer": "intelligence",
+          "selected": false,
+          "feedback": "AI technology is revolutionizing automation and decision-making across industries."
+        },
+        {
+          "prefix": "Quantum",
+          "suffix": "could solve complex problems beyond current computer capabilities.",
+          "answer": "computing",
+          "selected": false,
+          "feedback": "Quantum computing leverages quantum mechanical properties for unprecedented processing power."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "allow testing and optimization without disrupting real systems.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins enable virtual experimentation and real-time system optimization."
+        }
+      ]
+    }
+  ]
+}
+]
+

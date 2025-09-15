@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 16,
+  "sections": [
+    {
+      "title": "Research and Development Management → Gestión de investigación y desarrollo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Research portfolio management balances exploratory and applied development projects",
+          "spanish": "La gestión de portafolio de investigación equilibra proyectos de desarrollo exploratorio y aplicado"
+        },
+        {
+          "english": "Innovation metrics quantify research productivity and commercial impact",
+          "spanish": "Las métricas de innovación cuantifican productividad de investigación e impacto comercial"
+        },
+        {
+          "english": "Technology readiness levels assess maturity of emerging technologies",
+          "spanish": "Los niveles de preparación tecnológica evalúan madurez de tecnologías emergentes"
+        },
+        {
+          "english": "Cross-functional collaboration integrates diverse expertise for breakthrough innovations",
+          "spanish": "La colaboración cross-funcional integra experiencia diversa para innovaciones revolucionarias"
+        },
+        {
+          "english": "Intellectual property strategies protect and monetize research investments",
+          "spanish": "Las estrategias de propiedad intelectual protegen y monetizan inversiones de investigación"
+        },
+        {
+          "english": "Academic-industry partnerships accelerate technology transfer and commercialization",
+          "spanish": "Las alianzas academia-industria aceleran transferencia de tecnología y comercialización"
+        },
+        {
+          "english": "Research infrastructure planning supports long-term scientific capabilities",
+          "spanish": "La planificación de infraestructura de investigación apoya capacidades científicas a largo plazo"
+        },
+        {
+          "english": "Funding acquisition strategies secure resources for sustained research programs",
+          "spanish": "Las estrategias de adquisición de fondos aseguran recursos para programas de investigación sostenidos"
+        },
+        {
+          "english": "Regulatory compliance ensures research meets safety and ethical standards",
+          "spanish": "El cumplimiento regulatorio asegura que la investigación cumpla estándares de seguridad y éticos"
+        },
+        {
+          "english": "Knowledge management systems capture and share research insights effectively",
+          "spanish": "Los sistemas de gestión de conocimiento capturan y comparten conocimientos de investigación efectivamente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How do technology readiness levels help in R&D management?",
+          "options": ["They provide a standardized way to assess and communicate technology maturity", "They eliminate all research risks", "They only apply to software development"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are academic-industry partnerships valuable for innovation?",
+          "options": ["They combine academic research depth with industry application focus and resources", "They slow down all research", "They eliminate intellectual property concerns"],
+          "answer": 0
+        },
+        {
+          "audio": "What role do innovation metrics play in R&D management?",
+          "options": ["They help measure research effectiveness and guide investment decisions", "They guarantee research success", "They only measure financial returns"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Research portfolio",
+          "suffix": "optimizes allocation of resources across different types of research projects.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Portfolio management is crucial for balancing risk and return in R&D investments."
+        },
+        {
+          "prefix": "Technology readiness",
+          "suffix": "provide a systematic framework for assessing technology development progress.",
+          "answer": "levels",
+          "selected": false,
+          "feedback": "TRL assessments help manage technology development and transition decisions."
+        },
+        {
+          "prefix": "Intellectual property",
+          "suffix": "determine how research results are protected and commercialized.",
+          "answer": "strategies",
+          "selected": false,
+          "feedback": "IP strategy is essential for capturing value from research investments."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Data Science and Analytics → Ciencia de datos avanzada y análisis",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Machine learning algorithms discover patterns in complex engineering datasets",
+          "spanish": "Los algoritmos de aprendizaje automático descubren patrones en conjuntos de datos complejos de ingeniería"
+        },
+        {
+          "english": "Deep learning models extract insights from high-dimensional sensor data",
+          "spanish": "Los modelos de aprendizaje profundo extraen conocimientos de datos de sensores de alta dimensión"
+        },
+        {
+          "english": "Predictive maintenance algorithms anticipate equipment failures before occurrence",
+          "spanish": "Los algoritmos de mantenimiento predictivo anticipan fallas de equipos antes de ocurrencia"
+        },
+        {
+          "english": "Data visualization techniques communicate complex analytical results effectively",
+          "spanish": "Las técnicas de visualización de datos comunican resultados analíticos complejos efectivamente"
+        },
+        {
+          "english": "Statistical modeling quantifies uncertainty and confidence in engineering predictions",
+          "spanish": "El modelado estadístico cuantifica incertidumbre y confianza en predicciones de ingeniería"
+        },
+        {
+          "english": "Big data platforms process massive datasets from industrial systems",
+          "spanish": "Las plataformas de big data procesan conjuntos de datos masivos de sistemas industriales"
+        },
+        {
+          "english": "Real-time analytics enable immediate response to changing system conditions",
+          "spanish": "Los análisis en tiempo real permiten respuesta inmediata a condiciones cambiantes del sistema"
+        },
+        {
+          "english": "Feature engineering transforms raw data into meaningful inputs for algorithms",
+          "spanish": "La ingeniería de características transforma datos en bruto en entradas significativas para algoritmos"
+        },
+        {
+          "english": "Model validation ensures reliability and accuracy of analytical predictions",
+          "spanish": "La validación de modelos asegura confiabilidad y precisión de predicciones analíticas"
+        },
+        {
+          "english": "Automated reporting systems deliver insights to stakeholders efficiently",
+          "spanish": "Los sistemas de reporte automatizado entregan conocimientos a partes interesadas eficientemente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does predictive maintenance benefit industrial operations?",
+          "options": ["It prevents unexpected failures and optimizes maintenance scheduling", "It eliminates all maintenance requirements", "It only works for new equipment"],
+          "answer": 0
+        },
+        {
+          "audio": "What challenges exist in processing big data from engineering systems?",
+          "options": ["Volume, velocity, variety of data require specialized processing and storage systems", "All data is identical and easy to process", "No challenges exist with modern computers"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is model validation crucial in engineering analytics?",
+          "options": ["It ensures that models accurately represent real-world behavior before deployment", "It makes models run faster", "It eliminates all model errors"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Machine learning",
+          "suffix": "can identify complex patterns that traditional analysis methods might miss.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Machine learning is transforming how engineers analyze complex systems."
+        },
+        {
+          "prefix": "Predictive",
+          "suffix": "reduces downtime by scheduling maintenance before failures occur.",
+          "answer": "maintenance",
+          "selected": false,
+          "feedback": "Predictive maintenance is a key application of data science in industry."
+        },
+        {
+          "prefix": "Real-time",
+          "suffix": "enable immediate decision-making based on current system conditions.",
+          "answer": "analytics",
+          "selected": false,
+          "feedback": "Real-time analytics are essential for dynamic system optimization."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Product Development and Design → Desarrollo y diseño avanzado de productos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Design thinking methodologies foster user-centered innovation approaches",
+          "spanish": "Las metodologías de design thinking fomentan enfoques de innovación centrados en el usuario"
+        },
+        {
+          "english": "Rapid prototyping accelerates product development through iterative testing",
+          "spanish": "El prototipado rápido acelera desarrollo de productos a través de pruebas iterativas"
+        },
+        {
+          "english": "Computer-aided design systems enable complex geometry creation and analysis",
+          "spanish": "Los sistemas de diseño asistido por computadora permiten creación y análisis de geometría compleja"
+        },
+        {
+          "english": "Design for manufacturing optimizes products for efficient production processes",
+          "spanish": "El diseño para manufactura optimiza productos para procesos de producción eficientes"
+        },
+        {
+          "english": "Lifecycle assessment guides sustainable product development decisions",
+          "spanish": "La evaluación del ciclo de vida guía decisiones de desarrollo de productos sostenibles"
+        },
+        {
+          "english": "Value engineering balances functionality, quality, and cost optimization",
+          "spanish": "La ingeniería de valor equilibra funcionalidad, calidad y optimización de costos"
+        },
+        {
+          "english": "Digital twin technology enables virtual product testing and optimization",
+          "spanish": "La tecnología de gemelo digital permite pruebas y optimización virtual de productos"
+        },
+        {
+          "english": "Modular design architectures facilitate customization and maintenance",
+          "spanish": "Las arquitecturas de diseño modular facilitan personalización y mantenimiento"
+        },
+        {
+          "english": "User experience research informs product design and interface decisions",
+          "spanish": "La investigación de experiencia de usuario informa decisiones de diseño de productos e interfaces"
+        },
+        {
+          "english": "Regulatory compliance integration ensures products meet safety standards",
+          "spanish": "La integración de cumplimiento regulatorio asegura que productos cumplan estándares de seguridad"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does design thinking improve product development?",
+          "options": ["It focuses on understanding user needs and iterating solutions based on feedback", "It eliminates all design challenges", "It only works for software products"],
+          "answer": 0
+        },
+        {
+          "audio": "What benefits does rapid prototyping provide in product development?",
+          "options": ["It allows quick testing of ideas and identification of design issues early", "It eliminates the need for final products", "It's only useful for simple products"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is design for manufacturing important?",
+          "options": ["It ensures products can be produced efficiently and cost-effectively", "It makes all products identical", "It eliminates manufacturing requirements"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Design",
+          "suffix": "puts user needs and experiences at the center of the innovation process.",
+          "answer": "thinking",
+          "selected": false,
+          "feedback": "Design thinking is a human-centered approach to innovation and problem-solving."
+        },
+        {
+          "prefix": "Rapid",
+          "suffix": "enables quick iteration and validation of design concepts.",
+          "answer": "prototyping",
+          "selected": false,
+          "feedback": "Rapid prototyping accelerates the product development cycle significantly."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "allows virtual testing and optimization before physical production.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins are revolutionizing product development and lifecycle management."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Safety and Risk Engineering → Ingeniería avanzada de seguridad y riesgo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Probabilistic risk assessment quantifies likelihood and consequences of system failures",
+          "spanish": "La evaluación probabilística de riesgo cuantifica probabilidad y consecuencias de fallas del sistema"
+        },
+        {
+          "english": "Safety management systems provide systematic approaches to hazard control",
+          "spanish": "Los sistemas de gestión de seguridad proporcionan enfoques sistemáticos para control de peligros"
+        },
+        {
+          "english": "Fault tree analysis identifies potential failure paths in complex systems",
+          "spanish": "El análisis de árbol de fallas identifica rutas potenciales de falla en sistemas complejos"
+        },
+        {
+          "english": "Human factors engineering reduces operator error through better design",
+          "spanish": "La ingeniería de factores humanos reduce error del operador a través de mejor diseño"
+        },
+        {
+          "english": "Emergency response planning prepares organizations for crisis situations",
+          "spanish": "La planificación de respuesta de emergencia prepara organizaciones para situaciones de crisis"
+        },
+        {
+          "english": "Reliability engineering ensures consistent system performance over time",
+          "spanish": "La ingeniería de confiabilidad asegura rendimiento consistente del sistema con el tiempo"
+        },
+        {
+          "english": "Safety instrumented systems provide automated protection against hazards",
+          "spanish": "Los sistemas instrumentados de seguridad proporcionan protección automatizada contra peligros"
+        },
+        {
+          "english": "Risk communication bridges technical analysis and stakeholder understanding",
+          "spanish": "La comunicación de riesgo conecta análisis técnico y comprensión de partes interesadas"
+        },
+        {
+          "english": "Barrier analysis evaluates effectiveness of protective measures",
+          "spanish": "El análisis de barreras evalúa efectividad de medidas protectivas"
+        },
+        {
+          "english": "Continuous monitoring systems detect safety anomalies in real-time",
+          "spanish": "Los sistemas de monitoreo continuo detectan anomalías de seguridad en tiempo real"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does probabilistic risk assessment improve safety engineering?",
+          "options": ["It quantifies risks numerically, enabling data-driven safety decisions", "It eliminates all risks completely", "It only works for simple systems"],
+          "answer": 0
+        },
+        {
+          "audio": "What role does human factors engineering play in safety?",
+          "options": ["It designs systems that account for human capabilities and limitations", "It eliminates all human involvement", "It blames humans for all failures"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are safety instrumented systems important?",
+          "options": ["They provide automatic protection when normal controls fail", "They replace all manual controls", "They eliminate the need for operators"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Technology Integration and Systems Engineering → Integración de tecnología e ingeniería de sistemas",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Systems architecture defines structure and interfaces for complex engineering systems",
+          "spanish": "La arquitectura de sistemas define estructura e interfaces para sistemas de ingeniería complejos"
+        },
+        {
+          "english": "Technology integration methodologies combine diverse subsystems effectively",
+          "spanish": "Las metodologías de integración de tecnología combinan subsistemas diversos efectivamente"
+        },
+        {
+          "english": "Requirements engineering captures stakeholder needs and system specifications",
+          "spanish": "La ingeniería de requerimientos captura necesidades de partes interesadas y especificaciones del sistema"
+        },
+        {
+          "english": "Verification and validation processes ensure systems meet design objectives",
+          "spanish": "Los procesos de verificación y validación aseguran que sistemas cumplan objetivos de diseño"
+        },
+        {
+          "english": "Configuration management controls system changes throughout development",
+          "spanish": "La gestión de configuración controla cambios del sistema a través del desarrollo"
+        },
+        {
+          "english": "Interface control documents specify subsystem interaction requirements",
+          "spanish": "Los documentos de control de interfaces especifican requerimientos de interacción de subsistemas"
+        },
+        {
+          "english": "Model-based systems engineering uses digital models for design and analysis",
+          "spanish": "La ingeniería de sistemas basada en modelos usa modelos digitales para diseño y análisis"
+        },
+        {
+          "english": "Technology roadmapping plans integration of emerging technologies",
+          "spanish": "El roadmapping de tecnología planifica integración de tecnologías emergentes"
+        },
+        {
+          "english": "System lifecycle management coordinates activities from concept to disposal",
+          "spanish": "La gestión del ciclo de vida del sistema coordina actividades desde concepto hasta disposición"
+        },
+        {
+          "english": "Trade study analysis evaluates alternative system design approaches",
+          "spanish": "El análisis de estudios de trade evalúa enfoques alternativos de diseño de sistemas"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Systems",
+          "suffix": "provides the blueprint for how complex systems are structured and organized.",
+          "answer": "architecture",
+          "selected": false,
+          "feedback": "Systems architecture is fundamental to managing complex engineering systems."
+        },
+        {
+          "prefix": "Requirements",
+          "suffix": "ensures that systems are designed to meet stakeholder needs and expectations.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Requirements engineering is the foundation of successful systems development."
+        },
+        {
+          "prefix": "Model-based systems",
+          "suffix": "leverages digital models to improve design quality and reduce development time.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "MBSE is transforming how complex systems are designed and managed."
+        }
+      ]
+    }
+  ]
+}
+]
+

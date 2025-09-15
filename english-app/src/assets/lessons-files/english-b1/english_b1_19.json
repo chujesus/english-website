@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 19,
+  "sections": [
+    {
+      "title": "Advanced Communication Systems and Networks → Sistemas y redes de comunicación avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "5G networks enable ultra-low latency communications",
+          "spanish": "Las redes 5G permiten comunicaciones de latencia ultra-baja"
+        },
+        {
+          "english": "Satellite communication systems provide global coverage",
+          "spanish": "Los sistemas de comunicación satelital proporcionan cobertura global"
+        },
+        {
+          "english": "Optical fiber networks transmit data at light speed",
+          "spanish": "Las redes de fibra óptica transmiten datos a velocidad de luz"
+        },
+        {
+          "english": "Network protocols ensure reliable data transmission",
+          "spanish": "Los protocolos de red aseguran transmisión confiable de datos"
+        },
+        {
+          "english": "Mesh networks provide redundant communication paths",
+          "spanish": "Las redes malladas proporcionan rutas de comunicación redundantes"
+        },
+        {
+          "english": "Software-defined networking enables flexible management",
+          "spanish": "Las redes definidas por software permiten gestión flexible"
+        },
+        {
+          "english": "Quantum communication offers unbreakable security",
+          "spanish": "La comunicación cuántica ofrece seguridad inquebrantable"
+        },
+        {
+          "english": "Edge computing reduces communication latency",
+          "spanish": "La computación de borde reduce latencia de comunicación"
+        },
+        {
+          "english": "Mobile ad hoc networks operate without infrastructure",
+          "spanish": "Las redes ad hoc móviles operan sin infraestructura"
+        },
+        {
+          "english": "Network virtualization optimizes resource utilization",
+          "spanish": "La virtualización de red optimiza utilización de recursos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes 5G networks different from previous generations?",
+          "options": ["They offer much faster speeds and lower latency", "They are exactly the same", "They are slower"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are satellite communication systems important?",
+          "options": ["They provide communication in remote areas where terrestrial networks don't reach", "They only work in cities", "They are outdated technology"],
+          "answer": 0
+        },
+        {
+          "audio": "How does software-defined networking improve network management?",
+          "options": ["It allows centralized control and programmable network behavior", "It makes networks more complex", "It eliminates all software"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "5G",
+          "suffix": "enable new applications like autonomous vehicles and remote surgery.",
+          "answer": "networks",
+          "selected": false,
+          "feedback": "5G technology enables applications requiring ultra-low latency and high bandwidth."
+        },
+        {
+          "prefix": "Optical fiber",
+          "suffix": "provide the backbone for high-speed internet infrastructure.",
+          "answer": "networks",
+          "selected": false,
+          "feedback": "Fiber optic networks offer unmatched speed and bandwidth capacity."
+        },
+        {
+          "prefix": "Quantum",
+          "suffix": "uses quantum mechanics principles to ensure absolutely secure data transmission.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "Quantum communication provides theoretically unbreakable security."
+        }
+      ]
+    },
+    {
+      "title": "Space Engineering and Satellite Technology → Ingeniería espacial y tecnología satelital",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Spacecraft design considers extreme environmental conditions",
+          "spanish": "El diseño de naves espaciales considera condiciones ambientales extremas"
+        },
+        {
+          "english": "Orbital mechanics governs satellite positioning",
+          "spanish": "La mecánica orbital gobierna posicionamiento de satélites"
+        },
+        {
+          "english": "Thermal protection systems shield against temperature extremes",
+          "spanish": "Los sistemas de protección térmica protegen contra temperaturas extremas"
+        },
+        {
+          "english": "Attitude control systems maintain spacecraft orientation",
+          "spanish": "Los sistemas de control de actitud mantienen orientación de naves espaciales"
+        },
+        {
+          "english": "Propulsion systems enable orbital maneuvers",
+          "spanish": "Los sistemas de propulsión permiten maniobras orbitales"
+        },
+        {
+          "english": "Communication payloads transmit data to Earth",
+          "spanish": "Las cargas útiles de comunicación transmiten datos a la Tierra"
+        },
+        {
+          "english": "Solar arrays provide electrical power",
+          "spanish": "Los arreglos solares proporcionan energía eléctrica"
+        },
+        {
+          "english": "Radiation hardening protects electronic components",
+          "spanish": "El endurecimiento contra radiación protege componentes electrónicos"
+        },
+        {
+          "english": "Mission planning optimizes spacecraft operations",
+          "spanish": "La planificación de misiones optimiza operaciones de naves espaciales"
+        },
+        {
+          "english": "Space debris tracking prevents collisions",
+          "spanish": "El rastreo de basura espacial previene colisiones"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What challenges do spacecraft face in space?",
+          "options": ["Extreme temperatures, radiation, and vacuum conditions", "Only gravity", "Normal weather conditions"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is attitude control important for satellites?",
+          "options": ["It keeps satellites properly oriented for optimal operation", "It controls satellite speed", "It's not necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "How do solar arrays work in space?",
+          "options": ["They convert sunlight directly into electrical power for spacecraft", "They only work on Earth", "They collect heat"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Spacecraft",
+          "suffix": "must withstand launch forces and space environment conditions.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Spacecraft design requires consideration of unique space environment challenges."
+        },
+        {
+          "prefix": "Orbital",
+          "suffix": "determines satellite trajectories and positioning requirements.",
+          "answer": "mechanics",
+          "selected": false,
+          "feedback": "Understanding orbital mechanics is fundamental to space mission success."
+        },
+        {
+          "prefix": "Radiation",
+          "suffix": "protects sensitive electronics from space radiation damage.",
+          "answer": "hardening",
+          "selected": false,
+          "feedback": "Radiation protection is essential for reliable space electronics operation."
+        }
+      ]
+    },
+    {
+      "title": "Biotechnology in Engineering Applications → Biotecnología en aplicaciones de ingeniería",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Bioengineering combines biology with engineering principles",
+          "spanish": "La bioingeniería combina biología con principios de ingeniería"
+        },
+        {
+          "english": "Bioreactors control biological processes for production",
+          "spanish": "Los biorreactores controlan procesos biológicos para producción"
+        },
+        {
+          "english": "Genetic engineering modifies organisms for specific functions",
+          "spanish": "La ingeniería genética modifica organismos para funciones específicas"
+        },
+        {
+          "english": "Biosensors detect biological and chemical substances",
+          "spanish": "Los biosensores detectan sustancias biológicas y químicas"
+        },
+        {
+          "english": "Tissue engineering creates replacement biological structures",
+          "spanish": "La ingeniería de tejidos crea estructuras biológicas de reemplazo"
+        },
+        {
+          "english": "Biomaterials interface with living systems",
+          "spanish": "Los biomateriales interfacen con sistemas vivos"
+        },
+        {
+          "english": "Fermentation processes produce valuable compounds",
+          "spanish": "Los procesos de fermentación producen compuestos valiosos"
+        },
+        {
+          "english": "Bioinformatics analyzes biological data",
+          "spanish": "La bioinformática analiza datos biológicos"
+        },
+        {
+          "english": "Synthetic biology designs biological systems",
+          "spanish": "La biología sintética diseña sistemas biológicos"
+        },
+        {
+          "english": "Bioprocessing scales up biological production",
+          "spanish": "El bioprocesamiento escala producción biológica"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does bioengineering benefit medical applications?",
+          "options": ["It develops biological solutions for medical problems", "It only works with machines", "It eliminates all biology"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of bioreactors?",
+          "options": ["To provide controlled environments for biological processes", "To eliminate biological processes", "To store chemicals only"],
+          "answer": 0
+        },
+        {
+          "audio": "How do biosensors work?",
+          "options": ["They use biological components to detect specific substances", "They only detect metals", "They work without biology"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Bioengineering",
+          "suffix": "applies engineering methods to solve biological and medical problems.",
+          "answer": "principles",
+          "selected": false,
+          "feedback": "Bioengineering merges engineering techniques with biological understanding."
+        },
+        {
+          "prefix": "Tissue",
+          "suffix": "aims to create functional biological replacements for damaged organs.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Tissue engineering offers potential solutions for organ replacement therapy."
+        },
+        {
+          "prefix": "Synthetic",
+          "suffix": "creates new biological systems with engineered functions.",
+          "answer": "biology",
+          "selected": false,
+          "feedback": "Synthetic biology enables design and construction of new biological parts."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Manufacturing Materials → Materiales de manufactura avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Carbon fiber composites offer exceptional strength-to-weight ratios",
+          "spanish": "Los compuestos de fibra de carbono ofrecen relaciones resistencia-peso excepcionales"
+        },
+        {
+          "english": "Titanium alloys provide corrosion resistance and biocompatibility",
+          "spanish": "Las aleaciones de titanio proporcionan resistencia a corrosión y biocompatibilidad"
+        },
+        {
+          "english": "Advanced ceramics withstand extreme temperatures",
+          "spanish": "Las cerámicas avanzadas resisten temperaturas extremas"
+        },
+        {
+          "english": "Shape memory alloys return to original forms",
+          "spanish": "Las aleaciones con memoria de forma regresan a formas originales"
+        },
+        {
+          "english": "Superalloys maintain strength at high temperatures",
+          "spanish": "Las superaleaciones mantienen resistencia a altas temperaturas"
+        },
+        {
+          "english": "Nanostructured materials exhibit enhanced properties",
+          "spanish": "Los materiales nanoestructurados exhiben propiedades mejoradas"
+        },
+        {
+          "english": "Smart materials respond to environmental changes",
+          "spanish": "Los materiales inteligentes responden a cambios ambientales"
+        },
+        {
+          "english": "Functionally graded materials optimize property distribution",
+          "spanish": "Los materiales funcionalmente graduados optimizan distribución de propiedades"
+        },
+        {
+          "english": "Ultra-high strength steels enable lightweight structures",
+          "spanish": "Los aceros de ultra-alta resistencia permiten estructuras livianas"
+        },
+        {
+          "english": "Biodegradable polymers support sustainable manufacturing",
+          "spanish": "Los polímeros biodegradables apoyan manufactura sostenible"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are carbon fiber composites popular in aerospace?",
+          "options": ["They combine high strength with low weight", "They are the cheapest option", "They are easy to manufacture"],
+          "answer": 0
+        },
+        {
+          "audio": "What makes titanium alloys suitable for medical implants?",
+          "options": ["They are biocompatible and resist corrosion in the body", "They are magnetic", "They dissolve quickly"],
+          "answer": 0
+        },
+        {
+          "audio": "How do shape memory alloys work?",
+          "options": ["They return to a pre-programmed shape when heated", "They never change shape", "They only work when cold"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Future of Engineering and Emerging Technologies → Futuro de la ingeniería y tecnologías emergentes",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Artificial intelligence transforms engineering design processes",
+          "spanish": "La inteligencia artificial transforma procesos de diseño en ingeniería"
+        },
+        {
+          "english": "Quantum computing enables complex problem solving",
+          "spanish": "La computación cuántica permite resolución de problemas complejos"
+        },
+        {
+          "english": "Nanotechnology manipulates matter at atomic scale",
+          "spanish": "La nanotecnología manipula materia a escala atómica"
+        },
+        {
+          "english": "Digital twins optimize real-world systems",
+          "spanish": "Los gemelos digitales optimizan sistemas del mundo real"
+        },
+        {
+          "english": "Autonomous systems operate independently",
+          "spanish": "Los sistemas autónomos operan independientemente"
+        },
+        {
+          "english": "Sustainable engineering prioritizes environmental protection",
+          "spanish": "La ingeniería sostenible prioriza protección ambiental"
+        },
+        {
+          "english": "Human-machine interfaces enhance collaboration",
+          "spanish": "Las interfaces humano-máquina mejoran colaboración"
+        },
+        {
+          "english": "Distributed manufacturing enables local production",
+          "spanish": "La manufactura distribuida permite producción local"
+        },
+        {
+          "english": "Personalized engineering customizes solutions",
+          "spanish": "La ingeniería personalizada personaliza soluciones"
+        },
+        {
+          "english": "Circular economy principles guide sustainable design",
+          "spanish": "Los principios de economía circular guían diseño sostenible"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Artificial",
+          "suffix": "will revolutionize how engineers approach design and optimization.",
+          "answer": "intelligence",
+          "selected": false,
+          "feedback": "AI is transforming engineering practices across all disciplines."
+        },
+        {
+          "prefix": "Digital",
+          "suffix": "enable virtual testing and optimization of physical systems.",
+          "answer": "twins",
+          "selected": false,
+          "feedback": "Digital twins bridge the gap between physical and virtual engineering."
+        },
+        {
+          "prefix": "Sustainable",
+          "suffix": "focuses on creating solutions that protect environmental resources.",
+          "answer": "engineering",
+          "selected": false,
+          "feedback": "Sustainable engineering principles are becoming central to modern practice."
+        }
+      ]
+    }
+  ]
+}
+]
+

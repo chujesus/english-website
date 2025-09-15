@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 4,
+  "sections": [
+    {
+      "title": "Technical Descriptions → Descripciones técnicas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "This component consists of three main parts",
+          "spanish": "Este componente consta de tres partes principales"
+        },
+        {
+          "english": "The system operates at maximum efficiency when",
+          "spanish": "El sistema opera a máxima eficiencia cuando"
+        },
+        {
+          "english": "The device is equipped with advanced sensors",
+          "spanish": "El dispositivo está equipado con sensores avanzados"
+        },
+        {
+          "english": "Its primary function is to regulate temperature",
+          "spanish": "Su función principal es regular la temperatura"
+        },
+        {
+          "english": "The mechanism requires periodic calibration",
+          "spanish": "El mecanismo requiere calibración periódica"
+        },
+        {
+          "english": "It incorporates cutting-edge technology",
+          "spanish": "Incorpora tecnología de vanguardia"
+        },
+        {
+          "english": "The specifications indicate optimal performance",
+          "spanish": "Las especificaciones indican rendimiento óptimo"
+        },
+        {
+          "english": "This model features enhanced durability",
+          "spanish": "Este modelo presenta durabilidad mejorada"
+        },
+        {
+          "english": "The assembly process involves multiple stages",
+          "spanish": "El proceso de ensamblaje involucra múltiples etapas"
+        },
+        {
+          "english": "It demonstrates superior reliability compared to",
+          "spanish": "Demuestra confiabilidad superior comparado con"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes an effective technical description?",
+          "options": ["Personal opinions", "Accurate specifications and clear language", "Complex vocabulary"],
+          "answer": 1
+        },
+        {
+          "audio": "When describing technical systems, what should you focus on?",
+          "options": ["Function and components", "Price only", "Brand names"],
+          "answer": 0
+        },
+        {
+          "audio": "How can you make technical descriptions more understandable?",
+          "options": ["Use simpler language when possible", "Add more technical terms", "Make them longer"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "A good technical description should",
+          "suffix": "the main functions and components clearly.",
+          "answer": "explain",
+          "selected": false,
+          "feedback": "Clear explanations help others understand how systems work and their key features."
+        },
+        {
+          "prefix": "When describing machinery,",
+          "suffix": "specific measurements and capabilities.",
+          "answer": "include",
+          "selected": false,
+          "feedback": "Specific measurements and capabilities provide essential technical information."
+        },
+        {
+          "prefix": "Technical descriptions must be",
+          "suffix": "and based on factual information.",
+          "answer": "accurate",
+          "selected": false,
+          "feedback": "Accuracy is essential in technical descriptions to ensure proper understanding and use."
+        }
+      ]
+    },
+    {
+      "title": "System Components and Functions → Componentes y funciones del sistema",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Central processing unit",
+          "spanish": "Unidad central de procesamiento"
+        },
+        {
+          "english": "Power supply module",
+          "spanish": "Módulo de suministro de energía"
+        },
+        {
+          "english": "Input/output interface",
+          "spanish": "Interfaz de entrada/salida"
+        },
+        {
+          "english": "Control panel assembly",
+          "spanish": "Ensamblaje del panel de control"
+        },
+        {
+          "english": "Cooling system mechanism",
+          "spanish": "Mecanismo del sistema de enfriamiento"
+        },
+        {
+          "english": "Safety shutdown circuit",
+          "spanish": "Circuito de parada de seguridad"
+        },
+        {
+          "english": "Monitoring and diagnostic tools",
+          "spanish": "Herramientas de monitoreo y diagnóstico"
+        },
+        {
+          "english": "Data storage and retrieval system",
+          "spanish": "Sistema de almacenamiento y recuperación de datos"
+        },
+        {
+          "english": "User authentication module",
+          "spanish": "Módulo de autenticación de usuario"
+        },
+        {
+          "english": "Communication protocol handler",
+          "spanish": "Manejador de protocolo de comunicación"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the role of the central processing unit in most systems?",
+          "options": ["Power management", "Main control and computation", "Data storage"],
+          "answer": 1
+        },
+        {
+          "audio": "Why are safety shutdown circuits important?",
+          "options": ["To save energy", "To protect equipment and personnel", "To increase speed"],
+          "answer": 1
+        },
+        {
+          "audio": "What function do diagnostic tools serve?",
+          "options": ["System troubleshooting and monitoring", "Entertainment", "Cost reduction"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The",
+          "suffix": "unit controls all major system operations.",
+          "answer": "central processing",
+          "selected": false,
+          "feedback": "The central processing unit coordinates and controls all major system functions."
+        },
+        {
+          "prefix": "Every system needs a reliable",
+          "suffix": "to function properly.",
+          "answer": "power supply",
+          "selected": false,
+          "feedback": "A reliable power supply is essential for consistent system operation."
+        },
+        {
+          "prefix": "Safety",
+          "suffix": "prevent dangerous conditions from developing.",
+          "answer": "circuits",
+          "selected": false,
+          "feedback": "Safety circuits automatically protect systems and operators from hazardous conditions."
+        }
+      ]
+    },
+    {
+      "title": "Technical Specifications and Performance → Especificaciones técnicas y rendimiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Operating temperature range: -10Â°C to +60Â°C",
+          "spanish": "Rango de temperatura de operación: -10Â°C a +60Â°C"
+        },
+        {
+          "english": "Maximum power consumption: 500 watts",
+          "spanish": "Consumo máximo de energía: 500 vatios"
+        },
+        {
+          "english": "Processing speed: 2.4 gigahertz",
+          "spanish": "Velocidad de procesamiento: 2.4 gigahercios"
+        },
+        {
+          "english": "Memory capacity: 16 gigabytes RAM",
+          "spanish": "Capacidad de memoria: 16 gigabytes RAM"
+        },
+        {
+          "english": "Output voltage: 24 volts DC",
+          "spanish": "Voltaje de salida: 24 voltios DC"
+        },
+        {
+          "english": "Accuracy rating: Â±0.1% full scale",
+          "spanish": "Clasificación de precisión: Â±0.1% escala completa"
+        },
+        {
+          "english": "Response time: less than 50 milliseconds",
+          "spanish": "Tiempo de respuesta: menos de 50 milisegundos"
+        },
+        {
+          "english": "Environmental protection: IP65 rated",
+          "spanish": "Protección ambiental: clasificación IP65"
+        },
+        {
+          "english": "Mean time between failures: 50,000 hours",
+          "spanish": "Tiempo medio entre fallas: 50,000 horas"
+        },
+        {
+          "english": "Warranty period: 24 months standard coverage",
+          "spanish": "Período de garantía: 24 meses cobertura estándar"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are technical specifications important when selecting equipment?",
+          "options": ["They determine compatibility and performance", "They show the price", "They indicate the manufacturer"],
+          "answer": 0
+        },
+        {
+          "audio": "What does IP65 rating typically indicate?",
+          "options": ["Power consumption", "Environmental protection level", "Processing speed"],
+          "answer": 1
+        },
+        {
+          "audio": "How is system reliability often measured?",
+          "options": ["By color", "By mean time between failures", "By weight"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Technical",
+          "suffix": "help determine if equipment meets project requirements.",
+          "answer": "specifications",
+          "selected": false,
+          "feedback": "Technical specifications provide the detailed information needed to evaluate equipment suitability."
+        },
+        {
+          "prefix": "Operating",
+          "suffix": "define the environmental conditions where equipment functions properly.",
+          "answer": "ranges",
+          "selected": false,
+          "feedback": "Operating ranges specify the environmental limits within which equipment operates correctly."
+        },
+        {
+          "prefix": "Accuracy",
+          "suffix": "indicate how precise measurements or outputs will be.",
+          "answer": "ratings",
+          "selected": false,
+          "feedback": "Accuracy ratings show the level of precision you can expect from instruments and systems."
+        }
+      ]
+    },
+    {
+      "title": "Comparative Analysis → Análisis comparativo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Model A outperforms Model B in terms of speed",
+          "spanish": "El Modelo A supera al Modelo B en términos de velocidad"
+        },
+        {
+          "english": "This version offers significantly better efficiency",
+          "spanish": "Esta versión ofrece significativamente mejor eficiencia"
+        },
+        {
+          "english": "Compared to the previous model, it consumes less energy",
+          "spanish": "Comparado con el modelo anterior, consume menos energía"
+        },
+        {
+          "english": "The latest design incorporates several improvements",
+          "spanish": "El diseño más reciente incorpora varias mejoras"
+        },
+        {
+          "english": "While more expensive, it provides better long-term value",
+          "spanish": "Aunque más caro, proporciona mejor valor a largo plazo"
+        },
+        {
+          "english": "Both options have similar reliability ratings",
+          "spanish": "Ambas opciones tienen clasificaciones de confiabilidad similares"
+        },
+        {
+          "english": "The advantages outweigh the disadvantages",
+          "spanish": "Las ventajas superan las desventajas"
+        },
+        {
+          "english": "In contrast, the alternative solution requires more maintenance",
+          "spanish": "En contraste, la solución alternativa requiere más mantenimiento"
+        },
+        {
+          "english": "The cost-benefit analysis favors the newer technology",
+          "spanish": "El análisis costo-beneficio favorece la tecnología más nueva"
+        },
+        {
+          "english": "Overall, this represents a substantial improvement",
+          "spanish": "En general, esto representa una mejora sustancial"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What factors should be considered when comparing technical solutions?",
+          "options": ["Only price", "Performance, cost, and reliability", "Brand popularity"],
+          "answer": 1
+        },
+        {
+          "audio": "How can you objectively evaluate different options?",
+          "options": ["Use measurable criteria and data", "Follow personal preferences", "Choose the newest option"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of cost-benefit analysis?",
+          "options": ["To determine the most economical solution considering all factors", "To find the cheapest option", "To justify expensive purchases"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Documentation and Reporting → Documentación e informes",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Comprehensive technical documentation",
+          "spanish": "Documentación técnica comprensiva"
+        },
+        {
+          "english": "Detailed performance analysis reports",
+          "spanish": "Informes detallados de análisis de rendimiento"
+        },
+        {
+          "english": "User manual and operation guidelines",
+          "spanish": "Manual de usuario y pautas de operación"
+        },
+        {
+          "english": "Maintenance schedules and procedures",
+          "spanish": "Horarios de mantenimiento y procedimientos"
+        },
+        {
+          "english": "Quality assurance documentation",
+          "spanish": "Documentación de aseguramiento de calidad"
+        },
+        {
+          "english": "Compliance and certification records",
+          "spanish": "Registros de cumplimiento y certificación"
+        },
+        {
+          "english": "Troubleshooting guides and solutions",
+          "spanish": "Guías de solución de problemas y soluciones"
+        },
+        {
+          "english": "Training materials and resources",
+          "spanish": "Materiales de capacitación y recursos"
+        },
+        {
+          "english": "Technical drawings and schematics",
+          "spanish": "Dibujos técnicos y esquemas"
+        },
+        {
+          "english": "Safety protocols and emergency procedures",
+          "spanish": "Protocolos de seguridad y procedimientos de emergencia"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Proper",
+          "suffix": "ensures knowledge is preserved and shared effectively.",
+          "answer": "documentation",
+          "selected": false,
+          "feedback": "Good documentation preserves important information and makes it accessible to others."
+        },
+        {
+          "prefix": "Technical",
+          "suffix": "should be clear, accurate, and up-to-date.",
+          "answer": "reports",
+          "selected": false,
+          "feedback": "Technical reports need to be current and precise to be useful for decision-making."
+        },
+        {
+          "prefix": "User",
+          "suffix": "help operators understand system functions and procedures.",
+          "answer": "manuals",
+          "selected": false,
+          "feedback": "User manuals provide essential guidance for safe and effective system operation."
+        }
+      ]
+    }
+  ]
+}
+]
+

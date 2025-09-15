@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 13,
+  "sections": [
+    {
+      "title": "Customer Service Basics → Fundamentos de servicio al cliente",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Greet customers politely",
+          "spanish": "Saluda a los clientes cortésmente"
+        },
+        {
+          "english": "Listen to customer needs carefully",
+          "spanish": "Escucha las necesidades del cliente cuidadosamente"
+        },
+        {
+          "english": "Ask questions to understand problems",
+          "spanish": "Haz preguntas para entender problemas"
+        },
+        {
+          "english": "Explain solutions clearly",
+          "spanish": "Explica soluciones claramente"
+        },
+        {
+          "english": "Be patient with difficult customers",
+          "spanish": "Sé paciente con clientes difíciles"
+        },
+        {
+          "english": "Follow up on service requests",
+          "spanish": "Da seguimiento a solicitudes de servicio"
+        },
+        {
+          "english": "Document customer interactions",
+          "spanish": "Documenta interacciones con clientes"
+        },
+        {
+          "english": "Escalate complex issues appropriately",
+          "spanish": "Escala problemas complejos apropiadamente"
+        },
+        {
+          "english": "Thank customers for their business",
+          "spanish": "Agradece a los clientes por su negocio"
+        },
+        {
+          "english": "Maintain professional appearance",
+          "spanish": "Mantén apariencia profesional"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the first step in good customer service?",
+          "options": ["Sell products", "Greet customers politely", "Count money"],
+          "answer": 1
+        },
+        {
+          "audio": "Why should you ask questions when customers have problems?",
+          "options": ["To understand their needs better", "To confuse them", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you escalate a customer issue?",
+          "options": ["Never", "When it's too complex for you to handle", "Always"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "to customer needs before offering solutions.",
+          "answer": "listen",
+          "selected": false,
+          "feedback": "Active listening helps understand customer needs and builds trust."
+        },
+        {
+          "prefix": "Be",
+          "suffix": "with customers, even when they are upset.",
+          "answer": "patient",
+          "selected": false,
+          "feedback": "Patience helps de-escalate situations and find positive solutions."
+        },
+        {
+          "prefix": "Document all",
+          "suffix": "interactions for future reference.",
+          "answer": "customer",
+          "selected": false,
+          "feedback": "Good documentation helps track issues and improve service over time."
+        }
+      ]
+    },
+    {
+      "title": "Sales and Product Knowledge → Ventas y conocimiento de productos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Learn product features and benefits",
+          "spanish": "Aprende características y beneficios de productos"
+        },
+        {
+          "english": "Identify customer needs",
+          "spanish": "Identifica necesidades del cliente"
+        },
+        {
+          "english": "Recommend appropriate solutions",
+          "spanish": "Recomienda soluciones apropiadas"
+        },
+        {
+          "english": "Demonstrate product functionality",
+          "spanish": "Demuestra funcionalidad del producto"
+        },
+        {
+          "english": "Compare different options",
+          "spanish": "Compara diferentes opciones"
+        },
+        {
+          "english": "Handle price objections professionally",
+          "spanish": "Maneja objeciones de precio profesionalmente"
+        },
+        {
+          "english": "Close sales with confidence",
+          "spanish": "Cierra ventas con confianza"
+        },
+        {
+          "english": "Offer additional products",
+          "spanish": "Ofrece productos adicionales"
+        },
+        {
+          "english": "Process payments accurately",
+          "spanish": "Procesa pagos con precisión"
+        },
+        {
+          "english": "Provide warranty information",
+          "spanish": "Proporciona información de garantía"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is product knowledge important for salespeople?",
+          "options": ["It helps recommend the right solutions to customers", "It's not important", "It makes products more expensive"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you do when a customer objects to the price?",
+          "options": ["Argue with them", "Handle the objection professionally", "Walk away"],
+          "answer": 1
+        },
+        {
+          "audio": "When might you offer additional products?",
+          "options": ["Never", "When they complement the main purchase", "Always, regardless of need"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Good",
+          "suffix": "knowledge helps you answer customer questions confidently.",
+          "answer": "product",
+          "selected": false,
+          "feedback": "Thorough product knowledge builds credibility and helps match products to customer needs."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "customer needs before making recommendations.",
+          "answer": "identify",
+          "selected": false,
+          "feedback": "Understanding customer needs ensures you recommend the most appropriate solutions."
+        },
+        {
+          "prefix": "Handle price",
+          "suffix": "by focusing on value and benefits.",
+          "answer": "objections",
+          "selected": false,
+          "feedback": "Addressing price concerns professionally can help customers see the value proposition."
+        }
+      ]
+    },
+    {
+      "title": "Inventory and Stock Management → Gestión de inventario y stock",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Count inventory regularly",
+          "spanish": "Cuenta inventario regularmente"
+        },
+        {
+          "english": "Track product movements",
+          "spanish": "Rastrea movimientos de productos"
+        },
+        {
+          "english": "Monitor stock levels",
+          "spanish": "Monitorea niveles de stock"
+        },
+        {
+          "english": "Reorder products when low",
+          "spanish": "Reordena productos cuando estén bajos"
+        },
+        {
+          "english": "Organize warehouse efficiently",
+          "spanish": "Organiza almacén eficientemente"
+        },
+        {
+          "english": "Use barcode scanners",
+          "spanish": "Usa escáneres de código de barras"
+        },
+        {
+          "english": "Check expiration dates",
+          "spanish": "Revisa fechas de vencimiento"
+        },
+        {
+          "english": "Rotate stock properly",
+          "spanish": "Rota stock apropiadamente"
+        },
+        {
+          "english": "Report discrepancies immediately",
+          "spanish": "Reporta discrepancias inmediatamente"
+        },
+        {
+          "english": "Maintain accurate records",
+          "spanish": "Mantén registros precisos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is regular inventory counting important?",
+          "options": ["To ensure accurate stock levels", "To waste time", "To confuse employees"],
+          "answer": 0
+        },
+        {
+          "audio": "What does FIFO mean in inventory management?",
+          "options": ["First In, First Out - use older stock first", "Last In, First Out", "Random selection"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you reorder products?",
+          "options": ["When stock levels reach the reorder point", "Never", "Only when completely out"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Regular",
+          "suffix": "counting helps maintain accurate stock records.",
+          "answer": "inventory",
+          "selected": false,
+          "feedback": "Consistent inventory counts prevent stockouts and overstocking situations."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "older stock first to prevent expiration.",
+          "answer": "rotate",
+          "selected": false,
+          "feedback": "Proper stock rotation using FIFO method reduces waste from expired products."
+        },
+        {
+          "prefix": "Use",
+          "suffix": "scanners for accurate and efficient inventory tracking.",
+          "answer": "barcode",
+          "selected": false,
+          "feedback": "Barcode systems improve accuracy and speed of inventory management processes."
+        }
+      ]
+    },
+    {
+      "title": "Point of Sale Systems → Sistemas de punto de venta",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Process cash transactions accurately",
+          "spanish": "Procesa transacciones en efectivo con precisión"
+        },
+        {
+          "english": "Accept credit and debit cards",
+          "spanish": "Acepta tarjetas de crédito y débito"
+        },
+        {
+          "english": "Apply discounts and promotions",
+          "spanish": "Aplica descuentos y promociones"
+        },
+        {
+          "english": "Issue receipts to customers",
+          "spanish": "Emite recibos a clientes"
+        },
+        {
+          "english": "Handle returns and exchanges",
+          "spanish": "Maneja devoluciones e intercambios"
+        },
+        {
+          "english": "Balance cash register daily",
+          "spanish": "Cuadra caja registradora diariamente"
+        },
+        {
+          "english": "Scan product barcodes",
+          "spanish": "Escanea códigos de barras de productos"
+        },
+        {
+          "english": "Process gift card payments",
+          "spanish": "Procesa pagos con tarjetas de regalo"
+        },
+        {
+          "english": "Void incorrect transactions",
+          "spanish": "Anula transacciones incorrectas"
+        },
+        {
+          "english": "Generate sales reports",
+          "spanish": "Genera reportes de ventas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What information should every receipt include?",
+          "options": ["Date, items, prices, and total", "Only the total amount", "Customer's personal information"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is it important to balance the cash register?",
+          "options": ["To ensure all transactions were recorded correctly", "It's not necessary", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "When might you need to void a transaction?",
+          "options": ["When an error was made during processing", "Never", "At the end of each day"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Visual Merchandising and Store Layout → Merchandising visual y distribución de tienda",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Create attractive product displays",
+          "spanish": "Crea exhibiciones atractivas de productos"
+        },
+        {
+          "english": "Arrange items by category",
+          "spanish": "Organiza artículos por categoría"
+        },
+        {
+          "english": "Use proper lighting for visibility",
+          "spanish": "Usa iluminación apropiada para visibilidad"
+        },
+        {
+          "english": "Place popular items at eye level",
+          "spanish": "Coloca artículos populares a nivel de ojos"
+        },
+        {
+          "english": "Keep aisles clear and wide",
+          "spanish": "Mantén pasillos despejados y amplios"
+        },
+        {
+          "english": "Update window displays regularly",
+          "spanish": "Actualiza exhibiciones de ventana regularmente"
+        },
+        {
+          "english": "Use signs and labels clearly",
+          "spanish": "Usa letreros y etiquetas claramente"
+        },
+        {
+          "english": "Group related products together",
+          "spanish": "Agrupa productos relacionados juntos"
+        },
+        {
+          "english": "Maintain clean and organized shelves",
+          "spanish": "Mantén estantes limpios y organizados"
+        },
+        {
+          "english": "Follow company merchandising standards",
+          "spanish": "Sigue estándares de merchandising de la empresa"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Attractive",
+          "suffix": "displays draw customer attention to products.",
+          "answer": "product",
+          "selected": false,
+          "feedback": "Well-designed displays highlight products and encourage customer interest and purchases."
+        },
+        {
+          "prefix": "Place popular items at",
+          "suffix": "level for maximum visibility.",
+          "answer": "eye",
+          "selected": false,
+          "feedback": "Eye-level placement increases the likelihood that customers will notice and purchase items."
+        },
+        {
+          "prefix": "Keep store",
+          "suffix": "clean and well-organized at all times.",
+          "answer": "displays",
+          "selected": false,
+          "feedback": "Clean, organized displays create a professional appearance that attracts customers."
+        }
+      ]
+    }
+  ]
+}
+]
+

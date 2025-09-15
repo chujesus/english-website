@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 5,
+  "sections": [
+    {
+      "title": "Complex Technical Systems → Sistemas técnicos complejos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Integrated systems require careful coordination",
+          "spanish": "Los sistemas integrados requieren coordinación cuidadosa"
+        },
+        {
+          "english": "Multiple subsystems work together seamlessly",
+          "spanish": "Múltiples subsistemas trabajan juntos sin problemas"
+        },
+        {
+          "english": "System architecture defines overall structure",
+          "spanish": "La arquitectura del sistema define la estructura general"
+        },
+        {
+          "english": "Interface protocols ensure compatibility",
+          "spanish": "Los protocolos de interfaz aseguran compatibilidad"
+        },
+        {
+          "english": "Redundant systems provide backup functionality",
+          "spanish": "Los sistemas redundantes proporcionan funcionalidad de respaldo"
+        },
+        {
+          "english": "Performance monitoring tracks system health",
+          "spanish": "El monitoreo de rendimiento rastrea la salud del sistema"
+        },
+        {
+          "english": "Automated diagnostics detect potential problems",
+          "spanish": "Los diagnósticos automatizados detectan problemas potenciales"
+        },
+        {
+          "english": "System upgrades enhance capabilities",
+          "spanish": "Las actualizaciones del sistema mejoran las capacidades"
+        },
+        {
+          "english": "Modular design facilitates maintenance",
+          "spanish": "El diseño modular facilita el mantenimiento"
+        },
+        {
+          "english": "Documentation ensures proper operation",
+          "spanish": "La documentación asegura operación apropiada"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are redundant systems important in critical applications?",
+          "options": ["They waste energy", "They provide backup if primary systems fail", "They slow down operations"],
+          "answer": 1
+        },
+        {
+          "audio": "What is the purpose of performance monitoring?",
+          "options": ["To track system health and prevent failures", "To waste computer resources", "To confuse operators"],
+          "answer": 0
+        },
+        {
+          "audio": "How does modular design help with maintenance?",
+          "options": ["It makes systems more complex", "It allows easier replacement of components", "It increases costs"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Complex systems require",
+          "suffix": "between multiple components to function properly.",
+          "answer": "coordination",
+          "selected": false,
+          "feedback": "Effective coordination ensures all system components work together harmoniously."
+        },
+        {
+          "prefix": "Automated",
+          "suffix": "help identify problems before they cause failures.",
+          "answer": "diagnostics",
+          "selected": false,
+          "feedback": "Automated diagnostic systems can detect issues early, preventing costly breakdowns."
+        },
+        {
+          "prefix": "System",
+          "suffix": "defines how components are organized and connected.",
+          "answer": "architecture",
+          "selected": false,
+          "feedback": "System architecture provides the framework for how all components interact and communicate."
+        }
+      ]
+    },
+    {
+      "title": "Process Optimization and Efficiency → Optimización de procesos y eficiencia",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Continuous improvement drives operational excellence",
+          "spanish": "La mejora continua impulsa la excelencia operacional"
+        },
+        {
+          "english": "Data analysis reveals optimization opportunities",
+          "spanish": "El análisis de datos revela oportunidades de optimización"
+        },
+        {
+          "english": "Lean manufacturing eliminates waste",
+          "spanish": "La manufactura esbelta elimina desperdicios"
+        },
+        {
+          "english": "Process standardization ensures consistency",
+          "spanish": "La estandarización de procesos asegura consistencia"
+        },
+        {
+          "english": "Bottleneck identification improves flow",
+          "spanish": "La identificación de cuellos de botella mejora el flujo"
+        },
+        {
+          "english": "Automation reduces manual errors",
+          "spanish": "La automatización reduce errores manuales"
+        },
+        {
+          "english": "Performance metrics guide decision-making",
+          "spanish": "Las métricas de rendimiento guían la toma de decisiones"
+        },
+        {
+          "english": "Energy efficiency reduces operational costs",
+          "spanish": "La eficiencia energética reduce costos operacionales"
+        },
+        {
+          "english": "Predictive maintenance prevents breakdowns",
+          "spanish": "El mantenimiento predictivo previene averías"
+        },
+        {
+          "english": "Cross-training increases workforce flexibility",
+          "spanish": "La capacitación cruzada aumenta la flexibilidad de la fuerza laboral"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main goal of lean manufacturing?",
+          "options": ["To increase waste", "To eliminate waste and improve efficiency", "To slow production"],
+          "answer": 1
+        },
+        {
+          "audio": "How does predictive maintenance help operations?",
+          "options": ["It prevents unexpected equipment failures", "It increases maintenance costs", "It reduces equipment life"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is bottleneck identification important?",
+          "options": ["It creates more problems", "It improves overall process flow", "It wastes time"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Data",
+          "suffix": "helps identify areas for process improvement.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Analyzing data reveals patterns and opportunities that might not be obvious otherwise."
+        },
+        {
+          "prefix": "Process",
+          "suffix": "ensures everyone follows the same procedures.",
+          "answer": "standardization",
+          "selected": false,
+          "feedback": "Standardized processes reduce variation and improve quality consistency."
+        },
+        {
+          "prefix": "Performance",
+          "suffix": "provide objective measures of system effectiveness.",
+          "answer": "metrics",
+          "selected": false,
+          "feedback": "Metrics give quantitative feedback that enables data-driven improvements."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Problem-Solving Techniques → Técnicas avanzadas de resolución de problemas",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Root cause analysis prevents recurring issues",
+          "spanish": "El análisis de causa raíz previene problemas recurrentes"
+        },
+        {
+          "english": "Systematic troubleshooting follows logical steps",
+          "spanish": "La resolución sistemática de problemas sigue pasos lógicos"
+        },
+        {
+          "english": "Failure mode analysis identifies potential risks",
+          "spanish": "El análisis de modo de falla identifica riesgos potenciales"
+        },
+        {
+          "english": "Design of experiments optimizes parameters",
+          "spanish": "El diseño de experimentos optimiza parámetros"
+        },
+        {
+          "english": "Statistical process control monitors variation",
+          "spanish": "El control estadístico de procesos monitorea variación"
+        },
+        {
+          "english": "Brainstorming generates creative solutions",
+          "spanish": "La lluvia de ideas genera soluciones creativas"
+        },
+        {
+          "english": "Fishbone diagrams organize cause analysis",
+          "spanish": "Los diagramas de espina de pescado organizan análisis de causas"
+        },
+        {
+          "english": "Pareto analysis prioritizes improvement efforts",
+          "spanish": "El análisis de Pareto prioriza esfuerzos de mejora"
+        },
+        {
+          "english": "Simulation modeling tests proposed changes",
+          "spanish": "El modelado de simulación prueba cambios propuestos"
+        },
+        {
+          "english": "Cross-functional teams provide diverse perspectives",
+          "spanish": "Los equipos multifuncionales proporcionan perspectivas diversas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the benefit of root cause analysis?",
+          "options": ["It creates more problems", "It prevents problems from happening again", "It wastes time"],
+          "answer": 1
+        },
+        {
+          "audio": "Why use systematic troubleshooting methods?",
+          "options": ["They ensure logical, efficient problem solving", "They make problems worse", "They are unnecessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What does Pareto analysis help with?",
+          "options": ["Prioritizing which problems to solve first", "Creating new problems", "Avoiding all work"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Root cause",
+          "suffix": "helps identify the fundamental source of problems.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Finding the root cause prevents the same problem from recurring in the future."
+        },
+        {
+          "prefix": "Systematic",
+          "suffix": "follows logical steps to efficiently solve problems.",
+          "answer": "troubleshooting",
+          "selected": false,
+          "feedback": "Systematic approaches are more effective than random trial-and-error methods."
+        },
+        {
+          "prefix": "Cross-functional",
+          "suffix": "bring together expertise from different areas.",
+          "answer": "teams",
+          "selected": false,
+          "feedback": "Diverse teams often generate more creative and comprehensive solutions."
+        }
+      ]
+    },
+    {
+      "title": "Innovation and Technology Integration → Innovación e integración tecnológica",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Emerging technologies transform traditional processes",
+          "spanish": "Las tecnologías emergentes transforman procesos tradicionales"
+        },
+        {
+          "english": "Digital transformation improves operational efficiency",
+          "spanish": "La transformación digital mejora la eficiencia operacional"
+        },
+        {
+          "english": "Internet of Things connects devices globally",
+          "spanish": "El Internet de las Cosas conecta dispositivos globalmente"
+        },
+        {
+          "english": "Artificial intelligence enhances decision-making",
+          "spanish": "La inteligencia artificial mejora la toma de decisiones"
+        },
+        {
+          "english": "Cloud computing provides scalable resources",
+          "spanish": "La computación en la nube proporciona recursos escalables"
+        },
+        {
+          "english": "Virtual reality enables immersive training",
+          "spanish": "La realidad virtual permite entrenamiento inmersivo"
+        },
+        {
+          "english": "Blockchain technology ensures data integrity",
+          "spanish": "La tecnología blockchain asegura integridad de datos"
+        },
+        {
+          "english": "Machine learning algorithms optimize operations",
+          "spanish": "Los algoritmos de aprendizaje automático optimizan operaciones"
+        },
+        {
+          "english": "Cybersecurity protects digital infrastructure",
+          "spanish": "La ciberseguridad protege la infraestructura digital"
+        },
+        {
+          "english": "Technology adoption requires careful planning",
+          "spanish": "La adopción de tecnología requiere planificación cuidadosa"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does artificial intelligence help in industrial settings?",
+          "options": ["It replaces all human workers", "It enhances decision-making and analysis", "It makes systems more complex"],
+          "answer": 1
+        },
+        {
+          "audio": "What advantage does cloud computing offer?",
+          "options": ["Scalable computing resources on demand", "Only works offline", "Increases hardware costs"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is cybersecurity important in modern industry?",
+          "options": ["It's not important", "It protects against digital threats and data breaches", "It slows down systems"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Professional Development and Skills → Desarrollo profesional y habilidades",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Continuous learning keeps skills current",
+          "spanish": "El aprendizaje continuo mantiene las habilidades actuales"
+        },
+        {
+          "english": "Professional certifications validate expertise",
+          "spanish": "Las certificaciones profesionales validan experiencia"
+        },
+        {
+          "english": "Industry conferences share best practices",
+          "spanish": "Las conferencias de la industria comparten mejores prácticas"
+        },
+        {
+          "english": "Mentorship accelerates career development",
+          "spanish": "La mentoría acelera el desarrollo profesional"
+        },
+        {
+          "english": "Cross-training develops versatile skills",
+          "spanish": "El entrenamiento cruzado desarrolla habilidades versátiles"
+        },
+        {
+          "english": "Technical writing communicates complex ideas",
+          "spanish": "La escritura técnica comunica ideas complejas"
+        },
+        {
+          "english": "Leadership skills become increasingly important",
+          "spanish": "Las habilidades de liderazgo se vuelven cada vez más importantes"
+        },
+        {
+          "english": "Project management coordinates team efforts",
+          "spanish": "La gestión de proyectos coordina esfuerzos de equipo"
+        },
+        {
+          "english": "Networking builds professional relationships",
+          "spanish": "El networking construye relaciones profesionales"
+        },
+        {
+          "english": "Adaptability enables success in changing environments",
+          "spanish": "La adaptabilidad permite éxito en entornos cambiantes"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Continuous",
+          "suffix": "is essential in rapidly evolving technical fields.",
+          "answer": "learning",
+          "selected": false,
+          "feedback": "Technology changes rapidly, so ongoing education is crucial for career success."
+        },
+        {
+          "prefix": "Professional",
+          "suffix": "demonstrate competency to employers and clients.",
+          "answer": "certifications",
+          "selected": false,
+          "feedback": "Certifications provide objective proof of knowledge and skills in specific areas."
+        },
+        {
+          "prefix": "Good",
+          "suffix": "skills help coordinate complex projects effectively.",
+          "answer": "project management",
+          "selected": false,
+          "feedback": "Project management skills become more valuable as you advance in your career."
+        }
+      ]
+    }
+  ]
+}
+]
+

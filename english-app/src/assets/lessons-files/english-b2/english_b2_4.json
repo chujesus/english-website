@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B2",
+  "lessonId": 4,
+  "sections": [
+    {
+      "title": "Project Planning and Management → Planificación y gestión de proyectos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Let's establish clear project objectives and deliverables",
+          "spanish": "Establezcamos objetivos de proyecto claros y entregables"
+        },
+        {
+          "english": "We need to identify critical path activities",
+          "spanish": "Necesitamos identificar actividades de ruta crítica"
+        },
+        {
+          "english": "Risk mitigation strategies should be developed early",
+          "spanish": "Las estrategias de mitigación de riesgos deben desarrollarse temprano"
+        },
+        {
+          "english": "Resource allocation requires careful planning and coordination",
+          "spanish": "La asignación de recursos requiere planificación y coordinación cuidadosa"
+        },
+        {
+          "english": "The project timeline includes several key milestones",
+          "spanish": "El cronograma del proyecto incluye varios hitos clave"
+        },
+        {
+          "english": "Quality assurance measures must be implemented throughout",
+          "spanish": "Las medidas de aseguramiento de calidad deben implementarse durante todo"
+        },
+        {
+          "english": "Stakeholder communication protocols need to be established",
+          "spanish": "Los protocolos de comunicación con interesados necesitan establecerse"
+        },
+        {
+          "english": "Budget constraints may impact project scope decisions",
+          "spanish": "Las restricciones presupuestarias pueden impactar decisiones de alcance del proyecto"
+        },
+        {
+          "english": "Progress monitoring systems will track performance indicators",
+          "spanish": "Los sistemas de monitoreo de progreso rastrearán indicadores de rendimiento"
+        },
+        {
+          "english": "Contingency plans address potential project disruptions",
+          "spanish": "Los planes de contingencia abordan posibles interrupciones del proyecto"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the most critical factor for project success?",
+          "options": ["Having the latest technology", "Clear planning and communication", "Working long hours"],
+          "answer": 1
+        },
+        {
+          "audio": "How should project risks be managed?",
+          "options": ["Ignore them", "Identify, assess, and develop mitigation strategies", "Hope they don't happen"],
+          "answer": 1
+        },
+        {
+          "audio": "What makes effective project communication?",
+          "options": ["Regular updates and clear channels", "Daily meetings only", "Email only"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Successful project management requires",
+          "suffix": "planning from the initial conception phase.",
+          "answer": "comprehensive",
+          "selected": false,
+          "feedback": "Comprehensive planning addresses all aspects of the project from start to finish."
+        },
+        {
+          "prefix": "Risk",
+          "suffix": "helps projects stay on track despite challenges.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Risk management involves identifying, assessing, and preparing for potential problems."
+        },
+        {
+          "prefix": "Regular",
+          "suffix": "ensures projects meet their objectives and deadlines.",
+          "answer": "monitoring",
+          "selected": false,
+          "feedback": "Regular monitoring allows for early detection and correction of project issues."
+        }
+      ]
+    },
+    {
+      "title": "Milestone Planning and Execution → Planificación y ejecución de hitos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Phase one completion represents a significant achievement",
+          "spanish": "La finalización de la fase uno representa un logro significativo"
+        },
+        {
+          "english": "Each milestone requires formal review and approval",
+          "spanish": "Cada hito requiere revisión formal y aprobación"
+        },
+        {
+          "english": "Deliverable quality must meet established criteria",
+          "spanish": "La calidad del entregable debe cumplir los criterios establecidos"
+        },
+        {
+          "english": "Timeline adjustments may be necessary based on progress",
+          "spanish": "Los ajustes de cronograma pueden ser necesarios basados en el progreso"
+        },
+        {
+          "english": "Stakeholder feedback influences subsequent project phases",
+          "spanish": "La retroalimentación de interesados influye en las fases subsecuentes del proyecto"
+        },
+        {
+          "english": "Resource reallocation decisions depend on milestone outcomes",
+          "spanish": "Las decisiones de reasignación de recursos dependen de los resultados de hitos"
+        },
+        {
+          "english": "Documentation standards ensure knowledge transfer",
+          "spanish": "Los estándares de documentación aseguran la transferencia de conocimiento"
+        },
+        {
+          "english": "Performance metrics guide project optimization efforts",
+          "spanish": "Las métricas de rendimiento guían los esfuerzos de optimización del proyecto"
+        },
+        {
+          "english": "Change management processes accommodate evolving requirements",
+          "spanish": "Los procesos de gestión de cambios acomodan requisitos en evolución"
+        },
+        {
+          "english": "Lessons learned contribute to future project improvements",
+          "spanish": "Las lecciones aprendidas contribuyen a mejoras futuras del proyecto"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why are project milestones important?",
+          "options": ["They mark progress and enable course corrections", "They delay projects", "They increase costs"],
+          "answer": 0
+        },
+        {
+          "audio": "What should happen at each milestone review?",
+          "options": ["Celebrate only", "Evaluate progress and plan next steps", "Assign blame"],
+          "answer": 1
+        },
+        {
+          "audio": "How can milestone delays be addressed?",
+          "options": ["Ignore them", "Analyze causes and adjust plans", "Speed up everything"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Project",
+          "suffix": "provide checkpoints to assess progress and quality.",
+          "answer": "milestones",
+          "selected": false,
+          "feedback": "Milestones serve as important checkpoints for evaluating project status and deliverable quality."
+        },
+        {
+          "prefix": "Each milestone should have",
+          "suffix": "criteria for successful completion.",
+          "answer": "defined",
+          "selected": false,
+          "feedback": "Clearly defined criteria help teams understand what constitutes successful milestone completion."
+        },
+        {
+          "prefix": "Milestone",
+          "suffix": "provide valuable insights for project improvement.",
+          "answer": "reviews",
+          "selected": false,
+          "feedback": "Milestone reviews analyze what worked well and what could be improved for future phases."
+        }
+      ]
+    },
+    {
+      "title": "Risk Assessment and Mitigation → Evaluación y mitigación de riesgos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Comprehensive risk assessment identifies potential project threats",
+          "spanish": "La evaluación integral de riesgos identifica amenazas potenciales del proyecto"
+        },
+        {
+          "english": "Probability and impact matrices prioritize risk management efforts",
+          "spanish": "Las matrices de probabilidad e impacto priorizan los esfuerzos de gestión de riesgos"
+        },
+        {
+          "english": "Contingency planning addresses high-priority risk scenarios",
+          "spanish": "La planificación de contingencias aborda escenarios de riesgo de alta prioridad"
+        },
+        {
+          "english": "Early warning systems enable proactive risk response",
+          "spanish": "Los sistemas de alerta temprana permiten respuesta proactiva al riesgo"
+        },
+        {
+          "english": "Risk tolerance levels guide decision-making processes",
+          "spanish": "Los niveles de tolerancia al riesgo guían los procesos de toma de decisiones"
+        },
+        {
+          "english": "Mitigation strategies reduce likelihood of risk occurrence",
+          "spanish": "Las estrategias de mitigación reducen la probabilidad de ocurrencia de riesgo"
+        },
+        {
+          "english": "Transfer mechanisms shift risk responsibility to other parties",
+          "spanish": "Los mecanismos de transferencia cambian la responsabilidad del riesgo a otras partes"
+        },
+        {
+          "english": "Acceptance strategies acknowledge unavoidable project risks",
+          "spanish": "Las estrategias de aceptación reconocen riesgos de proyecto inevitables"
+        },
+        {
+          "english": "Regular risk reviews update assessment and response plans",
+          "spanish": "Las revisiones regulares de riesgo actualizan la evaluación y planes de respuesta"
+        },
+        {
+          "english": "Risk communication ensures stakeholder awareness and preparation",
+          "spanish": "La comunicación de riesgos asegura conciencia y preparación de interesados"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the first step in risk management?",
+          "options": ["Risk response", "Risk identification", "Risk acceptance"],
+          "answer": 1
+        },
+        {
+          "audio": "How should high-impact risks be handled?",
+          "options": ["Ignore them", "Develop detailed mitigation plans", "Accept them"],
+          "answer": 1
+        },
+        {
+          "audio": "When should risk assessments be updated?",
+          "options": ["Never", "Regularly throughout the project", "Only at the end"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Effective risk management requires",
+          "suffix": "identification and assessment of potential threats.",
+          "answer": "systematic",
+          "selected": false,
+          "feedback": "Systematic approaches ensure comprehensive identification and proper evaluation of all project risks."
+        },
+        {
+          "prefix": "High-probability, high-impact risks need",
+          "suffix": "attention and detailed response plans.",
+          "answer": "immediate",
+          "selected": false,
+          "feedback": "Critical risks require immediate attention to prevent serious project disruptions."
+        },
+        {
+          "prefix": "Risk",
+          "suffix": "should be monitored continuously throughout the project lifecycle.",
+          "answer": "factors",
+          "selected": false,
+          "feedback": "Risk factors can change over time, requiring ongoing monitoring and reassessment."
+        }
+      ]
+    },
+    {
+      "title": "Resource Allocation and Budget Management → Asignación de recursos y gestión presupuestaria",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Optimal resource utilization maximizes project efficiency",
+          "spanish": "La utilización óptima de recursos maximiza la eficiencia del proyecto"
+        },
+        {
+          "english": "Budget variance analysis identifies cost control opportunities",
+          "spanish": "El análisis de variación presupuestaria identifica oportunidades de control de costos"
+        },
+        {
+          "english": "Human resource capacity planning ensures adequate staffing",
+          "spanish": "La planificación de capacidad de recursos humanos asegura personal adecuado"
+        },
+        {
+          "english": "Equipment procurement schedules align with project timelines",
+          "spanish": "Los horarios de adquisición de equipo se alinean con cronogramas del proyecto"
+        },
+        {
+          "english": "Cost-benefit analysis justifies resource investment decisions",
+          "spanish": "El análisis costo-beneficio justifica decisiones de inversión en recursos"
+        },
+        {
+          "english": "Financial reporting maintains transparency and accountability",
+          "spanish": "Los informes financieros mantienen transparencia y responsabilidad"
+        },
+        {
+          "english": "Resource conflicts require prioritization and negotiation",
+          "spanish": "Los conflictos de recursos requieren priorización y negociación"
+        },
+        {
+          "english": "Performance monitoring ensures resource efficiency",
+          "spanish": "El monitoreo de rendimiento asegura eficiencia de recursos"
+        },
+        {
+          "english": "Contingency reserves address unforeseen expenses",
+          "spanish": "Las reservas de contingencia abordan gastos imprevistos"
+        },
+        {
+          "english": "Value engineering optimizes cost-performance relationships",
+          "spanish": "La ingeniería de valor optimiza las relaciones costo-rendimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of budget variance analysis?",
+          "options": ["To increase spending", "To identify and control cost deviations", "To eliminate budgets"],
+          "answer": 1
+        },
+        {
+          "audio": "How should resource conflicts be resolved?",
+          "options": ["First come, first served", "Based on project priorities and impact", "Random selection"],
+          "answer": 1
+        },
+        {
+          "audio": "Why are contingency reserves important?",
+          "options": ["To increase profits", "To handle unexpected project costs", "To pay bonuses"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "title": "Team Leadership and Coordination → Liderazgo de equipo y coordinación",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Effective leadership inspires team commitment and performance",
+          "spanish": "El liderazgo efectivo inspira compromiso y rendimiento del equipo"
+        },
+        {
+          "english": "Clear communication channels facilitate information flow",
+          "spanish": "Los canales de comunicación claros facilitan el flujo de información"
+        },
+        {
+          "english": "Collaborative decision-making leverages collective expertise",
+          "spanish": "La toma de decisiones colaborativa aprovecha la experiencia colectiva"
+        },
+        {
+          "english": "Conflict resolution skills maintain team harmony",
+          "spanish": "Las habilidades de resolución de conflictos mantienen armonía del equipo"
+        },
+        {
+          "english": "Performance feedback promotes continuous improvement",
+          "spanish": "La retroalimentación de rendimiento promueve mejora continua"
+        },
+        {
+          "english": "Delegation strategies optimize individual strengths",
+          "spanish": "Las estrategias de delegación optimizan fortalezas individuales"
+        },
+        {
+          "english": "Motivation techniques sustain team engagement",
+          "spanish": "Las técnicas de motivación sostienen el compromiso del equipo"
+        },
+        {
+          "english": "Cultural awareness enhances international collaboration",
+          "spanish": "La conciencia cultural mejora la colaboración internacional"
+        },
+        {
+          "english": "Mentoring programs develop future leaders",
+          "spanish": "Los programas de mentoría desarrollan futuros líderes"
+        },
+        {
+          "english": "Recognition systems acknowledge exceptional contributions",
+          "spanish": "Los sistemas de reconocimiento reconocen contribuciones excepcionales"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Strong",
+          "suffix": "creates an environment where teams can excel.",
+          "answer": "leadership",
+          "selected": false,
+          "feedback": "Strong leadership provides direction, support, and inspiration for team success."
+        },
+        {
+          "prefix": "Effective",
+          "suffix": "ensures all team members understand their roles and responsibilities.",
+          "answer": "communication",
+          "selected": false,
+          "feedback": "Clear communication prevents misunderstandings and keeps everyone aligned with project goals."
+        },
+        {
+          "prefix": "Team",
+          "suffix": "requires balancing individual needs with project objectives.",
+          "answer": "coordination",
+          "selected": false,
+          "feedback": "Successful coordination aligns individual efforts with overall project goals and timelines."
+        }
+      ]
+    }
+  ]
+}
+]
+

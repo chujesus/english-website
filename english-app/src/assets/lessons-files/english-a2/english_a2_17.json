@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 17,
+  "sections": [
+    {
+      "title": "Medical and Healthcare Support → Apoyo médico y de salud",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Schedule patient appointments",
+          "spanish": "Programa citas de pacientes"
+        },
+        {
+          "english": "Greet patients warmly",
+          "spanish": "Saluda pacientes calurosamente"
+        },
+        {
+          "english": "Maintain patient confidentiality",
+          "spanish": "Mantén confidencialidad del paciente"
+        },
+        {
+          "english": "Update medical records accurately",
+          "spanish": "Actualiza registros médicos con precisión"
+        },
+        {
+          "english": "Handle insurance information",
+          "spanish": "Maneja información de seguros"
+        },
+        {
+          "english": "Assist with basic procedures",
+          "spanish": "Asiste con procedimientos básicos"
+        },
+        {
+          "english": "Sterilize equipment properly",
+          "spanish": "Esteriliza equipo apropiadamente"
+        },
+        {
+          "english": "Take vital signs accurately",
+          "spanish": "Toma signos vitales con precisión"
+        },
+        {
+          "english": "Explain procedures to patients",
+          "spanish": "Explica procedimientos a pacientes"
+        },
+        {
+          "english": "Follow infection control protocols",
+          "spanish": "Sigue protocolos de control de infecciones"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is patient confidentiality crucial in healthcare?",
+          "options": ["To protect privacy and comply with laws", "It's not important", "To make work harder"],
+          "answer": 0
+        },
+        {
+          "audio": "What are vital signs?",
+          "options": ["Basic health measurements like temperature and blood pressure", "Patient complaints", "Insurance information"],
+          "answer": 0
+        },
+        {
+          "audio": "Why follow infection control protocols?",
+          "options": ["To prevent disease transmission in healthcare settings", "To waste time", "It's optional"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always maintain patient",
+          "suffix": "according to healthcare privacy laws.",
+          "answer": "confidentiality",
+          "selected": false,
+          "feedback": "Patient confidentiality is legally required and builds trust in healthcare relationships."
+        },
+        {
+          "prefix": "Follow strict",
+          "suffix": "control protocols to prevent infections.",
+          "answer": "infection",
+          "selected": false,
+          "feedback": "Infection control prevents the spread of diseases in healthcare environments."
+        },
+        {
+          "prefix": "Take",
+          "suffix": "signs accurately to monitor patient health.",
+          "answer": "vital",
+          "selected": false,
+          "feedback": "Accurate vital signs provide important information about patient health status."
+        }
+      ]
+    },
+    {
+      "title": "Education and Training Support → Apoyo educativo y de entrenamiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Prepare training materials",
+          "spanish": "Prepara materiales de entrenamiento"
+        },
+        {
+          "english": "Set up classroom equipment",
+          "spanish": "Configura equipo de aula"
+        },
+        {
+          "english": "Assist students with questions",
+          "spanish": "Asiste estudiantes con preguntas"
+        },
+        {
+          "english": "Grade assignments fairly",
+          "spanish": "Califica tareas justamente"
+        },
+        {
+          "english": "Maintain student records",
+          "spanish": "Mantén registros de estudiantes"
+        },
+        {
+          "english": "Create engaging presentations",
+          "spanish": "Crea presentaciones atractivas"
+        },
+        {
+          "english": "Provide constructive feedback",
+          "spanish": "Proporciona retroalimentación constructiva"
+        },
+        {
+          "english": "Monitor student progress",
+          "spanish": "Monitorea progreso de estudiantes"
+        },
+        {
+          "english": "Organize learning activities",
+          "spanish": "Organiza actividades de aprendizaje"
+        },
+        {
+          "english": "Support diverse learning needs",
+          "spanish": "Apoya diversas necesidades de aprendizaje"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes training materials effective?",
+          "options": ["Clear, relevant content that matches learning objectives", "Complicated language", "Lots of text only"],
+          "answer": 0
+        },
+        {
+          "audio": "Why provide constructive feedback to students?",
+          "options": ["To help them improve and learn from mistakes", "To criticize them", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "How can you support diverse learning needs?",
+          "options": ["Use different teaching methods and materials", "Use only one approach", "Ignore differences"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Prepare",
+          "suffix": "materials that match learning objectives.",
+          "answer": "training",
+          "selected": false,
+          "feedback": "Well-prepared materials enhance learning effectiveness and student engagement."
+        },
+        {
+          "prefix": "Provide",
+          "suffix": "feedback to help students improve.",
+          "answer": "constructive",
+          "selected": false,
+          "feedback": "Constructive feedback guides improvement without discouraging learners."
+        },
+        {
+          "prefix": "Monitor student",
+          "suffix": "to identify those who need additional support.",
+          "answer": "progress",
+          "selected": false,
+          "feedback": "Regular progress monitoring ensures no student falls behind in their learning."
+        }
+      ]
+    },
+    {
+      "title": "Social Services and Community Support → Servicios sociales y apoyo comunitario",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Listen to client concerns empathetically",
+          "spanish": "Escucha preocupaciones del cliente empáticamente"
+        },
+        {
+          "english": "Provide resource information",
+          "spanish": "Proporciona información de recursos"
+        },
+        {
+          "english": "Maintain professional boundaries",
+          "spanish": "Mantén límites profesionales"
+        },
+        {
+          "english": "Document case notes accurately",
+          "spanish": "Documenta notas de caso con precisión"
+        },
+        {
+          "english": "Connect clients with services",
+          "spanish": "Conecta clientes con servicios"
+        },
+        {
+          "english": "Follow up on referrals",
+          "spanish": "Da seguimiento a referencias"
+        },
+        {
+          "english": "Respect cultural differences",
+          "spanish": "Respeta diferencias culturales"
+        },
+        {
+          "english": "Advocate for client needs",
+          "spanish": "Aboga por necesidades del cliente"
+        },
+        {
+          "english": "Collaborate with other agencies",
+          "spanish": "Colabora con otras agencias"
+        },
+        {
+          "english": "Practice self-care to prevent burnout",
+          "spanish": "Practica autocuidado para prevenir agotamiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is empathetic listening important in social services?",
+          "options": ["It helps clients feel understood and builds trust", "It's not necessary", "It wastes time"],
+          "answer": 0
+        },
+        {
+          "audio": "What does maintaining professional boundaries mean?",
+          "options": ["Keeping appropriate distance while still being helpful", "Being unfriendly", "Getting personally involved"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is cultural respect important?",
+          "options": ["To provide effective, culturally appropriate services", "It doesn't matter", "To complicate things"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Listen",
+          "suffix": "to understand client needs and build trust.",
+          "answer": "empathetically",
+          "selected": false,
+          "feedback": "Empathetic listening demonstrates care and helps clients feel valued and understood."
+        },
+        {
+          "prefix": "Maintain",
+          "suffix": "boundaries while providing supportive services.",
+          "answer": "professional",
+          "selected": false,
+          "feedback": "Professional boundaries protect both clients and service providers while maintaining effectiveness."
+        },
+        {
+          "prefix": "Respect",
+          "suffix": "differences to provide appropriate services.",
+          "answer": "cultural",
+          "selected": false,
+          "feedback": "Cultural respect ensures services are relevant and effective for diverse populations."
+        }
+      ]
+    },
+    {
+      "title": "Legal and Administrative Support → Apoyo legal y administrativo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Prepare legal documents accurately",
+          "spanish": "Prepara documentos legales con precisión"
+        },
+        {
+          "english": "Maintain strict confidentiality",
+          "spanish": "Mantén estricta confidencialidad"
+        },
+        {
+          "english": "Schedule court appearances",
+          "spanish": "Programa comparecencias en corte"
+        },
+        {
+          "english": "Organize case files systematically",
+          "spanish": "Organiza archivos de casos sistemáticamente"
+        },
+        {
+          "english": "Research legal precedents",
+          "spanish": "Investiga precedentes legales"
+        },
+        {
+          "english": "Communicate with clients professionally",
+          "spanish": "Comunícate con clientes profesionalmente"
+        },
+        {
+          "english": "Meet filing deadlines strictly",
+          "spanish": "Cumple fechas límite de archivo estrictamente"
+        },
+        {
+          "english": "Proofread documents carefully",
+          "spanish": "Revisa documentos cuidadosamente"
+        },
+        {
+          "english": "Handle sensitive information securely",
+          "spanish": "Maneja información sensible de manera segura"
+        },
+        {
+          "english": "Support attorney work efficiently",
+          "spanish": "Apoya trabajo de abogado eficientemente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is accuracy crucial in legal document preparation?",
+          "options": ["Errors can have serious legal consequences", "It doesn't matter", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are filing deadlines so important in legal work?",
+          "options": ["Missing deadlines can harm client cases", "They are flexible", "They don't matter"],
+          "answer": 0
+        },
+        {
+          "audio": "What level of confidentiality is required in legal work?",
+          "options": ["Absolute confidentiality is essential", "Some confidentiality", "No confidentiality needed"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Public Relations and Communications → Relaciones públicas y comunicaciones",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Write clear press releases",
+          "spanish": "Escribe comunicados de prensa claros"
+        },
+        {
+          "english": "Manage social media accounts",
+          "spanish": "Gestiona cuentas de redes sociales"
+        },
+        {
+          "english": "Organize media events",
+          "spanish": "Organiza eventos para medios"
+        },
+        {
+          "english": "Respond to public inquiries",
+          "spanish": "Responde consultas públicas"
+        },
+        {
+          "english": "Create promotional materials",
+          "spanish": "Crea materiales promocionales"
+        },
+        {
+          "english": "Monitor public opinion",
+          "spanish": "Monitorea opinión pública"
+        },
+        {
+          "english": "Build media relationships",
+          "spanish": "Construye relaciones con medios"
+        },
+        {
+          "english": "Handle crisis communications",
+          "spanish": "Maneja comunicaciones de crisis"
+        },
+        {
+          "english": "Coordinate with stakeholders",
+          "spanish": "Coordina con partes interesadas"
+        },
+        {
+          "english": "Measure communication effectiveness",
+          "spanish": "Mide efectividad de comunicación"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Write",
+          "suffix": "press releases that clearly communicate key messages.",
+          "answer": "clear",
+          "selected": false,
+          "feedback": "Clear communication ensures the intended message reaches the target audience effectively."
+        },
+        {
+          "prefix": "Build strong",
+          "suffix": "relationships for better media coverage.",
+          "answer": "media",
+          "selected": false,
+          "feedback": "Good media relationships facilitate better coverage and message distribution."
+        },
+        {
+          "prefix": "Monitor public",
+          "suffix": "to understand community perceptions.",
+          "answer": "opinion",
+          "selected": false,
+          "feedback": "Understanding public opinion helps shape effective communication strategies."
+        }
+      ]
+    }
+  ]
+}
+]
+

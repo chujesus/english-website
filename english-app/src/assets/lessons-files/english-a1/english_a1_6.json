@@ -1,0 +1,193 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 6,
+    "sections": [
+      {
+        "title": "Daily Routines → Rutinas diarias",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "wake up", "spanish": "despertarse" },
+          { "english": "get up", "spanish": "levantarse" },
+          { "english": "take a shower", "spanish": "bañarse" },
+          { "english": "get dressed", "spanish": "vestirse" },
+          { "english": "eat breakfast", "spanish": "desayunar" },
+          { "english": "go to work", "spanish": "ir al trabajo" },
+          { "english": "work", "spanish": "trabajar" },
+          { "english": "have lunch", "spanish": "almorzar" },
+          { "english": "finish work", "spanish": "terminar el trabajo" },
+          { "english": "go home", "spanish": "ir a casa" },
+          { "english": "have dinner", "spanish": "cenar" },
+          { "english": "watch TV", "spanish": "ver televisión" },
+          { "english": "go to bed", "spanish": "acostarse" },
+          { "english": "sleep", "spanish": "dormir" },
+          { "english": "rest", "spanish": "descansar" }
+        ],
+        "listening": [
+          { "audio": "I wake up at six a.m.", "options": ["wake up", "get up", "go to bed", "eat breakfast"], "answer": "wake up" },
+          { "audio": "She goes to work at eight a.m.", "options": ["goes to work", "gets up", "wakes up", "has lunch"], "answer": "goes to work" },
+          { "audio": "We have lunch at noon", "options": ["have lunch", "eat breakfast", "have dinner", "go home"], "answer": "have lunch" },
+          { "audio": "I finish work at five p.m.", "options": ["finish work", "start work", "go home", "rest"], "answer": "finish work" },
+          { "audio": "I go to bed at ten p.m.", "options": ["go to bed", "get up", "wake up", "sleep"], "answer": "go to bed" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I wake up", "I get up", "I go to bed"], "suffix": "at six a.m. every day.", "answer": "I wake up", "selected": "", "feedback": "" },
+          { "prefix": ["She goes to work", "He goes to work", "They go to work"], "suffix": "at eight a.m.", "answer": "She goes to work", "selected": "", "feedback": "" },
+          { "prefix": ["We have lunch", "We eat breakfast", "We have dinner"], "suffix": "at noon.", "answer": "We have lunch", "selected": "", "feedback": "" },
+          { "prefix": ["I finish work", "I start work", "I go home"], "suffix": "at five p.m.", "answer": "I finish work", "selected": "", "feedback": "" },
+          { "prefix": ["I watch TV", "I read", "I rest"], "suffix": "after dinner.", "answer": "I watch TV", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Workplace Routines → Rutinas en el trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "start work", "spanish": "empezar a trabajar" },
+          { "english": "finish work", "spanish": "terminar el trabajo" },
+          { "english": "take a break", "spanish": "tomar un descanso" },
+          { "english": "have a meeting", "spanish": "tener una reunión" },
+          { "english": "check emails", "spanish": "revisar correos" },
+          { "english": "make a call", "spanish": "hacer una llamada" },
+          { "english": "write a report", "spanish": "escribir un informe" },
+          { "english": "attend training", "spanish": "asistir a capacitación" },
+          { "english": "help customers", "spanish": "atender clientes" },
+          { "english": "clean", "spanish": "limpiar" },
+          { "english": "organize", "spanish": "organizar" },
+          { "english": "repair", "spanish": "reparar" },
+          { "english": "deliver", "spanish": "entregar" },
+          { "english": "supervise", "spanish": "supervisar" },
+          { "english": "report", "spanish": "reportar" }
+        ],
+        "listening": [
+          { "audio": "I start work at seven a.m.", "options": ["start work", "finish work", "take a break", "have a meeting"], "answer": "start work" },
+          { "audio": "We take a break at ten a.m.", "options": ["take a break", "have a meeting", "check emails", "make a call"], "answer": "take a break" },
+          { "audio": "She attends training every Friday", "options": ["attends training", "writes a report", "helps customers", "cleans"], "answer": "attends training" },
+          { "audio": "He delivers packages in the afternoon", "options": ["delivers", "organizes", "repairs", "supervises"], "answer": "delivers" },
+          { "audio": "I check emails before lunch", "options": ["check emails", "make a call", "write a report", "report"], "answer": "check emails" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I start work", "I finish work", "I take a break"], "suffix": "at seven a.m.", "answer": "I start work", "selected": "", "feedback": "" },
+          { "prefix": ["We take a break", "We have a meeting", "We check emails"], "suffix": "at ten a.m.", "answer": "We take a break", "selected": "", "feedback": "" },
+          { "prefix": ["She attends training", "He attends training", "They attend training"], "suffix": "every Friday.", "answer": "She attends training", "selected": "", "feedback": "" },
+          { "prefix": ["He delivers", "He organizes", "He repairs"], "suffix": "packages in the afternoon.", "answer": "He delivers", "selected": "", "feedback": "" },
+          { "prefix": ["I check emails", "I make a call", "I write a report"], "suffix": "before lunch.", "answer": "I check emails", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Home Routines → Rutinas en casa",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "clean the house", "spanish": "limpiar la casa" },
+          { "english": "wash the dishes", "spanish": "lavar los platos" },
+          { "english": "do laundry", "spanish": "lavar la ropa" },
+          { "english": "cook", "spanish": "cocinar" },
+          { "english": "set the table", "spanish": "poner la mesa" },
+          { "english": "feed the pets", "spanish": "alimentar las mascotas" },
+          { "english": "water the plants", "spanish": "regar las plantas" },
+          { "english": "take out the trash", "spanish": "sacar la basura" },
+          { "english": "sweep", "spanish": "barrer" },
+          { "english": "mop", "spanish": "trapear" },
+          { "english": "make the bed", "spanish": "hacer la cama" },
+          { "english": "iron", "spanish": "planchar" },
+          { "english": "vacuum", "spanish": "aspirar" },
+          { "english": "fix", "spanish": "arreglar" },
+          { "english": "rest", "spanish": "descansar" }
+        ],
+        "listening": [
+          { "audio": "I clean the house every Saturday", "options": ["clean the house", "wash the dishes", "do laundry", "cook"], "answer": "clean the house" },
+          { "audio": "She cooks dinner at six p.m.", "options": ["cooks", "sets the table", "feeds the pets", "waters the plants"], "answer": "cooks" },
+          { "audio": "He does laundry on Sundays", "options": ["does laundry", "washes the dishes", "takes out the trash", "sweeps"], "answer": "does laundry" },
+          { "audio": "We make the bed every morning", "options": ["make the bed", "iron", "vacuum", "fix"], "answer": "make the bed" },
+          { "audio": "I rest after cleaning", "options": ["rest", "fix", "mop", "vacuum"], "answer": "rest" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I clean the house", "I wash the dishes", "I do laundry"], "suffix": "every Saturday.", "answer": "I clean the house", "selected": "", "feedback": "" },
+          { "prefix": ["She cooks", "She sets the table", "She feeds the pets"], "suffix": "dinner at six p.m.", "answer": "She cooks", "selected": "", "feedback": "" },
+          { "prefix": ["He does laundry", "He washes the dishes", "He takes out the trash"], "suffix": "on Sundays.", "answer": "He does laundry", "selected": "", "feedback": "" },
+          { "prefix": ["We make the bed", "We iron", "We vacuum"], "suffix": "every morning.", "answer": "We make the bed", "selected": "", "feedback": "" },
+          { "prefix": ["I rest", "I fix", "I mop"], "suffix": "after cleaning.", "answer": "I rest", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Technical Routines → Rutinas técnicas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "check equipment", "spanish": "revisar equipo" },
+          { "english": "start the machine", "spanish": "encender la máquina" },
+          { "english": "stop the machine", "spanish": "apagar la máquina" },
+          { "english": "inspect", "spanish": "inspeccionar" },
+          { "english": "test", "spanish": "probar" },
+          { "english": "repair", "spanish": "reparar" },
+          { "english": "replace", "spanish": "reemplazar" },
+          { "english": "clean", "spanish": "limpiar" },
+          { "english": "assemble", "spanish": "ensamblar" },
+          { "english": "disassemble", "spanish": "desarmar" },
+          { "english": "measure", "spanish": "medir" },
+          { "english": "record", "spanish": "registrar" },
+          { "english": "report", "spanish": "reportar" },
+          { "english": "supervise", "spanish": "supervisar" },
+          { "english": "document", "spanish": "documentar" }
+        ],
+        "listening": [
+          { "audio": "I check equipment every morning", "options": ["check equipment", "start the machine", "stop the machine", "inspect"], "answer": "check equipment" },
+          { "audio": "He starts the machine at eight a.m.", "options": ["starts the machine", "stops the machine", "inspects", "tests"], "answer": "starts the machine" },
+          { "audio": "We repair machines in the afternoon", "options": ["repair", "replace", "clean", "assemble"], "answer": "repair" },
+          { "audio": "She measures parts before assembly", "options": ["measures", "records", "reports", "supervises"], "answer": "measures" },
+          { "audio": "I report problems to my supervisor", "options": ["report", "document", "record", "supervise"], "answer": "report" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I check equipment", "I start the machine", "I stop the machine"], "suffix": "every morning.", "answer": "I check equipment", "selected": "", "feedback": "" },
+          { "prefix": ["He starts the machine", "He stops the machine", "He inspects"], "suffix": "at eight a.m.", "answer": "He starts the machine", "selected": "", "feedback": "" },
+          { "prefix": ["We repair", "We replace", "We clean"], "suffix": "machines in the afternoon.", "answer": "We repair", "selected": "", "feedback": "" },
+          { "prefix": ["She measures", "She records", "She reports"], "suffix": "parts before assembly.", "answer": "She measures", "selected": "", "feedback": "" },
+          { "prefix": ["I report", "I document", "I record"], "suffix": "problems to my supervisor.", "answer": "I report", "selected": "", "feedback": "" }
+        ]
+      },
+      {
+        "title": "Routines for Technical Training → Rutinas para capacitación técnica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "attend class", "spanish": "asistir a clase" },
+          { "english": "study", "spanish": "estudiar" },
+          { "english": "practice", "spanish": "practicar" },
+          { "english": "do homework", "spanish": "hacer tarea" },
+          { "english": "take notes", "spanish": "tomar apuntes" },
+          { "english": "ask questions", "spanish": "hacer preguntas" },
+          { "english": "participate", "spanish": "participar" },
+          { "english": "review", "spanish": "repasar" },
+          { "english": "prepare", "spanish": "preparar" },
+          { "english": "present", "spanish": "presentar" },
+          { "english": "learn", "spanish": "aprender" },
+          { "english": "teach", "spanish": "enseñar" },
+          { "english": "train", "spanish": "capacitar" },
+          { "english": "improve", "spanish": "mejorar" },
+          { "english": "graduate", "spanish": "graduarse" }
+        ],
+        "listening": [
+          { "audio": "I attend class every day", "options": ["attend class", "study", "practice", "do homework"], "answer": "attend class" },
+          { "audio": "She studies at IPEC", "options": ["studies", "practices", "teaches", "learns"], "answer": "studies" },
+          { "audio": "We do homework after class", "options": ["do homework", "take notes", "ask questions", "participate"], "answer": "do homework" },
+          { "audio": "He takes notes during training", "options": ["takes notes", "reviews", "prepares", "presents"], "answer": "takes notes" },
+          { "audio": "I participate in technical training", "options": ["participate", "review", "prepare", "present"], "answer": "participate" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I attend class", "I study", "I practice"], "suffix": "every day.", "answer": "I attend class", "selected": "", "feedback": "" },
+          { "prefix": ["She studies", "She practices", "She teaches"], "suffix": "at IPEC.", "answer": "She studies", "selected": "", "feedback": "" },
+          { "prefix": ["We do homework", "We take notes", "We ask questions"], "suffix": "after class.", "answer": "We do homework", "selected": "", "feedback": "" },
+          { "prefix": ["He takes notes", "He reviews", "He prepares"], "suffix": "during training.", "answer": "He takes notes", "selected": "", "feedback": "" },
+          { "prefix": ["I participate", "I review", "I prepare"], "suffix": "in technical training.", "answer": "I participate", "selected": "", "feedback": "" }
+        ]
+      }
+    ]
+  }
+]

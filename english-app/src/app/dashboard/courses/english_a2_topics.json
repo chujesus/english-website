@@ -1,0 +1,562 @@
+[
+  {
+    "title": "Introductions and Workplace Greetings",
+    "objective": "Learn to introduce yourself and greet others in professional and technical environments.",
+    "examples": [
+      "Hello, I’m a student at the technical high school.",
+      "Nice to meet you, I’m the supervisor."
+    ],
+    "keywords": [
+      "introduction",
+      "greeting",
+      "position",
+      "workplace",
+      "hello"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to introduce yourself and greet others in professional and technical environments.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Describing Your Technical Specialty",
+    "objective": "Talk about your technical field, your role, and your training.",
+    "examples": [
+      "I’m studying industrial electronics.",
+      "We learn how to fix machines."
+    ],
+    "keywords": [
+      "specialty",
+      "field",
+      "technician",
+      "training",
+      "skills"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about your technical field, your role, and your training.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Asking and Giving Directions in the Workplace",
+    "objective": "Understand and give directions within a technical facility or company.",
+    "examples": [
+      "Go straight and turn right at the lab.",
+      "The supervisor’s office is upstairs."
+    ],
+    "keywords": [
+      "directions",
+      "go straight",
+      "turn",
+      "location",
+      "map"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to understand and give directions within a technical facility or company.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Tools and Equipment",
+    "objective": "Identify and describe common tools and equipment used in your technical area.",
+    "examples": [
+      "This is a multimeter.",
+      "We use a welding machine in metalwork."
+    ],
+    "keywords": [
+      "tool",
+      "equipment",
+      "use",
+      "function",
+      "parts"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to identify and describe common tools and equipment used in your technical area.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Workplace Instructions and Commands",
+    "objective": "Understand and follow basic spoken and written workplace instructions.",
+    "examples": [
+      "Please turn off the switch.",
+      "Check the pressure gauge."
+    ],
+    "keywords": [
+      "instruction",
+      "command",
+      "procedure",
+      "step",
+      "task"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to understand and follow basic spoken and written workplace instructions.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Workplace Safety and Signs",
+    "objective": "Recognize safety vocabulary, signs and rules in technical environments.",
+    "examples": [
+      "Wear your helmet at all times.",
+      "No entry without authorization."
+    ],
+    "keywords": [
+      "safety",
+      "warning",
+      "danger",
+      "sign",
+      "rule"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to recognize safety vocabulary, signs and rules in technical environments.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Describing Daily Routines",
+    "objective": "Explain your daily activities and tasks at the workshop or internship.",
+    "examples": [
+      "I check the system every morning.",
+      "We clean the tools before leaving."
+    ],
+    "keywords": [
+      "routine",
+      "task",
+      "every day",
+      "start",
+      "finish"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to explain your daily activities and tasks at the workshop or internship.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Reporting Problems and Malfunctions",
+    "objective": "Learn to explain technical issues or report problems to supervisors.",
+    "examples": [
+      "The motor is not working.",
+      "There is a leak in the pipe."
+    ],
+    "keywords": [
+      "problem",
+      "report",
+      "malfunction",
+      "damage",
+      "error"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to explain technical issues or report problems to supervisors.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Technical Vocabulary for Processes",
+    "objective": "Learn vocabulary and verbs related to processes in technical areas.",
+    "examples": [
+      "We measure, cut and weld the pieces.",
+      "The process includes heating and cooling."
+    ],
+    "keywords": [
+      "process",
+      "measure",
+      "assemble",
+      "operate",
+      "install"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to learn vocabulary and verbs related to processes in technical areas.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Using the Simple Present for Descriptions",
+    "objective": "Use the present tense to describe roles, materials, and actions in your field.",
+    "examples": [
+      "A plumber fixes pipes.",
+      "Electricians install wires."
+    ],
+    "keywords": [
+      "present tense",
+      "verbs",
+      "actions",
+      "describes",
+      "roles"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to use the present tense to describe roles, materials, and actions in your field.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Scheduling and Appointments",
+    "objective": "Learn how to talk about time, appointments, and work schedules.",
+    "examples": [
+      "The meeting is at 2 p.m.",
+      "We have class on Monday."
+    ],
+    "keywords": [
+      "schedule",
+      "appointment",
+      "clock",
+      "calendar",
+      "shift"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to learn how to talk about time, appointments, and work schedules.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Telephone and Email Communication",
+    "objective": "Use appropriate language for simple phone calls and emails in a work context.",
+    "examples": [
+      "Can I speak to Mr. López?",
+      "Please find the report attached."
+    ],
+    "keywords": [
+      "phone",
+      "email",
+      "speak",
+      "message",
+      "contact"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to use appropriate language for simple phone calls and emails in a work context.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Describing Materials and Quantities",
+    "objective": "Talk about types of materials, measurements, and quantities in technical tasks.",
+    "examples": [
+      "We need 3 meters of cable.",
+      "Use stainless steel."
+    ],
+    "keywords": [
+      "material",
+      "quantity",
+      "measurement",
+      "units",
+      "size"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about types of materials, measurements, and quantities in technical tasks.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Giving and Receiving Feedback",
+    "objective": "Learn expressions for giving suggestions, receiving feedback, and correcting errors.",
+    "examples": [
+      "You should tighten the screw more.",
+      "Thanks for the suggestion!"
+    ],
+    "keywords": [
+      "feedback",
+      "suggestion",
+      "comment",
+      "improve",
+      "correct"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to learn expressions for giving suggestions, receiving feedback, and correcting errors.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Writing Short Technical Reports",
+    "objective": "Practice writing short, structured reports about simple tasks or observations.",
+    "examples": [
+      "We completed the maintenance on July 3rd.",
+      "The machine was tested and passed."
+    ],
+    "keywords": [
+      "report",
+      "write",
+      "date",
+      "task",
+      "completed"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to practice writing short, structured reports about simple tasks or observations.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Workplace Values and Attitudes",
+    "objective": "Discuss attitudes like responsibility, punctuality, and teamwork in the workplace.",
+    "examples": [
+      "We always respect the schedule.",
+      "Teamwork is important."
+    ],
+    "keywords": [
+      "attitude",
+      "punctuality",
+      "respect",
+      "teamwork",
+      "ethics"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to discuss attitudes like responsibility, punctuality, and teamwork in the workplace.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Customer Service Basics",
+    "objective": "Practice basic expressions and etiquette for attending clients or users.",
+    "examples": [
+      "How can I help you?",
+      "Please wait a moment."
+    ],
+    "keywords": [
+      "customer",
+      "service",
+      "attend",
+      "please",
+      "assist"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to practice basic expressions and etiquette for attending clients or users.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Understanding Manuals and Diagrams",
+    "objective": "Read and understand basic technical manuals, diagrams and symbols.",
+    "examples": [
+      "See the installation diagram on page 5.",
+      "The manual says to use low voltage."
+    ],
+    "keywords": [
+      "manual",
+      "diagram",
+      "symbol",
+      "read",
+      "instruction"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to read and understand basic technical manuals, diagrams and symbols.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Job Interviews and CV Vocabulary",
+    "objective": "Learn common phrases and vocabulary for job applications and interviews.",
+    "examples": [
+      "I’m a responsible technician.",
+      "I studied at CTP Liberia."
+    ],
+    "keywords": [
+      "interview",
+      "CV",
+      "apply",
+      "experience",
+      "skills"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to learn common phrases and vocabulary for job applications and interviews.",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Final Technical Simulation",
+    "objective": "Apply all learned vocabulary and structures in a practical scenario (roleplay or simulation).",
+    "examples": [
+      "Student A is a client, Student B is the technician.",
+      "Complete a service report and give feedback."
+    ],
+    "keywords": [
+      "practice",
+      "roleplay",
+      "simulate",
+      "report",
+      "evaluate"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to apply all learned vocabulary and structures in a practical scenario (roleplay or simulation).",
+    "cefrLevel": "A2",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  }
+]

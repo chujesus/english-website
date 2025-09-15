@@ -1,0 +1,21 @@
+.swal2-confirm,
+.swal2-cancel {
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 10px 24px !important;
+    margin: 0 0.1rem !important;
+    -o-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    border-radius: 5px !important;
+}
+
+.delete-icon-color .swal2-icon,
+.yes-no-alert .swal2-icon {
+    color: rgb(255, 95, 95) !important;
+    border-color: rgb(255, 95, 95) !important;
+}

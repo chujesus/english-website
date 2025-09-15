@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 11,
+  "sections": [
+    {
+      "title": "Biomedical Engineering Applications → Aplicaciones de ingeniería biomédica",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Medical devices enhance diagnostic and treatment capabilities",
+          "spanish": "Los dispositivos médicos mejoran capacidades de diagnóstico y tratamiento"
+        },
+        {
+          "english": "Biocompatible materials interact safely with living tissue",
+          "spanish": "Los materiales biocompatibles interactúan de manera segura con tejido vivo"
+        },
+        {
+          "english": "Prosthetic devices restore lost functionality",
+          "spanish": "Los dispositivos protésicos restauran funcionalidad perdida"
+        },
+        {
+          "english": "Imaging systems visualize internal body structures",
+          "spanish": "Los sistemas de imágenes visualizan estructuras internas del cuerpo"
+        },
+        {
+          "english": "Monitoring equipment tracks patient vital signs",
+          "spanish": "El equipo de monitoreo rastrea signos vitales del paciente"
+        },
+        {
+          "english": "Rehabilitation technology assists recovery processes",
+          "spanish": "La tecnología de rehabilitación asiste procesos de recuperación"
+        },
+        {
+          "english": "Surgical instruments enable precise medical procedures",
+          "spanish": "Los instrumentos quirúrgicos permiten procedimientos médicos precisos"
+        },
+        {
+          "english": "Therapeutic devices deliver targeted treatments",
+          "spanish": "Los dispositivos terapéuticos entregan tratamientos dirigidos"
+        },
+        {
+          "english": "Regulatory compliance ensures medical device safety",
+          "spanish": "El cumplimiento regulatorio asegura seguridad de dispositivos médicos"
+        },
+        {
+          "english": "Clinical trials validate device effectiveness",
+          "spanish": "Los ensayos clínicos validan efectividad de dispositivos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes a material biocompatible for medical applications?",
+          "options": ["It doesn't cause harmful reactions when in contact with living tissue", "It's the cheapest option", "It looks good"],
+          "answer": 0
+        },
+        {
+          "audio": "How do prosthetic devices help patients?",
+          "options": ["They replace lost limbs or organs to restore function and quality of life", "They are only decorative", "They cure diseases"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are clinical trials essential for medical devices?",
+          "options": ["They prove the device is safe and effective for patient use", "They make devices more expensive", "They are optional"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Medical",
+          "suffix": "must meet strict safety and performance standards before clinical use.",
+          "answer": "devices",
+          "selected": false,
+          "feedback": "Medical devices undergo rigorous testing to ensure patient safety and efficacy."
+        },
+        {
+          "prefix": "Biocompatible",
+          "suffix": "are essential for implants and devices that contact living tissue.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Biocompatibility is critical for preventing adverse reactions in medical applications."
+        },
+        {
+          "prefix": "Clinical",
+          "suffix": "provide evidence of safety and effectiveness for regulatory approval.",
+          "answer": "trials",
+          "selected": false,
+          "feedback": "Clinical trials are required to demonstrate medical device safety and efficacy."
+        }
+      ]
+    },
+    {
+      "title": "Aerospace Engineering and Flight Systems → Ingeniería aeroespacial y sistemas de vuelo",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Aerodynamic design optimizes flight performance",
+          "spanish": "El diseño aerodinámico optimiza rendimiento de vuelo"
+        },
+        {
+          "english": "Propulsion systems generate thrust for aircraft movement",
+          "spanish": "Los sistemas de propulsión generan empuje para movimiento de aeronaves"
+        },
+        {
+          "english": "Flight control systems maintain aircraft stability",
+          "spanish": "Los sistemas de control de vuelo mantienen estabilidad de aeronaves"
+        },
+        {
+          "english": "Navigation systems determine position and heading",
+          "spanish": "Los sistemas de navegación determinan posición y rumbo"
+        },
+        {
+          "english": "Avionics integrate electronic flight systems",
+          "spanish": "La aviónica integra sistemas electrónicos de vuelo"
+        },
+        {
+          "english": "Structural analysis ensures airframe integrity",
+          "spanish": "El análisis estructural asegura integridad del fuselaje"
+        },
+        {
+          "english": "Composite materials reduce weight while maintaining strength",
+          "spanish": "Los materiales compuestos reducen peso mientras mantienen resistencia"
+        },
+        {
+          "english": "Safety systems protect aircraft and passengers",
+          "spanish": "Los sistemas de seguridad protegen aeronaves y pasajeros"
+        },
+        {
+          "english": "Maintenance procedures ensure continued airworthiness",
+          "spanish": "Los procedimientos de mantenimiento aseguran aeronavegabilidad continua"
+        },
+        {
+          "english": "Certification standards validate flight safety",
+          "spanish": "Los estándares de certificación validan seguridad de vuelo"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the primary function of flight control systems?",
+          "options": ["To maintain aircraft stability and respond to pilot commands", "To generate thrust", "To reduce weight"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are composite materials important in aerospace?",
+          "options": ["They provide high strength-to-weight ratios critical for flight efficiency", "They are cheaper", "They are easier to manufacture"],
+          "answer": 0
+        },
+        {
+          "audio": "How do avionics systems benefit modern aircraft?",
+          "options": ["They integrate and coordinate all electronic systems for optimal performance", "They make planes heavier", "They are only decorative"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Aerodynamic",
+          "suffix": "reduces drag and improves fuel efficiency in aircraft.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Aerodynamic design is crucial for efficient and stable flight performance."
+        },
+        {
+          "prefix": "Flight control",
+          "suffix": "automatically adjust aircraft attitude and maintain stable flight.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Modern flight control systems provide stability and responsiveness for safe flight."
+        },
+        {
+          "prefix": "Composite",
+          "suffix": "enable lightweight yet strong aircraft structures.",
+          "answer": "materials",
+          "selected": false,
+          "feedback": "Composites offer superior strength-to-weight ratios essential for aerospace applications."
+        }
+      ]
+    },
+    {
+      "title": "Marine Engineering and Naval Architecture → Ingeniería marina y arquitectura naval",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Hull design determines vessel stability and performance",
+          "spanish": "El diseño del casco determina estabilidad y rendimiento del buque"
+        },
+        {
+          "english": "Propulsion systems power marine vessels efficiently",
+          "spanish": "Los sistemas de propulsión impulsan embarcaciones marinas eficientemente"
+        },
+        {
+          "english": "Ballast systems control vessel trim and stability",
+          "spanish": "Los sistemas de lastre controlan asiento y estabilidad del buque"
+        },
+        {
+          "english": "Navigation equipment ensures safe maritime travel",
+          "spanish": "El equipo de navegación asegura viaje marítimo seguro"
+        },
+        {
+          "english": "Corrosion protection preserves vessel integrity",
+          "spanish": "La protección contra corrosión preserva integridad del buque"
+        },
+        {
+          "english": "Marine engineering systems support vessel operations",
+          "spanish": "Los sistemas de ingeniería marina apoyan operaciones del buque"
+        },
+        {
+          "english": "Offshore structures withstand harsh marine environments",
+          "spanish": "Las estructuras marinas resisten ambientes marinos severos"
+        },
+        {
+          "english": "Hydrodynamic analysis optimizes vessel efficiency",
+          "spanish": "El análisis hidrodinámico optimiza eficiencia del buque"
+        },
+        {
+          "english": "Safety regulations ensure maritime vessel compliance",
+          "spanish": "Las regulaciones de seguridad aseguran cumplimiento de embarcaciones marítimas"
+        },
+        {
+          "english": "Environmental systems minimize marine pollution",
+          "spanish": "Los sistemas ambientales minimizan contaminación marina"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What factors determine vessel stability?",
+          "options": ["Hull design, weight distribution, and ballast system operation", "Only the engine power", "The color of the vessel"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is corrosion protection critical for marine vessels?",
+          "options": ["Saltwater causes rapid deterioration of metal structures", "It makes vessels prettier", "It's not really necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "How do ballast systems work?",
+          "options": ["They adjust vessel weight distribution by taking on or releasing water", "They provide propulsion", "They generate electricity"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Hull",
+          "suffix": "must balance stability, speed, and cargo capacity requirements.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Hull design is fundamental to vessel performance and safety."
+        },
+        {
+          "prefix": "Corrosion",
+          "suffix": "is essential for maintaining vessel structural integrity in saltwater.",
+          "answer": "protection",
+          "selected": false,
+          "feedback": "Marine environments require robust corrosion protection systems."
+        },
+        {
+          "prefix": "Hydrodynamic",
+          "suffix": "helps optimize vessel hull shapes for efficiency and performance.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Hydrodynamic analysis enables optimal vessel design for marine operations."
+        }
+      ]
+    },
+    {
+      "title": "Nuclear Engineering and Safety Systems → Ingeniería nuclear y sistemas de seguridad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Nuclear reactors control fission chain reactions",
+          "spanish": "Los reactores nucleares controlan reacciones en cadena de fisión"
+        },
+        {
+          "english": "Radiation shielding protects personnel and environment",
+          "spanish": "El blindaje de radiación protege personal y ambiente"
+        },
+        {
+          "english": "Safety systems prevent nuclear accidents",
+          "spanish": "Los sistemas de seguridad previenen accidentes nucleares"
+        },
+        {
+          "english": "Containment structures isolate radioactive materials",
+          "spanish": "Las estructuras de contención aíslan materiales radiactivos"
+        },
+        {
+          "english": "Monitoring systems track radiation levels continuously",
+          "spanish": "Los sistemas de monitoreo rastrean niveles de radiación continuamente"
+        },
+        {
+          "english": "Emergency procedures respond to abnormal conditions",
+          "spanish": "Los procedimientos de emergencia responden a condiciones anormales"
+        },
+        {
+          "english": "Waste management handles radioactive byproducts safely",
+          "spanish": "La gestión de residuos maneja subproductos radiactivos de manera segura"
+        },
+        {
+          "english": "Regulatory oversight ensures nuclear facility compliance",
+          "spanish": "La supervisión regulatoria asegura cumplimiento de instalaciones nucleares"
+        },
+        {
+          "english": "Personnel training maintains safety competency",
+          "spanish": "El entrenamiento de personal mantiene competencia de seguridad"
+        },
+        {
+          "english": "Decommissioning procedures safely retire nuclear facilities",
+          "spanish": "Los procedimientos de desmantelamiento retiran instalaciones nucleares de manera segura"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the primary purpose of nuclear reactor control systems?",
+          "options": ["To maintain safe and controlled nuclear reactions", "To speed up reactions", "To eliminate all reactions"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are multiple safety systems used in nuclear facilities?",
+          "options": ["To provide backup protection if one system fails", "To make operations more complex", "To increase costs"],
+          "answer": 0
+        },
+        {
+          "audio": "How does radiation shielding protect people?",
+          "options": ["It absorbs or deflects harmful radiation before it reaches personnel", "It makes radiation visible", "It eliminates all radiation"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Geotechnical Engineering and Foundation Systems → Ingeniería geotécnica y sistemas de cimentación",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Soil analysis determines foundation requirements",
+          "spanish": "El análisis de suelo determina requisitos de cimentación"
+        },
+        {
+          "english": "Foundation design transfers structural loads safely",
+          "spanish": "El diseño de cimentación transfiere cargas estructurales de manera segura"
+        },
+        {
+          "english": "Slope stability analysis prevents landslides",
+          "spanish": "El análisis de estabilidad de taludes previene deslizamientos"
+        },
+        {
+          "english": "Soil compaction improves bearing capacity",
+          "spanish": "La compactación de suelo mejora capacidad portante"
+        },
+        {
+          "english": "Drainage systems control groundwater flow",
+          "spanish": "Los sistemas de drenaje controlan flujo de agua subterránea"
+        },
+        {
+          "english": "Retaining walls support soil masses",
+          "spanish": "Los muros de contención soportan masas de suelo"
+        },
+        {
+          "english": "Ground improvement techniques enhance soil properties",
+          "spanish": "Las técnicas de mejoramiento de suelo mejoran propiedades del suelo"
+        },
+        {
+          "english": "Settlement analysis predicts foundation movement",
+          "spanish": "El análisis de asentamiento predice movimiento de cimentación"
+        },
+        {
+          "english": "Earthquake engineering addresses seismic risks",
+          "spanish": "La ingeniería sísmica aborda riesgos sísmicos"
+        },
+        {
+          "english": "Environmental geotechnics manages contaminated sites",
+          "spanish": "La geotecnia ambiental gestiona sitios contaminados"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Soil",
+          "suffix": "provides essential data for safe foundation design.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Proper soil analysis is fundamental to successful foundation engineering."
+        },
+        {
+          "prefix": "Foundation",
+          "suffix": "must account for soil conditions and structural loads.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Foundation design requires careful consideration of both structure and soil properties."
+        },
+        {
+          "prefix": "Ground",
+          "suffix": "techniques can strengthen weak soils for construction.",
+          "answer": "improvement",
+          "selected": false,
+          "feedback": "Ground improvement enables construction on challenging soil conditions."
+        }
+      ]
+    }
+  ]
+}
+]
+

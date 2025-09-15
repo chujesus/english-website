@@ -1,0 +1,126 @@
+<div class="p-5 bg-body-tertiary rounded-3">
+    <div class="container-fluid row">
+        <div class="col-12 p-5 text-bg-dark rounded-3">
+            <h2 class="mb-4">🧩 Topic: Introductions and Greetings</h2>
+            <p class="lead">
+                Learn to introduce yourself and greet people formally and informally.
+            </p>
+
+            <section class="mb-4">
+                <h4>🎯 Objective</h4>
+                <p>
+                    Learn to introduce yourself and greet people in both formal and informal settings using clear and
+                    basic
+                    English.
+                </p>
+            </section>
+
+            <section>
+                <h4>✅ Learning Outcome</h4>
+                <ul>
+                    <li>Use common greetings in different contexts.</li>
+                    <li>Introduce yourself and ask for someone's name.</li>
+                    <li>Respond to greetings and introductions.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4" *ngIf="selectedLesson">
+    <div class="mb-4">
+        <h2 class="text-primary">Lesson: {{ courseTitle }}</h2>
+    </div>
+
+    <!-- Stepper nav -->
+    <ul class="nav nav-pills mb-4 justify-content-center stepper">
+        <li class="nav-item" *ngFor="let section of selectedLesson.sections; let i = index">
+            <button class="nav-link" [class.active]="i === currentStep" (click)="goToStep(i)">
+                {{ i + 1 }}. {{ section.title }}
+            </button>
+        </li>
+    </ul>
+
+    <!-- Step content -->
+    <div *ngIf="selectedLesson.sections[currentStep]" class="card shadow-sm">
+        <div class="card-header bg-light">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 text-secondary">
+                    {{ selectedLesson.sections[currentStep].title }}
+                </h5>
+                <button class="btn btn-secondary ms-auto me-2" *ngIf="selectedLesson.sections[currentStep].isSpeaking"
+                    (click)="openSpeechPractice(selectedLesson.sections[currentStep].items)">
+                    🎤 Speaking practice
+                </button>
+                <button class="btn btn-secondary me-2" *ngIf="selectedLesson.sections[currentStep].isListen"
+                    (click)="openSpeechQuizPractice(selectedLesson.sections[currentStep].listening!)">
+                    Listening practice
+                </button>
+                <button class="btn btn-secondary" *ngIf="selectedLesson.sections[currentStep].isFillInBlank"
+                    (click)="openFillInBlankPractice(selectedLesson.sections[currentStep].fillInBlank!)">
+                    Fill in blank practice
+                </button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered m-0">
+                    <thead class="table-light">
+                        <tr class="text-center">
+                            <th>English</th>
+                            <th>Spanish</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of selectedLesson.sections[currentStep].items">
+                            <td>{{ item.english }}</td>
+                            <td>{{ item.spanish }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div #speechModal class="modal fade" id="speechModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 fw-bold text-center w-100 text-primary">🗣️ Speaking Practice</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <app-speech-practice [targetSentences]="speechPracticeItems"></app-speech-practice>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div #fillInBlank class="modal fade" id="fillInBlank" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 fw-bold text-center w-100 text-primary">Fill In Blank</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <app-fill-in-blank-practice [questions]="questions"></app-fill-in-blank-practice>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div #speechQuiz class="modal fade" id="speechQuiz" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-4 fw-bold text-center w-100 text-primary">Listen and Choose the Word</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <app-speech-quiz [listening]="listening"></app-speech-quiz>
+            </div>
+        </div>
+    </div>
+</div>

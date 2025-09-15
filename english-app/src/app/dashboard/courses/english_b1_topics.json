@@ -1,0 +1,542 @@
+[
+  {
+    "title": "Workplace Communication",
+    "objective": "Develop the ability to interact professionally at the workplace using formal expressions and polite requests.",
+    "examples": [
+      "Could you please send me the report?",
+      "I will follow up with the manager."
+    ],
+    "keywords": [
+      "formal language",
+      "requests",
+      "professional tone",
+      "workplace interaction"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to develop the ability to interact professionally at the workplace using formal expressions and polite requests.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Tools and Equipment",
+    "objective": "Identify and describe common tools and equipment used in technical professions.",
+    "examples": [
+      "This is a voltmeter.",
+      "We use pliers to hold the wire."
+    ],
+    "keywords": [
+      "tools",
+      "equipment",
+      "names",
+      "uses"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to identify and describe common tools and equipment used in technical professions.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Safety at Work",
+    "objective": "Understand safety vocabulary and communicate risks or preventive actions in a technical environment.",
+    "examples": [
+      "Always wear protective gloves.",
+      "There is a high voltage warning."
+    ],
+    "keywords": [
+      "safety",
+      "warning",
+      "PPE",
+      "emergency"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to understand safety vocabulary and communicate risks or preventive actions in a technical environment.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Following Instructions",
+    "objective": "Learn to follow and give step-by-step technical instructions using imperatives and sequencing expressions.",
+    "examples": [
+      "First, unplug the device.",
+      "Then, remove the screws."
+    ],
+    "keywords": [
+      "first",
+      "next",
+      "then",
+      "instructions"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to follow and give step-by-step technical instructions using imperatives and sequencing expressions.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Technical Descriptions",
+    "objective": "Describe machines, systems, and parts using technical vocabulary and appropriate grammar.",
+    "examples": [
+      "The motor has a power output of 1200 watts.",
+      "It consists of three main components."
+    ],
+    "keywords": [
+      "describe",
+      "parts",
+      "components",
+      "function"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe machines, systems, and parts using technical vocabulary and appropriate grammar.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Work Orders and Requests",
+    "objective": "Understand and fill out work orders, requests, and service forms accurately.",
+    "examples": [
+      "The technician requested a new fuse.",
+      "Complete the service report before 5 p.m."
+    ],
+    "keywords": [
+      "work order",
+      "request",
+      "form",
+      "report"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to understand and fill out work orders, requests, and service forms accurately.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Email and Report Writing",
+    "objective": "Write basic professional emails and short technical reports clearly and concisely.",
+    "examples": [
+      "Subject: Request for Maintenance",
+      "Attached is the summary of the inspection."
+    ],
+    "keywords": [
+      "email",
+      "report",
+      "subject",
+      "summary"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to write basic professional emails and short technical reports clearly and concisely.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Measurements and Units",
+    "objective": "Interpret and express measurements, quantities, and units of length, weight, and volume in English.",
+    "examples": [
+      "The wire is 3.5 meters long.",
+      "The container holds 20 liters."
+    ],
+    "keywords": [
+      "meter",
+      "kilogram",
+      "liters",
+      "measure"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to interpret and express measurements, quantities, and units of length, weight, and volume in english.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Diagrams and Manuals",
+    "objective": "Read and interpret technical diagrams, schematics, and user manuals.",
+    "examples": [
+      "Refer to the circuit diagram on page 5.",
+      "This symbol indicates a ground connection."
+    ],
+    "keywords": [
+      "diagram",
+      "manual",
+      "schematic",
+      "label"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to read and interpret technical diagrams, schematics, and user manuals.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Customer Service",
+    "objective": "Handle basic customer interactions such as providing information, support, and solutions.",
+    "examples": [
+      "How can I help you today?",
+      "Let me check that for you."
+    ],
+    "keywords": [
+      "support",
+      "customer",
+      "help",
+      "service"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to handle basic customer interactions such as providing information, support, and solutions.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Scheduling and Appointments",
+    "objective": "Make and confirm appointments or work schedules using future forms and polite expressions.",
+    "examples": [
+      "We can schedule the maintenance for Tuesday.",
+      "I’ll confirm the appointment via email."
+    ],
+    "keywords": [
+      "schedule",
+      "appointment",
+      "confirm",
+      "reschedule"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to make and confirm appointments or work schedules using future forms and polite expressions.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Technical Problems and Solutions",
+    "objective": "Describe common technical problems and offer or ask for solutions.",
+    "examples": [
+      "The system is overheating.",
+      "Try resetting the main switch."
+    ],
+    "keywords": [
+      "problem",
+      "solution",
+      "troubleshoot",
+      "issue"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe common technical problems and offer or ask for solutions.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Workplace Instructions and Signs",
+    "objective": "Interpret workplace signs and give/receive directions within a technical setting.",
+    "examples": [
+      "Caution: Wet Floor.",
+      "This area is restricted."
+    ],
+    "keywords": [
+      "caution",
+      "sign",
+      "instruction",
+      "notice"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to interpret workplace signs and give/receive directions within a technical setting.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Materials and Properties",
+    "objective": "Talk about materials and describe physical and chemical properties relevant to a profession.",
+    "examples": [
+      "Aluminum is lightweight and resistant to corrosion.",
+      "Plastic is an insulator."
+    ],
+    "keywords": [
+      "material",
+      "property",
+      "metal",
+      "insulator"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to talk about materials and describe physical and chemical properties relevant to a profession.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Maintenance and Repairs",
+    "objective": "Describe maintenance tasks, identify faults, and explain repair processes.",
+    "examples": [
+      "The filter needs to be replaced every six months.",
+      "We repaired the leak using epoxy."
+    ],
+    "keywords": [
+      "maintenance",
+      "repair",
+      "fault",
+      "replace"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to describe maintenance tasks, identify faults, and explain repair processes.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Processes and Workflows",
+    "objective": "Explain a workflow or process in a technical field using connectors and passive voice.",
+    "examples": [
+      "The product is assembled in five stages.",
+      "Then it is packaged and labeled."
+    ],
+    "keywords": [
+      "process",
+      "workflow",
+      "passive",
+      "steps"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to explain a workflow or process in a technical field using connectors and passive voice.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Sustainability and Work Ethics",
+    "objective": "Discuss eco-friendly practices, sustainability, and workplace responsibility.",
+    "examples": [
+      "We recycle all packaging materials.",
+      "Honesty and punctuality are key values."
+    ],
+    "keywords": [
+      "sustainability",
+      "eco-friendly",
+      "values",
+      "ethics"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to discuss eco-friendly practices, sustainability, and workplace responsibility.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Interview and Job Applications",
+    "objective": "Prepare for technical job interviews and understand job advertisements.",
+    "examples": [
+      "Tell us about your technical skills.",
+      "Do you have experience with machinery?"
+    ],
+    "keywords": [
+      "interview",
+      "resume",
+      "experience",
+      "skills"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to prepare for technical job interviews and understand job advertisements.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Technical Vocabulary Review",
+    "objective": "Consolidate vocabulary from previous lessons through matching, sorting, and quizzes.",
+    "examples": [
+      "Match the tool with its use.",
+      "Choose the correct term for the diagram."
+    ],
+    "keywords": [
+      "review",
+      "match",
+      "quiz",
+      "practice"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to consolidate vocabulary from previous lessons through matching, sorting, and quizzes.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  },
+  {
+    "title": "Capstone Practice – Simulated Work Task",
+    "objective": "Complete a simulated technical task integrating reading, writing, listening, and speaking.",
+    "examples": [
+      "Read a work order, complete a checklist, and write a summary.",
+      "Present your solution to a technical problem in pairs."
+    ],
+    "keywords": [
+      "project",
+      "simulation",
+      "task",
+      "presentation"
+    ],
+    "learningOutcome": "By the end of this topic, students will be able to complete a simulated technical task integrating reading, writing, listening, and speaking.",
+    "cefrLevel": "B1",
+    "skillsCovered": [
+      "speaking",
+      "listening",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "technical",
+      "workplace",
+      "communication"
+    ]
+  }
+]

@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 17,
+  "sections": [
+    {
+      "title": "Advanced Structural Analysis and Design → Análisis y diseño estructural avanzado",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Dynamic analysis evaluates structures under varying loads",
+          "spanish": "El análisis dinámico evalúa estructuras bajo cargas variables"
+        },
+        {
+          "english": "Seismic design protects buildings from earthquake damage",
+          "spanish": "El diseño sísmico protege edificios de daños por terremotos"
+        },
+        {
+          "english": "Wind load analysis ensures structural stability",
+          "spanish": "El análisis de cargas de viento asegura estabilidad estructural"
+        },
+        {
+          "english": "Buckling analysis prevents structural instability",
+          "spanish": "El análisis de pandeo previene inestabilidad estructural"
+        },
+        {
+          "english": "Fatigue analysis predicts structural life under cyclic loading",
+          "spanish": "El análisis de fatiga predice vida estructural bajo carga cíclica"
+        },
+        {
+          "english": "Progressive collapse analysis ensures redundancy",
+          "spanish": "El análisis de colapso progresivo asegura redundancia"
+        },
+        {
+          "english": "Prestressed concrete design optimizes material efficiency",
+          "spanish": "El diseño de concreto presforzado optimiza eficiencia de materiales"
+        },
+        {
+          "english": "Steel connection design transfers loads safely",
+          "spanish": "El diseño de conexiones de acero transfiere cargas de manera segura"
+        },
+        {
+          "english": "Foundation design adapts to soil conditions",
+          "spanish": "El diseño de cimentación se adapta a condiciones del suelo"
+        },
+        {
+          "english": "Performance-based design optimizes structural response",
+          "spanish": "El diseño basado en rendimiento optimiza respuesta estructural"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of dynamic structural analysis?",
+          "options": ["To evaluate how structures respond to time-varying loads", "To make structures move", "To eliminate all vibrations"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is seismic design important in earthquake-prone areas?",
+          "options": ["It helps buildings resist or safely respond to earthquake forces", "It causes earthquakes", "It makes buildings heavier"],
+          "answer": 0
+        },
+        {
+          "audio": "What does buckling analysis help prevent?",
+          "options": ["Sudden structural failure due to instability under compression", "All structural movement", "Material corrosion"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Dynamic",
+          "suffix": "considers how structures respond to earthquake, wind, and other dynamic forces.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Dynamic analysis is essential for structures subjected to time-varying loads."
+        },
+        {
+          "prefix": "Seismic",
+          "suffix": "incorporates earthquake resistance features into structural systems.",
+          "answer": "design",
+          "selected": false,
+          "feedback": "Seismic design ensures buildings can survive earthquake events."
+        },
+        {
+          "prefix": "Fatigue",
+          "suffix": "predicts how repeated loading affects structural integrity over time.",
+          "answer": "analysis",
+          "selected": false,
+          "feedback": "Fatigue analysis is crucial for structures with cyclic loading."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Manufacturing Processes and Automation → Procesos de manufactura avanzados y automatización",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Flexible manufacturing systems adapt to product variations",
+          "spanish": "Los sistemas de manufactura flexible se adaptan a variaciones de producto"
+        },
+        {
+          "english": "Computer-integrated manufacturing coordinates all operations",
+          "spanish": "La manufactura integrada por computadora coordina todas las operaciones"
+        },
+        {
+          "english": "Rapid tooling accelerates production setup",
+          "spanish": "El herramental rápido acelera configuración de producción"
+        },
+        {
+          "english": "Mass customization combines efficiency with personalization",
+          "spanish": "La personalización en masa combina eficiencia con personalización"
+        },
+        {
+          "english": "Smart factories integrate IoT and AI technologies",
+          "spanish": "Las fábricas inteligentes integran tecnologías IoT e IA"
+        },
+        {
+          "english": "Automated guided vehicles transport materials efficiently",
+          "spanish": "Los vehículos guiados automatizados transportan materiales eficientemente"
+        },
+        {
+          "english": "Machine vision systems enable quality inspection",
+          "spanish": "Los sistemas de visión artificial permiten inspección de calidad"
+        },
+        {
+          "english": "Robotic assembly increases production consistency",
+          "spanish": "El ensamble robótico aumenta consistencia de producción"
+        },
+        {
+          "english": "Digital manufacturing integrates virtual and physical processes",
+          "spanish": "La manufactura digital integra procesos virtuales y físicos"
+        },
+        {
+          "english": "Lights-out manufacturing operates without human supervision",
+          "spanish": "La manufactura sin luces opera sin supervisión humana"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantage do flexible manufacturing systems offer?",
+          "options": ["They can quickly switch between different products", "They only make one product", "They are inflexible"],
+          "answer": 0
+        },
+        {
+          "audio": "How does computer-integrated manufacturing improve efficiency?",
+          "options": ["It coordinates all manufacturing operations through computer control", "It eliminates computers", "It slows down production"],
+          "answer": 0
+        },
+        {
+          "audio": "What is mass customization?",
+          "options": ["Producing customized products at mass production efficiency", "Making everything the same", "Only producing in small quantities"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Flexible manufacturing",
+          "suffix": "enable rapid reconfiguration for different product requirements.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "FMS provide the agility needed for modern manufacturing demands."
+        },
+        {
+          "prefix": "Smart",
+          "suffix": "use connectivity and intelligence to optimize manufacturing operations.",
+          "answer": "factories",
+          "selected": false,
+          "feedback": "Smart factories represent the future of connected manufacturing."
+        },
+        {
+          "prefix": "Machine vision",
+          "suffix": "enable automated quality control and defect detection.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Machine vision provides consistent and objective quality inspection."
+        }
+      ]
+    },
+    {
+      "title": "Environmental Impact Assessment and Mitigation → Evaluación de impacto ambiental y mitigación",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Environmental impact studies assess project effects",
+          "spanish": "Los estudios de impacto ambiental evalúan efectos de proyectos"
+        },
+        {
+          "english": "Life cycle assessment quantifies environmental footprints",
+          "spanish": "La evaluación del ciclo de vida cuantifica huellas ambientales"
+        },
+        {
+          "english": "Emission control systems reduce pollutant discharge",
+          "spanish": "Los sistemas de control de emisiones reducen descarga de contaminantes"
+        },
+        {
+          "english": "Waste minimization strategies reduce environmental burden",
+          "spanish": "Las estrategias de minimización de residuos reducen carga ambiental"
+        },
+        {
+          "english": "Renewable energy integration reduces carbon emissions",
+          "spanish": "La integración de energía renovable reduce emisiones de carbono"
+        },
+        {
+          "english": "Water treatment systems protect aquatic ecosystems",
+          "spanish": "Los sistemas de tratamiento de agua protegen ecosistemas acuáticos"
+        },
+        {
+          "english": "Biodiversity conservation preserves natural habitats",
+          "spanish": "La conservación de biodiversidad preserva hábitats naturales"
+        },
+        {
+          "english": "Carbon footprint reduction minimizes climate impact",
+          "spanish": "La reducción de huella de carbono minimiza impacto climático"
+        },
+        {
+          "english": "Sustainable design principles guide project development",
+          "spanish": "Los principios de diseño sostenible guían desarrollo de proyectos"
+        },
+        {
+          "english": "Environmental monitoring tracks ecosystem health",
+          "spanish": "El monitoreo ambiental rastrea salud del ecosistema"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of environmental impact assessment?",
+          "options": ["To evaluate potential environmental consequences before project approval", "To increase environmental damage", "To avoid all environmental considerations"],
+          "answer": 0
+        },
+        {
+          "audio": "How does life cycle assessment help in decision making?",
+          "options": ["It considers environmental impacts throughout a product's entire life", "It only looks at manufacturing", "It ignores environmental factors"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is biodiversity conservation important in engineering projects?",
+          "options": ["It maintains ecosystem balance and natural services", "It complicates projects unnecessarily", "It has no engineering relevance"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Environmental impact",
+          "suffix": "help identify and minimize negative project consequences.",
+          "answer": "studies",
+          "selected": false,
+          "feedback": "Environmental impact studies are crucial for sustainable development."
+        },
+        {
+          "prefix": "Life cycle",
+          "suffix": "provides comprehensive evaluation of environmental impacts.",
+          "answer": "assessment",
+          "selected": false,
+          "feedback": "LCA enables informed decisions about environmental trade-offs."
+        },
+        {
+          "prefix": "Waste minimization",
+          "suffix": "reduce both environmental impact and operational costs.",
+          "answer": "strategies",
+          "selected": false,
+          "feedback": "Waste minimization benefits both environment and economics."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Project Management Techniques → Técnicas avanzadas de gestión de proyectos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Agile project management adapts to changing requirements",
+          "spanish": "La gestión ágil de proyectos se adapta a requisitos cambiantes"
+        },
+        {
+          "english": "Critical chain methodology optimizes resource utilization",
+          "spanish": "La metodología de cadena crítica optimiza utilización de recursos"
+        },
+        {
+          "english": "Earned value management tracks project performance",
+          "spanish": "La gestión de valor ganado rastrea rendimiento del proyecto"
+        },
+        {
+          "english": "Risk management frameworks identify and mitigate uncertainties",
+          "spanish": "Los marcos de gestión de riesgo identifican y mitigan incertidumbres"
+        },
+        {
+          "english": "Stakeholder engagement ensures project alignment",
+          "spanish": "La participación de partes interesadas asegura alineación del proyecto"
+        },
+        {
+          "english": "Quality management systems maintain deliverable standards",
+          "spanish": "Los sistemas de gestión de calidad mantienen estándares de entregables"
+        },
+        {
+          "english": "Communication planning facilitates information flow",
+          "spanish": "La planificación de comunicación facilita flujo de información"
+        },
+        {
+          "english": "Change management controls project scope",
+          "spanish": "La gestión de cambios controla alcance del proyecto"
+        },
+        {
+          "english": "Portfolio management aligns projects with strategy",
+          "spanish": "La gestión de portafolio alinea proyectos con estrategia"
+        },
+        {
+          "english": "Lessons learned improve future project performance",
+          "spanish": "Las lecciones aprendidas mejoran rendimiento de proyectos futuros"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does agile project management differ from traditional approaches?",
+          "options": ["It emphasizes flexibility and iterative development", "It never changes plans", "It ignores customer feedback"],
+          "answer": 0
+        },
+        {
+          "audio": "What does earned value management measure?",
+          "options": ["Project progress in terms of scope, schedule, and cost", "Only project costs", "Only project schedules"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is stakeholder engagement important?",
+          "options": ["It ensures project outcomes meet stakeholder needs and expectations", "It complicates projects", "It slows down decision making"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Advanced Materials Characterization and Testing → Caracterización y pruebas avanzadas de materiales",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Scanning electron microscopy reveals microstructural details",
+          "spanish": "La microscopía electrónica de barrido revela detalles microestructurales"
+        },
+        {
+          "english": "X-ray diffraction identifies crystalline phases",
+          "spanish": "La difracción de rayos X identifica fases cristalinas"
+        },
+        {
+          "english": "Mechanical testing quantifies material properties",
+          "spanish": "Las pruebas mecánicas cuantifican propiedades de materiales"
+        },
+        {
+          "english": "Thermal analysis studies temperature-dependent behavior",
+          "spanish": "El análisis térmico estudia comportamiento dependiente de temperatura"
+        },
+        {
+          "english": "Spectroscopic methods determine chemical composition",
+          "spanish": "Los métodos espectroscópicos determinan composición química"
+        },
+        {
+          "english": "Non-destructive evaluation detects internal defects",
+          "spanish": "La evaluación no destructiva detecta defectos internos"
+        },
+        {
+          "english": "Tribological testing evaluates friction and wear",
+          "spanish": "Las pruebas tribológicas evalúan fricción y desgaste"
+        },
+        {
+          "english": "Corrosion testing assesses environmental degradation",
+          "spanish": "Las pruebas de corrosión evalúan degradación ambiental"
+        },
+        {
+          "english": "Fracture mechanics predicts crack propagation",
+          "spanish": "La mecánica de fractura predice propagación de grietas"
+        },
+        {
+          "english": "Statistical analysis validates test results",
+          "spanish": "El análisis estadístico valida resultados de pruebas"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Scanning electron",
+          "suffix": "provides high-resolution images of material surfaces and structures.",
+          "answer": "microscopy",
+          "selected": false,
+          "feedback": "SEM enables detailed examination of material microstructures."
+        },
+        {
+          "prefix": "X-ray",
+          "suffix": "reveals crystal structure and phase composition of materials.",
+          "answer": "diffraction",
+          "selected": false,
+          "feedback": "XRD is essential for understanding material crystalline structure."
+        },
+        {
+          "prefix": "Non-destructive",
+          "suffix": "allows testing without damaging the material or component.",
+          "answer": "evaluation",
+          "selected": false,
+          "feedback": "NDE methods preserve sample integrity while providing valuable information."
+        }
+      ]
+    }
+  ]
+}
+]
+

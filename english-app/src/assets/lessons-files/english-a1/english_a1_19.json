@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 19,
+    "sections": [
+      {
+        "title": "Future Plans and Dreams → Planes futuros y sueños",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "future", "spanish": "futuro" },
+          { "english": "plan", "spanish": "plan" },
+          { "english": "dream", "spanish": "sueño" },
+          { "english": "goal", "spanish": "meta" },
+          { "english": "ambition", "spanish": "ambición" },
+          { "english": "hope", "spanish": "esperanza" },
+          { "english": "wish", "spanish": "deseo" },
+          { "english": "will", "spanish": "voluntad" },
+          { "english": "going to", "spanish": "va a" },
+          { "english": "want to", "spanish": "querer" },
+          { "english": "would like to", "spanish": "me gustaría" },
+          { "english": "someday", "spanish": "algún día" },
+          { "english": "next year", "spanish": "el próximo año" },
+          { "english": "in five years", "spanish": "en cinco años" },
+          { "english": "eventually", "spanish": "eventualmente" }
+        ],
+        "listening": [
+          {
+            "audio": "What are your plans for the future?",
+            "options": ["What are your plans for the future?", "What are your plans for today?", "What are your plans for work?", "What are your plans for vacation?"],
+            "answer": "What are your plans for the future?"
+          },
+          {
+            "audio": "I want to become an engineer",
+            "options": ["I want to become an engineer", "I want to become a teacher", "I want to become a doctor", "I want to become a manager"],
+            "answer": "I want to become an engineer"
+          },
+          {
+            "audio": "My dream is to have my own business",
+            "options": ["My dream is to have my own business", "My dream is to travel the world", "My dream is to buy a house", "My dream is to learn English"],
+            "answer": "My dream is to have my own business"
+          },
+          {
+            "audio": "I'm going to study abroad next year",
+            "options": ["I'm going to study abroad next year", "I'm going to work abroad next year", "I'm going to travel abroad next year", "I'm going to live abroad next year"],
+            "answer": "I'm going to study abroad next year"
+          },
+          {
+            "audio": "Someday I will start my own company",
+            "options": ["Someday I will start my own company", "Someday I will buy a house", "Someday I will get married", "Someday I will retire"],
+            "answer": "Someday I will start my own company"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My goal", "My dream", "My plan"],
+            "suffix": "is to graduate from technical school.",
+            "answer": "My goal",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I want to", "I plan to", "I hope to"],
+            "suffix": "find a good job after graduation.",
+            "answer": "I want to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Next year", "In the future", "Someday"],
+            "suffix": "I will continue my education.",
+            "answer": "Next year",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'm going to", "I will", "I plan to"],
+            "suffix": "save money to start my own business.",
+            "answer": "I'm going to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My dream job", "My ideal career", "My perfect job"],
+            "suffix": "is working as a technician in a modern factory.",
+            "answer": "My dream job",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Career Goals and Professional Development → Metas profesionales y desarrollo profesional",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "career", "spanish": "carrera" },
+          { "english": "professional development", "spanish": "desarrollo profesional" },
+          { "english": "promotion", "spanish": "promoción" },
+          { "english": "advancement", "spanish": "ascenso" },
+          { "english": "leadership", "spanish": "liderazgo" },
+          { "english": "responsibility", "spanish": "responsabilidad" },
+          { "english": "skills", "spanish": "habilidades" },
+          { "english": "experience", "spanish": "experiencia" },
+          { "english": "mentorship", "spanish": "mentoría" },
+          { "english": "networking", "spanish": "establecer contactos" },
+          { "english": "certification", "spanish": "certificación" },
+          { "english": "specialization", "spanish": "especialización" },
+          { "english": "expertise", "spanish": "experiencia" },
+          { "english": "professional growth", "spanish": "crecimiento profesional" },
+          { "english": "career path", "spanish": "trayectoria profesional" }
+        ],
+        "listening": [
+          {
+            "audio": "I want to advance in my career",
+            "options": ["I want to advance in my career", "I want to change my career", "I want to end my career", "I want to start my career"],
+            "answer": "I want to advance in my career"
+          },
+          {
+            "audio": "Professional development is important",
+            "options": ["Professional development is important", "Professional development is expensive", "Professional development is difficult", "Professional development is unnecessary"],
+            "answer": "Professional development is important"
+          },
+          {
+            "audio": "I hope to get a promotion soon",
+            "options": ["I hope to get a promotion soon", "I hope to get a new job soon", "I hope to get a raise soon", "I hope to get training soon"],
+            "answer": "I hope to get a promotion soon"
+          },
+          {
+            "audio": "Leadership skills are valuable in any job",
+            "options": ["Leadership skills are valuable in any job", "Technical skills are valuable in any job", "Communication skills are valuable in any job", "Computer skills are valuable in any job"],
+            "answer": "Leadership skills are valuable in any job"
+          },
+          {
+            "audio": "I want to specialize in industrial automation",
+            "options": ["I want to specialize in industrial automation", "I want to specialize in computer programming", "I want to specialize in business management", "I want to specialize in quality control"],
+            "answer": "I want to specialize in industrial automation"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My career goal", "My professional objective", "My work ambition"],
+            "suffix": "is to become a team leader.",
+            "answer": "My career goal",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I want to develop", "I need to improve", "I plan to strengthen"],
+            "suffix": "my leadership and communication skills.",
+            "answer": "I want to develop",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Professional development", "Continuous learning", "Skill improvement"],
+            "suffix": "helps workers advance in their careers.",
+            "answer": "Professional development",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I hope to get", "I'm working towards", "I expect"],
+            "suffix": "a promotion within the next two years.",
+            "answer": "I hope to get",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical certification", "Professional qualification", "Specialized training"],
+            "suffix": "will help me advance in my career.",
+            "answer": "Technical certification",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Entrepreneurship and Business Ideas → Emprendimiento e ideas de negocio",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "entrepreneurship", "spanish": "emprendimiento" },
+          { "english": "entrepreneur", "spanish": "emprendedor" },
+          { "english": "business", "spanish": "negocio" },
+          { "english": "company", "spanish": "empresa" },
+          { "english": "startup", "spanish": "empresa emergente" },
+          { "english": "innovation", "spanish": "innovación" },
+          { "english": "opportunity", "spanish": "oportunidad" },
+          { "english": "investment", "spanish": "inversión" },
+          { "english": "profit", "spanish": "ganancia" },
+          { "english": "customer", "spanish": "cliente" },
+          { "english": "market", "spanish": "mercado" },
+          { "english": "competition", "spanish": "competencia" },
+          { "english": "business plan", "spanish": "plan de negocios" },
+          { "english": "risk", "spanish": "riesgo" },
+          { "english": "success", "spanish": "éxito" }
+        ],
+        "listening": [
+          {
+            "audio": "I want to start my own business",
+            "options": ["I want to start my own business", "I want to work for a big company", "I want to be an employee", "I want to retire early"],
+            "answer": "I want to start my own business"
+          },
+          {
+            "audio": "Entrepreneurship requires hard work and dedication",
+            "options": ["requires hard work and dedication", "is easy and profitable", "guarantees success", "doesn't need planning"],
+            "answer": "requires hard work and dedication"
+          },
+          {
+            "audio": "My business idea is to open a technical service center",
+            "options": ["open a technical service center", "start a restaurant", "create a software company", "begin a consulting business"],
+            "answer": "open a technical service center"
+          },
+          {
+            "audio": "Young entrepreneurs have many opportunities in Costa Rica",
+            "options": ["have many opportunities in Costa Rica", "face many challenges in Costa Rica", "cannot succeed in Costa Rica", "should leave Costa Rica"],
+            "answer": "have many opportunities in Costa Rica"
+          },
+          {
+            "audio": "Innovation is key to business success",
+            "options": ["Innovation is key to business success", "Money is key to business success", "Luck is key to business success", "Connections are key to business success"],
+            "answer": "Innovation is key to business success"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My dream", "My goal", "My ambition"],
+            "suffix": "is to become a successful entrepreneur.",
+            "answer": "My dream",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I have", "I'm developing", "I'm working on"],
+            "suffix": "a business idea for a technical repair shop.",
+            "answer": "I have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Starting a business", "Entrepreneurship", "Being an entrepreneur"],
+            "suffix": "requires courage and determination.",
+            "answer": "Starting a business",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical students", "IPEC graduates", "Young professionals"],
+            "suffix": "have the skills to start technology businesses.",
+            "answer": "Technical students",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rica supports", "The government encourages", "The country promotes"],
+            "suffix": "small business development and entrepreneurship.",
+            "answer": "Costa Rica supports",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Personal Development and Life Goals → Desarrollo personal y metas de vida",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "personal development", "spanish": "desarrollo personal" },
+          { "english": "self-improvement", "spanish": "automejoramiento" },
+          { "english": "life goals", "spanish": "metas de vida" },
+          { "english": "achievement", "spanish": "logro" },
+          { "english": "success", "spanish": "éxito" },
+          { "english": "happiness", "spanish": "felicidad" },
+          { "english": "motivation", "spanish": "motivación" },
+          { "english": "discipline", "spanish": "disciplina" },
+          { "english": "perseverance", "spanish": "perseverancia" },
+          { "english": "confidence", "spanish": "confianza" },
+          { "english": "learning", "spanish": "aprendizaje" },
+          { "english": "growth", "spanish": "crecimiento" },
+          { "english": "challenge", "spanish": "desafío" },
+          { "english": "opportunity", "spanish": "oportunidad" },
+          { "english": "balance", "spanish": "equilibrio" }
+        ],
+        "listening": [
+          {
+            "audio": "Personal development is a lifelong journey",
+            "options": ["Personal development is a lifelong journey", "Personal development is only for young people", "Personal development is not important", "Personal development is too difficult"],
+            "answer": "Personal development is a lifelong journey"
+          },
+          {
+            "audio": "I want to improve my communication skills",
+            "options": ["I want to improve my communication skills", "I want to improve my technical skills", "I want to improve my language skills", "I want to improve my computer skills"],
+            "answer": "I want to improve my communication skills"
+          },
+          {
+            "audio": "Setting goals helps you stay motivated",
+            "options": ["Setting goals helps you stay motivated", "Setting goals is a waste of time", "Setting goals is too difficult", "Setting goals doesn't work"],
+            "answer": "Setting goals helps you stay motivated"
+          },
+          {
+            "audio": "Learning English opens many opportunities",
+            "options": ["Learning English opens many opportunities", "Learning English is not necessary", "Learning English is too hard", "Learning English takes too long"],
+            "answer": "Learning English opens many opportunities"
+          },
+          {
+            "audio": "Work-life balance is important for happiness",
+            "options": ["Work-life balance is important for happiness", "Work is more important than life", "Life is more important than work", "Balance is impossible to achieve"],
+            "answer": "Work-life balance is important for happiness"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I believe in", "I'm committed to", "I focus on"],
+            "suffix": "continuous learning and self-improvement.",
+            "answer": "I believe in",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My life goal", "My personal objective", "My main ambition"],
+            "suffix": "is to have a successful and meaningful career.",
+            "answer": "My life goal",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Learning English", "Studying languages", "Developing language skills"],
+            "suffix": "will help me achieve my professional goals.",
+            "answer": "Learning English",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Personal growth", "Self-development", "Individual improvement"],
+            "suffix": "requires patience and consistent effort.",
+            "answer": "Personal growth",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I want to find", "I'm looking for", "I hope to achieve"],
+            "suffix": "a good balance between work and personal life.",
+            "answer": "I want to find",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Hopes for Costa Rica's Future → Esperanzas para el futuro de Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "country's future", "spanish": "futuro del país" },
+          { "english": "national development", "spanish": "desarrollo nacional" },
+          { "english": "economic growth", "spanish": "crecimiento económico" },
+          { "english": "social progress", "spanish": "progreso social" },
+          { "english": "education system", "spanish": "sistema educativo" },
+          { "english": "job opportunities", "spanish": "oportunidades laborales" },
+          { "english": "technology advancement", "spanish": "avance tecnológico" },
+          { "english": "environmental protection", "spanish": "protección ambiental" },
+          { "english": "sustainability", "spanish": "sostenibilidad" },
+          { "english": "innovation", "spanish": "innovación" },
+          { "english": "prosperity", "spanish": "prosperidad" },
+          { "english": "quality of life", "spanish": "calidad de vida" },
+          { "english": "youth development", "spanish": "desarrollo juvenil" },
+          { "english": "skilled workforce", "spanish": "fuerza laboral calificada" },
+          { "english": "bright future", "spanish": "futuro brillante" }
+        ],
+        "listening": [
+          {
+            "audio": "Costa Rica has a bright future ahead",
+            "options": ["Costa Rica has a bright future ahead", "Costa Rica has problems ahead", "Costa Rica has challenges ahead", "Costa Rica has uncertainty ahead"],
+            "answer": "Costa Rica has a bright future ahead"
+          },
+          {
+            "audio": "Technical education will drive economic growth",
+            "options": ["Technical education will drive economic growth", "University education will drive economic growth", "Foreign investment will drive economic growth", "Tourism will drive economic growth"],
+            "answer": "Technical education will drive economic growth"
+          },
+          {
+            "audio": "Young people are the future of the country",
+            "options": ["Young people are the future of the country", "Older people are the future of the country", "Foreigners are the future of the country", "Government is the future of the country"],
+            "answer": "Young people are the future of the country"
+          },
+          {
+            "audio": "Costa Rica leads in environmental protection",
+            "options": ["Costa Rica leads in environmental protection", "Costa Rica ignores environmental issues", "Costa Rica has environmental problems", "Costa Rica doesn't care about nature"],
+            "answer": "Costa Rica leads in environmental protection"
+          },
+          {
+            "audio": "Innovation and technology create new opportunities",
+            "options": ["create new opportunities", "eliminate old jobs", "make life more difficult", "are not important"],
+            "answer": "create new opportunities"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I believe", "I think", "I hope"],
+            "suffix": "Costa Rica will continue to prosper and develop.",
+            "answer": "I believe",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical education", "Vocational training", "Professional development"],
+            "suffix": "will help Costa Rica build a skilled workforce.",
+            "answer": "Technical education",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Young Costa Ricans", "The new generation", "Today's students"],
+            "suffix": "will shape the country's future.",
+            "answer": "Young Costa Ricans",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rica's commitment", "The country's focus", "Our nation's dedication"],
+            "suffix": "to sustainability sets a global example.",
+            "answer": "Costa Rica's commitment",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I want to contribute", "I hope to help", "I plan to participate"],
+            "suffix": "to my country's development and progress.",
+            "answer": "I want to contribute",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

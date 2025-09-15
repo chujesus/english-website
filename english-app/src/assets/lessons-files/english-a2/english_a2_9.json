@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 9,
+  "sections": [
+    {
+      "title": "Technical Process Vocabulary → Vocabulario de procesos técnicos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Measure the components",
+          "spanish": "Medir los componentes"
+        },
+        {
+          "english": "Cut the material to size",
+          "spanish": "Cortar el material a medida"
+        },
+        {
+          "english": "Assemble the parts",
+          "spanish": "Ensamblar las partes"
+        },
+        {
+          "english": "Weld the joints together",
+          "spanish": "Soldar las uniones"
+        },
+        {
+          "english": "Install the equipment",
+          "spanish": "Instalar el equipo"
+        },
+        {
+          "english": "Connect the wires",
+          "spanish": "Conectar los cables"
+        },
+        {
+          "english": "Test the system",
+          "spanish": "Probar el sistema"
+        },
+        {
+          "english": "Operate the machine",
+          "spanish": "Operar la máquina"
+        },
+        {
+          "english": "Maintain the equipment",
+          "spanish": "Mantener el equipo"
+        },
+        {
+          "english": "Repair the damage",
+          "spanish": "Reparar el daño"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the first step in most technical processes?",
+          "options": ["Testing", "Measuring and planning", "Installing"],
+          "answer": 1
+        },
+        {
+          "audio": "When should you test a system?",
+          "options": ["Before assembly", "After installation", "Never"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is measurement important in technical work?",
+          "options": ["For accuracy and precision", "To waste time", "To look professional"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "carefully before cutting materials.",
+          "answer": "measure",
+          "selected": false,
+          "feedback": "Accurate measurement prevents waste and ensures parts fit together properly."
+        },
+        {
+          "prefix": "After assembly,",
+          "suffix": "the system to ensure it works correctly.",
+          "answer": "test",
+          "selected": false,
+          "feedback": "Testing verifies that assembled systems function as designed."
+        },
+        {
+          "prefix": "Proper",
+          "suffix": "extends equipment life and prevents breakdowns.",
+          "answer": "maintenance",
+          "selected": false,
+          "feedback": "Regular maintenance keeps equipment operating efficiently and safely."
+        }
+      ]
+    },
+    {
+      "title": "Manufacturing and Production Steps → Pasos de manufactura y producción",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Raw materials arrive at the factory",
+          "spanish": "Las materias primas llegan a la fábrica"
+        },
+        {
+          "english": "Workers inspect the materials for quality",
+          "spanish": "Los trabajadores inspeccionan los materiales por calidad"
+        },
+        {
+          "english": "Machines shape the materials into parts",
+          "spanish": "Las máquinas forman los materiales en partes"
+        },
+        {
+          "english": "The assembly line puts parts together",
+          "spanish": "La línea de ensamblaje une las partes"
+        },
+        {
+          "english": "Quality control checks each product",
+          "spanish": "Control de calidad revisa cada producto"
+        },
+        {
+          "english": "Finished products move to packaging",
+          "spanish": "Los productos terminados van al empaque"
+        },
+        {
+          "english": "Packages are labeled and dated",
+          "spanish": "Los paquetes son etiquetados y fechados"
+        },
+        {
+          "english": "Products are stored in the warehouse",
+          "spanish": "Los productos se almacenan en el almacén"
+        },
+        {
+          "english": "Trucks transport goods to customers",
+          "spanish": "Los camiones transportan bienes a los clientes"
+        },
+        {
+          "english": "Customer feedback improves the process",
+          "spanish": "La retroalimentación del cliente mejora el proceso"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What happens after materials are inspected?",
+          "options": ["They are shipped", "They are processed into parts", "They are stored"],
+          "answer": 1
+        },
+        {
+          "audio": "Why is quality control important in production?",
+          "options": ["To ensure products meet standards", "To slow down production", "To increase costs"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the final step in the production process?",
+          "options": ["Assembly", "Quality control", "Shipping to customers"],
+          "answer": 2
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "The production process starts with",
+          "suffix": "materials coming to the factory.",
+          "answer": "raw",
+          "selected": false,
+          "feedback": "Raw materials are the starting point for most manufacturing processes."
+        },
+        {
+          "prefix": "Every product must pass",
+          "suffix": "control before packaging.",
+          "answer": "quality",
+          "selected": false,
+          "feedback": "Quality control ensures products meet specifications and customer expectations."
+        },
+        {
+          "prefix": "The",
+          "suffix": "line increases production efficiency.",
+          "answer": "assembly",
+          "selected": false,
+          "feedback": "Assembly lines organize work flow to maximize efficiency and consistency."
+        }
+      ]
+    },
+    {
+      "title": "Process Flow and Sequencing → Flujo de procesos y secuenciación",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "The process starts with preparation",
+          "spanish": "El proceso comienza con preparación"
+        },
+        {
+          "english": "Next, we heat the material",
+          "spanish": "Luego, calentamos el material"
+        },
+        {
+          "english": "Then, we apply pressure",
+          "spanish": "Después, aplicamos presión"
+        },
+        {
+          "english": "The cooling phase comes after heating",
+          "spanish": "La fase de enfriamiento viene después del calentamiento"
+        },
+        {
+          "english": "Finally, we inspect the result",
+          "spanish": "Finalmente, inspeccionamos el resultado"
+        },
+        {
+          "english": "Each step depends on the previous one",
+          "spanish": "Cada paso depende del anterior"
+        },
+        {
+          "english": "The sequence cannot be changed",
+          "spanish": "La secuencia no puede cambiarse"
+        },
+        {
+          "english": "Timing is critical in this process",
+          "spanish": "El tiempo es crítico en este proceso"
+        },
+        {
+          "english": "We monitor each stage carefully",
+          "spanish": "Monitoreamos cada etapa cuidadosamente"
+        },
+        {
+          "english": "The complete cycle takes two hours",
+          "spanish": "El ciclo completo toma dos horas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is the correct sequence important in technical processes?",
+          "options": ["It doesn't matter", "Each step prepares for the next", "To confuse workers"],
+          "answer": 1
+        },
+        {
+          "audio": "What happens if you skip a step in the process?",
+          "options": ["Nothing changes", "The result may be defective", "It saves time"],
+          "answer": 1
+        },
+        {
+          "audio": "How do you ensure proper timing in processes?",
+          "options": ["Guess the time", "Use timers and monitoring", "Work as fast as possible"],
+          "answer": 1
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Process",
+          "suffix": "ensure consistent and reliable results.",
+          "answer": "sequences",
+          "selected": false,
+          "feedback": "Following proper sequences is essential for achieving consistent, quality results."
+        },
+        {
+          "prefix": "Each",
+          "suffix": "in the process has a specific purpose.",
+          "answer": "step",
+          "selected": false,
+          "feedback": "Every step contributes to the overall success of the process."
+        },
+        {
+          "prefix": "Proper",
+          "suffix": "prevents errors and ensures quality.",
+          "answer": "timing",
+          "selected": false,
+          "feedback": "Correct timing is crucial for chemical reactions, cooling, heating, and other time-sensitive processes."
+        }
+      ]
+    },
+    {
+      "title": "Action Verbs in Technical Context → Verbos de acción en contexto técnico",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Calculate the measurements",
+          "spanish": "Calcular las mediciones"
+        },
+        {
+          "english": "Adjust the settings",
+          "spanish": "Ajustar las configuraciones"
+        },
+        {
+          "english": "Monitor the progress",
+          "spanish": "Monitorear el progreso"
+        },
+        {
+          "english": "Calibrate the instruments",
+          "spanish": "Calibrar los instrumentos"
+        },
+        {
+          "english": "Verify the results",
+          "spanish": "Verificar los resultados"
+        },
+        {
+          "english": "Document the procedure",
+          "spanish": "Documentar el procedimiento"
+        },
+        {
+          "english": "Analyze the data",
+          "spanish": "Analizar los datos"
+        },
+        {
+          "english": "Optimize the performance",
+          "spanish": "Optimizar el rendimiento"
+        },
+        {
+          "english": "Troubleshoot the problem",
+          "spanish": "Diagnosticar el problema"
+        },
+        {
+          "english": "Implement the solution",
+          "spanish": "Implementar la solución"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What does it mean to calibrate an instrument?",
+          "options": ["To break it", "To adjust it for accuracy", "To clean it"],
+          "answer": 1
+        },
+        {
+          "audio": "Why should technical procedures be documented?",
+          "options": ["For future reference and training", "To waste paper", "To look busy"],
+          "answer": 0
+        },
+        {
+          "audio": "What is the purpose of data analysis?",
+          "options": ["To understand patterns and make decisions", "To delete information", "To confuse people"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Quality Standards and Control → Estándares y control de calidad",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Products must meet quality standards",
+          "spanish": "Los productos deben cumplir estándares de calidad"
+        },
+        {
+          "english": "Inspectors check for defects",
+          "spanish": "Los inspectores revisan por defectos"
+        },
+        {
+          "english": "Specifications define acceptable limits",
+          "spanish": "Las especificaciones definen límites aceptables"
+        },
+        {
+          "english": "Rejected items go to rework",
+          "spanish": "Los artículos rechazados van a reproceso"
+        },
+        {
+          "english": "Quality certificates verify compliance",
+          "spanish": "Los certificados de calidad verifican cumplimiento"
+        },
+        {
+          "english": "Statistical process control monitors trends",
+          "spanish": "El control estadístico de procesos monitorea tendencias"
+        },
+        {
+          "english": "Continuous improvement reduces waste",
+          "spanish": "La mejora continua reduce desperdicios"
+        },
+        {
+          "english": "Customer satisfaction drives quality goals",
+          "spanish": "La satisfacción del cliente impulsa objetivos de calidad"
+        },
+        {
+          "english": "Training ensures consistent quality",
+          "spanish": "La capacitación asegura calidad consistente"
+        },
+        {
+          "english": "Quality audits evaluate system effectiveness",
+          "spanish": "Las auditorías de calidad evalúan efectividad del sistema"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "All products must",
+          "suffix": "established quality standards.",
+          "answer": "meet",
+          "selected": false,
+          "feedback": "Meeting quality standards ensures customer satisfaction and regulatory compliance."
+        },
+        {
+          "prefix": "Quality",
+          "suffix": "help identify and prevent defects.",
+          "answer": "inspections",
+          "selected": false,
+          "feedback": "Regular inspections catch problems early and maintain product quality."
+        },
+        {
+          "prefix": "Continuous",
+          "suffix": "leads to better processes and products.",
+          "answer": "improvement",
+          "selected": false,
+          "feedback": "Ongoing improvement efforts enhance quality and reduce costs over time."
+        }
+      ]
+    }
+  ]
+}
+]
+

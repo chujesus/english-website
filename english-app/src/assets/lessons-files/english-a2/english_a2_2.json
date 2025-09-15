@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A2",
+    "lessonId": 2,
+    "sections": [
+      {
+        "title": "Technical Vocabulary for Processes → Vocabulario técnico para procesos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The assembly process takes three hours", "spanish": "El proceso de ensamblaje toma tres horas" },
+          { "english": "We need to install the new software", "spanish": "Necesitamos instalar el nuevo software" },
+          { "english": "The machine operates automatically", "spanish": "La máquina opera automáticamente" },
+          { "english": "Please calibrate the instruments", "spanish": "Por favor calibra los instrumentos" },
+          { "english": "The system requires regular maintenance", "spanish": "El sistema requiere mantenimiento regular" },
+          { "english": "We are testing the new equipment", "spanish": "Estamos probando el nuevo equipo" },
+          { "english": "The production line is running smoothly", "spanish": "La línea de producción está funcionando bien" },
+          { "english": "We need to adjust the settings", "spanish": "Necesitamos ajustar las configuraciones" },
+          { "english": "The quality control process is important", "spanish": "El proceso de control de calidad es importante" },
+          { "english": "We measure the temperature every hour", "spanish": "Medimos la temperatura cada hora" },
+          { "english": "The motor is overheating", "spanish": "El motor se está sobrecalentando" },
+          { "english": "We connect the cables properly", "spanish": "Conectamos los cables correctamente" },
+          { "english": "The computer processes the data", "spanish": "La computadora procesa los datos" },
+          { "english": "We inspect all components carefully", "spanish": "Inspeccionamos todos los componentes cuidadosamente" },
+          { "english": "The welding process requires skill", "spanish": "El proceso de soldadura requiere habilidad" }
+        ],
+        "listening": [
+          {
+            "audio": "The manufacturing process begins with material preparation and quality inspection",
+            "options": ["material preparation and quality inspection", "final assembly and packaging", "equipment maintenance and repair", "software installation and testing"],
+            "answer": "material preparation and quality inspection"
+          },
+          {
+            "audio": "We need to monitor the temperature throughout the entire heating process",
+            "options": ["monitor the temperature throughout", "check the pressure occasionally", "adjust the speed regularly", "replace the parts frequently"],
+            "answer": "monitor the temperature throughout"
+          },
+          {
+            "audio": "The automated system controls the production line efficiently",
+            "options": ["controls the production line efficiently", "operates the safety equipment manually", "manages the inventory system slowly", "handles the shipping process carefully"],
+            "answer": "controls the production line efficiently"
+          },
+          {
+            "audio": "Quality testing is performed at multiple stages during production",
+            "options": ["at multiple stages during production", "only at the end of the process", "once per day maximum", "when problems are detected"],
+            "answer": "at multiple stages during production"
+          },
+          {
+            "audio": "The calibration procedure must be followed exactly as written",
+            "options": ["followed exactly as written", "modified according to experience", "simplified for efficiency", "skipped when unnecessary"],
+            "answer": "followed exactly as written"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The assembly", "The manufacturing", "The production"],
+            "suffix": "process requires careful planning.",
+            "answer": "The assembly",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We install", "We set up", "We configure"],
+            "suffix": "the equipment according to specifications.",
+            "answer": "We install",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The system", "The machine", "The equipment"],
+            "suffix": "operates efficiently when properly maintained.",
+            "answer": "The system",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We need to", "We have to", "We must"],
+            "suffix": "calibrate the sensors regularly.",
+            "answer": "We need to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Quality control", "Testing procedures", "Inspection methods"],
+            "suffix": "ensure product reliability.",
+            "answer": "Quality control",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Describing Materials and Quantities → Describiendo materiales y cantidades",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "This metal is very strong", "spanish": "Este metal es muy resistente" },
+          { "english": "We need fifty kilograms of steel", "spanish": "Necesitamos cincuenta kilogramos de acero" },
+          { "english": "The plastic is lightweight but durable", "spanish": "El plástico es liviano pero duradero" },
+          { "english": "How much aluminum do we have?", "spanish": "¿Cuánto aluminio tenemos?" },
+          { "english": "The wood is two meters long", "spanish": "La madera mide dos metros de largo" },
+          { "english": "We ordered a hundred screws", "spanish": "Pedimos cien tornillos" },
+          { "english": "The glass is three millimeters thick", "spanish": "El vidrio tiene tres milímetros de grosor" },
+          { "english": "This material is heat-resistant", "spanish": "Este material es resistente al calor" },
+          { "english": "We have enough copper wire", "spanish": "Tenemos suficiente alambre de cobre" },
+          { "english": "The fabric is waterproof", "spanish": "La tela es impermeable" },
+          { "english": "Each bolt weighs twenty grams", "spanish": "Cada perno pesa veinte gramos" },
+          { "english": "The rubber gasket is flexible", "spanish": "La junta de goma es flexible" },
+          { "english": "We use stainless steel pipes", "spanish": "Usamos tubos de acero inoxidable" },
+          { "english": "The concrete is still wet", "spanish": "El concreto aún está húmedo" },
+          { "english": "Carbon fiber is very expensive", "spanish": "La fibra de carbono es muy cara" }
+        ],
+        "listening": [
+          {
+            "audio": "We need approximately twenty meters of electrical cable for this installation",
+            "options": ["twenty meters of electrical cable", "thirty feet of copper wire", "forty centimeters of fiber optic", "fifty inches of steel conduit"],
+            "answer": "twenty meters of electrical cable"
+          },
+          {
+            "audio": "The steel beams must be at least fifteen centimeters thick",
+            "options": ["fifteen centimeters thick", "twenty millimeters wide", "thirty inches long", "forty degrees hot"],
+            "answer": "fifteen centimeters thick"
+          },
+          {
+            "audio": "This high-grade aluminum alloy is perfect for aerospace applications",
+            "options": ["high-grade aluminum alloy", "standard carbon steel", "basic plastic polymer", "regular copper material"],
+            "answer": "high-grade aluminum alloy"
+          },
+          {
+            "audio": "The inventory shows we have sufficient raw materials for the next month",
+            "options": ["sufficient raw materials", "inadequate finished products", "excessive packaging supplies", "limited maintenance tools"],
+            "answer": "sufficient raw materials"
+          },
+          {
+            "audio": "Each component weighs exactly two point five kilograms",
+            "options": ["two point five kilograms", "three point two pounds", "four point seven grams", "five point one tons"],
+            "answer": "two point five kilograms"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["This material", "This substance", "This component"],
+            "suffix": "is highly resistant to corrosion.",
+            "answer": "This material",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We need", "We require", "We must order"],
+            "suffix": "more raw materials for production.",
+            "answer": "We need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The metal", "The alloy", "The steel"],
+            "suffix": "meets all industry specifications.",
+            "answer": "The metal",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Each piece", "Every component", "All parts"],
+            "suffix": "must be measured precisely.",
+            "answer": "Each piece",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The inventory", "The stock", "The supply"],
+            "suffix": "contains various types of materials.",
+            "answer": "The inventory",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Giving and Receiving Feedback → Dando y recibiendo retroalimentación",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Your work is excellent", "spanish": "Tu trabajo es excelente" },
+          { "english": "I think you should try again", "spanish": "Creo que deberías intentar de nuevo" },
+          { "english": "That's a good improvement", "spanish": "Esa es una buena mejora" },
+          { "english": "You need to be more careful", "spanish": "Necesitas ser más cuidadoso" },
+          { "english": "I agree with your suggestion", "spanish": "Estoy de acuerdo con tu sugerencia" },
+          { "english": "Could you explain that better?", "spanish": "¿Podrías explicar eso mejor?" },
+          { "english": "I appreciate your help", "spanish": "Aprecio tu ayuda" },
+          { "english": "This needs some adjustment", "spanish": "Esto necesita algún ajuste" },
+          { "english": "You're doing a great job", "spanish": "Estás haciendo un gran trabajo" },
+          { "english": "I have a different opinion", "spanish": "Tengo una opinión diferente" },
+          { "english": "What do you think about this?", "spanish": "¿Qué piensas sobre esto?" },
+          { "english": "Your idea makes sense", "spanish": "Tu idea tiene sentido" },
+          { "english": "I'm not sure about that", "spanish": "No estoy seguro sobre eso" },
+          { "english": "Thanks for the feedback", "spanish": "Gracias por la retroalimentación" },
+          { "english": "Let's discuss this further", "spanish": "Discutamos esto más" }
+        ],
+        "listening": [
+          {
+            "audio": "Your technical report was very thorough and well-organized",
+            "options": ["very thorough and well-organized", "somewhat incomplete and unclear", "too long and complicated", "basic but acceptable"],
+            "answer": "very thorough and well-organized"
+          },
+          {
+            "audio": "I suggest you double-check the calculations before submitting",
+            "options": ["double-check the calculations", "rewrite the entire document", "ask for external help", "submit it immediately"],
+            "answer": "double-check the calculations"
+          },
+          {
+            "audio": "The presentation could benefit from more visual aids and examples",
+            "options": ["more visual aids and examples", "less detailed explanations", "fewer technical terms", "shorter duration overall"],
+            "answer": "more visual aids and examples"
+          },
+          {
+            "audio": "I appreciate how you handled that difficult technical problem",
+            "options": ["handled that difficult technical problem", "completed the routine maintenance", "organized the tool inventory", "wrote the safety report"],
+            "answer": "handled that difficult technical problem"
+          },
+          {
+            "audio": "Your attention to safety procedures has improved significantly",
+            "options": ["improved significantly", "remained the same", "decreased recently", "needs more work"],
+            "answer": "improved significantly"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Your work", "Your project", "Your assignment"],
+            "suffix": "shows excellent attention to detail.",
+            "answer": "Your work",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I think", "I believe", "I feel"],
+            "suffix": "you could improve this aspect.",
+            "answer": "I think",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["That's", "This is", "It's"],
+            "suffix": "a very creative solution.",
+            "answer": "That's",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Could you", "Would you", "Can you"],
+            "suffix": "clarify that technical point?",
+            "answer": "Could you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Thanks for", "I appreciate", "Thank you for"],
+            "suffix": "your constructive comments.",
+            "answer": "Thanks for",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Understanding Manuals and Diagrams → Entendiendo manuales y diagramas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "The diagram shows the wiring connections", "spanish": "El diagrama muestra las conexiones de cableado" },
+          { "english": "Follow the instructions step by step", "spanish": "Sigue las instrucciones paso a paso" },
+          { "english": "The manual explains how to operate", "spanish": "El manual explica cómo operar" },
+          { "english": "Look at page fifteen for details", "spanish": "Mira la página quince para detalles" },
+          { "english": "The arrow points to the switch", "spanish": "La flecha apunta al interruptor" },
+          { "english": "Read the safety warnings first", "spanish": "Lee las advertencias de seguridad primero" },
+          { "english": "The parts list is on page three", "spanish": "La lista de partes está en la página tres" },
+          { "english": "This symbol means danger", "spanish": "Este símbolo significa peligro" },
+          { "english": "The troubleshooting guide helps", "spanish": "La guía de solución de problemas ayuda" },
+          { "english": "Check the assembly diagram", "spanish": "Revisa el diagrama de ensamblaje" },
+          { "english": "The specifications are detailed", "spanish": "Las especificaciones están detalladas" },
+          { "english": "Use the correct torque setting", "spanish": "Usa la configuración de torque correcta" },
+          { "english": "The schematic shows electrical flow", "spanish": "El esquema muestra el flujo eléctrico" },
+          { "english": "Always consult the manual", "spanish": "Siempre consulta el manual" },
+          { "english": "The diagram is easy to understand", "spanish": "El diagrama es fácil de entender" }
+        ],
+        "listening": [
+          {
+            "audio": "According to the installation manual, connect the red wire to terminal A",
+            "options": ["connect the red wire to terminal A", "attach the blue cable to port B", "join the yellow wire to socket C", "link the green wire to point D"],
+            "answer": "connect the red wire to terminal A"
+          },
+          {
+            "audio": "The circuit diagram clearly indicates the power flow direction",
+            "options": ["clearly indicates the power flow direction", "shows the component locations only", "explains the safety procedures", "lists the required tools"],
+            "answer": "clearly indicates the power flow direction"
+          },
+          {
+            "audio": "Before beginning assembly, review all the safety warnings in section two",
+            "options": ["review all the safety warnings in section two", "gather all necessary tools first", "check the parts inventory", "prepare the work area"],
+            "answer": "review all the safety warnings in section two"
+          },
+          {
+            "audio": "The troubleshooting flowchart helps identify common problems quickly",
+            "options": ["helps identify common problems quickly", "provides detailed repair procedures", "lists replacement part numbers", "explains preventive maintenance"],
+            "answer": "helps identify common problems quickly"
+          },
+          {
+            "audio": "The technical specifications table contains all the critical measurements",
+            "options": ["contains all the critical measurements", "shows only basic dimensions", "includes color coding information", "provides assembly sequence"],
+            "answer": "contains all the critical measurements"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The manual", "The guide", "The instructions"],
+            "suffix": "contains important safety information.",
+            "answer": "The manual",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Follow", "Complete", "Perform"],
+            "suffix": "each step in the correct order.",
+            "answer": "Follow",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The diagram", "The schematic", "The drawing"],
+            "suffix": "illustrates the component relationships.",
+            "answer": "The diagram",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Always read", "Be sure to check", "Make sure to review"],
+            "suffix": "the warnings before starting.",
+            "answer": "Always read",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The symbols", "The icons", "The markings"],
+            "suffix": "have specific meanings in technical drawings.",
+            "answer": "The symbols",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Customer Service Basics → Fundamentos de servicio al cliente",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "How can I help you today?", "spanish": "¿Cómo puedo ayudarte hoy?" },
+          { "english": "I'll check that for you", "spanish": "Revisaré eso para ti" },
+          { "english": "Thank you for your patience", "spanish": "Gracias por tu paciencia" },
+          { "english": "Let me find the solution", "spanish": "Déjame encontrar la solución" },
+          { "english": "I understand your concern", "spanish": "Entiendo tu preocupación" },
+          { "english": "The repair will take two days", "spanish": "La reparación tomará dos días" },
+          { "english": "Do you have the warranty?", "spanish": "¿Tienes la garantía?" },
+          { "english": "I apologize for the inconvenience", "spanish": "Me disculpo por la inconveniencia" },
+          { "english": "We'll fix this problem", "spanish": "Arreglaremos este problema" },
+          { "english": "Is there anything else?", "spanish": "¿Hay algo más?" },
+          { "english": "Please fill out this form", "spanish": "Por favor llena este formulario" },
+          { "english": "I'll call you when it's ready", "spanish": "Te llamaré cuando esté listo" },
+          { "english": "The cost includes labor", "spanish": "El costo incluye mano de obra" },
+          { "english": "We guarantee our work", "spanish": "Garantizamos nuestro trabajo" },
+          { "english": "Have a nice day", "spanish": "Que tengas un buen día" }
+        ],
+        "listening": [
+          {
+            "audio": "Good morning, welcome to our technical service center, how may I assist you?",
+            "options": ["how may I assist you", "what brings you here today", "do you have an appointment", "which service do you need"],
+            "answer": "how may I assist you"
+          },
+          {
+            "audio": "I'll need to examine the equipment before providing an accurate estimate",
+            "options": ["examine the equipment before providing an estimate", "order replacement parts immediately", "contact the manufacturer first", "schedule a follow-up appointment"],
+            "answer": "examine the equipment before providing an estimate"
+          },
+          {
+            "audio": "The warranty covers parts and labor for the first twelve months",
+            "options": ["parts and labor for the first twelve months", "only manufacturing defects", "basic repairs for six months", "replacement costs exclusively"],
+            "answer": "parts and labor for the first twelve months"
+          },
+          {
+            "audio": "I understand your frustration, and we'll resolve this issue as quickly as possible",
+            "options": ["resolve this issue as quickly as possible", "schedule another appointment", "refer you to another technician", "provide a full refund"],
+            "answer": "resolve this issue as quickly as possible"
+          },
+          {
+            "audio": "Please keep your receipt as proof of service for warranty purposes",
+            "options": ["keep your receipt as proof of service", "return next week for inspection", "contact us if problems continue", "register the product online"],
+            "answer": "keep your receipt as proof of service"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["How can", "How may", "What can"],
+            "suffix": "I help you today?",
+            "answer": "How can",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I'll check", "I'll verify", "I'll examine"],
+            "suffix": "the equipment thoroughly.",
+            "answer": "I'll check",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Thank you for", "I appreciate", "Thanks for"],
+            "suffix": "bringing this to our attention.",
+            "answer": "Thank you for",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The repair", "The service", "The fix"],
+            "suffix": "should be completed by tomorrow.",
+            "answer": "The repair",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We guarantee", "We assure", "We promise"],
+            "suffix": "quality workmanship on all repairs.",
+            "answer": "We guarantee",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

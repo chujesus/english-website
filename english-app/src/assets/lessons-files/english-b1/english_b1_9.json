@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 9,
+  "sections": [
+    {
+      "title": "Robotics and Automation Systems → Robótica y sistemas de automatización",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Industrial robots perform repetitive tasks with precision",
+          "spanish": "Los robots industriales realizan tareas repetitivas con precisión"
+        },
+        {
+          "english": "Articulated manipulators provide multi-axis movement",
+          "spanish": "Los manipuladores articulados proporcionan movimiento multi-eje"
+        },
+        {
+          "english": "End-effectors adapt robots for specific applications",
+          "spanish": "Los efectores finales adaptan robots para aplicaciones específicas"
+        },
+        {
+          "english": "Servo motors enable precise positional control",
+          "spanish": "Los servomotores permiten control posicional preciso"
+        },
+        {
+          "english": "Vision systems guide robotic operations",
+          "spanish": "Los sistemas de visión guían operaciones robóticas"
+        },
+        {
+          "english": "Collaborative robots work safely alongside humans",
+          "spanish": "Los robots colaborativos trabajan de manera segura junto a humanos"
+        },
+        {
+          "english": "Path planning algorithms optimize robot movements",
+          "spanish": "Los algoritmos de planificación de rutas optimizan movimientos de robots"
+        },
+        {
+          "english": "Force feedback enables delicate manipulation",
+          "spanish": "La retroalimentación de fuerza permite manipulación delicada"
+        },
+        {
+          "english": "Automation cells integrate multiple robotic systems",
+          "spanish": "Las celdas de automatización integran múltiples sistemas robóticos"
+        },
+        {
+          "english": "Artificial intelligence enhances robot decision-making",
+          "spanish": "La inteligencia artificial mejora toma de decisiones de robots"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantages do industrial robots offer in manufacturing?",
+          "options": ["Consistent precision and the ability to work in dangerous environments", "They replace all human workers", "They are always cheaper than human labor"],
+          "answer": 0
+        },
+        {
+          "audio": "How do collaborative robots differ from traditional industrial robots?",
+          "options": ["They are designed to work safely alongside humans without safety barriers", "They are smaller", "They are less precise"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are vision systems important for robotic applications?",
+          "options": ["They enable robots to adapt to variations in their environment", "They make robots see colors", "They are only decorative"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Industrial",
+          "suffix": "increase manufacturing consistency while reducing human exposure to hazards.",
+          "answer": "robots",
+          "selected": false,
+          "feedback": "Industrial robots excel at repetitive tasks in challenging environments."
+        },
+        {
+          "prefix": "Vision",
+          "suffix": "enable robots to perform quality inspection and adaptive assembly.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Robot vision systems provide the sensory feedback needed for intelligent automation."
+        },
+        {
+          "prefix": "Path planning",
+          "suffix": "calculate efficient robot movements while avoiding obstacles.",
+          "answer": "algorithms",
+          "selected": false,
+          "feedback": "Advanced path planning enables robots to navigate complex environments efficiently."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Quality Control Systems → Sistemas avanzados de control de calidad",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Coordinate measuring machines verify dimensional accuracy",
+          "spanish": "Las máquinas de medición por coordenadas verifican precisión dimensional"
+        },
+        {
+          "english": "Non-destructive testing detects internal defects",
+          "spanish": "Las pruebas no destructivas detectan defectos internos"
+        },
+        {
+          "english": "Optical inspection systems identify surface irregularities",
+          "spanish": "Los sistemas de inspección óptica identifican irregularidades superficiales"
+        },
+        {
+          "english": "Statistical sampling ensures representative quality assessment",
+          "spanish": "El muestreo estadístico asegura evaluación de calidad representativa"
+        },
+        {
+          "english": "Calibration procedures maintain measurement accuracy",
+          "spanish": "Los procedimientos de calibración mantienen precisión de medición"
+        },
+        {
+          "english": "Gauge repeatability studies validate measurement systems",
+          "spanish": "Los estudios de repetibilidad de calibradores validan sistemas de medición"
+        },
+        {
+          "english": "Process capability indices quantify manufacturing consistency",
+          "spanish": "Los índices de capacidad del proceso cuantifican consistencia de manufactura"
+        },
+        {
+          "english": "Control charts monitor process stability over time",
+          "spanish": "Las gráficas de control monitorean estabilidad del proceso a través del tiempo"
+        },
+        {
+          "english": "Failure analysis determines root causes of defects",
+          "spanish": "El análisis de fallas determina causas raíz de defectos"
+        },
+        {
+          "english": "Quality assurance protocols prevent defective products",
+          "spanish": "Los protocolos de aseguramiento de calidad previenen productos defectuosos"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the purpose of coordinate measuring machines?",
+          "options": ["To precisely measure geometric dimensions and tolerances", "To cut materials", "To paint surfaces"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is non-destructive testing important in quality control?",
+          "options": ["It detects defects without damaging the tested parts", "It destroys all tested parts", "It only works on metals"],
+          "answer": 0
+        },
+        {
+          "audio": "How do control charts help maintain quality?",
+          "options": ["They identify when processes are becoming unstable", "They slow down production", "They increase costs"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Coordinate measuring",
+          "suffix": "provide precise dimensional verification for complex geometries.",
+          "answer": "machines",
+          "selected": false,
+          "feedback": "CMMs are essential for ensuring parts meet tight dimensional tolerances."
+        },
+        {
+          "prefix": "Non-destructive",
+          "suffix": "allows quality verification without compromising product integrity.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "NDT methods preserve product value while ensuring quality standards."
+        },
+        {
+          "prefix": "Process capability",
+          "suffix": "measure how well a process can meet specification requirements.",
+          "answer": "indices",
+          "selected": false,
+          "feedback": "Process capability indices provide quantitative measures of manufacturing performance."
+        }
+      ]
+    },
+    {
+      "title": "Supply Chain Management and Logistics → Gestión de cadena de suministro y logística",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Supply chain optimization reduces costs and delivery times",
+          "spanish": "La optimización de cadena de suministro reduce costos y tiempos de entrega"
+        },
+        {
+          "english": "Vendor management ensures reliable component sourcing",
+          "spanish": "La gestión de proveedores asegura abastecimiento confiable de componentes"
+        },
+        {
+          "english": "Inventory management balances availability with carrying costs",
+          "spanish": "La gestión de inventario equilibra disponibilidad con costos de mantenimiento"
+        },
+        {
+          "english": "Demand forecasting predicts future requirements",
+          "spanish": "El pronóstico de demanda predice requerimientos futuros"
+        },
+        {
+          "english": "Distribution networks deliver products efficiently",
+          "spanish": "Las redes de distribución entregan productos eficientemente"
+        },
+        {
+          "english": "Warehouse automation streamlines storage operations",
+          "spanish": "La automatización de almacenes optimiza operaciones de almacenamiento"
+        },
+        {
+          "english": "Transportation optimization minimizes shipping costs",
+          "spanish": "La optimización del transporte minimiza costos de envío"
+        },
+        {
+          "english": "Supply chain visibility enables proactive management",
+          "spanish": "La visibilidad de cadena de suministro permite gestión proactiva"
+        },
+        {
+          "english": "Risk management strategies protect against disruptions",
+          "spanish": "Las estrategias de gestión de riesgo protegen contra interrupciones"
+        },
+        {
+          "english": "Performance metrics monitor supply chain efficiency",
+          "spanish": "Las métricas de rendimiento monitorean eficiencia de cadena de suministro"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the primary goal of supply chain optimization?",
+          "options": ["To deliver products efficiently while minimizing total costs", "To increase inventory levels", "To slow down deliveries"],
+          "answer": 0
+        },
+        {
+          "audio": "How does demand forecasting benefit supply chain management?",
+          "options": ["It helps plan inventory levels and production schedules", "It increases uncertainty", "It eliminates all planning"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is supply chain visibility important?",
+          "options": ["It enables managers to identify and respond to problems quickly", "It creates more complexity", "It hides information"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Supply chain",
+          "suffix": "involves coordinating all activities from raw materials to final delivery.",
+          "answer": "management",
+          "selected": false,
+          "feedback": "Effective supply chain management integrates all processes to deliver customer value."
+        },
+        {
+          "prefix": "Demand",
+          "suffix": "uses historical data and market analysis to predict future needs.",
+          "answer": "forecasting",
+          "selected": false,
+          "feedback": "Accurate demand forecasting is crucial for efficient resource planning."
+        },
+        {
+          "prefix": "Risk management",
+          "suffix": "identify potential disruptions and develop contingency plans.",
+          "answer": "strategies",
+          "selected": false,
+          "feedback": "Proactive risk management ensures supply chain resilience and continuity."
+        }
+      ]
+    },
+    {
+      "title": "Environmental Engineering and Remediation → Ingeniería ambiental y remediación",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Contamination assessment identifies pollution sources and extent",
+          "spanish": "La evaluación de contaminación identifica fuentes y extensión de polución"
+        },
+        {
+          "english": "Bioremediation uses microorganisms to degrade pollutants",
+          "spanish": "La biorremediación usa microorganismos para degradar contaminantes"
+        },
+        {
+          "english": "Phytoremediation employs plants to remove contaminants",
+          "spanish": "La fitorremediación emplea plantas para remover contaminantes"
+        },
+        {
+          "english": "Groundwater treatment systems restore aquifer quality",
+          "spanish": "Los sistemas de tratamiento de agua subterránea restauran calidad del acuífero"
+        },
+        {
+          "english": "Air pollution control devices reduce emissions",
+          "spanish": "Los dispositivos de control de contaminación del aire reducen emisiones"
+        },
+        {
+          "english": "Waste treatment facilities process industrial byproducts",
+          "spanish": "Las instalaciones de tratamiento de residuos procesan subproductos industriales"
+        },
+        {
+          "english": "Environmental monitoring tracks ecosystem health",
+          "spanish": "El monitoreo ambiental rastrea salud del ecosistema"
+        },
+        {
+          "english": "Regulatory compliance ensures environmental protection",
+          "spanish": "El cumplimiento regulatorio asegura protección ambiental"
+        },
+        {
+          "english": "Ecological restoration rebuilds damaged habitats",
+          "spanish": "La restauración ecológica reconstruye hábitats dañados"
+        },
+        {
+          "english": "Sustainability metrics measure environmental impact",
+          "spanish": "Las métricas de sostenibilidad miden impacto ambiental"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "How does bioremediation work to clean up contamination?",
+          "options": ["It uses naturally occurring or engineered microorganisms to break down pollutants", "It uses only chemicals", "It removes all soil"],
+          "answer": 0
+        },
+        {
+          "audio": "What advantage does phytoremediation offer?",
+          "options": ["It's a natural, cost-effective method using plants to remove contaminants", "It's faster than all other methods", "It only works in laboratories"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is environmental monitoring important?",
+          "options": ["It provides early warning of environmental problems and tracks restoration progress", "It's only required by law", "It slows down projects"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Information Systems Integration → Integración de sistemas de información",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Enterprise resource planning systems integrate business processes",
+          "spanish": "Los sistemas de planificación de recursos empresariales integran procesos de negocio"
+        },
+        {
+          "english": "Manufacturing execution systems coordinate production activities",
+          "spanish": "Los sistemas de ejecución de manufactura coordinan actividades de producción"
+        },
+        {
+          "english": "Data warehouses consolidate information from multiple sources",
+          "spanish": "Los almacenes de datos consolidan información de múltiples fuentes"
+        },
+        {
+          "english": "Application programming interfaces enable system connectivity",
+          "spanish": "Las interfaces de programación de aplicaciones permiten conectividad de sistemas"
+        },
+        {
+          "english": "Database management systems organize and secure data",
+          "spanish": "Los sistemas de gestión de bases de datos organizan y aseguran datos"
+        },
+        {
+          "english": "Business intelligence tools analyze operational performance",
+          "spanish": "Las herramientas de inteligencia de negocios analizan rendimiento operacional"
+        },
+        {
+          "english": "Cloud computing platforms provide scalable infrastructure",
+          "spanish": "Las plataformas de computación en la nube proporcionan infraestructura escalable"
+        },
+        {
+          "english": "Cybersecurity measures protect information assets",
+          "spanish": "Las medidas de ciberseguridad protegen activos de información"
+        },
+        {
+          "english": "System integration protocols ensure seamless communication",
+          "spanish": "Los protocolos de integración de sistemas aseguran comunicación sin problemas"
+        },
+        {
+          "english": "Digital transformation modernizes legacy systems",
+          "spanish": "La transformación digital moderniza sistemas heredados"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Enterprise resource",
+          "suffix": "systems integrate all business functions into unified platforms.",
+          "answer": "planning",
+          "selected": false,
+          "feedback": "ERP systems provide comprehensive integration of business processes and data."
+        },
+        {
+          "prefix": "Application programming",
+          "suffix": "allow different software systems to communicate and share data.",
+          "answer": "interfaces",
+          "selected": false,
+          "feedback": "APIs are essential for creating integrated, interoperable systems."
+        },
+        {
+          "prefix": "Business",
+          "suffix": "tools transform raw data into actionable insights for decision-making.",
+          "answer": "intelligence",
+          "selected": false,
+          "feedback": "BI tools help organizations make data-driven decisions and optimize performance."
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 13,
+    "sections": [
+      {
+        "title": "Transportation → Transporte",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "transportation", "spanish": "transporte" },
+          { "english": "bus", "spanish": "autobús" },
+          { "english": "car", "spanish": "carro" },
+          { "english": "taxi", "spanish": "taxi" },
+          { "english": "motorcycle", "spanish": "motocicleta" },
+          { "english": "bicycle", "spanish": "bicicleta" },
+          { "english": "train", "spanish": "tren" },
+          { "english": "plane", "spanish": "avión" },
+          { "english": "boat", "spanish": "barco" },
+          { "english": "walk", "spanish": "caminar" },
+          { "english": "drive", "spanish": "manejar" },
+          { "english": "ride", "spanish": "montar" },
+          { "english": "ticket", "spanish": "boleto" },
+          { "english": "fare", "spanish": "tarifa" },
+          { "english": "destination", "spanish": "destino" }
+        ],
+        "listening": [
+          {
+            "audio": "How do you go to work?",
+            "options": ["How do you go to work?", "When do you go to work?", "Where do you work?", "Why do you work?"],
+            "answer": "How do you go to work?"
+          },
+          {
+            "audio": "I take the bus every morning",
+            "options": ["I take the bus every morning", "I take the car every morning", "I take the train every morning", "I take a taxi every morning"],
+            "answer": "I take the bus every morning"
+          },
+          {
+            "audio": "The bus fare is 500 colones",
+            "options": ["The bus fare is 500 colones", "The taxi fare is 500 colones", "The train fare is 500 colones", "The parking is 500 colones"],
+            "answer": "The bus fare is 500 colones"
+          },
+          {
+            "audio": "Where is the bus stop?",
+            "options": ["Where is the bus stop?", "Where is the taxi stand?", "Where is the train station?", "Where is the parking lot?"],
+            "answer": "Where is the bus stop?"
+          },
+          {
+            "audio": "I walk to work because it's close",
+            "options": ["I walk to work because it's close", "I drive to work because it's close", "I take the bus because it's close", "I ride my bike because it's close"],
+            "answer": "I walk to work because it's close"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I go to work", "I travel to work", "I get to work"],
+            "suffix": "by bus every day.",
+            "answer": "I go to work",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["How do you", "How does he", "How does she"],
+            "suffix": "get to the technical school?",
+            "answer": "How do you",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The bus", "The taxi", "The train"],
+            "suffix": "is the cheapest way to travel in San José.",
+            "answer": "The bus",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I need", "I want", "I have to buy"],
+            "suffix": "a bus ticket to go downtown.",
+            "answer": "I need",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Many workers", "Most employees", "A lot of people"],
+            "suffix": "use public transportation in Costa Rica.",
+            "answer": "Many workers",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Giving and Asking for Directions → Dando y pidiendo direcciones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "direction", "spanish": "dirección" },
+          { "english": "left", "spanish": "izquierda" },
+          { "english": "right", "spanish": "derecha" },
+          { "english": "straight", "spanish": "derecho" },
+          { "english": "turn", "spanish": "doblar" },
+          { "english": "corner", "spanish": "esquina" },
+          { "english": "street", "spanish": "calle" },
+          { "english": "avenue", "spanish": "avenida" },
+          { "english": "block", "spanish": "cuadra" },
+          { "english": "traffic light", "spanish": "semáforo" },
+          { "english": "stop sign", "spanish": "alto" },
+          { "english": "intersection", "spanish": "intersección" },
+          { "english": "near", "spanish": "cerca" },
+          { "english": "far", "spanish": "lejos" },
+          { "english": "between", "spanish": "entre" }
+        ],
+        "listening": [
+          {
+            "audio": "Excuse me, where is the bank?",
+            "options": ["Excuse me, where is the bank?", "Excuse me, where is the store?", "Excuse me, where is the school?", "Excuse me, where is the hospital?"],
+            "answer": "Excuse me, where is the bank?"
+          },
+          {
+            "audio": "Turn right at the corner",
+            "options": ["Turn right at the corner", "Turn left at the corner", "Go straight at the corner", "Stop at the corner"],
+            "answer": "Turn right at the corner"
+          },
+          {
+            "audio": "It's two blocks from here",
+            "options": ["It's two blocks from here", "It's three blocks from here", "It's four blocks from here", "It's five blocks from here"],
+            "answer": "It's two blocks from here"
+          },
+          {
+            "audio": "The school is near the traffic light",
+            "options": ["near the traffic light", "near the stop sign", "near the intersection", "near the bus stop"],
+            "answer": "near the traffic light"
+          },
+          {
+            "audio": "Go straight until you see the park",
+            "options": ["Go straight until you see the park", "Turn left until you see the park", "Turn right until you see the park", "Stop when you see the park"],
+            "answer": "Go straight until you see the park"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Excuse me", "Sorry", "Pardon me"],
+            "suffix": "where is the nearest bus stop?",
+            "answer": "Excuse me",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Turn left", "Turn right", "Go straight"],
+            "suffix": "and then walk two blocks.",
+            "answer": "Turn left",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The technical school", "The workplace", "The training center"],
+            "suffix": "is between the bank and the supermarket.",
+            "answer": "The technical school",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It's very close", "It's not far", "It's nearby"],
+            "suffix": "just one block from the main street.",
+            "answer": "It's very close",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["When you see", "At", "Near"],
+            "suffix": "the traffic light, turn right to find IPEC.",
+            "answer": "When you see",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Getting to Work → Llegando al trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "commute", "spanish": "viaje al trabajo" },
+          { "english": "route", "spanish": "ruta" },
+          { "english": "traffic", "spanish": "tráfico" },
+          { "english": "rush hour", "spanish": "hora pico" },
+          { "english": "arrive", "spanish": "llegar" },
+          { "english": "leave", "spanish": "salir" },
+          { "english": "on time", "spanish": "a tiempo" },
+          { "english": "late", "spanish": "tarde" },
+          { "english": "early", "spanish": "temprano" },
+          { "english": "schedule", "spanish": "horario" },
+          { "english": "bus route", "spanish": "ruta de autobús" },
+          { "english": "bus stop", "spanish": "parada de autobús" },
+          { "english": "parking", "spanish": "estacionamiento" },
+          { "english": "carpooling", "spanish": "viaje compartido" },
+          { "english": "public transport", "spanish": "transporte público" }
+        ],
+        "listening": [
+          {
+            "audio": "What time do you leave for work?",
+            "options": ["What time do you leave for work?", "What time do you arrive at work?", "What time do you finish work?", "What time do you start work?"],
+            "answer": "What time do you leave for work?"
+          },
+          {
+            "audio": "I leave home at 6:30 AM",
+            "options": ["I leave home at 6:30 AM", "I arrive at work at 6:30 AM", "I start work at 6:30 AM", "I finish work at 6:30 AM"],
+            "answer": "I leave home at 6:30 AM"
+          },
+          {
+            "audio": "There's a lot of traffic in rush hour",
+            "options": ["There's a lot of traffic in rush hour", "There's no traffic in rush hour", "Traffic is light in rush hour", "Traffic is normal in rush hour"],
+            "answer": "There's a lot of traffic in rush hour"
+          },
+          {
+            "audio": "I don't want to be late for work",
+            "options": ["I don't want to be late for work", "I don't want to be early for work", "I want to be on time for work", "I want to leave work early"],
+            "answer": "I don't want to be late for work"
+          },
+          {
+            "audio": "The bus comes every 15 minutes",
+            "options": ["The bus comes every 15 minutes", "The bus comes every 30 minutes", "The bus comes every 45 minutes", "The bus comes every hour"],
+            "answer": "The bus comes every 15 minutes"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I leave home", "I start my commute", "I begin my trip"],
+            "suffix": "early to avoid traffic.",
+            "answer": "I leave home",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The commute", "The trip", "The journey"],
+            "suffix": "to work takes about 45 minutes.",
+            "answer": "The commute",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I always arrive", "I try to arrive", "I want to arrive"],
+            "suffix": "at work on time or early.",
+            "answer": "I always arrive",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["During rush hour", "In heavy traffic", "When there's traffic"],
+            "suffix": "the trip takes much longer.",
+            "answer": "During rush hour",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Public transportation", "The bus system", "Taking the bus"],
+            "suffix": "is very convenient in San José.",
+            "answer": "Public transportation",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Traffic and Road Safety → Tráfico y seguridad vial",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "traffic", "spanish": "tráfico" },
+          { "english": "safety", "spanish": "seguridad" },
+          { "english": "accident", "spanish": "accidente" },
+          { "english": "careful", "spanish": "cuidadoso" },
+          { "english": "dangerous", "spanish": "peligroso" },
+          { "english": "speed", "spanish": "velocidad" },
+          { "english": "slow down", "spanish": "reducir velocidad" },
+          { "english": "stop", "spanish": "parar" },
+          { "english": "yield", "spanish": "ceder el paso" },
+          { "english": "crosswalk", "spanish": "paso de peatones" },
+          { "english": "sidewalk", "spanish": "acera" },
+          { "english": "helmet", "spanish": "casco" },
+          { "english": "seat belt", "spanish": "cinturón de seguridad" },
+          { "english": "driver's license", "spanish": "licencia de conducir" },
+          { "english": "pedestrian", "spanish": "peatón" }
+        ],
+        "listening": [
+          {
+            "audio": "Always wear your seat belt",
+            "options": ["Always wear your seat belt", "Always wear your helmet", "Always check your mirrors", "Always signal before turning"],
+            "answer": "Always wear your seat belt"
+          },
+          {
+            "audio": "Be careful when crossing the street",
+            "options": ["Be careful when crossing the street", "Be careful when driving fast", "Be careful when parking", "Be careful when turning"],
+            "answer": "Be careful when crossing the street"
+          },
+          {
+            "audio": "There was an accident on the highway",
+            "options": ["There was an accident on the highway", "There was traffic on the highway", "There was construction on the highway", "There was rain on the highway"],
+            "answer": "There was an accident on the highway"
+          },
+          {
+            "audio": "Do you have a driver's license?",
+            "options": ["Do you have a driver's license?", "Do you have car insurance?", "Do you have a motorcycle?", "Do you have a bicycle?"],
+            "answer": "Do you have a driver's license?"
+          },
+          {
+            "audio": "Use the crosswalk to cross safely",
+            "options": ["Use the crosswalk to cross safely", "Use the sidewalk to walk safely", "Use the traffic light to stop safely", "Use the helmet to ride safely"],
+            "answer": "Use the crosswalk to cross safely"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Road safety", "Traffic safety", "Driving safety"],
+            "suffix": "is very important for everyone.",
+            "answer": "Road safety",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Always wear", "Don't forget", "Remember to use"],
+            "suffix": "your helmet when riding a motorcycle.",
+            "answer": "Always wear",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Be careful", "Drive slowly", "Pay attention"],
+            "suffix": "when driving in the rain.",
+            "answer": "Be careful",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Pedestrians should", "People should", "Everyone should"],
+            "suffix": "use crosswalks to cross streets safely.",
+            "answer": "Pedestrians should",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Traffic accidents", "Car accidents", "Road accidents"],
+            "suffix": "can be prevented by driving carefully.",
+            "answer": "Traffic accidents",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Transportation in Costa Rica → Transporte en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "San José", "spanish": "San José" },
+          { "english": "Central Valley", "spanish": "Valle Central" },
+          { "english": "public bus", "spanish": "autobús público" },
+          { "english": "red taxi", "spanish": "taxi rojo" },
+          { "english": "colones", "spanish": "colones" },
+          { "english": "exact change", "spanish": "cambio exacto" },
+          { "english": "bus terminal", "spanish": "terminal de autobuses" },
+          { "english": "Coca Cola terminal", "spanish": "terminal Coca Cola" },
+          { "english": "urban bus", "spanish": "autobús urbano" },
+          { "english": "intercity bus", "spanish": "autobús interurbano" },
+          { "english": "rush hour", "spanish": "hora pico" },
+          { "english": "peak time", "spanish": "hora punta" },
+          { "english": "off-peak", "spanish": "fuera de hora pico" },
+          { "english": "bus card", "spanish": "tarjeta de autobús" },
+          { "english": "transportation pass", "spanish": "pase de transporte" }
+        ],
+        "listening": [
+          {
+            "audio": "Public buses in Costa Rica are very affordable",
+            "options": ["very affordable", "very expensive", "very slow", "very crowded"],
+            "answer": "very affordable"
+          },
+          {
+            "audio": "The Coca Cola terminal is in downtown San José",
+            "options": ["downtown San José", "outside San José", "north of San José", "south of San José"],
+            "answer": "downtown San José"
+          },
+          {
+            "audio": "You need exact change for the bus",
+            "options": ["You need exact change for the bus", "You can pay with credit card", "You can pay any amount", "You don't need to pay"],
+            "answer": "You need exact change for the bus"
+          },
+          {
+            "audio": "Red taxis are official in Costa Rica",
+            "options": ["Red taxis are official in Costa Rica", "Yellow taxis are official in Costa Rica", "Blue taxis are official in Costa Rica", "Green taxis are official in Costa Rica"],
+            "answer": "Red taxis are official in Costa Rica"
+          },
+          {
+            "audio": "Many technical students use public transportation",
+            "options": ["use public transportation", "use private cars", "use motorcycles", "walk to school"],
+            "answer": "use public transportation"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Most people", "Many workers", "A lot of students"],
+            "suffix": "in San José use public buses.",
+            "answer": "Most people",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The bus fare", "The ticket price", "The cost"],
+            "suffix": "in Costa Rica is paid in colones.",
+            "answer": "The bus fare",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Students", "Workers", "People"],
+            "suffix": "from IPEC often take the bus to classes.",
+            "answer": "Students",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The Central Valley", "San José area", "Metropolitan area"],
+            "suffix": "has good public transportation coverage.",
+            "answer": "The Central Valley",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["During rush hour", "In peak times", "When traffic is heavy"],
+            "suffix": "buses can be very crowded.",
+            "answer": "During rush hour",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "B1",
+  "lessonId": 10,
+  "sections": [
+    {
+      "title": "Thermal Systems and Heat Transfer → Sistemas térmicos y transferencia de calor",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Heat exchangers transfer thermal energy between fluids",
+          "spanish": "Los intercambiadores de calor transfieren energía térmica entre fluidos"
+        },
+        {
+          "english": "Conduction transfers heat through direct contact",
+          "spanish": "La conducción transfiere calor a través de contacto directo"
+        },
+        {
+          "english": "Convection moves heat through fluid circulation",
+          "spanish": "La convección mueve calor a través de circulación de fluidos"
+        },
+        {
+          "english": "Radiation transmits heat through electromagnetic waves",
+          "spanish": "La radiación transmite calor a través de ondas electromagnéticas"
+        },
+        {
+          "english": "Thermal insulation reduces unwanted heat transfer",
+          "spanish": "El aislamiento térmico reduce transferencia de calor no deseada"
+        },
+        {
+          "english": "Refrigeration systems remove heat from controlled spaces",
+          "spanish": "Los sistemas de refrigeración remueven calor de espacios controlados"
+        },
+        {
+          "english": "Heat pumps efficiently move thermal energy",
+          "spanish": "Las bombas de calor mueven energía térmica eficientemente"
+        },
+        {
+          "english": "Thermal management prevents component overheating",
+          "spanish": "La gestión térmica previene sobrecalentamiento de componentes"
+        },
+        {
+          "english": "Temperature sensors monitor thermal conditions",
+          "spanish": "Los sensores de temperatura monitorean condiciones térmicas"
+        },
+        {
+          "english": "Thermal cycles optimize energy conversion efficiency",
+          "spanish": "Los ciclos térmicos optimizan eficiencia de conversión de energía"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What are the three main mechanisms of heat transfer?",
+          "options": ["Conduction, convection, and radiation", "Heating, cooling, and insulation", "Input, process, and output"],
+          "answer": 0
+        },
+        {
+          "audio": "How do heat exchangers improve energy efficiency?",
+          "options": ["They recover waste heat and transfer it to where it's needed", "They generate new heat", "They eliminate all heat"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is thermal management important in electronics?",
+          "options": ["It prevents components from overheating and failing", "It makes devices heavier", "It increases power consumption"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Heat",
+          "suffix": "enable efficient thermal energy recovery in industrial processes.",
+          "answer": "exchangers",
+          "selected": false,
+          "feedback": "Heat exchangers are crucial for energy efficiency in thermal systems."
+        },
+        {
+          "prefix": "Thermal",
+          "suffix": "reduces energy losses and improves system efficiency.",
+          "answer": "insulation",
+          "selected": false,
+          "feedback": "Proper insulation minimizes unwanted heat transfer and energy waste."
+        },
+        {
+          "prefix": "Heat",
+          "suffix": "provide efficient heating and cooling using relatively little energy.",
+          "answer": "pumps",
+          "selected": false,
+          "feedback": "Heat pumps move thermal energy rather than generating it, making them highly efficient."
+        }
+      ]
+    },
+    {
+      "title": "Fluid Mechanics and Hydraulic Systems → Mecánica de fluidos y sistemas hidráulicos",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Hydraulic systems transmit power through pressurized fluids",
+          "spanish": "Los sistemas hidráulicos transmiten potencia a través de fluidos presurizados"
+        },
+        {
+          "english": "Pumps increase fluid pressure and flow rate",
+          "spanish": "Las bombas aumentan presión y caudal de fluidos"
+        },
+        {
+          "english": "Flow meters measure fluid velocity and volume",
+          "spanish": "Los medidores de flujo miden velocidad y volumen de fluidos"
+        },
+        {
+          "english": "Pressure regulation maintains system stability",
+          "spanish": "La regulación de presión mantiene estabilidad del sistema"
+        },
+        {
+          "english": "Filtration systems remove contaminants from fluids",
+          "spanish": "Los sistemas de filtración remueven contaminantes de fluidos"
+        },
+        {
+          "english": "Valve control directs fluid flow paths",
+          "spanish": "El control de válvulas dirige rutas de flujo de fluidos"
+        },
+        {
+          "english": "Pipe sizing calculations ensure adequate flow capacity",
+          "spanish": "Los cálculos de dimensionamiento de tuberías aseguran capacidad de flujo adecuada"
+        },
+        {
+          "english": "Hydraulic actuators convert fluid power to mechanical motion",
+          "spanish": "Los actuadores hidráulicos convierten potencia de fluidos a movimiento mecánico"
+        },
+        {
+          "english": "Pneumatic systems use compressed air for power transmission",
+          "spanish": "Los sistemas neumáticos usan aire comprimido para transmisión de potencia"
+        },
+        {
+          "english": "Leak detection prevents fluid loss and contamination",
+          "spanish": "La detección de fugas previene pérdida de fluidos y contaminación"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What advantage do hydraulic systems offer over mechanical systems?",
+          "options": ["They can generate much higher forces in compact spaces", "They are always cheaper", "They work without fluid"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is filtration important in hydraulic systems?",
+          "options": ["It prevents contamination that could damage system components", "It makes fluids more expensive", "It slows down the system"],
+          "answer": 0
+        },
+        {
+          "audio": "How do hydraulic actuators work?",
+          "options": ["They convert fluid pressure into linear or rotary mechanical motion", "They only work with electricity", "They generate fluid pressure"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Hydraulic",
+          "suffix": "offer high power-to-weight ratios for demanding applications.",
+          "answer": "systems",
+          "selected": false,
+          "feedback": "Hydraulic systems excel in applications requiring high force and precise control."
+        },
+        {
+          "prefix": "Flow",
+          "suffix": "provide essential data for optimizing fluid system performance.",
+          "answer": "meters",
+          "selected": false,
+          "feedback": "Accurate flow measurement is crucial for system monitoring and control."
+        },
+        {
+          "prefix": "Hydraulic",
+          "suffix": "convert fluid power into precise mechanical motion for automation.",
+          "answer": "actuators",
+          "selected": false,
+          "feedback": "Hydraulic actuators provide powerful, controllable motion for industrial applications."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Control Systems → Sistemas de control avanzados",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Proportional-integral-derivative controllers maintain precise setpoints",
+          "spanish": "Los controladores proporcional-integral-derivativo mantienen puntos de ajuste precisos"
+        },
+        {
+          "english": "Model predictive control anticipates future system behavior",
+          "spanish": "El control predictivo de modelo anticipa comportamiento futuro del sistema"
+        },
+        {
+          "english": "Adaptive control systems adjust to changing conditions",
+          "spanish": "Los sistemas de control adaptativo se ajustan a condiciones cambiantes"
+        },
+        {
+          "english": "Fuzzy logic handles imprecise or uncertain inputs",
+          "spanish": "La lógica difusa maneja entradas imprecisas o inciertas"
+        },
+        {
+          "english": "Neural networks learn complex control patterns",
+          "spanish": "Las redes neuronales aprenden patrones de control complejos"
+        },
+        {
+          "english": "System identification determines dynamic characteristics",
+          "spanish": "La identificación de sistemas determina características dinámicas"
+        },
+        {
+          "english": "Stability analysis ensures robust system performance",
+          "spanish": "El análisis de estabilidad asegura rendimiento robusto del sistema"
+        },
+        {
+          "english": "Cascade control improves disturbance rejection",
+          "spanish": "El control en cascada mejora rechazo de perturbaciones"
+        },
+        {
+          "english": "Feedforward control compensates for known disturbances",
+          "spanish": "El control de alimentación directa compensa perturbaciones conocidas"
+        },
+        {
+          "english": "Optimal control minimizes performance criteria",
+          "spanish": "El control óptimo minimiza criterios de rendimiento"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What makes PID controllers effective for process control?",
+          "options": ["They combine proportional, integral, and derivative actions for optimal response", "They are the cheapest option", "They work without feedback"],
+          "answer": 0
+        },
+        {
+          "audio": "How does model predictive control improve performance?",
+          "options": ["It uses a mathematical model to predict and optimize future behavior", "It only looks at past data", "It eliminates all models"],
+          "answer": 0
+        },
+        {
+          "audio": "Why are adaptive control systems useful?",
+          "options": ["They automatically adjust their parameters as system conditions change", "They never change", "They are simpler than fixed controllers"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "PID",
+          "suffix": "are widely used because they provide excellent control for most applications.",
+          "answer": "controllers",
+          "selected": false,
+          "feedback": "PID controllers offer a good balance of performance and simplicity for process control."
+        },
+        {
+          "prefix": "Model predictive",
+          "suffix": "uses system models to optimize control actions over future time horizons.",
+          "answer": "control",
+          "selected": false,
+          "feedback": "MPC enables proactive control by anticipating future system behavior."
+        },
+        {
+          "prefix": "Adaptive",
+          "suffix": "automatically modify their parameters to maintain optimal performance.",
+          "answer": "controllers",
+          "selected": false,
+          "feedback": "Adaptive controllers maintain performance despite changing system dynamics."
+        }
+      ]
+    },
+    {
+      "title": "Mechatronics Integration → Integración mecatrónica",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Mechatronics combines mechanical, electrical, and software engineering",
+          "spanish": "La mecatrónica combina ingeniería mecánica, eléctrica y de software"
+        },
+        {
+          "english": "Embedded systems provide intelligent control capabilities",
+          "spanish": "Los sistemas embebidos proporcionan capacidades de control inteligente"
+        },
+        {
+          "english": "Sensor fusion integrates multiple measurement sources",
+          "spanish": "La fusión de sensores integra múltiples fuentes de medición"
+        },
+        {
+          "english": "Actuator coordination enables complex motion patterns",
+          "spanish": "La coordinación de actuadores permite patrones de movimiento complejos"
+        },
+        {
+          "english": "Real-time systems respond within strict timing constraints",
+          "spanish": "Los sistemas en tiempo real responden dentro de restricciones de tiempo estrictas"
+        },
+        {
+          "english": "Hardware-software co-design optimizes system performance",
+          "spanish": "El co-diseño hardware-software optimiza rendimiento del sistema"
+        },
+        {
+          "english": "Signal processing algorithms extract useful information",
+          "spanish": "Los algoritmos de procesamiento de señales extraen información útil"
+        },
+        {
+          "english": "Microcontrollers execute control algorithms efficiently",
+          "spanish": "Los microcontroladores ejecutan algoritmos de control eficientemente"
+        },
+        {
+          "english": "System integration testing validates overall performance",
+          "spanish": "Las pruebas de integración de sistemas validan rendimiento general"
+        },
+        {
+          "english": "Fault tolerance ensures continued operation despite failures",
+          "spanish": "La tolerancia a fallas asegura operación continua a pesar de fallas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main goal of mechatronics integration?",
+          "options": ["To combine different engineering disciplines for optimal system performance", "To make systems more complex", "To use only mechanical components"],
+          "answer": 0
+        },
+        {
+          "audio": "Why is sensor fusion important in mechatronic systems?",
+          "options": ["It combines multiple sensors to provide more accurate and reliable information", "It reduces the number of sensors", "It makes systems simpler"],
+          "answer": 0
+        },
+        {
+          "audio": "What role do embedded systems play in mechatronics?",
+          "options": ["They provide the intelligence and control logic for the system", "They only store data", "They replace all mechanical parts"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Testing and Validation Methodologies → Metodologías de pruebas y validación",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Design of experiments optimizes testing efficiency",
+          "spanish": "El diseño de experimentos optimiza eficiencia de pruebas"
+        },
+        {
+          "english": "Accelerated testing predicts long-term performance",
+          "spanish": "Las pruebas aceleradas predicen rendimiento a largo plazo"
+        },
+        {
+          "english": "Environmental testing validates operation under extreme conditions",
+          "spanish": "Las pruebas ambientales validan operación bajo condiciones extremas"
+        },
+        {
+          "english": "Reliability testing ensures consistent performance over time",
+          "spanish": "Las pruebas de confiabilidad aseguran rendimiento consistente a través del tiempo"
+        },
+        {
+          "english": "Performance benchmarking compares against standards",
+          "spanish": "El benchmarking de rendimiento compara contra estándares"
+        },
+        {
+          "english": "Validation protocols confirm specification compliance",
+          "spanish": "Los protocolos de validación confirman cumplimiento de especificaciones"
+        },
+        {
+          "english": "Test automation increases efficiency and repeatability",
+          "spanish": "La automatización de pruebas aumenta eficiencia y repetibilidad"
+        },
+        {
+          "english": "Failure mode analysis identifies potential weaknesses",
+          "spanish": "El análisis de modos de falla identifica debilidades potenciales"
+        },
+        {
+          "english": "Certification testing meets regulatory requirements",
+          "spanish": "Las pruebas de certificación cumplen requisitos regulatorios"
+        },
+        {
+          "english": "Documentation standards ensure traceability",
+          "spanish": "Los estándares de documentación aseguran trazabilidad"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Design of",
+          "suffix": "helps identify the most important factors affecting system performance.",
+          "answer": "experiments",
+          "selected": false,
+          "feedback": "DOE provides systematic approaches to efficient and effective testing."
+        },
+        {
+          "prefix": "Accelerated",
+          "suffix": "uses stressed conditions to predict product lifetime in shorter timeframes.",
+          "answer": "testing",
+          "selected": false,
+          "feedback": "Accelerated testing enables lifetime predictions without waiting for natural aging."
+        },
+        {
+          "prefix": "Test",
+          "suffix": "reduces human error and improves testing consistency and speed.",
+          "answer": "automation",
+          "selected": false,
+          "feedback": "Automated testing provides more reliable and efficient validation processes."
+        }
+      ]
+    }
+  ]
+}
+]
+

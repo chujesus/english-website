@@ -1,0 +1,443 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 16,
+    "sections": [
+      {
+        "title": "Jobs and Professions → Trabajos y profesiones",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "job", "spanish": "trabajo" },
+          { "english": "profession", "spanish": "profesión" },
+          { "english": "career", "spanish": "carrera" },
+          { "english": "worker", "spanish": "trabajador" },
+          { "english": "employee", "spanish": "empleado" },
+          { "english": "boss", "spanish": "jefe" },
+          { "english": "manager", "spanish": "gerente" },
+          { "english": "supervisor", "spanish": "supervisor" },
+          { "english": "technician", "spanish": "técnico" },
+          { "english": "engineer", "spanish": "ingeniero" },
+          { "english": "teacher", "spanish": "maestro" },
+          { "english": "nurse", "spanish": "enfermera" },
+          { "english": "mechanic", "spanish": "mecánico" },
+          { "english": "electrician", "spanish": "electricista" },
+          { "english": "secretary", "spanish": "secretaria" }
+        ],
+        "listening": [
+          {
+            "audio": "What is your job?",
+            "options": ["What is your job?", "What is your name?", "What is your address?", "What is your age?"],
+            "answer": "What is your job?"
+          },
+          {
+            "audio": "I work as a technician",
+            "options": ["I work as a technician", "I work as a teacher", "I work as a nurse", "I work as a mechanic"],
+            "answer": "I work as a technician"
+          },
+          {
+            "audio": "She is an engineer at the factory",
+            "options": ["She is an engineer at the factory", "She is a manager at the factory", "She is a worker at the factory", "She is a supervisor at the factory"],
+            "answer": "She is an engineer at the factory"
+          },
+          {
+            "audio": "The boss wants to see you",
+            "options": ["The boss wants to see you", "The manager wants to see you", "The supervisor wants to see you", "The secretary wants to see you"],
+            "answer": "The boss wants to see you"
+          },
+          {
+            "audio": "Many students want to be electricians",
+            "options": ["Many students want to be electricians", "Many students want to be mechanics", "Many students want to be technicians", "Many students want to be engineers"],
+            "answer": "Many students want to be electricians"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My job", "My profession", "My career"],
+            "suffix": "is very interesting and challenging.",
+            "answer": "My job",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work as", "I am", "I'm employed as"],
+            "suffix": "a technician at the local factory.",
+            "answer": "I work as",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What does", "Where does", "How does"],
+            "suffix": "your supervisor do at work?",
+            "answer": "What does",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["IPEC trains", "The school prepares", "Technical education produces"],
+            "suffix": "many skilled workers for industry.",
+            "answer": "IPEC trains",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Engineers", "Technicians", "Skilled workers"],
+            "suffix": "are in high demand in Costa Rica.",
+            "answer": "Engineers",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Vocabulary → Vocabulario del lugar de trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "workplace", "spanish": "lugar de trabajo" },
+          { "english": "office", "spanish": "oficina" },
+          { "english": "factory", "spanish": "fábrica" },
+          { "english": "workshop", "spanish": "taller" },
+          { "english": "laboratory", "spanish": "laboratorio" },
+          { "english": "desk", "spanish": "escritorio" },
+          { "english": "computer", "spanish": "computadora" },
+          { "english": "machine", "spanish": "máquina" },
+          { "english": "tool", "spanish": "herramienta" },
+          { "english": "equipment", "spanish": "equipo" },
+          { "english": "meeting room", "spanish": "sala de reuniones" },
+          { "english": "break room", "spanish": "sala de descanso" },
+          { "english": "cafeteria", "spanish": "cafetería" },
+          { "english": "parking lot", "spanish": "estacionamiento" },
+          { "english": "entrance", "spanish": "entrada" }
+        ],
+        "listening": [
+          {
+            "audio": "Where is your office?",
+            "options": ["Where is your office?", "Where is your house?", "Where is your school?", "Where is your car?"],
+            "answer": "Where is your office?"
+          },
+          {
+            "audio": "The factory has modern equipment",
+            "options": ["The factory has modern equipment", "The factory has old equipment", "The factory has expensive equipment", "The factory has broken equipment"],
+            "answer": "The factory has modern equipment"
+          },
+          {
+            "audio": "I work in the laboratory",
+            "options": ["I work in the laboratory", "I work in the office", "I work in the workshop", "I work in the cafeteria"],
+            "answer": "I work in the laboratory"
+          },
+          {
+            "audio": "The meeting is in conference room A",
+            "options": ["The meeting is in conference room A", "The meeting is in the break room", "The meeting is in the cafeteria", "The meeting is in the office"],
+            "answer": "The meeting is in conference room A"
+          },
+          {
+            "audio": "Please bring your tools to the workshop",
+            "options": ["bring your tools to the workshop", "bring your computer to the office", "bring your lunch to the cafeteria", "bring your car to the parking"],
+            "answer": "bring your tools to the workshop"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My workplace", "Our office", "The factory"],
+            "suffix": "has all the modern equipment we need.",
+            "answer": "My workplace",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I use", "I work with", "I operate"],
+            "suffix": "different machines and tools every day.",
+            "answer": "I use",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The meeting", "The conference", "The presentation"],
+            "suffix": "will be held in the main conference room.",
+            "answer": "The meeting",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["During break time", "At lunch", "In my free time"],
+            "suffix": "I go to the cafeteria with my colleagues.",
+            "answer": "During break time",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The workshop", "The laboratory", "The work area"],
+            "suffix": "must be kept clean and organized.",
+            "answer": "The workshop",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Daily Work Activities → Actividades diarias de trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "start work", "spanish": "empezar a trabajar" },
+          { "english": "finish work", "spanish": "terminar el trabajo" },
+          { "english": "attend meetings", "spanish": "asistir a reuniones" },
+          { "english": "check email", "spanish": "revisar correo" },
+          { "english": "answer phone calls", "spanish": "contestar llamadas" },
+          { "english": "operate machines", "spanish": "operar máquinas" },
+          { "english": "repair equipment", "spanish": "reparar equipo" },
+          { "english": "write reports", "spanish": "escribir reportes" },
+          { "english": "solve problems", "spanish": "resolver problemas" },
+          { "english": "work with team", "spanish": "trabajar en equipo" },
+          { "english": "follow instructions", "spanish": "seguir instrucciones" },
+          { "english": "complete tasks", "spanish": "completar tareas" },
+          { "english": "take breaks", "spanish": "tomar descansos" },
+          { "english": "clock in", "spanish": "marcar entrada" },
+          { "english": "clock out", "spanish": "marcar salida" }
+        ],
+        "listening": [
+          {
+            "audio": "I start work at 7 AM every day",
+            "options": ["I start work at 7 AM every day", "I finish work at 7 AM every day", "I take break at 7 AM every day", "I have lunch at 7 AM every day"],
+            "answer": "I start work at 7 AM every day"
+          },
+          {
+            "audio": "We have a team meeting this morning",
+            "options": ["We have a team meeting this morning", "We have a team lunch this morning", "We have a team training this morning", "We have a team project this morning"],
+            "answer": "We have a team meeting this morning"
+          },
+          {
+            "audio": "I need to repair this machine",
+            "options": ["I need to repair this machine", "I need to operate this machine", "I need to clean this machine", "I need to move this machine"],
+            "answer": "I need to repair this machine"
+          },
+          {
+            "audio": "Don't forget to clock out when you leave",
+            "options": ["Don't forget to clock out when you leave", "Don't forget to clock in when you arrive", "Don't forget to take breaks", "Don't forget to check email"],
+            "answer": "Don't forget to clock out when you leave"
+          },
+          {
+            "audio": "I work with a great team",
+            "options": ["I work with a great team", "I work with new equipment", "I work with difficult customers", "I work with modern technology"],
+            "answer": "I work with a great team"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I start", "I begin", "I commence"],
+            "suffix": "work at 8:00 AM and finish at 5:00 PM.",
+            "answer": "I start",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Every morning", "Each day", "Daily"],
+            "suffix": "I check my email and review my tasks.",
+            "answer": "Every morning",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I work with", "I collaborate with", "I cooperate with"],
+            "suffix": "my team to complete all projects.",
+            "answer": "I work with",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It's important to", "We must", "Everyone should"],
+            "suffix": "follow safety instructions at work.",
+            "answer": "It's important to",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["At the end", "When I finish", "Before leaving"],
+            "suffix": "of my shift, I clock out.",
+            "answer": "At the end",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Job Skills and Qualifications → Habilidades y calificaciones laborales",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "skill", "spanish": "habilidad" },
+          { "english": "qualification", "spanish": "calificación" },
+          { "english": "experience", "spanish": "experiencia" },
+          { "english": "training", "spanish": "capacitación" },
+          { "english": "certificate", "spanish": "certificado" },
+          { "english": "diploma", "spanish": "diploma" },
+          { "english": "knowledge", "spanish": "conocimiento" },
+          { "english": "ability", "spanish": "capacidad" },
+          { "english": "competent", "spanish": "competente" },
+          { "english": "skilled", "spanish": "hábil" },
+          { "english": "qualified", "spanish": "calificado" },
+          { "english": "experienced", "spanish": "experimentado" },
+          { "english": "professional", "spanish": "profesional" },
+          { "english": "technical", "spanish": "técnico" },
+          { "english": "practical", "spanish": "práctico" }
+        ],
+        "listening": [
+          {
+            "audio": "Do you have experience with this equipment?",
+            "options": ["Do you have experience with this equipment?", "Do you have training with this equipment?", "Do you have knowledge of this equipment?", "Do you have skills with this equipment?"],
+            "answer": "Do you have experience with this equipment?"
+          },
+          {
+            "audio": "I have a technical certificate from IPEC",
+            "options": ["I have a technical certificate from IPEC", "I have a university degree from IPEC", "I have work experience from IPEC", "I have professional training from IPEC"],
+            "answer": "I have a technical certificate from IPEC"
+          },
+          {
+            "audio": "She is very skilled with computers",
+            "options": ["She is very skilled with computers", "She is very experienced with computers", "She is very knowledgeable about computers", "She is very competent with computers"],
+            "answer": "She is very skilled with computers"
+          },
+          {
+            "audio": "This job requires practical experience",
+            "options": ["This job requires practical experience", "This job requires technical knowledge", "This job requires professional training", "This job requires academic qualifications"],
+            "answer": "This job requires practical experience"
+          },
+          {
+            "audio": "I need more training in safety procedures",
+            "options": ["I need more training in safety procedures", "I need more experience in safety procedures", "I need more knowledge of safety procedures", "I need more skills in safety procedures"],
+            "answer": "I need more training in safety procedures"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I have", "I possess", "I've gained"],
+            "suffix": "five years of experience in this field.",
+            "answer": "I have",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Technical skills", "Professional qualifications", "Practical experience"],
+            "suffix": "are very important for this job.",
+            "answer": "Technical skills",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["IPEC provides", "The school offers", "Technical education gives"],
+            "suffix": "excellent training for technical careers.",
+            "answer": "IPEC provides",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My certificate", "My diploma", "My qualification"],
+            "suffix": "shows that I'm qualified for this position.",
+            "answer": "My certificate",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Employers want", "Companies need", "Businesses require"],
+            "suffix": "workers with both skills and experience.",
+            "answer": "Employers want",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technical Education in Costa Rica → Educación técnica en Costa Rica",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "technical education", "spanish": "educación técnica" },
+          { "english": "vocational training", "spanish": "formación vocacional" },
+          { "english": "technical college", "spanish": "colegio técnico" },
+          { "english": "IPEC", "spanish": "IPEC" },
+          { "english": "INA", "spanish": "INA" },
+          { "english": "MEP", "spanish": "MEP" },
+          { "english": "curriculum", "spanish": "currículo" },
+          { "english": "specialization", "spanish": "especialización" },
+          { "english": "internship", "spanish": "práctica profesional" },
+          { "english": "apprenticeship", "spanish": "aprendizaje" },
+          { "english": "hands-on training", "spanish": "entrenamiento práctico" },
+          { "english": "industry partnership", "spanish": "alianza con industria" },
+          { "english": "job placement", "spanish": "colocación laboral" },
+          { "english": "technical skills", "spanish": "habilidades técnicas" },
+          { "english": "workforce", "spanish": "fuerza laboral" }
+        ],
+        "listening": [
+          {
+            "audio": "IPEC offers excellent technical programs",
+            "options": ["IPEC offers excellent technical programs", "IPEC offers university programs", "IPEC offers language programs", "IPEC offers business programs"],
+            "answer": "IPEC offers excellent technical programs"
+          },
+          {
+            "audio": "INA provides vocational training for adults",
+            "options": ["INA provides vocational training for adults", "INA provides university education for adults", "INA provides high school education for adults", "INA provides language training for adults"],
+            "answer": "INA provides vocational training for adults"
+          },
+          {
+            "audio": "Technical education prepares students for industry",
+            "options": ["prepares students for industry", "prepares students for university", "prepares students for government", "prepares students for business"],
+            "answer": "prepares students for industry"
+          },
+          {
+            "audio": "Students do internships in real companies",
+            "options": ["Students do internships in real companies", "Students do research in universities", "Students do projects in schools", "Students do exams in classrooms"],
+            "answer": "Students do internships in real companies"
+          },
+          {
+            "audio": "Costa Rica needs more skilled technicians",
+            "options": ["Costa Rica needs more skilled technicians", "Costa Rica needs more university graduates", "Costa Rica needs more teachers", "Costa Rica needs more managers"],
+            "answer": "Costa Rica needs more skilled technicians"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Technical education", "Vocational training", "Professional preparation"],
+            "suffix": "is very important for economic development.",
+            "answer": "Technical education",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["IPEC students", "Technical students", "Vocational learners"],
+            "suffix": "learn practical skills for the workplace.",
+            "answer": "IPEC students",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The curriculum", "The program", "The courses"],
+            "suffix": "includes both theory and hands-on practice.",
+            "answer": "The curriculum",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Many graduates", "Most students", "Technical graduates"],
+            "suffix": "find good jobs immediately after graduation.",
+            "answer": "Many graduates",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Costa Rica's", "The country's", "Our nation's"],
+            "suffix": "technical education system is recognized internationally.",
+            "answer": "Costa Rica's",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

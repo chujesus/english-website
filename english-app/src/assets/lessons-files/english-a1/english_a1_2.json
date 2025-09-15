@@ -1,0 +1,454 @@
+[
+  {
+    "cefrLevel": "A1",
+    "lessonId": 2,
+    "sections": [
+      {
+        "title": "The English Alphabet → El alfabeto inglés",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "A", "spanish": "ei" },
+          { "english": "B", "spanish": "bi" },
+          { "english": "C", "spanish": "si" },
+          { "english": "D", "spanish": "di" },
+          { "english": "E", "spanish": "i" },
+          { "english": "F", "spanish": "ef" },
+          { "english": "G", "spanish": "yi" },
+          { "english": "H", "spanish": "eich" },
+          { "english": "I", "spanish": "ai" },
+          { "english": "J", "spanish": "yei" },
+          { "english": "K", "spanish": "kei" },
+          { "english": "L", "spanish": "el" },
+          { "english": "M", "spanish": "em" },
+          { "english": "N", "spanish": "en" },
+          { "english": "O", "spanish": "ou" },
+          { "english": "P", "spanish": "pi" },
+          { "english": "Q", "spanish": "kiu" },
+          { "english": "R", "spanish": "ar" },
+          { "english": "S", "spanish": "es" },
+          { "english": "T", "spanish": "ti" },
+          { "english": "U", "spanish": "iu" },
+          { "english": "V", "spanish": "vi" },
+          { "english": "W", "spanish": "dabliu" },
+          { "english": "X", "spanish": "eks" },
+          { "english": "Y", "spanish": "uai" },
+          { "english": "Z", "spanish": "zi" }
+        ],
+        "listening": [
+          {
+            "audio": "A",
+            "options": ["A", "E", "I", "O"],
+            "answer": "A"
+          },
+          {
+            "audio": "B",
+            "options": ["B", "P", "V", "D"],
+            "answer": "B"
+          },
+          {
+            "audio": "C",
+            "options": ["C", "S", "Z", "G"],
+            "answer": "C"
+          },
+          {
+            "audio": "M",
+            "options": ["M", "N", "W", "H"],
+            "answer": "M"
+          },
+          {
+            "audio": "W",
+            "options": ["W", "V", "U", "Y"],
+            "answer": "W"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["A", "E", "I"],
+            "suffix": "- B - C - D",
+            "answer": "A",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["X", "Y", "W"],
+            "suffix": "- Z is the last letter.",
+            "answer": "Y",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["M", "N", "L"],
+            "suffix": "- O - P - Q",
+            "answer": "N",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The letter", "My name starts with", "This is"],
+            "suffix": "B like in 'boy'.",
+            "answer": "The letter",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Say the letter", "Spell with", "Write"],
+            "suffix": "G like in 'garage'.",
+            "answer": "Say the letter",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Spelling Names and Surnames → Deletreando nombres y apellidos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "spell", "spanish": "deletrear" },
+          { "english": "How do you spell...?", "spanish": "¿Cómo se deletrea...?" },
+          { "english": "Can you spell that?", "spanish": "¿Puedes deletrear eso?" },
+          { "english": "Let me spell it", "spanish": "Déjame deletrearlo" },
+          { "english": "letter by letter", "spanish": "letra por letra" },
+          { "english": "capital letter", "spanish": "letra mayúscula" },
+          { "english": "small letter", "spanish": "letra minúscula" },
+          { "english": "first letter", "spanish": "primera letra" },
+          { "english": "last letter", "spanish": "última letra" },
+          { "english": "Could you repeat?", "spanish": "¿Podrías repetir?" },
+          { "english": "Say it slowly", "spanish": "Dilo despacio" },
+          { "english": "Write it down", "spanish": "Escríbelo" },
+          { "english": "That's correct", "spanish": "Eso es correcto" },
+          { "english": "That's wrong", "spanish": "Eso está mal" },
+          { "english": "Try again", "spanish": "Inténtalo de nuevo" }
+        ],
+        "listening": [
+          {
+            "audio": "How do you spell your name?",
+            "options": ["How do you spell your name?", "What is your name?", "Can you write your name?", "Where is your name?"],
+            "answer": "How do you spell your name?"
+          },
+          {
+            "audio": "M-A-R-I-A",
+            "options": ["M-A-R-I-A", "M-A-R-C-O", "M-A-R-T-A", "M-A-R-I-O"],
+            "answer": "M-A-R-I-A"
+          },
+          {
+            "audio": "Can you spell that?",
+            "options": ["Can you spell that?", "Can you say that?", "Can you write that?", "Can you read that?"],
+            "answer": "Can you spell that?"
+          },
+          {
+            "audio": "Let me spell it for you",
+            "options": ["Let me spell it for you", "Let me say it for you", "Let me write it for you", "Let me show it to you"],
+            "answer": "Let me spell it for you"
+          },
+          {
+            "audio": "Could you repeat the last letter?",
+            "options": ["Could you repeat the last letter?", "Could you repeat the first letter?", "Could you repeat the whole name?", "Could you repeat more slowly?"],
+            "answer": "Could you repeat the last letter?"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["How do you spell", "Can you spell", "Please spell"],
+            "suffix": "your last name?",
+            "answer": "How do you spell",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My name is Carlos, that's", "It's spelled", "The spelling is"],
+            "suffix": "C-A-R-L-O-S.",
+            "answer": "My name is Carlos, that's",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Could you repeat", "Say again", "One more time"],
+            "suffix": "the first three letters?",
+            "answer": "Could you repeat",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["That's correct", "That's right", "That's wrong"],
+            "suffix": ", you spelled it perfectly.",
+            "answer": "That's correct",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Write it down", "Let me spell it", "Say it slowly"],
+            "suffix": "so I can understand better.",
+            "answer": "Say it slowly",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Email Addresses and Websites → Correos electrónicos y sitios web",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "email", "spanish": "correo electrónico" },
+          { "english": "email address", "spanish": "dirección de correo" },
+          { "english": "at", "spanish": "arroba (@)" },
+          { "english": "dot", "spanish": "punto (.)" },
+          { "english": "com", "spanish": "com" },
+          { "english": "gmail", "spanish": "gmail" },
+          { "english": "hotmail", "spanish": "hotmail" },
+          { "english": "yahoo", "spanish": "yahoo" },
+          { "english": "underscore", "spanish": "guión bajo (_)" },
+          { "english": "hyphen", "spanish": "guión (-)" },
+          { "english": "number", "spanish": "número" },
+          { "english": "website", "spanish": "sitio web" },
+          { "english": "www", "spanish": "doble doble doble" },
+          { "english": "What's your email?", "spanish": "¿Cuál es tu correo?" },
+          { "english": "My email is...", "spanish": "Mi correo es..." }
+        ],
+        "listening": [
+          {
+            "audio": "What is your email address?",
+            "options": ["What is your email address?", "What is your phone number?", "What is your name?", "What is your job?"],
+            "answer": "What is your email address?"
+          },
+          {
+            "audio": "carlos at gmail dot com",
+            "options": ["carlos at gmail dot com", "carlos at yahoo dot com", "carlos at hotmail dot com", "carlos at mail dot com"],
+            "answer": "carlos at gmail dot com"
+          },
+          {
+            "audio": "jose underscore rodriguez",
+            "options": ["jose underscore rodriguez", "jose hyphen rodriguez", "jose dot rodriguez", "jose number rodriguez"],
+            "answer": "jose underscore rodriguez"
+          },
+          {
+            "audio": "Can you spell your email?",
+            "options": ["Can you spell your email?", "Can you write your email?", "Can you say your email?", "Can you read your email?"],
+            "answer": "Can you spell your email?"
+          },
+          {
+            "audio": "Double-u double-u double-u dot",
+            "options": ["Double-u double-u double-u dot", "W W W dot", "Three W dot", "Website dot"],
+            "answer": "Double-u double-u double-u dot"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["My email is", "It's", "You can write to"],
+            "suffix": "maria at gmail dot com.",
+            "answer": "My email is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What's your email?", "Can you spell your email?", "Write down your email."],
+            "suffix": "It's jose underscore garcia at yahoo dot com.",
+            "answer": "What's your email?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The website is", "Go to", "Visit"],
+            "suffix": "www dot ipec dot ac dot cr.",
+            "answer": "The website is",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Use dot", "Use at", "Use underscore"],
+            "suffix": "between my first and last name.",
+            "answer": "Use underscore",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["My work email", "My personal email", "My school email"],
+            "suffix": "ends with dot com.",
+            "answer": "My work email",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Workplace Documents and Forms → Documentos y formularios del trabajo",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "form", "spanish": "formulario" },
+          { "english": "document", "spanish": "documento" },
+          { "english": "application", "spanish": "solicitud" },
+          { "english": "fill out", "spanish": "llenar" },
+          { "english": "complete", "spanish": "completar" },
+          { "english": "sign", "spanish": "firmar" },
+          { "english": "print", "spanish": "imprmir / escribir en letra de molde" },
+          { "english": "block letters", "spanish": "letra de molde" },
+          { "english": "legible", "spanish": "legible" },
+          { "english": "clear", "spanish": "claro" },
+          { "english": "ID card", "spanish": "cédula de identidad" },
+          { "english": "social security", "spanish": "seguro social" },
+          { "english": "work permit", "spanish": "permiso de trabajo" },
+          { "english": "certificate", "spanish": "certificado" },
+          { "english": "qualification", "spanish": "calificación" }
+        ],
+        "listening": [
+          {
+            "audio": "Please fill out this form",
+            "options": ["Please fill out this form", "Please read this form", "Please sign this form", "Please take this form"],
+            "answer": "Please fill out this form"
+          },
+          {
+            "audio": "Write in block letters",
+            "options": ["Write in block letters", "Write in small letters", "Write in capital letters", "Write in cursive letters"],
+            "answer": "Write in block letters"
+          },
+          {
+            "audio": "Can you spell your ID number?",
+            "options": ["Can you spell your ID number?", "Can you write your ID number?", "Can you show your ID number?", "Can you remember your ID number?"],
+            "answer": "Can you spell your ID number?"
+          },
+          {
+            "audio": "Sign here please",
+            "options": ["Sign here please", "Write here please", "Print here please", "Read here please"],
+            "answer": "Sign here please"
+          },
+          {
+            "audio": "Is this information correct?",
+            "options": ["Is this information correct?", "Is this form complete?", "Is this document ready?", "Is this application good?"],
+            "answer": "Is this information correct?"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["Please fill out", "Complete", "Fill in"],
+            "suffix": "this job application form.",
+            "answer": "Please fill out",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Write in block letters", "Print clearly", "Use capital letters"],
+            "suffix": "so we can read your name.",
+            "answer": "Write in block letters",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can you spell", "Please spell", "How do you spell"],
+            "suffix": "your social security number?",
+            "answer": "Can you spell",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Sign here", "Write your signature", "Put your name"],
+            "suffix": "at the bottom of the page.",
+            "answer": "Sign here",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This document", "This form", "This application"],
+            "suffix": "requires your ID number.",
+            "answer": "This form",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Technical Terms and Equipment → Términos técnicos y equipos",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "tool", "spanish": "herramienta" },
+          { "english": "machine", "spanish": "máquina" },
+          { "english": "equipment", "spanish": "equipo" },
+          { "english": "manual", "spanish": "manual" },
+          { "english": "instructions", "spanish": "instrucciones" },
+          { "english": "safety", "spanish": "seguridad" },
+          { "english": "model", "spanish": "modelo" },
+          { "english": "serial number", "spanish": "número de serie" },
+          { "english": "brand", "spanish": "marca" },
+          { "english": "part", "spanish": "parte / pieza" },
+          { "english": "code", "spanish": "código" },
+          { "english": "reference", "spanish": "referencia" },
+          { "english": "specification", "spanish": "especificación" },
+          { "english": "How do you spell the model?", "spanish": "¿Cómo se deletrea el modelo?" },
+          { "english": "What's the part number?", "spanish": "¿Cuál es el número de pieza?" }
+        ],
+        "listening": [
+          {
+            "audio": "What is the model number?",
+            "options": ["What is the model number?", "What is the serial number?", "What is the part number?", "What is the phone number?"],
+            "answer": "What is the model number?"
+          },
+          {
+            "audio": "Can you spell the brand name?",
+            "options": ["Can you spell the brand name?", "Can you say the brand name?", "Can you write the brand name?", "Can you find the brand name?"],
+            "answer": "Can you spell the brand name?"
+          },
+          {
+            "audio": "T-O-Y-O-T-A",
+            "options": ["T-O-Y-O-T-A", "H-O-N-D-A", "N-I-S-S-A-N", "M-A-Z-D-A"],
+            "answer": "T-O-Y-O-T-A"
+          },
+          {
+            "audio": "The serial number is",
+            "options": ["The serial number is", "The model number is", "The part number is", "The phone number is"],
+            "answer": "The serial number is"
+          },
+          {
+            "audio": "Check the safety manual",
+            "options": ["Check the safety manual", "Read the safety manual", "Follow the safety manual", "Study the safety manual"],
+            "answer": "Check the safety manual"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["The model number", "The serial number", "The part number"],
+            "suffix": "is written on the machine.",
+            "answer": "The serial number",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Can you spell", "How do you spell", "Please spell"],
+            "suffix": "the brand of this equipment?",
+            "answer": "Can you spell",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["The safety manual", "The instruction manual", "The user manual"],
+            "suffix": "has all the technical information.",
+            "answer": "The safety manual",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["What's the code", "What's the reference", "What's the specification"],
+            "suffix": "for this replacement part?",
+            "answer": "What's the code",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["This tool", "This machine", "This equipment"],
+            "suffix": "needs a specific part number to order.",
+            "answer": "This equipment",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
+    ]
+  }
+]

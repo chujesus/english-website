@@ -1,0 +1,409 @@
+﻿[
+{
+  "cefrLevel": "A2",
+  "lessonId": 16,
+  "sections": [
+    {
+      "title": "Personal Care and Wellness Services → Servicios de cuidado personal y bienestar",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Greet clients professionally",
+          "spanish": "Saluda clientes profesionalmente"
+        },
+        {
+          "english": "Explain available services",
+          "spanish": "Explica servicios disponibles"
+        },
+        {
+          "english": "Maintain clean work areas",
+          "spanish": "Mantén áreas de trabajo limpias"
+        },
+        {
+          "english": "Follow sanitation protocols",
+          "spanish": "Sigue protocolos de sanitización"
+        },
+        {
+          "english": "Use equipment safely",
+          "spanish": "Usa equipo de manera segura"
+        },
+        {
+          "english": "Listen to client preferences",
+          "spanish": "Escucha preferencias del cliente"
+        },
+        {
+          "english": "Provide aftercare instructions",
+          "spanish": "Proporciona instrucciones de cuidado posterior"
+        },
+        {
+          "english": "Schedule follow-up appointments",
+          "spanish": "Programa citas de seguimiento"
+        },
+        {
+          "english": "Handle payments accurately",
+          "spanish": "Maneja pagos con precisión"
+        },
+        {
+          "english": "Maintain client confidentiality",
+          "spanish": "Mantén confidencialidad del cliente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is sanitation important in personal care services?",
+          "options": ["To prevent infections and maintain health standards", "To waste time", "It's not necessary"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you do before starting any service?",
+          "options": ["Listen to client needs and explain the process", "Start immediately", "Charge payment first"],
+          "answer": 0
+        },
+        {
+          "audio": "Why provide aftercare instructions?",
+          "options": ["To help clients maintain results and prevent problems", "To confuse clients", "It's not important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "to client preferences before starting services.",
+          "answer": "listen",
+          "selected": false,
+          "feedback": "Understanding client preferences ensures satisfaction and builds trust."
+        },
+        {
+          "prefix": "Follow strict",
+          "suffix": "protocols to prevent infections.",
+          "answer": "sanitation",
+          "selected": false,
+          "feedback": "Proper sanitation protects both clients and service providers from health risks."
+        },
+        {
+          "prefix": "Provide clear",
+          "suffix": "instructions to help clients maintain results.",
+          "answer": "aftercare",
+          "selected": false,
+          "feedback": "Good aftercare instructions extend service benefits and prevent problems."
+        }
+      ]
+    },
+    {
+      "title": "Cleaning and Maintenance Services → Servicios de limpieza y mantenimiento",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Use appropriate cleaning products",
+          "spanish": "Usa productos de limpieza apropiados"
+        },
+        {
+          "english": "Follow safety data sheet instructions",
+          "spanish": "Sigue instrucciones de hojas de datos de seguridad"
+        },
+        {
+          "english": "Wear protective equipment",
+          "spanish": "Usa equipo de protección"
+        },
+        {
+          "english": "Clean from top to bottom",
+          "spanish": "Limpia de arriba hacia abajo"
+        },
+        {
+          "english": "Disinfect high-touch surfaces",
+          "spanish": "Desinfecta superficies de mucho contacto"
+        },
+        {
+          "english": "Empty trash containers regularly",
+          "spanish": "Vacía contenedores de basura regularmente"
+        },
+        {
+          "english": "Maintain cleaning equipment",
+          "spanish": "Mantén equipo de limpieza"
+        },
+        {
+          "english": "Report maintenance needs",
+          "spanish": "Reporta necesidades de mantenimiento"
+        },
+        {
+          "english": "Work efficiently and quietly",
+          "spanish": "Trabaja eficientemente y silenciosamente"
+        },
+        {
+          "english": "Document completed tasks",
+          "spanish": "Documenta tareas completadas"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why should you clean from top to bottom?",
+          "options": ["So dirt falls down to areas not yet cleaned", "It doesn't matter", "To waste time"],
+          "answer": 0
+        },
+        {
+          "audio": "What surfaces need disinfection most often?",
+          "options": ["High-touch surfaces like door handles and counters", "Only floors", "Windows only"],
+          "answer": 0
+        },
+        {
+          "audio": "Why wear protective equipment when cleaning?",
+          "options": ["To protect from chemicals and contaminants", "To look professional", "It's not necessary"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always use",
+          "suffix": "cleaning products for each specific surface type.",
+          "answer": "appropriate",
+          "selected": false,
+          "feedback": "Using the right products prevents damage and ensures effective cleaning."
+        },
+        {
+          "prefix": "Wear",
+          "suffix": "equipment to protect from harmful chemicals.",
+          "answer": "protective",
+          "selected": false,
+          "feedback": "Personal protective equipment prevents injury and exposure to dangerous substances."
+        },
+        {
+          "prefix": "Always",
+          "suffix": "high-touch surfaces to prevent disease transmission.",
+          "answer": "disinfect",
+          "selected": false,
+          "feedback": "Disinfecting high-touch surfaces reduces the spread of germs and illnesses."
+        }
+      ]
+    },
+    {
+      "title": "Security and Safety Services → Servicios de seguridad y protección",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Monitor security cameras regularly",
+          "spanish": "Monitorea cámaras de seguridad regularmente"
+        },
+        {
+          "english": "Check identification at entry points",
+          "spanish": "Revisa identificación en puntos de entrada"
+        },
+        {
+          "english": "Patrol assigned areas systematically",
+          "spanish": "Patrulla áreas asignadas sistemáticamente"
+        },
+        {
+          "english": "Report suspicious activities immediately",
+          "spanish": "Reporta actividades sospechosas inmediatamente"
+        },
+        {
+          "english": "Respond to emergency alarms",
+          "spanish": "Responde a alarmas de emergencia"
+        },
+        {
+          "english": "Maintain detailed incident logs",
+          "spanish": "Mantén registros detallados de incidentes"
+        },
+        {
+          "english": "Follow emergency procedures",
+          "spanish": "Sigue procedimientos de emergencia"
+        },
+        {
+          "english": "Coordinate with law enforcement",
+          "spanish": "Coordina con las fuerzas del orden"
+        },
+        {
+          "english": "Secure building access points",
+          "spanish": "Asegura puntos de acceso del edificio"
+        },
+        {
+          "english": "Test security systems regularly",
+          "spanish": "Prueba sistemas de seguridad regularmente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "What is the main responsibility of security personnel?",
+          "options": ["To protect people and property", "To be friendly only", "To clean buildings"],
+          "answer": 0
+        },
+        {
+          "audio": "When should you report suspicious activities?",
+          "options": ["Immediately when observed", "At the end of the shift", "Never"],
+          "answer": 0
+        },
+        {
+          "audio": "Why maintain detailed incident logs?",
+          "options": ["For legal documentation and pattern analysis", "To waste paper", "It's not important"],
+          "answer": 0
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "identification before allowing building access.",
+          "answer": "check",
+          "selected": false,
+          "feedback": "Verifying identification prevents unauthorized access and maintains security."
+        },
+        {
+          "prefix": "Report",
+          "suffix": "activities immediately to prevent potential problems.",
+          "answer": "suspicious",
+          "selected": false,
+          "feedback": "Early reporting of suspicious activities can prevent security incidents."
+        },
+        {
+          "prefix": "Test",
+          "suffix": "systems regularly to ensure they work properly.",
+          "answer": "security",
+          "selected": false,
+          "feedback": "Regular testing ensures security systems will function when needed."
+        }
+      ]
+    },
+    {
+      "title": "Transportation and Logistics → Transporte y logística",
+      "isSpeaking": true,
+      "isListen": true,
+      "isFillInBlank": false,
+      "items": [
+        {
+          "english": "Plan efficient delivery routes",
+          "spanish": "Planifica rutas de entrega eficientes"
+        },
+        {
+          "english": "Load vehicles safely and securely",
+          "spanish": "Carga vehículos de manera segura"
+        },
+        {
+          "english": "Check vehicle condition before trips",
+          "spanish": "Revisa condición del vehículo antes de viajes"
+        },
+        {
+          "english": "Follow traffic laws and regulations",
+          "spanish": "Sigue leyes y regulaciones de tránsito"
+        },
+        {
+          "english": "Maintain delivery schedules",
+          "spanish": "Mantén horarios de entrega"
+        },
+        {
+          "english": "Handle packages with care",
+          "spanish": "Maneja paquetes con cuidado"
+        },
+        {
+          "english": "Obtain delivery confirmations",
+          "spanish": "Obtén confirmaciones de entrega"
+        },
+        {
+          "english": "Communicate delays promptly",
+          "spanish": "Comunica retrasos prontamente"
+        },
+        {
+          "english": "Track inventory accurately",
+          "spanish": "Rastrea inventario con precisión"
+        },
+        {
+          "english": "Report vehicle problems immediately",
+          "spanish": "Reporta problemas del vehículo inmediatamente"
+        }
+      ],
+      "listening": [
+        {
+          "audio": "Why is route planning important for deliveries?",
+          "options": ["To save time and fuel while serving customers efficiently", "To waste time", "It's not important"],
+          "answer": 0
+        },
+        {
+          "audio": "What should you do before starting a delivery trip?",
+          "options": ["Check vehicle condition and load securely", "Leave immediately", "Don't prepare"],
+          "answer": 0
+        },
+        {
+          "audio": "Why obtain delivery confirmations?",
+          "options": ["To prove packages were delivered successfully", "To waste paper", "It's not necessary"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "title": "Environmental and Waste Management → Gestión ambiental y de residuos",
+      "isSpeaking": true,
+      "isListen": false,
+      "isFillInBlank": true,
+      "items": [
+        {
+          "english": "Sort waste materials properly",
+          "spanish": "Clasifica materiales de desecho apropiadamente"
+        },
+        {
+          "english": "Follow recycling procedures",
+          "spanish": "Sigue procedimientos de reciclaje"
+        },
+        {
+          "english": "Handle hazardous materials safely",
+          "spanish": "Maneja materiales peligrosos de manera segura"
+        },
+        {
+          "english": "Use appropriate containment systems",
+          "spanish": "Usa sistemas de contención apropiados"
+        },
+        {
+          "english": "Monitor environmental compliance",
+          "spanish": "Monitorea cumplimiento ambiental"
+        },
+        {
+          "english": "Maintain clean collection areas",
+          "spanish": "Mantén áreas de recolección limpias"
+        },
+        {
+          "english": "Document waste disposal activities",
+          "spanish": "Documenta actividades de disposición de residuos"
+        },
+        {
+          "english": "Educate others about proper practices",
+          "spanish": "Educa a otros sobre prácticas apropiadas"
+        },
+        {
+          "english": "Report environmental violations",
+          "spanish": "Reporta violaciones ambientales"
+        },
+        {
+          "english": "Promote waste reduction initiatives",
+          "spanish": "Promueve iniciativas de reducción de residuos"
+        }
+      ],
+      "fillInBlank": [
+        {
+          "prefix": "Always",
+          "suffix": "waste materials according to type and regulations.",
+          "answer": "sort",
+          "selected": false,
+          "feedback": "Proper waste sorting enables recycling and prevents environmental contamination."
+        },
+        {
+          "prefix": "Handle",
+          "suffix": "materials with special safety precautions.",
+          "answer": "hazardous",
+          "selected": false,
+          "feedback": "Hazardous materials require special handling to protect human health and the environment."
+        },
+        {
+          "prefix": "Promote",
+          "suffix": "reduction to minimize environmental impact.",
+          "answer": "waste",
+          "selected": false,
+          "feedback": "Waste reduction is the most effective way to protect the environment and reduce costs."
+        }
+      ]
+    }
+  ]
+}
+]
+

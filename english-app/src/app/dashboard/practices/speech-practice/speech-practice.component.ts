@@ -3,6 +3,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DeepgramService } from '../../../core/services/deepgram.service';
 import { Router } from '@angular/router';
 import { get as levenshtein } from 'fast-levenshtein';
+import { SpeechPracticeItem } from '../../../shared/interfaces';
 
 @Component({
   standalone: true,
@@ -13,7 +14,7 @@ import { get as levenshtein } from 'fast-levenshtein';
 })
 export class SpeechPracticeComponent implements OnInit, OnChanges {
   recognizedText: string = '';
-  @Input() targetSentences: string[] = [];
+  @Input() targetSentences: SpeechPracticeItem[] = [];
   @Input() currentIndex: number = 0;
   recognizedTexts: string[] = Array(this.targetSentences.length).fill('');
   isCorrectList: (boolean | null)[] = Array(this.targetSentences.length).fill(null);
@@ -43,8 +44,9 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
         this.recognition.onresult = (event: any) => {
           const transcript = event.results[0][0].transcript.trim();
           this.zone.run(() => {
+            debugger;
             this.recognizedTexts[this.currentIndex] = transcript;
-            const expected = this.cleanText(this.targetSentences[this.currentIndex]);
+            const expected = this.cleanText(this.targetSentences[this.currentIndex].english);
             const actual = this.cleanText(transcript);
             const distance = levenshtein(expected, actual);
             const similarity = Math.max(0, 1 - distance / expected.length);
@@ -124,11 +126,12 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
 
         this.deepgramService.transcribeAudio(audioBlob).subscribe({
           next: (res) => {
+            debugger;
             const transcript = res?.results?.channels?.[0]?.alternatives?.[0]?.transcript || '';
             this.zone.run(() => {
               this.recognizedTexts[this.currentIndex] = transcript;
 
-              const expected = this.cleanText(this.targetSentences[this.currentIndex]);
+              const expected = this.cleanText(this.targetSentences[this.currentIndex].english);
               const actual = this.cleanText(transcript);
               const distance = levenshtein(expected, actual);
               const similarity = Math.max(0, 1 - distance / expected.length);
@@ -162,7 +165,7 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
       this.isBusy = true;
       window.speechSynthesis.cancel();
 
-      const utterance = new SpeechSynthesisUtterance(this.targetSentences[index]);
+      const utterance = new SpeechSynthesisUtterance(this.targetSentences[index].english);
       utterance.lang = 'en-US';
       utterance.rate = 0.7;
 
@@ -186,5 +189,25 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     }
+  }
+
+  getCorrectCount(): number {
+    return this.isCorrectList.filter((result, index) =>
+      this.recognizedTexts[index] && result === true
+    ).length;
+  }
+
+  getIncorrectCount(): number {
+    return this.isCorrectList.filter((result, index) =>
+      this.recognizedTexts[index] && result === false
+    ).length;
+  }
+
+  getPendingCount(): number {
+    return this.recognizedTexts.filter(text => !text || text.trim() === '').length;
+  }
+
+  getProgressPercentage(): number {
+    return Math.round(((this.currentIndex + 1) / this.targetSentences.length) * 100);
   }
 }

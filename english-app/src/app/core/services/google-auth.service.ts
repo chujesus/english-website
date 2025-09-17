@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GoogleAuthPayload } from '../../shared/interfaces/auth';
+import { GoogleAuthPayload } from '../../shared/interfaces';
 import { GOOGLE_CONFIG } from '../config/google.config';
 
 declare global {

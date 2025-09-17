@@ -4,7 +4,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
-import { IUser, Profile } from '../../shared/interfaces/auth';
+import { IUser, Profile } from '../../shared/interfaces';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 
 @Component({
@@ -42,11 +42,10 @@ export class LoginComponent implements OnInit {
 
     try {
       const currentUser = await this.authService.loginWithGoogle();
-      debugger;
       if (currentUser?.profile === Profile.Administrator) {
         this.router.navigate(['/dashboard/admin']);
       } else {
-        this.router.navigate(['/dashboard/modules']);
+        this.router.navigate(['/dashboard/control-panel']);
       }
     } catch (error: any) {
       this.errorMessage = error.message || 'Error al iniciar sesión con Google';
@@ -69,13 +68,12 @@ export class LoginComponent implements OnInit {
       };
       this.authService.login(this.user).subscribe({
         next: (user: IUser[]) => {
-          debugger;
           if (user.length > 0) {
             this.localStorageService.setCredentials(user[0]);
             if (user[0].profile === Profile.Administrator) {
               this.router.navigate(['/dashboard/admin']);
             } else if (user[0].profile === Profile.Student) {
-              this.router.navigate(['/dashboard/modules']);
+              this.router.navigate(['/dashboard/control-panel']);
             }
           } else {
             this.alertService.closeLoading();

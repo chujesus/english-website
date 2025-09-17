@@ -1,75 +1,129 @@
-<div class="album py-5 bg-light">
-    <div class="bg-light border-bottom mb-3">
-        <div *ngIf="moduleTitle" class="container pb-3 mb-4"> <a [routerLink]="[ '/dashboard' ]"
-                class="d-flex align-items-center text-body-emphasis text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
-                    role="img">
-                    <title>{{moduleTitle}}</title>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM44 72V24h8l7 16 7-16h8v48h-8V44l-7 16-7-16v28h-8z"
-                        fill="currentColor">
-                    </path>
-                </svg>
-                <span class="fs-4">{{moduleTitle}}</span> </a>
-        </div>
-        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2 pb-2">
-            <h2 class="h5 mb-0 text-dark">Filter Topics</h2>
-            <div class="btn-group" role="group" aria-label="Filtro de cursos">
-                <input type="radio" class="btn-check" name="courseFilter" id="filter-all" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="filter-all">📚 All</label>
-
-                <input type="radio" class="btn-check" name="courseFilter" id="filter-completed" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="filter-completed">✅ Completed</label>
-
-                <input type="radio" class="btn-check" name="courseFilter" id="filter-pending" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="filter-pending">🕓 Pending</label>
+<div class="container-fluid py-4">
+    <!-- Header Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="text-primary mb-1">
+                        <i class="fas fa-book-open me-2"></i>
+                        {{ moduleTitle }}
+                    </h2>
+                    <p class="text-muted mb-0">{{ topics.length }} Topics Available</p>
+                </div>
+                <button class="btn btn-outline-primary" routerLink="/dashboard/modules">
+                    <i class="fas fa-arrow-left me-2"></i>Back to Modules
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col" *ngFor="let topic of topics; let i = index">
-                <div class="card border rounded shadow-sm h-100">
-                    <div class="card-header bg-secondary text-white fw-semibold">
-                        {{ topic.title }}
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3 text-muted">Loading topics and progress...</p>
+    </div>
+
+    <!-- Error State -->
+    <div *ngIf="error && !loading" class="alert alert-danger" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        {{ error }}
+        <button class="btn btn-outline-danger btn-sm ms-2" (click)="loadTopics()">
+            Try Again
+        </button>
+    </div>
+
+    <!-- Topics Grid -->
+    <div *ngIf="!loading && !error && topics.length > 0" class="row">
+        <div class="col-lg-6 col-xl-4 mb-4" *ngFor="let topic of topics; let i = index">
+            <div class="card h-100 shadow-sm border-0">
+                <!-- Topic Header with Progress -->
+                <div class="card-header bg-white border-bottom">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h6 class="mb-2 text-dark fw-bold">{{ topic.title }}</h6>
+                        <span class="badge" [class]="getStatusBadgeClass(topic.status)">
+                            {{ getStatusText(topic.status) }}
+                        </span>
                     </div>
 
-                    <div class="card-body">
-                        <p class="card-text mb-3">
-                            {{ topic.objective }}
-                        </p>
-
-                        <div *ngIf="topic.examples.length">
-                            <p class="fw-bold mb-1">Examples:</p>
-                            <ul class="list-unstyled ps-3 mb-3">
-                                <li *ngFor="let example of topic.examples">• {{ example }}</li>
-                            </ul>
+                    <!-- Progress Bar -->
+                    <div class="progress mt-2" style="height: 6px;">
+                        <div class="progress-bar" [class]="getProgressBarClass(topic.progress_percentage)"
+                            [style.width.%]="topic.progress_percentage || 0" role="progressbar">
                         </div>
+                    </div>
+                    <small class="text-muted">{{ topic.progress_percentage || 0 }}% Complete</small>
+                </div>
 
-                        <div *ngIf="topic.keywords.length">
-                            <p class="fw-bold mb-1">Keywords:</p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span *ngFor="let keyword of topic.keywords" class="badge badge-outline-primary">
-                                    {{ keyword }}
-                                </span>
-                            </div>
+                <!-- Topic Content -->
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-3">{{ topic.objective }}</p>
+
+                    <!-- Examples Section -->
+                    <div *ngIf="topic.examples?.length" class="mb-3">
+                        <h6 class="text-dark mb-2">
+                            <i class="fas fa-lightbulb me-1 text-warning"></i>Examples:
+                        </h6>
+                        <ul class="list-unstyled small">
+                            <li *ngFor="let example of topic.examples.slice(0, 3)" class="mb-1">
+                                <i class="fas fa-chevron-right me-2 text-primary" style="font-size: 0.8em;"></i>
+                                {{ example }}
+                            </li>
+                            <li *ngIf="topic.examples.length > 3" class="text-muted">
+                                <small>+{{ topic.examples.length - 3 }} more examples...</small>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Keywords Section -->
+                    <div *ngIf="topic.keywords?.length" class="mb-3">
+                        <h6 class="text-dark mb-2">
+                            <i class="fas fa-tags me-1 text-info"></i>Key Topics:
+                        </h6>
+                        <div class="d-flex flex-wrap gap-1">
+                            <span *ngFor="let keyword of topic.keywords.slice(0, 4)"
+                                class="badge bg-light text-dark border small">
+                                {{ keyword }}
+                            </span>
+                            <span *ngIf="topic.keywords.length > 4" class="badge bg-secondary small">
+                                +{{ topic.keywords.length - 4 }}
+                            </span>
                         </div>
                     </div>
 
-                    <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-primary"
+                    <!-- Action Buttons -->
+                    <div class="mt-auto">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" (click)="startTopic(topic, i)"
                                 [routerLink]="['/dashboard/lessons']"
-                                [queryParams]="{ id: i, title: topic.title, cefrLevel: topic.cefrLevel }">
-                                View
+                                [queryParams]="{ moduleId: moduleId, topicIndex: i, title: topic.title }">
+                                <i class="fas" [class.fa-play]="topic.status === 'not_started'"
+                                    [class.fa-arrow-right]="topic.status !== 'not_started'"></i>
+                                <span class="ms-2">
+                                    {{ topic.status === 'not_started' ? 'Start Topic' : 'Continue' }}
+                                </span>
                             </button>
-                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+
+                            <button class="btn btn-outline-info btn-sm" [routerLink]="['/dashboard/topic-progress']"
+                                [queryParams]="{ topicId: i + 1, title: topic.title }">
+                                <i class="fas fa-chart-line me-1"></i>
+                                View Progress
+                            </button>
                         </div>
-                        <small class="text-muted">Topic {{ i + 1 }}</small>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!loading && !error && topics.length === 0" class="text-center py-5">
+        <i class="fas fa-book-open fa-3x text-muted mb-3"></i>
+        <h5 class="text-muted">No topics available</h5>
+        <p class="text-muted">This course module is being prepared.</p>
+        <button class="btn btn-primary" routerLink="/dashboard/modules">
+            <i class="fas fa-arrow-left me-2"></i>Back to Modules
+        </button>
     </div>
 </div>

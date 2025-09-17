@@ -1,21 +1,17 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { BehaviorSubject, map, Observable } from 'rxjs';
-import { IUser, Profile } from '../../shared/interfaces/auth';;
+import { BehaviorSubject, firstValueFrom, map, Observable } from 'rxjs';
+import { IUser, Profile } from '../../shared/interfaces';
 import { GoogleAuthService } from './google-auth.service';
 import { MainService } from './main.service';
 import { HttpClient } from '@angular/common/http';
 import { LocalStorageService } from './local-storage.service';
+import { jwtDecode } from "jwt-decode";
+import { Key } from '../../shared/constants/constants';
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService extends MainService {
-    private userSubject = new BehaviorSubject<IUser | null>(null);
-    private userSignal = signal<IUser | null>(null);
-
-    public user$ = this.userSubject.asObservable();
-    public user = this.userSignal.asReadonly();
-    public isAuthenticated = computed(() => !!this.userSignal());
 
     constructor(private http: HttpClient, private localStorageService: LocalStorageService, private googleAuth: GoogleAuthService) {
         super();
@@ -30,7 +26,6 @@ export class AuthService extends MainService {
     async loginWithGoogle(): Promise<IUser> {
         try {
             const googlePayload = await this.googleAuth.signInWithGoogle();
-            debugger;
             const user: IUser = {
                 google_id: googlePayload.googleId,
                 token: 'google_access_token_' + Date.now(),
@@ -78,10 +73,42 @@ export class AuthService extends MainService {
     }
 
     getUserToken(id: number): Observable<IUser[]> {
-        return this.http.get<IUser[]>(`${this.baseUrl}/auths/user/${id}`).pipe(map((user: any) => {
+        return this.http.get<IUser[]>(`${this.baseUrl}/auths/generate-jwt/${id}`).pipe(map((user: any) => {
             this.localStorageService.setCredentials(user.data[0]);
             return user.data as IUser[];
         }));
+    }
+
+
+    isLoggedIn() {
+        const isLogged = this.localStorageService.getCredentials();
+        if (!isLogged) {
+            return false;
+        }
+        return true;
+    }
+
+    async isNotExpiredToken(): Promise<boolean> {
+        let session = JSON.parse(localStorage.getItem(Key.IsloggedKey)!);
+
+        if (session !== null) {
+            let decoded = jwtDecode(session.token);
+            let expiredToken = Number(decoded.exp);
+            let expiredDate = new Date(expiredToken * 1000);
+            let currentDate = new Date();
+            let diffDate = expiredDate.getTime() - currentDate.getTime();
+            diffDate = Math.round(diffDate / (1000 * 60));
+
+            if (diffDate < 11 && diffDate > -11 || true) {
+                try {
+                    return true;
+                } catch (error) {
+                    return false;
+                }
+            }
+        }
+
+        return false;
     }
 
     logout(): void {

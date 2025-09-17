@@ -1,4 +1,301 @@
-:host {
-  display: block;
-  min-height: 320px;
+/* Progress Header Styles */
+.progress-header-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: -15px -15px 20px -15px;
+}
+
+.sentence-counter-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent !important;
+}
+
+.sentence-counter-card:hover {
+  border-color: #007bff !important;
+  transform: translateY(-2px);
+}
+
+.counter-icon {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+}
+
+.progress-container .progress {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Main Content Card Styles */
+.main-content-card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.main-content-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sentence-display {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sentence-display::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.sentence-display:hover::before {
+  left: 100%;
+}
+
+.info-card {
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+}
+
+.pronunciation-badge .badge {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pronunciation-badge .badge:hover {
+  transform: scale(1.05);
+}
+
+/* Action Button Styles */
+.action-button {
+  min-width: 140px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  transform: translate(-50%, -50%);
+}
+
+.action-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-primary.action-button:hover {
+  border-color: #0056b3;
+}
+
+.btn-outline-primary.action-button:hover {
+  border-color: #007bff;
+}
+
+/* Recognition Results Styles */
+.results-card {
+  transition: all 0.5s ease;
+  animation: slideInUp 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback-icon i {
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.score-badge .badge {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.score-badge .badge:hover {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer Styles */
+.indicator-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.indicator-dot.active {
+  background: #007bff;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  transform: scale(1.2);
+}
+
+.indicator-dot.completed-correct {
+  background: #28a745;
+  border-color: #1e7e34;
+}
+
+.indicator-dot.completed-incorrect {
+  background: #ffc107;
+  border-color: #e0a800;
+}
+
+.indicator-dot.pending {
+  background: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.indicator-dot:hover:not(.active) {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+.navigation-btn {
+  min-width: 120px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.navigation-btn:hover:not(.disabled-btn) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.disabled-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stats-container {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+  min-width: 60px;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.stat-divider {
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  align-self: stretch;
+}
+
+.progress-indicators {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.current-position {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .action-button {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+
+  .sentence-display h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .progress-header-section {
+    margin: -10px -10px 15px -10px;
+    padding: 15px;
+  }
 }

@@ -1,4 +1,4 @@
-class PracticeAttemptDTO {
+class PracticeAttemptDto {
     constructor(attempt = {}) {
         this.id = attempt.id;
         this.user_id = attempt.user_id;
@@ -9,12 +9,18 @@ class PracticeAttemptDTO {
         this.total_questions = attempt.total_questions;
         this.correct_answers = attempt.correct_answers;
         this.time_spent = attempt.time_spent;
+        this.answers = attempt.answers;
         this.completed_at = attempt.completed_at;
+        this.state = attempt.state;
+        this.created_at = attempt.created_at;
+        this.updated_at = attempt.updated_at;
         
-        // Datos adicionales
+        // Additional computed fields
         this.topic_title = attempt.topic_title;
-        this.course_level = attempt.course_level;
+        this.percentage = attempt.total_questions > 0 
+            ? Math.round((attempt.correct_answers / attempt.total_questions) * 100) 
+            : 0;
     }
 }
 
-module.exports = PracticeAttemptDTO;
+module.exports = PracticeAttemptDto;

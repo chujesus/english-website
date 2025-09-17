@@ -1,4 +1,4 @@
-class TopicDTO {
+class TopicDto {
     constructor(topic = {}) {
         this.id = topic.id;
         this.course_id = topic.course_id;
@@ -10,10 +10,10 @@ class TopicDTO {
         this.learning_outcome = topic.learning_outcome;
         this.skills_covered = topic.skills_covered;
         this.tags = topic.tags;
-        this.is_active = topic.is_active;
+        this.state = topic.state;
         this.created_at = topic.created_at;
         this.updated_at = topic.updated_at;
     }
 }
 
-module.exports = TopicDTO;
+module.exports = TopicDto;

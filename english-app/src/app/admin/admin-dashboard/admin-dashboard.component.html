@@ -1,0 +1,338 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>
+                    <i class="fas fa-cogs"></i>
+                    Content Management Dashboard
+                </h2>
+                <div>
+                    <button class="btn btn-primary me-2" routerLink="/admin/content-manager">
+                        <i class="fas fa-upload"></i>
+                        Manage Content
+                    </button>
+                    <button class="btn btn-outline-secondary" routerLink="/dashboard">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Dashboard
+                    </button>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div *ngIf="loading" class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading content management data...</p>
+            </div>
+
+            <!-- Error State -->
+            <div *ngIf="error && !loading" class="alert alert-danger" role="alert">
+                {{ error }}
+                <button class="btn btn-outline-danger btn-sm ms-2" (click)="loadContentManagement()">
+                    Try Again
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div *ngIf="!loading && !error && contentManagement">
+                <!-- Overview Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card text-center bg-primary text-white">
+                            <div class="card-body">
+                                <i class="fas fa-book fa-2x mb-2"></i>
+                                <h5>Total Courses</h5>
+                                <h3>{{ contentManagement.courses.length }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-success text-white">
+                            <div class="card-body">
+                                <i class="fas fa-list fa-2x mb-2"></i>
+                                <h5>Total Topics</h5>
+                                <h3>{{ getTotalTopics() }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-info text-white">
+                            <div class="card-body">
+                                <i class="fas fa-file fa-2x mb-2"></i>
+                                <h5>Total Lessons</h5>
+                                <h3>{{ getTotalLessons() }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-warning text-dark">
+                            <div class="card-body">
+                                <i class="fas fa-upload fa-2x mb-2"></i>
+                                <h5>Recent Uploads</h5>
+                                <h3>{{ contentManagement.recent_uploads.length }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Management -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-book"></i>
+                                    Course Overview
+                                </h5>
+                                <button class="btn btn-sm btn-primary" routerLink="/admin/content-manager">
+                                    Manage All
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Level</th>
+                                                <th>Course Title</th>
+                                                <th>Topics</th>
+                                                <th>Lessons</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let course of contentManagement.courses">
+                                                <td>
+                                                    <span class="badge" [class]="getLevelBadgeClass(course.level)">
+                                                        {{ course.level }}
+                                                    </span>
+                                                </td>
+                                                <td>{{ course.title }}</td>
+                                                <td>
+                                                    <span class="badge bg-secondary">
+                                                        {{ course.topic_count || 0 }}
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-info">
+                                                        {{ course.lesson_count || 0 }}
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge"
+                                                        [class]="course.state === 1 ? 'bg-success' : 'bg-danger'">
+                                                        {{ course.state === 1 ? 'Active' : 'Inactive' }}
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-primary me-1"
+                                                        [routerLink]="['/admin/content-manager']"
+                                                        [queryParams]="{courseId: course.id}">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-info"
+                                                        [routerLink]="['/dashboard/courses']"
+                                                        [queryParams]="{id: course.id - 1, title: course.title}">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Uploads -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-history"></i>
+                                    Recent Uploads
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div *ngIf="contentManagement.recent_uploads.length === 0"
+                                    class="text-center text-muted py-3">
+                                    <i class="fas fa-inbox fa-2x mb-2"></i>
+                                    <p>No recent uploads</p>
+                                </div>
+
+                                <div *ngFor="let upload of contentManagement.recent_uploads"
+                                    class="border-bottom pb-2 mb-2">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h6 class="mb-1">{{ upload.course_title || 'Unknown Course' }}</h6>
+                                            <small class="text-muted">
+                                                {{ getUploadTypeLabel(upload.upload_type) }}
+                                            </small>
+                                            <br>
+                                            <small class="text-muted">
+                                                by {{ upload.admin_name }} - {{ formatDate(upload.created_at) }}
+                                            </small>
+                                        </div>
+                                        <span class="badge" [class]="getStatusBadgeClass(upload.status)">
+                                            {{ upload.status }}
+                                        </span>
+                                    </div>
+                                    <div *ngIf="upload.error_message" class="mt-1">
+                                        <small class="text-danger">{{ upload.error_message }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Modules Management -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-layer-group"></i>
+                                    Course Modules Management
+                                </h5>
+                                <span class="badge bg-info">{{ courseModules.length }} modules</span>
+                            </div>
+                            <div class="card-body">
+                                <!-- Course Modules JSON Editor -->
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Course Modules JSON Configuration</label>
+                                    <div class="mb-2">
+                                        <small class="text-muted">
+                                            Edit the course modules configuration directly in JSON format.
+                                            This allows you to modify course titles, descriptions, levels (A1-B2), and
+                                            topic counts.
+                                        </small>
+                                    </div>
+
+                                    <!-- Validation Status -->
+                                    <div class="mb-2">
+                                        <span class="badge me-2"
+                                            [class]="isValidCourseModulesJson ? 'bg-success' : 'bg-danger'">
+                                            <i [class]="isValidCourseModulesJson ? 'fas fa-check' : 'fas fa-times'"></i>
+                                            {{ isValidCourseModulesJson ? 'Valid' : 'Invalid' }}
+                                        </span>
+                                        <small [class]="isValidCourseModulesJson ? 'text-success' : 'text-danger'">
+                                            {{ courseModulesValidationMessage }}
+                                        </small>
+                                    </div>
+
+                                    <!-- JSON Textarea -->
+                                    <textarea class="form-control font-monospace" rows="15"
+                                        [(ngModel)]="courseModulesJsonContent" (input)="validateCourseModulesJson()"
+                                        placeholder="Loading course modules..." [disabled]="courseModulesLoading">
+                                    </textarea>
+
+                                    <!-- Action Buttons -->
+                                    <div class="mt-3 d-flex gap-2">
+                                        <button class="btn btn-success"
+                                            [disabled]="!isValidCourseModulesJson || courseModulesLoading"
+                                            (click)="saveCourseModulesJson()">
+                                            <span *ngIf="courseModulesLoading"
+                                                class="spinner-border spinner-border-sm me-2"></span>
+                                            <i *ngIf="!courseModulesLoading" class="fas fa-save me-2"></i>
+                                            {{ courseModulesLoading ? 'Saving...' : 'Save Changes' }}
+                                        </button>
+
+                                        <button class="btn btn-outline-secondary" [disabled]="courseModulesLoading"
+                                            (click)="resetCourseModulesJson()">
+                                            <i class="fas fa-undo me-2"></i>
+                                            Reset
+                                        </button>
+
+                                        <button class="btn btn-outline-info" [disabled]="courseModulesLoading"
+                                            (click)="loadCourseModules()">
+                                            <i class="fas fa-sync me-2"></i>
+                                            Reload
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Current Course Modules Preview -->
+                                <div class="mt-4">
+                                    <h6 class="fw-bold">Current Course Modules Preview</h6>
+                                    <div class="row">
+                                        <div *ngFor="let module of courseModules" class="col-md-6 col-lg-3 mb-3">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <span class="badge mb-2" [class]="getLevelBadgeClass(module.level)">
+                                                        {{ module.level }}
+                                                    </span>
+                                                    <h6 class="card-title">{{ module.title }}</h6>
+                                                    <p class="card-text small text-muted">{{ module.description }}</p>
+                                                    <div class="d-flex justify-content-between text-center">
+                                                        <small>
+                                                            <strong>{{ module.topics }}</strong><br>
+                                                            <span class="text-muted">Topics</span>
+                                                        </small>
+                                                        <small>
+                                                            <span class="badge"
+                                                                [class]="getStatusBadgeClass(module.status)">
+                                                                {{ getStatusText(module.status) }}
+                                                            </span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-bolt"></i>
+                                    Quick Actions
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <button class="btn btn-outline-primary w-100"
+                                            routerLink="/admin/content-manager">
+                                            <i class="fas fa-upload fa-2x d-block mb-2"></i>
+                                            Upload New Content
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <button class="btn btn-outline-success w-100" routerLink="/admin/json-editor">
+                                            <i class="fas fa-code fa-2x d-block mb-2"></i>
+                                            JSON Editor
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <button class="btn btn-outline-info w-100"
+                                            routerLink="/dashboard/student-progress">
+                                            <i class="fas fa-chart-line fa-2x d-block mb-2"></i>
+                                            View Student Progress
+                                        </button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <button class="btn btn-outline-warning w-100" routerLink="/admin/settings">
+                                            <i class="fas fa-cog fa-2x d-block mb-2"></i>
+                                            System Settings
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

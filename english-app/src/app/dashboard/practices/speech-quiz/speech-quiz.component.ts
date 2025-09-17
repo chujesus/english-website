@@ -57,6 +57,15 @@ export class SpeechQuizComponent implements OnInit {
     this.resetState();
   }
 
+  getCorrectCount(): number {
+    return this.summaryResults.filter(result => result.correct).length;
+  }
+
+  getAccuracyPercentage(): number {
+    if (this.summaryResults.length === 0) return 0;
+    return Math.round((this.getCorrectCount() / this.summaryResults.length) * 100);
+  }
+
   private resetState() {
     this.currentQuestionIndex = 0;
     this.selectedAnswer = null;

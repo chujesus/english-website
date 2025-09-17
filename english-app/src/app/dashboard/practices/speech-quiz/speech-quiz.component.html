@@ -1,43 +1,203 @@
-<div class="container text-center" *ngIf="listening.length > 0">
-    <ng-container *ngIf="!showSummary">
-        <div class="mb-4">
-            <button class="btn btn-primary rounded-pill px-4 py-2 fs-4" (click)="playAudio()">
-                🔊
-            </button>
-        </div>
+<div class="container-fluid px-4" *ngIf="listening.length > 0">
+    <!-- Quiz Progress Section -->
+    <div class="row justify-content-center mb-4" *ngIf="!showSummary">
+        <div class="col-12 col-lg-8">
+            <!-- Progress Header -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <!-- Progress Bar -->
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge bg-primary px-3 py-2 rounded-pill">
+                            <i class="fas fa-headphones me-2"></i>
+                            Question {{ currentQuestionIndex + 1 }} of {{ listening.length }}
+                        </span>
+                        <span class="text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            Listening Quiz
+                        </span>
+                    </div>
 
-        <div class="row justify-content-center g-4">
-            <div class="col-6 col-md-3" *ngFor="let option of listening[currentQuestionIndex].options">
-                <button class="btn w-100 py-3 border shadow-sm" [ngClass]="{
-            'btn-success': selectedAnswer === option && isCorrect,
-            'btn-danger': selectedAnswer === option && isCorrect === false,
-            'btn-light': selectedAnswer !== option }" (click)="selectAnswer(option)">
-                    {{ option }}
+                    <div class="progress mb-3" style="height: 8px; background: #f0f3f8;">
+                        <div class="progress-bar bg-gradient-primary" role="progressbar"
+                            [style.width.%]="((currentQuestionIndex + 1) / listening.length) * 100"
+                            style="transition: width 0.3s ease;">
+                        </div>
+                    </div>
+
+                    <!-- Audio Player Section -->
+                    <div class="text-center mb-4">
+                        <div class="audio-control-section">
+                            <p class="text-muted mb-3">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Listen carefully and select the correct option
+                            </p>
+
+                            <button class="btn btn-primary btn-lg rounded-circle shadow-lg" (click)="playAudio()"
+                                style="width: 80px; height: 80px; transition: all 0.3s ease;"
+                                onmouseover="this.style.transform='scale(1.05)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                <i class="fas fa-volume-up fs-3"></i>
+                            </button>
+
+                            <p class="text-muted mt-3 small">
+                                <i class="fas fa-redo me-1"></i>
+                                Click to replay audio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options Section -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-center mb-4">
+                        <i class="fas fa-list-ul me-2 text-primary"></i>
+                        Choose the correct option:
+                    </h5>
+
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-3"
+                            *ngFor="let option of listening[currentQuestionIndex].options; let i = index">
+                            <button class="btn w-100 py-4 border-2 shadow-sm position-relative" [ngClass]="{
+                                        'btn-success border-success': selectedAnswer === option && isCorrect,
+                                        'btn-danger border-danger': selectedAnswer === option && isCorrect === false,
+                                        'btn-outline-primary border-primary': selectedAnswer !== option,
+                                        'btn-light border-light': selectedAnswer === option && isCorrect === null
+                                    }" (click)="selectAnswer(option)" [disabled]="selectedAnswer !== null"
+                                style="min-height: 70px; font-size: 1.1rem; transition: all 0.3s ease;">
+
+                                <!-- Option Letter Badge -->
+                                <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill"
+                                    [ngClass]="{
+                                        'bg-success': selectedAnswer === option && isCorrect,
+                                        'bg-danger': selectedAnswer === option && isCorrect === false,
+                                        'bg-primary': selectedAnswer !== option
+                                      }" style="font-size: 0.7rem;">
+                                    {{ ['A', 'B', 'C', 'D'][i] }}
+                                </span>
+
+                                {{ option }}
+
+                                <!-- Result Icon -->
+                                <i class="fas fa-check ms-2" *ngIf="selectedAnswer === option && isCorrect"
+                                    style="color: white;"></i>
+                                <i class="fas fa-times ms-2" *ngIf="selectedAnswer === option && isCorrect === false"
+                                    style="color: white;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Section -->
+                    <div class="feedback-section mt-4" style="min-height: 60px;">
+                        <div class="text-center" *ngIf="selectedAnswer">
+                            <div class="alert border-0 d-inline-block px-4 py-3 rounded-pill" [ngClass]="{
+                                   'alert-success': isCorrect,
+                                   'alert-danger': isCorrect === false
+                                 }" style="animation: fadeIn 0.5s ease-in;">
+
+                                <i class="fas fa-check-circle me-2" *ngIf="isCorrect"></i>
+                                <i class="fas fa-times-circle me-2" *ngIf="isCorrect === false"></i>
+
+                                <span class="fw-bold">
+                                    {{ isCorrect ? 'Excellent! Correct answer!' : 'Not quite right. Keep practicing!' }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-sm" (click)="nextOrFinish()"
+                    [disabled]="!selectedAnswer">
+                    <span *ngIf="currentQuestionIndex < listening.length - 1">
+                        <i class="fas fa-arrow-right me-2"></i>
+                        Next Question
+                    </span>
+                    <span *ngIf="currentQuestionIndex >= listening.length - 1">
+                        <i class="fas fa-chart-bar me-2"></i>
+                        View Results
+                    </span>
                 </button>
             </div>
-            <div style="height: 30px;">
-                <div *ngIf="selectedAnswer">
-                    <p *ngIf="isCorrect" class="text-success fw-bold fs-5">✅ Correct!</p>
-                    <p *ngIf="isCorrect === false" class="text-danger fw-bold fs-5">❌ Incorrect. Try next!</p>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="row justify-content-center" *ngIf="showSummary">
+        <div class="col-12 col-lg-8">
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-gradient-primary text-white text-center py-4">
+                    <h3 class="mb-2">
+                        <i class="fas fa-trophy me-3"></i>
+                        Quiz Complete!
+                    </h3>
+                    <p class="mb-0 opacity-75">Here's how you performed</p>
+                </div>
+
+                <div class="card-body p-4">
+                    <!-- Score Summary -->
+                    <div class="text-center mb-4">
+                        <div class="score-circle mx-auto mb-3"
+                            style="width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #f8f9fa; border: 8px solid #28a745;">
+                            <div class="text-center">
+                                <div class="h4 mb-0 text-primary fw-bold">
+                                    {{ getCorrectCount() }}/{{ summaryResults.length }}
+                                </div>
+                                <small class="text-muted">Score</small>
+                            </div>
+                        </div>
+
+                        <h5 class="text-primary mb-3">
+                            {{ getAccuracyPercentage() }}% Accuracy
+                        </h5>
+                    </div>
+
+                    <!-- Detailed Results -->
+                    <div class="results-list">
+                        <h6 class="mb-3">
+                            <i class="fas fa-list-check me-2"></i>
+                            Question Breakdown:
+                        </h6>
+
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item border-0 px-0 py-3 d-flex justify-content-between align-items-center"
+                                *ngFor="let result of summaryResults; let i = index">
+
+                                <div class="d-flex align-items-center">
+                                    <span class="badge rounded-circle me-3"
+                                        [ngClass]="result.correct ? 'bg-success' : 'bg-danger'"
+                                        style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas" [ngClass]="result.correct ? 'fa-check' : 'fa-times'"></i>
+                                    </span>
+
+                                    <div>
+                                        <h6 class="mb-1">Question {{ i + 1 }}</h6>
+                                        <small class="text-muted">
+                                            {{ result.correct ? 'Correctly answered' : 'Needs practice' }}
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <span class="badge rounded-pill fs-6"
+                                    [ngClass]="result.correct ? 'bg-success-subtle text-success' : 'bg-danger-subtle text-danger'">
+                                    {{ result.correct ? 'Correct' : 'Incorrect' }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="text-center mt-4 pt-3 border-top">
+                        <button class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-sm" (click)="resetQuiz()">
+                            <i class="fas fa-redo me-2"></i>
+                            Try Again
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <button class="btn btn-outline-secondary mt-3" (click)="nextOrFinish()">
-            {{ currentQuestionIndex < listening.length - 1 ? 'Next ▶️' : 'Check Results ✅' }} </button>
-    </ng-container>
-
-    <ng-container *ngIf="showSummary">
-        <h4 class="text-primary mb-4">📊 Quiz Summary</h4>
-        <ul class="list-group text-start">
-            <li class="list-group-item d-flex justify-content-between align-items-center"
-                *ngFor="let result of summaryResults; let i = index">
-                Question {{ i + 1 }}:
-                <span [ngClass]="{ 'text-success': result.correct, 'text-danger': !result.correct }">
-                    {{ result.correct ? '✅ Correct' : '❌ Incorrect' }}
-                </span>
-            </li>
-        </ul>
-        <button class="btn btn-secondary mt-4" (click)="resetQuiz()">🔁 Try Again</button>
-    </ng-container>
+    </div>
 </div>

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { IUser } from '../../shared/interfaces/auth';
+import { Key } from '../../shared/constants/constants';
 
 @Injectable({
     providedIn: 'root'
 })
 export class LocalStorageService {
-    private readonly USER_KEY = 'uws_usc';
+
 
     constructor() { }
 
@@ -14,13 +14,13 @@ export class LocalStorageService {
             task: user.id,
             name: user.name.trim(),
             status: +user.profile,
-            uws: user.token
+            token: user.token
         }
-        localStorage.setItem(this.USER_KEY, JSON.stringify(sessionAuth));
+        localStorage.setItem(Key.IsloggedKey, JSON.stringify(sessionAuth));
     }
 
     getCredentials() {
-        const session = JSON.parse(localStorage.getItem(this.USER_KEY)!);
+        const session = JSON.parse(localStorage.getItem(Key.IsloggedKey)!);
         if (session !== null) {
             return session;
         }
@@ -28,7 +28,7 @@ export class LocalStorageService {
     }
 
     clear(): void {
-        localStorage.removeItem(this.USER_KEY);
+        localStorage.removeItem(Key.IsloggedKey);
     }
 
     // Validar sesión

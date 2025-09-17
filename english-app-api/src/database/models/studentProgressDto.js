@@ -1,4 +1,4 @@
-class StudentProgressDTO {
+class StudentProgressDto {
     constructor(progress = {}) {
         this.id = progress.id;
         this.user_id = progress.user_id;
@@ -9,14 +9,15 @@ class StudentProgressDTO {
         this.started_at = progress.started_at;
         this.completed_at = progress.completed_at;
         this.last_accessed = progress.last_accessed;
+        this.state = progress.state;
         this.created_at = progress.created_at;
+        this.updated_at = progress.updated_at;
         
-        // Datos adicionales que pueden venir de JOINs
+        // Additional computed fields
+        this.topic_title = progress.topic_title;
         this.course_title = progress.course_title;
         this.course_level = progress.course_level;
-        this.topic_title = progress.topic_title;
-        this.topic_index = progress.topic_index;
     }
 }
 
-module.exports = StudentProgressDTO;
+module.exports = StudentProgressDto;

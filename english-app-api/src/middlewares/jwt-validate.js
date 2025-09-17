@@ -10,12 +10,15 @@ const jwt = require('jsonwebtoken');
  */
 const verifyToken = (req, res = response, next) => {
     // Get the token from the request header
-    const token = req.header('Authorization');
+    const authHeader = req.header('Authorization');
 
     // Check if the token is missing
-    if (!token) {
-        return res.status(401).json({ message: "Token not provied" });
+    if (!authHeader) {
+        return res.status(401).json({ message: "Token not provided" });
     }
+
+    // Extract token from "Bearer TOKEN" format
+    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : authHeader;
 
     try {
         // Verify the token and extract user information
@@ -35,5 +38,5 @@ const verifyToken = (req, res = response, next) => {
 };
 
 module.exports = {
-    verifyToken
+    jwtValidate: verifyToken
 };

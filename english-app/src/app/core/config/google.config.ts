@@ -1,10 +1,5 @@
 import { environment } from '../../../environments/environment';
-
-export interface GoogleConfig {
-    clientId: string;
-    redirectUri?: string;
-    scope?: string;
-}
+import { GoogleConfig } from '../../shared/interfaces';
 
 // Configuración que se adapta automáticamente según el environment
 export const GOOGLE_CONFIG: GoogleConfig = {

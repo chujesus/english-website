@@ -6,7 +6,7 @@ import { Subject } from 'rxjs/internal/Subject';
 import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 import { distinctUntilChanged } from 'rxjs/internal/operators/distinctUntilChanged';
 import { switchMap } from 'rxjs/internal/operators/switchMap';
-import { IUser, Profile, Status } from '../../shared/interfaces/auth';
+import { IUser, Profile, Status } from '../../shared/interfaces';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
 import { TseService } from '../../core/services/tse.service';
@@ -220,13 +220,12 @@ export class RegisterComponent implements OnInit {
                 };
                 this.authService.register(user).subscribe((data: IUser[]) => {
                     if (data.length > 0) {
-                        debugger;
                         this.alertService.closeLoading();
                         this.alertService.showSuccessAlert("¡Registro completado exitósamente!", "").then(() => {
                             if (data[0].profile === this.profile.Administrator) {
                                 this.router.navigate(['/dashboard/admin']);
                             } else if (data[0].profile === this.profile.Student) {
-                                this.router.navigate(['/dashboard/modules']);
+                                this.router.navigate(['/dashboard/control-panel']);
                             }
                         });
                     }

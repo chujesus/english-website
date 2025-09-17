@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { authGuard, guestGuard } from './core/guards/auth.guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
     // Auth routes - Principal (solo para usuarios no autenticados)
@@ -36,10 +37,12 @@ export const routes: Routes = [
     },
     // Dashboard routes - Protegidas (requieren autenticación)
     {
-        path: 'dashboard',
-        canActivate: [authGuard],
-        loadComponent: () => import('./dashboard/dashboard.component').then(m => m.DashboardComponent),
-        children: [
+        path: 'dashboard', component: DashboardComponent, canActivate: [authGuard], children: [
+            {
+                path: 'control-panel',
+                title: 'Panel de Control',
+                loadComponent: () => import('./dashboard/control-panel/control-panel.component').then(m => m.ControlPanelComponent)
+            },
             {
                 path: 'modules',
                 title: 'Módulos',
@@ -56,25 +59,26 @@ export const routes: Routes = [
                 loadComponent: () => import('./dashboard/lessons/lessons.component').then(m => m.LessonsComponent)
             },
             {
-                path: 'practices/speech-practice',
-                title: 'Práctica de Pronunciación',
-                loadComponent: () => import('./dashboard/practices/speech-practice/speech-practice.component').then(m => m.SpeechPracticeComponent)
+                path: 'lesson-viewer',
+                title: 'Visor de Lecciones',
+                loadComponent: () => import('./dashboard/lesson-viewer/lesson-viewer.component').then(m => m.LessonViewerComponent)
             },
             {
-                path: 'practices/speech-quiz',
-                title: 'Quiz de Pronunciación',
-                loadComponent: () => import('./dashboard/practices/speech-quiz/speech-quiz.component').then(m => m.SpeechQuizComponent)
+                path: 'instructor-analytics',
+                title: 'Analytics de Instructor',
+                loadComponent: () => import('./dashboard/instructor-analytics/instructor-analytics.component').then(m => m.InstructorAnalyticsComponent)
             },
             {
-                path: 'practices/fill-in-blank',
-                title: 'Práctica de Completar',
-                loadComponent: () => import('./dashboard/practices/fill-in-blank-practice/fill-in-blank-practice.component').then(m => m.FillInBlankPracticeComponent)
+                path: 'admin-dashboard',
+                title: 'Panel de Administración',
+                loadComponent: () => import('./admin/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent)
             },
             {
-                path: '',
-                redirectTo: 'modules',
-                pathMatch: 'full'
-            }
+                path: 'user-management',
+                title: 'Gestión de Usuarios',
+                loadComponent: () => import('./admin/user-management/user-management.component').then(m => m.UserManagementComponent)
+            },
+            { path: '**', redirectTo: '/dashboard/control-panel' }
         ]
     },
     // Ruta principal redirige a login

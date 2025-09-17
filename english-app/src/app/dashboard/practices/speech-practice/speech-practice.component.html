@@ -1,39 +1,228 @@
-<div class="modal-body text-center">
-    <p class="text-muted mb-1">Sentence {{ currentIndex + 1 }} of {{ targetSentences.length }}</p>
-    <h3 class="fw-semibold text-dark mb-4">{{ targetSentences[currentIndex] }}</h3>
+<div class="modal-body px-4 py-3">
+    <!-- Progress Header Section -->
+    <div class="progress-header-section mb-4">
+        <div class="container-fluid px-0">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
 
-    <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-        <button class="btn btn-outline-primary rounded-pill px-4" (click)="playSentence(currentIndex)">
-            ▶️ Listen
-        </button>
+                    <!-- Sentence Counter -->
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <div class="sentence-counter-card bg-white rounded-pill shadow-sm px-4 py-2 border">
+                            <div class="d-flex align-items-center">
+                                <div class="counter-icon me-3">
+                                    <i class="fas fa-comment-dots text-primary"></i>
+                                </div>
+                                <div class="counter-text">
+                                    <span class="fw-bold text-dark">Sentence {{ currentIndex + 1 }}</span>
+                                    <span class="text-muted"> of {{ targetSentences.length }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <button class="btn rounded-pill px-4"
-            [ngClass]="speakingIndex === currentIndex ? 'btn-danger' : 'btn-outline-secondary'"
-            (click)="recognizeWithDeepgram(currentIndex)">
-            {{ speakingIndex === currentIndex ? '⏹ Stop' : '🎤 Speak' }}
-        </button>
-    </div>
-    <div *ngIf="recognizedTexts[currentIndex]">
-        <p class="mb-1">You said: <strong>"{{ recognizedTexts[currentIndex] }}"</strong></p>
-        <p *ngIf="isCorrectList[currentIndex] === true" class="text-success fw-bold">✅ Correct!</p>
-        <p *ngIf="isCorrectList[currentIndex] === false" class="text-danger fw-bold">❌ Try again</p>
-        <div class="progress" style="height: 10px;">
-            <div class="progress-bar" role="progressbar" [style.width.%]="similarityList[currentIndex]"
-                [ngClass]="{ 'bg-success': similarityList[currentIndex] >= 90,
-                'bg-warning': similarityList[currentIndex] >= 70 && similarityList[currentIndex] < 90, 'bg-danger': similarityList[currentIndex] < 70 }">
+                    <!-- Constrained Progress Bar -->
+                    <div class="progress-container mx-auto" style="max-width: 400px;">
+                        <div class="progress shadow-sm" style="height: 12px; background: #f8f9fa; border-radius: 10px;">
+                            <div class="progress-bar bg-gradient-primary" role="progressbar"
+                                [style.width.%]="((currentIndex + 1) / targetSentences.length) * 100"
+                                style="transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="progress-text text-center mt-2">
+                            <small class="text-muted">
+                                Progress: {{ getProgressPercentage() }}%
+                            </small>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <p class="text-muted">Similarity: {{ similarityList[currentIndex] }}%</p>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="container-fluid px-0">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+                <div class="card border-0 shadow-lg main-content-card">
+                    <div class="card-body p-4">
+                        <!-- English Sentence -->
+                        <div class="text-center sentence-section mb-4">
+                            <div class="sentence-display p-4 rounded-4"
+                                style="background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); border: 1px solid #e3f2fd;">
+                                <h3 class="fw-bold text-primary mb-0" style="line-height: 1.5; font-size: 1.5rem;">
+                                    {{ targetSentences[currentIndex].english }}
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Definition Section -->
+                        <div class="definition-section mb-4" *ngIf="targetSentences[currentIndex].definition">
+                            <div class="info-card bg-light rounded-4 p-4 border-start border-info border-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="info-icon me-3 mt-1">
+                                        <i class="fas fa-info-circle text-info fs-5"></i>
+                                    </div>
+                                    <div class="info-content flex-grow-1">
+                                        <h6 class="text-info mb-2 fw-semibold">Definition</h6>
+                                        <p class="mb-0 text-dark" style="line-height: 1.6;">
+                                            {{ targetSentences[currentIndex].definition }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pronunciation Section -->
+                        <div class="pronunciation-section mb-4" *ngIf="targetSentences[currentIndex].pronunciation">
+                            <div class="text-center">
+                                <div class="pronunciation-label mb-3">
+                                    <small
+                                        class="text-muted fw-semibold d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-volume-up me-2 text-info"></i>
+                                        Pronunciation Guide
+                                    </small>
+                                </div>
+                                <div class="pronunciation-badge">
+                                    <span class="badge bg-info text-white px-4 py-3 rounded-pill fs-6 shadow-sm">
+                                        <i class="fas fa-quote-left me-2 opacity-75"></i>
+                                        {{ targetSentences[currentIndex].pronunciation }}
+                                        <i class="fas fa-quote-right ms-2 opacity-75"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons-section mb-4">
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <button
+                                    class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-sm d-flex align-items-center action-button"
+                                    (click)="playSentence(currentIndex)">
+                                    <i class="fas fa-play me-2"></i>
+                                    <span class="fw-semibold">Listen</span>
+                                </button>
+
+                                <button
+                                    class="btn btn-lg rounded-pill px-5 py-3 shadow-sm d-flex align-items-center action-button"
+                                    [ngClass]="speakingIndex === currentIndex ? 'btn-danger' : 'btn-outline-primary'"
+                                    (click)="recognizeWithDeepgram(currentIndex)">
+                                    <i class="fas me-2"
+                                        [ngClass]="speakingIndex === currentIndex ? 'fa-stop' : 'fa-microphone'"></i>
+                                    <span class="fw-semibold">
+                                        {{ speakingIndex === currentIndex ? 'Stop' : 'Speak' }}
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Recognition Results -->
+                        <div class="recognition-results" *ngIf="recognizedTexts[currentIndex]">
+
+                            <p class="mb-1">
+                                You said: <strong>"{{ recognizedTexts[currentIndex] }}"</strong>
+                            </p>
+
+                            <p *ngIf="isCorrectList[currentIndex] === true" class="text-success fw-bold">
+                                ✅ Correct!
+                            </p>
+                            <p *ngIf="isCorrectList[currentIndex] === false" class="text-danger fw-bold">
+                                ❌ Try again
+                            </p>
+
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar" role="progressbar"
+                                    [style.width.%]="similarityList[currentIndex]" [ngClass]="{
+                                    'bg-success': similarityList[currentIndex] >= 90,
+                                    'bg-warning': similarityList[currentIndex] >= 70 && similarityList[currentIndex] < 90,
+                                    'bg-danger': similarityList[currentIndex] < 70
+                                    }"></div>
+                            </div>
+                            <p class="text-muted">Similarity: {{ similarityList[currentIndex] }}%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="modal-footer d-flex justify-content-between border-0">
-    <button class="btn btn-outline-secondary rounded-pill" [disabled]="currentIndex === 0" (click)="previous()">
-        ◀ Previous
-    </button>
+<!-- Enhanced Footer -->
+<div class="modal-footer border-0 p-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <!-- Progress Indicators -->
+    <div class="w-100 mb-4">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="progress-indicators d-flex gap-2 p-3 bg-white rounded-pill shadow-sm">
+                <span class="indicator-dot" *ngFor="let sentence of targetSentences; let i = index" [ngClass]="{
+                        'active': i === currentIndex,
+                        'completed-correct': i !== currentIndex && recognizedTexts[i] && isCorrectList[i] === true,
+                        'completed-incorrect': i !== currentIndex && recognizedTexts[i] && isCorrectList[i] === false,
+                        'pending': i !== currentIndex && !recognizedTexts[i]
+                      }" (click)="currentIndex = i" [attr.title]="'Sentence ' + (i + 1)">
+                </span>
+            </div>
+        </div>
+    </div>
 
-    <button class="btn btn-outline-primary rounded-pill" [disabled]="currentIndex === targetSentences.length - 1"
-        (click)="next()">
-        Next ▶
-    </button>
+    <!-- Navigation Controls -->
+    <div class="d-flex justify-content-center align-items-center gap-4 w-100">
+        <!-- Previous Button -->
+        <button class="btn btn-light rounded-pill px-4 py-3 d-flex align-items-center shadow-sm navigation-btn"
+            [disabled]="currentIndex === 0" (click)="previous()" [ngClass]="{'disabled-btn': currentIndex === 0}">
+            <i class="fas fa-chevron-left me-2"></i>
+            <span class="fw-semibold">Previous</span>
+        </button>
+
+        <!-- Center Info -->
+        <div class="text-center mx-3">
+            <div class="current-position">
+                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6 shadow-sm">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    {{ currentIndex + 1 }} / {{ targetSentences.length }}
+                </span>
+            </div>
+            <small class="text-muted mt-1 d-block">Current Position</small>
+        </div>
+
+        <!-- Next Button -->
+        <button class="btn btn-primary rounded-pill px-4 py-3 d-flex align-items-center shadow-sm navigation-btn"
+            [disabled]="currentIndex === targetSentences.length - 1" (click)="next()"
+            [ngClass]="{'disabled-btn': currentIndex === targetSentences.length - 1}">
+            <span class="fw-semibold">Next</span>
+            <i class="fas fa-chevron-right ms-2"></i>
+        </button>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="w-100 mt-4">
+        <div class="d-flex justify-content-center">
+            <div class="stats-container d-flex gap-4 text-center">
+                <div class="stat-item">
+                    <div class="stat-number text-success fw-bold">
+                        {{ getCorrectCount() }}
+                    </div>
+                    <small class="text-muted">Correct</small>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <div class="stat-number text-warning fw-bold">
+                        {{ getIncorrectCount() }}
+                    </div>
+                    <small class="text-muted">Practice</small>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <div class="stat-number text-primary fw-bold">
+                        {{ getPendingCount() }}
+                    </div>
+                    <small class="text-muted">Pending</small>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

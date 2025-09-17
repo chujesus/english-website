@@ -3,403 +3,458 @@
   "cefrLevel": "A1",
   "lessonId": 0,
   "sections": [
-    {
-      "title": "Personal Pronouns → Pronombres personales",
-      "isSpeaking": true,
-      "isListen": true,
-      "isFillInBlank": true,
-      "items": [
-        { "english": "I", "spanish": "Yo" },
-        { "english": "You", "spanish": "Tú / Usted" },
-        { "english": "He", "spanish": "Él" },
-        { "english": "She", "spanish": "Ella" },
-        { "english": "It", "spanish": "Eso / Esto (neutro)" },
-        { "english": "We", "spanish": "Nosotros(as)" },
-        { "english": "They", "spanish": "Ellos(as)" }
-      ],
-      "listening": [
-        {
-          "audio": "I",
-          "options": ["I", "You", "He", "She"],
-          "answer": "I"
+      {
+        "title": "Personal Pronouns → Pronombres personales",
+        "objective": "Learn basic greetings and introductions in English",
+        "isSpeaking": true,
+        "isGrammar": true,
+        "isReading": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": {
+          "title": "Grammar Focus: Present Simple Tense with 'To Be' → Enfoque gramatical: Presente simple del verbo 'To Be'",
+          "rule": "The verb 'to be' is used to describe states of being or identity. In the present simple tense, it is conjugated as follows: I am, You are, He is, She is, It is, We are, They are.",
+          "examples": [
+            "I am from Costa Rica.",
+            "He is a doctor.",
+            "We are learning English together.",
+            "She is very friendly.",
+            "It is a beautiful day.",
+            "You are welcome here.",
+            "They are my classmates.",
+            "I am a student.",
+            "You are my friend.",
+            "He is a teacher.",
+            "She is happy.",
+            "It is a sunny day.",
+            "We are going to the park.",
+            "They are my classmates."
+          ]
         },
-        {
-          "audio": "You",
-          "options": ["We", "You", "They", "He"],
-          "answer": "You"
+        "reading": {
+          "title": "Reading Practice → Práctica de lectura",
+          "text": "Hello! My name is John. I am from the United States. I live in New York City. I am a student. I study English at a language school. My friends and I are learning English together. We are very excited to improve our language skills. Nice to meet you!",
+          "questions": [
+            {
+              "question": "What is the name of the person in the text?",
+              "options": ["John", "Mike", "Sarah", "Anna"],
+              "answer": "John"
+            },
+            {
+              "question": "Where is John from?",
+              "options": ["United States", "Canada", "Mexico", "England"],
+              "answer": "United States"
+            },
+            {
+              "question": "What does John do?",
+              "options": ["Student", "Teacher", "Doctor", "Engineer"],
+              "answer": "Student"
+            },
+            {
+              "question": "Where does John study English?",
+              "options": ["Language school", "University", "High school", "Library"],
+              "answer": "Language school"
+            },
+            {
+              "question": "How does John feel about learning English?",
+              "options": ["Excited", "Bored", "Tired", "Nervous"],
+              "answer": "Excited"
+            }
+          ]
         },
-        {
-          "audio": "He",
-          "options": ["It", "She", "He", "They"],
-          "answer": "He"
-        },
-        {
-          "audio": "She",
-          "options": ["I", "You", "She", "We"],
-          "answer": "She"
-        },
-        {
-          "audio": "It",
-          "options": ["It", "They", "We", "He"],
-          "answer": "It"
-        },
-        {
-          "audio": "We",
-          "options": ["They", "You", "We", "I"],
-          "answer": "We"
-        },
-        {
-          "audio": "They",
-          "options": ["They", "She", "It", "He"],
-          "answer": "They"
-        }
-      ],
-      "fillInBlank": [
-        {
-          "prefix": ["I", "They", "We"],
-          "suffix": "am from Costa Rica.",
-          "answer": "I",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["He", "They", "We"],
-          "suffix": "is a doctor.",
-          "answer": "He",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["We", "He", "I"],
-          "suffix": "are learning English together.",
-          "answer": "We",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["She", "They", "You"],
-          "suffix": "is very friendly.",
-          "answer": "She",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["It", "We", "He"],
-          "suffix": "is a beautiful day.",
-          "answer": "It",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["You", "They", "I"],
-          "suffix": "are welcome here.",
-          "answer": "You",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["They", "She", "We"],
-          "suffix": "are my classmates.",
-          "answer": "They",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["He", "It", "We"],
-          "suffix": "is very smart.",
-          "answer": "He",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["We", "I", "She"],
-          "suffix": "are going to the park.",
-          "answer": "We",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["It", "He", "They"],
-          "suffix": "is my dog.",
-          "answer": "It",
-          "selected": "",
-          "feedback": ""
-        }
-      ]
-    },
-    {
-      "title": "Greetings and Farewells → Saludos y despedidas",
-      "isSpeaking": true,
-      "isListen": true,
-      "isFillInBlank": false,
-      "items": [
-        { "english": "Hello", "spanish": "Hola" },
-        { "english": "Hi", "spanish": "Hola (informal)" },
-        { "english": "Hey", "spanish": "Ey (muy informal)" },
-        { "english": "Good morning", "spanish": "Buenos días" },
-        { "english": "Good afternoon", "spanish": "Buenas tardes" },
-        { "english": "Good evening", "spanish": "Buenas noches (saludo)" },
-        { "english": "Good night", "spanish": "Buenas noches (despedida)" },
-        { "english": "Nice to meet you", "spanish": "Mucho gusto" },
-        { "english": "Pleased to meet you", "spanish": "Encantado/a" },
-        { "english": "Welcome", "spanish": "Bienvenido/a" },
-        { "english": "It’s nice to see you", "spanish": "Qué gusto verte" },
-        { "english": "How are you?", "spanish": "¿Cómo estás?" },
-        { "english": "What’s up?", "spanish": "¿Qué pasa? / ¿Qué tal?" },
-        { "english": "I’m fine, thank you", "spanish": "Estoy bien, gracias" },
-        { "english": "And you?", "spanish": "¿Y tú?" },
-        { "english": "Goodbye", "spanish": "Adiós" },
-        { "english": "Bye", "spanish": "Chao" },
-        { "english": "See you later", "spanish": "Hasta luego" },
-        { "english": "See you soon", "spanish": "Hasta pronto" },
-        { "english": "See you tomorrow", "spanish": "Hasta mañana" },
-        { "english": "Take care", "spanish": "Cuídate" },
-        { "english": "Have a nice day", "spanish": "Que tengas un buen día" },
-        { "english": "Same to you", "spanish": "Igualmente" }
-      ],
-      "listening": [
-        {
-          "audio": "Hello",
-          "options": ["Hello", "Hi", "Hey", "Good morning"],
-          "answer": "Hello"
-        },
-        {
-          "audio": "Good morning",
-          "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
-          "answer": "Good morning"
-        },
-        {
-          "audio": "Nice to meet you",
-          "options": ["Nice to meet you", "Pleased to meet you", "Welcome", "It’s nice to see you"],
-          "answer": "Nice to meet you"
-        },
-        {
-          "audio": "How are you?",
-          "options": ["How are you?", "What’s up?", "I’m fine, thank you", "And you?"],
-          "answer": "How are you?"
-        },
-        {
-          "audio": "Goodbye",
-          "options": ["Goodbye", "Bye", "See you later", "See you soon"],
-          "answer": "Goodbye"
-        }
-      ],
-      "fillInBlank": []
-    },
-    {
-      "title": "Polite Expressions → Expresiones de cortesía",
-      "isSpeaking": true,
-      "isListen": true,
-      "isFillInBlank": true,
-      "items": [
-        { "english": "Please", "spanish": "Por favor" },
-        { "english": "Thank you", "spanish": "Gracias" },
-        { "english": "Thanks", "spanish": "Gracias (informal)" },
-        { "english": "Thank you very much", "spanish": "Muchas gracias" },
-        { "english": "You’re welcome", "spanish": "De nada" },
-        { "english": "Excuse me", "spanish": "Disculpe / Perdón" },
-        { "english": "I’m sorry", "spanish": "Lo siento" },
-        { "english": "No problem", "spanish": "No hay problema" },
-        { "english": "Don’t mention it", "spanish": "No hay de qué" },
-        { "english": "That’s okay", "spanish": "Está bien" }
-      ],
-      "listening": [
-        {
-          "audio": "Please",
-          "options": ["Please", "Thank you", "Excuse me", "I’m sorry"],
-          "answer": "Please"
-        },
-        {
-          "audio": "Thank you",
-          "options": ["Thank you", "Thanks", "You’re welcome", "Excuse me"],
-          "answer": "Thank you"
-        },
-        {
-          "audio": "I’m sorry",
-          "options": ["I’m sorry", "Thanks", "You’re welcome", "No problem"],
-          "answer": "I’m sorry"
-        },
-        {
-          "audio": "You’re welcome",
-          "options": ["You’re welcome", "Don’t mention it", "Thanks", "That’s okay"],
-          "answer": "You’re welcome"
-        },
-        {
-          "audio": "Excuse me",
-          "options": ["Excuse me", "Please", "I’m sorry", "No problem"],
-          "answer": "Excuse me"
-        }
-      ],
-      "fillInBlank": [ 
-        {
-          "prefix": ["Please", "Thank you", "Excuse me"],
-          "suffix": ", can you help me?",
-          "answer": "Please",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["I’m sorry", "Thanks", "You’re welcome"],
-          "suffix": ", I didn’t mean to do that.",
-          "answer": "I’m sorry",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["No problem", "Thank you very much", "Excuse me"],
-          "suffix": ", I appreciate your help.",
-          "answer": "Thank you very much",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["That’s okay", "Please", "I’m sorry"],
-          "suffix": ", it was a mistake.",
-          "answer": "That’s okay",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["Don’t mention it", "Thanks", "You’re welcome"],
-          "suffix": ", I’m happy to help.",
-          "answer": "You’re welcome",
-          "selected": "",
-          "feedback": ""
-        }
-      ]
-    },
-    {
-      "title": "Verbs for Introduction → Verbos para presentarse",
-      "isSpeaking": true,
-      "isListen": true,
-      "isFillInBlank": false,
-      "items": [
-        { "english": "to be", "spanish": "ser / estar" },
-        { "english": "to meet", "spanish": "conocer" },
-        { "english": "to greet", "spanish": "saludar" },
-        { "english": "to live", "spanish": "vivir" },
-        { "english": "to come from", "spanish": "venir de" },
-        { "english": "to do", "spanish": "hacer" },
-        { "english": "to speak", "spanish": "hablar" },
-        { "english": "to repeat", "spanish": "repetir" },
-        { "english": "to understand", "spanish": "entender" },
-        { "english": "to say", "spanish": "decir" },
-        { "english": "to spell", "spanish": "deletrear" }
-      ],
-      "listening": [
-        {
-          "audio": "to be",
-          "options": ["to be", "to meet", "to greet", "to live"],
-          "answer": "to be"
-        },
-        {
-          "audio": "to meet",
-          "options": ["to come from", "to do", "to meet", "to speak"],
-          "answer": "to meet"
-        },
-        {
-          "audio": "to greet",
-          "options": ["to greet", "to understand", "to say", "to spell"],
-          "answer": "to greet"
-        },
-        {
-          "audio": "to live",
-          "options": ["to live", "to repeat", "to understand", "to do"],
-          "answer": "to live"
-        },
-        {
-          "audio": "to speak",
-          "options": ["to speak", "to say", "to spell", "to greet"],
-          "answer": "to speak"
-        }
-      ],
-      "fillInBlank": []
-    },
-    {
-      "title": "Useful Phrases → Frases útiles",
-      "isSpeaking": true,
-      "isListen": true,
-      "isFillInBlank": true,
-      "items": [
-        { "english": "What is your name?", "spanish": "¿Cómo te llamas?" },
-        { "english": "My name is...", "spanish": "Me llamo…" },
-        { "english": "I am", "spanish": "Soy (nombre)." },
-        { "english": "How old are you?", "spanish": "¿Cuántos años tienes?" },
-        { "english": "I am ___ years old.", "spanish": "Tengo ___ años." },
-        { "english": "Where are you from?", "spanish": "¿De dónde eres?" },
-        { "english": "I’m from Costa Rica.", "spanish": "Soy de Costa Rica." },
-        { "english": "Where do you live?", "spanish": "¿Dónde vives?" },
-        { "english": "I live in San José.", "spanish": "Vivo en San José." },
-        { "english": "What do you do? / What’s your job?", "spanish": "¿Qué haces? / ¿A qué te dedicas?" },
-        { "english": "I’m a student / teacher / mechanic", "spanish": "Soy estudiante / profesor / mecánico" },
-        { "english": "Do you speak English?", "spanish": "¿Hablas inglés?" },
-        { "english": "Just a little / A little bit", "spanish": "Un poco / Poquito" },
-        { "english": "I don’t understand", "spanish": "No entiendo" },
-        { "english": "Could you repeat, please?", "spanish": "¿Podrías repetir, por favor?" },
-        { "english": "Can you speak slower, please?", "spanish": "¿Puedes hablar más despacio, por favor?" },
-        { "english": "What’s your phone number?", "spanish": "¿Cuál es tu número de teléfono?" },
-        { "english": "What’s your email?", "spanish": "¿Cuál es tu correo electrónico?" },
-        { "english": "My email is…", "spanish": "Mi correo es…" },
-        { "english": "How do you spell that?", "spanish": "¿Cómo se deletrea eso?" },
-        { "english": "That’s correct / That’s right", "spanish": "Es correcto" },
-        { "english": "That’s wrong / That’s not correct", "spanish": "Está mal / No es correcto" },
-        { "english": "May I ask a question?", "spanish": "¿Puedo hacer una pregunta?" },
-        { "english": "Yes, of course / Sure!", "spanish": "¡Sí, por supuesto!" },
-        { "english": "No, sorry", "spanish": "No, lo siento" }
-      ],
-      "listening": [
-        {
-          "audio": "What is your name?",
-          "options": ["What is your name?", "How old are you?", "Where are you from?", "What do you do?"],
-          "answer": "What is your name?"
-        },
-        {
-          "audio": "I am",
-          "options": ["I am", "I live in", "I’m from", "I speak English"],
-          "answer": "I am"
-        },
-        {
-          "audio": "Do you speak English?",
-          "options": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?", "I don’t understand"],
-          "answer": "Do you speak English?"
-        },
-        {
-          "audio": "I don’t understand",
-          "options": ["I don’t understand", "What’s your phone number?", "What’s your email?", "Could you repeat, please?"],
-          "answer": "I don’t understand"
-        }
-      ],
-      "fillInBlank": [
-        {
-          "prefix": ["What is your name?", "How old are you?", "Where are you from?"],
-          "suffix": "My name is John.",
-          "answer": "What is your name?",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["I am", "I live in", "I’m from"],
-          "suffix": "San José.",
-          "answer": "I live in",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?"],
-          "suffix": "Just a little.",
-          "answer": "Do you speak English?",
-          "selected": "",
-          "feedback": ""
-        },
-        {
-          "prefix": ["I don’t understand", "What’s your phone number?", "What’s your email?"],
-          "suffix": "Could you repeat, please?",
-          "answer": "I don’t understand",
-          "selected": "",
-          "feedback": ""
-        }
-      ]
-    }
+        "speaking": [
+          { "english": "I", "definition": "Used by a speaker to refer to himself or herself.", "pronunciation": "ay" },
+          { "english": "You", "definition": "Used by a speaker to refer to the person or people being addressed.", "pronunciation": "yoo" },
+          { "english": "He", "definition": "Used by a speaker to refer to a male person or animal.", "pronunciation": "hee" },
+          { "english": "She", "definition": "Used by a speaker to refer to a female person or animal.", "pronunciation": "shee" },
+          { "english": "It", "definition": "Used by a speaker to refer to a thing, animal, or idea that is not male or female.", "pronunciation": "it" },
+          { "english": "We", "definition": "Used by a speaker to refer to himself or herself and one or more other people.", "pronunciation": "wee" },
+          { "english": "They", "definition": "Used by a speaker to refer to a group of people or things that are not male or female.", "pronunciation": "thay" }
+        ],
+        "listening": [
+          {
+            "audio": "I",
+            "options": ["I", "You", "He", "She"],
+            "answer": "I"
+          },
+          {
+            "audio": "You",
+            "options": ["We", "You", "They", "He"],
+            "answer": "You"
+          },
+          {
+            "audio": "He",
+            "options": ["It", "She", "He", "They"],
+            "answer": "He"
+          },
+          {
+            "audio": "She",
+            "options": ["I", "You", "She", "We"],
+            "answer": "She"
+          },
+          {
+            "audio": "It",
+            "options": ["It", "They", "We", "He"],
+            "answer": "It"
+          },
+          {
+            "audio": "We",
+            "options": ["They", "You", "We", "I"],
+            "answer": "We"
+          },
+          {
+            "audio": "They",
+            "options": ["They", "She", "It", "He"],
+            "answer": "They"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["I", "They", "We"],
+            "suffix": "am from Costa Rica.",
+            "answer": "I",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["He", "They", "We"],
+            "suffix": "is a doctor.",
+            "answer": "He",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We", "He", "I"],
+            "suffix": "are learning English together.",
+            "answer": "We",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["She", "They", "You"],
+            "suffix": "is very friendly.",
+            "answer": "She",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It", "We", "He"],
+            "suffix": "is a beautiful day.",
+            "answer": "It",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["You", "They", "I"],
+            "suffix": "are welcome here.",
+            "answer": "You",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["They", "She", "We"],
+            "suffix": "are my classmates.",
+            "answer": "They",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["He", "It", "We"],
+            "suffix": "is very smart.",
+            "answer": "He",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["We", "I", "She"],
+            "suffix": "are going to the park.",
+            "answer": "We",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["It", "He", "They"],
+            "suffix": "is my dog.",
+            "answer": "It",
+            "selected": "",
+            "feedback": ""
+          }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Greetings and Farewells → Saludos y despedidas",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": false,
+        "items": [
+          { "english": "Hello", "spanish": "Hola" },
+          { "english": "Hi", "spanish": "Hola (informal)" },
+          { "english": "Hey", "spanish": "Ey (muy informal)" },
+          { "english": "Good morning", "spanish": "Buenos días" },
+          { "english": "Good afternoon", "spanish": "Buenas tardes" },
+          { "english": "Good evening", "spanish": "Buenas noches (saludo)" },
+          { "english": "Good night", "spanish": "Buenas noches (despedida)" },
+          { "english": "Nice to meet you", "spanish": "Mucho gusto" },
+          { "english": "Pleased to meet you", "spanish": "Encantado/a" },
+          { "english": "Welcome", "spanish": "Bienvenido/a" },
+          { "english": "It’s nice to see you", "spanish": "Qué gusto verte" },
+          { "english": "How are you?", "spanish": "¿Cómo estás?" },
+          { "english": "What’s up?", "spanish": "¿Qué pasa? / ¿Qué tal?" },
+          { "english": "I’m fine, thank you", "spanish": "Estoy bien, gracias" },
+          { "english": "And you?", "spanish": "¿Y tú?" },
+          { "english": "Goodbye", "spanish": "Adiós" },
+          { "english": "Bye", "spanish": "Chao" },
+          { "english": "See you later", "spanish": "Hasta luego" },
+          { "english": "See you soon", "spanish": "Hasta pronto" },
+          { "english": "See you tomorrow", "spanish": "Hasta mañana" },
+          { "english": "Take care", "spanish": "Cuídate" },
+          { "english": "Have a nice day", "spanish": "Que tengas un buen día" },
+          { "english": "Same to you", "spanish": "Igualmente" }
+        ],
+        "listening": [
+          {
+            "audio": "Hello",
+            "options": ["Hello", "Hi", "Hey", "Good morning"],
+            "answer": "Hello"
+          },
+          {
+            "audio": "Good morning",
+            "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
+            "answer": "Good morning"
+          },
+          {
+            "audio": "Nice to meet you",
+            "options": ["Nice to meet you", "Pleased to meet you", "Welcome", "It’s nice to see you"],
+            "answer": "Nice to meet you"
+          },
+          {
+            "audio": "How are you?",
+            "options": ["How are you?", "What’s up?", "I’m fine, thank you", "And you?"],
+            "answer": "How are you?"
+          },
+          {
+            "audio": "Goodbye",
+            "options": ["Goodbye", "Bye", "See you later", "See you soon"],
+            "answer": "Goodbye"
+          }
+        ],
+        "fillInBlank": []
+      },
+      {
+        "title": "Polite Expressions → Expresiones de cortesía",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "Please", "spanish": "Por favor" },
+          { "english": "Thank you", "spanish": "Gracias" },
+          { "english": "Thanks", "spanish": "Gracias (informal)" },
+          { "english": "Thank you very much", "spanish": "Muchas gracias" },
+          { "english": "You’re welcome", "spanish": "De nada" },
+          { "english": "Excuse me", "spanish": "Disculpe / Perdón" },
+          { "english": "I’m sorry", "spanish": "Lo siento" },
+          { "english": "No problem", "spanish": "No hay problema" },
+          { "english": "Don’t mention it", "spanish": "No hay de qué" },
+          { "english": "That’s okay", "spanish": "Está bien" }
+        ],
+        "listening": [
+          {
+            "audio": "Please",
+            "options": ["Please", "Thank you", "Excuse me", "I’m sorry"],
+            "answer": "Please"
+          },
+          {
+            "audio": "Thank you",
+            "options": ["Thank you", "Thanks", "You’re welcome", "Excuse me"],
+            "answer": "Thank you"
+          },
+          {
+            "audio": "I’m sorry",
+            "options": ["I’m sorry", "Thanks", "You’re welcome", "No problem"],
+            "answer": "I’m sorry"
+          },
+          {
+            "audio": "You’re welcome",
+            "options": ["You’re welcome", "Don’t mention it", "Thanks", "That’s okay"],
+            "answer": "You’re welcome"
+          },
+          {
+            "audio": "Excuse me",
+            "options": ["Excuse me", "Please", "I’m sorry", "No problem"],
+            "answer": "Excuse me"
+          }
+        ],
+        "fillInBlank": [ 
+          {
+            "prefix": ["Please", "Thank you", "Excuse me"],
+            "suffix": ", can you help me?",
+            "answer": "Please",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I’m sorry", "Thanks", "You’re welcome"],
+            "suffix": ", I didn’t mean to do that.",
+            "answer": "I’m sorry",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["No problem", "Thank you very much", "Excuse me"],
+            "suffix": ", I appreciate your help.",
+            "answer": "Thank you very much",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["That’s okay", "Please", "I’m sorry"],
+            "suffix": ", it was a mistake.",
+            "answer": "That’s okay",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Don’t mention it", "Thanks", "You’re welcome"],
+            "suffix": ", I’m happy to help.",
+            "answer": "You’re welcome",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      },
+      {
+        "title": "Verbs for Introduction → Verbos para presentarse",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": false,
+        "items": [
+          { "english": "to be", "spanish": "ser / estar" },
+          { "english": "to meet", "spanish": "conocer" },
+          { "english": "to greet", "spanish": "saludar" },
+          { "english": "to live", "spanish": "vivir" },
+          { "english": "to come from", "spanish": "venir de" },
+          { "english": "to do", "spanish": "hacer" },
+          { "english": "to speak", "spanish": "hablar" },
+          { "english": "to repeat", "spanish": "repetir" },
+          { "english": "to understand", "spanish": "entender" },
+          { "english": "to say", "spanish": "decir" },
+          { "english": "to spell", "spanish": "deletrear" }
+        ],
+        "listening": [
+          {
+            "audio": "to be",
+            "options": ["to be", "to meet", "to greet", "to live"],
+            "answer": "to be"
+          },
+          {
+            "audio": "to meet",
+            "options": ["to come from", "to do", "to meet", "to speak"],
+            "answer": "to meet"
+          },
+          {
+            "audio": "to greet",
+            "options": ["to greet", "to understand", "to say", "to spell"],
+            "answer": "to greet"
+          },
+          {
+            "audio": "to live",
+            "options": ["to live", "to repeat", "to understand", "to do"],
+            "answer": "to live"
+          },
+          {
+            "audio": "to speak",
+            "options": ["to speak", "to say", "to spell", "to greet"],
+            "answer": "to speak"
+          }
+        ],
+        "fillInBlank": []
+      },
+      {
+        "title": "Useful Phrases → Frases útiles",
+        "isSpeaking": true,
+        "isListen": true,
+        "isFillInBlank": true,
+        "items": [
+          { "english": "What is your name?", "spanish": "¿Cómo te llamas?" },
+          { "english": "My name is...", "spanish": "Me llamo…" },
+          { "english": "I am", "spanish": "Soy (nombre)." },
+          { "english": "How old are you?", "spanish": "¿Cuántos años tienes?" },
+          { "english": "I am ___ years old.", "spanish": "Tengo ___ años." },
+          { "english": "Where are you from?", "spanish": "¿De dónde eres?" },
+          { "english": "I’m from Costa Rica.", "spanish": "Soy de Costa Rica." },
+          { "english": "Where do you live?", "spanish": "¿Dónde vives?" },
+          { "english": "I live in San José.", "spanish": "Vivo en San José." },
+          { "english": "What do you do? / What’s your job?", "spanish": "¿Qué haces? / ¿A qué te dedicas?" },
+          { "english": "I’m a student / teacher / mechanic", "spanish": "Soy estudiante / profesor / mecánico" },
+          { "english": "Do you speak English?", "spanish": "¿Hablas inglés?" },
+          { "english": "Just a little / A little bit", "spanish": "Un poco / Poquito" },
+          { "english": "I don’t understand", "spanish": "No entiendo" },
+          { "english": "Could you repeat, please?", "spanish": "¿Podrías repetir, por favor?" },
+          { "english": "Can you speak slower, please?", "spanish": "¿Puedes hablar más despacio, por favor?" },
+          { "english": "What’s your phone number?", "spanish": "¿Cuál es tu número de teléfono?" },
+          { "english": "What’s your email?", "spanish": "¿Cuál es tu correo electrónico?" },
+          { "english": "My email is…", "spanish": "Mi correo es…" },
+          { "english": "How do you spell that?", "spanish": "¿Cómo se deletrea eso?" },
+          { "english": "That’s correct / That’s right", "spanish": "Es correcto" },
+          { "english": "That’s wrong / That’s not correct", "spanish": "Está mal / No es correcto" },
+          { "english": "May I ask a question?", "spanish": "¿Puedo hacer una pregunta?" },
+          { "english": "Yes, of course / Sure!", "spanish": "¡Sí, por supuesto!" },
+          { "english": "No, sorry", "spanish": "No, lo siento" }
+        ],
+        "listening": [
+          {
+            "audio": "What is your name?",
+            "options": ["What is your name?", "How old are you?", "Where are you from?", "What do you do?"],
+            "answer": "What is your name?"
+          },
+          {
+            "audio": "I am",
+            "options": ["I am", "I live in", "I’m from", "I speak English"],
+            "answer": "I am"
+          },
+          {
+            "audio": "Do you speak English?",
+            "options": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?", "I don’t understand"],
+            "answer": "Do you speak English?"
+          },
+          {
+            "audio": "I don’t understand",
+            "options": ["I don’t understand", "What’s your phone number?", "What’s your email?", "Could you repeat, please?"],
+            "answer": "I don’t understand"
+          }
+        ],
+        "fillInBlank": [
+          {
+            "prefix": ["What is your name?", "How old are you?", "Where are you from?"],
+            "suffix": "My name is John.",
+            "answer": "What is your name?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I am", "I live in", "I’m from"],
+            "suffix": "San José.",
+            "answer": "I live in",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?"],
+            "suffix": "Just a little.",
+            "answer": "Do you speak English?",
+            "selected": "",
+            "feedback": ""
+          },
+          {
+            "prefix": ["I don’t understand", "What’s your phone number?", "What’s your email?"],
+            "suffix": "Could you repeat, please?",
+            "answer": "I don’t understand",
+            "selected": "",
+            "feedback": ""
+          }
+        ]
+      }
     ]
   }
 ]

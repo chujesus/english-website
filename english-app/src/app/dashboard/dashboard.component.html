@@ -1,49 +1,99 @@
 <header>
-    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-white">This platform offers structured English courses designed for students and
-                        adult learners in technical education.
-                        Each module focuses on practical communication skills for daily life and workplace scenarios.
-                        Explore the topics and advance your English proficiency at your own pace.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="fas fa-graduation-cap me-2"></i>
+                <strong>English Learning Platform</strong>
+            </a>
+
+            <!-- User Info -->
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle me-1"></i>
+                        {{ userName }} ({{ userRole }})
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" (click)="logout()"><i
+                                    class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <strong>English App</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-nav w-100">
+
+                <!-- Student Navigation -->
+                <div *ngIf="isStudent()" class="d-flex flex-wrap gap-3 w-100">
+                    <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
+                        <i class="fas fa-book me-1"></i>Course Modules
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/student-progress" routerLinkActive="active">
+                        <i class="fas fa-chart-line me-1"></i>My Progress
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/practices/fill-in-blank" routerLinkActive="active">
+                        <i class="fas fa-pen me-1"></i>Practice Exercises
+                    </a>
+                </div>
+
+                <!-- Instructor Navigation -->
+                <div *ngIf="hasInstructorAccess() && !isAdmin()" class="d-flex flex-wrap gap-3 w-100">
+                    <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
+                        <i class="fas fa-book me-1"></i>Course Content
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/instructor-analytics" routerLinkActive="active">
+                        <i class="fas fa-chart-bar me-1"></i>Student Analytics
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/student-progress" routerLinkActive="active">
+                        <i class="fas fa-users me-1"></i>Student Progress
+                    </a>
+                </div>
+
+                <!-- Administrator Navigation -->
+                <div *ngIf="hasAdminAccess()" class="d-flex flex-wrap gap-3 w-100">
+                    <a class="nav-link" routerLink="/dashboard/admin-dashboard" routerLinkActive="active">
+                        <i class="fas fa-tachometer-alt me-1"></i>Admin Dashboard
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
+                        <i class="fas fa-book me-1"></i>Course Management
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/user-management" routerLinkActive="active">
+                        <i class="fas fa-users-cog me-1"></i>User Management
+                    </a>
+                    <a class="nav-link" routerLink="/dashboard/instructor-analytics" routerLinkActive="active">
+                        <i class="fas fa-chart-bar me-1"></i>System Analytics
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
 </header>
 
-<main>
+<main class="flex-grow-1">
+    <!-- Router Outlet for Sub-Components -->
     <router-outlet></router-outlet>
 </main>
 
-<footer class="text-muted py-5">
+<footer class="bg-dark text-light py-4 mt-auto">
     <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                href="../getting-started/introduction/">getting started guide</a>.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>English Learning Platform</h6>
+                <p class="small text-muted mb-0">Empowering English language learning through technology</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p class="small text-muted mb-0">&copy; 2024 All rights reserved</p>
+            </div>
+        </div>
     </div>
 </footer>

@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,8 @@ export class DeepgramService {
 
   transcribeAudio(audioBlob: Blob) {
     const headers = new HttpHeaders({
-      'Authorization': `Token ${this.apiKey}`,
-      'Content-Type': 'audio/webm'
+      Authorization: `Token ${this.apiKey}`,
+      'Content-Type': audioBlob.type || 'audio/webm'
     });
 
     return this.http.post<any>(this.deepgramUrl, audioBlob, { headers });

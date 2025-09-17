@@ -1,65 +1,221 @@
-<div class="modal-body px-0">
-    <div #carousel id="carouselFillIn" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
-        <div class="carousel-inner">
-
-            <div *ngFor="let q of questions; let i = index" class="carousel-item" [ngClass]="{ 'active': i === 0 }">
-                <div class="container px-4 py-3">
-                    <h4 class="mb-3 text-center">Question {{ i + 1 }} of {{ questions.length }}</h4>
-
-                    <div class="d-flex flex-wrap align-items-center justify-content-center gap-2 mb-3">
-                        <span class="fw-semibold text-muted">{{ q.prefix.join(' / ') }}</span>
-                        <input [(ngModel)]="q.selected" [name]="'q' + i" class="form-control text-center"
-                            style="width: 100px;" />
-                        <span>{{ q.suffix }}</span>
+<div class="modal-body p-0">
+    <!-- Header Section -->
+    <div class="practice-header">
+        <div class="container-fluid px-4 py-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="header-content">
+                        <h2 class="practice-title mb-2">
+                            <i class="fas fa-edit me-3 text-primary"></i>
+                            Fill in the Blanks Practice
+                        </h2>
+                        <p class="practice-subtitle mb-0 text-muted">
+                            Complete the sentences by filling in the missing words
+                        </p>
                     </div>
-
-                    <div *ngIf="q.feedback" class="text-center mt-2">
-                        <span
-                            [ngClass]="{ 'text-success': q.feedback === 'correct', 'text-danger': q.feedback.startsWith('wrong') }">
-                            {{ q.feedback === 'correct' ? 'Correct!' : 'Wrong! The correct answer is: ' +
-                            q.feedback.split('|')[1] }}
-                        </span>
+                </div>
+                <div class="col-md-4">
+                    <div class="practice-stats d-flex justify-content-end">
+                        <div class="stat-card me-3">
+                            <div class="stat-number">{{ questions.length }}</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-card" *ngIf="isCompleted">
+                            <div class="stat-number text-primary">{{ score }}</div>
+                            <div class="stat-label">Score</div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="d-flex justify-content-between align-items-center mt-4">
-                        <button class="btn btn-outline-secondary" type="button" data-bs-target="#carouselFillIn"
-                            data-bs-slide="prev" [disabled]="i === 0">
-                            Previous
-                        </button>
+    <!-- Main Content -->
+    <div class="practice-content">
+        <div class="container-fluid px-4">
 
-                        <button *ngIf="i < questions.length - 1" class="btn btn-outline-secondary" type="button"
-                            data-bs-target="#carouselFillIn" data-bs-slide="next">
-                            Next
-                        </button>
+            <!-- Practice Mode -->
+            <div *ngIf="!isCompleted" class="practice-mode">
+                <!-- Questions Grid -->
+                <div class="questions-grid mb-5">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-8 mx-auto" *ngFor="let q of questions; let i = index">
+                            <div class="question-card" [class.completed]="isCompleted && q.feedback"
+                                [class.correct]="isCompleted && q.feedback === 'correct'"
+                                [class.incorrect]="isCompleted && q.feedback && q.feedback !== 'correct'">
 
-                        <div *ngIf="i === questions.length - 1" class="d-flex gap-2">
-                            <button class="btn btn-secondary" (click)="reset()">Reset</button>
-                            <button class="btn btn-primary" (click)="checkAnswers()">Check</button>
+                                <!-- Question Header -->
+                                <div class="question-header">
+                                    <div class="question-number">
+                                        <span class="number">{{ i + 1 }}</span>
+                                    </div>
+                                    <div class="question-status">
+                                        <i class="fas fa-check-circle text-success"
+                                            *ngIf="isCompleted && q.feedback === 'correct'"></i>
+                                        <i class="fas fa-times-circle text-danger"
+                                            *ngIf="isCompleted && q.feedback && q.feedback !== 'correct'"></i>
+                                        <i class="fas fa-edit text-primary" *ngIf="!isCompleted"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Question Content -->
+                                <div class="question-content">
+                                    <div class="sentence-container">
+                                        <div class="sentence-parts">
+                                            <!-- Prefix -->
+                                            <span class="sentence-part prefix">{{ q.prefix.join(' / ') }}: </span>
+
+                                            <!-- Input Field -->
+                                            <div class="input-container">
+                                                <input [(ngModel)]="q.selected" [name]="'question_' + i"
+                                                    class="blank-input"
+                                                    [class.correct]="isCompleted && q.feedback === 'correct'"
+                                                    [class.incorrect]="isCompleted && q.feedback && q.feedback !== 'correct'"
+                                                    placeholder="Type your answer..." [disabled]="isCompleted"
+                                                    autocomplete="off" />
+                                                <div class="input-underline"></div>
+                                            </div>
+
+                                            <!-- Suffix -->
+                                            <span class="sentence-part suffix">{{ q.suffix }}</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feedback Section -->
+                                    <div class="feedback-section" *ngIf="isCompleted && q.feedback">
+                                        <div class="feedback-card" [class.success]="q.feedback === 'correct'"
+                                            [class.error]="q.feedback !== 'correct'">
+                                            <div class="feedback-icon">
+                                                <i class="fas" [class.fa-check-circle]="q.feedback === 'correct'"
+                                                    [class.fa-info-circle]="q.feedback !== 'correct'"></i>
+                                            </div>
+                                            <div class="feedback-content">
+                                                <div class="feedback-title">
+                                                    {{ q.feedback === 'correct' ? 'Excellent!' : 'Not quite right' }}
+                                                </div>
+                                                <div class="feedback-message" *ngIf="q.feedback !== 'correct'">
+                                                    The correct answer is: <strong>{{ q.feedback.split('|')[1]
+                                                        }}</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-section">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="action-buttons">
+                                <button class="btn btn-outline-secondary btn-lg me-3" (click)="reset()">
+                                    <i class="fas fa-redo me-2"></i>
+                                    Reset All
+                                </button>
+                                <button class="btn btn-primary btn-lg" (click)="checkAnswers()"
+                                    [disabled]="!hasAnswers()">
+                                    <i class="fas fa-check me-2"></i>
+                                    Check Answers
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <div class="container p-4">
-                    <h4 class="text-center mb-3">Summary</h4>
-                    <ul class="list-group">
-                        <li *ngFor="let q of questions; let i = index"
-                            class="list-group-item d-flex justify-content-between align-items-center">
-                            <span>{{ q.prefix.join(' / ') }} ___ {{ q.suffix }}</span>
-                            <span
-                                [ngClass]="{ 'text-success': q.feedback === 'correct', 'text-danger': q.feedback.startsWith('wrong') }">
-                                {{ q.feedback === 'correct' ? '✔️' : '✖️ ' + q.feedback.split('|')[1] }}
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="text-end mt-4">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            (click)="clearAll()">Close</button>
+            <!-- Results Summary -->
+            <div *ngIf="isCompleted" class="results-mode">
+                <div class="results-header text-center mb-5">
+                    <div class="results-icon">
+                        <i class="fas fa-trophy text-warning"></i>
+                    </div>
+                    <h3 class="results-title">Practice Complete!</h3>
+                    <p class="results-subtitle">Here's how you performed</p>
+                </div>
+
+                <!-- Score Overview -->
+                <div class="score-overview mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="score-card">
+                                <div class="score-circle">
+                                    <div class="score-percentage">{{ getScorePercentage() }}%</div>
+                                    <div class="score-label">Accuracy</div>
+                                </div>
+                                <div class="score-details">
+                                    <div class="score-detail">
+                                        <span class="detail-number text-success">{{ getCorrectCount() }}</span>
+                                        <span class="detail-label">Correct</span>
+                                    </div>
+                                    <div class="score-detail">
+                                        <span class="detail-number text-danger">{{ getIncorrectCount() }}</span>
+                                        <span class="detail-label">Incorrect</span>
+                                    </div>
+                                    <div class="score-detail">
+                                        <span class="detail-number text-primary">{{ questions.length }}</span>
+                                        <span class="detail-label">Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Detailed Results -->
+                <div class="detailed-results">
+                    <h4 class="section-title mb-4">
+                        <i class="fas fa-list-check me-2"></i>
+                        Detailed Results
+                    </h4>
+
+                    <div class="results-list">
+                        <div class="result-item" *ngFor="let q of questions; let i = index">
+                            <div class="result-number">{{ i + 1 }}</div>
+                            <div class="result-content">
+                                <div class="result-question">
+                                    {{ q.prefix.join(' / ') }}
+                                    <span class="blank-placeholder">______</span>
+                                    {{ q.suffix }}
+                                </div>
+                                <div class="result-answers">
+                                    <div class="your-answer">
+                                        <span class="answer-label">Your answer:</span>
+                                        <span class="answer-value" [class.correct]="q.feedback === 'correct'"
+                                            [class.incorrect]="q.feedback !== 'correct'">
+                                            {{ q.selected || '(empty)' }}
+                                        </span>
+                                    </div>
+                                    <div class="correct-answer" *ngIf="q.feedback !== 'correct'">
+                                        <span class="answer-label">Correct answer:</span>
+                                        <span class="answer-value correct">{{ q.feedback.split('|')[1] }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-status">
+                                <i class="fas" [class.fa-check-circle]="q.feedback === 'correct'"
+                                    [class.fa-times-circle]="q.feedback !== 'correct'"
+                                    [class.text-success]="q.feedback === 'correct'"
+                                    [class.text-danger]="q.feedback !== 'correct'"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final Actions -->
+                <div class="final-actions text-center mt-5">
+                    <button class="btn btn-outline-primary btn-lg me-3" (click)="reset()">
+                        <i class="fas fa-redo me-2"></i>
+                        Try Again
+                    </button>
+                    <button class="btn btn-success btn-lg" (click)="clearAll()" data-bs-dismiss="modal">
+                        <i class="fas fa-check me-2"></i>
+                        Complete
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

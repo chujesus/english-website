@@ -27,6 +27,11 @@ app.use(express.static('public'));
 
 // Routes
 app.use('/auths', require('./src/routes/auth.routes'));
+app.use('/progress', require('./src/routes/progress.routes'));
+app.use('/practice', require('./src/routes/practice.routes'));
+app.use('/content', require('./src/routes/content.routes'));
+app.use('/admin', require('./src/routes/admin.routes'));
+app.use('/course-modules', require('./src/routes/course-modules.routes'));
 
 // Exports router
 module.exports = { router };

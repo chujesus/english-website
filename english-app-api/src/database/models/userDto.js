@@ -5,6 +5,7 @@ class UserDTO {
         this.name = user.name;
         this.first_name = user.first_name;
         this.last_name = user.last_name;
+        this.password = user.password;
         this.email = user.email;
         this.phone = user.phone;
         this.password_token = user.password_token;

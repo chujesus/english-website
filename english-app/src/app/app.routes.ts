@@ -54,11 +54,6 @@ export const routes: Routes = [
                 loadComponent: () => import('./dashboard/courses/courses.component').then(m => m.CoursesComponent)
             },
             {
-                path: 'lessons',
-                title: 'Lecciones',
-                loadComponent: () => import('./dashboard/lessons/lessons.component').then(m => m.LessonsComponent)
-            },
-            {
                 path: 'lesson-viewer',
                 title: 'Visor de Lecciones',
                 loadComponent: () => import('./dashboard/lesson-viewer/lesson-viewer.component').then(m => m.LessonViewerComponent)
@@ -67,16 +62,6 @@ export const routes: Routes = [
                 path: 'instructor-analytics',
                 title: 'Analytics de Instructor',
                 loadComponent: () => import('./dashboard/instructor-analytics/instructor-analytics.component').then(m => m.InstructorAnalyticsComponent)
-            },
-            {
-                path: 'admin-dashboard',
-                title: 'Panel de Administración',
-                loadComponent: () => import('./admin/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent)
-            },
-            {
-                path: 'user-management',
-                title: 'Gestión de Usuarios',
-                loadComponent: () => import('./admin/user-management/user-management.component').then(m => m.UserManagementComponent)
             },
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]

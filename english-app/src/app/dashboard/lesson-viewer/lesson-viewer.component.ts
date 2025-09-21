@@ -24,6 +24,8 @@ export class LessonViewerComponent implements OnInit {
     currentTopicIndex: number = 0;
     activeSection = 0;
     lessonProgress = 0;
+    height: number = 0;
+    screenHeight: number = 0;
     courseTitle: string = "";
     cefrLevel: string = "";
     error: string = "";
@@ -76,50 +78,19 @@ export class LessonViewerComponent implements OnInit {
                         ...this.lessons,
                         sections: this.lessons.sections.length > 0 ? [this.lessons.sections[0]] : []
                     };
+                    this.loadPractices(this.currentLesson.sections[0]);
                 }
-
-                if (this.lessons && Array.isArray(this.lessons.sections)) {
-                    this.speechPracticeItems = this.lessons.sections[0].speaking
-                        .flatMap((text: any): SpeechPracticeItem[] => {
-                            const content = text.english || text.content || text.phrase || '';
-
-                            if (content.includes('_')) return [];
-
-                            if (content.includes('/')) {
-                                return content.split('/').map((phrase: string) => ({
-                                    english: phrase.trim(),
-                                    definition: text.definition || '',
-                                    pronunciation: text.pronunciation || ''
-                                }));
-                            }
-
-                            return [{
-                                english: content.trim(),
-                                definition: text.definition || '',
-                                pronunciation: text.pronunciation || ''
-                            }];
-                        })
-                        .filter((item: SpeechPracticeItem) => item.english.length > 0);
-
-                    this.listening = this.lessons.sections[0].listening
-                        .map((practice: any) => ({
-                            audio: practice.audio || '',
-                            options: practice.options || [],
-                            answer: practice.answer || ''
-                        }));
-                }
-
-                this.questions = this.lessons.sections[0].fillInBlank
-                    .map((practice: any) => ({
-                        prefix: [practice.prefix || ''],
-                        suffix: practice.suffix || '',
-                        answer: practice.answer || '',
-                        selected: '',
-                        feedback: ''
-                    }));
 
                 this.activeSection = 0;
                 this.loading = false;
+                setTimeout(() => {
+                    const element = document.querySelector<HTMLDivElement>('.sidebar');
+
+                    if (element) {
+                        this.screenHeight = window.innerHeight;
+                        this.height = element.scrollHeight + 24;
+                    }
+                }, 500);
             },
             error: (error) => {
                 console.error('Error loading lesson:', error);
@@ -134,8 +105,56 @@ export class LessonViewerComponent implements OnInit {
                 ...this.lessons,
                 sections: this.lessons.sections.length > 0 ? [this.lessons.sections[index]] : []
             };
+            this.loadPractices(this.lessons.sections[index]);
+            this.scrollToSection();
         }
         this.activeSection = index;
+    }
+
+    loadPractices(practices: any): void {
+        if (practices.isSpeaking) {
+            this.speechPracticeItems = practices.speaking
+                .flatMap((text: any): SpeechPracticeItem[] => {
+                    const content = text.english || text.content || text.phrase || '';
+
+                    if (content.includes('_')) return [];
+
+                    if (content.includes('/')) {
+                        return content.split('/').map((phrase: string) => ({
+                            english: phrase.trim(),
+                            definition: text.definition || '',
+                            pronunciation: text.pronunciation || ''
+                        }));
+                    }
+
+                    return [{
+                        english: content.trim(),
+                        definition: text.definition || '',
+                        pronunciation: text.pronunciation || ''
+                    }];
+                })
+                .filter((item: SpeechPracticeItem) => item.english.length > 0);
+        }
+
+        if (practices.isListening) {
+            this.listening = practices.listening
+                .map((practice: any) => ({
+                    audio: practice.audio || '',
+                    options: practice.options || [],
+                    answer: practice.answer || ''
+                }));
+        }
+
+        if (practices.isFillInBlank) {
+            this.questions = practices.fillInBlank
+                .map((practice: any) => ({
+                    prefix: [practice.prefix || ''],
+                    suffix: practice.suffix || '',
+                    answer: practice.answer || '',
+                    selected: '',
+                    feedback: ''
+                }));
+        }
     }
 
     reset() {
@@ -162,9 +181,8 @@ export class LessonViewerComponent implements OnInit {
         this.lessonProgress = Math.floor(Math.random() * 100);
     }
 
-    scrollToSection(index: number): void {
-        this.activeSection = index;
-        const element = document.getElementById(`section-${index}`);
+    scrollToSection(): void {
+        const element = document.getElementById("lesson-content");
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }

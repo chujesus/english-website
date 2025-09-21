@@ -4,456 +4,824 @@
     "lessonId": 1,
     "sections": [
       {
-        "title": "Personal Identity → Identidad personal",
+        "title": "Greetings and Basic Introductions → Saludos e Introducciones Básicas",
+        "objective": "Learn to greet people and introduce yourself using the verb 'to be'.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "name", "spanish": "nombre" },
-          { "english": "first name", "spanish": "nombre de pila" },
-          { "english": "last name", "spanish": "apellido" },
-          { "english": "full name", "spanish": "nombre completo" },
-          { "english": "age", "spanish": "edad" },
-          { "english": "birthday", "spanish": "cumpleaños" },
-          { "english": "date of birth", "spanish": "fecha de nacimiento" },
-          { "english": "ID number", "spanish": "número de cédula" },
-          { "english": "address", "spanish": "dirección" },
-          { "english": "phone number", "spanish": "número de teléfono" },
-          { "english": "email address", "spanish": "correo electrónico" },
-          { "english": "marital status", "spanish": "estado civil" },
-          { "english": "single", "spanish": "soltero/a" },
-          { "english": "married", "spanish": "casado/a" },
-          { "english": "divorced", "spanish": "divorciado/a" }
+        "grammar": [
+          {
+            "title": "Verb 'To Be' (Present Simple) → Verbo 'Ser/Estar' (Presente Simple)",
+            "rule": "Use 'am', 'is', 'are' to talk about names, feelings, and professions. I am, you are, he/she/it is, we are, they are.",
+            "examples": [
+              "I am Carlos.",
+              "You are a student.",
+              "He is a mechanic.",
+              "She is happy.",
+              "It is a big factory.",
+              "We are from Costa Rica.",
+              "They are workers.",
+              "I am not a teacher.",
+              "Is he your brother?"
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Meeting a New Coworker → Conociendo a un Nuevo Compañero",
+          "text": "Hello. My name is Ana. I am the new secretary. What is your name? // Hi Ana, I'm Luis. I am a technician. Welcome to the company! // Thank you, Luis. It is nice to meet you. // You too! We are happy to have you here.",
+          "questions": [
+            {
+              "question": "What is Ana's job?",
+              "options": ["Technician", "Secretary", "Mechanic", "Manager"],
+              "answer": "Secretary"
+            },
+            {
+              "question": "What is Luis's job?",
+              "options": ["Secretary", "Driver", "Technician", "Student"],
+              "answer": "Technician"
+            },
+            {
+              "question": "Is Ana happy?",
+              "options": ["The text does not say", "Yes, she is", "No, she is not", "She is sad"],
+              "answer": "The text does not say"
+            },
+            {
+              "question": "Are they coworkers?",
+              "options": ["Yes, they are", "No, they are not", "They are family", "They are students"],
+              "answer": "Yes, they are"
+            }
+          ]
+        },
+        "speaking": [
+          { "english": "Hello / Hi", "pronunciation": "/həˈloʊ/ /haɪ/", "example": "Hello, my name is Maria." },
+          { "english": "My name is...", "pronunciation": "/maɪ neɪm ɪz/", "example": "My name is Juan." },
+          { "english": "What is your name?", "pronunciation": "/wʌt ɪz jʊər neɪm/", "example": "What is your name? I'm David." },
+          { "english": "Nice to meet you.", "pronunciation": "/naɪs tu mit ju/", "example": "It is nice to meet you." },
+          { "english": "Welcome", "pronunciation": "/ˈwɛlkəm/", "example": "Welcome to our team." },
+          { "english": "Thank you", "pronunciation": "/θæŋk ju/", "example": "Thank you for your help." },
+          { "english": "Goodbye", "pronunciation": "/ɡʊdˈbaɪ/", "example": "Goodbye, see you tomorrow." },
+          { "english": "I am...", "pronunciation": "/aɪ æm/", "example": "I am a student." }
         ],
         "listening": [
-          {
-            "audio": "What is your full name?",
-            "options": ["What is your full name?", "What is your address?", "What is your age?", "What is your job?"],
-            "answer": "What is your full name?"
-          },
-          {
-            "audio": "My first name is Carlos",
-            "options": ["My first name is Carlos", "My last name is Carlos", "My age is Carlos", "My job is Carlos"],
-            "answer": "My first name is Carlos"
-          },
-          {
-            "audio": "I am 28 years old",
-            "options": ["I am 28 years old", "I am 18 years old", "I am 38 years old", "I am 48 years old"],
-            "answer": "I am 28 years old"
-          },
-          {
-            "audio": "What is your phone number?",
-            "options": ["What is your phone number?", "What is your email address?", "What is your ID number?", "What is your birthday?"],
-            "answer": "What is your phone number?"
-          },
-          {
-            "audio": "I am single",
-            "options": ["I am single", "I am married", "I am divorced", "I am tired"],
-            "answer": "I am single"
-          }
+          { "audio": "Hello, my name is Sofia.", "options": ["Hello, my name is Sofia.", "My name is not Sofia.", "What is your name?", "Her name is Sofia."], "answer": "Hello, my name is Sofia." },
+          { "audio": "He is a welder.", "options": ["He is a worker.", "He is a welder.", "She is a welder.", "Is he a welder?"], "answer": "He is a welder." },
+          { "audio": "We are from Cartago.", "options": ["They are from Cartago.", "We are from San José.", "We are from Cartago.", "Where are you from?"], "answer": "We are from Cartago." },
+          { "audio": "Are you the new driver?", "options": ["Are you the new driver?", "I am the new driver.", "He is the new driver.", "You are not the new driver."], "answer": "Are you the new driver?" }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["My first name", "My last name", "My full name"],
-            "suffix": "is María González.",
-            "answer": "My full name",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am 25", "I am 35", "I am 45"],
-            "suffix": "years old and I work in a factory.",
-            "answer": "I am 25",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My phone number", "My email address", "My ID number"],
-            "suffix": "is 8834-5678.",
-            "answer": "My phone number",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am single", "I am married", "I am divorced"],
-            "suffix": "and I live with my family.",
-            "answer": "I am single",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My address", "My birthday", "My job"],
-            "suffix": "is 200 meters south of the church, Cartago.",
-            "answer": "My address",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
+          { "prefix": ["I", "He", "They"], "suffix": " am a student at IPEC.", "answer": "I", "selected": "", "feedback": "" },
+          { "prefix": ["She", "We", "You"], "suffix": " is a cleaner in the factory.", "answer": "She", "selected": "", "feedback": "" },
+          { "prefix": ["They", "It", "I"], "suffix": " are good mechanics.", "answer": "They", "selected": "", "feedback": "" },
+          { "prefix": ["What", "Where", "Who"], "suffix": " is your profession?", "answer": "What", "selected": "", "feedback": "" },
+          { "prefix": ["My name", "Your name", "His name"], "suffix": " is Roberto. What's yours?", "answer": "My name", "selected": "", "feedback": "" },
+          { "prefix": ["He is", "He are", "He am"], "suffix": " from Nicaragua.", "answer": "He is", "selected": "", "feedback": "" },
+          { "prefix": ["We are not", "We is not", "We am not"], "suffix": " unemployed. We have jobs.", "answer": "We are not", "selected": "", "feedback": "" },
+          { "prefix": ["Is she", "Are she", "Am she"], "suffix": " your sister?", "answer": "Is she", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
       },
       {
-        "title": "Nationality and Origin → Nacionalidad y origen",
+        "title": "Personal Information → Información Personal",
+        "objective": "Ask for and give personal information like name, age, and nationality.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "nationality", "spanish": "nacionalidad" },
-          { "english": "country", "spanish": "país" },
-          { "english": "Costa Rica", "spanish": "Costa Rica" },
-          { "english": "Costa Rican", "spanish": "costarricense" },
-          { "english": "Nicaragua", "spanish": "Nicaragua" },
-          { "english": "Nicaraguan", "spanish": "nicaragüense" },
-          { "english": "Panama", "spanish": "Panamá" },
-          { "english": "Panamanian", "spanish": "panameño/a" },
-          { "english": "Guatemala", "spanish": "Guatemala" },
-          { "english": "Guatemalan", "spanish": "guatemalteco/a" },
-          { "english": "El Salvador", "spanish": "El Salvador" },
-          { "english": "Salvadoran", "spanish": "salvadoreño/a" },
-          { "english": "Honduras", "spanish": "Honduras" },
-          { "english": "Honduran", "spanish": "hondureño/a" },
-          { "english": "I am from", "spanish": "Soy de" },
-          { "english": "I come from", "spanish": "Vengo de" },
-          { "english": "I was born in", "spanish": "Nací en" }
+        "grammar": [
+          {
+            "title": "Wh- Questions with 'To Be' → Preguntas con 'Wh-' y el verbo 'To Be'",
+            "rule": "Use 'What', 'Where', 'How old' to ask for information. The structure is: Wh-word + verb 'to be' + subject.",
+            "examples": [
+              "What is your name?",
+              "What is your job?",
+              "Where are you from?",
+              "Where is she from?",
+              "How old are you?",
+              "How old is your son?",
+              "My name is Elena.",
+              "I am from Panama.",
+              "I am 30 years old."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Filling a Form → Llenando un Formulario",
+          "text": "Good morning. I need to fill this form for the job. My full name is Carlos Mora Delgado. I am 28 years old. My nationality is Costa Rican. I am from San José. My address is 100 meters north of the park. My phone number is 8888-7777. I am married and I have two children.",
+          "questions": [
+            {
+              "question": "What is his last name?",
+              "options": ["Carlos", "Mora", "Delgado", "Mora Delgado"],
+              "answer": "Mora Delgado"
+            },
+            {
+              "question": "How old is Carlos?",
+              "options": ["28 years old", "38 years old", "From San José", "Married"],
+              "answer": "28 years old"
+            },
+            {
+              "question": "Where is he from?",
+              "options": ["Nicaragua", "Panama", "Costa Rica", "8888-7777"],
+              "answer": "Costa Rica"
+            },
+            {
+              "question": "What is his marital status?",
+              "options": ["Single", "Divorced", "Married", "He has two children"],
+              "answer": "Married"
+            }
+          ]
+        },
+        "speaking": [
+          { "english": "Full name", "pronunciation": "/fʊl neɪm/", "example": "My full name is Ana Patricia Solano." },
+          { "english": "Age", "pronunciation": "/eɪdʒ/", "example": "What is your age?" },
+          { "english": "Nationality", "pronunciation": "/ˌnæʃəˈnælɪti/", "example": "My nationality is Panamanian." },
+          { "english": "Address", "pronunciation": "/ˈædrɛs/", "example": "My address is on Central Avenue." },
+          { "english": "Phone number", "pronunciation": "/foʊn ˈnʌmbər/", "example": "My phone number is 2234-5678." },
+          { "english": "Married", "pronunciation": "/ˈmærid/", "example": "I am married." },
+          { "english": "Single", "pronunciation": "/ˈsɪŋɡəl/", "example": "My brother is single." },
+          { "english": "How old are you?", "pronunciation": "/haʊ oʊld ɑr ju/", "example": "How old are you? I am 42." },
+          { "english": "Where are you from?", "pronunciation": "/wɛr ɑr ju frʌm/", "example": "Where are you from? I am from Honduras." }
         ],
         "listening": [
-          {
-            "audio": "Where are you from?",
-            "options": ["Where are you from?", "What is your nationality?", "Where do you live?", "Where do you work?"],
-            "answer": "Where are you from?"
-          },
-          {
-            "audio": "I am from Costa Rica",
-            "options": ["I am from Costa Rica", "I am from Nicaragua", "I am from Panama", "I am from Guatemala"],
-            "answer": "I am from Costa Rica"
-          },
-          {
-            "audio": "I am Costa Rican",
-            "options": ["I am Costa Rican", "I am Nicaraguan", "I am Panamanian", "I am American"],
-            "answer": "I am Costa Rican"
-          },
-          {
-            "audio": "What is your nationality?",
-            "options": ["What is your nationality?", "What is your name?", "What is your job?", "What is your age?"],
-            "answer": "What is your nationality?"
-          },
-          {
-            "audio": "I was born in San José",
-            "options": ["I was born in San José", "I live in San José", "I work in San José", "I study in San José"],
-            "answer": "I was born in San José"
-          }
+          { "audio": "What is your full name?", "options": ["What is your address?", "What is your full name?", "What is your age?", "What is your job?"], "answer": "What is your full name?" },
+          { "audio": "I am 35 years old.", "options": ["I am 25 years old.", "I am 35 years old.", "He is 35 years old.", "She is 35 years old."], "answer": "I am 35 years old." },
+          { "audio": "My nationality is Salvadoran.", "options": ["My nationality is Salvadoran.", "I am from El Salvador.", "I am in El Salvador.", "What is your nationality?"], "answer": "My nationality is Salvadoran." },
+          { "audio": "Where is your mother from?", "options": ["Where is your father from?", "Where is your mother from?", "What is your mother?", "How is your mother?"], "answer": "Where is your mother from?" }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["I am from", "I come from", "I was born in"],
-            "suffix": "Cartago, Costa Rica.",
-            "answer": "I am from",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am Costa Rican", "I am Nicaraguan", "I am Panamanian"],
-            "suffix": "but I work in Costa Rica.",
-            "answer": "I am Nicaraguan",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["Where are you from?", "What is your nationality?", "Where do you live?"],
-            "suffix": "I am from Alajuela.",
-            "answer": "Where are you from?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My country", "My nationality", "My hometown"],
-            "suffix": "is very beautiful.",
-            "answer": "My country",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I was born in", "I come from", "I live in"],
-            "suffix": "a small town near Puntarenas.",
-            "answer": "I was born in",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
+          { "prefix": ["What", "Where", "How"], "suffix": " is your address?", "answer": "What", "selected": "", "feedback": "" },
+          { "prefix": ["How old", "How many", "What"], "suffix": " are your children?", "answer": "How old", "selected": "", "feedback": "" },
+          { "prefix": ["I am", "I have", "I is"], "suffix": " from Guatemala, but I live in Costa Rica.", "answer": "I am", "selected": "", "feedback": "" },
+          { "prefix": ["My phone number is", "My phone number are", "My phone number am"], "suffix": " 8765-4321.", "answer": "My phone number is", "selected": "", "feedback": "" },
+          { "prefix": ["He is", "She is", "They are"], "suffix": " married and has a daughter.", "answer": "He is", "selected": "", "feedback": "" },
+          { "prefix": ["Where are", "What are", "How are"], "suffix": " your parents from?", "answer": "Where are", "selected": "", "feedback": "" },
+          { "prefix": ["Her nationality", "His nationality", "Their nationality"], "suffix": " is Nicaraguan.", "answer": "Her nationality", "selected": "", "feedback": "" },
+          { "prefix": ["I am not", "I is not", "I are not"], "suffix": " single. I am divorced.", "answer": "I am not", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
       },
       {
-        "title": "Occupation and Work → Ocupación y trabajo",
+        "title": "Describing Locations → Describiendo Ubicaciones",
+        "objective": "Learn to describe the location of objects and places using 'There is' and 'There are'.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "job", "spanish": "trabajo" },
-          { "english": "occupation", "spanish": "ocupación" },
-          { "english": "profession", "spanish": "profesión" },
-          { "english": "work", "spanish": "trabajar" },
-          { "english": "worker", "spanish": "trabajador/a" },
-          { "english": "mechanic", "spanish": "mecánico/a" },
-          { "english": "electrician", "spanish": "electricista" },
-          { "english": "welder", "spanish": "soldador/a" },
-          { "english": "carpenter", "spanish": "carpintero/a" },
-          { "english": "plumber", "spanish": "fontanero/a" },
-          { "english": "cook", "spanish": "cocinero/a" },
-          { "english": "secretary", "spanish": "secretario/a" },
-          { "english": "security guard", "spanish": "guarda de seguridad" },
-          { "english": "cleaner", "spanish": "limpiador/a" },
-          { "english": "driver", "spanish": "conductor/a" },
-          { "english": "factory worker", "spanish": "operario/a de fábrica" },
-          { "english": "construction worker", "spanish": "obrero/a de construcción" },
-          { "english": "technician", "spanish": "técnico/a" },
-          { "english": "student", "spanish": "estudiante" },
-          { "english": "unemployed", "spanish": "desempleado/a" }
+        "grammar": [
+          {
+            "title": "'There is' / 'There are' → 'Hay' (singular/plural)",
+            "rule": "Use 'There is' for one item (singular) and 'There are' for more than one item (plural). Use 'Is there' or 'Are there' for questions.",
+            "examples": [
+              "There is a hammer on the table.",
+              "There is a big machine in the factory.",
+              "Is there a problem?",
+              "There are two screwdrivers in the box.",
+              "There are many workers here.",
+              "Are there any questions?",
+              "There isn't a pen.",
+              "There aren't any chairs."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "In the Workshop → En el Taller",
+          "text": "My workshop is small but organized. There is a large workbench in the center. On the workbench, there are many tools. There is a hammer, and there are three different screwdrivers. There is a lamp for light. There are some boxes under the bench. In the boxes, there are nails and screws. There isn't a computer, but there is a radio. I like my workshop.",
+          "questions": [
+            {
+              "question": "How many screwdrivers are there?",
+              "options": ["One", "Two", "Three", "Many"],
+              "answer": "Three"
+            },
+            {
+              "question": "Is there a computer in the workshop?",
+              "options": ["Yes, there is.", "No, there isn't.", "Yes, there are.", "The text does not say."],
+              "answer": "No, there isn't."
+            },
+            {
+              "question": "What is under the bench?",
+              "options": ["A hammer", "A lamp", "Boxes", "A radio"],
+              "answer": "Boxes"
+            },
+            {
+              "question": "Is the workshop big?",
+              "options": ["Yes, it is very big.", "No, it is small.", "It is a factory.", "It is disorganized."],
+              "answer": "No, it is small."
+            }
+          ]
+        },
+        "speaking": [
+          { "english": "Tool", "pronunciation": "/tuːl/", "example": "A hammer is a tool." },
+          { "english": "Workshop", "pronunciation": "/ˈwɜːrk.ʃɑːp/", "example": "I work in a workshop." },
+          { "english": "On", "pronunciation": "/ɑːn/", "example": "The book is on the table." },
+          { "english": "In", "pronunciation": "/ɪn/", "example": "The keys are in my pocket." },
+          { "english": "Under", "pronunciation": "/ˈʌn.dər/", "example": "The cat is under the chair." },
+          { "english": "Box", "pronunciation": "/bɑːks/", "example": "There are nails in the box." },
+          { "english": "Machine", "pronunciation": "/məˈʃiːn/", "example": "There is a new machine in the factory." },
+          { "english": "Chair", "pronunciation": "/tʃer/", "example": "There is a chair in the office." },
+          { "english": "Table", "pronunciation": "/ˈteɪ.bəl/", "example": "The tools are on the table." }
         ],
         "listening": [
-          {
-            "audio": "What do you do?",
-            "options": ["What do you do?", "Where do you work?", "What is your job?", "Do you like your job?"],
-            "answer": "What do you do?"
-          },
-          {
-            "audio": "I am a mechanic",
-            "options": ["I am a mechanic", "I am an electrician", "I am a welder", "I am a carpenter"],
-            "answer": "I am a mechanic"
-          },
-          {
-            "audio": "I work in a factory",
-            "options": ["I work in a factory", "I work in an office", "I work in a garage", "I work in a restaurant"],
-            "answer": "I work in a factory"
-          },
-          {
-            "audio": "What is your profession?",
-            "options": ["What is your profession?", "What is your name?", "What is your age?", "What is your address?"],
-            "answer": "What is your profession?"
-          },
-          {
-            "audio": "I am a student at IPEC",
-            "options": ["I am a student at IPEC", "I am a teacher at IPEC", "I work at IPEC", "I study at INA"],
-            "answer": "I am a student at IPEC"
-          }
+          { "audio": "There is a car in the garage.", "options": ["There is a car in the garage.", "There are cars in the garage.", "Is there a car in the garage?", "The car is not in the garage."], "answer": "There is a car in the garage." },
+          { "audio": "Are there any messages for me?", "options": ["Are there any messages for me?", "There are messages for me.", "There are no messages for me.", "Is this my message?"], "answer": "Are there any messages for me?" },
+          { "audio": "There are five people in the office.", "options": ["There are five people in the office.", "There is one person in the office.", "There are four people in the office.", "How many people are in the office?"], "answer": "There are five people in the office." },
+          { "audio": "There isn't a supermarket near here.", "options": ["There is a supermarket.", "Is there a supermarket?", "The supermarket is near.", "There isn't a supermarket near here."], "answer": "There isn't a supermarket near here." }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["I am a mechanic", "I am an electrician", "I am a welder"],
-            "suffix": "and I work in a garage.",
-            "answer": "I am a mechanic",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["What do you do?", "What is your job?", "Where do you work?"],
-            "suffix": "I am a factory worker.",
-            "answer": "What do you do?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I work in", "I study at", "I live near"],
-            "suffix": "a technical school in Cartago.",
-            "answer": "I study at",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My job", "My profession", "My occupation"],
-            "suffix": "is very important for my family.",
-            "answer": "My job",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am unemployed", "I am a student", "I am retired"],
-            "suffix": "but I am looking for work.",
-            "answer": "I am unemployed",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
+          { "prefix": ["There is", "There are", "There am"], "suffix": " a new security guard at the entrance.", "answer": "There is", "selected": "", "feedback": "" },
+          { "prefix": ["There is", "There are", "Is there"], "suffix": " many students in the class.", "answer": "There are", "selected": "", "feedback": "" },
+          { "prefix": ["Is there", "Are there", "Is"], "suffix": " a bus stop near the factory?", "answer": "Is there", "selected": "", "feedback": "" },
+          { "prefix": ["There isn't", "There aren't", "Not are"], "suffix": " any chairs in this room.", "answer": "There aren't", "selected": "", "feedback": "" },
+          { "prefix": ["There is", "There are", "Are there"], "suffix": " a good restaurant in this town?", "answer": "Is there", "selected": "", "feedback": "Use 'Is there' for questions about a single thing." },
+          { "prefix": ["Yes, there", "Yes, there is", "Yes, is"], "suffix": " . It's on the next street.", "answer": "Yes, there is", "selected": "", "feedback": "" },
+          { "prefix": ["There is", "There are", "It is"], "suffix": " a problem with the machine.", "answer": "There is", "selected": "", "feedback": "" },
+          { "prefix": ["How many workers", "How much workers", "How workers"], "suffix": " are there in your company?", "answer": "How many workers", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
       },
       {
-        "title": "Family Information → Información familiar",
+        "title": "Talking About Abilities → Hablando de Habilidades",
+        "objective": "Learn to talk about abilities and skills using 'can' and 'can't'.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "family", "spanish": "familia" },
-          { "english": "father", "spanish": "padre" },
-          { "english": "mother", "spanish": "madre" },
-          { "english": "parents", "spanish": "padres" },
-          { "english": "son", "spanish": "hijo" },
-          { "english": "daughter", "spanish": "hija" },
-          { "english": "children", "spanish": "hijos" },
-          { "english": "brother", "spanish": "hermano" },
-          { "english": "sister", "spanish": "hermana" },
-          { "english": "siblings", "spanish": "hermanos" },
-          { "english": "husband", "spanish": "esposo" },
-          { "english": "wife", "spanish": "esposa" },
-          { "english": "grandfather", "spanish": "abuelo" },
-          { "english": "grandmother", "spanish": "abuela" },
-          { "english": "grandparents", "spanish": "abuelos" },
-          { "english": "uncle", "spanish": "tío" },
-          { "english": "aunt", "spanish": "tía" },
-          { "english": "cousin", "spanish": "primo/a" },
-          { "english": "only child", "spanish": "hijo único" },
-          { "english": "large family", "spanish": "familia numerosa" }
+        "grammar": [
+          {
+            "title": "Modal Verb 'Can'/'Can't' → Verbo Modal 'Can'/'Can't'",
+            "rule": "Use 'can' to express ability (I can do something) and 'can't' (cannot) to express inability. The verb that follows 'can' or 'can't' is always in its base form (e.g., 'speak', not 'speaks' or 'speaking').",
+            "examples": [
+              "I can speak Spanish and a little English.",
+              "He can fix cars. He is a mechanic.",
+              "She can cook very well.",
+              "We can start work at 7 AM.",
+              "They can't come to the meeting.",
+              "I can't find my tools.",
+              "Can you help me, please?",
+              "Can she drive a truck?",
+              "No, she can't."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "A Skilled Worker → Un Trabajador Calificado",
+          "text": "Marco is a construction worker. He is very skilled. He can read blueprints and he can build walls. He can also use many different power tools safely. He can't fix electrical problems; that is a job for an electrician. His brother, David, is an electrician. David can install lights and he can repair wires. Together, they can build a house. They can't do the plumbing, so they need a plumber for that.",
+          "questions": [
+            {
+              "question": "What can Marco do?",
+              "options": ["Fix electrical problems", "Install lights", "Build walls", "Do the plumbing"],
+              "answer": "Build walls"
+            },
+            {
+              "question": "What can't Marco do?",
+              "options": ["Read blueprints", "Use power tools", "Build a house", "Fix electrical problems"],
+              "answer": "Fix electrical problems"
+            },
+            {
+              "question": "Who can fix electrical problems?",
+              "options": ["Marco", "David", "A plumber", "A construction worker"],
+              "answer": "David"
+            },
+            {
+              "question": "What can't Marco and David do?",
+              "options": ["Build a house", "Work together", "Do the plumbing", "Use tools"],
+              "answer": "Do the plumbing"
+            }
+          ]
+        },
+        "speaking": [
+          { "english": "Can", "pronunciation": "/kæn/", "example": "I can lift this box." },
+          { "english": "Can't (cannot)", "pronunciation": "/kænt/", "example": "I can't work on Sunday." },
+          { "english": "Speak", "pronunciation": "/spiːk/", "example": "Can you speak English?" },
+          { "english": "Fix", "pronunciation": "/fɪks/", "example": "My father can fix anything." },
+          { "english": "Drive", "pronunciation": "/draɪv/", "example": "She can drive a forklift." },
+          { "english": "Cook", "pronunciation": "/kʊk/", "example": "My wife can cook delicious food." },
+          { "english": "Help", "pronunciation": "/hɛlp/", "example": "Can you help me with this machine?" },
+          { "english": "Use", "pronunciation": "/juːz/", "example": "I can use a computer." },
+          { "english": "Read", "pronunciation": "/riːd/", "example": "My son can read very fast." },
+          { "english": "Repair", "pronunciation": "/rɪˈper/", "example": "An electrician can repair wires." }
         ],
         "listening": [
-          {
-            "audio": "Do you have children?",
-            "options": ["Do you have children?", "Do you have siblings?", "Do you have parents?", "Do you have a job?"],
-            "answer": "Do you have children?"
-          },
-          {
-            "audio": "I have two sons",
-            "options": ["I have two sons", "I have two daughters", "I have two brothers", "I have two sisters"],
-            "answer": "I have two sons"
-          },
-          {
-            "audio": "My family is large",
-            "options": ["My family is large", "My family is small", "My family is happy", "My family is working"],
-            "answer": "My family is large"
-          },
-          {
-            "audio": "How many siblings do you have?",
-            "options": ["How many siblings do you have?", "How many children do you have?", "How many cousins do you have?", "How many jobs do you have?"],
-            "answer": "How many siblings do you have?"
-          },
-          {
-            "audio": "I am an only child",
-            "options": ["I am an only child", "I have one child", "I want children", "I like children"],
-            "answer": "I am an only child"
-          }
+          { "audio": "I can work on Saturdays.", "options": ["I can't work on Saturdays.", "I can work on Saturdays.", "Can I work on Saturdays?", "He can work on Saturdays."], "answer": "I can work on Saturdays." },
+          { "audio": "She can't drive a bus.", "options": ["She can drive a bus.", "She likes to drive a bus.", "She can't drive a bus.", "Can she drive a bus?"], "answer": "She can't drive a bus." },
+          { "audio": "Can you weld metal?", "options": ["I can weld metal.", "You can't weld metal.", "Can you weld metal?", "He can weld metal."], "answer": "Can you weld metal?" },
+          { "audio": "They can start the project tomorrow.", "options": ["They can't start the project.", "When can they start?", "They can start the project tomorrow.", "They can finish the project tomorrow."], "answer": "They can start the project tomorrow." }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["I have two children", "I have three children", "I have four children"],
-            "suffix": "and they study at the local school.",
-            "answer": "I have two children",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My father", "My mother", "My brother"],
-            "suffix": "works as a carpenter in San José.",
-            "answer": "My father",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["Do you have children?", "Do you have siblings?", "Do you have parents?"],
-            "suffix": "Yes, I have one daughter.",
-            "answer": "Do you have children?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My wife", "My husband", "My partner"],
-            "suffix": "also works at the same factory.",
-            "answer": "My wife",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am an only child", "I have many siblings", "I have one sister"],
-            "suffix": "but I have many cousins.",
-            "answer": "I am an only child",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
+          { "prefix": ["I can", "I am", "I have"], "suffix": " operate this machine.", "answer": "I can", "selected": "", "feedback": "" },
+          { "prefix": ["She can't", "She doesn't", "She isn't"], "suffix": " speak French.", "answer": "She can't", "selected": "", "feedback": "" },
+          { "prefix": ["Can you", "Are you", "Do you"], "suffix": " lift this box? It's heavy.", "answer": "Can you", "selected": "", "feedback": "" },
+          { "prefix": ["My brother", "My brother can", "My brother is"], "suffix": " play the guitar.", "answer": "My brother can", "selected": "", "feedback": "" },
+          { "prefix": ["Sorry, I", "can't hear", "no hear", "not hear"], "suffix": " you. The factory is very loud.", "answer": "can't hear", "selected": "", "feedback": "" },
+          { "prefix": ["He can", "He cans", "He can to"], "suffix": " fix the pipe. He is a plumber.", "answer": "He can", "selected": "", "feedback": "After 'can', the verb doesn't change." },
+          { "prefix": ["What can", "What do", "What are"], "suffix": " you do?", "answer": "What can", "selected": "", "feedback": "" },
+          { "prefix": ["They can't", "They can", "Can they"], "suffix": " work today because they are sick.", "answer": "They can't", "selected": "", "feedback": "" },
+          { "prefix": ["A baby", "can't walk", "can walk", "is walk"], "suffix": ", but he can cry.", "answer": "can't walk", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
       },
       {
-        "title": "Personal Preferences and Skills → Preferencias y habilidades personales",
+        "title": "Daily Routines → Rutinas Diarias",
+        "objective": "Describe daily routines and habits using the Present Simple tense.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "hobby", "spanish": "pasatiempo" },
-          { "english": "interest", "spanish": "interés" },
-          { "english": "skill", "spanish": "habilidad" },
-          { "english": "like", "spanish": "gustar" },
-          { "english": "love", "spanish": "encantar" },
-          { "english": "enjoy", "spanish": "disfrutar" },
-          { "english": "prefer", "spanish": "preferir" },
-          { "english": "hate", "spanish": "odiar" },
-          { "english": "dislike", "spanish": "no gustar" },
-          { "english": "sports", "spanish": "deportes" },
-          { "english": "football", "spanish": "fútbol" },
-          { "english": "music", "spanish": "música" },
-          { "english": "reading", "spanish": "lectura" },
-          { "english": "cooking", "spanish": "cocinar" },
-          { "english": "dancing", "spanish": "bailar" },
-          { "english": "watching TV", "spanish": "ver televisión" },
-          { "english": "learning", "spanish": "aprender" },
-          { "english": "working with hands", "spanish": "trabajar con las manos" },
-          { "english": "fixing things", "spanish": "reparar cosas" },
-          { "english": "helping people", "spanish": "ayudar a la gente" }
+        "grammar": [
+          {
+            "title": "Present Simple (I, You, We, They) → Presente Simple",
+            "rule": "Use the base form of the verb to talk about routines, habits, and facts. For 'I', 'you', 'we', and 'they', the verb does not change.",
+            "examples": [
+              "I work in a factory.",
+              "You start work at 8 AM.",
+              "We live in Heredia.",
+              "They eat lunch at noon.",
+              "I don't work on Sundays.",
+              "Do you live near here?",
+              "We don't have a car.",
+              "Where do you work?"
+            ]
+          },
+          {
+            "title": "Present Simple (He, She, It) → Presente Simple (3ra persona)",
+            "rule": "For 'he', 'she', and 'it', add -s or -es to the base verb. Use 'does' and 'doesn't' for questions and negatives.",
+            "examples": [
+              "He works as a driver.",
+              "She starts her shift at 6 PM.",
+              "It makes a loud noise.",
+              "My father fixes cars.",
+              "She doesn't work in an office.",
+              "Does he have children?",
+              "My son watches TV in the evening.",
+              "The bus arrives at 7:30."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "A Day in My Life → Un Día en mi Vida",
+          "text": "I am a factory worker. My day is very busy. I wake up at 5 AM every day. I take a shower and have breakfast with my family. I leave my house at 6 AM and I take the bus to work. I start work at 7 AM. I work for eight hours. My wife, Elena, works in a supermarket. She starts work at 10 AM. She takes our son to school before she goes to work. We finish work at different times, but we always have dinner together.",
+          "questions": [
+            {
+              "question": "What time does he wake up?",
+              "options": ["6 AM", "7 AM", "5 AM", "10 AM"],
+              "answer": "5 AM"
+            },
+            {
+              "question": "How does he go to work?",
+              "options": ["By car", "By bus", "He walks", "With his wife"],
+              "answer": "By bus"
+            },
+            {
+              "question": "Where does his wife work?",
+              "options": ["In a factory", "In a school", "In a supermarket", "At home"],
+              "answer": "In a supermarket"
+            },
+            {
+              "question": "Do they have dinner together?",
+              "options": ["Yes, they do.", "No, they don't.", "Sometimes", "Only on weekends."],
+              "answer": "Yes, they do."
+            }
+          ]
+        },
+        "speaking": [
+          { "english": "Wake up", "pronunciation": "/weɪk ʌp/", "example": "I wake up early." },
+          { "english": "Have breakfast", "pronunciation": "/hæv ˈbrɛkfəst/", "example": "We have breakfast at 6:30 AM." },
+          { "english": "Go to work", "pronunciation": "/ɡoʊ tu wɜrk/", "example": "He goes to work by motorcycle." },
+          { "english": "Start work", "pronunciation": "/stɑrt wɜrk/", "example": "She starts work very early." },
+          { "english": "Finish work", "pronunciation": "/ˈfɪnɪʃ wɜrk/", "example": "What time do you finish work?" },
+          { "english": "Take the bus", "pronunciation": "/teɪk ðə bʌs/", "example": "Many people take the bus." },
+          { "english": "Have dinner", "pronunciation": "/hæv ˈdɪnər/", "example": "My family has dinner at 7 PM." },
+          { "english": "Watch TV", "pronunciation": "/wɑtʃ ˌtiˈvi/", "example": "I watch TV after work." },
+          { "english": "Go to bed", "pronunciation": "/ɡoʊ tu bɛd/", "example": "They go to bed late." },
+          { "english": "Every day", "pronunciation": "/ˈɛvri deɪ/", "example": "I drink coffee every day." }
         ],
         "listening": [
-          {
-            "audio": "What do you like to do?",
-            "options": ["What do you like to do?", "What do you do for work?", "What do you want to do?", "What do you have to do?"],
-            "answer": "What do you like to do?"
-          },
-          {
-            "audio": "I like fixing cars",
-            "options": ["I like fixing cars", "I like driving cars", "I like washing cars", "I like buying cars"],
-            "answer": "I like fixing cars"
-          },
-          {
-            "audio": "My hobby is reading",
-            "options": ["My hobby is reading", "My hobby is writing", "My hobby is working", "My hobby is sleeping"],
-            "answer": "My hobby is reading"
-          },
-          {
-            "audio": "I enjoy learning English",
-            "options": ["I enjoy learning English", "I enjoy teaching English", "I enjoy speaking English", "I enjoy writing English"],
-            "answer": "I enjoy learning English"
-          },
-          {
-            "audio": "I prefer working with my hands",
-            "options": ["I prefer working with my hands", "I prefer working in an office", "I prefer working at night", "I prefer working alone"],
-            "answer": "I prefer working with my hands"
-          }
+          { "audio": "I start work at 7 in the morning.", "options": ["I finish work at 7.", "I start work at 7 in the morning.", "He starts work at 7.", "I don't start work at 7."], "answer": "I start work at 7 in the morning." },
+          { "audio": "My sister works in a hospital.", "options": ["My sister works in a hospital.", "My mother works in a hospital.", "My sister studies in a hospital.", "Does your sister work in a hospital?"], "answer": "My sister works in a hospital." },
+          { "audio": "Do you live with your parents?", "options": ["Do you live with your parents?", "I live with my parents.", "You don't live with your parents.", "Where do you live?"], "answer": "Do you live with your parents?" },
+          { "audio": "He doesn't like to wake up early.", "options": ["He likes to wake up early.", "He doesn't like to wake up early.", "Does he like to wake up early?", "She doesn't like to wake up early."], "answer": "He doesn't like to wake up early." }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["I like", "I love", "I enjoy"],
-            "suffix": "working as a mechanic because I can fix things.",
-            "answer": "I enjoy",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["My hobby", "My interest", "My skill"],
-            "suffix": "is playing football on weekends.",
-            "answer": "My hobby",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["What do you like to do?", "What is your hobby?", "What do you enjoy?"],
-            "suffix": "I like cooking traditional Costa Rican food.",
-            "answer": "What do you like to do?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I prefer", "I like", "I love"],
-            "suffix": "jobs where I can help people.",
-            "answer": "I prefer",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am good at", "I can", "I know how to"],
-            "suffix": "repairing electrical equipment.",
-            "answer": "I am good at",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
+          { "prefix": ["I", "He", "She"], "suffix": " work in construction.", "answer": "I", "selected": "", "feedback": "" },
+          { "prefix": ["My boss", "My bosses", "I"], "suffix": " speaks three languages.", "answer": "My boss", "selected": "", "feedback": "For 'he/she/it', add -s to the verb." },
+          { "prefix": ["We don't", "We doesn't", "We no"], "suffix": " work on weekends.", "answer": "We don't", "selected": "", "feedback": "" },
+          { "prefix": ["Does your son", "Do your son", "Is your son"], "suffix": " go to school in the afternoon?", "answer": "Does your son", "selected": "", "feedback": "'Your son' is 'he', so use 'Does'." },
+          { "prefix": ["They", "He", "It"], "suffix": " have two jobs.", "answer": "They", "selected": "", "feedback": "" },
+          { "prefix": ["She", "take", "takes", "is taking"], "suffix": " the train to Alajuela every day.", "answer": "takes", "selected": "", "feedback": "" },
+          { "prefix": ["What time", "What", "How"], "suffix": " do you finish your shift?", "answer": "What time", "selected": "", "feedback": "" },
+          { "prefix": ["My father", "watch", "watches", "watching"], "suffix": " the news at night.", "answer": "watches", "selected": "", "feedback": "For 'he' (My father), add -es to 'watch'." },
+          { "prefix": ["I", "don't like", "doesn't like", "no like"], "suffix": " to drive in the city.", "answer": "don't like", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Likes and Dislikes → Gustos y Preferencias",
+        "objective": "Express preferences, likes, and dislikes using 'like', 'love', 'enjoy', 'hate' + verb-ing.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+            {
+                "title": "'Like' / 'Don't like' + noun/verb-ing → 'Gustar' / 'No gustar'",
+                "rule": "Use 'like', 'love', 'enjoy', 'hate', 'dislike' followed by a noun or a verb in the -ing form (gerund) to talk about preferences.",
+                "examples": [
+                    "I like football.",
+                    "I like playing football.",
+                    "She loves her job.",
+                    "She loves helping people.",
+                    "We enjoy our weekends.",
+                    "We enjoy relaxing on weekends.",
+                    "He hates waking up early.",
+                    "I don't like noisy places.",
+                    "Do you like cooking?"
+                ]
+            }
+        ],
+        "reading": {
+            "title": "My Hobbies → Mis Pasatiempos",
+            "text": "My name is Sofia, and I am a cook. I love my job because I enjoy preparing food for people. In my free time, I have many hobbies. I like watching movies with my family. My husband, on the other hand, hates watching movies; he loves reading books. We both like listening to music, especially salsa. On Sundays, we enjoy going to the park. I don't like playing sports, but my husband likes playing football with his friends.",
+            "questions": [
+                {
+                    "question": "What does Sofia do?",
+                    "options": ["She is a student", "She is a cook", "She is a teacher", "She is unemployed"],
+                    "answer": "She is a cook"
+                },
+                {
+                    "question": "What does Sofia's husband hate?",
+                    "options": ["Reading books", "Listening to music", "Watching movies", "Playing football"],
+                    "answer": "Watching movies"
+                },
+                {
+                    "question": "What do they both like?",
+                    "options": ["Playing sports", "Watching movies", "Reading books", "Listening to music"],
+                    "answer": "Listening to music"
+                },
+                {
+                    "question": "What does Sofia not like?",
+                    "options": ["Cooking", "Going to the park", "Playing sports", "Her job"],
+                    "answer": "Playing sports"
+                }
+            ]
+        },
+        "speaking": [
+            { "english": "Like", "pronunciation": "/laɪk/", "example": "I like learning English." },
+            { "english": "Love", "pronunciation": "/lʌv/", "example": "She loves dancing." },
+            { "english": "Enjoy", "pronunciation": "/ɪnˈdʒɔɪ/", "example": "I enjoy working with my hands." },
+            { "english": "Hate", "pronunciation": "/heɪt/", "example": "He hates being late." },
+            { "english": "Don't like", "pronunciation": "/doʊnt laɪk/", "example": "They don't like the new uniform." },
+            { "english": "Hobby", "pronunciation": "/ˈhɑː.bi/", "example": "My hobby is fishing." },
+            { "english": "Free time", "pronunciation": "/friː taɪm/", "example": "What do you do in your free time?" },
+            { "english": "Cooking", "pronunciation": "/ˈkʊk.ɪŋ/", "example": "Cooking is my passion." },
+            { "english": "Reading", "pronunciation": "/ˈriː.dɪŋ/", "example": "Reading is a good hobby." },
+            { "english": "Watching TV", "pronunciation": "/ˈwɑː.tʃɪŋ ˌtiːˈviː/", "example": "I spend a lot of time watching TV." }
+        ],
+        "listening": [
+            { "audio": "I enjoy listening to the radio at work.", "options": ["I enjoy listening to the radio at work.", "I hate listening to the radio.", "I like to work on the radio.", "I listen to the radio at home."], "answer": "I enjoy listening to the radio at work." },
+            { "audio": "She doesn't like working at night.", "options": ["She likes working at night.", "She works at night.", "She doesn't like working at night.", "Does she work at night?"], "answer": "She doesn't like working at night." },
+            { "audio": "Do you like your new job?", "options": ["Do you have a new job?", "Do you like your new job?", "I like my new job.", "You don't like your new job."], "answer": "Do you like your new job?" },
+            { "audio": "My children love playing outside.", "options": ["My children are playing outside.", "My children love playing outside.", "My children don't like playing outside.", "Do your children play outside?"], "answer": "My children love playing outside." }
+        ],
+        "fillInBlank": [
+            { "prefix": ["I like", "I liking", "I to like"], "suffix": " my coworkers.", "answer": "I like", "selected": "", "feedback": "" },
+            { "prefix": ["She loves", "She love", "She is love"], "suffix": " to help her family.", "answer": "She loves", "selected": "", "feedback": "" },
+            { "prefix": ["He enjoys", "He enjoy", "He enjoying"], "suffix": " fixing old cars.", "answer": "He enjoys", "selected": "", "feedback": "" },
+            { "prefix": ["We don't like", "We doesn't like", "We no like"], "suffix": " the noise from the construction.", "answer": "We don't like", "selected": "", "feedback": "" },
+            { "prefix": ["Do you like", "Does you like", "Are you like"], "suffix": " working in a team?", "answer": "Do you like", "selected": "", "feedback": "" },
+            { "prefix": ["My boss hates", "My boss hate", "My boss is hate"], "suffix": " when people are late.", "answer": "My boss hates", "selected": "", "feedback": "" },
+            { "prefix": ["I like", "watch", "watching", "to watching"], "suffix": " football on weekends.", "answer": "watching", "selected": "", "feedback": "After 'like', use the -ing form of the verb." },
+            { "prefix": ["They love", "go", "going", "to going"], "suffix": " to the beach.", "answer": "going", "selected": "", "feedback": "After 'love', use the -ing form of the verb." },
+            { "prefix": ["What do you enjoy", "do", "doing", "to do"], "suffix": " in your free time?", "answer": "doing", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Making Polite Requests → Haciendo Solicitudes Educadas",
+        "objective": "Learn to make polite requests and offers using 'Would like'.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+            {
+                "title": "'Would like' for Offers and Requests → 'Quisiera/Me gustaría' para Ofrecimientos y Solicitudes",
+                "rule": "Use 'would like' ('d like) for polite offers and requests. It is a more polite alternative to 'want'. Use 'Would you like...?' for offers.",
+                "examples": [
+                    "I would like a cup of coffee, please.",
+                    "I'd like to apply for the job.",
+                    "She would like more information.",
+                    "We'd like to start the meeting.",
+                    "Would you like some water?",
+                    "Would you like to take a break?",
+                    "Yes, I would.",
+                    "No, thank you.",
+                    "What would you like to do?"
+                ]
+            }
+        ],
+        "reading": {
+            "title": "At the Cafeteria → En la Cafetería",
+            "text": "It is lunchtime. I go to the cafeteria with my friend, Maria. The server asks, 'Good afternoon, what would you like to eat?' I say, 'I would like the chicken with rice, please.' Maria is not very hungry. She says, 'I'd just like a soup, please.' The server then asks, 'And what would you like to drink?' We both say, 'We would like some fresh juice.' The server is very polite. She says, 'Excellent choice. I'll be right back with your order.'",
+            "questions": [
+                {
+                    "question": "What would the man like to eat?",
+                    "options": ["Soup", "Fish", "Chicken with rice", "Just juice"],
+                    "answer": "Chicken with rice"
+                },
+                {
+                    "question": "What would Maria like to eat?",
+                    "options": ["Chicken with rice", "A big meal", "Soup", "Nothing"],
+                    "answer": "Soup"
+                },
+                {
+                    "question": "What would they like to drink?",
+                    "options": ["Coffee", "Water", "Soda", "Fresh juice"],
+                    "answer": "Fresh juice"
+                },
+                {
+                    "question": "Is Maria very hungry?",
+                    "options": ["Yes, she is very hungry.", "No, she is not very hungry.", "Yes, she would like chicken.", "The text does not say."],
+                    "answer": "No, she is not very hungry."
+                }
+            ]
+        },
+        "speaking": [
+            { "english": "I would like...", "pronunciation": "/aɪ wʊd laɪk/", "example": "I would like to speak to the manager." },
+            { "english": "I'd like...", "pronunciation": "/aɪd laɪk/", "example": "I'd like a glass of water." },
+            { "english": "Would you like...?", "pronunciation": "/wʊd ju laɪk/", "example": "Would you like a coffee?" },
+            { "english": "Coffee", "pronunciation": "/ˈkɔː.fi/", "example": "I'd like a black coffee." },
+            { "english": "Water", "pronunciation": "/ˈwɔː.t̬ɚ/", "example": "Would you like some water?" },
+            { "english": "Please", "pronunciation": "/pliːz/", "example": "Can you help me, please?" },
+            { "english": "Thank you", "pronunciation": "/θæŋk juː/", "example": "Thank you for your help." },
+            { "english": "Information", "pronunciation": "/ˌɪn.fɚˈmeɪ.ʃən/", "example": "I would like some information about the course." },
+            { "english": "To apply for", "pronunciation": "/tu əˈplaɪ fɔːr/", "example": "I'd like to apply for the mechanic position." }
+        ],
+        "listening": [
+            { "audio": "I would like to make an appointment.", "options": ["I want an appointment.", "I would like to make an appointment.", "I have an appointment.", "Can I have an appointment?"], "answer": "I would like to make an appointment." },
+            { "audio": "Would you like to see the new machine?", "options": ["Do you like the new machine?", "Would you like to see the new machine?", "I see the new machine.", "The new machine is good."], "answer": "Would you like to see the new machine?" },
+            { "audio": "He'd like a ticket to Cartago.", "options": ["He has a ticket to Cartago.", "He'd like a ticket to Cartago.", "He wants to go to Cartago.", "Does he have a ticket?"], "answer": "He'd like a ticket to Cartago." },
+            { "audio": "We would like to finish early today.", "options": ["We finish early today.", "We can finish early today.", "We would like to finish early today.", "Do we finish early today?"], "answer": "We would like to finish early today." }
+        ],
+        "fillInBlank": [
+            { "prefix": ["I would", "I can", "I am"], "suffix": " like to order now, please.", "answer": "I would", "selected": "", "feedback": "" },
+            { "prefix": ["Would you like", "Do you like", "Can you like"], "suffix": " something to drink?", "answer": "Would you like", "selected": "", "feedback": "'Would you like' is used for polite offers." },
+            { "prefix": ["She", "'d like", "'s like", "likes"], "suffix": " to speak with Human Resources.", "answer": "'d like", "selected": "", "feedback": "'d like' is the contraction of 'would like'." },
+            { "prefix": ["What", "would you like", "do you like", "can you like"], "suffix": " to do after work?", "answer": "would you like", "selected": "", "feedback": "" },
+            { "prefix": ["Yes, I", "would", "will", "can"], "suffix": ". I'd like a coffee.", "answer": "would", "selected": "", "feedback": "Use 'would' to respond to a 'Would you like...?' question." },
+            { "prefix": ["They", "would like", "like", "are liking"], "suffix": " to request a day off.", "answer": "would like", "selected": "", "feedback": "" },
+            { "prefix": ["I'd like", "some", "a", "an"], "suffix": " information, please.", "answer": "some", "selected": "", "feedback": "Use 'some' for uncountable nouns like 'information'." },
+            { "prefix": ["He'd like", "apply", "to apply", "applying"], "suffix": " for the driver position.", "answer": "to apply", "selected": "", "feedback": "Use 'to' + verb after 'would like'." },
+            { "prefix": ["We", "wouldn't like", "don't like", "would like not"], "suffix": " to work overtime tonight.", "answer": "wouldn't like", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Actions in Progress → Acciones en Progreso",
+        "objective": "Describe actions happening at the moment of speaking using the Present Continuous.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+            {
+                "title": "Present Continuous → Presente Continuo",
+                "rule": "Use the verb 'to be' (am, is, are) + the main verb with -ing to talk about actions happening now. It can also be used for temporary situations.",
+                "examples": [
+                    "I am talking to my boss.",
+                    "You are learning English.",
+                    "He is fixing a machine.",
+                    "She is working from home this week.",
+                    "It is raining outside.",
+                    "We are waiting for the bus.",
+                    "They are having a meeting.",
+                    "What are you doing?",
+                    "He isn't sleeping, he is working."
+                ]
+            }
+        ],
+        "reading": {
+            "title": "A Busy Morning → Una Mañana Ocupada",
+            "text": "It's 10 AM at the factory and everyone is busy. I am operating a large machine. My friend, Luis, is helping a new worker. The supervisor is walking around and checking our work. She is talking on her phone right now. In the office, the secretaries are answering emails and phone calls. It is a very productive day. We are all working hard to meet the deadline.",
+            "questions": [
+                {
+                    "question": "What is the author doing?",
+                    "options": ["Helping a new worker", "Walking around", "Answering emails", "Operating a machine"],
+                    "answer": "Operating a machine"
+                },
+                {
+                    "question": "What is the supervisor doing right now?",
+                    "options": ["Checking work", "Helping Luis", "Talking on her phone", "Operating a machine"],
+                    "answer": "Talking on her phone"
+                },
+                {
+                    "question": "Who is helping the new worker?",
+                    "options": ["The author", "Luis", "The supervisor", "A secretary"],
+                    "answer": "Luis"
+                },
+                {
+                    "question": "What are the secretaries doing?",
+                    "options": ["Having a break", "Walking around", "Operating machines", "Answering emails and phone calls"],
+                    "answer": "Answering emails and phone calls"
+                }
+            ]
+        },
+        "speaking": [
+            { "english": "Doing", "pronunciation": "/ˈduː.ɪŋ/", "example": "What are you doing?" },
+            { "english": "Working", "pronunciation": "/ˈwɝː.kɪŋ/", "example": "I am working right now." },
+            { "english": "Talking", "pronunciation": "/ˈtɑː.kɪŋ/", "example": "She is talking to a client." },
+            { "english": "Listening", "pronunciation": "/ˈlɪs.ən.ɪŋ/", "example": "Are you listening to me?" },
+            { "english": "Reading", "pronunciation": "/ˈriː.dɪŋ/", "example": "He is reading the instruction manual." },
+            { "english": "Writing", "pronunciation": "/ˈraɪ.t̬ɪŋ/", "example": "They are writing a report." },
+            { "english": "Waiting for", "pronunciation": "/ˈweɪ.t̬ɪŋ fɔːr/", "example": "We are waiting for the parts to arrive." },
+            { "english": "Helping", "pronunciation": "/ˈhel.pɪŋ/", "example": "My colleague is helping me." },
+            { "english": "Right now", "pronunciation": "/raɪt naʊ/", "example": "I am busy right now." }
+        ],
+        "listening": [
+            { "audio": "I am trying to fix the engine.", "options": ["I am trying to fix the engine.", "I fixed the engine.", "I can fix the engine.", "He is fixing the engine."], "answer": "I am trying to fix the engine." },
+            { "audio": "Are you leaving now?", "options": ["Are you leaving now?", "You are leaving now.", "When are you leaving?", "He is leaving now."], "answer": "Are you leaving now?" },
+            { "audio": "The machine is not working correctly.", "options": ["The machine works correctly.", "The machine is not working correctly.", "Is the machine working?", "The machine is new."], "answer": "The machine is not working correctly." },
+            { "audio": "They are having lunch in the cafeteria.", "options": ["They have lunch in the cafeteria.", "They are having lunch in the cafeteria.", "They had lunch.", "Where are they having lunch?"], "answer": "They are having lunch in the cafeteria." }
+        ],
+        "fillInBlank": [
+            { "prefix": ["I", "am studying", "study", "studies"], "suffix": " to be a technician.", "answer": "am studying", "selected": "", "feedback": "Use 'am' + -ing for a temporary action or a course of study." },
+            { "prefix": ["He", "is playing", "plays", "play"], "suffix": " football at the moment.", "answer": "is playing", "selected": "", "feedback": "'At the moment' indicates an action happening now." },
+            { "prefix": ["What", "are you doing", "do you do", "you are doing"], "suffix": "? I'm repairing a motor.", "answer": "are you doing", "selected": "", "feedback": "" },
+            { "prefix": ["She", "isn't working", "doesn't work", "not working"], "suffix": " today. It's her day off.", "answer": "isn't working", "selected": "", "feedback": "" },
+            { "prefix": ["They", "are having", "have", "has"], "suffix": " a meeting in the conference room.", "answer": "are having", "selected": "", "feedback": "" },
+            { "prefix": ["Please be quiet. The baby", "is sleeping", "sleeps", "sleep"], "suffix": ".", "answer": "is sleeping", "selected": "", "feedback": "" },
+            { "prefix": ["Why", "are you wearing", "do you wear", "you wear"], "suffix": " a coat? It's hot today.", "answer": "are you wearing", "selected": "", "feedback": "" },
+            { "prefix": ["We", "are learning", "learn", "learns"], "suffix": " a lot in this English course.", "answer": "are learning", "selected": "", "feedback": "This describes a temporary situation (the duration of the course)." },
+            { "prefix": ["It", "is starting", "starts", "start"], "suffix": " to rain. Let's go inside.", "answer": "is starting", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Talking About the Past → Hablando sobre el Pasado",
+        "objective": "Talk about completed actions in the past using the Past Simple with regular verbs.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+            {
+                "title": "Past Simple (Regular Verbs) → Pasado Simple (Verbos Regulares)",
+                "rule": "For regular verbs, add '-ed' to the base form to talk about the past. The form is the same for all subjects (I, you, he, she, it, we, they). For questions and negatives, use 'did' and 'didn't' + the base form of the verb.",
+                "examples": [
+                    "I worked yesterday.",
+                    "She visited her family last weekend.",
+                    "He repaired the machine.",
+                    "We finished the project on time.",
+                    "They started a new company.",
+                    "I didn't work on Sunday.",
+                    "Did you finish your homework?",
+                    "Where did she work before?",
+                    "They didn't arrive late."
+                ]
+            }
+        ],
+        "reading": {
+            "title": "My Last Job → Mi Último Trabajo",
+            "text": "Before this job, I worked as a carpenter for five years. I worked for a small construction company. I enjoyed that job a lot. I learned many things. I started as an assistant and I helped the senior carpenters. After two years, my boss promoted me. I managed small projects by myself. I decided to change jobs because I wanted to learn about welding. I started my new job as a welder last month.",
+            "questions": [
+                {
+                    "question": "What was his last job?",
+                    "options": ["Welder", "Carpenter", "Assistant", "Manager"],
+                    "answer": "Carpenter"
+                },
+                {
+                    "question": "How long did he work as a carpenter?",
+                    "options": ["Two years", "One month", "Five years", "Many years"],
+                    "answer": "Five years"
+                },
+                {
+                    "question": "Why did he change jobs?",
+                    "options": ["He didn't like his boss.", "He wanted to learn about welding.", "The company closed.", "He wanted more money."],
+                    "answer": "He wanted to learn about welding."
+                },
+                {
+                    "question": "Did he enjoy his job as a carpenter?",
+                    "options": ["No, he hated it.", "The text does not say.", "Yes, he enjoyed it a lot.", "It was okay."],
+                    "answer": "Yes, he enjoyed it a lot."
+                }
+            ]
+        },
+        "speaking": [
+            { "english": "Worked", "pronunciation": "/wɜːrkt/", "example": "I worked for 10 hours yesterday." },
+            { "english": "Finished", "pronunciation": "/ˈfɪn.ɪʃt/", "example": "We finished the report this morning." },
+            { "english": "Started", "pronunciation": "/ˈstɑːr.t̬ɪd/", "example": "She started her new job last week." },
+            { "english": "Visited", "pronunciation": "/ˈvɪz.ɪ.t̬ɪd/", "example": "They visited their grandparents." },
+            { "english": "Learned", "pronunciation": "/lɜːrnd/", "example": "I learned how to drive a truck." },
+            { "english": "Helped", "pronunciation": "/helpt/", "example": "He helped me with the boxes." },
+            { "english": "Wanted", "pronunciation": "/ˈwɑːn.t̬ɪd/", "example": "I wanted a different schedule." },
+            { "english": "Yesterday", "pronunciation": "/ˈjes.tɚ.deɪ/", "example": "Did you work yesterday?" },
+            { "english": "Last week/month/year", "pronunciation": "/læst wiːk/", "example": "I was on vacation last month." }
+        ],
+        "listening": [
+            { "audio": "He repaired the fence yesterday.", "options": ["He is repairing the fence.", "He repairs the fence.", "He repaired the fence yesterday.", "He will repair the fence."], "answer": "He repaired the fence yesterday." },
+            { "audio": "Did you receive my email?", "options": ["Did you receive my email?", "You received my email.", "I sent an email.", "You did not receive my email."], "answer": "Did you receive my email?" },
+            { "audio": "They didn't want to change the plan.", "options": ["They want to change the plan.", "They wanted to change the plan.", "They didn't want to change the plan.", "Do they want to change the plan?"], "answer": "They didn't want to change the plan." },
+            { "audio": "We lived in Panama for three years.", "options": ["We live in Panama.", "We are living in Panama.", "We will live in Panama.", "We lived in Panama for three years."], "answer": "We lived in Panama for three years." }
+        ],
+        "fillInBlank": [
+            { "prefix": ["I", "worked", "work", "working"], "suffix": " overtime last night.", "answer": "worked", "selected": "", "feedback": "'Last night' indicates the past." },
+            { "prefix": ["She", "didn't want", "doesn't want", "not wanted"], "suffix": " to stop for lunch.", "answer": "didn't want", "selected": "", "feedback": "For past negatives, use 'didn't' + base verb." },
+            { "prefix": ["Did you", "finish", "finished", "finishing"], "suffix": " the safety training?", "answer": "finish", "selected": "", "feedback": "After 'did', use the base form of the verb." },
+            { "prefix": ["They", "arrived", "arrive", "arriving"], "suffix": " at the airport two hours ago.", "answer": "arrived", "selected": "", "feedback": "'Ago' indicates the past." },
+            { "prefix": ["My boss", "asked", "ask", "asks"], "suffix": " me to prepare a report.", "answer": "asked", "selected": "", "feedback": "" },
+            { "prefix": ["We", "listened", "listen", "listening"], "suffix": " to the instructions carefully.", "answer": "listened", "selected": "", "feedback": "" },
+            { "prefix": ["When", "did he start", "did he started", "he started"], "suffix": " working here?", "answer": "did he start", "selected": "", "feedback": "" },
+            { "prefix": ["The company", "changed", "change", "changes"], "suffix": " its name last year.", "answer": "changed", "selected": "", "feedback": "'Last year' indicates the past." },
+            { "prefix": ["He", "didn't help", "not helped", "doesn't help"], "suffix": " us with the project.", "answer": "didn't help", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Future Plans → Planes a Futuro",
+        "objective": "Talk about future plans and intentions using 'going to'.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+            {
+                "title": "Future with 'Going to' → Futuro con 'Going to'",
+                "rule": "Use the verb 'to be' (am, is, are) + 'going to' + the base form of the verb to talk about future plans and intentions that are already decided.",
+                "examples": [
+                    "I am going to start a new course next month.",
+                    "He is going to look for a new job.",
+                    "She is going to visit her family on the weekend.",
+                    "We are going to buy a new car.",
+                    "They are going to move to a new house.",
+                    "I'm not going to work tomorrow.",
+                    "Is he going to apply for the promotion?",
+                    "What are you going to do?"
+                ]
+            }
+        ],
+        "reading": {
+            "title": "Our Plans for the Weekend → Nuestros Planes para el Fin de Semana",
+            "text": "This weekend is a long weekend. My family and I have many plans. On Saturday, I am going to repair my car in the morning. In the afternoon, we are all going to visit my parents. My wife is going to make a special lunch for them. On Sunday, we are going to go to the beach. My children are very excited. They are going to swim in the ocean. I am not going to swim; I'm going to relax and read a book. It's going to be a great weekend.",
+            "questions": [
+                {
+                    "question": "What is the man going to do on Saturday morning?",
+                    "options": ["Visit his parents", "Go to the beach", "Repair his car", "Relax"],
+                    "answer": "Repair his car"
+                },
+                {
+                    "question": "What is his wife going to do?",
+                    "options": ["Repair the car", "Read a book", "Swim in the ocean", "Make a special lunch"],
+                    "answer": "Make a special lunch"
+                },
+                {
+                    "question": "Where are they going to go on Sunday?",
+                    "options": ["To the park", "To the mountains", "To the beach", "To the city"],
+                    "answer": "To the beach"
+                },
+                {
+                    "question": "Is the man going to swim?",
+                    "options": ["Yes, he is.", "No, he is not.", "Maybe", "The text does not say."],
+                    "answer": "No, he is not."
+                }
+            ]
+        },
+        "speaking": [
+            { "english": "Going to", "pronunciation": "/ˈɡoʊ.ɪŋ tuː/", "example": "I'm going to call him later." },
+            { "english": "Plan", "pronunciation": "/plæn/", "example": "What are your plans for tonight?" },
+            { "english": "Next week/month/year", "pronunciation": "/nɛkst wiːk/", "example": "She is going to travel next month." },
+            { "english": "Tomorrow", "pronunciation": "/təˈmɔːr.oʊ/", "example": "Are you going to work tomorrow?" },
+            { "english": "Tonight", "pronunciation": "/təˈnaɪt/", "example": "We are going to watch a movie tonight." },
+            { "english": "To look for", "pronunciation": "/tuː lʊk fɔːr/", "example": "He is going to look for a new apartment." },
+            { "english": "To buy", "pronunciation": "/tuː baɪ/", "example": "I'm going to buy some new tools." },
+            { "english": "To visit", "pronunciation": "/tuː ˈvɪz.ɪt/", "example": "They are going to visit the museum." },
+            { "english": "To relax", "pronunciation": "/tuː rɪˈlæks/", "example": "I'm just going to relax this weekend." }
+        ],
+        "listening": [
+            { "audio": "I am going to finish this report after lunch.", "options": ["I am going to finish this report after lunch.", "I finished the report.", "I am writing a report.", "Can you finish this report?"], "answer": "I am going to finish this report after lunch." },
+            { "audio": "Is she going to join the team?", "options": ["She is on the team.", "She likes the team.", "Is she going to join the team?", "She is not going to join the team."], "answer": "Is she going to join the team?" },
+            { "audio": "They are not going to sell their house.", "options": ["They are going to sell their house.", "They sold their house.", "They are not going to sell their house.", "Why are they selling their house?"], "answer": "They are not going to sell their house." },
+            { "audio": "What are you going to wear to the party?", "options": ["What are you wearing?", "What are you going to wear to the party?", "What did you wear to the party?", "I am going to the party."], "answer": "What are you going to wear to the party?" }
+        ],
+        "fillInBlank": [
+            { "prefix": ["I", "am going to", "go to", "will to"], "suffix": " call my boss in five minutes.", "answer": "am going to", "selected": "", "feedback": "" },
+            { "prefix": ["He", "is going to", "are going to", "am going to"], "suffix": " start his own business.", "answer": "is going to", "selected": "", "feedback": "" },
+            { "prefix": ["Are you going to", "look for", "looking for", "looked for"], "suffix": " a new job?", "answer": "look for", "selected": "", "feedback": "After 'going to', use the base form of the verb." },
+            { "prefix": ["We", "are not going to", "are going to not", "do not going to"], "suffix": " have a meeting this afternoon.", "answer": "are not going to", "selected": "", "feedback": "" },
+            { "prefix": ["What", "is she going to", "she is going to", "does she going to"], "suffix": " do?", "answer": "is she going to", "selected": "", "feedback": "" },
+            { "prefix": ["They", "are going to", "is going to", "be going to"], "suffix": " travel to Guanacaste for vacation.", "answer": "are going to", "selected": "", "feedback": "" },
+            { "prefix": ["My son", "is going to be", "is going to", "will be going to"], "suffix": " 10 years old next month.", "answer": "is going to be", "selected": "", "feedback": "" },
+            { "prefix": ["I think it", "is going to rain", "rains", "raining"], "suffix": " soon. Look at the clouds.", "answer": "is going to rain", "selected": "", "feedback": "Use 'going to' for predictions based on evidence." },
+            { "prefix": ["Be careful! You", "are going to fall", "fall", "falling"], "suffix": "!", "answer": "are going to fall", "selected": "", "feedback": "" }
+        ],
+        "isCompleted": false
       }
     ]
   }

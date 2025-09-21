@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { ContentService } from '../../core/services/content.service';
+import { RouterModule } from '@angular/router';;
 import { DashboardData, CourseModule } from '../../shared/interfaces';
-import { ProgressService } from '../../core/services/progress.service';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { CourseService } from '../../core/services/course.service';
+import { StudentService } from '../../core/services/student.service';
 
 @Component({
   selector: 'app-modules',
@@ -20,11 +20,7 @@ export class ModulesComponent implements OnInit {
   loading = true;
   error = '';
 
-  constructor(
-    private contentService: ContentService,
-    private progressService: ProgressService,
-    private localStorageService: LocalStorageService
-  ) { }
+  constructor(private courseService: CourseService, private studentService: StudentService, private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
     this.loadCourseModules();
@@ -39,7 +35,7 @@ export class ModulesComponent implements OnInit {
         id: session.task
       }
 
-      this.contentService.getCourseModulesWithProgress(this.user.id).subscribe({
+      this.courseService.getCourseModulesWithProgress(this.user.id).subscribe({
         next: (modules) => {
           this.modules = modules || [];
           this.loading = false;
@@ -55,7 +51,7 @@ export class ModulesComponent implements OnInit {
   loadStudentProgress(): void {
     this.loading = true;
     this.error = '';
-    this.progressService.getStudentDashboard().subscribe({
+    this.studentService.getStudentDashboard().subscribe({
       next: (dashboard) => {
         this.dashboardData = dashboard;
         this.loading = false;

@@ -46,20 +46,44 @@
     <!-- Lesson Content -->
     <div *ngIf="!loading && !error && currentLesson" class="row">
         <!-- Sidebar Navigation -->
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-header">
-                    <h6 class="mb-0">
-                        <i class="fas fa-list me-2"></i>
-                        Lesson Navigation
-                    </h6>
+        <div class="col-lg-3 sidebar">
+            <div class="card lesson-navigation-card border-0 shadow-sm">
+                <div class="card-header bg-gradient-primary text-white border-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="mb-0 fw-semibold">
+                            <i class="fas fa-map-marked-alt me-2"></i>
+                            Lesson Navigation
+                        </h6>
+                        <span class="badge bg-white text-primary px-2 py-1 rounded-pill">
+                            {{ lessons.sections.length }} sections
+                        </span>
+                    </div>
                 </div>
                 <div class="card-body p-0">
-                    <div class="list-group list-group-flush">
+                    <div class="navigation-list">
                         <a *ngFor="let section of lessons.sections; let i = index" (click)="openSection(i)"
-                            class="list-group-item list-group-item-action" [class.active]="i === activeSection">
-                            <i class="me-2 fas fa-book"></i>
-                            {{ section.title }}
+                            class="navigation-item d-flex align-items-center p-3 text-decoration-none"
+                            [class.active]="i === activeSection">
+
+                            <!-- Section Number -->
+                            <div class="section-number me-3">
+                                <span class="number">{{ i + 1 }}</span>
+                            </div>
+
+                            <!-- Section Content -->
+                            <div class="section-content flex-grow-1">
+                                <div class="section-title">{{ section.title }}</div>
+                                <div class="section-subtitle text-muted" *ngIf="section.objective">
+                                    {{ section.objective.length > 50 ? (section.objective | slice:0:50) + '...' :
+                                    section.objective }}
+                                </div>
+                            </div>
+
+                            <!-- Status Icon -->
+                            <div class="section-status ms-2">
+                                <i class="fas fa-play-circle text-primary" *ngIf="i === activeSection"></i>
+                                <i class="fas fa-circle text-muted opacity-50" *ngIf="i !== activeSection"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -95,7 +119,8 @@
 
         <!-- Main Content -->
         <div class="col-lg-9">
-            <div class="lesson-content">
+            <div id="lesson-content" class="lesson-content"
+                [style.height.px]="height > screenHeight ? height : screenHeight">
                 <!-- Keywords Section -->
                 <div class="card mb-4" *ngIf="topics!.keywords?.length">
                     <div class="card-header bg-light">
@@ -142,21 +167,22 @@
 
                     <!-- Grammar Section -->
                     <div class="card mt-3" *ngIf="section.isGrammar">
+                        @for (item of section.grammar; track $index) {
                         <div class="card-header bg-warning text-dark">
                             <h5 class="mb-0">
                                 <i class="fas fa-language me-2"></i>
-                                {{ section.grammar.title }}
+                                {{ item.title }}
                             </h5>
                         </div>
                         <div class="card-body">
                             <div class="grammar-rule mb-3">
                                 <h6>Grammar Rule:</h6>
-                                <p class="text-info">{{ section.grammar.rule }}</p>
+                                <p class="text-info">{{ item.rule }}</p>
                             </div>
-                            <div *ngIf="section.grammar.examples" class="grammar-examples">
+                            <div *ngIf="item.examples" class="grammar-examples">
                                 <h6>Examples:</h6>
                                 <div class="row">
-                                    <div *ngFor="let example of section.grammar.examples"
+                                    <div *ngFor="let example of item.examples"
                                         class="col-md-6 mb-2 d-flex align-items-start">
                                         <i class="fas fa-arrow-right text-success me-2"></i>
                                         <span>{{ example }}</span>
@@ -164,6 +190,7 @@
                                 </div>
                             </div>
                         </div>
+                        }
                     </div>
 
                     <!-- Reading Section -->

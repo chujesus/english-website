@@ -44,7 +44,6 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
         this.recognition.onresult = (event: any) => {
           const transcript = event.results[0][0].transcript.trim();
           this.zone.run(() => {
-            debugger;
             this.recognizedTexts[this.currentIndex] = transcript;
             const expected = this.cleanText(this.targetSentences[this.currentIndex].english);
             const actual = this.cleanText(transcript);
@@ -126,7 +125,6 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
 
         this.deepgramService.transcribeAudio(audioBlob).subscribe({
           next: (res) => {
-            debugger;
             const transcript = res?.results?.channels?.[0]?.alternatives?.[0]?.transcript || '';
             this.zone.run(() => {
               this.recognizedTexts[this.currentIndex] = transcript;

@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AdminService } from '../../core/services/admin.service';
-import { ContentService } from '../../core/services/content.service';
 import { ContentManagement, CourseModule } from '../../shared/interfaces';
+import { CourseService } from '../../core/services/course.service';
 
 @Component({
     selector: 'app-admin-dashboard',
@@ -45,10 +44,7 @@ export class AdminDashboardComponent implements OnInit {
     successMessage = '';
     errorMessage = '';
 
-    constructor(
-        private adminService: AdminService,
-        private contentService: ContentService
-    ) { }
+    constructor(private courseService: CourseService) { }
 
     ngOnInit(): void {
         this.loadContentManagement();
@@ -58,7 +54,7 @@ export class AdminDashboardComponent implements OnInit {
 
     loadContentManagement(): void {
         this.loading = true;
-        this.adminService.getContentManagement().subscribe({
+        this.courseService.getContentManagement().subscribe({
             next: (response: any) => {
                 if (response.ok) {
                     this.contentManagement = response.data;
@@ -76,7 +72,7 @@ export class AdminDashboardComponent implements OnInit {
     }
 
     loadUploadedFiles(): void {
-        this.contentService.getUploadedFiles().subscribe({
+        this.courseService.getUploadedFiles().subscribe({
             next: (response: any) => {
                 if (response && response.ok) {
                     this.uploadedFiles = response.data || [];
@@ -107,7 +103,7 @@ export class AdminDashboardComponent implements OnInit {
 
         const courseId = levelToCourseId[this.editingLevel];
 
-        this.contentService.getCourseContent(courseId).subscribe({
+        this.courseService.getCourseContent(courseId).subscribe({
             next: (response: any) => {
                 if (response.ok) {
                     this.jsonContent = JSON.stringify(response.data, null, 2);
@@ -162,7 +158,7 @@ export class AdminDashboardComponent implements OnInit {
 
             const courseId = levelToCourseId[this.editingLevel];
 
-            this.contentService.updateCourseContent(courseId, parsedContent).subscribe({
+            this.courseService.updateCourseContent(courseId, parsedContent).subscribe({
                 next: (response: any) => {
                     if (response && response.ok) {
                         this.originalJsonContent = this.jsonContent;
@@ -194,7 +190,7 @@ export class AdminDashboardComponent implements OnInit {
     uploadFiles(): void {
         if (!this.canUpload()) return;
 
-        this.contentService.uploadContentFiles(this.selectedLevel, this.selectedContentType, this.selectedFiles).subscribe({
+        this.courseService.uploadContentFiles(this.selectedLevel, this.selectedContentType, this.selectedFiles).subscribe({
             next: (response: any) => {
                 if (response && response.ok) {
                     this.showSuccess('Files uploaded successfully');
@@ -221,7 +217,7 @@ export class AdminDashboardComponent implements OnInit {
 
     deleteFile(fileId: number): void {
         if (confirm('Are you sure you want to delete this file?')) {
-            this.contentService.deleteUploadedFile(fileId).subscribe({
+            this.courseService.deleteUploadedFile(fileId).subscribe({
                 next: (response: any) => {
                     if (response && response.ok) {
                         this.showSuccess('File deleted successfully');
@@ -334,7 +330,7 @@ export class AdminDashboardComponent implements OnInit {
     // Course Modules Management Methods
     loadCourseModules(): void {
         this.courseModulesLoading = true;
-        this.contentService.getCourseModules().subscribe({
+        this.courseService.getCourseModules().subscribe({
             next: (response: any) => {
                 if (response.ok) {
                     this.courseModules = response.data;
@@ -416,7 +412,7 @@ export class AdminDashboardComponent implements OnInit {
             const parsedModules = JSON.parse(this.courseModulesJsonContent);
 
             this.courseModulesLoading = true;
-            this.contentService.bulkUpdateCourseModules(parsedModules).subscribe({
+            this.courseService.bulkUpdateCourseModules(parsedModules).subscribe({
                 next: (response: any) => {
                     if (response && response.ok) {
                         this.courseModules = response.data;

@@ -222,9 +222,12 @@
 }
 
 .navigation-btn {
-  min-width: 120px;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .navigation-btn:hover:not(.disabled-btn) {
@@ -239,7 +242,7 @@
 
 .stats-container {
   background: rgba(255, 255, 255, 0.7);
-  padding: 15px 25px;
+  padding: 10px 10px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);

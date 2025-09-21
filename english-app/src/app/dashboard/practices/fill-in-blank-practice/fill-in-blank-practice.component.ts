@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { PracticeService } from '../../../core/services/practice.service';
+import { CourseService } from '../../../core/services/course.service';
+import { StudentService } from '../../../core/services/student.service';
 
 interface IFillInBlank {
   prefix: string[];
@@ -29,26 +30,10 @@ export class FillInBlankPracticeComponent implements OnInit {
   isCompleted: boolean = false;
   score: number = 0;
 
-  constructor(private practiceService: PracticeService) { }
+  constructor(private courseService: CourseService, private studentService: StudentService) { }
 
   ngOnInit(): void {
     this.practiceStartTime = Date.now();
-    this.checkIfCanAttempt();
-  }
-
-  checkIfCanAttempt(): void {
-    if (this.topicId) {
-      this.practiceService.canAttemptPractice(this.topicId, 'fill_in_blank', this.sectionIndex).subscribe({
-        next: (response: any) => {
-          if (response.ok) {
-            this.canAttempt = response.data.can_attempt;
-          }
-        },
-        error: (error) => {
-          console.error('Error checking practice attempt:', error);
-        }
-      });
-    }
   }
 
   checkAnswers() {
@@ -88,21 +73,6 @@ export class FillInBlankPracticeComponent implements OnInit {
         is_correct: q.feedback === 'correct'
       }))
     };
-
-    this.practiceService.submitPracticeAttempt(practiceData).subscribe({
-      next: (response: any) => {
-        if (response.ok) {
-          this.practiceCompleted.emit({
-            score: response.data.score,
-            passed: response.data.passed,
-            practiceType: 'fill_in_blank'
-          });
-        }
-      },
-      error: (error) => {
-        console.error('Error submitting practice:', error);
-      }
-    });
   }
 
   clearAll() {

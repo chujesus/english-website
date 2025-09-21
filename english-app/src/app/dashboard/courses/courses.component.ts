@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule, Router } from '@angular/router';
-import { ProgressService } from '../../core/services/progress.service';
 import { StudentProgress } from '../../shared/interfaces';
 import moduleTopicsA1 from './english_a1_topics.json';
 import moduleTopicsA2 from './english_a2_topics.json';
 import moduleTopicsB1 from './english_b1_topics.json';
 import moduleTopicsB2 from './english_b2_topics.json';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { StudentService } from '../../core/services/student.service';
 
 export interface Topic {
   title: string;
@@ -38,8 +38,8 @@ export class CoursesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private progressService: ProgressService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private studentService: StudentService
   ) { }
 
   ngOnInit(): void {
@@ -48,7 +48,6 @@ export class CoursesComponent implements OnInit {
       this.moduleTitle = params['title'];
 
       this.loadTopics();
-      this.loadTopicsProgress();
     });
   }
 
@@ -75,7 +74,7 @@ export class CoursesComponent implements OnInit {
         id: session.task
       }
 
-      this.progressService.getStudentProgressByCourse(this.moduleId, this.user.id).subscribe({
+      this.studentService.getStudentProgressByCourse(this.moduleId, this.user.id).subscribe({
         next: (response: any) => {
           if (response.ok && response.data) {
             this.updateTopicsWithProgress(response.data);
@@ -147,7 +146,7 @@ export class CoursesComponent implements OnInit {
 
     // Mark topic as started if not already
     if (topic.status === 'not_started') {
-      this.progressService.updateTopicProgress(topicIndex + 1, 'in_progress', 0).subscribe({
+      this.studentService.updateCourseProgress(topicIndex + 1, 'in_progress', 0).subscribe({
         next: (response: any) => {
           if (response.ok) {
             topic.status = 'in_progress';

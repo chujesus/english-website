@@ -9,7 +9,7 @@
                             <i class="fas fa-edit me-3 text-primary"></i>
                             Fill in the Blanks Practice
                         </h2>
-                        <p class="practice-subtitle mb-0 text-muted">
+                        <p class="practice-subtitle mb-0 text-white">
                             Complete the sentences by filling in the missing words
                         </p>
                     </div>
@@ -39,7 +39,7 @@
                 <!-- Questions Grid -->
                 <div class="questions-grid mb-5">
                     <div class="row g-4">
-                        <div class="col-12 col-lg-8 mx-auto" *ngFor="let q of questions; let i = index">
+                        <div class="col-12 mx-auto" *ngFor="let q of questions; let i = index">
                             <div class="question-card" [class.completed]="isCompleted && q.feedback"
                                 [class.correct]="isCompleted && q.feedback === 'correct'"
                                 [class.incorrect]="isCompleted && q.feedback && q.feedback !== 'correct'">

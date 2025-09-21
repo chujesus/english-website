@@ -70,7 +70,7 @@ export interface ISection {
     isListening: boolean;
     isFillInBlank: boolean;
     speaking: ISpeaking[];
-    grammar: Grammar;
+    grammar: Grammar[];
     reading: ReadingSection;
     fillInBlank: IFillInBlank[];
     listening: IListening[];

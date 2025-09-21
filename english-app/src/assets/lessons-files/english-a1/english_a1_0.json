@@ -1,459 +1,546 @@
 [
   {
-  "cefrLevel": "A1",
-  "lessonId": 0,
-  "sections": [
+    "cefrLevel": "A1",
+    "lessonId": 0,
+    "sections": [
       {
-        "title": "Personal Pronouns → Pronombres personales",
-        "objective": "Learn basic greetings and introductions in English",
-        "isSpeaking": true,
+        "title": "Personal Pronouns & The Verb 'To Be' → Pronombres Personales y el Verbo 'To Be'",
+        "objective": "Learn personal pronouns and the present simple conjugation of the verb 'to be' (am, is, are).",
         "isGrammar": true,
         "isReading": true,
+        "isSpeaking": true,
         "isListening": true,
         "isFillInBlank": true,
-        "grammar": {
-          "title": "Grammar Focus: Present Simple Tense with 'To Be' → Enfoque gramatical: Presente simple del verbo 'To Be'",
-          "rule": "The verb 'to be' is used to describe states of being or identity. In the present simple tense, it is conjugated as follows: I am, You are, He is, She is, It is, We are, They are.",
-          "examples": [
-            "I am from Costa Rica.",
-            "He is a doctor.",
-            "We are learning English together.",
-            "She is very friendly.",
-            "It is a beautiful day.",
-            "You are welcome here.",
-            "They are my classmates.",
-            "I am a student.",
-            "You are my friend.",
-            "He is a teacher.",
-            "She is happy.",
-            "It is a sunny day.",
-            "We are going to the park.",
-            "They are my classmates."
-          ]
-        },
+        "grammar": [
+          {
+            "title": "Grammar Focus: The Verb 'To Be' (Affirmative) → Enfoque gramatical: El verbo 'To Be' (Afirmativo)",
+            "rule": "The verb 'to be' describes identity or states. In present simple, it conjugates: I am, You are, He is, She is, It is, We are, They are. We can also use contractions: I'm, You're, He's, She's, It's, We're, They're.",
+            "examples": [
+              "I am a student. / I'm a student.",
+              "You are my friend. / You're my friend.",
+              "He is a teacher. / He's a teacher.",
+              "She is happy. / She's happy.",
+              "It is a sunny day. / It's a sunny day.",
+              "We are from Costa Rica. / We're from Costa Rica.",
+              "They are classmates. / They're classmates."
+            ]
+          }
+        ],
         "reading": {
-          "title": "Reading Practice → Práctica de lectura",
-          "text": "Hello! My name is John. I am from the United States. I live in New York City. I am a student. I study English at a language school. My friends and I are learning English together. We are very excited to improve our language skills. Nice to meet you!",
+          "title": "Reading: A New Class → Lectura: Una nueva clase",
+          "text": "Hello! My name is Ana. I am a student. He is Carlos, he is a student too. We are in the same class. She is Maria, our teacher. She is from Spain. We are excited to learn English. It is a new adventure!",
           "questions": [
             {
-              "question": "What is the name of the person in the text?",
-              "options": ["John", "Mike", "Sarah", "Anna"],
-              "answer": "John"
-            },
-            {
-              "question": "Where is John from?",
-              "options": ["United States", "Canada", "Mexico", "England"],
-              "answer": "United States"
-            },
-            {
-              "question": "What does John do?",
-              "options": ["Student", "Teacher", "Doctor", "Engineer"],
+              "question": "What is Ana's role?",
+              "options": ["Student", "Teacher", "Doctor", "Friend"],
               "answer": "Student"
             },
             {
-              "question": "Where does John study English?",
-              "options": ["Language school", "University", "High school", "Library"],
-              "answer": "Language school"
+              "question": "Who is the teacher?",
+              "options": ["Maria", "Ana", "Carlos", "John"],
+              "answer": "Maria"
             },
             {
-              "question": "How does John feel about learning English?",
-              "options": ["Excited", "Bored", "Tired", "Nervous"],
-              "answer": "Excited"
+              "question": "Where is the teacher from?",
+              "options": ["Spain", "Mexico", "Italy", "USA"],
+              "answer": "Spain"
+            },
+            {
+              "question": "Are Ana and Carlos in different classes?",
+              "options": ["No, they are in the same class.", "Yes, they are in different classes.", "The text does not say.", "Carlos is the teacher."],
+              "answer": "No, they are in the same class."
             }
           ]
         },
         "speaking": [
-          { "english": "I", "definition": "Used by a speaker to refer to himself or herself.", "pronunciation": "ay" },
-          { "english": "You", "definition": "Used by a speaker to refer to the person or people being addressed.", "pronunciation": "yoo" },
-          { "english": "He", "definition": "Used by a speaker to refer to a male person or animal.", "pronunciation": "hee" },
-          { "english": "She", "definition": "Used by a speaker to refer to a female person or animal.", "pronunciation": "shee" },
-          { "english": "It", "definition": "Used by a speaker to refer to a thing, animal, or idea that is not male or female.", "pronunciation": "it" },
-          { "english": "We", "definition": "Used by a speaker to refer to himself or herself and one or more other people.", "pronunciation": "wee" },
-          { "english": "They", "definition": "Used by a speaker to refer to a group of people or things that are not male or female.", "pronunciation": "thay" }
+          { "english": "I", "pronunciation": "ay", "example": "I am happy." },
+          { "english": "You", "pronunciation": "yoo", "example": "You are my friend." },
+          { "english": "He", "pronunciation": "hee", "example": "He is a doctor." },
+          { "english": "She", "pronunciation": "shee", "example": "She is a teacher." },
+          { "english": "It", "pronunciation": "it", "example": "It is a sunny day." },
+          { "english": "We", "pronunciation": "wee", "example": "We are a team." },
+          { "english": "They", "pronunciation": "thay", "example": "They are my friends." }
         ],
         "listening": [
-          {
-            "audio": "I",
-            "options": ["I", "You", "He", "She"],
-            "answer": "I"
-          },
-          {
-            "audio": "You",
-            "options": ["We", "You", "They", "He"],
-            "answer": "You"
-          },
-          {
-            "audio": "He",
-            "options": ["It", "She", "He", "They"],
-            "answer": "He"
-          },
-          {
-            "audio": "She",
-            "options": ["I", "You", "She", "We"],
-            "answer": "She"
-          },
-          {
-            "audio": "It",
-            "options": ["It", "They", "We", "He"],
-            "answer": "It"
-          },
-          {
-            "audio": "We",
-            "options": ["They", "You", "We", "I"],
-            "answer": "We"
-          },
-          {
-            "audio": "They",
-            "options": ["They", "She", "It", "He"],
-            "answer": "They"
-          }
+          { "audio": "She is a teacher.", "options": ["She is a teacher.", "He is a teacher.", "We are teachers.", "I am a teacher."], "answer": "She is a teacher." },
+          { "audio": "They are students.", "options": ["They are students.", "You are a student.", "She is a student.", "They are doctors."], "answer": "They are students." },
+          { "audio": "It's a beautiful day.", "options": ["It's a beautiful day.", "It is a rainy day.", "He is beautiful.", "They are beautiful."], "answer": "It's a beautiful day." }
         ],
         "fillInBlank": [
-          {
-            "prefix": ["I", "They", "We"],
-            "suffix": "am from Costa Rica.",
-            "answer": "I",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["He", "They", "We"],
-            "suffix": "is a doctor.",
-            "answer": "He",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["We", "He", "I"],
-            "suffix": "are learning English together.",
-            "answer": "We",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["She", "They", "You"],
-            "suffix": "is very friendly.",
-            "answer": "She",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["It", "We", "He"],
-            "suffix": "is a beautiful day.",
-            "answer": "It",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["You", "They", "I"],
-            "suffix": "are welcome here.",
-            "answer": "You",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["They", "She", "We"],
-            "suffix": "are my classmates.",
-            "answer": "They",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["He", "It", "We"],
-            "suffix": "is very smart.",
-            "answer": "He",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["We", "I", "She"],
-            "suffix": "are going to the park.",
-            "answer": "We",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["It", "He", "They"],
-            "suffix": "is my dog.",
-            "answer": "It",
-            "selected": "",
-            "feedback": ""
-          }
+          { "prefix": ["I", "She", "We"], "suffix": " am from Costa Rica.", "answer": "I" },
+          { "prefix": ["He", "They", "You"], "suffix": " is a doctor.", "answer": "He" },
+          { "prefix": ["We", "He", "It"], "suffix": " are learning English.", "answer": "We" },
+          { "prefix": ["She", "They", "I"], "suffix": " is very friendly.", "answer": "She" },
+          { "prefix": ["It", "We", "You"], "suffix": " is a beautiful day.", "answer": "It" }
         ],
         "isCompleted": false
       },
       {
-        "title": "Greetings and Farewells → Saludos y despedidas",
+        "title": "Greetings & 'To Be' in Questions/Negatives → Saludos y 'To Be' en Preguntas/Negativos",
+        "objective": "Learn common greetings and how to form questions and negative sentences with the verb 'to be'.",
+        "isGrammar": true,
+        "isReading": true,
         "isSpeaking": true,
-        "isListen": true,
-        "isFillInBlank": false,
-        "items": [
-          { "english": "Hello", "spanish": "Hola" },
-          { "english": "Hi", "spanish": "Hola (informal)" },
-          { "english": "Hey", "spanish": "Ey (muy informal)" },
-          { "english": "Good morning", "spanish": "Buenos días" },
-          { "english": "Good afternoon", "spanish": "Buenas tardes" },
-          { "english": "Good evening", "spanish": "Buenas noches (saludo)" },
-          { "english": "Good night", "spanish": "Buenas noches (despedida)" },
-          { "english": "Nice to meet you", "spanish": "Mucho gusto" },
-          { "english": "Pleased to meet you", "spanish": "Encantado/a" },
-          { "english": "Welcome", "spanish": "Bienvenido/a" },
-          { "english": "It’s nice to see you", "spanish": "Qué gusto verte" },
-          { "english": "How are you?", "spanish": "¿Cómo estás?" },
-          { "english": "What’s up?", "spanish": "¿Qué pasa? / ¿Qué tal?" },
-          { "english": "I’m fine, thank you", "spanish": "Estoy bien, gracias" },
-          { "english": "And you?", "spanish": "¿Y tú?" },
-          { "english": "Goodbye", "spanish": "Adiós" },
-          { "english": "Bye", "spanish": "Chao" },
-          { "english": "See you later", "spanish": "Hasta luego" },
-          { "english": "See you soon", "spanish": "Hasta pronto" },
-          { "english": "See you tomorrow", "spanish": "Hasta mañana" },
-          { "english": "Take care", "spanish": "Cuídate" },
-          { "english": "Have a nice day", "spanish": "Que tengas un buen día" },
-          { "english": "Same to you", "spanish": "Igualmente" }
-        ],
-        "listening": [
-          {
-            "audio": "Hello",
-            "options": ["Hello", "Hi", "Hey", "Good morning"],
-            "answer": "Hello"
-          },
-          {
-            "audio": "Good morning",
-            "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
-            "answer": "Good morning"
-          },
-          {
-            "audio": "Nice to meet you",
-            "options": ["Nice to meet you", "Pleased to meet you", "Welcome", "It’s nice to see you"],
-            "answer": "Nice to meet you"
-          },
-          {
-            "audio": "How are you?",
-            "options": ["How are you?", "What’s up?", "I’m fine, thank you", "And you?"],
-            "answer": "How are you?"
-          },
-          {
-            "audio": "Goodbye",
-            "options": ["Goodbye", "Bye", "See you later", "See you soon"],
-            "answer": "Goodbye"
-          }
-        ],
-        "fillInBlank": []
-      },
-      {
-        "title": "Polite Expressions → Expresiones de cortesía",
-        "isSpeaking": true,
-        "isListen": true,
+        "isListening": true,
         "isFillInBlank": true,
-        "items": [
-          { "english": "Please", "spanish": "Por favor" },
-          { "english": "Thank you", "spanish": "Gracias" },
-          { "english": "Thanks", "spanish": "Gracias (informal)" },
-          { "english": "Thank you very much", "spanish": "Muchas gracias" },
-          { "english": "You’re welcome", "spanish": "De nada" },
-          { "english": "Excuse me", "spanish": "Disculpe / Perdón" },
-          { "english": "I’m sorry", "spanish": "Lo siento" },
-          { "english": "No problem", "spanish": "No hay problema" },
-          { "english": "Don’t mention it", "spanish": "No hay de qué" },
-          { "english": "That’s okay", "spanish": "Está bien" }
+        "grammar": [
+          {
+            "title": "Grammar Focus: 'To Be' (Negative and Interrogative) → Enfoque gramatical: 'To Be' (Negativo e Interrogativo)",
+            "rule": "To make a negative, add 'not' after the verb (am not, is not, are not). Contractions: isn't, aren't. To ask a question, invert the verb and the subject: 'Am I?', 'Is he?', 'Are you?'.",
+            "examples": [
+              "I am not a teacher. (Negative)",
+              "He is not from Canada. / He isn't from Canada. (Negative)",
+              "They are not late. / They aren't late. (Negative)",
+              "Are you a student? Yes, I am. / No, I'm not. (Question/Answer)",
+              "Is she from Mexico? Yes, she is. / No, she isn't. (Question/Answer)"
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: First Conversation → Lectura: Primera conversación",
+          "text": "Ana: Hello! I'm Ana. Are you new here?\nCarlos: Hi Ana! Yes, I am. My name is Carlos. Nice to meet you.\nAna: Nice to meet you too. Welcome! Are you from Colombia?\nCarlos: No, I'm not. I'm from Venezuela. And you? Are you from here?\nAna: No, I'm not from here. I'm from Costa Rica. He is Mark. He isn't in our class. He is a teacher.",
+          "questions": [
+            { "question": "Is Carlos new to the class?", "options": ["Yes, he is.", "No, he isn't.", "He is a teacher.", "The text does not say."], "answer": "Yes, he is." },
+            { "question": "Is Carlos from Colombia?", "options": ["No, he isn't.", "Yes, he is.", "He is from Spain.", "He is from Costa Rica."], "answer": "No, he isn't." },
+            { "question": "Is Ana from Venezuela?", "options": ["No, she isn't.", "Yes, she is.", "She is from Colombia.", "The text does not say."], "answer": "No, she isn't." },
+            { "question": "Is Mark a student?", "options": ["No, he isn't. He is a teacher.", "Yes, he is.", "He is not in the class.", "He is from Costa Rica."], "answer": "No, he isn't. He is a teacher." }
+          ]
+        },
+        "speaking": [
+          { "english": "Hello / Hi", "pronunciation": "huh-loh / hahy", "example": "Hello, how are you?" },
+          { "english": "Good morning / afternoon / evening", "pronunciation": "gʊd ˈmɔrnɪŋ / ...", "example": "Good morning, everyone!" },
+          { "english": "Goodbye / Bye", "pronunciation": "ɡʊdˈbaɪ / baɪ", "example": "Goodbye, see you later!" },
+          { "english": "Nice to meet you", "pronunciation": "naɪs tə mit jʊ", "example": "It's nice to meet you." },
+          { "english": "How are you?", "pronunciation": "haʊ ɑr jʊ", "example": "Hi, how are you?" },
+          { "english": "I'm fine, thank you.", "pronunciation": "aɪm faɪn, θæŋk ju", "example": "I'm fine, and you?" }
         ],
         "listening": [
-          {
-            "audio": "Please",
-            "options": ["Please", "Thank you", "Excuse me", "I’m sorry"],
-            "answer": "Please"
-          },
-          {
-            "audio": "Thank you",
-            "options": ["Thank you", "Thanks", "You’re welcome", "Excuse me"],
-            "answer": "Thank you"
-          },
-          {
-            "audio": "I’m sorry",
-            "options": ["I’m sorry", "Thanks", "You’re welcome", "No problem"],
-            "answer": "I’m sorry"
-          },
-          {
-            "audio": "You’re welcome",
-            "options": ["You’re welcome", "Don’t mention it", "Thanks", "That’s okay"],
-            "answer": "You’re welcome"
-          },
-          {
-            "audio": "Excuse me",
-            "options": ["Excuse me", "Please", "I’m sorry", "No problem"],
-            "answer": "Excuse me"
-          }
-        ],
-        "fillInBlank": [ 
-          {
-            "prefix": ["Please", "Thank you", "Excuse me"],
-            "suffix": ", can you help me?",
-            "answer": "Please",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I’m sorry", "Thanks", "You’re welcome"],
-            "suffix": ", I didn’t mean to do that.",
-            "answer": "I’m sorry",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["No problem", "Thank you very much", "Excuse me"],
-            "suffix": ", I appreciate your help.",
-            "answer": "Thank you very much",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["That’s okay", "Please", "I’m sorry"],
-            "suffix": ", it was a mistake.",
-            "answer": "That’s okay",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["Don’t mention it", "Thanks", "You’re welcome"],
-            "suffix": ", I’m happy to help.",
-            "answer": "You’re welcome",
-            "selected": "",
-            "feedback": ""
-          }
-        ]
-      },
-      {
-        "title": "Verbs for Introduction → Verbos para presentarse",
-        "isSpeaking": true,
-        "isListen": true,
-        "isFillInBlank": false,
-        "items": [
-          { "english": "to be", "spanish": "ser / estar" },
-          { "english": "to meet", "spanish": "conocer" },
-          { "english": "to greet", "spanish": "saludar" },
-          { "english": "to live", "spanish": "vivir" },
-          { "english": "to come from", "spanish": "venir de" },
-          { "english": "to do", "spanish": "hacer" },
-          { "english": "to speak", "spanish": "hablar" },
-          { "english": "to repeat", "spanish": "repetir" },
-          { "english": "to understand", "spanish": "entender" },
-          { "english": "to say", "spanish": "decir" },
-          { "english": "to spell", "spanish": "deletrear" }
-        ],
-        "listening": [
-          {
-            "audio": "to be",
-            "options": ["to be", "to meet", "to greet", "to live"],
-            "answer": "to be"
-          },
-          {
-            "audio": "to meet",
-            "options": ["to come from", "to do", "to meet", "to speak"],
-            "answer": "to meet"
-          },
-          {
-            "audio": "to greet",
-            "options": ["to greet", "to understand", "to say", "to spell"],
-            "answer": "to greet"
-          },
-          {
-            "audio": "to live",
-            "options": ["to live", "to repeat", "to understand", "to do"],
-            "answer": "to live"
-          },
-          {
-            "audio": "to speak",
-            "options": ["to speak", "to say", "to spell", "to greet"],
-            "answer": "to speak"
-          }
-        ],
-        "fillInBlank": []
-      },
-      {
-        "title": "Useful Phrases → Frases útiles",
-        "isSpeaking": true,
-        "isListen": true,
-        "isFillInBlank": true,
-        "items": [
-          { "english": "What is your name?", "spanish": "¿Cómo te llamas?" },
-          { "english": "My name is...", "spanish": "Me llamo…" },
-          { "english": "I am", "spanish": "Soy (nombre)." },
-          { "english": "How old are you?", "spanish": "¿Cuántos años tienes?" },
-          { "english": "I am ___ years old.", "spanish": "Tengo ___ años." },
-          { "english": "Where are you from?", "spanish": "¿De dónde eres?" },
-          { "english": "I’m from Costa Rica.", "spanish": "Soy de Costa Rica." },
-          { "english": "Where do you live?", "spanish": "¿Dónde vives?" },
-          { "english": "I live in San José.", "spanish": "Vivo en San José." },
-          { "english": "What do you do? / What’s your job?", "spanish": "¿Qué haces? / ¿A qué te dedicas?" },
-          { "english": "I’m a student / teacher / mechanic", "spanish": "Soy estudiante / profesor / mecánico" },
-          { "english": "Do you speak English?", "spanish": "¿Hablas inglés?" },
-          { "english": "Just a little / A little bit", "spanish": "Un poco / Poquito" },
-          { "english": "I don’t understand", "spanish": "No entiendo" },
-          { "english": "Could you repeat, please?", "spanish": "¿Podrías repetir, por favor?" },
-          { "english": "Can you speak slower, please?", "spanish": "¿Puedes hablar más despacio, por favor?" },
-          { "english": "What’s your phone number?", "spanish": "¿Cuál es tu número de teléfono?" },
-          { "english": "What’s your email?", "spanish": "¿Cuál es tu correo electrónico?" },
-          { "english": "My email is…", "spanish": "Mi correo es…" },
-          { "english": "How do you spell that?", "spanish": "¿Cómo se deletrea eso?" },
-          { "english": "That’s correct / That’s right", "spanish": "Es correcto" },
-          { "english": "That’s wrong / That’s not correct", "spanish": "Está mal / No es correcto" },
-          { "english": "May I ask a question?", "spanish": "¿Puedo hacer una pregunta?" },
-          { "english": "Yes, of course / Sure!", "spanish": "¡Sí, por supuesto!" },
-          { "english": "No, sorry", "spanish": "No, lo siento" }
-        ],
-        "listening": [
-          {
-            "audio": "What is your name?",
-            "options": ["What is your name?", "How old are you?", "Where are you from?", "What do you do?"],
-            "answer": "What is your name?"
-          },
-          {
-            "audio": "I am",
-            "options": ["I am", "I live in", "I’m from", "I speak English"],
-            "answer": "I am"
-          },
-          {
-            "audio": "Do you speak English?",
-            "options": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?", "I don’t understand"],
-            "answer": "Do you speak English?"
-          },
-          {
-            "audio": "I don’t understand",
-            "options": ["I don’t understand", "What’s your phone number?", "What’s your email?", "Could you repeat, please?"],
-            "answer": "I don’t understand"
-          }
+          { "audio": "Are you a new student?", "options": ["Are you a new student?", "Is he a new student?", "Are they new students?", "Am I a new student?"], "answer": "Are you a new student?" },
+          { "audio": "She isn't from the United States.", "options": ["She isn't from the United States.", "She is from the United States.", "He isn't from the United States.", "They aren't from the United States."], "answer": "She isn't from the United States." },
+          { "audio": "How are you?", "options": ["Who are you?", "How are you?", "Where are you?", "What are you?"], "answer": "How are you?" }
         ],
         "fillInBlank": [
+          { "prefix": ["Is", "Are", "Am"], "suffix": " he a doctor? No, he isn't.", "answer": "Is" },
+          { "prefix": ["is not", "are not", "am not"], "suffix": " from Italy. She is from France.", "answer": "is not" },
+          { "prefix": ["Is", "Are", "Am"], "suffix": " they in the same group? Yes, they are.", "answer": "Are" },
+          { "prefix": ["isn't", "aren't", "am not"], "suffix": " tired. We are full of energy!", "answer": "aren't" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Countries, Nationalities & 'Where are you from?' → Países, Nacionalidades y '¿De dónde eres?'",
+        "objective": "Learn names of countries and nationalities and ask/answer about origin.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
           {
-            "prefix": ["What is your name?", "How old are you?", "Where are you from?"],
-            "suffix": "My name is John.",
-            "answer": "What is your name?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I am", "I live in", "I’m from"],
-            "suffix": "San José.",
-            "answer": "I live in",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["Do you speak English?", "Can you speak slower, please?", "Could you repeat, please?"],
-            "suffix": "Just a little.",
-            "answer": "Do you speak English?",
-            "selected": "",
-            "feedback": ""
-          },
-          {
-            "prefix": ["I don’t understand", "What’s your phone number?", "What’s your email?"],
-            "suffix": "Could you repeat, please?",
-            "answer": "I don’t understand",
-            "selected": "",
-            "feedback": ""
+            "title": "Grammar Focus: Wh- Questions with 'To Be' (Where, What) → Enfoque gramatical: Preguntas 'Wh-' con 'To Be' (Where, What)",
+            "rule": "Use 'Where' to ask about place and 'What' to ask about things or information. Structure: Wh-word + 'to be' + subject. Example: 'Where are you from?', 'What is your name?'.",
+            "examples": [
+              "A: Where are you from? B: I am from Mexico.",
+              "A: Where is she from? B: She is from Japan.",
+              "A: What is your nationality? B: I am Mexican.",
+              "A: What is his name? B: His name is Kenji."
+            ]
           }
-        ]
+        ],
+        "reading": {
+          "title": "Reading: International Friends → Lectura: Amigos Internacionales",
+          "text": "In our English class, we are an international group. I am from Costa Rica, so I am Costa Rican. My friend Carlos is from Venezuela; he is Venezuelan. Our teacher, Maria, is from Spain. She is Spanish. We have other friends too. Kenji is from Japan, so he is Japanese. And Chloe is from France; she is French. We are all from different countries!",
+          "questions": [
+            { "question": "What nationality is Carlos?", "options": ["Venezuelan", "Spanish", "Japanese", "Costa Rican"], "answer": "Venezuelan" },
+            { "question": "Where is Kenji from?", "options": ["Japan", "France", "Spain", "Venezuela"], "answer": "Japan" },
+            { "question": "Is Chloe from Spain?", "options": ["No, she isn't. She is French.", "Yes, she is.", "She is Spanish.", "The text does not say."], "answer": "No, she isn't. She is French." }
+          ]
+        },
+        "speaking": [
+          { "english": "Country / Nationality", "pronunciation": "...", "example": "USA / American" },
+          { "english": "Spain / Spanish", "pronunciation": "...", "example": "She is from Spain. She is Spanish." },
+          { "english": "Mexico / Mexican", "pronunciation": "...", "example": "He is from Mexico. He is Mexican." },
+          { "english": "Japan / Japanese", "pronunciation": "...", "example": "They are from Japan. They are Japanese." },
+          { "english": "Canada / Canadian", "pronunciation": "...", "example": "I am from Canada. I am Canadian." },
+          { "english": "Brazil / Brazilian", "pronunciation": "...", "example": "You are from Brazil. You are Brazilian." },
+          { "english": "Where are you from?", "pronunciation": "...", "example": "Where are you from? I'm from Italy." }
+        ],
+        "listening": [
+          { "audio": "Where is she from?", "options": ["What is her name?", "Where is she from?", "Who is she?", "How is she?"], "answer": "Where is she from?" },
+          { "audio": "They are not Brazilian, they are Portuguese.", "options": ["They are not Brazilian, they are Portuguese.", "They are Brazilian, not Portuguese.", "Are they Brazilian or Portuguese?", "She is not Brazilian."], "answer": "They are not Brazilian, they are Portuguese." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["What", "Where", "How"], "suffix": " is your teacher from?", "answer": "Where" },
+          { "prefix": ["I am", "He is", "She is"], "suffix": " from Japan. I am Japanese.", "answer": "I am" },
+          { "prefix": ["Where", "What", "Who"], "suffix": " is your nationality?", "answer": "What" },
+          { "prefix": ["French", "France", "Franch"], "suffix": "My friend is from France, she is...", "answer": "French" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Numbers, Age & Phone Numbers → Números, Edad y Números de Teléfono",
+        "objective": "Learn numbers from 0 to 100, ask for and state age, and exchange phone numbers.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: 'How old...?' and 'What's...?' → Enfoque gramatical: '¿Cuántos años...?' y '¿Cuál es...?'",
+            "rule": "To ask for age, use 'How old are you?'. To ask for a phone number, use 'What's your phone number?'. For phone numbers, we say each digit individually. '0' is often pronounced 'oh'.",
+            "examples": [
+              "A: How old are you? B: I am twenty-five years old.",
+              "A: How old is he? B: He is thirty.",
+              "A: What's your phone number? B: It's 555-018-293. (five-five-five-oh-one-eight-two-nine-three)"
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: Contact Information → Lectura: Información de Contacto",
+          "text": "To stay in touch, my friends and I share our phone numbers. My number is 310-555-0219. I am twenty-one years old. My friend, Sofia, is twenty-three. Her phone number is 212-555-8740. My other friend, Liam, is twenty. His number is 786-555-1234. It's easy to call them.",
+          "questions": [
+            { "question": "How old is Sofia?", "options": ["Twenty-one", "Twenty", "Twenty-three", "Thirty-two"], "answer": "Twenty-three" },
+            { "question": "What is Liam's age?", "options": ["Twenty", "Twenty-one", "Twenty-three", "Not mentioned"], "answer": "Twenty" },
+            { "question": "What is the narrator's phone number?", "options": ["212-555-8740", "786-555-1234", "310-555-0219", "Not mentioned"], "answer": "310-555-0219" }
+          ]
+        },
+        "speaking": [
+          { "english": "0 (zero, oh)", "pronunciation": "...", "example": "My number is five-oh-one (501)." },
+          { "english": "1-10: one, two, three, four, five, six, seven, eight, nine, ten", "pronunciation": "...", "example": "" },
+          { "english": "11-20: eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty", "pronunciation": "...", "example": "" },
+          { "english": "Tens: thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred", "pronunciation": "...", "example": "She is forty years old." },
+          { "english": "How old are you?", "pronunciation": "...", "example": "A: How old are you? B: I'm 32 (thirty-two)." },
+          { "english": "What's your phone number?", "pronunciation": "...", "example": "A: What's your phone number? B: It's 808-555-0142." }
+        ],
+        "listening": [
+          { "audio": "He is sixty-four years old.", "options": ["He is sixteen years old.", "He is sixty-four years old.", "She is forty-six years old.", "He is sixty-five years old."], "answer": "He is sixty-four years old." },
+          { "audio": "My phone number is 901-555-3470", "options": ["911-555-3470", "901-444-3470", "901-555-3470 (three-four-seven-oh)", "901-555-2470"], "answer": "901-555-3470 (three-four-seven-oh)" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["How old", "How many", "What old"], "suffix": " is your brother?", "answer": "How old" },
+          { "prefix": ["I have", "I am", "It is"], "suffix": " nineteen years old.", "answer": "I am" },
+          { "prefix": ["What's", "How's", "Where's"], "suffix": " your phone number?", "answer": "What's" },
+          { "prefix": ["thirty", "thirteen", "thirty-teen"], "suffix": "My mother is 30 years old. She is...", "answer": "thirty" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Possessive Adjectives & The Family → Adjetivos Posesivos y La Familia",
+        "objective": "Learn to use possessive adjectives (my, your, his, her, its, our, their) and vocabulary for family members.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: Possessive Adjectives → Enfoque gramatical: Adjetivos Posesivos",
+            "rule": "Possessive adjectives show who owns something. They come before a noun. my, your, his (for a male), her (for a female), its (for a thing/animal), our (for 'we'), their (for 'they').",
+            "examples": [
+              "I am a student. This is my book.",
+              "He is a teacher. That is his classroom.",
+              "She is a doctor. This is her hospital.",
+              "We are a family. This is our house.",
+              "They are friends. That is their car."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: My Family Photo → Lectura: La Foto de mi Familia",
+          "text": "This is a photo of my family. My name is Alex. This is my mother, her name is Clara. This is my father, his name is David. They are my parents. I have a sister. Her name is Laura. And I have a brother. His name is Sam. We have a dog. Its name is Rocky. This is our happy family!",
+          "questions": [
+            { "question": "What is the narrator's name?", "options": ["David", "Sam", "Alex", "Clara"], "answer": "Alex" },
+            { "question": "What is his mother's name?", "options": ["Laura", "Clara", "Alex", "Sofia"], "answer": "Clara" },
+            { "question": "What is the dog's name?", "options": ["Sam", "David", "Rocky", "Alex"], "answer": "Rocky" },
+            { "question": "Is Laura his sister or his mother?", "options": ["She is his sister.", "She is his mother.", "She is his friend.", "The text does not say."], "answer": "She is his sister." }
+          ]
+        },
+        "speaking": [
+          { "english": "my", "pronunciation": "...", "example": "This is my pen." },
+          { "english": "your", "pronunciation": "...", "example": "Is this your bag?" },
+          { "english": "his", "pronunciation": "...", "example": "His name is John." },
+          { "english": "her", "pronunciation": "...", "example": "Her car is red." },
+          { "english": "its", "pronunciation": "...", "example": "The dog is happy. Its tail is moving." },
+          { "english": "our", "pronunciation": "...", "example": "This is our classroom." },
+          { "english": "their", "pronunciation": "...", "example": "Their house is big." },
+          { "english": "Family: mother, father, sister, brother, parents", "pronunciation": "...", "example": "My parents are great." }
+        ],
+        "listening": [
+          { "audio": "Her name is Maria.", "options": ["His name is Maria.", "Her name is Maria.", "Our name is Maria.", "Their name is Maria."], "answer": "Her name is Maria." },
+          { "audio": "Their house is blue.", "options": ["Our house is blue.", "His house is blue.", "Her house is blue.", "Their house is blue."], "answer": "Their house is blue." },
+          { "audio": "This is my brother.", "options": ["This is my mother.", "This is my brother.", "This is his brother.", "This is my father."], "answer": "This is my brother." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["my", "your", "his"], "suffix": " name is Robert. (Talking about a man)", "answer": "his" },
+          { "prefix": ["her", "his", "its"], "suffix": " name is Susan. (Talking about a woman)", "answer": "her" },
+          { "prefix": ["We", "Our", "Us"], "suffix": " class is at 9 AM.", "answer": "Our" },
+          { "prefix": ["They", "Them", "Their"], "suffix": " children are very young.", "answer": "Their" },
+          { "prefix": ["My", "Me", "I"], "suffix": " favorite color is blue.", "answer": "My" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Singular & Plural Nouns / This, That, These, Those → Nombres Singulares y Plurales / This, That, These, Those",
+        "objective": "Learn to form plural nouns and use demonstrative pronouns to point out objects.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: Plurals and Demonstratives → Enfoque gramatical: Plurales y Demostrativos",
+            "rule": "To make most nouns plural, add -s (book -> books). For nouns ending in -s, -sh, -ch, -x, -z, add -es (box -> boxes). 'This' (singular) and 'These' (plural) are for things near you. 'That' (singular) and 'Those' (plural) are for things far from you.",
+            "examples": [
+              "This is a pen. These are pens.",
+              "That is a window. Those are windows.",
+              "This is my book. These are my books.",
+              "That is her car. Those are her cars."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: In the Classroom → Lectura: En el Salón de Clases",
+          "text": "I am in my classroom. This is my desk. On my desk, I have one book and two pens. These pens are blue. That is the teacher's desk over there. That desk is big. On her desk, there are many books and papers. Those books are for the class. This classroom is very organized. I like it here.",
+          "questions": [
+            { "question": "What is 'this' referring to in 'This is my desk'?", "options": ["A desk that is near", "A desk that is far", "Many desks", "A pen"], "answer": "A desk that is near" },
+            { "question": "What does 'those' refer to in 'Those books are for the class'?", "options": ["Books that are far", "One book that is far", "Books that are near", "A desk"], "answer": "Books that are far" },
+            { "question": "How many pens are on the narrator's desk?", "options": ["One", "Two", "Many", "Ten"], "answer": "Two" }
+          ]
+        },
+        "speaking": [
+          { "english": "this / these", "pronunciation": "...", "example": "This is my apple. These are my apples." },
+          { "english": "that / those", "pronunciation": "...", "example": "That is a house. Those are houses." },
+          { "english": "book / books", "pronunciation": "...", "example": "one book, two books" },
+          { "english": "watch / watches", "pronunciation": "...", "example": "one watch, two watches" },
+          { "english": "box / boxes", "pronunciation": "...", "example": "one box, two boxes" },
+          { "english": "Here / There", "pronunciation": "...", "example": "My keys are here. Your bag is over there." }
+        ],
+        "listening": [
+          { "audio": "These are my keys.", "options": ["This is my key.", "These are my keys.", "Those are my keys.", "That is my key."], "answer": "These are my keys." },
+          { "audio": "That bus is late.", "options": ["That bus is late.", "Those buses are late.", "This bus is late.", "The bus is great."], "answer": "That bus is late." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["this", "these", "that"], "suffix": " is my chair right here.", "answer": "this" },
+          { "prefix": ["that", "those", "these"], "suffix": " are my friends over there.", "answer": "those" },
+          { "prefix": ["box", "boxs", "boxes"], "suffix": "I have three ...", "answer": "boxes" },
+          { "prefix": ["this", "these", "that"], "suffix": " apples are delicious. (holding them)", "answer": "these" },
+          { "prefix": ["that", "those", "this"], "suffix": " building across the street is very tall.", "answer": "that" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Jobs & 'A/An' → Profesiones y 'A/An'",
+        "objective": "Learn vocabulary for common jobs and how to use the indefinite articles 'a' and 'an'.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: Indefinite Articles 'a' / 'an' → Enfoque gramatical: Artículos Indefinidos 'a' / 'an'",
+            "rule": "Use 'a' before a singular noun that starts with a consonant sound (a teacher, a doctor). Use 'an' before a singular noun that starts with a vowel sound (a, e, i, o, u) (an engineer, an artist). We use them to talk about one non-specific thing.",
+            "examples": [
+              "He is a doctor.",
+              "She is an architect.",
+              "I am a student.",
+              "My father is an engineer.",
+              "Is she a nurse? Yes, she is."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: People in My Neighborhood → Lectura: Gente en mi Vecindario",
+          "text": "In my neighborhood, people have different jobs. My neighbor, Mr. Smith, is a police officer. His wife is a teacher. Down the street, there is a small clinic. Dr. Evans works there. She is a doctor. My friend's father is an engineer. He builds houses. My aunt is an artist. She paints beautiful pictures. It is an interesting community.",
+          "questions": [
+            { "question": "What is Mr. Smith's job?", "options": ["A teacher", "A police officer", "A doctor", "An engineer"], "answer": "A police officer" },
+            { "question": "Is Dr. Evans a nurse?", "options": ["No, she is a doctor.", "Yes, she is.", "She is a teacher.", "She is an artist."], "answer": "No, she is a doctor." },
+            { "question": "Why do we say 'an artist'?", "options": ["Because 'artist' starts with a vowel sound.", "Because 'artist' is a job.", "Because the artist is a woman.", "Because it's plural."], "answer": "Because 'artist' starts with a vowel sound." }
+          ]
+        },
+        "speaking": [
+          { "english": "a teacher", "pronunciation": "...", "example": "My mother is a teacher." },
+          { "english": "a doctor", "pronunciation": "...", "example": "He wants to be a doctor." },
+          { "english": "a student", "pronunciation": "...", "example": "I am a student." },
+          { "english": "a police officer", "pronunciation": "...", "example": "She is a police officer." },
+          { "english": "an engineer", "pronunciation": "...", "example": "My brother is an engineer." },
+          { "english": "an artist", "pronunciation": "...", "example": "Are you an artist?" },
+          { "english": "an actor", "pronunciation": "...", "example": "He is an actor." },
+          { "english": "What do you do?", "pronunciation": "...", "example": "A: What do you do? B: I'm a chef." }
+        ],
+        "listening": [
+          { "audio": "She is an engineer.", "options": ["She is a engineer.", "He is an engineer.", "She is in engineering.", "She is an engineer."], "answer": "She is an engineer." },
+          { "audio": "My father is a pilot.", "options": ["My father is a pilot.", "My mother is a pilot.", "My father is the pilot.", "My father flies a lot."], "answer": "My father is a pilot." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["a", "an", "the"], "suffix": " teacher works at a school.", "answer": "a" },
+          { "prefix": ["a", "an", "the"], "suffix": " apple a day is good for you.", "answer": "an" },
+          { "prefix": ["a", "an", "the"], "suffix": " What does he do? He's ... architect.", "answer": "an" },
+          { "prefix": ["a", "an", "the"], "suffix": " I need ... new phone.", "answer": "a" },
+          { "prefix": ["a", "an", "the"], "suffix": " It is ... honor to meet you. (Listen to the sound!)", "answer": "an" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Present Simple (I, You, We, They) → Presente Simple (I, You, We, They)",
+        "objective": "Learn to use the present simple tense for routines and habits with I, you, we, and they.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: Present Simple (Affirmative) → Enfoque gramatical: Presente Simple (Afirmativo)",
+            "rule": "We use the present simple for habits, routines, and facts. For 'I', 'you', 'we', and 'they', we use the base form of the verb (e.g., 'play', 'eat', 'go').",
+            "examples": [
+              "I live in a big city.",
+              "You speak English very well.",
+              "We play soccer on Saturdays.",
+              "They go to the gym every day.",
+              "I work from home."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: Our Weekend Routine → Lectura: Nuestra Rutina de Fin de Semana",
+          "text": "My friends and I have a great weekend routine. On Saturdays, we wake up late. We have breakfast together at a cafe. We talk and laugh a lot. In the afternoon, we go to the park and play frisbee. On Sundays, we relax. I read a book, and my friends watch movies. We love our weekends!",
+          "questions": [
+            { "question": "What do they do on Saturday mornings?", "options": ["They go to the park.", "They have breakfast at a cafe.", "They watch movies.", "They read books."], "answer": "They have breakfast at a cafe." },
+            { "question": "Do they work on weekends?", "options": ["No, they relax and have fun.", "Yes, they work hard.", "The text does not say.", "They work on Saturdays only."], "answer": "No, they relax and have fun." },
+            { "question": "Who reads a book on Sundays?", "options": ["The narrator ('I')", "The friends", "All of them", "Nobody"], "answer": "The narrator ('I')" }
+          ]
+        },
+        "speaking": [
+          { "english": "I live", "pronunciation": "...", "example": "I live in London." },
+          { "english": "You work", "pronunciation": "...", "example": "You work in an office." },
+          { "english": "We play", "pronunciation": "...", "example": "We play video games." },
+          { "english": "They eat", "pronunciation": "...", "example": "They eat pizza on Fridays." },
+          { "english": "I study", "pronunciation": "...", "example": "I study English every day." },
+          { "english": "You watch TV", "pronunciation": "...", "example": "You watch TV in the evening." },
+          { "english": "We listen to music", "pronunciation": "...", "example": "We listen to music in the car." },
+          { "english": "They speak Spanish", "pronunciation": "...", "example": "They speak Spanish at home." }
+        ],
+        "listening": [
+          { "audio": "We play tennis on Sundays.", "options": ["We play tennis on Sundays.", "They play tennis on Sundays.", "We work on Sundays.", "We play tennis on Mondays."], "answer": "We play tennis on Sundays." },
+          { "audio": "I live near the city center.", "options": ["I live near the city center.", "I leave near the city center.", "She lives near the city center.", "I live in the city center."], "answer": "I live near the city center." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["I", "He", "She"], "suffix": " work in a large office.", "answer": "I" },
+          { "prefix": ["You", "She", "It"], "suffix": " speak English fluently.", "answer": "You" },
+          { "prefix": ["We", "He", "She"], "suffix": " go to the beach in the summer.", "answer": "We" },
+          { "prefix": ["They", "He", "It"], "suffix": " live in an apartment.", "answer": "They" },
+          { "prefix": ["I", "He", "She"], "suffix": " listen to podcasts in the morning.", "answer": "I" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Present Simple (He, She, It) → Presente Simple (He, She, It)",
+        "objective": "Learn to use the present simple tense for the third person singular (he, she, it), including the -s/-es/-ies endings.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: Present Simple (3rd Person Singular) → Enfoque gramatical: Presente Simple (3ª Persona Singular)",
+            "rule": "For 'he', 'she', and 'it', we add -s to the base verb (works, eats, plays). If the verb ends in -s, -sh, -ch, -x, -z, add -es (watches, finishes). If it ends in consonant + y, change -y to -ies (study -> studies).",
+            "examples": [
+              "He works at a bank.",
+              "She watches a lot of TV.",
+              "It rains in the afternoon.",
+              "He studies marketing.",
+              "She goes to the gym."
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: My Brother's Daily Routine → Lectura: La Rutina Diaria de mi Hermano",
+          "text": "My brother, Tom, is a busy person. He wakes up at 6 AM every day. He has a quick breakfast and then he goes to work. He works as a software developer. He finishes work at 5 PM. In the evening, he relaxes. He watches his favorite series on Netflix or he plays the guitar. He loves his routine.",
+          "questions": [
+            { "question": "What time does Tom wake up?", "options": ["6 AM", "5 PM", "7 AM", "The text does not say."], "answer": "6 AM" },
+            { "question": "What does he do in the evening?", "options": ["He works.", "He studies.", "He watches series or plays the guitar.", "He goes to the gym."], "answer": "He watches series or plays the guitar." },
+            { "question": "Does he like his routine?", "options": ["Yes, he loves it.", "No, he hates it.", "It's okay.", "The text does not say."], "answer": "Yes, he loves it." }
+          ]
+        },
+        "speaking": [
+          { "english": "He works", "pronunciation": "...", "example": "He works in a hospital." },
+          { "english": "She eats", "pronunciation": "...", "example": "She eats a salad for lunch." },
+          { "english": "It rains", "pronunciation": "...", "example": "It rains a lot here." },
+          { "english": "He goes", "pronunciation": "...", "example": "He goes to the university." },
+          { "english": "She watches", "pronunciation": "...", "example": "She watches the news in the morning." },
+          { "english": "He studies", "pronunciation": "...", "example": "He studies German." },
+          { "english": "She finishes", "pronunciation": "...", "example": "She finishes her homework early." },
+          { "english": "He plays", "pronunciation": "...", "example": "He plays basketball." }
+        ],
+        "listening": [
+          { "audio": "She works from home.", "options": ["She work from home.", "He works from home.", "She works from home.", "They work from home."], "answer": "She works from home." },
+          { "audio": "He studies at night.", "options": ["He study at night.", "He studies at night.", "She studies at night.", "He works at night."], "answer": "He studies at night." }
+        ],
+        "fillInBlank": [
+          { "prefix": ["work", "works", "working"], "suffix": "My father ... in an office.", "answer": "works" },
+          { "prefix": ["go", "goes", "going"], "suffix": "My sister ... to dance class on Tuesdays.", "answer": "goes" },
+          { "prefix": ["study", "studies", "studying"], "suffix": "My friend ... for his exams every night.", "answer": "studies" },
+          { "prefix": ["watch", "watches", "watching"], "suffix": "My mom ... a movie every Friday.", "answer": "watches" },
+          { "prefix": ["play", "plays", "playing"], "suffix": "The cat ... with its toys.", "answer": "plays" }
+        ],
+        "isCompleted": false
+      },
+      {
+        "title": "Present Simple (Questions & Negatives) → Presente Simple (Preguntas y Negativos)",
+        "objective": "Learn to form questions and negative sentences in the present simple using 'do', 'don't', 'does', and 'doesn't'.",
+        "isGrammar": true,
+        "isReading": true,
+        "isSpeaking": true,
+        "isListening": true,
+        "isFillInBlank": true,
+        "grammar": [
+          {
+            "title": "Grammar Focus: do/don't and does/doesn't → Enfoque gramatical: do/don't y does/doesn't",
+            "rule": "For negatives, use 'don't' (do not) for I/you/we/they and 'doesn't' (does not) for he/she/it, plus the base verb. For questions, start with 'Do' (for I/you/we/they) or 'Does' (for he/she/it), then the subject and the base verb.",
+            "examples": [
+              "I don't live in a small town.",
+              "He doesn't work on weekends.",
+              "Do you speak French? Yes, I do. / No, I don't.",
+              "Does she like coffee? Yes, she does. / No, she doesn't.",
+              "Where do you live?"
+            ]
+          }
+        ],
+        "reading": {
+          "title": "Reading: A Lifestyle Interview → Lectura: Una Entrevista de Estilo de Vida",
+          "text": "Interviewer: Hello, Mark. Do you live in the city?\nMark: No, I don't. I live in the suburbs.\nInterviewer: And your sister, does she live with you?\nMark: No, she doesn't. She lives in another city. She works as a designer there.\nInterviewer: Do you like your job?\nMark: Yes, I do. I work as a journalist. I don't work in an office, I travel a lot.\nInterviewer: That sounds exciting! Does your sister like her job?\nMark: Yes, she does. She loves it.",
+          "questions": [
+            { "question": "Does Mark live in the city?", "options": ["Yes, he does.", "No, he doesn't.", "He lives with his sister.", "The text does not say."], "answer": "No, he doesn't." },
+            { "question": "What does Mark's sister do?", "options": ["She is a journalist.", "She is a designer.", "She doesn't work.", "She travels a lot."], "answer": "She is a designer." },
+            { "question": "Does Mark work in an office?", "options": ["Yes, he does.", "No, he doesn't.", "He works from home.", "He is a student."], "answer": "No, he doesn't." }
+          ]
+        },
+        "speaking": [
+          { "english": "I don't like...", "pronunciation": "...", "example": "I don't like spiders." },
+          { "english": "He doesn't play...", "pronunciation": "...", "example": "He doesn't play the piano." },
+          { "english": "Do you live...?", "pronunciation": "...", "example": "Do you live in an apartment?" },
+          { "english": "Does she work...?", "pronunciation": "...", "example": "Does she work here?" },
+          { "english": "Yes, I do. / No, I don't.", "pronunciation": "...", "example": "A: Do you have a pet? B: Yes, I do." },
+          { "english": "Yes, he does. / No, he doesn't.", "pronunciation": "...", "example": "A: Does he speak German? B: No, he doesn't." },
+          { "english": "Where do you work?", "pronunciation": "...", "example": "Where do you work?" },
+          { "english": "What does she study?", "pronunciation": "...", "example": "What does she study?" }
+        ],
+        "listening": [
+          { "audio": "He doesn't eat meat.", "options": ["He doesn't eat meat.", "He don't eat meat.", "She doesn't eat meat.", "He doesn't like meat."], "answer": "He doesn't eat meat." },
+          { "audio": "Do you live near here?", "options": ["Do you live near here?", "Does she live near here?", "Do you leave here?", "Are you live near here?"], "answer": "Do you live near here?" }
+        ],
+        "fillInBlank": [
+          { "prefix": ["Do", "Does", "Are"], "suffix": " you like pizza?", "answer": "Do" },
+          { "prefix": ["don't", "doesn't", "isn't"], "suffix": " He ... work on Sundays.", "answer": "doesn't" },
+          { "prefix": ["Do", "Does", "Is"], "suffix": " your sister speak Italian?", "answer": "Does" },
+          { "prefix": ["don't", "doesn't", "aren't"], "suffix": " We ... have a car.", "answer": "don't" },
+          { "prefix": ["Do", "Does", "What"], "suffix": " ... they live?", "answer": "Where" }
+        ],
+        "isCompleted": false
       }
     ]
   }

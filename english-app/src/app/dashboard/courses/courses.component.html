@@ -49,11 +49,11 @@
 
                     <!-- Progress Bar -->
                     <div class="progress mt-2" style="height: 6px;">
-                        <div class="progress-bar" [class]="getProgressBarClass(topic.progress_percentage)"
-                            [style.width.%]="topic.progress_percentage || 0" role="progressbar">
+                        <div class="progress-bar" [class]="getProgressBarClass(topic.progress_percent)"
+                            [style.width.%]="topic.progress_percent || 0" role="progressbar">
                         </div>
                     </div>
-                    <small class="text-muted">{{ topic.progress_percentage || 0 }}% Complete</small>
+                    <small class="text-muted">{{ topic.progress_percent || 0 }}% Complete</small>
                 </div>
 
                 <!-- Topic Content -->
@@ -66,12 +66,12 @@
                             <i class="fas fa-lightbulb me-1 text-warning"></i>Examples:
                         </h6>
                         <ul class="list-unstyled small">
-                            <li *ngFor="let example of topic.examples.slice(0, 3)" class="mb-1">
+                            <li *ngFor="let example of topic.examples!.slice(0, 3)" class="mb-1">
                                 <i class="fas fa-chevron-right me-2 text-primary" style="font-size: 0.8em;"></i>
                                 {{ example }}
                             </li>
-                            <li *ngIf="topic.examples.length > 3" class="text-muted">
-                                <small>+{{ topic.examples.length - 3 }} more examples...</small>
+                            <li *ngIf="topic.examples!.length > 3" class="text-muted">
+                                <small>+{{ topic.examples!.length - 3 }} more examples...</small>
                             </li>
                         </ul>
                     </div>
@@ -82,12 +82,12 @@
                             <i class="fas fa-tags me-1 text-info"></i>Key Topics:
                         </h6>
                         <div class="d-flex flex-wrap gap-1">
-                            <span *ngFor="let keyword of topic.keywords.slice(0, 4)"
+                            <span *ngFor="let keyword of topic.keywords!.slice(0, 4)"
                                 class="badge bg-light text-dark border small">
                                 {{ keyword }}
                             </span>
-                            <span *ngIf="topic.keywords.length > 4" class="badge bg-secondary small">
-                                +{{ topic.keywords.length - 4 }}
+                            <span *ngIf="topic.keywords!.length > 4" class="badge bg-secondary small">
+                                +{{ topic.keywords!.length - 4 }}
                             </span>
                         </div>
                     </div>
@@ -95,9 +95,7 @@
                     <!-- Action Buttons -->
                     <div class="mt-auto">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" (click)="startTopic(topic, i)"
-                                [routerLink]="['/dashboard/lessons']"
-                                [queryParams]="{ moduleId: moduleId, topicIndex: i, title: topic.title }">
+                            <button class="btn btn-primary" (click)="startTopic(topic)">
                                 <i class="fas" [class.fa-play]="topic.status === 'not_started'"
                                     [class.fa-arrow-right]="topic.status !== 'not_started'"></i>
                                 <span class="ms-2">

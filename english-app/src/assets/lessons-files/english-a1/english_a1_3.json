@@ -10,7 +10,7 @@
         "isReading": false,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "speaking": [
           { "english": "A", "pronunciation": "/eɪ/", "example": "A for 'Apple'." },
           { "english": "B", "pronunciation": "/biː/", "example": "B for 'Boy'." },
@@ -48,7 +48,7 @@
           { "audio": "G", "options": ["G", "J", "Z", "C"], "answer": "G" },
           { "audio": "I", "options": ["I", "E", "A", "Y"], "answer": "I" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["A", "E", "I"], "suffix": " - B - C - D", "answer": "A", "selected": "", "feedback": "" },
           { "prefix": ["X", "Y", "W"], "suffix": " - Z is the last letter.", "answer": "Y", "selected": "", "feedback": "" },
           { "prefix": ["M", "N", "L"], "suffix": " - O - P - Q", "answer": "N", "selected": "", "feedback": "" },
@@ -67,7 +67,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "reading": {
           "title": "At the Reception Desk → En la Recepción",
           "text": "Receptionist: Good morning. What is your name, please? \nVisitor: My name is Jan Kowalski. \nReceptionist: Can you spell your last name for me? \nVisitor: Yes, it's K-O-W-A-L-S-K-I. \nReceptionist: K-O-W-A-L-S-K-I. Thank you. And your first name is Jan, J-A-N? \nVisitor: That's correct. \nReceptionist: Thank you, Mr. Kowalski. Please take a seat.",
@@ -97,7 +97,7 @@
           { "audio": "Let me spell it for you. It's G-O-N-Z-A-L-E-Z.", "options": ["Let me spell it for you.", "Let me say it for you.", "Let me write it for you.", "Let me show it to you."], "answer": "Let me spell it for you." },
           { "audio": "Could you repeat the last letter?", "options": ["Could you repeat the last letter?", "Could you repeat the first letter?", "Could you repeat the whole name?", "Could you repeat more slowly?"], "answer": "Could you repeat the last letter?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["How do you", "What do you", "Can you"], "suffix": "spell your last name?", "answer": "How do you", "selected": "", "feedback": "" },
           { "prefix": ["My name is Carlos. That's", "It's spelled", "The spelling is"], "suffix": "C-A-R-L-O-S.", "answer": "My name is Carlos. That's", "selected": "", "feedback": "" },
           { "prefix": ["Could you repeat", "Say again", "One more time"], "suffix": "the first three letters?", "answer": "Could you repeat", "selected": "", "feedback": "" },
@@ -116,7 +116,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "reading": {
           "title": "Exchanging Contact Information → Intercambiando Información de Contacto",
           "text": "Ana: We need to send you the safety manual. What's your email address? \nLeo: My email is leo.rivera85@gmail.com. \nAna: Okay, let me read that back to you. L-E-O, dot, R-I-V-E-R-A, the number eighty-five, at, gmail, dot, com. Is that correct? \nLeo: Yes, that's it. And what is the company website? I need to check the product specifications. \nAna: The website is www.globaltech.com. \nLeo: Thanks. I'll check it now.",
@@ -146,7 +146,7 @@
           { "audio": "The website is www.costarica.com", "options": ["www.costarica.com", "www.costa-rica.com", "www.costa.rica.com", "ww.costarica.com"], "answer": "www.costarica.com" },
           { "audio": "Double-u double-u double-u dot", "options": ["Double-u double-u double-u dot", "W W W dot", "Three W dot", "Website dot"], "answer": "Double-u double-u double-u dot" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["My email is", "It's", "You can write to"], "suffix": "maria@gmail.com.", "answer": "My email is", "selected": "", "feedback": "" },
           { "prefix": ["What's your email?", "Can you spell your email?", "Write down your email."], "suffix": "It's jose_garcia@yahoo.com.", "answer": "What's your email?", "selected": "", "feedback": "" },
           { "prefix": ["The website is", "Go to", "Visit"], "suffix": "www.ipec.ac.cr.", "answer": "The website is", "selected": "", "feedback": "" },
@@ -165,7 +165,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "reading": {
           "title": "Job Application Form → Formulario de Solicitud de Empleo",
           "text": "To apply for the position, please complete this application form. Use block letters and write clearly. \n\n1. Full Name: ______________ \n2. Date of Birth: ______________ \n3. Address: ______________ \n4. Phone Number: ______________ \n5. Email Address: ______________ \n6. Social Security Number: ______________ \n\nDo you have a valid work permit? (Yes/No) ______ \n\nPlease sign here after you complete the form: ______________ \nDate: ______________",
@@ -195,7 +195,7 @@
           { "audio": "Sign here, please.", "options": ["Sign here, please.", "Write here, please.", "Print here, please.", "Read here, please."], "answer": "Sign here, please." },
           { "audio": "Is this information correct?", "options": ["Is this information correct?", "Is this form complete?", "Is this document ready?", "Is this application good?"], "answer": "Is this information correct?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["Please", "fill out", "fill in", "complete"], "suffix": "this job application form.", "answer": "fill out", "selected": "", "feedback": "" },
           { "prefix": ["Write in", "block letters", "small letters", "cursive"], "suffix": "so we can read your name easily.", "answer": "block letters", "selected": "", "feedback": "" },
           { "prefix": ["I need your", "signature", "sign", "signing"], "suffix": "at the bottom of the document.", "answer": "signature", "selected": "", "feedback": "" },
@@ -214,7 +214,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "reading": {
           "title": "Requesting a Part → Solicitando una Pieza",
           "text": "Mechanic: Hi, I need to order a part for a machine. \nSupplier: Okay, what is the machine's brand and model? \nMechanic: The brand is 'Caterpillar'. C-A-T-E-R-P-I-L-L-A-R. The model is '320D'. \nSupplier: Got it. Caterpillar 320D. Do you have the serial number of the machine? \nMechanic: Yes, the serial number is J-F-K-1-2-3-4-5. \nSupplier: Perfect. And what is the part number you need? \nMechanic: The part number is 4-W-7-0-1-8. \nSupplier: Okay, 4W7018. I'm checking now. Yes, we have it in stock.",
@@ -244,7 +244,7 @@
           { "audio": "The serial number is on the back of the equipment.", "options": ["The serial number is on the back.", "The model number is on the back.", "The part number is on the back.", "The brand is on the back."], "answer": "The serial number is on the back." },
           { "audio": "Check the safety manual for instructions.", "options": ["Check the safety manual.", "Read the instruction manual.", "Follow the user manual.", "Study the technical manual."], "answer": "Check the safety manual." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["The model number", "The serial number", "The part number"], "suffix": "is unique to every single device.", "answer": "The serial number", "selected": "", "feedback": "" },
           { "prefix": ["How do you spell", "What you spell", "Please spell"], "suffix": "the brand of this equipment?", "answer": "How do you spell", "selected": "", "feedback": "" },
           { "prefix": ["The instruction", "manual", "book", "paper"], "suffix": "has all the technical information.", "answer": "manual", "selected": "", "feedback": "" },
@@ -263,7 +263,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "reading": {
           "title": "Inventory Check → Revisión de Inventario",
           "text": "Supervisor: Okay team, let's check the inventory. How many boxes of screws do we have? \nWorker 1: We have twenty-five boxes. \nSupervisor: Twenty-five. Good. And the safety helmets? \nWorker 2: There are twelve helmets on the shelf. \nSupervisor: Only twelve? We need more. How about the work gloves? \nWorker 1: There are fifty-eight pairs of gloves. \nSupervisor: Fifty-eight. Okay. And the large wrenches? \nWorker 2: I see six wrenches. \nSupervisor: Six. Perfect. That's all for today. Thank you.",
@@ -293,7 +293,7 @@
           { "audio": "The part number is 19-B. That's one-nine-hyphen-B.", "options": ["Ninety (90)", "Nineteen (19)", "Nine (9)", "Nine-teen (9-10)"], "answer": "Nineteen (19)" },
           { "audio": "He is 60 (sixty) years old.", "options": ["Sixteen (16)", "Sixty (60)", "Six (6)", "Seventy (70)"], "answer": "Sixty (60)" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["There are", "twelve", "twenty", "ten"], "suffix": "months in a year.", "answer": "twelve", "selected": "", "feedback": "" },
           { "prefix": ["My father is", "fifty-five", "fifteen-five", "five-fifty"], "suffix": "years old.", "answer": "fifty-five", "selected": "", "feedback": "" },
           { "prefix": ["The meeting is in room number", "13", "30", "14"], "suffix": ".", "answer": "13", "selected": "", "feedback": "Thirteen (13) and thirty (30) sound different." },
@@ -312,7 +312,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Prepositions for Time (on, in) → Preposiciones de Tiempo (on, in)",
@@ -358,7 +358,7 @@
           { "audio": "I started this job on July 1st (first).", "options": ["June 1st", "July 1st", "January 1st", "July 10th"], "answer": "July 1st" },
           { "audio": "We need to finish the project in December.", "options": ["On December", "In December", "At December", "By December"], "answer": "In December" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["The day after Monday is", "Tuesday", "Thursday", "Today"], "suffix": ".", "answer": "Tuesday", "selected": "", "feedback": "" },
           { "prefix": ["The month before June is", "July", "May", "April"], "suffix": ".", "answer": "May", "selected": "", "feedback": "" },
           { "prefix": ["My appointment is", "on", "in", "at"], "suffix": "Friday at 10 AM.", "answer": "on", "selected": "", "feedback": "Use 'on' for days of the week." },

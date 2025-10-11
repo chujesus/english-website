@@ -1,23 +1,19 @@
-class StudentProgressDto {
+class StudentProgressDTO {
     constructor(progress = {}) {
         this.id = progress.id;
         this.user_id = progress.user_id;
         this.course_id = progress.course_id;
         this.topic_id = progress.topic_id;
-        this.status = progress.status;
-        this.practice_types_completed = progress.practice_types_completed; // JSON en BD
-        this.progress_percentage = progress.progress_percentage;
-        this.started_at = progress.started_at;
-        this.completed_at = progress.completed_at;
+        this.lesson_id = progress.lesson_id;
+
+        this.is_completed = !!progress.is_completed;
+        this.progress_percent = progress.progress_percent;
         this.last_accessed = progress.last_accessed;
+        this.score = progress.score;
+
         this.created_at = progress.created_at;
         this.updated_at = progress.updated_at;
-
-        // Campos adicionales si se hace JOIN
-        this.topic_title = progress.topic_title;
-        this.course_title = progress.course_title;
-        this.course_level = progress.course_level;
     }
 }
 
-module.exports = StudentProgressDto;
+module.exports = StudentProgressDTO;

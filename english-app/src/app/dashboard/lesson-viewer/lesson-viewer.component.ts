@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-import { IFillInBlank, ILessonContent, IListening, SpeechPracticeItem, Topic } from '../../shared/interfaces/content';
-import moduleTopicsA1 from '../courses/english_a1_topics.json';
-import moduleTopicsA2 from '../courses/english_a2_topics.json';
-import moduleTopicsB1 from '../courses/english_b1_topics.json';
-import moduleTopicsB2 from '../courses/english_b2_topics.json';
 import { FormsModule } from '@angular/forms';
 import { SpeechPracticeComponent } from '../practices/speech-practice/speech-practice.component';
 import { SpeechQuizComponent } from '../practices/speech-quiz/speech-quiz.component';
 import { FillInBlankPracticeComponent } from '../practices/fill-in-blank-practice/fill-in-blank-practice.component';
+import { TopicsService } from '../../core/services/topics.service';
+import { IFillInBlank, ILesson, IListening, ITopic, SpeechPracticeItem } from '../../shared/interfaces/models';
+import { LessonsService } from '../../core/services/lessons.service';
 
 @Component({
     selector: 'app-lesson-viewer',
@@ -20,8 +17,9 @@ import { FillInBlankPracticeComponent } from '../practices/fill-in-blank-practic
     styleUrl: './lesson-viewer.component.scss'
 })
 export class LessonViewerComponent implements OnInit {
+    user: any = null;
     courseId: number = 0;
-    currentTopicIndex: number = 0;
+    topicId: number = 0;
     activeSection = 0;
     lessonProgress = 0;
     height: number = 0;
@@ -29,9 +27,9 @@ export class LessonViewerComponent implements OnInit {
     courseTitle: string = "";
     cefrLevel: string = "";
     error: string = "";
-    currentLesson: ILessonContent = { lessonId: 0, cefrLevel: '', sections: [] };
-    lessons: ILessonContent = { lessonId: 0, cefrLevel: '', sections: [] };
-    topics: Topic | null = null;
+    currentLesson: ILesson[] = [];
+    lessons: ILesson[] = [];
+    topic: ITopic | null = null;
     loading = false;
     userAnswers: { [key: number]: string | null } = {};
     feedback: { [key: number]: string | null } = {};
@@ -39,53 +37,45 @@ export class LessonViewerComponent implements OnInit {
     questions: IFillInBlank[] = [];
     listening: IListening[] = [];
 
-    constructor(private route: ActivatedRoute, private http: HttpClient) { }
+    constructor(private route: ActivatedRoute, private topicsService: TopicsService, private lessonsService: LessonsService) { }
 
     ngOnInit(): void {
         this.route.queryParams.subscribe(params => {
+            this.user = { id: +params['userId'] };
             this.courseId = +params['courseId'];
             this.courseTitle = params['courseTitle'];
-            this.currentTopicIndex = +params['topicIndex'];
+            this.topicId = +params['topicId'];
             this.cefrLevel = params['cefrLevel'];
-            // Load topics based on module ID
-            if (this.courseId === 1) {
-                this.topics = moduleTopicsA1[0];
-            } else if (this.courseId === 2) {
-                this.topics = moduleTopicsA2[0];
-            } else if (this.courseId === 3) {
-                this.topics = moduleTopicsB1[0];
-            } else if (this.courseId === 4) {
-                this.topics = moduleTopicsB2[0];
-            }
-            this.loadLessonContent();
-            this.loadProgress();
+            this.loadTopics();
+            this.loadLessons();
         });
     }
 
-    loadLessonContent(): void {
+    loadTopics(): void {
+        this.topicsService.getTopicById(this.topicId).subscribe({
+            next: (topics: ITopic[]) => {
+                this.topic = topics[0] || null;
+            },
+            error: (error) => {
+                console.error('❌ Error loading topic:', error);
+            }
+        });
+    }
+
+    loadLessons(): void {
         this.loading = true;
         this.error = '';
-
-        const fileName = `english_${this.cefrLevel.toLowerCase()}_${this.currentTopicIndex}.json`;
-        const lessonPath = `assets/lessons-files/english-${this.cefrLevel.toLowerCase()}/${fileName}`;
-
-        this.http.get<ILessonContent[]>(lessonPath).subscribe({
-            next: (content) => {
-                this.lessons = content.find(lesson => lesson.cefrLevel.toLowerCase() === this.cefrLevel.toLowerCase()
-                    && lesson.lessonId === this.currentTopicIndex) || { lessonId: 0, cefrLevel: '', sections: [] };
-                if (this.lessons.sections.length > 1) {
-                    this.currentLesson = {
-                        ...this.lessons,
-                        sections: this.lessons.sections.length > 0 ? [this.lessons.sections[0]] : []
-                    };
-                    this.loadPractices(this.currentLesson.sections[0]);
+        this.lessonsService.getLessonsByUserIdAndTopic(this.user.id, this.topicId).subscribe({
+            next: (lessons: ILesson[]) => {
+                this.lessons = lessons;
+                if (this.lessons.length > 1) {
+                    this.currentLesson = [lessons[0]];
+                    this.loadPractices(this.currentLesson[0]);
                 }
-
-                this.activeSection = 0;
+                this.activeSection = this.currentLesson[0]?.id || 0;
                 this.loading = false;
                 setTimeout(() => {
                     const element = document.querySelector<HTMLDivElement>('.sidebar');
-
                     if (element) {
                         this.screenHeight = window.innerHeight;
                         this.height = element.scrollHeight + 24;
@@ -95,35 +85,47 @@ export class LessonViewerComponent implements OnInit {
             error: (error) => {
                 console.error('Error loading lesson:', error);
                 this.loading = false;
+                this.error = 'Failed to load lesson content. Please try again later.';
             }
         });
     }
 
-    openSection(index: number): void {
-        if (this.lessons.sections.length > 1) {
-            this.currentLesson = {
-                ...this.lessons,
-                sections: this.lessons.sections.length > 0 ? [this.lessons.sections[index]] : []
-            };
-            this.loadPractices(this.lessons.sections[index]);
-            this.scrollToSection();
+    openSection(idLesson: number): void {
+        if (this.lessons.length > 1) {
+            this.currentLesson = this.lessons.find(lesson => lesson.id === idLesson) ? [this.lessons.find(lesson => lesson.id === idLesson)!] : [];
+            this.loadPractices(this.currentLesson[0]);
+            this.scrollToSection("lesson-content");
         }
-        this.activeSection = index;
+        this.activeSection = idLesson;
     }
 
     loadPractices(practices: any): void {
-        if (practices.isSpeaking) {
+        if (practices.is_speaking) {
             this.speechPracticeItems = practices.speaking
                 .flatMap((text: any): SpeechPracticeItem[] => {
                     const content = text.english || text.content || text.phrase || '';
+                    const definition = text.definition || '';
+                    const pronunciation = text.pronunciation || '';
 
                     if (content.includes('_')) return [];
 
+                    if (content.includes('/') && pronunciation.includes('/')) {
+                        const englishParts = content.split('/').map((p: string) => p.trim());
+                        const pronParts = pronunciation.split('/').map((p: string) => p.trim());
+
+                        return englishParts.map((phrase: string, idx: number) => ({
+                            english: phrase,
+                            definition,
+                            pronunciation: pronParts[idx] || '' // Empareja según índice
+                        }));
+                    }
+
+                    // Si solo tiene "/" en english
                     if (content.includes('/')) {
                         return content.split('/').map((phrase: string) => ({
                             english: phrase.trim(),
-                            definition: text.definition || '',
-                            pronunciation: text.pronunciation || ''
+                            definition,
+                            pronunciation
                         }));
                     }
 
@@ -136,7 +138,7 @@ export class LessonViewerComponent implements OnInit {
                 .filter((item: SpeechPracticeItem) => item.english.length > 0);
         }
 
-        if (practices.isListening) {
+        if (practices.is_listening) {
             this.listening = practices.listening
                 .map((practice: any) => ({
                     audio: practice.audio || '',
@@ -145,8 +147,8 @@ export class LessonViewerComponent implements OnInit {
                 }));
         }
 
-        if (practices.isFillInBlank) {
-            this.questions = practices.fillInBlank
+        if (practices.is_writing) {
+            this.questions = practices.writing
                 .map((practice: any) => ({
                     prefix: [practice.prefix || ''],
                     suffix: practice.suffix || '',
@@ -176,15 +178,22 @@ export class LessonViewerComponent implements OnInit {
         return questions.every((_, index) => !!this.userAnswers[index]);
     }
 
-    loadProgress(): void {
-        // Mock progress loading for now
-        this.lessonProgress = Math.floor(Math.random() * 100);
-    }
+    scrollToSection(sectionId: string): void {
+        const outer = document.getElementById("topics-content");
+        const inner = document.querySelector<HTMLDivElement>("#lesson-content .lesson-content");
+        const target = document.getElementById(sectionId);
 
-    scrollToSection(): void {
-        const element = document.getElementById("lesson-content");
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        if (outer && inner && target) {
+            // Asegura que el contenedor se ve en la ventana
+            outer.scrollIntoView({ behavior: "smooth", block: "start" });
+
+            // Espera un poquito y mueve el scroll interno
+            setTimeout(() => {
+                inner.scrollTo({
+                    top: target.offsetTop - inner.offsetTop,
+                    behavior: "smooth"
+                });
+            }, 300);
         }
     }
 
@@ -203,9 +212,5 @@ export class LessonViewerComponent implements OnInit {
     markLessonComplete(): void {
         // Mock completion for now
         this.lessonProgress = 100;
-    }
-
-    startPractice(practiceType: string, sectionIndex: number): void {
-
     }
 }

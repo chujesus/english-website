@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';;
-import { DashboardData, CourseModule } from '../../shared/interfaces';
+import { RouterModule } from '@angular/router';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 import { CourseService } from '../../core/services/course.service';
 import { StudentService } from '../../core/services/student.service';
+import { ICourse } from '../../shared/interfaces/models';
 
 @Component({
   selector: 'app-modules',
@@ -15,8 +15,7 @@ import { StudentService } from '../../core/services/student.service';
 })
 export class ModulesComponent implements OnInit {
   user: any = null;
-  modules: CourseModule[] = [];
-  dashboardData: DashboardData[] = [];
+  modules: ICourse[] = [];
   loading = true;
   error = '';
 
@@ -33,9 +32,8 @@ export class ModulesComponent implements OnInit {
     if (session != null) {
       this.user = {
         id: session.task
-      }
-
-      this.courseService.getCourseModulesWithProgress(this.user.id).subscribe({
+      };
+      this.courseService.getCoursesByUserId(this.user.id).subscribe({
         next: (modules) => {
           this.modules = modules || [];
           this.loading = false;
@@ -46,21 +44,6 @@ export class ModulesComponent implements OnInit {
         }
       });
     }
-  }
-
-  loadStudentProgress(): void {
-    this.loading = true;
-    this.error = '';
-    this.studentService.getStudentDashboard().subscribe({
-      next: (dashboard) => {
-        this.dashboardData = dashboard;
-        this.loading = false;
-      },
-      error: (error) => {
-        this.error = 'Error loading student progress';
-        this.loading = false;
-      }
-    });
   }
 
   getStatusBadgeClass(status: string): string {

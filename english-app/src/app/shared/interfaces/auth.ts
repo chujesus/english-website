@@ -1,3 +1,23 @@
+export class Profile {
+    public static Administrator = 0;
+    public static Instructor = 1;
+    public static Student = 2;
+}
+
+export class Status {
+    public static Inactive = 0;
+    public static Active = 1;
+}
+
+export interface GoogleAuthPayload {
+    email: string;
+    name: string;
+    googleId: string;
+    avatar?: string;
+}
+
+
+// User interface
 export interface IUser {
     id?: number;
     google_id?: string;
@@ -18,47 +38,4 @@ export interface IUser {
     refresh_token?: string;
     created_at?: Date;
     updated_at?: Date;
-}
-
-export class Profile {
-    public static Administrator = 0;
-    public static Instructor = 1;
-    public static Student = 2;
-}
-
-export class Status {
-    public static Inactive = 0;
-    public static Active = 1;
-}
-
-export interface LoginPayload {
-    email: string;
-    password: string;
-}
-
-export interface RegisterPayload {
-    name: string;
-    email: string;
-    password: string;
-    userType?: 'student' | 'teacher';
-}
-
-export interface GoogleAuthPayload {
-    email: string;
-    name: string;
-    googleId: string;
-    avatar?: string;
-}
-
-export interface ForgotPasswordPayload {
-    email: string;
-}
-
-export interface ResetPasswordPayload {
-    token: string;
-    newPassword: string;
-}
-
-export interface RefreshTokenPayload {
-    refreshToken: string;
 }

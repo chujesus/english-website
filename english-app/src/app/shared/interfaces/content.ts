@@ -55,27 +55,6 @@ export interface CourseModule {
 }
 
 // Lesson viewer interfaces
-export interface ILessonContent {
-    cefrLevel: string;
-    lessonId: number;
-    sections: ISection[];
-}
-
-export interface ISection {
-    title: string;
-    objective: string;
-    isSpeaking: boolean;
-    isGrammar: boolean;
-    isReading: boolean;
-    isListening: boolean;
-    isFillInBlank: boolean;
-    speaking: ISpeaking[];
-    grammar: Grammar[];
-    reading: ReadingSection;
-    fillInBlank: IFillInBlank[];
-    listening: IListening[];
-    isCompleted: boolean;
-}
 
 export interface ISpeaking {
     english: string;
@@ -103,19 +82,7 @@ export interface ReadingSection {
     questions: ReadingQuestion[];
 }
 
-export interface IFillInBlank {
-    prefix: string[];
-    suffix: string;
-    answer: string;
-    selected: string;
-    feedback: string;
-}
 
-export interface IListening {
-    audio: string;
-    options: string[];
-    answer: string;
-}
 
 export interface LessonSection {
     type: 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'speaking' | 'practice';
@@ -123,8 +90,3 @@ export interface LessonSection {
     content: any;
 }
 
-export interface SpeechPracticeItem {
-    english: string;
-    definition: string;
-    pronunciation: string;
-}

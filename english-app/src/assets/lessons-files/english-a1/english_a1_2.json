@@ -10,7 +10,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Capital vs. small letters → Mayúsculas y minúsculas",
@@ -177,7 +177,7 @@
             "answer": "Y"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "Please write in",
@@ -243,7 +243,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Questions with 'How do you…?' → Preguntas con 'How do you…?'",
@@ -388,7 +388,7 @@
             "answer": "Z"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "How do you",
@@ -454,7 +454,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Saying symbols → Diciendo símbolos",
@@ -611,7 +611,7 @@
             "answer": "Double-u double-u double-u dot"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "My email is",
@@ -677,7 +677,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Imperatives for instructions → Imperativos para instrucciones",
@@ -834,7 +834,7 @@
             "answer": "By Friday"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "Write in",
@@ -900,7 +900,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Numbers and letters in codes → Números y letras en códigos",
@@ -1045,7 +1045,7 @@
             "answer": "Safety manual"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "The",
@@ -1111,7 +1111,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "How many? / There is/are → ¿Cuántos? / Hay",
@@ -1266,7 +1266,7 @@
             "answer": "60"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "There are",
@@ -1332,7 +1332,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Prepositions for time (on, in) → Preposiciones de tiempo (on, in)",
@@ -1489,7 +1489,7 @@
             "answer": "In December"
           }
         ],
-        "fillInBlank": [
+        "writing": [
           {
             "prefix": [
               "The day after Monday is",

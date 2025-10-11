@@ -10,7 +10,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Verb 'To Be' (Present Simple) → Verbo 'Ser/Estar' (Presente Simple)",
@@ -70,7 +70,7 @@
           { "audio": "We are from Cartago.", "options": ["They are from Cartago.", "We are from San José.", "We are from Cartago.", "Where are you from?"], "answer": "We are from Cartago." },
           { "audio": "Are you the new driver?", "options": ["Are you the new driver?", "I am the new driver.", "He is the new driver.", "You are not the new driver."], "answer": "Are you the new driver?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["I", "He", "They"], "suffix": " am a student at IPEC.", "answer": "I", "selected": "", "feedback": "" },
           { "prefix": ["She", "We", "You"], "suffix": " is a cleaner in the factory.", "answer": "She", "selected": "", "feedback": "" },
           { "prefix": ["They", "It", "I"], "suffix": " are good mechanics.", "answer": "They", "selected": "", "feedback": "" },
@@ -89,7 +89,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Wh- Questions with 'To Be' → Preguntas con 'Wh-' y el verbo 'To Be'",
@@ -150,7 +150,7 @@
           { "audio": "My nationality is Salvadoran.", "options": ["My nationality is Salvadoran.", "I am from El Salvador.", "I am in El Salvador.", "What is your nationality?"], "answer": "My nationality is Salvadoran." },
           { "audio": "Where is your mother from?", "options": ["Where is your father from?", "Where is your mother from?", "What is your mother?", "How is your mother?"], "answer": "Where is your mother from?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["What", "Where", "How"], "suffix": " is your address?", "answer": "What", "selected": "", "feedback": "" },
           { "prefix": ["How old", "How many", "What"], "suffix": " are your children?", "answer": "How old", "selected": "", "feedback": "" },
           { "prefix": ["I am", "I have", "I is"], "suffix": " from Guatemala, but I live in Costa Rica.", "answer": "I am", "selected": "", "feedback": "" },
@@ -169,7 +169,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "'There is' / 'There are' → 'Hay' (singular/plural)",
@@ -229,7 +229,7 @@
           { "audio": "There are five people in the office.", "options": ["There are five people in the office.", "There is one person in the office.", "There are four people in the office.", "How many people are in the office?"], "answer": "There are five people in the office." },
           { "audio": "There isn't a supermarket near here.", "options": ["There is a supermarket.", "Is there a supermarket?", "The supermarket is near.", "There isn't a supermarket near here."], "answer": "There isn't a supermarket near here." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["There is", "There are", "There am"], "suffix": " a new security guard at the entrance.", "answer": "There is", "selected": "", "feedback": "" },
           { "prefix": ["There is", "There are", "Is there"], "suffix": " many students in the class.", "answer": "There are", "selected": "", "feedback": "" },
           { "prefix": ["Is there", "Are there", "Is"], "suffix": " a bus stop near the factory?", "answer": "Is there", "selected": "", "feedback": "" },
@@ -248,7 +248,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Modal Verb 'Can'/'Can't' → Verbo Modal 'Can'/'Can't'",
@@ -310,7 +310,7 @@
           { "audio": "Can you weld metal?", "options": ["I can weld metal.", "You can't weld metal.", "Can you weld metal?", "He can weld metal."], "answer": "Can you weld metal?" },
           { "audio": "They can start the project tomorrow.", "options": ["They can't start the project.", "When can they start?", "They can start the project tomorrow.", "They can finish the project tomorrow."], "answer": "They can start the project tomorrow." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["I can", "I am", "I have"], "suffix": " operate this machine.", "answer": "I can", "selected": "", "feedback": "" },
           { "prefix": ["She can't", "She doesn't", "She isn't"], "suffix": " speak French.", "answer": "She can't", "selected": "", "feedback": "" },
           { "prefix": ["Can you", "Are you", "Do you"], "suffix": " lift this box? It's heavy.", "answer": "Can you", "selected": "", "feedback": "" },
@@ -330,7 +330,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Present Simple (I, You, We, They) → Presente Simple",
@@ -405,7 +405,7 @@
           { "audio": "Do you live with your parents?", "options": ["Do you live with your parents?", "I live with my parents.", "You don't live with your parents.", "Where do you live?"], "answer": "Do you live with your parents?" },
           { "audio": "He doesn't like to wake up early.", "options": ["He likes to wake up early.", "He doesn't like to wake up early.", "Does he like to wake up early?", "She doesn't like to wake up early."], "answer": "He doesn't like to wake up early." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["I", "He", "She"], "suffix": " work in construction.", "answer": "I", "selected": "", "feedback": "" },
           { "prefix": ["My boss", "My bosses", "I"], "suffix": " speaks three languages.", "answer": "My boss", "selected": "", "feedback": "For 'he/she/it', add -s to the verb." },
           { "prefix": ["We don't", "We doesn't", "We no"], "suffix": " work on weekends.", "answer": "We don't", "selected": "", "feedback": "" },
@@ -425,7 +425,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
             {
                 "title": "'Like' / 'Don't like' + noun/verb-ing → 'Gustar' / 'No gustar'",
@@ -487,7 +487,7 @@
             { "audio": "Do you like your new job?", "options": ["Do you have a new job?", "Do you like your new job?", "I like my new job.", "You don't like your new job."], "answer": "Do you like your new job?" },
             { "audio": "My children love playing outside.", "options": ["My children are playing outside.", "My children love playing outside.", "My children don't like playing outside.", "Do your children play outside?"], "answer": "My children love playing outside." }
         ],
-        "fillInBlank": [
+        "writing": [
             { "prefix": ["I like", "I liking", "I to like"], "suffix": " my coworkers.", "answer": "I like", "selected": "", "feedback": "" },
             { "prefix": ["She loves", "She love", "She is love"], "suffix": " to help her family.", "answer": "She loves", "selected": "", "feedback": "" },
             { "prefix": ["He enjoys", "He enjoy", "He enjoying"], "suffix": " fixing old cars.", "answer": "He enjoys", "selected": "", "feedback": "" },
@@ -507,7 +507,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
             {
                 "title": "'Would like' for Offers and Requests → 'Quisiera/Me gustaría' para Ofrecimientos y Solicitudes",
@@ -568,7 +568,7 @@
             { "audio": "He'd like a ticket to Cartago.", "options": ["He has a ticket to Cartago.", "He'd like a ticket to Cartago.", "He wants to go to Cartago.", "Does he have a ticket?"], "answer": "He'd like a ticket to Cartago." },
             { "audio": "We would like to finish early today.", "options": ["We finish early today.", "We can finish early today.", "We would like to finish early today.", "Do we finish early today?"], "answer": "We would like to finish early today." }
         ],
-        "fillInBlank": [
+        "writing": [
             { "prefix": ["I would", "I can", "I am"], "suffix": " like to order now, please.", "answer": "I would", "selected": "", "feedback": "" },
             { "prefix": ["Would you like", "Do you like", "Can you like"], "suffix": " something to drink?", "answer": "Would you like", "selected": "", "feedback": "'Would you like' is used for polite offers." },
             { "prefix": ["She", "'d like", "'s like", "likes"], "suffix": " to speak with Human Resources.", "answer": "'d like", "selected": "", "feedback": "'d like' is the contraction of 'would like'." },
@@ -588,7 +588,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
             {
                 "title": "Present Continuous → Presente Continuo",
@@ -649,7 +649,7 @@
             { "audio": "The machine is not working correctly.", "options": ["The machine works correctly.", "The machine is not working correctly.", "Is the machine working?", "The machine is new."], "answer": "The machine is not working correctly." },
             { "audio": "They are having lunch in the cafeteria.", "options": ["They have lunch in the cafeteria.", "They are having lunch in the cafeteria.", "They had lunch.", "Where are they having lunch?"], "answer": "They are having lunch in the cafeteria." }
         ],
-        "fillInBlank": [
+        "writing": [
             { "prefix": ["I", "am studying", "study", "studies"], "suffix": " to be a technician.", "answer": "am studying", "selected": "", "feedback": "Use 'am' + -ing for a temporary action or a course of study." },
             { "prefix": ["He", "is playing", "plays", "play"], "suffix": " football at the moment.", "answer": "is playing", "selected": "", "feedback": "'At the moment' indicates an action happening now." },
             { "prefix": ["What", "are you doing", "do you do", "you are doing"], "suffix": "? I'm repairing a motor.", "answer": "are you doing", "selected": "", "feedback": "" },
@@ -669,7 +669,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
             {
                 "title": "Past Simple (Regular Verbs) → Pasado Simple (Verbos Regulares)",
@@ -730,7 +730,7 @@
             { "audio": "They didn't want to change the plan.", "options": ["They want to change the plan.", "They wanted to change the plan.", "They didn't want to change the plan.", "Do they want to change the plan?"], "answer": "They didn't want to change the plan." },
             { "audio": "We lived in Panama for three years.", "options": ["We live in Panama.", "We are living in Panama.", "We will live in Panama.", "We lived in Panama for three years."], "answer": "We lived in Panama for three years." }
         ],
-        "fillInBlank": [
+        "writing": [
             { "prefix": ["I", "worked", "work", "working"], "suffix": " overtime last night.", "answer": "worked", "selected": "", "feedback": "'Last night' indicates the past." },
             { "prefix": ["She", "didn't want", "doesn't want", "not wanted"], "suffix": " to stop for lunch.", "answer": "didn't want", "selected": "", "feedback": "For past negatives, use 'didn't' + base verb." },
             { "prefix": ["Did you", "finish", "finished", "finishing"], "suffix": " the safety training?", "answer": "finish", "selected": "", "feedback": "After 'did', use the base form of the verb." },
@@ -750,7 +750,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
             {
                 "title": "Future with 'Going to' → Futuro con 'Going to'",
@@ -810,7 +810,7 @@
             { "audio": "They are not going to sell their house.", "options": ["They are going to sell their house.", "They sold their house.", "They are not going to sell their house.", "Why are they selling their house?"], "answer": "They are not going to sell their house." },
             { "audio": "What are you going to wear to the party?", "options": ["What are you wearing?", "What are you going to wear to the party?", "What did you wear to the party?", "I am going to the party."], "answer": "What are you going to wear to the party?" }
         ],
-        "fillInBlank": [
+        "writing": [
             { "prefix": ["I", "am going to", "go to", "will to"], "suffix": " call my boss in five minutes.", "answer": "am going to", "selected": "", "feedback": "" },
             { "prefix": ["He", "is going to", "are going to", "am going to"], "suffix": " start his own business.", "answer": "is going to", "selected": "", "feedback": "" },
             { "prefix": ["Are you going to", "look for", "looking for", "looked for"], "suffix": " a new job?", "answer": "look for", "selected": "", "feedback": "After 'going to', use the base form of the verb." },

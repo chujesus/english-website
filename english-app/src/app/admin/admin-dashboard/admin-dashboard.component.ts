@@ -54,39 +54,39 @@ export class AdminDashboardComponent implements OnInit {
 
     loadContentManagement(): void {
         this.loading = true;
-        this.courseService.getContentManagement().subscribe({
-            next: (response: any) => {
-                if (response.ok) {
-                    this.contentManagement = response.data;
-                } else {
-                    this.error = response.message || 'Error loading content management data';
-                }
-                this.loading = false;
-            },
-            error: (error) => {
-                this.error = 'Error connecting to server';
-                this.loading = false;
-                console.error('Content management error:', error);
-            }
-        });
+        /*  this.courseService.getContentManagement().subscribe({
+             next: (response: any) => {
+                 if (response.ok) {
+                     this.contentManagement = response.data;
+                 } else {
+                     this.error = response.message || 'Error loading content management data';
+                 }
+                 this.loading = false;
+             },
+             error: (error) => {
+                 this.error = 'Error connecting to server';
+                 this.loading = false;
+                 console.error('Content management error:', error);
+             }
+         }); */
     }
 
     loadUploadedFiles(): void {
-        this.courseService.getUploadedFiles().subscribe({
-            next: (response: any) => {
-                if (response && response.ok) {
-                    this.uploadedFiles = response.data || [];
-                } else {
-                    // Handle case where response doesn't have expected structure
-                    this.uploadedFiles = response || [];
-                }
-            },
-            error: (error: any) => {
-                console.error('Error loading uploaded files:', error);
-                this.uploadedFiles = []; // Set empty array on error
-                // Don't show error toast unless it's critical
-            }
-        });
+        /*   this.courseService.getUploadedFiles().subscribe({
+              next: (response: any) => {
+                  if (response && response.ok) {
+                      this.uploadedFiles = response.data || [];
+                  } else {
+                      // Handle case where response doesn't have expected structure
+                      this.uploadedFiles = response || [];
+                  }
+              },
+              error: (error: any) => {
+                  console.error('Error loading uploaded files:', error);
+                  this.uploadedFiles = []; // Set empty array on error
+                  // Don't show error toast unless it's critical
+              }
+          }); */
     }
 
     // JSON Editor Methods
@@ -103,21 +103,21 @@ export class AdminDashboardComponent implements OnInit {
 
         const courseId = levelToCourseId[this.editingLevel];
 
-        this.courseService.getCourseContent(courseId).subscribe({
-            next: (response: any) => {
-                if (response.ok) {
-                    this.jsonContent = JSON.stringify(response.data, null, 2);
-                    this.originalJsonContent = this.jsonContent;
-                    this.validateJson();
-                } else {
-                    this.showError('Failed to load course content');
-                }
-            },
-            error: (error: any) => {
-                console.error('Error loading course content:', error);
-                this.showError('Error loading course content');
-            }
-        });
+        /*  this.courseService.getCourseContent(courseId).subscribe({
+             next: (response: any) => {
+                 if (response.ok) {
+                     this.jsonContent = JSON.stringify(response.data, null, 2);
+                     this.originalJsonContent = this.jsonContent;
+                     this.validateJson();
+                 } else {
+                     this.showError('Failed to load course content');
+                 }
+             },
+             error: (error: any) => {
+                 console.error('Error loading course content:', error);
+                 this.showError('Error loading course content');
+             }
+         }); */
     }
 
     validateJson(): void {
@@ -158,20 +158,20 @@ export class AdminDashboardComponent implements OnInit {
 
             const courseId = levelToCourseId[this.editingLevel];
 
-            this.courseService.updateCourseContent(courseId, parsedContent).subscribe({
-                next: (response: any) => {
-                    if (response && response.ok) {
-                        this.originalJsonContent = this.jsonContent;
-                        this.showSuccess('Course content updated successfully');
-                    } else {
-                        this.showError(response?.message || 'Failed to update course content');
-                    }
-                },
-                error: (error: any) => {
-                    console.error('Save error:', error);
-                    this.showError('Error saving course content. Please try again.');
-                }
-            });
+            /*   this.courseService.updateCourseContent(courseId, parsedContent).subscribe({
+                  next: (response: any) => {
+                      if (response && response.ok) {
+                          this.originalJsonContent = this.jsonContent;
+                          this.showSuccess('Course content updated successfully');
+                      } else {
+                          this.showError(response?.message || 'Failed to update course content');
+                      }
+                  },
+                  error: (error: any) => {
+                      console.error('Save error:', error);
+                      this.showError('Error saving course content. Please try again.');
+                  }
+              }); */
 
         } catch (error) {
             this.showError('Invalid JSON format');
@@ -190,21 +190,21 @@ export class AdminDashboardComponent implements OnInit {
     uploadFiles(): void {
         if (!this.canUpload()) return;
 
-        this.courseService.uploadContentFiles(this.selectedLevel, this.selectedContentType, this.selectedFiles).subscribe({
-            next: (response: any) => {
-                if (response && response.ok) {
-                    this.showSuccess('Files uploaded successfully');
-                    this.clearUploadForm();
-                    this.loadUploadedFiles(); // Refresh the file list
-                } else {
-                    this.showError(response?.message || 'Failed to upload files');
-                }
-            },
-            error: (error: any) => {
-                console.error('Upload error:', error);
-                this.showError('Error uploading files. Please try again.');
-            }
-        });
+        /*  this.courseService.uploadContentFiles(this.selectedLevel, this.selectedContentType, this.selectedFiles).subscribe({
+             next: (response: any) => {
+                 if (response && response.ok) {
+                     this.showSuccess('Files uploaded successfully');
+                     this.clearUploadForm();
+                     this.loadUploadedFiles(); // Refresh the file list
+                 } else {
+                     this.showError(response?.message || 'Failed to upload files');
+                 }
+             },
+             error: (error: any) => {
+                 console.error('Upload error:', error);
+                 this.showError('Error uploading files. Please try again.');
+             }
+         }); */
     }
 
     clearUploadForm(): void {
@@ -217,20 +217,20 @@ export class AdminDashboardComponent implements OnInit {
 
     deleteFile(fileId: number): void {
         if (confirm('Are you sure you want to delete this file?')) {
-            this.courseService.deleteUploadedFile(fileId).subscribe({
-                next: (response: any) => {
-                    if (response && response.ok) {
-                        this.showSuccess('File deleted successfully');
-                        this.loadUploadedFiles(); // Refresh the file list
-                    } else {
-                        this.showError(response?.message || 'Failed to delete file');
-                    }
-                },
-                error: (error: any) => {
-                    console.error('Delete error:', error);
-                    this.showError('Error deleting file. Please try again.');
-                }
-            });
+            /*  this.courseService.deleteUploadedFile(fileId).subscribe({
+                 next: (response: any) => {
+                     if (response && response.ok) {
+                         this.showSuccess('File deleted successfully');
+                         this.loadUploadedFiles(); // Refresh the file list
+                     } else {
+                         this.showError(response?.message || 'Failed to delete file');
+                     }
+                 },
+                 error: (error: any) => {
+                     console.error('Delete error:', error);
+                     this.showError('Error deleting file. Please try again.');
+                 }
+             }); */
         }
     }
 
@@ -330,24 +330,24 @@ export class AdminDashboardComponent implements OnInit {
     // Course Modules Management Methods
     loadCourseModules(): void {
         this.courseModulesLoading = true;
-        this.courseService.getCourseModules().subscribe({
-            next: (response: any) => {
-                if (response.ok) {
-                    this.courseModules = response.data;
-                    this.courseModulesJsonContent = JSON.stringify(this.courseModules, null, 2);
-                    this.originalCourseModulesJsonContent = this.courseModulesJsonContent;
-                    this.validateCourseModulesJson();
-                } else {
-                    this.showError('Failed to load course modules');
-                }
-                this.courseModulesLoading = false;
-            },
-            error: (error) => {
-                console.error('Error loading course modules:', error);
-                this.showError('Error loading course modules');
-                this.courseModulesLoading = false;
-            }
-        });
+        /*  this.courseService.getCourseModules().subscribe({
+             next: (response: any) => {
+                 if (response.ok) {
+                     this.courseModules = response.data;
+                     this.courseModulesJsonContent = JSON.stringify(this.courseModules, null, 2);
+                     this.originalCourseModulesJsonContent = this.courseModulesJsonContent;
+                     this.validateCourseModulesJson();
+                 } else {
+                     this.showError('Failed to load course modules');
+                 }
+                 this.courseModulesLoading = false;
+             },
+             error: (error) => {
+                 console.error('Error loading course modules:', error);
+                 this.showError('Error loading course modules');
+                 this.courseModulesLoading = false;
+             }
+         }); */
     }
 
     validateCourseModulesJson(): void {
@@ -412,7 +412,7 @@ export class AdminDashboardComponent implements OnInit {
             const parsedModules = JSON.parse(this.courseModulesJsonContent);
 
             this.courseModulesLoading = true;
-            this.courseService.bulkUpdateCourseModules(parsedModules).subscribe({
+            /* this.courseService.bulkUpdateCourseModules(parsedModules).subscribe({
                 next: (response: any) => {
                     if (response && response.ok) {
                         this.courseModules = response.data;
@@ -428,7 +428,7 @@ export class AdminDashboardComponent implements OnInit {
                     this.showError('Error saving course modules. Please try again.');
                     this.courseModulesLoading = false;
                 }
-            });
+            }); */
 
         } catch (error) {
             this.showError('Invalid JSON format');

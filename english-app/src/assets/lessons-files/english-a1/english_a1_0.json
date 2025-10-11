@@ -10,7 +10,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: The Verb 'To Be' (Affirmative) → Enfoque gramatical: El verbo 'To Be' (Afirmativo)",
@@ -66,7 +66,7 @@
           { "audio": "They are students.", "options": ["They are students.", "You are a student.", "She is a student.", "They are doctors."], "answer": "They are students." },
           { "audio": "It's a beautiful day.", "options": ["It's a beautiful day.", "It is a rainy day.", "He is beautiful.", "They are beautiful."], "answer": "It's a beautiful day." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["I", "She", "We"], "suffix": " am from Costa Rica.", "answer": "I" },
           { "prefix": ["He", "They", "You"], "suffix": " is a doctor.", "answer": "He" },
           { "prefix": ["We", "He", "It"], "suffix": " are learning English.", "answer": "We" },
@@ -82,7 +82,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: 'To Be' (Negative and Interrogative) → Enfoque gramatical: 'To Be' (Negativo e Interrogativo)",
@@ -119,7 +119,7 @@
           { "audio": "She isn't from the United States.", "options": ["She isn't from the United States.", "She is from the United States.", "He isn't from the United States.", "They aren't from the United States."], "answer": "She isn't from the United States." },
           { "audio": "How are you?", "options": ["Who are you?", "How are you?", "Where are you?", "What are you?"], "answer": "How are you?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["Is", "Are", "Am"], "suffix": " he a doctor? No, he isn't.", "answer": "Is" },
           { "prefix": ["is not", "are not", "am not"], "suffix": " from Italy. She is from France.", "answer": "is not" },
           { "prefix": ["Is", "Are", "Am"], "suffix": " they in the same group? Yes, they are.", "answer": "Are" },
@@ -134,7 +134,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Wh- Questions with 'To Be' (Where, What) → Enfoque gramatical: Preguntas 'Wh-' con 'To Be' (Where, What)",
@@ -169,7 +169,7 @@
           { "audio": "Where is she from?", "options": ["What is her name?", "Where is she from?", "Who is she?", "How is she?"], "answer": "Where is she from?" },
           { "audio": "They are not Brazilian, they are Portuguese.", "options": ["They are not Brazilian, they are Portuguese.", "They are Brazilian, not Portuguese.", "Are they Brazilian or Portuguese?", "She is not Brazilian."], "answer": "They are not Brazilian, they are Portuguese." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["What", "Where", "How"], "suffix": " is your teacher from?", "answer": "Where" },
           { "prefix": ["I am", "He is", "She is"], "suffix": " from Japan. I am Japanese.", "answer": "I am" },
           { "prefix": ["Where", "What", "Who"], "suffix": " is your nationality?", "answer": "What" },
@@ -184,7 +184,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: 'How old...?' and 'What's...?' → Enfoque gramatical: '¿Cuántos años...?' y '¿Cuál es...?'",
@@ -217,7 +217,7 @@
           { "audio": "He is sixty-four years old.", "options": ["He is sixteen years old.", "He is sixty-four years old.", "She is forty-six years old.", "He is sixty-five years old."], "answer": "He is sixty-four years old." },
           { "audio": "My phone number is 901-555-3470", "options": ["911-555-3470", "901-444-3470", "901-555-3470 (three-four-seven-oh)", "901-555-2470"], "answer": "901-555-3470 (three-four-seven-oh)" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["How old", "How many", "What old"], "suffix": " is your brother?", "answer": "How old" },
           { "prefix": ["I have", "I am", "It is"], "suffix": " nineteen years old.", "answer": "I am" },
           { "prefix": ["What's", "How's", "Where's"], "suffix": " your phone number?", "answer": "What's" },
@@ -232,7 +232,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Possessive Adjectives → Enfoque gramatical: Adjetivos Posesivos",
@@ -271,7 +271,7 @@
           { "audio": "Their house is blue.", "options": ["Our house is blue.", "His house is blue.", "Her house is blue.", "Their house is blue."], "answer": "Their house is blue." },
           { "audio": "This is my brother.", "options": ["This is my mother.", "This is my brother.", "This is his brother.", "This is my father."], "answer": "This is my brother." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["my", "your", "his"], "suffix": " name is Robert. (Talking about a man)", "answer": "his" },
           { "prefix": ["her", "his", "its"], "suffix": " name is Susan. (Talking about a woman)", "answer": "her" },
           { "prefix": ["We", "Our", "Us"], "suffix": " class is at 9 AM.", "answer": "Our" },
@@ -287,7 +287,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Plurals and Demonstratives → Enfoque gramatical: Plurales y Demostrativos",
@@ -321,7 +321,7 @@
           { "audio": "These are my keys.", "options": ["This is my key.", "These are my keys.", "Those are my keys.", "That is my key."], "answer": "These are my keys." },
           { "audio": "That bus is late.", "options": ["That bus is late.", "Those buses are late.", "This bus is late.", "The bus is great."], "answer": "That bus is late." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["this", "these", "that"], "suffix": " is my chair right here.", "answer": "this" },
           { "prefix": ["that", "those", "these"], "suffix": " are my friends over there.", "answer": "those" },
           { "prefix": ["box", "boxs", "boxes"], "suffix": "I have three ...", "answer": "boxes" },
@@ -337,7 +337,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Indefinite Articles 'a' / 'an' → Enfoque gramatical: Artículos Indefinidos 'a' / 'an'",
@@ -374,7 +374,7 @@
           { "audio": "She is an engineer.", "options": ["She is a engineer.", "He is an engineer.", "She is in engineering.", "She is an engineer."], "answer": "She is an engineer." },
           { "audio": "My father is a pilot.", "options": ["My father is a pilot.", "My mother is a pilot.", "My father is the pilot.", "My father flies a lot."], "answer": "My father is a pilot." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["a", "an", "the"], "suffix": " teacher works at a school.", "answer": "a" },
           { "prefix": ["a", "an", "the"], "suffix": " apple a day is good for you.", "answer": "an" },
           { "prefix": ["a", "an", "the"], "suffix": " What does he do? He's ... architect.", "answer": "an" },
@@ -390,7 +390,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Present Simple (Affirmative) → Enfoque gramatical: Presente Simple (Afirmativo)",
@@ -427,7 +427,7 @@
           { "audio": "We play tennis on Sundays.", "options": ["We play tennis on Sundays.", "They play tennis on Sundays.", "We work on Sundays.", "We play tennis on Mondays."], "answer": "We play tennis on Sundays." },
           { "audio": "I live near the city center.", "options": ["I live near the city center.", "I leave near the city center.", "She lives near the city center.", "I live in the city center."], "answer": "I live near the city center." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["I", "He", "She"], "suffix": " work in a large office.", "answer": "I" },
           { "prefix": ["You", "She", "It"], "suffix": " speak English fluently.", "answer": "You" },
           { "prefix": ["We", "He", "She"], "suffix": " go to the beach in the summer.", "answer": "We" },
@@ -443,7 +443,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: Present Simple (3rd Person Singular) → Enfoque gramatical: Presente Simple (3ª Persona Singular)",
@@ -480,7 +480,7 @@
           { "audio": "She works from home.", "options": ["She work from home.", "He works from home.", "She works from home.", "They work from home."], "answer": "She works from home." },
           { "audio": "He studies at night.", "options": ["He study at night.", "He studies at night.", "She studies at night.", "He works at night."], "answer": "He studies at night." }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["work", "works", "working"], "suffix": "My father ... in an office.", "answer": "works" },
           { "prefix": ["go", "goes", "going"], "suffix": "My sister ... to dance class on Tuesdays.", "answer": "goes" },
           { "prefix": ["study", "studies", "studying"], "suffix": "My friend ... for his exams every night.", "answer": "studies" },
@@ -496,7 +496,7 @@
         "isReading": true,
         "isSpeaking": true,
         "isListening": true,
-        "isFillInBlank": true,
+        "isWriting": true,
         "grammar": [
           {
             "title": "Grammar Focus: do/don't and does/doesn't → Enfoque gramatical: do/don't y does/doesn't",
@@ -533,7 +533,7 @@
           { "audio": "He doesn't eat meat.", "options": ["He doesn't eat meat.", "He don't eat meat.", "She doesn't eat meat.", "He doesn't like meat."], "answer": "He doesn't eat meat." },
           { "audio": "Do you live near here?", "options": ["Do you live near here?", "Does she live near here?", "Do you leave here?", "Are you live near here?"], "answer": "Do you live near here?" }
         ],
-        "fillInBlank": [
+        "writing": [
           { "prefix": ["Do", "Does", "Are"], "suffix": " you like pizza?", "answer": "Do" },
           { "prefix": ["don't", "doesn't", "isn't"], "suffix": " He ... work on Sundays.", "answer": "doesn't" },
           { "prefix": ["Do", "Does", "Is"], "suffix": " your sister speak Italian?", "answer": "Does" },

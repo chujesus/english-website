@@ -3,7 +3,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DeepgramService } from '../../../core/services/deepgram.service';
 import { Router } from '@angular/router';
 import { get as levenshtein } from 'fast-levenshtein';
-import { SpeechPracticeItem } from '../../../shared/interfaces';
+import { SpeechPracticeItem } from '../../../shared/interfaces/models';
 
 @Component({
   standalone: true,

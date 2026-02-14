@@ -3,29 +3,29 @@ import { authGuard, guestGuard } from './core/guards/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
-    // Auth routes - Principal (solo para usuarios no autenticados)
+    // Auth routes - Main (only for non-authenticated users)
     {
         path: 'auth',
         canActivate: [guestGuard],
         children: [
             {
                 path: 'login',
-                title: 'Iniciar Sesión',
+                title: 'Login',
                 loadComponent: () => import('./auth/login/login.component').then(m => m.LoginComponent)
             },
             {
                 path: 'register',
-                title: 'Registrarse',
+                title: 'Register',
                 loadComponent: () => import('./auth/register/register.component').then(m => m.RegisterComponent)
             },
             {
                 path: 'forgot-password',
-                title: 'Recuperar Contraseña',
+                title: 'Forgot Password',
                 loadComponent: () => import('./auth/forgot-password/forgot-password.component').then(m => m.ForgotPasswordComponent)
             },
             {
-                path: 'reset-password',
-                title: 'Restablecer Contraseña',
+                path: 'change-password/:id/:passwordToken',
+                title: 'Change Password',
                 loadComponent: () => import('./auth/reset-password/reset-password.component').then(m => m.ResetPasswordComponent)
             },
             {
@@ -35,33 +35,43 @@ export const routes: Routes = [
             }
         ]
     },
-    // Dashboard routes - Protegidas (requieren autenticación)
+    // Dashboard routes - Protected (require authentication)
     {
         path: 'dashboard', component: DashboardComponent, canActivate: [authGuard], children: [
             {
                 path: 'control-panel',
-                title: 'Panel de Control',
+                title: 'Control Panel',
                 loadComponent: () => import('./dashboard/control-panel/control-panel.component').then(m => m.ControlPanelComponent)
             },
             {
                 path: 'modules',
-                title: 'Módulos',
+                title: 'Modules',
                 loadComponent: () => import('./dashboard/modules/modules.component').then(m => m.ModulesComponent)
             },
             {
                 path: 'courses',
-                title: 'Cursos',
+                title: 'Courses',
                 loadComponent: () => import('./dashboard/courses/courses.component').then(m => m.CoursesComponent)
             },
             {
                 path: 'lesson-viewer',
-                title: 'Visor de Lecciones',
+                title: 'Lesson Viewer',
                 loadComponent: () => import('./dashboard/lesson-viewer/lesson-viewer.component').then(m => m.LessonViewerComponent)
             },
             {
-                path: 'instructor-analytics',
-                title: 'Analytics de Instructor',
-                loadComponent: () => import('./dashboard/instructor-analytics/instructor-analytics.component').then(m => m.InstructorAnalyticsComponent)
+                path: 'manage-content',
+                title: 'Manage Content',
+                loadComponent: () => import('./dashboard/manage-content/manage-content.component').then(m => m.ManageContentComponent)
+            },
+            {
+                path: 'profile',
+                title: 'Profile',
+                loadComponent: () => import('./dashboard/profile/profile.component').then(m => m.ProfileComponent)
+            },
+            {
+                path: 'user-management',
+                title: 'User Management',
+                loadComponent: () => import('./dashboard/user-management/user-management.component').then(m => m.UserManagementComponent)
             },
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]

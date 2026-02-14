@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS users (
     password_token VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
     state INT NOT NULL,
     profile INT NOT NULL,
+    starting_module ENUM('A1', 'A2', 'B1', 'B2') DEFAULT 'A1',
     url_image LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
     image_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
     token VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
@@ -72,6 +73,7 @@ CREATE TABLE IF NOT EXISTS lessons (
     is_writing TINYINT(1) DEFAULT 0,
 
     -- Contenido en JSON (más flexible que desglosarlo en tablas)
+    content LONGTEXT NULL,
     grammar JSON NULL,
     reading JSON NULL,
     speaking JSON NULL,
@@ -97,7 +99,6 @@ CREATE TABLE IF NOT EXISTS student_progress (
     is_completed TINYINT(1) DEFAULT 0,       -- completó la lección (0 = no, 1 = sí)
     progress_percent DECIMAL(5,2) DEFAULT 0, -- % de avance en la lección
     last_accessed TIMESTAMP NULL,            -- última vez que entró
-    score DECIMAL(5,2) DEFAULT NULL,         -- puntaje obtenido en ejercicios
     
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

@@ -9,14 +9,14 @@ export const authGuard: CanActivateFn = async (route, state) => {
     const alertService = inject(AlertService);
     const router = inject(Router);
 
-    // TODO: Implementar lógica de autenticación real
-    // Por ahora permitimos acceso libre
+    // TODO: Implement real authentication logic
+    // For now we allow free access
     const isAuthenticated = await authService.isNotExpiredToken()
 
     if (isAuthenticated) {
         return true;
     } else {
-        alertService.showWarningToast("Usuario no tiene permisos para ingresar al sistema.");
+        alertService.showWarningToast("User does not have permission to access the system.");
         router.navigate(['/login']);
         return false;
     }
@@ -26,14 +26,14 @@ export const guestGuard: CanActivateFn = async (route, state) => {
     const authService = inject(AuthService);
     const router = inject(Router);
 
-    // TODO: Implementar lógica de autenticación real
-    // Por ahora permitimos acceso libre a auth
+    // TODO: Implement real authentication logic
+    // For now we allow free access to auth
     const isAuthenticated = await authService.isNotExpiredToken()
 
     if (!isAuthenticated) {
         return true;
     } else {
-        // Redirigir a dashboard si ya está autenticado
+        // Redirect to dashboard if already authenticated
         router.navigate(['/dashboard/control-panel']);
         return false;
     }

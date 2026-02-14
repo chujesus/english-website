@@ -38,6 +38,7 @@ const getCoursesByUserId = async (req, res = response) => {
       });
     }
 
+    // Obtener todos los cursos con información básica
     const [courses] = await pool.query(
       `
             SELECT 
@@ -46,36 +47,68 @@ const getCoursesByUserId = async (req, res = response) => {
                 c.title,
                 c.description,
                 c.created_at,
-                c.updated_at,
-                IFNULL(AVG(sp.progress_percent), 0) AS progress_percent,
-                MAX(sp.last_accessed) AS last_accessed
+                c.updated_at
             FROM courses c
-            LEFT JOIN student_progress sp 
-                ON sp.course_id = c.id AND sp.user_id = ?
-            GROUP BY c.id
-        `,
-      [userId]
+            ORDER BY c.id
+        `
     );
 
-    // Pasar al DTO y agregar el campo progress
-    const coursesDtoList = courses.map((c) => {
-      const dto = new CourseDto(c);
-      dto.progress_percent = parseFloat(c.progress_percent);
+    // Para cada curso, calcular el progreso basado en tópicos completados
+    const coursesDtoList = await Promise.all(
+      courses.map(async (course) => {
+        const dto = new CourseDto(course);
 
-      // Estatus
-      if (dto.progress_percent >= 100) {
-        dto.status = "completed";
-      } else if (dto.progress_percent > 0) {
-        dto.status = "in_progress";
-      } else {
-        dto.status = "not_started";
-      }
-      // Último acceso (puede ser null si nunca entró)
-      dto.last_accessed = c.last_accessed
-        ? new Date(c.last_accessed).toISOString()
-        : null;
-      return dto;
-    });
+        // Obtener el total de tópicos del curso
+        const [totalTopicsResult] = await pool.query(
+          `SELECT COUNT(*) as total_topics FROM topics WHERE course_id = ?`,
+          [course.id]
+        );
+        const totalTopics = totalTopicsResult[0]?.total_topics || 0;
+
+        // Obtener tópicos completados por el usuario
+        const [completedTopicsResult] = await pool.query(
+          `
+                    SELECT COUNT(DISTINCT sp.topic_id) as completed_topics
+                    FROM student_progress sp
+                    WHERE sp.course_id = ? AND sp.user_id = ? AND sp.is_completed = 1
+                `,
+          [course.id, userId]
+        );
+        const completedTopics = completedTopicsResult[0]?.completed_topics || 0;
+
+        // Calcular progreso: (tópicos completados / total tópicos) * 100
+        let progressPercent = 0;
+        if (totalTopics > 0) {
+          progressPercent = Math.round((completedTopics / totalTopics) * 100);
+        }
+
+        dto.progress_percent = progressPercent;
+
+        // Calcular estatus basado en el progreso
+        if (dto.progress_percent >= 100) {
+          dto.status = "completed";
+        } else if (dto.progress_percent > 0) {
+          dto.status = "in_progress";
+        } else {
+          dto.status = "not_started";
+        }
+
+        // Obtener último acceso
+        const [lastAccessResult] = await pool.query(
+          `
+                    SELECT MAX(sp.last_accessed) as last_accessed
+                    FROM student_progress sp
+                    WHERE sp.course_id = ? AND sp.user_id = ?
+                `,
+          [course.id, userId]
+        );
+
+        dto.lastAccessed = lastAccessResult[0]?.last_accessed
+          ? new Date(lastAccessResult[0].last_accessed).toISOString()
+          : null;
+        return dto;
+      })
+    );
 
     return res.json({
       ok: true,

@@ -190,18 +190,6 @@ export class InstructorAnalyticsComponent implements OnInit {
     this.loadAnalytics();
   }
 
-  exportReport(): void {
-    console.log('Exporting full report...');
-  }
-
-  exportStudentReport(student: StudentAnalytics): void {
-    console.log('Exporting report for student:', student.user_id);
-  }
-
-  viewStudentDetail(student: StudentAnalytics): void {
-    console.log('Viewing details for student:', student.user_id);
-  }
-
   trackByStudentId(index: number, student: StudentAnalytics): number {
     return student.user_id;
   }

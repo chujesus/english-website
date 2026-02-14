@@ -1,29 +1,33 @@
 const { Router } = require("express");
 const { check } = require("express-validator");
 const { fieldsValidates } = require("../middlewares/fields-validates");
-const { updateCourseProgress } = require("../controllers/student");
+const {
+  updateStudentProgress,
+  getLessonProgress,
+  getTopicProgress,
+} = require("../controllers/student");
 
 const router = Router();
 
 /**
- * @route   PUT /:userId/course/:courseId
- * @desc    Create or update course progress for a student
- * @access  Public
+ * @route   POST /students/progress
+ * @desc    Update or create student progress and assessment
+ * @access  Private
  */
-router.put(
-  "/:userId/course/:courseId",
-  [
-    check("userId", "User ID is required").isNumeric(),
-    check("courseId", "Course ID is required").isNumeric(),
-    check("status", "Status is required")
-      .isIn(["not_started", "in_progress", "completed"])
-      .bail(),
-    check("progress_percentage", "Progress percentage must be numeric")
-      .optional()
-      .isNumeric(),
-    fieldsValidates,
-  ],
-  updateCourseProgress
-);
+router.post("/students", updateStudentProgress);
+
+/**
+ * @route   GET /students/lesson-progress/:userId/:lessonId
+ * @desc    Get student progress and assessments for a specific lesson
+ * @access  Private
+ */
+router.get("/lesson-progress/:userId/:lessonId", getLessonProgress);
+
+/**
+ * @route   GET /students/topic-progress/:userId/:topicId
+ * @desc    Get student progress and assessments for all lessons in a topic
+ * @access  Private
+ */
+router.get("/topic-progress/:userId/:topicId", getTopicProgress);
 
 module.exports = router;

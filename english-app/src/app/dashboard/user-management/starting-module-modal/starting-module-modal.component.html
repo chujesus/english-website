@@ -1,0 +1,121 @@
+<!-- Modal Container -->
+<div class="modal-overlay" *ngIf="show" (click)="closeModal()">
+    <div class="modal-container" (click)="$event.stopPropagation()">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="startingModuleModalLabel">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    Select Starting Module for {{ userName }}
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="closeModal()" aria-label="Close">
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <!-- Loading State -->
+                <div *ngIf="loading" class="text-center py-4">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2 text-muted">Loading available modules...</p>
+                </div>
+
+                <!-- Error State -->
+                <div *ngIf="error && !loading" class="alert alert-danger" role="alert">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    {{ error }}
+                </div>
+
+                <!-- Module Selection -->
+                <div *ngIf="!loading && !error">
+                    <!-- Instructions -->
+                    <div class="alert alert-info mb-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Choose the starting module for this student:</strong>
+                        <br>
+                        <small>
+                            The student will have access to the selected module and all subsequent levels.
+                            Previous levels will be blocked.
+                        </small>
+                    </div>
+
+                    <!-- Module Cards -->
+                    <div class="row g-3">
+                        <div class="col-md-6" *ngFor="let module of availableModules">
+                            <div class="card h-100 module-card" [class.border-primary]="selectedModule === module.level"
+                                [class.shadow-sm]="selectedModule !== module.level"
+                                [class.shadow]="selectedModule === module.level" (click)="selectModule(module.level)">
+
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <!-- Radio Button -->
+                                        <input type="radio" class="form-check-input" [value]="module.level"
+                                            [(ngModel)]="selectedModule" [id]="'module-' + module.level">
+
+                                        <!-- Level Badge -->
+                                        <span class="badge me-3" [class]="getLevelBadgeClass(module.level)">
+                                            {{ module.level }}
+                                        </span>
+
+                                        <!-- Module Title -->
+                                        <h6 class="card-title mb-0 flex-grow-1">{{ module.title }}</h6>
+                                    </div>
+
+                                    <!-- Module Description -->
+                                    <p class="card-text text-muted small mb-2">
+                                        {{ getModuleDescription(module.level) }}
+                                    </p>
+
+                                    <!-- Module Info -->
+                                    <div class="small">
+                                        <div class="text-success mb-1" *ngIf="getUnlockedModulesText(module.level)">
+                                            <i class="fas fa-unlock me-1"></i>
+                                            {{ getUnlockedModulesText(module.level) }}
+                                        </div>
+                                        <div class="text-warning" *ngIf="getBlockedModulesText(module.level)">
+                                            <i class="fas fa-lock me-1"></i>
+                                            {{ getBlockedModulesText(module.level) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Selection Summary -->
+                    <div class="alert alert-light border mt-4" *ngIf="selectedModule">
+                        <h6 class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Selected: {{ selectedModule }}
+                        </h6>
+                        <div class="small">
+                            <div class="text-success mb-1">
+                                <i class="fas fa-unlock me-1"></i>
+                                <strong>Available modules:</strong> {{ getUnlockedModulesText(selectedModule) }}
+                            </div>
+                            <div class="text-warning" *ngIf="getBlockedModulesText(selectedModule)">
+                                <i class="fas fa-lock me-1"></i>
+                                <strong>Blocked modules:</strong> {{ getBlockedModulesText(selectedModule) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">
+                    <i class="fas fa-times me-1"></i>
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" [disabled]="!selectedModule || loading"
+                    (click)="confirmSelection()">
+                    <i class="fas fa-check me-1"></i>
+                    Activate User with {{ selectedModule }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

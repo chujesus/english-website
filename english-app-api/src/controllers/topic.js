@@ -65,35 +65,55 @@ const getTopicsByUserIdAndCourse = async (req, res = response) => {
 
     const [topics] = await pool.query(
       `
-            SELECT 
+            SELECT
                 t.id,
                 t.title,
                 t.objective,
-                JSON_UNQUOTE(t.examples) as examples,
-                JSON_UNQUOTE(t.keywords) as keywords,
+                JSON_UNQUOTE(t.examples) AS examples,
+                JSON_UNQUOTE(t.keywords) AS keywords,
                 t.learning_outcome,
                 t.cefr_level,
-                JSON_UNQUOTE(t.skills_covered) as skills_covered,
-                JSON_UNQUOTE(t.tags) as tags,
+                JSON_UNQUOTE(t.skills_covered) AS skills_covered,
+                JSON_UNQUOTE(t.tags) AS tags,
                 t.created_at,
                 t.updated_at,
-                IFNULL(AVG(sp.progress_percent), 0) AS progress_percent
+                -- Calculate progress percent only if there are lessons
+                CASE
+                  WHEN (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id) > 0 THEN
+                    ROUND(
+                      (SELECT COUNT(DISTINCT sp.lesson_id)
+                       FROM student_progress sp
+                       WHERE sp.topic_id = t.id AND sp.user_id = ? AND sp.is_completed = 1)
+                      /
+                      (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id)
+                      * 100
+                      , 2)
+                  ELSE 0
+                END AS progress_percent,
+                -- Mark completed only if all lessons are done and lessons exist
+                CASE
+                  WHEN (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id) > 0
+                       AND (SELECT COUNT(DISTINCT sp.lesson_id)
+                            FROM student_progress sp
+                            WHERE sp.topic_id = t.id AND sp.user_id = ? AND sp.is_completed = 1)
+                           = (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id)
+                  THEN 1
+                  ELSE 0
+                END AS is_completed
             FROM topics t
-            LEFT JOIN student_progress sp 
-                ON sp.topic_id = t.id AND sp.user_id = ?
             WHERE t.course_id = ?
-            GROUP BY t.id
         `,
-      [userId, courseId]
+      [userId, userId, courseId]
     );
 
     const topicsDTOList = topics.map((t) => {
       const dto = new TopicDTO(t);
-      dto.progress_percent = parseFloat(t.progress_percent);
+      dto.progress_percent = parseFloat(t.progress_percent) || 0;
+      dto.is_completed = !!t.is_completed;
       // Estatus
-      if (dto.progress_percent >= 100) {
+      if (dto.is_completed || dto.progress_percent >= 100) {
         dto.status = "completed";
-      } else if (dto.progress_percent > 0) {
+      } else if (dto.progress_percent > 0 && dto.progress_percent < 100) {
         dto.status = "in_progress";
       } else {
         dto.status = "not_started";

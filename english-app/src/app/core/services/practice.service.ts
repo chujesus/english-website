@@ -24,8 +24,6 @@ export class PracticeService {
         return credentials?.task || 0;
     }
 
-
-
     /**
      * Submit a practice attempt
      */

@@ -31,13 +31,13 @@ export class LocalStorageService {
         localStorage.removeItem(Key.IsloggedKey);
     }
 
-    // Validar sesión
+    // Validate session
     hasValidSession(): boolean {
         const user = this.getCredentials();
         if (!user) return false;
 
         try {
-            // TODO: Implementar validación real del token JWT
+            // TODO: Implement real JWT token validation
             // Por ahora solo verificamos que exista
             const payload = this.decodeToken(user.token);
             return payload && payload.exp > Date.now() / 1000;
@@ -46,7 +46,7 @@ export class LocalStorageService {
         }
     }
 
-    // Decodificar token JWT (básico, para desarrollo)
+    // Decode JWT token (basic, for development)
     private decodeToken(token: string): any {
         try {
             const payload = token.split('.')[1];

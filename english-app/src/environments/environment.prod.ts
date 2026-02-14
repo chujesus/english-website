@@ -8,8 +8,8 @@ export const environment = {
     }
 };
 
-// IMPORTANTE: Para producción
-// 1. Ve a https://console.cloud.google.com/
-// 2. Usa el mismo proyecto o crea uno nuevo
-// 3. Crea credenciales OAuth 2.0 para producción
-// 4. Agrega tu dominio de producción a los orígenes autorizados
+// IMPORTANT: For production
+// 1. Go to https://console.cloud.google.com/
+// 2. Use the same project or create a new one
+// 3. Create OAuth 2.0 credentials for production
+// 4. Add your production domain to authorized origins

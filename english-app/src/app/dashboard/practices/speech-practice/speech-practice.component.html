@@ -94,7 +94,7 @@
                         </div>
 
                         <!-- Action Buttons -->
-                        <div class="action-buttons-section mb-4">
+                        <div class="action-buttons-section mb-4" *ngIf="!showSummary">
                             <div class="d-flex justify-content-center gap-3 flex-wrap">
                                 <button
                                     class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-sm d-flex align-items-center action-button"
@@ -133,9 +133,9 @@
                             <div class="progress" style="height: 10px;">
                                 <div class="progress-bar" role="progressbar"
                                     [style.width.%]="similarityList[currentIndex]" [ngClass]="{
-                                    'bg-success': similarityList[currentIndex] >= 90,
-                                    'bg-warning': similarityList[currentIndex] >= 70 && similarityList[currentIndex] < 90,
-                                    'bg-danger': similarityList[currentIndex] < 70
+                                    'bg-success': similarityList[currentIndex] >= 80,
+                                    'bg-warning': similarityList[currentIndex] >= 65 && similarityList[currentIndex] < 79,
+                                    'bg-danger': similarityList[currentIndex] < 65
                                     }"></div>
                             </div>
                             <p class="text-muted">Similarity: {{ similarityList[currentIndex] }}%</p>
@@ -211,7 +211,7 @@
                     <div class="stat-number text-warning fw-bold">
                         {{ getIncorrectCount() }}
                     </div>
-                    <small class="text-muted">Practice</small>
+                    <small class="text-muted">Incorrect</small>
                 </div>
 
                 <div class="stat-divider"></div>
@@ -222,6 +222,54 @@
                     </div>
                     <small class="text-muted">Pending</small>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="w-100 mt-4" *ngIf="showSummary">
+        <div class="card border-0 shadow-lg">
+            <div class="card-header bg-gradient-primary text-white text-center py-4">
+                <h4 class="mb-0 fw-bold">
+                    <i class="fas fa-trophy me-2"></i>
+                    Speaking Practice Complete!
+                </h4>
+                <p class="mb-0 mt-2">Here's how you performed</p>
+            </div>
+            <div class="card-body p-4">
+                <!-- Results Summary -->
+                <div class="text-center mb-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="summary-stat">
+                                <div class="stat-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-2"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <span class="fs-4 fw-bold">{{ getCorrectCount() }}</span>
+                                </div>
+                                <small class="text-success fw-semibold">Correct</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="summary-stat">
+                                <div class="stat-circle bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-2"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <span class="fs-4 fw-bold">{{ getIncorrectCount() }}</span>
+                                </div>
+                                <small class="text-warning fw-semibold">Incorrect</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="summary-stat">
+                                <div class="stat-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-2"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <span class="fs-4 fw-bold">{{ getPendingCount() }}</span>
+                                </div>
+                                <small class="text-primary fw-semibold">Pending</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

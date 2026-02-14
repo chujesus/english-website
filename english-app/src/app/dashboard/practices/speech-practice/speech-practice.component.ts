@@ -1,4 +1,4 @@
-import { Component, Inject, Input, NgZone, OnChanges, OnInit, PLATFORM_ID, SimpleChanges } from '@angular/core';
+import { Component, Inject, Input, NgZone, OnChanges, OnInit, PLATFORM_ID, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DeepgramService } from '../../../core/services/deepgram.service';
 import { Router } from '@angular/router';
@@ -16,9 +16,17 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   recognizedText: string = '';
   @Input() targetSentences: SpeechPracticeItem[] = [];
   @Input() currentIndex: number = 0;
+  @Input() savedPracticeItems: SpeechPracticeItem[] = []; // Items guardados
+  @Input() isCompleted: boolean = false; // Si está completado
+  @Input() savedRecognizedTexts: { [key: number]: string | null } = {}; // Respuestas reconocidas guardadas
+  @Input() savedCorrectness: { [key: number]: boolean | null } = {}; // Correctness guardado
+
+  @Output() practiceUpdate = new EventEmitter<{ index: number, result: any }>();
+
   recognizedTexts: string[] = Array(this.targetSentences.length).fill('');
   isCorrectList: (boolean | null)[] = Array(this.targetSentences.length).fill(null);
   similarityList: number[] = Array(this.targetSentences.length).fill(0);
+  showSummary: boolean = false;
   private mediaRecorder: MediaRecorder | null = null;
   recognition: any;
   isSpeaking: boolean = false;
@@ -32,6 +40,11 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
+    // Si está completado, restaurar el estado guardado
+    if (this.isCompleted && this.savedPracticeItems.length > 0) {
+      this.restoreCompletedState();
+    }
+
     if (isPlatformBrowser(this.platformId) && typeof window !== 'undefined' && typeof SpeechSynthesisUtterance !== 'undefined') {
       const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
@@ -53,6 +66,17 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
 
             this.isCorrectList[this.currentIndex] = distance <= 1;
             this.similarityList[this.currentIndex] = percentage;
+
+            // Emitir actualización al componente padre
+            this.practiceUpdate.emit({
+              index: this.currentIndex,
+              result: {
+                english: this.targetSentences[this.currentIndex].english,
+                userSaid: transcript,
+                isCorrect: this.isCorrectList[this.currentIndex],
+                similarity: percentage
+              }
+            });
           });
         };
       }
@@ -138,6 +162,17 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
               this.isCorrectList[this.currentIndex] = distance <= 1;
               this.similarityList[this.currentIndex] = percentage;
 
+              // Emitir actualización al componente padre
+              this.practiceUpdate.emit({
+                index: this.currentIndex,
+                result: {
+                  english: this.targetSentences[this.currentIndex].english,
+                  userSaid: transcript,
+                  isCorrect: this.isCorrectList[this.currentIndex],
+                  similarity: percentage
+                }
+              });
+
               this.isBusy = false;
               this.speakingIndex = null;
             });
@@ -180,6 +215,11 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   next() {
     if (this.currentIndex < this.targetSentences.length - 1) {
       this.currentIndex++;
+    } else {
+      // Si está en la última frase y tiene respuesta, mostrar summary
+      if (this.isAnswered(this.currentIndex)) {
+        this.completePractice();
+      }
     }
   }
 
@@ -190,22 +230,89 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   }
 
   getCorrectCount(): number {
+    // Usar datos guardados si existen, sino usar datos actuales
+    if (Object.keys(this.savedCorrectness).length > 0) {
+      return Object.values(this.savedCorrectness).filter(val => val === true).length;
+    }
     return this.isCorrectList.filter((result, index) =>
       this.recognizedTexts[index] && result === true
     ).length;
   }
 
   getIncorrectCount(): number {
+    // Usar datos guardados si existen, sino usar datos actuales
+    if (Object.keys(this.savedCorrectness).length > 0) {
+      return Object.values(this.savedCorrectness).filter(val => val === false).length;
+    }
     return this.isCorrectList.filter((result, index) =>
       this.recognizedTexts[index] && result === false
     ).length;
   }
 
   getPendingCount(): number {
+    // Usar datos guardados si existen, sino usar datos actuales
+    if (Object.keys(this.savedRecognizedTexts).length > 0) {
+      return Object.values(this.savedRecognizedTexts).filter(text => !text || text.trim() === '').length;
+    }
     return this.recognizedTexts.filter(text => !text || text.trim() === '').length;
   }
 
   getProgressPercentage(): number {
     return Math.round(((this.currentIndex + 1) / this.targetSentences.length) * 100);
+  }
+
+  // Restaurar estado completado desde datos guardados
+  private restoreCompletedState(): void {
+    // Restaurar textos reconocidos guardados
+    if (Object.keys(this.savedRecognizedTexts).length > 0) {
+      Object.keys(this.savedRecognizedTexts).forEach(indexStr => {
+        const index = parseInt(indexStr);
+        if (this.savedRecognizedTexts[index]) {
+          this.recognizedTexts[index] = this.savedRecognizedTexts[index]!;
+        }
+      });
+    }
+
+    // Restaurar correctness guardado
+    if (Object.keys(this.savedCorrectness).length > 0) {
+      Object.keys(this.savedCorrectness).forEach(indexStr => {
+        const index = parseInt(indexStr);
+        if (this.savedCorrectness[index] !== null && this.savedCorrectness[index] !== undefined) {
+          this.isCorrectList[index] = this.savedCorrectness[index]!;
+          // También establecer similitud basada en correctness
+          this.similarityList[index] = this.savedCorrectness[index] ? 85 : 60; // Similitud basada en si fue correcto
+        }
+      });
+    }
+
+    // Si tiene datos guardados o está marcado como completado, mostrar summary
+    if (this.isCompleted || Object.keys(this.savedRecognizedTexts).length > 0) {
+      this.showSummary = true;
+      this.currentIndex = this.targetSentences.length - 1; // Ir al final
+    }
+  }
+
+  // Verificar si una frase ya está respondida (para deshabilitar botones)
+  isAnswered(index: number): boolean {
+    return !!(this.recognizedTexts[index] && this.recognizedTexts[index].trim() !== '');
+  }
+
+  // Verificar si es la frase actual
+  isCurrentSentence(index: number): boolean {
+    return this.currentIndex === index && !this.showSummary;
+  }
+
+  // Completar la práctica
+  completePractice(): void {
+    this.showSummary = true;
+  }
+
+  // Reiniciar la práctica
+  resetPractice(): void {
+    this.showSummary = false;
+    this.currentIndex = 0;
+    this.recognizedTexts = Array(this.targetSentences.length).fill('');
+    this.isCorrectList = Array(this.targetSentences.length).fill(null);
+    this.similarityList = Array(this.targetSentences.length).fill(0);
   }
 }

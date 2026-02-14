@@ -4,8 +4,9 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
-import { IUser, Profile } from '../../shared/interfaces';
+import { IUser, Profile, Status } from '../../shared/interfaces';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { isGoogleConfigValid } from '../../core/config/google.config';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
   loading = false;
   errorMessage = '';
   user!: IUser;
+  isGoogleConfigValid = isGoogleConfigValid();
 
   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router,
     private localStorageService: LocalStorageService, private alertService: AlertService) {
@@ -48,7 +50,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/dashboard/control-panel']);
       }
     } catch (error: any) {
-      this.errorMessage = error.message || 'Error al iniciar sesión con Google';
+      this.errorMessage = error.message || 'Error signing in with Google';
     } finally {
       this.loading = false;
     }
@@ -68,7 +70,7 @@ export class LoginComponent implements OnInit {
       };
       this.authService.login(this.user).subscribe({
         next: (user: IUser[]) => {
-          if (user.length > 0) {
+          if (user.length > 0 && user[0].state === Status.Active) {
             this.localStorageService.setCredentials(user[0]);
             if (user[0].profile === Profile.Administrator) {
               this.router.navigate(['/dashboard/admin']);

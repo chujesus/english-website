@@ -1,0 +1,106 @@
+/* Dashboard Header Styles */
+.navbar {
+  position: relative;
+  overflow: visible;
+}
+
+/* Container fluid adjustments */
+.container-fluid {
+  position: relative;
+  overflow: visible;
+}
+
+/* User dropdown fixes for responsive behavior */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu positioning and responsive behavior */
+.dropdown-menu {
+  position: absolute !important;
+  right: 0 !important;
+  left: auto !important;
+  top: 100% !important;
+  transform: none !important;
+  min-width: 200px;
+  max-width: 250px;
+  z-index: 1050;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  /* Ensure dropdown doesn't extend beyond viewport on small screens */
+  @media (max-width: 768px) {
+    right: 0 !important;
+    left: auto !important;
+    min-width: 180px;
+    max-width: calc(100vw - 30px);
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 576px) {
+    min-width: 160px;
+    max-width: calc(100vw - 20px);
+    margin-right: 10px;
+  }
+}
+
+/* Dropdown menu end positioning for Bootstrap 5 */
+.dropdown-menu-end {
+  --bs-position: end;
+}
+
+/* Prevent horizontal overflow on small screens */
+.navbar-nav {
+  .nav-item.dropdown {
+    .dropdown-toggle {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      @media (max-width: 768px) {
+        max-width: 180px;
+      }
+
+      @media (max-width: 576px) {
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+/* Navbar brand responsive adjustments */
+.navbar-brand {
+  flex: 0 0 auto;
+
+  @media (max-width: 576px) {
+    font-size: 0.9rem;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+/* Navigation menu responsive adjustments */
+.navbar-light .navbar-nav {
+  .nav-link {
+    @media (max-width: 768px) {
+      font-size: 0.875rem;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}
+
+/* Ensure main content doesn't get affected by dropdown */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix for any potential overflow issues */
+body,
+html {
+  overflow-x: hidden;
+}

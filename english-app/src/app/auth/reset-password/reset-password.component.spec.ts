@@ -4,20 +4,21 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ActivatedRoute } from '@angular/router';
 import { ResetPasswordComponent } from './reset-password.component';
 import { AuthService } from '../../core/services/auth.service';
+import { AlertService } from '../../core/services/alert.service';
 import { of } from 'rxjs';
 
 describe('ResetPasswordComponent', () => {
     let component: ResetPasswordComponent;
     let fixture: ComponentFixture<ResetPasswordComponent>;
     let mockAuthService: jasmine.SpyObj<AuthService>;
+    let mockAlertService: jasmine.SpyObj<AlertService>;
     let mockActivatedRoute: any;
 
     beforeEach(async () => {
-        const authSpy = jasmine.createSpyObj('AuthService', ['resetPassword']);
+        const authSpy = jasmine.createSpyObj('AuthService', ['getUser', 'updateUser']);
+        const alertSpy = jasmine.createSpyObj('AlertService', ['showLoadingAlert', 'showLoading', 'closeLoading', 'showSuccessAlert', 'showErrorAlert', 'showWarningAlert', 'showInfoAlert']);
         mockActivatedRoute = {
-            snapshot: {
-                queryParams: { token: 'mock-token' }
-            }
+            params: of({ id: '1', passwordToken: 'test-token' })
         };
 
         await TestBed.configureTestingModule({
@@ -28,139 +29,71 @@ describe('ResetPasswordComponent', () => {
             ],
             providers: [
                 { provide: AuthService, useValue: authSpy },
+                { provide: AlertService, useValue: alertSpy },
                 { provide: ActivatedRoute, useValue: mockActivatedRoute }
             ]
         })
             .compileComponents();
 
         mockAuthService = TestBed.inject(AuthService) as jasmine.SpyObj<AuthService>;
+        mockAlertService = TestBed.inject(AlertService) as jasmine.SpyObj<AlertService>;
         fixture = TestBed.createComponent(ResetPasswordComponent);
         component = fixture.componentInstance;
-        fixture.detectChanges();
     });
 
     it('should create', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should initialize form with empty values', () => {
-        expect(component.resetForm.get('newPassword')?.value).toBe('');
-        expect(component.resetForm.get('confirmPassword')?.value).toBe('');
+    it('should initialize form with password and confirm_password fields', () => {
+        expect(component.form_password.get('password')?.value).toBe('');
+        expect(component.form_password.get('confirm_password')?.value).toBe('');
     });
 
-    it('should validate password field', () => {
-        const passwordControl = component.resetForm.get('newPassword');
+    it('should validate password field as required', () => {
+        const passwordControl = component.form_password.get('password');
 
         expect(passwordControl?.valid).toBeFalsy();
 
-        passwordControl?.setValue('123');
-        expect(passwordControl?.valid).toBeFalsy();
-
-        passwordControl?.setValue('password123');
+        passwordControl?.setValue('Test123');
         expect(passwordControl?.valid).toBeTruthy();
     });
 
-    it('should validate password confirmation', () => {
-        const passwordControl = component.resetForm.get('newPassword');
-        const confirmPasswordControl = component.resetForm.get('confirmPassword');
+    it('should detect when passwords do not match', () => {
+        component.form_password.patchValue({
+            password: 'Test123',
+            confirm_password: 'Different123'
+        });
 
-        passwordControl?.setValue('password123');
-        confirmPasswordControl?.setValue('different');
-
-        component.resetForm.updateValueAndValidity();
-
-        expect(confirmPasswordControl?.hasError('passwordMismatch')).toBeTruthy();
-
-        confirmPasswordControl?.setValue('password123');
-        component.resetForm.updateValueAndValidity();
-
-        expect(confirmPasswordControl?.hasError('passwordMismatch')).toBeFalsy();
+        expect(component.passwordsMatch).toBeTruthy();
     });
 
-    it('should not submit if form is invalid', () => {
-        component.onSubmit();
+    it('should detect when passwords match', () => {
+        component.form_password.patchValue({
+            password: 'Test123',
+            confirm_password: 'Test123'
+        });
 
-        expect(mockAuthService.resetPassword).not.toHaveBeenCalled();
+        expect(component.passwordsMatch).toBeFalsy();
     });
 
-    it('should call AuthService.resetPassword when form is valid', async () => {
-        const formData = {
-            newPassword: 'password123',
-            confirmPassword: 'password123'
-        };
-        mockAuthService.resetPassword.and.returnValue(Promise.resolve());
+    it('should toggle password visibility', () => {
+        expect(component.isVisible).toBeTruthy();
+        expect(component.isChangeType).toBeTruthy();
 
-        component.resetForm.patchValue(formData);
+        component.viewPass();
 
-        await component.onSubmit();
-
-        expect(mockAuthService.resetPassword).toHaveBeenCalledWith('mock-token', formData.newPassword);
+        expect(component.isVisible).toBeFalsy();
+        expect(component.isChangeType).toBeFalsy();
     });
 
-    it('should show success message on successful password reset', async () => {
-        const formData = {
-            newPassword: 'password123',
-            confirmPassword: 'password123'
-        };
-        mockAuthService.resetPassword.and.returnValue(Promise.resolve());
+    it('should toggle repeat password visibility', () => {
+        expect(component.isRepeatVisible).toBeTruthy();
+        expect(component.isChangeRepeatType).toBeTruthy();
 
-        component.resetForm.patchValue(formData);
+        component.viewRepeatPass();
 
-        await component.onSubmit();
-
-        expect(component.successMessage).toBe('Tu contraseña ha sido actualizada exitosamente.');
-        expect(component.errorMessage).toBe('');
-        expect(component.resetForm.get('newPassword')?.value).toBe('');
-        expect(component.resetForm.get('confirmPassword')?.value).toBe('');
-    });
-
-    it('should handle reset password error', async () => {
-        const formData = {
-            newPassword: 'password123',
-            confirmPassword: 'password123'
-        };
-        const errorMessage = 'Invalid or expired token';
-        mockAuthService.resetPassword.and.returnValue(Promise.reject(new Error(errorMessage)));
-
-        component.resetForm.patchValue(formData);
-
-        await component.onSubmit();
-
-        expect(component.errorMessage).toBe(errorMessage);
-        expect(component.successMessage).toBe('');
-        expect(component.loading).toBeFalsy();
-    });
-
-    it('should return correct field validation status', () => {
-        const passwordControl = component.resetForm.get('newPassword');
-
-        expect(component.isFieldInvalid('newPassword')).toBeFalsy();
-
-        passwordControl?.markAsTouched();
-        passwordControl?.setValue('');
-
-        expect(component.isFieldInvalid('newPassword')).toBeTruthy();
-    });
-
-    it('should get token from route on init', () => {
-        expect(component.token).toBe('mock-token');
-    });
-
-    it('should reset loading state after submission', async () => {
-        const formData = {
-            newPassword: 'password123',
-            confirmPassword: 'password123'
-        };
-        mockAuthService.resetPassword.and.returnValue(Promise.resolve());
-
-        component.resetForm.patchValue(formData);
-
-        expect(component.loading).toBeFalsy();
-
-        const submitPromise = component.onSubmit();
-        expect(component.loading).toBeTruthy();
-
-        await submitPromise;
-        expect(component.loading).toBeFalsy();
+        expect(component.isRepeatVisible).toBeFalsy();
+        expect(component.isChangeRepeatType).toBeFalsy();
     });
 });

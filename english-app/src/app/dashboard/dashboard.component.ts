@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AlertService } from '../core/services/alert.service';
 import { LocalStorageService } from '../core/services/local-storage.service';
+import { AuthService } from '../core/services/auth.service';
+import { Profile } from '../shared/interfaces/auth';
 
 @Component({
   standalone: true,
@@ -12,13 +14,14 @@ import { LocalStorageService } from '../core/services/local-storage.service';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit {
-  userProfile: number = 2; // Default to Student
+  userProfile: number = Profile.Student; // Default to Student
   userName: string = '';
   userRole: string = 'Student';
 
   constructor(
     private alertService: AlertService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private authService: AuthService
   ) { }
 
   ngOnInit(): void {
@@ -29,7 +32,7 @@ export class DashboardComponent implements OnInit {
   loadUserInfo(): void {
     const credentials = this.localStorageService.getCredentials();
     if (credentials) {
-      this.userProfile = credentials.status; // 0=Admin, 1=Instructor, 2=Student
+      this.userProfile = credentials.status; // 0=Administrator, 1=Student
       this.userName = credentials.name;
       this.userRole = this.getUserRoleText(this.userProfile);
     }
@@ -37,34 +40,25 @@ export class DashboardComponent implements OnInit {
 
   getUserRoleText(profile: number): string {
     switch (profile) {
-      case 0: return 'Administrator';
-      case 1: return 'Instructor';
-      case 2: return 'Student';
+      case Profile.Administrator: return 'Administrator';
+      case Profile.Student: return 'Student';
       default: return 'Student';
     }
   }
 
   isAdmin(): boolean {
-    return this.userProfile === 0;
-  }
-
-  isInstructor(): boolean {
-    return this.userProfile === 1;
+    return this.userProfile === Profile.Administrator;
   }
 
   isStudent(): boolean {
-    return this.userProfile === 2;
+    return this.userProfile === Profile.Student;
   }
 
   hasAdminAccess(): boolean {
-    return this.userProfile === 0;
-  }
-
-  hasInstructorAccess(): boolean {
-    return this.userProfile === 0 || this.userProfile === 1;
+    return this.userProfile === Profile.Administrator;
   }
 
   logout(): void {
-    this.localStorageService.clear();
+    this.authService.logout();
   }
 }

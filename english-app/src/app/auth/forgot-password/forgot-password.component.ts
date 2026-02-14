@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
+import { ForgotPasswordResponse } from '../../shared/interfaces/auth';
 
 @Component({
   selector: 'app-forgot-password',
@@ -31,7 +32,7 @@ export class ForgotPasswordComponent {
     return !!(field && field.invalid && (field.dirty || field.touched));
   }
 
-  async onSubmit(): Promise<void> {
+  onSubmit(): void {
     if (this.forgotForm.invalid) {
       this.markFormGroupTouched();
       return;
@@ -41,15 +42,23 @@ export class ForgotPasswordComponent {
     this.errorMessage = '';
     this.successMessage = '';
 
-    try {
-      //await this.authService.forgotPassword(this.forgotForm.value.email);
-      this.successMessage = 'Se ha enviado un email con las instrucciones para recuperar tu contraseña.';
-      this.forgotForm.reset();
-    } catch (error: any) {
-      this.errorMessage = error.message || 'Error al enviar email de recuperación';
-    } finally {
-      this.loading = false;
-    }
+    const email = this.forgotForm.value.email;
+
+    this.authService.forgotPassword(email).subscribe({
+      next: (response: any) => {
+        if (response.ok) {
+          this.successMessage = response.message || 'An email has been sent with instructions to recover your password.';
+        } else {
+          this.errorMessage = response.message || 'Error sending recovery email';
+        }
+        this.loading = false;
+      },
+      error: (error) => {
+        console.error('Forgot password error:', error);
+        this.errorMessage = error.error?.message || error.message || 'Error sending recovery email';
+        this.loading = false;
+      }
+    });
   }
 
   private markFormGroupTouched(): void {

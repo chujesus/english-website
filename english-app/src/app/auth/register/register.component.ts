@@ -213,25 +213,38 @@ export class RegisterComponent implements OnInit {
                     password: this.form_subscribe.value.password,
                     email: this.form_subscribe.value.email,
                     phone: this.form_subscribe.value.phone,
-                    state: Status.Active,
+                    state: Status.Inactive,
                     profile: await this.getUserAdmin() ? this.profile.Administrator : this.profile.Student,
                     created_at: formattedDate,
                     updated_at: formattedDate
                 };
-                this.authService.register(user).subscribe((data: IUser[]) => {
-                    if (data.length > 0) {
+                this.authService.register(user).subscribe({
+                    next: (data: IUser[]) => {
+                        if (data.length > 0) {
+                            this.alertService.closeLoading();
+                            // Store user credentials
+                            this.localStorageService.setCredentials(data[0]);
+                            this.alertService.showSuccessAlert("Registration completed successfully!", "").then(() => {
+                                if (data[0].profile === this.profile.Administrator) {
+                                    this.router.navigate(['/dashboard/admin']);
+                                } else if (data[0].profile === this.profile.Student) {
+                                    this.router.navigate(['/dashboard/control-panel']);
+                                }
+                            });
+                        } else {
+                            this.alertService.closeLoading();
+                            this.alertService.showErrorAlert('Error', 'No se pudo completar el registro. Intenta de nuevo.');
+                        }
+                    },
+                    error: (error) => {
                         this.alertService.closeLoading();
-                        this.alertService.showSuccessAlert("¡Registro completado exitósamente!", "").then(() => {
-                            if (data[0].profile === this.profile.Administrator) {
-                                this.router.navigate(['/dashboard/admin']);
-                            } else if (data[0].profile === this.profile.Student) {
-                                this.router.navigate(['/dashboard/control-panel']);
-                            }
-                        });
+                        const errorMessage = error.error?.error || error.error?.message || 'Ha ocurrido un error durante el registro';
+                        this.alertService.showErrorAlert('Error de Registro', errorMessage);
+                        console.error('Registration error:', error);
                     }
                 });
             } catch (error) {
-                this.alertService.showErrorAlert('Error', 'Ha ocurrido un error. Por favor intenta más tarde!');
+                this.alertService.showErrorAlert('Error', 'An error has occurred. Please try again later!');
             }
         }
     }

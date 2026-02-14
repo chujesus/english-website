@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule, Router } from '@angular/router';
-import { StudentProgress } from '../../shared/interfaces/progress';
 import { TopicsService } from '../../core/services/topics.service';
-import { ITopic } from '../../shared/interfaces/models';
+import { LocalStorageService } from '../../core/services/local-storage.service';
+import { Profile } from '../../shared/interfaces/auth';
+import { ITopic, StudentProgress } from '../../shared/interfaces/models';
 
 export interface Topic {
   title: string;
@@ -28,13 +29,15 @@ export class CoursesComponent implements OnInit {
   moduleTitle: string | null = null;
   topics: ITopic[] = [];
   user: any = null;
+  userProfile: number = Profile.Student;
   loading = false;
   error = '';
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private topicsService: TopicsService
+    private topicsService: TopicsService,
+    private localStorageService: LocalStorageService
   ) { }
 
   ngOnInit(): void {
@@ -42,9 +45,12 @@ export class CoursesComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.courseId = +params['id'];
       this.moduleTitle = params['title'];
-      this.user = {
-        id: +params['userId']
-      };
+      this.user = { id: +params['userId'] };
+      // Load user profile for role-based unlocking
+      const session = this.localStorageService.getCredentials();
+      if (session) {
+        this.userProfile = session.profile ?? session.status;
+      }
       this.loadTopics();
     });
   }
@@ -87,6 +93,15 @@ export class CoursesComponent implements OnInit {
     return 'bg-danger';
   }
 
+  getButtonText(status: string | undefined): string {
+    switch (status) {
+      case 'completed': return 'Review Topic';
+      case 'in_progress': return 'Continue';
+      case 'not_started':
+      default: return 'Start Topic';
+    }
+  }
+
   startTopic(topic: ITopic): void {
     // Navigate to lesson viewer for this topic
     this.router.navigate(['/dashboard/lesson-viewer'], {
@@ -98,5 +113,22 @@ export class CoursesComponent implements OnInit {
         cefrLevel: topic.cefr_level
       }
     });
+  }
+
+  /** Check if user is Administrator */
+  isAdmin(): boolean {
+    return this.userProfile === Profile.Administrator;
+  }
+
+  /** Determine if topic at index is unlocked for student */
+  isTopicUnlocked(index: number): boolean {
+    if (this.isAdmin()) {
+      return true;
+    }
+    if (index === 0) {
+      return true;
+    }
+    const prev = this.topics[index - 1];
+    return prev.status === 'completed';
   }
 }

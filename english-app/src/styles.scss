@@ -100,3 +100,28 @@ body {
     stroke-width: 1px;
   }
 }
+
+/* Global dropdown fixes for responsive behavior */
+.dropdown-menu {
+  /* Ensure dropdowns don't cause horizontal scroll on small screens */
+  max-width: calc(100vw - 30px) !important;
+
+  @media (max-width: 576px) {
+    max-width: calc(100vw - 20px) !important;
+  }
+}
+
+/* Fix for Bootstrap dropdown positioning on small screens */
+.navbar .dropdown-menu {
+  /* Force dropdown to stay within viewport bounds */
+  position: absolute !important;
+  will-change: transform;
+}
+
+.dropdown-menu-end {
+  /* Ensure end-aligned dropdowns don't overflow on small screens */
+  @media (max-width: 768px) {
+    right: 0 !important;
+    left: auto !important;
+  }
+}

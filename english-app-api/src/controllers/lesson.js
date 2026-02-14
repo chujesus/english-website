@@ -27,6 +27,7 @@ const getLessonsByUserIdAndTopic = async (req, res = response) => {
             l.is_speaking,
             l.is_listening,
             l.is_writing,
+            l.content,
             JSON_UNQUOTE(l.grammar) AS grammar,
             JSON_UNQUOTE(l.reading) AS reading,
             JSON_UNQUOTE(l.speaking) AS speaking,

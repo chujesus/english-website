@@ -1,7 +1,6 @@
 export class Profile {
     public static Administrator = 0;
-    public static Instructor = 1;
-    public static Student = 2;
+    public static Student = 1;
 }
 
 export class Status {
@@ -14,6 +13,22 @@ export interface GoogleAuthPayload {
     name: string;
     googleId: string;
     avatar?: string;
+}
+
+// API Response interfaces
+export interface ApiResponse<T = any> {
+    ok: boolean;
+    message?: string;
+    data?: T;
+    error?: string;
+}
+
+export interface ForgotPasswordRequest {
+    email: string;
+}
+
+export interface ForgotPasswordResponse extends ApiResponse {
+    message: string;
 }
 
 
@@ -32,6 +47,7 @@ export interface IUser {
     state?: number;
     user_state?: string;
     profile?: number;
+    starting_module?: 'A1' | 'A2' | 'B1' | 'B2';
     url_image?: string;
     image_name?: string;
     token?: string;

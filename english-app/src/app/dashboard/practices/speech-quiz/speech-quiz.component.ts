@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 interface IListening {
   audio: string;
@@ -16,6 +16,11 @@ interface IListening {
 })
 export class SpeechQuizComponent implements OnInit {
   @Input() listening: IListening[] = [];
+  @Input() savedAnswers: { [key: number]: string | null } = {}; // Respuestas guardadas
+  @Input() savedFeedback: { [key: number]: string | null } = {}; // Feedback guardado
+  @Input() isCompleted: boolean = false; // Si el quiz está completado
+
+  @Output() answerSelected = new EventEmitter<{ index: number, answer: string }>();
 
   currentQuestionIndex = 0;
   selectedAnswer: string | null = null;
@@ -25,7 +30,12 @@ export class SpeechQuizComponent implements OnInit {
   summaryResults: { correct: boolean }[] = [];
 
   ngOnInit(): void {
-    this.resetState();
+    // Si el quiz está completado, restaurar el estado guardado
+    if (this.isCompleted && Object.keys(this.savedAnswers).length > 0) {
+      this.restoreCompletedState();
+    } else {
+      this.resetState();
+    }
   }
 
   playAudio() {
@@ -38,6 +48,12 @@ export class SpeechQuizComponent implements OnInit {
   selectAnswer(option: string) {
     this.selectedAnswer = option;
     this.isCorrect = option === this.listening[this.currentQuestionIndex].answer;
+
+    // Emitir la respuesta seleccionada al componente padre
+    this.answerSelected.emit({
+      index: this.currentQuestionIndex,
+      answer: option
+    });
   }
 
   nextOrFinish() {
@@ -66,11 +82,36 @@ export class SpeechQuizComponent implements OnInit {
     return Math.round((this.getCorrectCount() / this.summaryResults.length) * 100);
   }
 
-  private resetState() {
+  resetState() {
     this.currentQuestionIndex = 0;
     this.selectedAnswer = null;
     this.isCorrect = null;
     this.showSummary = false;
     this.summaryResults = [];
+  }
+
+  restoreCompletedState() {
+    // Restaurar resultados desde las respuestas guardadas
+    this.summaryResults = [];
+
+    for (let i = 0; i < this.listening.length; i++) {
+      const userAnswer = this.savedAnswers[i];
+      const correctAnswer = this.listening[i].answer;
+      const isCorrect = userAnswer === correctAnswer;
+
+      this.summaryResults.push({ correct: isCorrect });
+
+      // Emitir cada respuesta guardada al componente padre para sincronizar
+      if (userAnswer) {
+        this.answerSelected.emit({
+          index: i,
+          answer: userAnswer
+        });
+      }
+    }
+
+    // Mostrar el resumen directamente
+    this.showSummary = true;
+    this.currentQuestionIndex = this.listening.length - 1; // Último índice
   }
 }

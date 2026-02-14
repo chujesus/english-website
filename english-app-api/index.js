@@ -31,6 +31,8 @@ app.use("/courses", require("./src/routes/courses.routes"));
 app.use("/topics", require("./src/routes/topics.routes"));
 app.use("/lessons", require("./src/routes/lessons.routes"));
 app.use("/students", require("./src/routes/students.routes"));
+app.use("/admin", require("./src/routes/admin.routes"));
+app.use("/users", require("./src/routes/users.routes"));
 
 // Exports router
 module.exports = { router };

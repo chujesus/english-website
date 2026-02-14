@@ -10,7 +10,8 @@
                             </li>
                             <li class="breadcrumb-item">
                                 <a [routerLink]="['/dashboard/courses']"
-                                    [queryParams]="{id: courseId, title: courseTitle}" class="text-decoration-none">{{
+                                    [queryParams]="{id: courseId, title: courseTitle, userId: user.id}"
+                                    class="text-decoration-none">{{
                                     courseTitle }}</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">{{ topic?.title }}</li>
@@ -99,18 +100,53 @@
                 </div>
                 <div class="card-body">
                     <div class="progress mb-2" style="height: 8px;">
-                        <div class="progress-bar bg-success" [style.width.%]="lessonProgress" role="progressbar">
+                        <div class="progress-bar" [class]="getProgressBarClass(getTopicOverallProgress())"
+                            [style.width.%]="getTopicOverallProgress()" role="progressbar">
                         </div>
                     </div>
-                    <small class="text-muted">{{ lessonProgress }}% Complete</small>
+                    <small class="text-muted">{{ getTopicOverallProgress() }}% Complete</small>
 
                     <div class="mt-3">
-                        <button class="btn btn-success btn-sm w-100" *ngIf="lessonProgress < 100"
-                            (click)="markLessonComplete()">
-                            <i class="fas fa-check me-1"></i>Mark as Complete
-                        </button>
-                        <div class="alert alert-success alert-sm mb-0" *ngIf="lessonProgress === 100">
-                            <i class="fas fa-check-circle me-1"></i>Lesson Completed!
+                        <!-- Show complete topic progress -->
+                        <div class="small text-muted mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Reading:</span>
+                                <span [class]="topicProgress.reading > 0 ? 'text-success' : 'text-muted'">
+                                    {{ topicProgress.reading > 0 ? '✓ ' + topicProgress.reading + '%' : '✓ 0%' }}
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Speaking:</span>
+                                <span [class]="topicProgress.speaking > 0 ? 'text-success' : 'text-muted'">
+                                    {{ topicProgress.speaking > 0 ? '✓ ' + topicProgress.speaking + '%' : '✓ 0%' }}
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Listening:</span>
+                                <span [class]="topicProgress.listening > 0 ? 'text-success' : 'text-muted'">
+                                    {{ topicProgress.listening > 0 ? '✓ ' + topicProgress.listening + '%' : '✓ 0%' }}
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Writing:</span>
+                                <span [class]="topicProgress.writing > 0 ? 'text-success' : 'text-muted'">
+                                    {{ topicProgress.writing > 0 ? '✓ ' + topicProgress.writing + '%' : '✓ 0%' }}
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Topic completed message -->
+                        <div class="alert alert-success alert-sm mb-0" *ngIf="getTopicOverallProgress() >= 100">
+                            <i class="fas fa-check-circle me-1"></i>Topic Completed!
+                        </div>
+                        <!-- Incomplete progress message -->
+                        <div class="alert alert-warning alert-sm mb-0"
+                            *ngIf="getTopicOverallProgress() < 100 && getTopicOverallProgress() > 0">
+                            <i class="fas fa-clock me-1"></i>Keep practicing! Complete all lessons to finish this topic.
+                        </div>
+                        <!-- Start message -->
+                        <div class="alert alert-info alert-sm mb-0" *ngIf="getTopicOverallProgress() === 0">
+                            <i class="fas fa-play-circle me-1"></i>Start your learning journey! Select a lesson to
+                            begin.
                         </div>
                     </div>
                 </div>
@@ -133,6 +169,35 @@
                             <div class="col-md-6" *ngFor="let keyword of topic!.keywords">
                                 <span class="badge bg-primary me-2 mb-2">{{ keyword }}</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson Content Section (Rich Text Content) -->
+                <div class="card mb-4" *ngIf="currentLesson[0]?.content && currentLesson[0]?.content.trim()">
+                    <div class="card-header bg-gradient-info text-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-container me-3">
+                                <i class="fas fa-file-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0 fw-semibold">
+                                    <i class="fas fa-book-open me-2"></i>
+                                    Lesson Content
+                                </h5>
+                                <small class="opacity-75">Additional information and context for this lesson</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body lesson-rich-content">
+                        <div class="content-wrapper p-3 bg-light rounded border-start border-info border-4">
+                            <div class="rich-text-content" [innerHTML]="safeLessonContent"></div>
+                        </div>
+                        <div class="content-footer mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle me-1"></i>
+                                This content provides additional context and enriches your understanding of the topic.
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -174,9 +239,9 @@
                             </h5>
                         </div>
                         <div class="card-body">
-                            <div class="grammar-rule mb-3">
-                                <h6>Grammar Rule:</h6>
-                                <p class="text-info">{{ item.rule }}</p>
+                            <div class="grammar-rule mb-3 p-3 border-start border-warning border-4 bg-light">
+                                <h6 class="text-warning mb-2">Grammar Rule:</h6>
+                                <p class="text-dark mb-0" style="font-size: 1rem; line-height: 1.6;">{{ item.rule }}</p>
                             </div>
                             <div *ngIf="item.examples" class="grammar-examples">
                                 <h6>Examples:</h6>
@@ -193,7 +258,7 @@
                     </div>
 
                     <!-- Reading Section -->
-                    <div class="card mt-3" *ngIf="section.is_reading">
+                    <div class="card mt-3" *ngIf="!loadingPractices && section.is_reading">
                         <div class="card-header bg-success text-white">
                             <h5 class="mb-0">
                                 <i class="fas fa-book-open me-2"></i>
@@ -201,6 +266,11 @@
                             </h5>
                         </div>
                         <div class="card-body">
+                            <div class="reading-text mb-3 p-3 border-start border-success border-4 bg-light">
+                                <h6 class="text-success mb-2">Paragraph:</h6>
+                                <p class="text-dark mb-0" style="font-size: 1rem; line-height: 1.6;">{{
+                                    section.reading.text }}</p>
+                            </div>
                             <div class="reading-content">
                                 <div class="row">
                                     <div class="col-md-6" *ngFor="let item of section.reading.questions; let i = index">
@@ -229,11 +299,14 @@
                                     </div>
 
                                     <div class="d-flex justify-content-end gap-2 mt-3">
-                                        <button class="btn btn-secondary" (click)="reset()">Reset</button>
-                                        <button class="btn btn-primary"
-                                            (click)="checkAnswers(section.reading.questions)"
+                                        <!-- <button class="btn btn-secondary" (click)="reset()">Reset</button> -->
+                                        <button class="btn"
+                                            [class]="savedStates.reading.saved ? 'btn-success' : 'btn-primary'"
+                                            (click)="saveReading(section.reading.questions)"
                                             [disabled]="!allAnswered(section.reading.questions)">
-                                            Check
+                                            <i class="fas"
+                                                [class]="savedStates.reading.saved ? 'fa-check me-1' : 'fa-save me-1'"></i>
+                                            {{ savedStates.reading.saved ? 'Saved' : 'Save Reading Practice' }}
                                         </button>
                                     </div>
                                 </div>
@@ -242,7 +315,7 @@
                     </div>
 
                     <!-- Practice Section -->
-                    <div class="card mt-3" *ngIf="section.is_speaking">
+                    <div class="card mt-3" *ngIf="!loadingPractices && section.is_speaking">
                         <div class="card-header bg-secondary text-white">
                             <h5 class="mb-0">
                                 <i class="fas fa-microphone me-2"></i>
@@ -251,12 +324,29 @@
                         </div>
                         <div class="card-body">
                             <div class="practice-section">
-                                <app-speech-practice [targetSentences]="speechPracticeItems"></app-speech-practice>
+                                <app-speech-practice [targetSentences]="speechPracticeItems"
+                                    [savedPracticeItems]="savedStates.speaking.practiceItems"
+                                    [isCompleted]="savedStates.speaking.saved"
+                                    [savedRecognizedTexts]="speakingRecognizedTexts"
+                                    [savedCorrectness]="speakingCorrectness"
+                                    (practiceUpdate)="onSpeakingPracticeUpdate($event)">
+                                </app-speech-practice>
+                            </div>
+                            <div class="d-flex justify-content-end gap-2 mt-3">
+                                <button class="btn" [class]="savedStates.speaking.saved ? 'btn-success' : 'btn-primary'"
+                                    (click)="saveSpeaking(speechPracticeItems)"
+                                    [disabled]="!isSpeakingPracticeComplete()"
+                                    [title]="isSpeakingPracticeComplete() ? '' : 'Complete all speaking exercises first'">
+                                    <i class="fas"
+                                        [class]="savedStates.speaking.saved ? 'fa-check me-1' : 'fa-save me-1'"></i>
+                                    {{ savedStates.speaking.saved ? 'Saved' : 'Save Speaking Practice' }}
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card mt-3" *ngIf="section.is_listening">
+                    <!-- Listening Section -->
+                    <div class="card mt-3" *ngIf="!loadingPractices && section.is_listening">
                         <div class="card-header bg-secondary text-white">
                             <h5 class="mb-0">
                                 <i class="fas fa-headphones me-2"></i>
@@ -265,21 +355,49 @@
                         </div>
                         <div class="card-body">
                             <div class="practice-section">
-                                <app-speech-quiz [listening]="listening"></app-speech-quiz>
+                                <app-speech-quiz [listening]="listening" [savedAnswers]="savedStates.listening.answers"
+                                    [savedFeedback]="savedStates.listening.feedback"
+                                    [isCompleted]="savedStates.listening.saved"
+                                    (answerSelected)="onListeningAnswerSelected($event)">
+                                </app-speech-quiz>
+                            </div>
+                            <div class="d-flex justify-content-end gap-2 mt-3">
+                                <!-- <button class="btn btn-secondary" (click)="reset()">Reset</button> -->
+                                <button class="btn"
+                                    [class]="savedStates.listening.saved ? 'btn-success' : 'btn-primary'"
+                                    (click)="saveListening(listening)" [disabled]="!allListeningAnswered(listening)">
+                                    <i class="fas"
+                                        [class]="savedStates.listening.saved ? 'fa-check me-1' : 'fa-save me-1'"></i>
+                                    {{ savedStates.listening.saved ? 'Saved' : 'Save Listening Practice' }}
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card mt-3" *ngIf="section.is_writing">
+                    <!-- Writing Section -->
+                    <div class="card mt-3" *ngIf="!loadingPractices && section.is_writing">
                         <div class="card-header bg-secondary text-white">
                             <h5 class="mb-0">
                                 <i class="fas fa-pencil-alt me-2"></i>
-                                Fill in the Blanks Practice
+                                Writing Practice
                             </h5>
                         </div>
                         <div class="card-body">
                             <div class="practice-section">
-                                <app-fill-in-blank-practice [questions]="questions"></app-fill-in-blank-practice>
+                                <app-fill-in-blank-practice [questions]="questions"
+                                    [savedAnswers]="savedStates.writing.answers"
+                                    [isWritingCompleted]="savedStates.writing.saved">
+                                </app-fill-in-blank-practice>
+                            </div>
+                            <div class="d-flex justify-content-end gap-2 mt-3">
+                                <!-- <button class="btn btn-secondary" (click)="reset()">Reset</button> -->
+                                <button class="btn" [class]="savedStates.writing.saved ? 'btn-success' : 'btn-primary'"
+                                    (click)="saveWriting(questions)" [disabled]="!isWritingPracticeComplete()"
+                                    [title]="isWritingPracticeComplete() ? '' : 'Complete all writing exercises first'">
+                                    <i class="fas"
+                                        [class]="savedStates.writing.saved ? 'fa-check me-1' : 'fa-save me-1'"></i>
+                                    {{ savedStates.writing.saved ? 'Saved' : 'Save Writing Practice' }}
+                                </button>
                             </div>
                         </div>
                     </div>

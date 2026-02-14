@@ -33,7 +33,6 @@ export class InterceptorService implements HttpInterceptor {
                 console.error('❌ HTTP Error in interceptor:', err);
 
                 if (err.status === 401) {
-                    console.log('🚫 Unauthorized - redirecting to login');
                     localStorage.removeItem(Key.IsloggedKey);
                     this.router.navigate(['/auth/login']);
                 }

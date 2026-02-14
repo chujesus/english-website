@@ -75,7 +75,7 @@ export class GoogleAuthService {
                 // Mostrar el popup de Google
                 window.google.accounts.id.prompt((notification: any) => {
                     if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-                        // Fallback al método de popup
+                        // Fallback to popup method
                         this.signInWithPopup().then(resolve).catch(reject);
                     }
                 });
@@ -99,7 +99,7 @@ export class GoogleAuthService {
 
                 setTimeout(checkResponse, 100);
 
-                // Timeout después de 30 segundos
+                // Timeout after 30 seconds
                 setTimeout(() => {
                     if (this.credentialResponse === null) {
                         reject(new Error('Google sign-in timeout'));
@@ -138,7 +138,7 @@ export class GoogleAuthService {
 
                 resolve({
                     email: 'test@gmail.com',
-                    name: 'Usuario de Prueba',
+                    name: 'Test User',
                     googleId: 'google_test_id_' + Date.now(),
                     avatar: 'https://lh3.googleusercontent.com/a/default-user=s96-c'
                 });
@@ -172,7 +172,7 @@ export class GoogleAuthService {
     }
 
     isSignedIn(): boolean {
-        // TODO: Implementar verificación real del estado de Google
+        // TODO: Implement real Google status verification
         return false;
     }
 

@@ -159,6 +159,233 @@
   }
 }
 
+// Lesson Rich Content Section Styles
+.lesson-rich-content {
+  .content-wrapper {
+    border-radius: 0.5rem;
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+      transform: translateY(-1px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -4px;
+      height: 100%;
+      width: 4px;
+      background: linear-gradient(135deg, #17a2b8, #0c5460);
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  .rich-text-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #495057;
+
+    // Styling for rich text content
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #343a40;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 1.15rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+    h5 {
+      font-size: 1.05rem;
+    }
+    h6 {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+    }
+
+    blockquote {
+      border-left: 4px solid #17a2b8;
+      background: rgba(23, 162, 184, 0.05);
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 0 0.375rem 0.375rem 0;
+      font-style: italic;
+      color: #495057;
+    }
+
+    code {
+      background: #f8f9fa;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.9rem;
+      color: #e83e8c;
+      border: 1px solid #dee2e6;
+    }
+
+    pre {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      overflow-x: auto;
+      border: 1px solid #dee2e6;
+
+      code {
+        background: none;
+        padding: 0;
+        border: none;
+        color: #495057;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+
+      th,
+      td {
+        padding: 0.75rem;
+        border: 1px solid #dee2e6;
+        text-align: left;
+      }
+
+      th {
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #495057;
+      }
+
+      tbody tr:nth-child(even) {
+        background: rgba(0, 123, 255, 0.03);
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.375rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 1rem 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #0056b3;
+        border-bottom-color: #0056b3;
+      }
+    }
+
+    strong,
+    b {
+      color: #343a40;
+      font-weight: 600;
+    }
+
+    em,
+    i {
+      color: #6c757d;
+    }
+  }
+
+  .content-footer {
+    border-top: 1px solid #e9ecef;
+    margin-top: 1.5rem !important;
+    padding-top: 1rem;
+
+    small {
+      display: flex;
+      align-items: center;
+      font-size: 0.85rem;
+
+      i {
+        color: #17a2b8;
+      }
+    }
+  }
+}
+
+// Enhanced card header styling for content section
+.bg-gradient-info {
+  background: linear-gradient(135deg, #17a2b8 0%, #0c5460 100%) !important;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 70%
+    );
+    animation: shimmer 3s infinite linear;
+  }
+
+  .icon-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
 @media (max-width: 768px) {
   .lesson-navigation-card {
     .navigation-list {
@@ -181,6 +408,36 @@
           }
         }
       }
+    }
+  }
+
+  .lesson-rich-content {
+    .content-wrapper {
+      padding: 1rem !important;
+    }
+
+    .rich-text-content {
+      font-size: 0.95rem;
+
+      h1 {
+        font-size: 1.3rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+      h4,
+      h5,
+      h6 {
+        font-size: 1rem;
+      }
+    }
+
+    .bg-gradient-info .icon-container {
+      width: 40px;
+      height: 40px;
     }
   }
 }

@@ -1,6 +1,7 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { BehaviorSubject, firstValueFrom, map, Observable } from 'rxjs';
-import { IUser, Profile } from '../../shared/interfaces';
+import { BehaviorSubject, firstValueFrom, map, Observable, catchError, of } from 'rxjs';
+import { Router } from '@angular/router';
+import { IUser, Profile, ForgotPasswordResponse } from '../../shared/interfaces';
 import { GoogleAuthService } from './google-auth.service';
 import { MainService } from './main.service';
 import { HttpClient } from '@angular/common/http';
@@ -13,7 +14,12 @@ import { Key } from '../../shared/constants/constants';
 })
 export class AuthService extends MainService {
 
-    constructor(private http: HttpClient, private localStorageService: LocalStorageService, private googleAuth: GoogleAuthService) {
+    constructor(
+        private http: HttpClient,
+        private localStorageService: LocalStorageService,
+        private googleAuth: GoogleAuthService,
+        private router: Router
+    ) {
         super();
     }
 
@@ -40,13 +46,19 @@ export class AuthService extends MainService {
             return user;
 
         } catch (error) {
-            console.error('Error en Google login:', error);
-            throw new Error('Error al iniciar sesión con Google');
+            console.error('Error in Google login:', error);
+            throw new Error('Error signing in with Google');
         }
     }
 
     register(_user: any): Observable<IUser[]> {
         return this.http.post<any[]>(`${this.baseUrl}/auths/register`, _user).pipe(map((user: any) => {
+            return user.data as IUser[];
+        }));
+    }
+
+    getUser(id: number): Observable<IUser[]> {
+        return this.http.get<IUser[]>(`${this.baseUrl}/auths/${id}`).pipe(map((user: any) => {
             return user.data as IUser[];
         }));
     }
@@ -66,7 +78,7 @@ export class AuthService extends MainService {
     getUsersProfile(profile: number): Observable<IUser[]> {
         return this.http.get<IUser[]>(`${this.baseUrl}/auths/profile/${profile}`).pipe(map((users: any) => {
             return users.data.map((user: IUser) => {
-                user.user_state = user.state === 1 ? 'Habilitado' : 'Inhabilitado';
+                user.user_state = user.state === 1 ? 'Enabled' : 'Disabled';
                 return user;
             });
         }));
@@ -74,11 +86,9 @@ export class AuthService extends MainService {
 
     getUserToken(id: number): Observable<IUser[]> {
         return this.http.get<IUser[]>(`${this.baseUrl}/auths/generate-jwt/${id}`).pipe(map((user: any) => {
-            this.localStorageService.setCredentials(user.data[0]);
             return user.data as IUser[];
         }));
     }
-
 
     isLoggedIn() {
         const isLogged = this.localStorageService.getCredentials();
@@ -112,7 +122,59 @@ export class AuthService extends MainService {
     }
 
     logout(): void {
+        // Clear all user data from localStorage
         this.localStorageService.clear();
+
+        // Clear any other potential localStorage items
+        localStorage.removeItem(Key.IsloggedKey);
+
+        // Sign out from Google if applicable
         this.googleAuth.signOut();
+
+        // Redirect to login page (root route)
+        this.router.navigate(['/auth/login']).then(() => {
+            // Force page reload to ensure clean state
+            window.location.reload();
+        });
+    }
+
+    /**
+     * Send recovery password email
+     */
+    forgotPassword(email: string): Observable<any> {
+        return this.http.get<any>(`${this.baseUrl}/auths/recovery-password/${email}`).pipe(
+            map((response: any) => {
+                return response;
+            })
+        );
+    }
+
+    updateUser(_user: any): Observable<IUser[]> {
+        return this.http.put<IUser[]>(`${this.baseUrl}/auths/${_user.id}`, _user).pipe(map((user: any) => {
+            return user.data as IUser[];
+        }));
+    }
+
+    /**
+     * Check if current user account is still active
+     */
+    checkUserStatus(): Observable<boolean> {
+        const session = this.localStorageService.getCredentials();
+        if (!session || !session.task) {
+            return of(false);
+        }
+
+        return this.http.get<any>(`${this.baseUrl}/users/profile/${session.task}`).pipe(
+            map((response: any) => {
+                if (response.ok && response.user) {
+                    return response.user.state === 1; // Active user
+                }
+                return false;
+            }),
+            catchError(() => {
+                // If there's an error, consider user as inactive
+                return of(false);
+            })
+        );
     }
 }

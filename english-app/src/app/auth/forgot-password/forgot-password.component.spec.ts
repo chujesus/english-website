@@ -3,6 +3,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ForgotPasswordComponent } from './forgot-password.component';
 import { AuthService } from '../../core/services/auth.service';
+import { of, throwError } from 'rxjs';
 
 describe('ForgotPasswordComponent', () => {
     let component: ForgotPasswordComponent;
@@ -56,38 +57,37 @@ describe('ForgotPasswordComponent', () => {
         expect(mockAuthService.forgotPassword).not.toHaveBeenCalled();
     });
 
-    it('should call AuthService.forgotPassword when form is valid', async () => {
+    it('should call AuthService.forgotPassword when form is valid', () => {
         const email = 'test@example.com';
-        mockAuthService.forgotPassword.and.returnValue(Promise.resolve());
+        mockAuthService.forgotPassword.and.returnValue(of({ ok: true, message: 'Email sent' }));
 
         component.forgotForm.patchValue({ email });
 
-        await component.onSubmit();
+        component.onSubmit();
 
         expect(mockAuthService.forgotPassword).toHaveBeenCalledWith(email);
     });
 
-    it('should show success message on successful submission', async () => {
+    it('should show success message on successful submission', () => {
         const email = 'test@example.com';
-        mockAuthService.forgotPassword.and.returnValue(Promise.resolve());
+        mockAuthService.forgotPassword.and.returnValue(of({ ok: true, message: 'An email has been sent with instructions to recover your password.' }));
 
         component.forgotForm.patchValue({ email });
 
-        await component.onSubmit();
+        component.onSubmit();
 
-        expect(component.successMessage).toBe('Se ha enviado un email con las instrucciones para recuperar tu contraseña.');
+        expect(component.successMessage).toBe('An email has been sent with instructions to recover your password.');
         expect(component.errorMessage).toBe('');
-        expect(component.forgotForm.get('email')?.value).toBe('');
     });
 
-    it('should handle forgot password error', async () => {
+    it('should handle forgot password error', () => {
         const email = 'test@example.com';
         const errorMessage = 'Email not found';
-        mockAuthService.forgotPassword.and.returnValue(Promise.reject(new Error(errorMessage)));
+        mockAuthService.forgotPassword.and.returnValue(throwError(() => new Error(errorMessage)));
 
         component.forgotForm.patchValue({ email });
 
-        await component.onSubmit();
+        component.onSubmit();
 
         expect(component.errorMessage).toBe(errorMessage);
         expect(component.successMessage).toBe('');
@@ -105,18 +105,15 @@ describe('ForgotPasswordComponent', () => {
         expect(component.isFieldInvalid('email')).toBeTruthy();
     });
 
-    it('should reset loading state after submission', async () => {
+    it('should reset loading state after submission', () => {
         const email = 'test@example.com';
-        mockAuthService.forgotPassword.and.returnValue(Promise.resolve());
+        mockAuthService.forgotPassword.and.returnValue(of({ ok: true, message: 'Email sent' }));
 
         component.forgotForm.patchValue({ email });
 
         expect(component.loading).toBeFalsy();
 
-        const submitPromise = component.onSubmit();
-        expect(component.loading).toBeTruthy();
-
-        await submitPromise;
+        component.onSubmit();
         expect(component.loading).toBeFalsy();
     });
 });

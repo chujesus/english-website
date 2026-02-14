@@ -24,6 +24,8 @@ export class FillInBlankPracticeComponent implements OnInit {
   @Input() topicId: number = 0;
   @Input() sectionIndex: number = 0;
   @Input() canAttempt: boolean = true;
+  @Input() savedAnswers: IFillInBlank[] = []; // Respuestas guardadas
+  @Input() isWritingCompleted: boolean = false; // Si está completado
   @Output() practiceCompleted = new EventEmitter<any>();
 
   practiceStartTime: number = 0;
@@ -34,6 +36,39 @@ export class FillInBlankPracticeComponent implements OnInit {
 
   ngOnInit(): void {
     this.practiceStartTime = Date.now();
+    this.checkAndRestoreState();
+  }
+
+  checkAndRestoreState(): void {
+    // Restaurar estado si está completado
+    if (this.isWritingCompleted || (this.savedAnswers && this.savedAnswers.length > 0)) {
+      this.restoreCompletedState();
+    }
+  }
+
+  // Método público para marcar la práctica como completada desde el exterior
+  markAsCompleted(): void {
+    this.checkAnswers();
+  }
+
+  restoreCompletedState(): void {
+    // Restaurar respuestas guardadas
+    if (this.savedAnswers.length > 0) {
+      this.savedAnswers.forEach((savedQ, index) => {
+        if (this.questions[index]) {
+          this.questions[index].selected = savedQ.selected;
+          this.questions[index].feedback = savedQ.feedback;
+        }
+      });
+    }
+
+    // Si está marcado como completado, mostrar resultados
+    if (this.isWritingCompleted) {
+      this.isCompleted = true;
+      // Calcular score basado en las respuestas restauradas
+      const correctCount = this.questions.filter(q => q.feedback === 'correct').length;
+      this.score = this.questions.length > 0 ? (correctCount / this.questions.length) * 100 : 0;
+    }
   }
 
   checkAnswers() {
@@ -56,7 +91,7 @@ export class FillInBlankPracticeComponent implements OnInit {
     }
   }
 
-  private submitPractice(correctAnswers: number): void {
+  submitPractice(correctAnswers: number): void {
     const timeSpent = Math.floor((Date.now() - this.practiceStartTime) / 1000);
 
     const practiceData = {

@@ -1,22 +1,30 @@
 <header>
     <div class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-        <div class="container">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand d-flex align-items-center">
                 <i class="fas fa-graduation-cap me-2"></i>
-                <strong>English Learning Platform</strong>
+                <strong class="d-none d-sm-inline">English Learning Platform</strong>
+                <strong class="d-inline d-sm-none">ELP</strong>
             </a>
 
             <!-- User Info -->
             <div class="navbar-nav ms-auto">
                 <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white d-flex align-items-center" href="#"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user-circle me-1"></i>
-                        {{ userName }} ({{ userRole }})
+                        <span class="d-none d-md-inline text-truncate" style="max-width: 150px;">
+                            {{ userName }} ({{ userRole }})
+                        </span>
+                        <span class="d-inline d-md-none">
+                            {{ userName.split(' ')[0] }}
+                        </span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" routerLink="/dashboard/profile"><i
+                                    class="fas fa-user me-2"></i>Profile</a></li>
+                        <li *ngIf="isAdmin()"><a class="dropdown-item" href="#"><i
+                                    class="fas fa-cog me-2"></i>Settings</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -38,40 +46,12 @@
                     <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
                         <i class="fas fa-book me-1"></i>Course Modules
                     </a>
-                    <a class="nav-link" routerLink="/dashboard/student-progress" routerLinkActive="active">
-                        <i class="fas fa-chart-line me-1"></i>My Progress
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/practices/fill-in-blank" routerLinkActive="active">
-                        <i class="fas fa-pen me-1"></i>Practice Exercises
-                    </a>
-                </div>
-
-                <!-- Instructor Navigation -->
-                <div *ngIf="hasInstructorAccess() && !isAdmin()" class="d-flex flex-wrap gap-3 w-100">
-                    <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
-                        <i class="fas fa-book me-1"></i>Course Content
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/instructor-analytics" routerLinkActive="active">
-                        <i class="fas fa-chart-bar me-1"></i>Student Analytics
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/student-progress" routerLinkActive="active">
-                        <i class="fas fa-users me-1"></i>Student Progress
-                    </a>
                 </div>
 
                 <!-- Administrator Navigation -->
                 <div *ngIf="hasAdminAccess()" class="d-flex flex-wrap gap-3 w-100">
-                    <a class="nav-link" routerLink="/dashboard/admin-dashboard" routerLinkActive="active">
-                        <i class="fas fa-tachometer-alt me-1"></i>Admin Dashboard
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/modules" routerLinkActive="active">
-                        <i class="fas fa-book me-1"></i>Course Management
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/user-management" routerLinkActive="active">
-                        <i class="fas fa-users-cog me-1"></i>User Management
-                    </a>
-                    <a class="nav-link" routerLink="/dashboard/instructor-analytics" routerLinkActive="active">
-                        <i class="fas fa-chart-bar me-1"></i>System Analytics
+                    <a class="nav-link" routerLink="/dashboard/control-panel" routerLinkActive="active">
+                        <i class="fas fa-cogs me-1"></i>Course Management
                     </a>
                 </div>
             </div>

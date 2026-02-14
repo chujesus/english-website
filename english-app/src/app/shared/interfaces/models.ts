@@ -12,7 +12,8 @@ export interface IUser {
     phone?: string;
     password_token?: string;
     state: number;
-    profile: number; // usa enum Profile
+    profile: number;
+    starting_module?: 'A1' | 'A2' | 'B1' | 'B2';
     url_image?: string;
     image_name?: string;
     token?: string;
@@ -72,12 +73,13 @@ export interface ILesson {
     is_listening?: boolean;
     is_writing?: boolean;
 
-    // contenido JSON
-    grammar?: any;             // estructura de reglas
-    reading?: any;             // texto + preguntas
-    speaking?: any;            // vocabulario/pronunciación
-    listening?: any;           // audios + respuestas
-    writing?: any;             // ejercicios escritos
+    // JSON content
+    content?: any;             // general content
+    grammar?: any;             // rules structure
+    reading?: any;             // text + questions
+    speaking?: any;            // vocabulary/pronunciation
+    listening?: any;           // audios + answers
+    writing?: any;             // writing exercises
 
     created_at?: Date;
     updated_at?: Date;
@@ -96,7 +98,6 @@ export interface IStudentProgress {
     is_completed?: boolean;
     progress_percent?: number;
     last_accessed?: Date;
-    score?: number;
 
     created_at?: Date;
     updated_at?: Date;
@@ -141,4 +142,99 @@ export interface IFillInBlank {
     answer: string;
     selected: string;
     feedback: string;
+}
+
+// Progress-related interfaces
+export interface StudentProgress {
+    id: number;
+    user_id: number;
+    course_id: number;
+    topic_id: number;
+    status: 'not_started' | 'in_progress' | 'completed';
+    progress_percentage: number;
+    started_at: string | null;
+    completed_at: string | null;
+    last_accessed: string;
+    // Fields from JOIN with topics and courses tables
+    topic_title?: string;
+    course_title?: string;
+    course_level?: string;
+}
+
+export interface TopicProgress {
+    progress: StudentProgress | null;
+    practices: any[];
+    total_practices: number;
+}
+
+export interface DashboardData {
+    course_id: number;
+    level: string;
+    course_title: string;
+    total_topics: number;
+    topics_started: number;
+    topics_completed: number;
+    progress_percentage: number;
+    last_activity: string;
+}
+
+// =============================
+// Admin Content Management Interfaces
+// =============================
+
+// Interface for content upload/management
+export interface IContentUpload {
+    id?: number;
+    title: string;
+    description?: string;
+    content_type: 'course' | 'topic' | 'lesson';
+    file_path?: string;
+    metadata?: any;
+    created_at?: Date;
+    updated_at?: Date;
+}
+
+// Interface for topic updates
+export interface ITopicUpdate {
+    id?: number;
+    course_id: number;
+    title: string;
+    objective: string;
+    examples?: any[];
+    keywords?: string[];
+    learning_outcome?: string;
+    cefr_level?: string;
+    skills_covered?: string[];
+    tags?: string[];
+}
+
+// Interface for lesson uploads
+export interface ILessonUpload {
+    id?: number;
+    topic_id: number;
+    title: string;
+    objective: string;
+    is_grammar: boolean;
+    is_reading: boolean;
+    is_speaking: boolean;
+    is_listening: boolean;
+    is_writing: boolean;
+    grammar?: any;
+    reading?: any;
+    speaking?: any;
+    listening?: any;
+    writing?: any;
+    content_files?: File[];
+    metadata?: any;
+}
+
+// Interface for content management operations
+export interface IContentManagement {
+    operation: 'create' | 'update' | 'delete' | 'upload';
+    entity_type: 'course' | 'topic' | 'lesson';
+    entity_id?: number;
+    data?: any;
+    files?: File[];
+    success?: boolean;
+    message?: string;
 }

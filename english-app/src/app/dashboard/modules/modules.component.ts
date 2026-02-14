@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { Profile } from '../../shared/interfaces/auth';
 import { CourseService } from '../../core/services/course.service';
 import { StudentService } from '../../core/services/student.service';
 import { ICourse } from '../../shared/interfaces/models';
@@ -15,6 +16,7 @@ import { ICourse } from '../../shared/interfaces/models';
 })
 export class ModulesComponent implements OnInit {
   user: any = null;
+  userProfile: number = Profile.Student;
   modules: ICourse[] = [];
   loading = true;
   error = '';
@@ -28,11 +30,10 @@ export class ModulesComponent implements OnInit {
   loadCourseModules(): void {
     this.loading = true;
     this.error = '';
-    let session = this.localStorageService.getCredentials();
-    if (session != null) {
-      this.user = {
-        id: session.task
-      };
+    const session = this.localStorageService.getCredentials();
+    if (session) {
+      this.user = { id: session.task };
+      this.userProfile = session.status;
       this.courseService.getCoursesByUserId(this.user.id).subscribe({
         next: (modules) => {
           this.modules = modules || [];
@@ -77,10 +78,14 @@ export class ModulesComponent implements OnInit {
   formatDate(dateString: string | undefined): string {
     if (!dateString) return 'Never';
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
+    return date.toLocaleString('en-US', {
       year: 'numeric',
       month: 'short',
-      day: 'numeric'
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+      timeZone: 'America/Costa_Rica'
     });
   }
 
@@ -89,5 +94,17 @@ export class ModulesComponent implements OnInit {
     if (progress >= 80) return 'bg-success';
     if (progress >= 50) return 'bg-warning';
     return 'bg-danger';
+  }
+  /** Check if user is Administrator */
+  isAdmin(): boolean {
+    return this.userProfile === Profile.Administrator;
+  }
+
+  /** Determine if module at index is unlocked for student */
+  isModuleUnlocked(index: number): boolean {
+    if (this.isAdmin()) return true;
+    if (index === 0) return true;
+    const prev = this.modules[index - 1];
+    return prev.status === 'completed';
   }
 }

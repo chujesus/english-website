@@ -3,55 +3,54 @@
     <div class="col-md-6 col-lg-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title text-center mb-4">Iniciar Sesión</h4>
+                <h4 class="card-title text-center mb-4">Sign In</h4>
 
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" [class.is-invalid]="isFieldInvalid('email')" id="email"
-                            formControlName="email" placeholder="tu@email.com">
+                            formControlName="email" placeholder="your@email.com">
                         <div class="invalid-feedback">
-                            <span *ngIf="loginForm.get('email')?.errors?.['required']">El email es requerido</span>
-                            <span *ngIf="loginForm.get('email')?.errors?.['email']">Formato de email inválido</span>
+                            <span *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</span>
+                            <span *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format</span>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
+                        <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" [class.is-invalid]="isFieldInvalid('password')"
-                            id="password" formControlName="password" placeholder="Tu contraseña">
+                            id="password" formControlName="password" placeholder="Your password">
                         <div class="invalid-feedback">
-                            <span *ngIf="loginForm.get('password')?.errors?.['required']">La contraseña es
-                                requerida</span>
+                            <span *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</span>
                         </div>
                     </div>
 
                     <div class="d-grid gap-2 mb-3">
                         <button type="submit" class="btn btn-primary" [disabled]="loading || loginForm.invalid">
                             <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
-                            Iniciar Sesión
+                            Sign In
                         </button>
                     </div>
 
-                    <div class="d-grid gap-2 mb-3">
+                    <div class="d-grid gap-2 mb-3" *ngIf="isGoogleConfigValid">
                         <button type="button" class="btn btn-outline-danger" [disabled]="loading"
                             (click)="loginWithGoogle()">
                             <i class="fab fa-google me-2"></i>
-                            Continuar con Google
+                            Continue with Google
                         </button>
                     </div>
 
                     <div class="text-center">
                         <a routerLink="/auth/forgot-password" class="text-decoration-none">
-                            ¿Olvidaste tu contraseña?
+                            Forgot your password?
                         </a>
                     </div>
 
                     <hr class="my-3">
 
                     <div class="text-center">
-                        <span class="text-muted">¿No tienes una cuenta? </span>
-                        <a routerLink="/auth/register" class="text-decoration-none">Regístrate</a>
+                        <span class="text-muted">Don't have an account? </span>
+                        <a routerLink="/auth/register" class="text-decoration-none">Sign Up</a>
                     </div>
                 </form>
 

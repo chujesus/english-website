@@ -1,62 +1,119 @@
-<div class="container mt-5"></div>
-<div class="row justify-content-center">
-    <div class="col-md-6 col-lg-4">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title text-center mb-4">Sign In</h4>
+<div class="login-container" [ngStyle]="getBackgroundStyle()">
+    <!-- Animated Background Elements -->
+    <div class="animated-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Loading Settings Overlay -->
+    <div *ngIf="loadingSettings" class="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Login Card -->
+    <div class="login-wrapper" [class.fade-in]="!loadingSettings">
+        <div class="login-card">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h1 class="institution-name">{{ institutionName }}</h1>
+                <p class="institution-tagline">Master English, Achieve Excellence</p>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-section">
+                <h2 class="form-title">Welcome Back</h2>
+                <p class="form-subtitle">Sign in to continue your learning journey</p>
 
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            <i class="fas fa-envelope me-2"></i>Email Address
+                        </label>
                         <input type="email" class="form-control" [class.is-invalid]="isFieldInvalid('email')" id="email"
                             formControlName="email" placeholder="your@email.com">
                         <div class="invalid-feedback">
-                            <span *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</span>
-                            <span *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format</span>
+                            <span *ngIf="loginForm.get('email')?.errors?.['required']">
+                                <i class="fas fa-exclamation-circle me-1"></i>Email is required
+                            </span>
+                            <span *ngIf="loginForm.get('email')?.errors?.['email']">
+                                <i class="fas fa-exclamation-circle me-1"></i>Invalid email format
+                            </span>
                         </div>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password" class="form-label">
+                            <i class="fas fa-lock me-2"></i>Password
+                        </label>
                         <input type="password" class="form-control" [class.is-invalid]="isFieldInvalid('password')"
-                            id="password" formControlName="password" placeholder="Your password">
+                            id="password" formControlName="password" placeholder="••••••••">
                         <div class="invalid-feedback">
-                            <span *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</span>
+                            <span *ngIf="loginForm.get('password')?.errors?.['required']">
+                                <i class="fas fa-exclamation-circle me-1"></i>Password is required
+                            </span>
                         </div>
                     </div>
 
-                    <div class="d-grid gap-2 mb-3">
-                        <button type="submit" class="btn btn-primary" [disabled]="loading || loginForm.invalid">
-                            <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
-                            Sign In
-                        </button>
+                    <!-- Error Message -->
+                    <div *ngIf="errorMessage" class="alert alert-danger alert-animated" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        {{ errorMessage }}
                     </div>
 
-                    <div class="d-grid gap-2 mb-3" *ngIf="isGoogleConfigValid">
-                        <button type="button" class="btn btn-outline-danger" [disabled]="loading"
-                            (click)="loginWithGoogle()">
-                            <i class="fab fa-google me-2"></i>
-                            Continue with Google
-                        </button>
-                    </div>
+                    <!-- Sign In Button -->
+                    <button type="submit" class="btn btn-signin" [disabled]="loading || loginForm.invalid">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
+                        <span *ngIf="loading">Signing in...</span>
+                        <span *ngIf="!loading">
+                            <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                        </span>
+                    </button>
 
-                    <div class="text-center">
-                        <a routerLink="/auth/forgot-password" class="text-decoration-none">
-                            Forgot your password?
+                    <!-- Google Button -->
+                    <button type="button" class="btn btn-google" [disabled]="loading" *ngIf="isGoogleConfigValid"
+                        (click)="loginWithGoogle()">
+                        <i class="fab fa-google me-2"></i>
+                        Continue with Google
+                    </button>
+
+                    <!-- Forgot Password Link -->
+                    <div class="text-center mt-3">
+                        <a routerLink="/auth/forgot-password" class="link-forgot">
+                            <i class="fas fa-question-circle me-1"></i>Forgot your password?
                         </a>
                     </div>
 
-                    <hr class="my-3">
+                    <!-- Divider -->
+                    <div class="divider">
+                        <span>No account?</span>
+                    </div>
 
+                    <!-- Sign Up Link -->
                     <div class="text-center">
-                        <span class="text-muted">Don't have an account? </span>
-                        <a routerLink="/auth/register" class="text-decoration-none">Sign Up</a>
+                        <p class="signup-text">
+                            Create a new account to get started
+                            <br>
+                            <a routerLink="/auth/register" class="link-signup">
+                                Sign Up Now <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </p>
                     </div>
                 </form>
+            </div>
 
-                <div *ngIf="errorMessage" class="alert alert-danger mt-3" role="alert">
-                    {{ errorMessage }}
-                </div>
+            <!-- Footer -->
+            <div class="login-footer">
+                <p class="footer-text">
+                    <i class="fas fa-shield-alt me-1"></i>Secure Login | Your data is protected
+                </p>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
+import { SettingService } from '../../core/services/setting.service';
 import { IUser, Profile, Status } from '../../shared/interfaces';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 import { isGoogleConfigValid } from '../../core/config/google.config';
@@ -21,9 +22,18 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
   user!: IUser;
   isGoogleConfigValid = isGoogleConfigValid();
+  institutionName = 'English Learning Platform';
+  loginBackgroundUrl: string | null = null;
+  loadingSettings = true;
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router,
-    private localStorageService: LocalStorageService, private alertService: AlertService) {
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router,
+    private localStorageService: LocalStorageService,
+    private alertService: AlertService,
+    private settingService: SettingService
+  ) {
   }
 
   ngOnInit(): void {
@@ -31,6 +41,46 @@ export class LoginComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
+
+    this.loadSettings();
+  }
+
+  loadSettings(): void {
+    this.loadingSettings = true;
+    this.settingService.getAllSettings().subscribe({
+      next: (response: any) => {
+        if (response.data && Array.isArray(response.data)) {
+          const institutionSetting = response.data.find((s: any) => s.name === 'Institution name');
+          const backgroundSetting = response.data.find((s: any) => s.name === 'Login Background');
+
+          if (institutionSetting?.value) {
+            this.institutionName = institutionSetting.value;
+          }
+          if (backgroundSetting?.value) {
+            this.loginBackgroundUrl = backgroundSetting.value;
+          }
+        }
+        this.loadingSettings = false;
+      },
+      error: () => {
+        console.log('Could not load settings, using defaults');
+        this.loadingSettings = false;
+      }
+    });
+  }
+
+  getBackgroundStyle() {
+    if (this.loginBackgroundUrl) {
+      return {
+        'background': `linear-gradient(135deg, rgba(0, 123, 255, 0.8) 0%, rgba(0, 86, 184, 0.8) 100%), url('${this.loginBackgroundUrl}')`,
+        'background-size': 'cover',
+        'background-position': 'center',
+        'background-attachment': 'fixed'
+      };
+    }
+    return {
+      'background': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+    };
   }
 
   isFieldInvalid(fieldName: string): boolean {

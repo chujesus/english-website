@@ -33,6 +33,7 @@ app.use("/lessons", require("./src/routes/lessons.routes"));
 app.use("/students", require("./src/routes/students.routes"));
 app.use("/admin", require("./src/routes/admin.routes"));
 app.use("/users", require("./src/routes/users.routes"));
+app.use("/settings", require("./src/routes/settings.routes"));
 
 // Exports router
 module.exports = { router };

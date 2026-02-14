@@ -73,6 +73,11 @@ export const routes: Routes = [
                 title: 'User Management',
                 loadComponent: () => import('./dashboard/user-management/user-management.component').then(m => m.UserManagementComponent)
             },
+            {
+                path: 'settings-management',
+                title: 'Settings Management',
+                loadComponent: () => import('./dashboard/settings-management/settings-management.component').then(m => m.SettingsManagementComponent)
+            },
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]
     },

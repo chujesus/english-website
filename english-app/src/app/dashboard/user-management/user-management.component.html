@@ -375,8 +375,8 @@
                             <select class="form-select" [class.is-invalid]="isFieldInvalid('profile')" id="editProfile"
                                 formControlName="profile">
                                 <option value="">Select Role</option>
-                                <option value="1">Administrator</option>
-                                <option value="2">Student</option>
+                                <option value="0">Administrator</option>
+                                <option value="1">Student</option>
                             </select>
                             <div class="invalid-feedback" *ngIf="isFieldInvalid('profile')">
                                 {{ getFieldError('profile') }}

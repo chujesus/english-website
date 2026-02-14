@@ -1,0 +1,249 @@
+<div class="container-fluid py-4">
+    <!-- Enhanced Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm bg-gradient-light">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <!-- Breadcrumb Navigation -->
+                            <nav aria-label="breadcrumb" class="mb-2">
+                                <ol class="breadcrumb mb-0 bg-transparent p-0">
+                                    <li class="breadcrumb-item">
+                                        <a routerLink="/dashboard/control-panel"
+                                            class="text-primary cursor-pointer fw-semibold">
+                                            <i class="fas fa-home me-1"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Settings Management
+                                    </li>
+                                </ol>
+                            </nav>
+
+                            <!-- Dynamic Page Title -->
+                            <h2 class="mb-0 d-flex align-items-center">
+                                <i class="fas fa-cog me-2"></i>
+                                Settings Management
+                                <span class="badge bg-secondary ms-2 rounded-pill">{{ filteredSettings.length }}</span>
+                            </h2>
+                            <p class="mb-0 mt-1">Configure and manage system settings</p>
+                        </div>
+                        <button class="btn btn-outline-primary" routerLink="/dashboard/control-panel">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Alert -->
+    <div *ngIf="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        {{ error }}
+        <button type="button" class="btn-close" (click)="error = ''" aria-label="Close"></button>
+    </div>
+
+    <!-- Success Alert -->
+    <div *ngIf="success" class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle me-2"></i>
+        {{ success }}
+        <button type="button" class="btn-close" (click)="success = ''" aria-label="Close"></button>
+    </div>
+
+    <!-- Search and Actions -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="row g-3 align-items-end">
+                        <!-- Search Input -->
+                        <div class="col-md-8">
+                            <label for="searchTerm" class="form-label">Search Settings</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control" id="searchTerm" [(ngModel)]="searchTerm"
+                                    (input)="onSearchChange()" placeholder="Search by name or value...">
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="col-md-4">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-grow-1" (click)="openEditModal()">
+                                    <i class="fas fa-plus me-1"></i>Add Setting
+                                </button>
+                                <button class="btn btn-outline-secondary" (click)="loadSettings()">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3 text-muted">Loading settings...</p>
+    </div>
+
+    <!-- Settings Table -->
+    <div *ngIf="!loading" class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-list me-2"></i>System Settings
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Setting Name</th>
+                                    <th>Value</th>
+                                    <th>Last Modified</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let setting of getPaginatedSettings(); trackBy: trackBySettingId">
+                                    <!-- Setting Name -->
+                                    <td>
+                                        <div class="fw-bold">{{ setting.name }}</div>
+                                    </td>
+
+                                    <!-- Value -->
+                                    <td>
+                                        <div class="text-muted small" [title]="setting.value || 'No value'">
+                                            {{ setting.value ? (setting.value.length > 50 ? setting.value.substring(0,
+                                            50) + '...' : setting.value) : '-' }}
+                                        </div>
+                                    </td>
+
+                                    <!-- Last Modified -->
+                                    <td>
+                                        <small class="text-muted">
+                                            {{ setting.updated_at | date:'short' }}
+                                        </small>
+                                    </td>
+
+                                    <!-- Actions -->
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <!-- Edit Button -->
+                                            <button type="button" class="btn btn-outline-primary btn-sm"
+                                                (click)="openEditModal(setting)" title="Edit Setting">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+
+                                            <!-- Delete Button -->
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                (click)="deleteSetting(setting)" title="Delete Setting">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- No Settings Found -->
+                                <tr *ngIf="getPaginatedSettings().length === 0">
+                                    <td colspan="4" class="text-center py-4 text-muted">
+                                        <i class="fas fa-cogs fa-2x mb-3"></i>
+                                        <div>No settings found</div>
+                                        <small>Create a new setting to get started</small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div *ngIf="totalPages > 1" class="card-footer">
+                    <nav aria-label="Settings pagination">
+                        <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <li class="page-item" [class.disabled]="currentPage === 1">
+                                <button class="page-link" (click)="goToPage(currentPage - 1)"
+                                    [disabled]="currentPage === 1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                            </li>
+                            <li *ngFor="let page of getPages()" class="page-item" [class.active]="page === currentPage">
+                                <button class="page-link" (click)="goToPage(page)">{{ page }}</button>
+                            </li>
+                            <li class="page-item" [class.disabled]="currentPage === totalPages">
+                                <button class="page-link" (click)="goToPage(currentPage + 1)"
+                                    [disabled]="currentPage === totalPages">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit/Create Setting Modal -->
+<div class="modal fade" [class.show]="showEditModal" [style.display]="showEditModal ? 'block' : 'none'" tabindex="-1"
+    role="dialog" aria-labelledby="editSettingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="editSettingModalLabel">
+                    <i class="fas fa-cog me-2"></i>{{ selectedSetting?.id ? 'Edit Setting' : 'Add New Setting' }}
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="closeEditModal()"
+                    aria-label="Close"></button>
+            </div>
+            <form [formGroup]="editSettingForm" (ngSubmit)="saveSetting()">
+                <div class="modal-body">
+                    <!-- Setting Name -->
+                    <div class="mb-3">
+                        <label for="editName" class="form-label">
+                            Setting Name <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('name')"
+                            id="editName" formControlName="name" [readOnly]="selectedSetting?.id ? true : false">
+                        <div class="invalid-feedback" *ngIf="isFieldInvalid('name')">
+                            {{ getFieldError('name') }}
+                        </div>
+                    </div>
+
+                    <!-- Setting Value -->
+                    <div class="mb-3">
+                        <label for="editValue" class="form-label">
+                            Setting Value
+                        </label>
+                        <textarea class="form-control" id="editValue" rows="4" formControlName="value"
+                            placeholder="Enter the value for this setting..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" (click)="closeEditModal()">
+                        <i class="fas fa-times me-1"></i>Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary" [disabled]="editSettingForm.invalid || loading">
+                        <i class="fas fa-save me-1"></i>
+                        <span *ngIf="loading">Saving...</span>
+                        <span *ngIf="!loading">{{ selectedSetting?.id ? 'Update Setting' : 'Create Setting' }}</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal backdrop -->
+<div *ngIf="showEditModal" class="modal-backdrop fade show"></div>

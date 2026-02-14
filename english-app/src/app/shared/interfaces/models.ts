@@ -238,3 +238,12 @@ export interface IContentManagement {
     success?: boolean;
     message?: string;
 }
+
+// Interface for settings management
+export interface ISetting {
+    id?: number;
+    name: string;
+    value?: string | null;
+    created_at?: string;
+    updated_at?: string;
+}

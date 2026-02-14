@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit {
   getBackgroundStyle() {
     if (this.loginBackgroundUrl) {
       return {
-        'background': `linear-gradient(135deg, rgba(0, 123, 255, 0.8) 0%, rgba(0, 86, 184, 0.8) 100%), url('${this.loginBackgroundUrl}')`,
+        'background': `linear-gradient(135deg, rgba(43, 143, 250, 0.25) 0%, rgba(0, 86, 184, 0.25) 100%), url('${this.loginBackgroundUrl}')`,
         'background-size': 'cover',
         'background-position': 'center',
         'background-attachment': 'fixed'

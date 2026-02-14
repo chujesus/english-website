@@ -38,7 +38,8 @@
                         </label>
                         <input type="email" class="form-control" [class.is-invalid]="isFieldInvalid('email')" id="email"
                             formControlName="email" placeholder="your@email.com">
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback"
+                            *ngIf="loginForm.get('email')?.touched || loginForm.get('email')?.dirty">
                             <span *ngIf="loginForm.get('email')?.errors?.['required']">
                                 <i class="fas fa-exclamation-circle me-1"></i>Email is required
                             </span>
@@ -55,7 +56,8 @@
                         </label>
                         <input type="password" class="form-control" [class.is-invalid]="isFieldInvalid('password')"
                             id="password" formControlName="password" placeholder="••••••••">
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback"
+                            *ngIf="loginForm.get('password')?.touched || loginForm.get('password')?.dirty">
                             <span *ngIf="loginForm.get('password')?.errors?.['required']">
                                 <i class="fas fa-exclamation-circle me-1"></i>Password is required
                             </span>

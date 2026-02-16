@@ -119,7 +119,7 @@ export class ResetPasswordComponent implements OnInit {
 
       this.user.password = this.form_password.value.password;
       this.user.password_token = "";
-      debugger;
+
       this.authService.updateUser(this.user).subscribe({
         next: (data: IUser[]) => {
           this.alertService.closeLoading();

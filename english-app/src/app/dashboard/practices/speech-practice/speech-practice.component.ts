@@ -1,7 +1,7 @@
 import { Component, Inject, Input, NgZone, OnChanges, OnInit, PLATFORM_ID, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DeepgramService } from '../../../core/services/deepgram.service';
-import { Router } from '@angular/router';
+import { SettingService } from '../../../core/services/setting.service';
 import { get as levenshtein } from 'fast-levenshtein';
 import { SpeechPracticeItem } from '../../../shared/interfaces/models';
 
@@ -33,10 +33,19 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   speakingIndex: number | null = null;
   isBusy: boolean = false;
 
+  // Propiedades para control de Deepgram
+  useDeepgram: boolean = false;
+  deepgramConfigured: boolean = false;
+
   /**
-   *
+   * Constructor
    */
-  constructor(private zone: NgZone, @Inject(PLATFORM_ID) private platformId: Object, private deepgramService: DeepgramService, private router: Router) {
+  constructor(
+    private zone: NgZone,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private deepgramService: DeepgramService,
+    private settingService: SettingService
+  ) {
   }
 
   ngOnInit(): void {
@@ -44,6 +53,9 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
     if (this.isCompleted && this.savedPracticeItems.length > 0) {
       this.restoreCompletedState();
     }
+
+    // Cargar configuración de Deepgram desde los settings
+    this.loadDeepgramSettings();
 
     if (isPlatformBrowser(this.platformId) && typeof window !== 'undefined' && typeof SpeechSynthesisUtterance !== 'undefined') {
       const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -86,6 +98,58 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['targetSentences']) {
       this.currentIndex = 0;
+    }
+  }
+
+  /**
+   * Load Deepgram settings from the database (una sola vez)
+   * Si existen valores válidos -> usa Deepgram
+   * Si no existen o están vacíos -> usa navegador
+   */
+  private loadDeepgramSettings(): void {
+    this.settingService.getSettingByName('DeepgramApiKey').subscribe({
+      next: (apiKeyResponse: any) => {
+        this.settingService.getSettingByName('DeepgramUrl').subscribe({
+          next: (urlResponse: any) => {
+            const apiKey = apiKeyResponse?.data?.value || null;
+            const url = urlResponse?.data?.value || null;
+
+            // Pasar los valores al servicio (validará si son válidos)
+            this.deepgramService.setCredentials(apiKey, url);
+
+            // Determinar qué método usar
+            if (apiKey && apiKey.trim()) {
+              this.deepgramConfigured = true;
+              this.useDeepgram = true;
+            } else {
+              this.deepgramConfigured = false;
+              this.useDeepgram = false;
+            }
+          },
+          error: () => {
+            // Si falla obtener URL, usar navegador
+            this.deepgramConfigured = false;
+            this.useDeepgram = false;
+          }
+        });
+      },
+      error: () => {
+        // Si falla obtener API Key, usar navegador
+        this.deepgramConfigured = false;
+        this.useDeepgram = false;
+      }
+    });
+  }
+
+  /**
+   * Método selector automático de reconocimiento de audio
+   * Usa Deepgram si está configurado, sino usa la API del navegador
+   */
+  startAudioRecognition(index: number): void {
+    if (this.useDeepgram && this.deepgramConfigured) {
+      this.recognizeWithDeepgram(index);
+    } else {
+      this.startRecognition(index);
     }
   }
 

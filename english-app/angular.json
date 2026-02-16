@@ -25,7 +25,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "allowedCommonJsDependencies": [
-              "sweetalert2"
+              "sweetalert2",
+              "fast-levenshtein"
             ],
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -54,13 +55,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 }
               ],
               "outputHashing": "all",

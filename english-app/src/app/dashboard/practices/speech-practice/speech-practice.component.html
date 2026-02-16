@@ -106,7 +106,7 @@
                                 <button
                                     class="btn btn-lg rounded-pill px-5 py-3 shadow-sm d-flex align-items-center action-button"
                                     [ngClass]="speakingIndex === currentIndex ? 'btn-danger' : 'btn-outline-primary'"
-                                    (click)="recognizeWithDeepgram(currentIndex)">
+                                    (click)="startAudioRecognition(currentIndex)">
                                     <i class="fas me-2"
                                         [ngClass]="speakingIndex === currentIndex ? 'fa-stop' : 'fa-microphone'"></i>
                                     <span class="fw-semibold">

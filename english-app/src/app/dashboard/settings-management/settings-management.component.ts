@@ -23,6 +23,9 @@ export class SettingsManagementComponent implements OnInit {
     showEditModal = false;
     editSettingForm: FormGroup;
 
+    // Modal Deepgram Info
+    showDeepgramInfoModal = false;
+
     // Pagination
     currentPage = 1;
     itemsPerPage = 10;
@@ -230,5 +233,19 @@ export class SettingsManagementComponent implements OnInit {
 
     trackBySettingId(index: number, setting: ISetting): number | undefined {
         return setting.id;
+    }
+
+    /**
+     * Open Deepgram Info Modal
+     */
+    openDeepgramInfoModal(): void {
+        this.showDeepgramInfoModal = true;
+    }
+
+    /**
+     * Close Deepgram Info Modal
+     */
+    closeDeepgramInfoModal(): void {
+        this.showDeepgramInfoModal = false;
     }
 }

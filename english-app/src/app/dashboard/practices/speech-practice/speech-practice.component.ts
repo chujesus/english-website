@@ -103,24 +103,24 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
 
   /**
    * Load Deepgram settings from the database (una sola vez)
-   * Si existen valores válidos -> usa Deepgram
-   * Si no existen o están vacíos -> usa navegador
+   * Valida el API Key y determina si usar Deepgram o navegador
    */
   private loadDeepgramSettings(): void {
     this.settingService.getSettingByName('DeepgramApiKey').subscribe({
       next: (apiKeyResponse: any) => {
         this.settingService.getSettingByName('DeepgramUrl').subscribe({
-          next: (urlResponse: any) => {
+          next: async (urlResponse: any) => {
             const apiKey = apiKeyResponse?.data?.value || null;
             const url = urlResponse?.data?.value || null;
 
-            // Pasar los valores al servicio (validará si son válidos)
+            // Pasar los valores al servicio
             this.deepgramService.setCredentials(apiKey, url);
 
-            // Determinar qué método usar
+            // Validar si el API Key es válido
             if (apiKey && apiKey.trim()) {
-              this.deepgramConfigured = true;
-              this.useDeepgram = true;
+              const isValid = await this.deepgramService.validateApiKey();
+              this.deepgramConfigured = isValid;
+              this.useDeepgram = isValid;
             } else {
               this.deepgramConfigured = false;
               this.useDeepgram = false;
@@ -143,7 +143,7 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
 
   /**
    * Método selector automático de reconocimiento de audio
-   * Usa Deepgram si está configurado, sino usa la API del navegador
+   * Usa Deepgram si fue validado en ngOnInit, sino usa la API del navegador
    */
   startAudioRecognition(index: number): void {
     if (this.useDeepgram && this.deepgramConfigured) {

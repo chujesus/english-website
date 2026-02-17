@@ -119,7 +119,15 @@
                                 <tr *ngFor="let setting of getPaginatedSettings(); trackBy: trackBySettingId">
                                     <!-- Setting Name -->
                                     <td>
-                                        <div class="fw-bold">{{ setting.name }}</div>
+                                        <div class="fw-bold d-flex align-items-center gap-2">
+                                            {{ setting.name }}
+                                            <!-- Info Icon for DeepgramApiKey -->
+                                            <button *ngIf="setting.name === 'DeepgramApiKey'" type="button"
+                                                class="btn btn-sm btn-link p-0 text-info"
+                                                (click)="openDeepgramInfoModal()" title="Get help configuring Deepgram">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </div>
                                     </td>
 
                                     <!-- Value -->
@@ -245,5 +253,204 @@
     </div>
 </div>
 
+<!-- 🔹 Deepgram Info Modal -->
+<div *ngIf="showDeepgramInfoModal" class="modal fade show d-block" tabindex="-1" role="dialog"
+    style="background-color: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-key me-2"></i>How to Configure Deepgram
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="closeDeepgramInfoModal()"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                <!-- Step 1 -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary mb-2">
+                        <span class="badge bg-primary me-2">1</span>Create Deepgram Account
+                    </h6>
+                    <div class="ps-4">
+                        <ol class="small">
+                            <li>Go to <a href="https://deepgram.com" target="_blank"
+                                    class="text-primary">https://deepgram.com</a></li>
+                            <li>Click <strong>Sign Up</strong></li>
+                            <li>Register with Google, GitHub, or Email</li>
+                            <li>Confirm your email</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary mb-2">
+                        <span class="badge bg-primary me-2">2</span>Get Your API Key
+                    </h6>
+                    <div class="ps-4">
+                        <p class="small text-muted mb-2">Inside Deepgram Console:</p>
+                        <ol class="small">
+                            <li>Go to <strong>Console → API Keys</strong></li>
+                            <li>Click <strong>Create a New API Key</strong></li>
+                            <li>Configure:
+                                <ul class="mt-1">
+                                    <li><strong>Friendly Name:</strong> e.g., "english-platform"</li>
+                                    <li><strong>Expiration:</strong> "Never" (for development)</li>
+                                    <li><strong>Role:</strong> "Default" ✓</li>
+                                </ul>
+                            </li>
+                            <li>Click <strong>Create Key</strong></li>
+                            <li><span class="text-danger">⚠️ IMPORTANT:</span> Copy the key immediately (shown only
+                                once)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary mb-2">
+                        <span class="badge bg-primary me-2">3</span>API Key Format
+                    </h6>
+                    <div class="ps-4">
+                        <p class="small text-muted mb-2">Valid API Key example:</p>
+                        <div class="bg-light p-2 rounded border small" style="font-family: monospace;">
+                            0aae3bab144bb8b70d478a6329388fae6c94c137
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary mb-2">
+                        <span class="badge bg-primary me-2">4</span>DeepgramUrl (Standard)
+                    </h6>
+                    <div class="ps-4">
+                        <p class="small text-muted mb-2">Use this URL for all requests:</p>
+                        <div class="bg-light p-2 rounded border small" style="font-family: monospace;">
+                            https://api.deepgram.com/v1/listen
+                        </div>
+                        <p class="small text-muted mt-2 mb-0">
+                            <i class="fas fa-check text-success"></i> This is the same for all users
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Summary Table -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-primary mb-2">
+                        <span class="badge bg-primary me-2">5</span>Summary
+                    </h6>
+                    <div class="ps-4">
+                        <div class="table-responsive small">
+                            <table class="table table-sm table-bordered">
+                                <tr>
+                                    <td class="fw-bold bg-light" style="width: 40%;">Setting Name</td>
+                                    <td class="fw-bold bg-light">Value</td>
+                                    <td class="fw-bold bg-light" style="width: 30%;">Unique?</td>
+                                </tr>
+                                <tr>
+                                    <td>DeepgramApiKey</td>
+                                    <td style="font-family: monospace; font-size: 0.8rem;">Your API key from step 2</td>
+                                    <td><span class="badge bg-success">Yes</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DeepgramUrl</td>
+                                    <td style="font-family: monospace; font-size: 0.8rem;">
+                                        https://api.deepgram.com/v1/listen</td>
+                                    <td><span class="badge bg-secondary">Standard</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advantages of Deepgram -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-success mb-2">
+                        <span class="badge bg-success me-2">✓</span>Why Use Deepgram?
+                    </h6>
+                    <div class="ps-4">
+                        <ul class="small mb-2">
+                            <li><strong>🎯 High Accuracy:</strong> AI-powered speech recognition with superior accuracy
+                            </li>
+                            <li><strong>⚡ Fast Processing:</strong> Real-time transcription with minimal latency</li>
+                            <li><strong>🌐 Multiple Languages:</strong> Supports 20+ languages and dialects</li>
+                            <li><strong>🔊 Noise Handling:</strong> Better at handling background noise than browser API
+                            </li>
+                            <li><strong>📊 Advanced Features:</strong> Punctuation, confidence scores, speaker
+                                diarization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Free Plan & Pricing -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-info mb-2">
+                        <span class="badge bg-info me-2">💰</span>Free Credits & Pricing
+                    </h6>
+                    <div class="ps-4">
+                        <div class="alert alert-info small mb-2">
+                            <strong>🎁 First Time Account:</strong> Get <span class="fw-bold">$200 in free
+                                credits</span> when you sign up!
+                        </div>
+                        <p class="small mb-2">
+                            <strong>What does $200 cover?</strong>
+                        </p>
+                        <ul class="small mb-2">
+                            <li>Approximately <strong>~500 hours</strong> of speech processing (at standard rates)</li>
+                            <li>This lasts quite a long time for development and testing</li>
+                            <li>Perfect for building and optimizing your application</li>
+                        </ul>
+                        <p class="small text-muted mb-0">
+                            <i class="fas fa-info-circle me-1"></i><strong>After free credits:</strong> Pay-as-you-go
+                            pricing starts (~$0.0043 per minute)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- If Not Configured -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-warning mb-2">
+                        <span class="badge bg-warning text-dark me-2">❌</span>If Deepgram is NOT Configured
+                    </h6>
+                    <div class="ps-4">
+                        <p class="small mb-2">
+                            No problem! The application automatically falls back to the <strong>browser's native Web
+                                Speech API</strong>:
+                        </p>
+                        <ul class="small mb-2">
+                            <li>✓ No additional costs</li>
+                            <li>✗ Less accurate than Deepgram</li>
+                            <li>✗ Browser-specific implementation</li>
+                        </ul>
+                        <div class="bg-light p-2 rounded small text-muted">
+                            <i class="fas fa-arrow-right me-1"></i>
+                            <strong>Translation:</strong> Students can still practice speaking with the browser API, but
+                            Deepgram provides a better experience with higher accuracy.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Note -->
+                <div class="alert alert-warning small mb-0">
+                    <i class="fas fa-shield-alt me-2"></i>
+                    <strong>Security Note:</strong> Keep your API Key confidential. In production, consider storing it
+                    on your backend instead of the database.
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="closeDeepgramInfoModal()">
+                    <i class="fas fa-check me-1"></i>Got It!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal backdrop -->
 <div *ngIf="showEditModal" class="modal-backdrop fade show"></div>
+<div *ngIf="showDeepgramInfoModal" class="modal-backdrop fade show"></div>

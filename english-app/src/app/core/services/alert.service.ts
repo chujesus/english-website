@@ -73,7 +73,7 @@ export class AlertService extends MainService {
       icon: 'success',
       title,
       text,
-      confirmButtonText: 'Aceptar',
+      confirmButtonText: 'Accept',
       confirmButtonColor: '#7cd1f9',
       color: "#717171",
       showClass: {
@@ -90,7 +90,7 @@ export class AlertService extends MainService {
       allowOutsideClick: false,
       icon: 'info',
       text,
-      confirmButtonText: "Aceptar",
+      confirmButtonText: "Accept",
       confirmButtonColor: "#a5dc86",
       color: "#717171",
       showClass: {
@@ -108,7 +108,7 @@ export class AlertService extends MainService {
       title,
       text,
       color: "#717171",
-      confirmButtonText: 'Aceptar',
+      confirmButtonText: 'Accept',
       confirmButtonColor: '#6e7881',
     });
   }
@@ -119,7 +119,7 @@ export class AlertService extends MainService {
       title,
       text,
       color: "#717171",
-      confirmButtonText: 'Aceptar',
+      confirmButtonText: 'Accept',
       confirmButtonColor: '#EB9631',
       showClass: {
         popup: 'animate__animated animate__zoomIn'
@@ -141,7 +141,8 @@ export class AlertService extends MainService {
       },
       showCancelButton: true,
       confirmButtonColor: '#ff5f5f',
-      confirmButtonText: 'Eliminar',
+      confirmButtonText: 'Delete',
+      cancelButtonText: 'Cancel',
       reverseButtons: true
     });
   }
@@ -162,8 +163,8 @@ export class AlertService extends MainService {
       color: "#717171",
       showConfirmButton: true,
       showCancelButton: true,
-      confirmButtonText: 'Confirmar!',
-      cancelButtonText: 'Cancelar',
+      confirmButtonText: 'Confirm!',
+      cancelButtonText: 'Cancel',
       buttonsStyling: false,
       allowOutsideClick: false,
       reverseButtons: true
@@ -187,7 +188,7 @@ export class AlertService extends MainService {
       icon: 'question',
       color: "#717171",
       showCancelButton: true,
-      confirmButtonText: 'Si',
+      confirmButtonText: 'Yes',
       cancelButtonText: 'No',
       reverseButtons: true
     });

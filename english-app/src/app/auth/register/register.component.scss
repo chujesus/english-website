@@ -11,3 +11,337 @@
 .form-check-input.is-invalid ~ .invalid-feedback {
   display: block;
 }
+// Dynamic Background Styles
+.register-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(42, 82, 152, 0.1) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+// Animated Background Elements
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+
+  .shape {
+    position: absolute;
+    opacity: 0.1;
+    border-radius: 50%;
+
+    &.shape-1 {
+      width: 300px;
+      height: 300px;
+      background: #00d4ff;
+      top: -50px;
+      right: -50px;
+      animation: floatSlow 8s ease-in-out infinite;
+    }
+
+    &.shape-2 {
+      width: 200px;
+      height: 200px;
+      background: #2a5298;
+      bottom: 100px;
+      left: 50px;
+      animation: floatMedium 10s ease-in-out infinite;
+    }
+
+    &.shape-3 {
+      width: 250px;
+      height: 250px;
+      background: #00d4ff;
+      bottom: -50px;
+      right: 100px;
+      animation: floatFast 12s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(20px, 30px) scale(1.05);
+  }
+}
+
+// Register Wrapper - positioned above background
+.register-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+// Card Container - ensures perfect centering
+.register-card-container {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  justify-content: center;
+}
+
+// Card Header Top - Back Button Container
+.card-header-top {
+  padding: 16px 24px 0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: none;
+}
+
+// Back Button - Professional styling
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(42, 82, 152, 0.08) 100%);
+  color: #1e3c72;
+  border: 1px solid rgba(30, 60, 114, 0.2);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.2) 0%, rgba(42, 82, 152, 0.15) 100%);
+    border-color: rgba(30, 60, 114, 0.4);
+    color: #2a5298;
+    box-shadow: 0 4px 12px rgba(30, 60, 114, 0.15);
+
+    i {
+      transform: translateX(-3px);
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// Register Wrapper - positioned above background
+.register-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Body
+.body {
+  width: 100%;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  &.card-size {
+    max-width: 520px;
+  }
+}
+
+// Form Elements
+.form-group {
+  margin-bottom: 1.5rem;
+
+  .input-group-text {
+    background-color: rgba(30, 60, 114, 0.1);
+    border: 1px solid rgba(30, 60, 114, 0.2);
+    color: #1e3c72;
+  }
+
+  .form-control {
+    border: 1px solid rgba(30, 60, 114, 0.2);
+    transition: all 0.3s ease;
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-color: #1e3c72;
+      box-shadow: 0 0 0 0.2rem rgba(42, 82, 152, 0.25);
+    }
+
+    &.is-invalid {
+      border-color: #dc3545;
+    }
+  }
+}
+
+// Button Styles
+.btn-primary {
+  background-color: #1e3c72;
+  border-color: #1e3c72;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #2a5298;
+    border-color: #2a5298;
+    box-shadow: 0 4px 15px rgba(42, 82, 152, 0.4);
+  }
+
+  &:active {
+    background-color: #1a2f5c;
+    border-color: #1a2f5c;
+  }
+}
+
+// Heading Styles
+h4 {
+  color: #1e3c72;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+// Small Text & Messages
+small {
+  &.text-muted {
+    color: #6c757d !important;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+// Pattern Message
+.pattern-message {
+  ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    font-size: 0.875rem;
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+// Icon Styling
+.fa-sign-in-alt {
+  color: #ffc107;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #ffb300;
+  }
+}
+
+// Eye Icon
+.eyeicon {
+  cursor: pointer;
+  color: #1e3c72;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #2a5298;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .register-container {
+    &::before {
+      background: linear-gradient(135deg, rgba(30, 60, 114, 0.9) 0%, rgba(42, 82, 152, 0.9) 100%);
+    }
+  }
+
+  .card.card-size {
+    max-width: 100%;
+    margin: 0 1rem;
+  }
+
+  .animated-bg .shape {
+    opacity: 0.05;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin: 1rem 0.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .animated-bg .shape {
+    &.shape-1 {
+      width: 200px;
+      height: 200px;
+    }
+
+    &.shape-2 {
+      width: 150px;
+      height: 150px;
+    }
+
+    &.shape-3 {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}

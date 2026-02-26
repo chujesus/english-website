@@ -1,0 +1,234 @@
+<div class="landing-container" [ngStyle]="getBackgroundStyle()">
+    <!-- Animated Background Elements -->
+    <div class="animated-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" [class.scrolled]="isNavbarScrolled" [class.mobile-open]="isMobileMenuOpen">
+        <div class="navbar-container">
+            <!-- Brand -->
+            <div class="navbar-brand" (click)="scrollToSection('hero')">
+                <div class="brand-logo">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <div class="brand-text">
+                    <div class="brand-name">{{ institutionName }}</div>
+                    <div class="brand-tagline">Academia de Inglés</div>
+                </div>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="nav-menu">
+                <a class="nav-link" href="#content" (click)="scrollToSection('modules')">Contenido</a>
+                <a class="nav-link" href="#modules" (click)="scrollToSection('modules')">Módulos</a>
+                <a class="nav-link" href="#practices" (click)="scrollToSection('practices')">Prácticas</a>
+                <a class="nav-link" href="#benefits" (click)="scrollToSection('benefits')">Beneficios</a>
+                <a class="nav-link" href="#faq" (click)="scrollToSection('faq')">FAQ</a>
+                <a class="nav-link" href="#contact" (click)="scrollToSection('contact')">Contacto</a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="nav-actions">
+                <button class="btn btn-outline" (click)="goToLogin()">Ingresar</button>
+                <button class="btn btn-primary" (click)="goToRegister()">Registrarse</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text fade-on-scroll">
+                <h1 class="hero-title">{{ institutionName }}</h1>
+                <p class="hero-subtitle">Domina el inglés con una plataforma de aprendizaje integral e interactiva
+                    diseñada para tu éxito
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn btn-primary btn-lg" (click)="goToLogin()">
+                        <i class="fas fa-sign-in-alt me-2"></i>Ingresar Ahora
+                    </button>
+                    <button class="btn btn-secondary btn-lg" (click)="goToRegister()">
+                        <i class="fas fa-user-plus me-2"></i>Crear Cuenta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="section modules-section" id="modules">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Módulos del Curso</h2>
+                <p class="section-subtitle">Aprende English en 4 niveles de dificultad, desde principiante hasta
+                    avanzado</p>
+            </div>
+
+            <div class="modules-grid">
+                <div *ngFor="let module of modules" class="module-card fade-on-scroll"
+                    [class]="getModuleBadgeClass(module.level)">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i [class]="module.icon"></i>
+                        </div>
+                        <span class="module-badge" [class]="getModuleBadgeClass(module.level)">{{ module.level }}</span>
+                    </div>
+                    <h3 class="module-title">{{ module.title }}</h3>
+                    <p class="module-description">{{ module.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practices Section -->
+    <section class="section practices-section" id="practices">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Prácticas Interactivas</h2>
+                <p class="section-subtitle">Desarrolla todas tus habilidades con ejercicios interactivos y atractivos
+                </p>
+            </div>
+
+            <div class="practices-grid">
+                <div *ngFor="let practice of practices; let i = index" class="practice-card fade-on-scroll"
+                    [class]="getPracticeColorClass(practice.color)" [style.animation-delay]="(i * 0.1) + 's'">
+                    <div class="practice-icon">
+                        <i [class]="practice.icon"></i>
+                    </div>
+                    <h3 class="practice-title">{{ practice.title }}</h3>
+                    <p class="practice-description">{{ practice.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-section" id="benefits">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">¿Por qué elegir CINDEA?</h2>
+                <p class="section-subtitle">Una plataforma completa diseñada para tu éxito en el aprendizaje del inglés
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div *ngFor="let benefit of benefits" class="benefit-card fade-on-scroll">
+                    <div class="benefit-icon">
+                        <i [class]="benefit.icon"></i>
+                    </div>
+                    <h3 class="benefit-title">{{ benefit.title }}</h3>
+                    <p class="benefit-description">{{ benefit.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container container-narrow">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Encuentra respuestas a las preguntas más comunes</p>
+            </div>
+
+            <div class="faq-container">
+                <div *ngFor="let item of faqItems" class="faq-item fade-on-scroll" [class.open]="item.open">
+                    <div class="faq-question" (click)="toggleFAQ(item)">
+                        <span class="faq-text">{{ item.question }}</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" *ngIf="item.open">
+                        <p>{{ item.answer }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content fade-on-scroll">
+                <h2 class="cta-title">¿Listo para empezar tu aprendizaje?</h2>
+                <p class="cta-subtitle">Únete a miles de estudiantes que están mejorando su inglés hoy</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-lg" (click)="goToRegister()">
+                        <i class="fas fa-user-plus me-2"></i>Registrarse Ahora
+                    </button>
+                    <button class="btn btn-secondary btn-lg" (click)="goToLogin()">
+                        <i class="fas fa-sign-in-alt me-2"></i>Ya tengo cuenta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 class="footer-title">{{ institutionName }}</h4>
+                    <p class="footer-description">Aprende inglés de manera interactiva, divertida y efectiva con
+                        nuestras
+                        plataformas educativas de próxima generación.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" (click)="scrollToSection('modules')">Módulos</a></li>
+                        <li><a href="#" (click)="scrollToSection('practices')">Prácticas</a></li>
+                        <li><a href="#" (click)="scrollToSection('faq')">FAQ</a></li>
+                        <li><a href="#" (click)="goToLogin()">Ingresar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Institucional</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="footer-section">
+                    <h4 class="footer-title">Horario</h4>
+                    <ul class="footer-info">
+                        <li>Lunes - Viernes: 7:00 AM - 6:00 PM</li>
+                        <li>Sábado: 8:00 AM - 4:00 PM</li>
+                        <li>Domingo: Cerrado</li>
+                        <li style="margin-top: 12px;">
+                            <strong>Email:</strong> <a href="mailto:info@cindea.cr">info&#64;cindea.cr</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 UWS. Todos los derechos reservados. | Diseñado con <i class="fas fa-heart"></i>
+                    para
+                    aprendices de inglés</p>
+            </div>
+        </div>
+    </footer>
+</div>

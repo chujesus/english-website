@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { authGuard, guestGuard } from './core/guards/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LandingComponent } from './landing/landing.component';
 
 export const routes: Routes = [
     // Auth routes - Main (only for non-authenticated users)
@@ -86,15 +87,15 @@ export const routes: Routes = [
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]
     },
-    // Ruta principal redirige a login
+    // Landing page - Public
     {
         path: '',
-        redirectTo: '/auth/login',
-        pathMatch: 'full'
+        component: LandingComponent,
+        title: 'CINDEA Abangares - Learn English'
     },
-    // Ruta wildcard para 404 (redirige a login)
+    // Ruta wildcard para 404 (redirige a landing)
     {
         path: '**',
-        redirectTo: '/auth/login'
+        redirectTo: ''
     }
 ];

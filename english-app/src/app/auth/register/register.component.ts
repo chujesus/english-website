@@ -11,6 +11,7 @@ import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
 import { TseService } from '../../core/services/tse.service';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { SettingService } from '../../core/services/setting.service';
 import { onlyNumbers, titleCaseTranform } from '../../shared/validators/validators';
 
 @Component({
@@ -35,12 +36,19 @@ export class RegisterComponent implements OnInit {
     isMinPasswordConfirmAvailable = false;
     private searchText$ = new Subject<string>();
 
+    // Background & Branding
+    loginBackgroundUrl: string | null = null;
+    institutionName = 'English Learning Platform';
+    loadingSettings = true;
+
     constructor(private fbSubscribe: FormBuilder, private authService: AuthService, private alertService: AlertService,
-        private router: Router, private tseService: TseService, private localStorageService: LocalStorageService) {
+        private router: Router, private tseService: TseService, private localStorageService: LocalStorageService,
+        private settingService: SettingService) {
         this.initForm();
     }
 
     ngOnInit(): void {
+        this.loadSettings();
         this.searchText$.pipe(debounceTime(1000), distinctUntilChanged(), switchMap(packageName =>
             this.authService.getUserIdentification(packageName))).subscribe((user: IUser[]) => {
                 if (user.length > 0) {
@@ -61,6 +69,50 @@ export class RegisterComponent implements OnInit {
                     });
                 }
             });
+    }
+
+    /**
+     * Load branding and background from settings
+     */
+    loadSettings(): void {
+        this.loadingSettings = true;
+        this.settingService.getAllSettings().subscribe({
+            next: (response: any) => {
+                if (response.data && Array.isArray(response.data)) {
+                    const institutionSetting = response.data.find((s: any) => s.name === 'Institution name');
+                    const backgroundSetting = response.data.find((s: any) => s.name === 'Login Background');
+
+                    if (institutionSetting?.value) {
+                        this.institutionName = institutionSetting.value;
+                    }
+                    if (backgroundSetting?.value) {
+                        this.loginBackgroundUrl = backgroundSetting.value;
+                    }
+                }
+                this.loadingSettings = false;
+            },
+            error: () => {
+                console.log('Could not load settings, using defaults');
+                this.loadingSettings = false;
+            }
+        });
+    }
+
+    /**
+     * Get dynamic background styles
+     */
+    getBackgroundStyle() {
+        if (this.loginBackgroundUrl) {
+            return {
+                'background': `linear-gradient(135deg, rgba(43, 143, 250, 0.25) 0%, rgba(0, 86, 184, 0.25) 100%), url('${this.loginBackgroundUrl}')`,
+                'background-size': 'cover',
+                'background-position': 'center',
+                'background-attachment': 'fixed'
+            };
+        }
+        return {
+            'background': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+        };
     }
 
     initForm() {

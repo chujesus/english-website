@@ -177,6 +177,51 @@ $transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
     animation: cardPop 0.8s $transition-ease 0.1s both;
 }
 
+// Card Header Top - Back Button Container
+.card-header-top {
+    padding: 16px 24px 0;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: none;
+}
+
+// Back Button - Professional styling
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(42, 82, 152, 0.08) 100%);
+    color: #1e3c72;
+    border: 1px solid rgba(30, 60, 114, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    i {
+        font-size: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        background: linear-gradient(135deg, rgba(30, 60, 114, 0.2) 0%, rgba(42, 82, 152, 0.15) 100%);
+        border-color: rgba(30, 60, 114, 0.4);
+        color: #2a5298;
+        box-shadow: 0 4px 12px rgba(30, 60, 114, 0.15);
+
+        i {
+            transform: translateX(-3px);
+        }
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
 @keyframes cardPop {
     from {
         opacity: 0;

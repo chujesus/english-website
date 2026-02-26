@@ -23,6 +23,41 @@ const getAllSettings = async (req, res = response) => {
   }
 };
 
+const getSettingsByType = async (req, res = response) => {
+  try {
+    const { type } = req.params;
+
+    if (!type || !['setting', 'link'].includes(type)) {
+      return res.status(400).json({
+        ok: false,
+        data: [],
+        message: "Valid type parameter is required (setting or link)",
+      });
+    }
+
+    const [settings] = await pool.query(
+      "SELECT * FROM settings WHERE type = ? ORDER BY name ASC",
+      [type]
+    );
+
+    return res.json({
+      ok: true,
+      data: settings || [],
+      message:
+        settings.length > 0
+          ? `${type === 'setting' ? 'Settings' : 'Link'} retrieved successfully`
+          : `No ${type === 'setting' ? 'settings' : 'link'} found`,
+    });
+  } catch (error) {
+    console.error("Error getting settings by type:", error);
+    return res.status(500).json({
+      ok: false,
+      data: [],
+      message: "Internal server error",
+    });
+  }
+};
+
 const getSettingByName = async (req, res = response) => {
   try {
     const { name } = req.params;
@@ -65,13 +100,21 @@ const getSettingByName = async (req, res = response) => {
 
 const createSetting = async (req, res = response) => {
   try {
-    const { name, value } = req.body;
+    const { name, value, type = 'setting' } = req.body;
 
     if (!name || name.trim() === "") {
       return res.status(400).json({
         ok: false,
         data: null,
         message: "Setting name is required",
+      });
+    }
+
+    if (!['setting', 'link'].includes(type)) {
+      return res.status(400).json({
+        ok: false,
+        data: null,
+        message: "Type must be 'setting' or 'link'",
       });
     }
 
@@ -90,8 +133,8 @@ const createSetting = async (req, res = response) => {
     }
 
     const [result] = await pool.query(
-      "INSERT INTO settings (name, value) VALUES (?, ?)",
-      [name, value || null]
+      "INSERT INTO settings (name, value, type) VALUES (?, ?, ?)",
+      [name, value || null, type]
     );
 
     const [newSetting] = await pool.query(
@@ -117,7 +160,7 @@ const createSetting = async (req, res = response) => {
 const updateSetting = async (req, res = response) => {
   try {
     const { id } = req.params;
-    const { name, value } = req.body;
+    const { name, value, type = 'setting' } = req.body;
 
     if (!id) {
       return res.status(400).json({
@@ -132,6 +175,14 @@ const updateSetting = async (req, res = response) => {
         ok: false,
         data: null,
         message: "Setting name is required",
+      });
+    }
+
+    if (!['setting', 'link'].includes(type)) {
+      return res.status(400).json({
+        ok: false,
+        data: null,
+        message: "Type must be 'setting' or 'link'",
       });
     }
 
@@ -163,9 +214,10 @@ const updateSetting = async (req, res = response) => {
       });
     }
 
-    await pool.query("UPDATE settings SET name = ?, value = ? WHERE id = ?", [
+    await pool.query("UPDATE settings SET name = ?, value = ?, type = ? WHERE id = ?", [
       name,
       value || null,
+      type,
       id,
     ]);
 
@@ -235,6 +287,7 @@ const deleteSetting = async (req, res = response) => {
 module.exports = {
   getAllSettings,
   getSettingByName,
+  getSettingsByType,
   createSetting,
   updateSetting,
   deleteSetting,

@@ -45,7 +45,8 @@ export class SettingsManagementComponent implements OnInit {
     createEditForm(): FormGroup {
         return this.fb.group({
             name: ['', [Validators.required, Validators.minLength(3)]],
-            value: ['']
+            value: [''],
+            type: ['setting']
         });
     }
 
@@ -53,7 +54,7 @@ export class SettingsManagementComponent implements OnInit {
         this.loading = true;
         this.error = '';
 
-        this.settingService.getAllSettings().subscribe({
+        this.settingService.getSettingsByType('setting').subscribe({
             next: (response: any) => {
                 this.settings = response.data || [];
                 this.applyFilters();

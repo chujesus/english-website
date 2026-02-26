@@ -2,6 +2,7 @@ const { Router } = require("express");
 const {
   getAllSettings,
   getSettingByName,
+  getSettingsByType,
   createSetting,
   updateSetting,
   deleteSetting,
@@ -11,6 +12,9 @@ const router = Router();
 
 // GET all settings
 router.get("/", getAllSettings);
+
+// GET settings by type (must be before /:id to avoid conflicts)
+router.get("/type/:type", getSettingsByType);
 
 // GET setting by name
 router.get("/name/:name", getSettingByName);

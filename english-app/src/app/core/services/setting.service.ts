@@ -48,4 +48,11 @@ export class SettingService extends MainService {
     deleteSetting(id: number): Observable<ApiResponse> {
         return this.http.delete<ApiResponse>(`${this.baseUrl}/settings/${id}`);
     }
+
+    /**
+     * Get settings by type (setting or links)
+     */
+    getSettingsByType(type: 'setting' | 'link'): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.baseUrl}/settings/type/${type}`);
+    }
 }

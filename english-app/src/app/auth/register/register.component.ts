@@ -265,7 +265,7 @@ export class RegisterComponent implements OnInit {
                     password: this.form_subscribe.value.password,
                     email: this.form_subscribe.value.email,
                     phone: this.form_subscribe.value.phone,
-                    state: Status.Active,
+                    state: Status.Inactive,
                     profile: await this.getUserAdmin() ? this.profile.Administrator : this.profile.Student,
                     created_at: formattedDate,
                     updated_at: formattedDate
@@ -274,14 +274,8 @@ export class RegisterComponent implements OnInit {
                     next: (data: IUser[]) => {
                         if (data.length > 0) {
                             this.alertService.closeLoading();
-                            // Store user credentials
-                            this.localStorageService.setCredentials(data[0]);
                             this.alertService.showSuccessAlert("Registration completed successfully!", "").then(() => {
-                                if (data[0].profile === this.profile.Administrator) {
-                                    this.router.navigate(['/dashboard/admin']);
-                                } else if (data[0].profile === this.profile.Student) {
-                                    this.router.navigate(['/dashboard/control-panel']);
-                                }
+                                this.router.navigate(['/']);
                             });
                         } else {
                             this.alertService.closeLoading();

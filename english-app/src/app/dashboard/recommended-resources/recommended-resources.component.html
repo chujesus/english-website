@@ -1,99 +1,214 @@
-<!-- Page Header -->
-<div class="bg-light py-4 mb-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-8">
-                <h1 class="display-6 text-primary">
-                    <i class="fas fa-star text-warning me-2"></i>Recommended Resources
-                </h1>
-                <p class="lead text-muted mb-0">Explore curated books, videos, and tutorials to enhance your English
-                    learning</p>
-            </div>
-            <div class="col-md-4 text-end">
-                <button *ngIf="isAdmin()" class="btn btn-primary" (click)="openEditModal()">
-                    <i class="fas fa-plus me-2"></i>Add Resource
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="container-fluid py-4">
+    <!-- Enhanced Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm bg-gradient-light">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <!-- Breadcrumb Navigation -->
+                            <nav aria-label="breadcrumb" class="mb-2">
+                                <ol class="breadcrumb mb-0 bg-transparent p-0">
+                                    <li class="breadcrumb-item">
+                                        <a routerLink="/dashboard/control-panel"
+                                            class="text-primary cursor-pointer fw-semibold">
+                                            <i class="fas fa-home me-1"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Recommended Resources
+                                    </li>
+                                </ol>
+                            </nav>
 
-<!-- Error Alert -->
-<div *ngIf="error" class="alert alert-danger alert-dismissible fade show mx-4" role="alert">
-    <i class="fas fa-exclamation-triangle me-2"></i>
-    {{ error }}
-    <button type="button" class="btn-close" (click)="error = ''" aria-label="Close"></button>
-</div>
-
-<!-- Success Alert -->
-<div *ngIf="success" class="alert alert-success alert-dismissible fade show mx-4" role="alert">
-    <i class="fas fa-check-circle me-2"></i>
-    {{ success }}
-    <button type="button" class="btn-close" (click)="success = ''" aria-label="Close"></button>
-</div>
-
-<!-- Loading State -->
-<div *ngIf="loading" class="text-center py-5">
-    <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <p class="mt-3 text-muted">Loading resources...</p>
-</div>
-
-<!-- Recommended Links -->
-<div *ngIf="!loading" class="container mb-5">
-    <div class="row g-4">
-        <div *ngFor="let link of recommendedLinks" class="col-lg-4 col-md-6 col-sm-12">
-            <div class="recommended-card h-100 shadow-sm border-0 position-relative">
-                <!-- Admin Actions -->
-                <div *ngIf="isAdmin()" class="position-absolute top-0 end-0 p-2" style="z-index: 10;">
-                    <button class="btn btn-sm btn-outline-primary me-1" (click)="openEditModal(link)" 
-                        title="Edit">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-sm btn-outline-danger" (click)="deleteLink(link)" 
-                        title="Delete">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-
-                <!-- Card Header with Link Data -->
-                <div class="card-header bg-gradient bg-primary">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <span class="badge bg-white text-dark">{{ link.name }}</span>
-                        <i class="fas fa-external-link-alt text-white"></i>
+                            <!-- Dynamic Page Title -->
+                            <h2 class="mb-0 d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-2"></i>
+                                Recommended Resources
+                                <span class="badge bg-secondary ms-2 rounded-pill">{{ filteredLinks.length }}</span>
+                            </h2>
+                            <p class="mb-0 mt-1">Manage curated learning resources and external links</p>
+                        </div>
+                        <button class="btn btn-outline-primary" routerLink="/dashboard/control-panel">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+                        </button>
                     </div>
                 </div>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-dark mb-2">{{ link.name }}</h5>
-                    <p class="card-text text-muted flex-grow-1" [title]="link.value || 'No description'">
-                        {{ link.value ? (link.value.length > 100 ? link.value.substring(0, 100) + '...' : link.value) : 'No description' }}
-                    </p>
-                    <a [href]="link.value" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-outline-primary btn-sm mt-3 align-self-start">
-                        <i class="fas fa-external-link-alt me-2"></i>Visit Resource
-                    </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Alert -->
+    <div *ngIf="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        {{ error }}
+        <button type="button" class="btn-close" (click)="error = ''" aria-label="Close"></button>
+    </div>
+
+    <!-- Success Alert -->
+    <div *ngIf="success" class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle me-2"></i>
+        {{ success }}
+        <button type="button" class="btn-close" (click)="success = ''" aria-label="Close"></button>
+    </div>
+
+    <!-- Search and Actions (Admin Only) -->
+    <div *ngIf="isAdmin()" class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="row g-3 align-items-end">
+                        <!-- Search Input -->
+                        <div class="col-md-8">
+                            <label for="searchTerm" class="form-label">Search Resources</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control" id="searchTerm" [(ngModel)]="searchTerm"
+                                    (input)="onSearchChange()" placeholder="Search by name or URL...">
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="col-md-4">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-grow-1" (click)="openEditModal()">
+                                    <i class="fas fa-plus me-1"></i>Add Resource
+                                </button>
+                                <button class="btn btn-outline-secondary" (click)="loadRecommendedLinks()">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Empty State -->
-        <div *ngIf="recommendedLinks.length === 0" class="col-12">
-            <div class="text-center py-5">
-                <i class="fas fa-star fa-3x text-warning mb-3" style="opacity: 0.5;"></i>
-                <p class="text-muted">No recommended resources available</p>
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3 text-muted">Loading resources...</p>
+    </div>
+
+    <!-- Resources Table -->
+    <div *ngIf="!loading" class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-link me-2"></i>Recommended Learning Resources
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Resource Name</th>
+                                    <th>URL</th>
+                                    <th>Last Modified</th>
+                                    <th *ngIf="isAdmin()">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let link of getPaginatedLinks(); trackBy: trackByLinkId">
+                                    <!-- Resource Name -->
+                                    <td>
+                                        <div class="fw-bold">
+                                            {{ link.name }}
+                                        </div>
+                                    </td>
+
+                                    <!-- URL -->
+                                    <td>
+                                        <div class="text-muted small" [title]="link.value || 'No URL'">
+                                            <a [href]="link.value" target="_blank" rel="noopener noreferrer" 
+                                                *ngIf="link.value" class="text-decoration-none">
+                                                {{ link.value.length > 50 ? link.value.substring(0, 50) + '...' : link.value }}
+                                                <i class="fas fa-external-link-alt ms-1" style="font-size: 0.75rem;"></i>
+                                            </a>
+                                            <span *ngIf="!link.value">-</span>
+                                        </div>
+                                    </td>
+
+                                    <!-- Last Modified -->
+                                    <td>
+                                        <small class="text-muted">
+                                            {{ link.updated_at | date:'short' }}
+                                        </small>
+                                    </td>
+
+                                    <!-- Actions (Admin Only) -->
+                                    <td *ngIf="isAdmin()">
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <!-- Edit Button -->
+                                            <button type="button" class="btn btn-outline-primary btn-sm"
+                                                (click)="openEditModal(link)" title="Edit Resource">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+
+                                            <!-- Delete Button -->
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                (click)="deleteLink(link)" title="Delete Resource">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- No Resources Found -->
+                                <tr *ngIf="getPaginatedLinks().length === 0">
+                                    <td [colSpan]="isAdmin() ? 4 : 3" class="text-center py-4 text-muted">
+                                        <i class="fas fa-star fa-2x mb-3" style="opacity: 0.3;"></i>
+                                        <div>No recommended resources found</div>
+                                        <small *ngIf="isAdmin()">Create a new resource to get started</small>
+                                        <small *ngIf="!isAdmin()">No resources available at the moment</small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pagination (Admin Only) -->
+                <div *ngIf="isAdmin() && totalPages > 1" class="card-footer">
+                    <nav aria-label="Resources pagination">
+                        <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <li class="page-item" [class.disabled]="currentPage === 1">
+                                <button class="page-link" (click)="goToPage(currentPage - 1)"
+                                    [disabled]="currentPage === 1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                            </li>
+                            <li *ngFor="let page of getPages()" class="page-item" [class.active]="page === currentPage">
+                                <button class="page-link" (click)="goToPage(page)">{{ page }}</button>
+                            </li>
+                            <li class="page-item" [class.disabled]="currentPage === totalPages">
+                                <button class="page-link" (click)="goToPage(currentPage + 1)"
+                                    [disabled]="currentPage === totalPages">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Edit/Create Link Modal -->
+<!-- Edit/Create Resource Modal -->
 <div class="modal fade" [class.show]="showEditModal" [style.display]="showEditModal ? 'block' : 'none'" 
-    tabindex="-1" role="dialog" aria-labelledby="editLinkModalLabel" aria-hidden="true">
+    tabindex="-1" role="dialog" aria-labelledby="editResourceModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title" id="editLinkModalLabel">
+                <h5 class="modal-title" id="editResourceModalLabel">
                     {{ selectedLink ? 'Edit Resource' : 'Add New Resource' }}
                 </h5>
                 <button type="button" class="btn-close btn-close-white" (click)="closeEditModal()" 
@@ -105,7 +220,8 @@
                     <div class="mb-3">
                         <label for="resourceName" class="form-label">Resource Name</label>
                         <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('name')" 
-                            id="resourceName" formControlName="name" placeholder="e.g., BBC Learning English">
+                            id="resourceName" formControlName="name" 
+                            placeholder="e.g., BBC Learning English">
                         <div class="invalid-feedback" *ngIf="isFieldInvalid('name')">
                             <span *ngIf="editLinkForm.get('name')?.hasError('required')">
                                 Resource name is required
@@ -121,7 +237,7 @@
                         <label for="resourceUrl" class="form-label">URL</label>
                         <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('value')" 
                             id="resourceUrl" formControlName="value" 
-                            placeholder="https://example.com">
+                            placeholder="https://example.com/resource">
                         <div class="invalid-feedback" *ngIf="isFieldInvalid('value')">
                             <span *ngIf="editLinkForm.get('value')?.hasError('required')">
                                 URL is required
@@ -130,6 +246,9 @@
                                 URL must be at least 5 characters
                             </span>
                         </div>
+                        <small class="text-muted d-block mt-1">
+                            <i class="fas fa-info-circle me-1"></i>Include the full URL starting with https://
+                        </small>
                     </div>
                 </form>
             </div>
@@ -138,7 +257,7 @@
                 <button type="button" class="btn btn-primary" (click)="saveLink()" 
                     [disabled]="editLinkForm.invalid || loading">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
-                    {{ selectedLink ? 'Update' : 'Create' }}
+                    {{ selectedLink ? 'Update Resource' : 'Create Resource' }}
                 </button>
             </div>
         </div>

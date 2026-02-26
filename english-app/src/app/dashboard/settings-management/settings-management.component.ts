@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AlertService } from '../../core/services/alert.service';
 import { SettingService } from '../../core/services/setting.service';
 import { ISetting } from '../../shared/interfaces/models';
+import { SweetAlertResult } from 'sweetalert2';
 
 @Component({
     selector: 'app-settings-management',
@@ -32,6 +34,7 @@ export class SettingsManagementComponent implements OnInit {
     totalPages = 0;
 
     constructor(
+        private alertService: AlertService,
         private settingService: SettingService,
         private fb: FormBuilder
     ) {
@@ -187,25 +190,27 @@ export class SettingsManagementComponent implements OnInit {
     }
 
     deleteSetting(setting: ISetting): void {
-        if (!confirm(`Are you sure you want to delete the setting "${setting.name}"?`)) {
-            return;
-        }
-
-        if (!setting.id) return;
-
-        this.loading = true;
-        this.settingService.deleteSetting(setting.id).subscribe({
-            next: (response: any) => {
-                this.success = response.message || 'Setting deleted successfully';
-                this.loadSettings();
-                this.loading = false;
-
-                setTimeout(() => this.success = '', 3000);
-            },
-            error: (error: any) => {
-                this.error = error.error?.message || 'Error deleting setting';
-                this.loading = false;
+        this.alertService.showDeleteAlert('Delete Setting', `Are you sure you want to delete the setting "${setting.name}"?`).then((result: SweetAlertResult) => {
+            if (!result.isConfirmed) {
+                return;
             }
+
+            if (!setting.id) return;
+
+            this.loading = true;
+            this.settingService.deleteSetting(setting.id).subscribe({
+                next: (response: any) => {
+                    this.success = response.message || 'Setting deleted successfully';
+                    this.loadSettings();
+                    this.loading = false;
+
+                    setTimeout(() => this.success = '', 3000);
+                },
+                error: (error: any) => {
+                    this.error = error.error?.message || 'Error deleting setting';
+                    this.loading = false;
+                }
+            });
         });
     }
 

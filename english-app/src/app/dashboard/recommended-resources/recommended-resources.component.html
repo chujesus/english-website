@@ -127,10 +127,12 @@
                                     <!-- URL -->
                                     <td>
                                         <div class="text-muted small" [title]="link.value || 'No URL'">
-                                            <a [href]="link.value" target="_blank" rel="noopener noreferrer" 
+                                            <a [href]="link.value" target="_blank" rel="noopener noreferrer"
                                                 *ngIf="link.value" class="text-decoration-none">
-                                                {{ link.value.length > 50 ? link.value.substring(0, 50) + '...' : link.value }}
-                                                <i class="fas fa-external-link-alt ms-1" style="font-size: 0.75rem;"></i>
+                                                {{ link.value.length > 50 ? link.value.substring(0, 50) + '...' :
+                                                link.value }}
+                                                <i class="fas fa-external-link-alt ms-1"
+                                                    style="font-size: 0.75rem;"></i>
                                             </a>
                                             <span *ngIf="!link.value">-</span>
                                         </div>
@@ -203,15 +205,15 @@
 </div>
 
 <!-- Edit/Create Resource Modal -->
-<div class="modal fade" [class.show]="showEditModal" [style.display]="showEditModal ? 'block' : 'none'" 
-    tabindex="-1" role="dialog" aria-labelledby="editResourceModalLabel" aria-hidden="true">
+<div class="modal fade" [class.show]="showEditModal" [style.display]="showEditModal ? 'block' : 'none'" tabindex="-1"
+    role="dialog" aria-labelledby="editResourceModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="editResourceModalLabel">
                     {{ selectedLink ? 'Edit Resource' : 'Add New Resource' }}
                 </h5>
-                <button type="button" class="btn-close btn-close-white" (click)="closeEditModal()" 
+                <button type="button" class="btn-close btn-close-white" (click)="closeEditModal()"
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -219,9 +221,8 @@
                     <!-- Resource Name -->
                     <div class="mb-3">
                         <label for="resourceName" class="form-label">Resource Name</label>
-                        <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('name')" 
-                            id="resourceName" formControlName="name" 
-                            placeholder="e.g., BBC Learning English">
+                        <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('name')"
+                            id="resourceName" formControlName="name" placeholder="e.g., BBC Learning English">
                         <div class="invalid-feedback" *ngIf="isFieldInvalid('name')">
                             <span *ngIf="editLinkForm.get('name')?.hasError('required')">
                                 Resource name is required
@@ -235,9 +236,8 @@
                     <!-- Resource URL -->
                     <div class="mb-3">
                         <label for="resourceUrl" class="form-label">URL</label>
-                        <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('value')" 
-                            id="resourceUrl" formControlName="value" 
-                            placeholder="https://example.com/resource">
+                        <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('value')"
+                            id="resourceUrl" formControlName="value" placeholder="https://example.com/resource">
                         <div class="invalid-feedback" *ngIf="isFieldInvalid('value')">
                             <span *ngIf="editLinkForm.get('value')?.hasError('required')">
                                 URL is required
@@ -254,7 +254,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" (click)="closeEditModal()">Cancel</button>
-                <button type="button" class="btn btn-primary" (click)="saveLink()" 
+                <button type="button" class="btn btn-primary" (click)="saveLink()"
                     [disabled]="editLinkForm.invalid || loading">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
                     {{ selectedLink ? 'Update Resource' : 'Create Resource' }}
@@ -265,5 +265,4 @@
 </div>
 
 <!-- Modal Backdrop -->
-<div class="modal-backdrop fade" [class.show]="showEditModal" 
-    [style.display]="showEditModal ? 'block' : 'none'"></div>
+<div class="modal-backdrop fade" [class.show]="showEditModal" [style.display]="showEditModal ? 'block' : 'none'"></div>

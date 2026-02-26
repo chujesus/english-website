@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminService, AdminCourse, AdminTopic, AdminLesson } from '../../core/services/admin.service';
+import { AlertService } from '../../core/services/alert.service';
 import { EditorConfigService } from '../../core/services/editor-config.service';
 import { SharedModule } from '../../shared/shared.module';
 import { AngularEditorModule } from '@kolkov/angular-editor';
+import { SweetAlertResult } from 'sweetalert2';
 
 
 @Component({
@@ -51,6 +53,7 @@ export class ManageContentComponent implements OnInit {
 
     constructor(
         private adminService: AdminService,
+        private alertService: AlertService,
         private fb: FormBuilder,
         private editorService: EditorConfigService
     ) {
@@ -370,45 +373,51 @@ export class ManageContentComponent implements OnInit {
 
     // Delete methods
     deleteCourse(course: AdminCourse): void {
-        if (confirm(`Are you sure you want to delete the course "${course.title}"?`)) {
-            this.adminService.deleteCourse(course.id!).subscribe({
-                next: () => {
-                    this.loadCourses();
-                },
-                error: (error) => {
-                    console.error('Error deleting course:', error);
-                    this.error = 'Error deleting course';
-                }
-            });
-        }
+        this.alertService.showDeleteAlert('Delete Course', `Are you sure you want to delete the course "${course.title}"?`).then((result: SweetAlertResult) => {
+            if (result.isConfirmed) {
+                this.adminService.deleteCourse(course.id!).subscribe({
+                    next: () => {
+                        this.loadCourses();
+                    },
+                    error: (error) => {
+                        console.error('Error deleting course:', error);
+                        this.error = 'Error deleting course';
+                    }
+                });
+            }
+        });
     }
 
     deleteTopic(topic: AdminTopic): void {
-        if (confirm(`Are you sure you want to delete the topic "${topic.title}"?`)) {
-            this.adminService.deleteTopic(topic.id!).subscribe({
-                next: () => {
-                    this.loadTopics(this.selectedCourse!.id!);
-                },
-                error: (error) => {
-                    console.error('Error deleting topic:', error);
-                    this.error = 'Error deleting topic';
-                }
-            });
-        }
+        this.alertService.showDeleteAlert('Delete Topic', `Are you sure you want to delete the topic "${topic.title}"?`).then((result: SweetAlertResult) => {
+            if (result.isConfirmed) {
+                this.adminService.deleteTopic(topic.id!).subscribe({
+                    next: () => {
+                        this.loadTopics(this.selectedCourse!.id!);
+                    },
+                    error: (error) => {
+                        console.error('Error deleting topic:', error);
+                        this.error = 'Error deleting topic';
+                    }
+                });
+            }
+        });
     }
 
     deleteLesson(lesson: AdminLesson): void {
-        if (confirm(`Are you sure you want to delete the lesson "${lesson.title}"?`)) {
-            this.adminService.deleteLesson(lesson.id!).subscribe({
-                next: () => {
-                    this.loadLessons(this.selectedTopic!.id!);
-                },
-                error: (error) => {
-                    console.error('Error deleting lesson:', error);
-                    this.error = 'Error deleting lesson';
-                }
-            });
-        }
+        this.alertService.showDeleteAlert('Delete Lesson', `Are you sure you want to delete the lesson "${lesson.title}"?`).then((result: SweetAlertResult) => {
+            if (result.isConfirmed) {
+                this.adminService.deleteLesson(lesson.id!).subscribe({
+                    next: () => {
+                        this.loadLessons(this.selectedTopic!.id!);
+                    },
+                    error: (error) => {
+                        console.error('Error deleting lesson:', error);
+                        this.error = 'Error deleting lesson';
+                    }
+                });
+            }
+        });
     }
 
     // JSON helper methods

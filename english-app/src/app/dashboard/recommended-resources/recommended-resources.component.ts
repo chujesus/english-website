@@ -7,6 +7,7 @@ import { LocalStorageService } from '../../core/services/local-storage.service';
 import { SettingService } from '../../core/services/setting.service';
 import { Profile } from '../../shared/interfaces/auth';
 import { ISetting } from '../../shared/interfaces/models';
+import { SweetAlertResult } from 'sweetalert2';
 
 @Component({
     standalone: true,
@@ -205,24 +206,26 @@ export class RecommendedResourcesComponent implements OnInit {
     }
 
     deleteLink(link: ISetting): void {
-        if (!confirm(`Are you sure you want to delete "${link.name}"?`)) {
-            return;
-        }
-
-        if (!link.id) return;
-
-        this.loading = true;
-        this.settingService.deleteSetting(link.id).subscribe({
-            next: (response: any) => {
-                this.success = response.message || 'Resource deleted successfully';
-                this.loadRecommendedLinks();
-                this.loading = false;
-                setTimeout(() => this.success = '', 3000);
-            },
-            error: (error: any) => {
-                this.error = error.error?.message || 'Error deleting resource';
-                this.loading = false;
+        this.alertService.showDeleteAlert('Delete Resource', `Are you sure you want to delete "${link.name}"?`).then((result: SweetAlertResult) => {
+            if (!result.isConfirmed) {
+                return;
             }
+
+            if (!link.id) return;
+
+            this.loading = true;
+            this.settingService.deleteSetting(link.id).subscribe({
+                next: (response: any) => {
+                    this.success = response.message || 'Resource deleted successfully';
+                    this.loadRecommendedLinks();
+                    this.loading = false;
+                    setTimeout(() => this.success = '', 3000);
+                },
+                error: (error: any) => {
+                    this.error = error.error?.message || 'Error deleting resource';
+                    this.loading = false;
+                }
+            });
         });
     }
 

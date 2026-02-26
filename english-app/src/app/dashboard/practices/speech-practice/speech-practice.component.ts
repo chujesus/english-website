@@ -117,10 +117,10 @@ export class SpeechPracticeComponent implements OnInit, OnChanges {
             this.deepgramService.setCredentials(apiKey, url);
 
             // Validar si el API Key es válido
-            if (apiKey && apiKey.trim()) {
-              const isValid = await this.deepgramService.validateApiKey();
-              this.deepgramConfigured = isValid;
-              this.useDeepgram = isValid;
+            if (apiKey && apiKey.trim() && url && url.trim()) {
+              // const isValid = await this.deepgramService.validateApiKey();
+              this.deepgramConfigured = true;
+              this.useDeepgram = true;
             } else {
               this.deepgramConfigured = false;
               this.useDeepgram = false;

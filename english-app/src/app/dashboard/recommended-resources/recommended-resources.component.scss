@@ -1,0 +1,98 @@
+/* Recommended Card Styles */
+.recommended-card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+    
+    .card-header {
+      transform: scaleY(1.05);
+    }
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+    border: none;
+    transition: all 0.3s ease;
+    
+    &.bg-primary {
+      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+    }
+    
+    &.bg-success {
+      background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+    }
+    
+    &.bg-warning {
+      background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%) !important;
+    }
+    
+    &.bg-info {
+      background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%) !important;
+    }
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    
+    .card-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 0.75rem;
+    }
+    
+    .card-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.4rem 0.8rem;
+    }
+    
+    .btn-outline-primary {
+      &:hover {
+        background-color: #007bff;
+        border-color: #007bff;
+        transform: translateX(4px);
+      }
+    }
+  }
+}
+
+/* Gradient backgrounds for different link types */
+.bg-gradient {
+  &.bg-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+  }
+  
+  &.bg-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+  }
+  
+  &.bg-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%) !important;
+  }
+  
+  &.bg-info {
+    background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%) !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recommended-card {
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}

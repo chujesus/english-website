@@ -78,6 +78,11 @@ export const routes: Routes = [
                 title: 'Settings Management',
                 loadComponent: () => import('./dashboard/settings-management/settings-management.component').then(m => m.SettingsManagementComponent)
             },
+            {
+                path: 'recommended-resources',
+                title: 'Recommended Resources',
+                loadComponent: () => import('./dashboard/recommended-resources/recommended-resources.component').then(m => m.RecommendedResourcesComponent)
+            },
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]
     },

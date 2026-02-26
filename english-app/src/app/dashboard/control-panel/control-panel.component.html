@@ -65,6 +65,17 @@
             </div>
         </div>
 
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                    <h5>Recommended Resources</h5>
+                    <p class="text-muted">Learn English with short and fun videos</p>
+                    <a routerLink="/dashboard/recommended-resources" class="btn btn-warning">View Resources</a>
+                </div>
+            </div>
+        </div>
+
         <div *ngIf="isAdmin()" class="col-md-4 mb-4">
             <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-center">
@@ -75,5 +86,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>

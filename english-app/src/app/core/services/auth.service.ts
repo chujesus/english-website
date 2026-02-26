@@ -132,7 +132,7 @@ export class AuthService extends MainService {
         this.googleAuth.signOut();
 
         // Redirect to login page (root route)
-        this.router.navigate(['/auth/login']).then(() => {
+        this.router.navigate(['/']).then(() => {
             // Force page reload to ensure clean state
             window.location.reload();
         });

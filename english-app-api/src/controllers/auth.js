@@ -41,16 +41,6 @@ const login = async (req, res = response) => {
       return res.json({ ok: false, data: [], error: "Invalid credentials" });
     }
 
-    // Check if the user account is active (state = 1)
-    if (user[0].state !== 1) {
-      return res.status(403).json({
-        ok: false,
-        data: [],
-        error:
-          "Account is inactive. Please contact the administrator to activate your account.",
-      });
-    }
-
     // Generate a JSON Web Token (JWT) for authentication
     const token = await generarJWT(user[0].id, user[0].name);
 

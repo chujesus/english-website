@@ -233,7 +233,7 @@ export class RegisterComponent implements OnInit {
             if (this.form_subscribe.value.identification === "admin" && this.form_subscribe.value.password === "00112233") {
                 this.authService.getUsersProfile(this.profile.Administrator).subscribe((user: IUser[]) => {
                     if (user.length > 0) {
-                        this.alertService.showWarningAlert("¡Lo sentimos!", "Ya existe un perfil para el administrador.").then(() => {
+                        this.alertService.showWarningAlert("Sorry!", "An administrator profile already exists.").then(() => {
                             this.router.navigate(['/']);
                         });
                     } else {
@@ -253,7 +253,7 @@ export class RegisterComponent implements OnInit {
             });
         } else {
             try {
-                this.alertService.showLoadingAlert("Espere por favor...");
+                this.alertService.showLoadingAlert("Please wait...");
                 this.alertService.showLoading();
                 const currentDate = new Date();
                 const formattedDate = currentDate.toISOString().slice(0, 19).replace('T', ' ');
@@ -265,7 +265,7 @@ export class RegisterComponent implements OnInit {
                     password: this.form_subscribe.value.password,
                     email: this.form_subscribe.value.email,
                     phone: this.form_subscribe.value.phone,
-                    state: Status.Inactive,
+                    state: Status.Active,
                     profile: await this.getUserAdmin() ? this.profile.Administrator : this.profile.Student,
                     created_at: formattedDate,
                     updated_at: formattedDate
@@ -285,13 +285,13 @@ export class RegisterComponent implements OnInit {
                             });
                         } else {
                             this.alertService.closeLoading();
-                            this.alertService.showErrorAlert('Error', 'No se pudo completar el registro. Intenta de nuevo.');
+                            this.alertService.showErrorAlert('Error', 'Failed to complete registration. Please try again.');
                         }
                     },
                     error: (error) => {
                         this.alertService.closeLoading();
-                        const errorMessage = error.error?.error || error.error?.message || 'Ha ocurrido un error durante el registro';
-                        this.alertService.showErrorAlert('Error de Registro', errorMessage);
+                        const errorMessage = error.error?.error || error.error?.message || 'An error has occurred during registration';
+                        this.alertService.showErrorAlert('Registration Error', errorMessage);
                         console.error('Registration error:', error);
                     }
                 });

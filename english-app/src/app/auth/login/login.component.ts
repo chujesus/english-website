@@ -112,7 +112,7 @@ export class LoginComponent implements OnInit {
         control.markAsTouched();
       });
     } else {
-      this.alertService.showLoadingAlert("Espere por favor...");
+      this.alertService.showLoadingAlert("Please wait...");
       this.alertService.showLoading();
       this.user = {
         email: this.loginForm.value.email,
@@ -129,11 +129,12 @@ export class LoginComponent implements OnInit {
             }
           } else {
             this.alertService.closeLoading();
-            this.alertService.showWarningAlert("Alerta!", "Usuario no se puede conectar");
+            this.alertService.showWarningAlert("Access Denied",
+              "You do not have permission to access this account. Please contact the administrator at: info.abangarescindea@unitalwebsolutions.com."
+            );
           }
         }, error: (ex) => {
           this.alertService.closeLoading();
-          this.alertService.showWarningAlert("Alerta!", ex.error.message);
         }
       });
     }

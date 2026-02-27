@@ -426,12 +426,12 @@ const deleteUser = async (req, res = response) => {
 };
 
 /**
- * Toggle user status (activate/deactivate)
+ * Toggle user status (activate/deactivate) + update starting_module (optional)
  */
 const toggleUserStatus = async (req, res = response) => {
   try {
     const { userId } = req.params;
-    const { state } = req.body;
+    const { state, starting_module } = req.body;
 
     // Validate state value
     if (state !== 0 && state !== 1) {
@@ -443,46 +443,44 @@ const toggleUserStatus = async (req, res = response) => {
 
     // Check if user exists
     const [existingUsers] = await pool.query(
-      "SELECT id, name, state FROM users WHERE id = ?",
+      "SELECT id, name, state, starting_module FROM users WHERE id = ?",
       [userId]
     );
+
     if (existingUsers.length === 0) {
-      return res.status(404).json({
-        ok: false,
-        message: "User not found",
-      });
+      return res.status(404).json({ ok: false, message: "User not found" });
     }
 
-    // Update user status
+    // Build dynamic update (solo actualiza starting_module si viene)
+    const fields = ["state = ?", "updated_at = NOW()"];
+    const params = [state];
+
+    if (starting_module !== undefined) {
+      fields.push("starting_module = ?");
+      params.push(starting_module);
+    }
+
+    params.push(userId);
+
     const [result] = await pool.query(
-      `
-            UPDATE users SET 
-                state = ?,
-                updated_at = NOW()
-            WHERE id = ?
-        `,
-      [state, userId]
+      `UPDATE users SET ${fields.join(", ")} WHERE id = ?`,
+      params
     );
 
     if (result.affectedRows === 0) {
       return res.status(400).json({
         ok: false,
-        message: "User status could not be updated",
+        message: "User status/module could not be updated",
       });
     }
 
-    const action = state === 1 ? "activated" : "deactivated";
-
     return res.json({
       ok: true,
-      message: `User "${existingUsers[0].name}" ${action} successfully`,
+      message: `User "${existingUsers[0].name}" updated successfully`,
     });
   } catch (error) {
     console.error("❌ Error toggling user status:", error);
-    return res.status(500).json({
-      ok: false,
-      message: "Internal server error",
-    });
+    return res.status(500).json({ ok: false, message: "Internal server error" });
   }
 };
 

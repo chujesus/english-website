@@ -40,35 +40,33 @@ export class StartingModuleModalComponent implements OnInit, OnChanges {
         this.loading = true;
         this.error = '';
 
-        // Use hardcoded modules for now to ensure functionality
-        this.availableModules = [
-            { id: 1, level: 'A1' as 'A1', title: 'English A1 - Beginner', description: 'Basic vocabulary and simple phrases' },
-            { id: 2, level: 'A2' as 'A2', title: 'English A2 - Elementary', description: 'Common expressions and routine tasks' },
-            { id: 3, level: 'B1' as 'B1', title: 'English B1 - Intermediate', description: 'Familiar topics and personal interests' },
-            { id: 4, level: 'B2' as 'B2', title: 'English B2 - Upper Intermediate', description: 'Complex topics and abstract ideas' }
-        ];
-
-        // Set default selection to A1
-        this.selectedModule = 'A1';
-        this.loading = false;
-
-        // Uncomment this when backend is ready
-        /*
         this.userService.getAvailableModules().subscribe({
             next: (response: any) => {
                 this.availableModules = response.data || [];
+
                 // Set default selection to A1 if available
                 if (this.availableModules.length > 0) {
                     this.selectedModule = this.availableModules[0].level;
+                } else {
+                    this.selectedModule = 'A1';
                 }
                 this.loading = false;
             },
             error: (error: any) => {
                 this.error = error.error?.message || 'Error loading modules';
+                console.error('Error loading available modules:', error);
                 this.loading = false;
+
+                // Fallback to course levels if no modules available
+                this.availableModules = [
+                    { id: 1, level: 'A1' as 'A1', title: 'English A1 - Beginner', description: 'Basic vocabulary and simple phrases' },
+                    { id: 2, level: 'A2' as 'A2', title: 'English A2 - Elementary', description: 'Common expressions and routine tasks' },
+                    { id: 3, level: 'B1' as 'B1', title: 'English B1 - Intermediate', description: 'Familiar topics and personal interests' },
+                    { id: 4, level: 'B2' as 'B2', title: 'English B2 - Upper Intermediate', description: 'Complex topics and abstract ideas' }
+                ];
+                this.selectedModule = 'A1';
             }
         });
-        */
     }
 
     closeModal(): void {

@@ -243,7 +243,6 @@ export class UserManagementComponent implements OnInit {
 
     toggleUserStatus(user: IUser): void {
         const newState = user.state === 1 ? 0 : 1;
-
         // If activating a student, show starting module modal
         if (newState === 1 && user.profile === Profile.Student) {
             this.selectedUser = user;

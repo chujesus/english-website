@@ -201,7 +201,7 @@ const getAllUsers = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             ORDER BY created_at DESC
         `);
@@ -234,7 +234,7 @@ const getUserById = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             WHERE id = ?
         `,
@@ -358,7 +358,7 @@ const updateUser = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             WHERE id = ?
         `,
@@ -496,7 +496,7 @@ const getUsersByProfile = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             WHERE profile = ?
             ORDER BY created_at DESC
@@ -532,7 +532,7 @@ const getUsersByStatus = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             WHERE state = ?
             ORDER BY created_at DESC
@@ -577,7 +577,7 @@ const searchUsers = async (req, res = response) => {
             SELECT 
                 id, identification, name, first_name, last_name, 
                 email, phone, profile, state, url_image, image_name,
-                created_at, updated_at
+                starting_module, created_at, updated_at
             FROM users 
             WHERE 
                 name LIKE ? OR 

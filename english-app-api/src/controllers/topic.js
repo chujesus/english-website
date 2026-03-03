@@ -137,7 +137,108 @@ const getTopicsByUserIdAndCourse = async (req, res = response) => {
   }
 };
 
+/**
+ * Get all topics for a specific course (for landing pages)
+ */
+const getTopicsByCourse = async (req, res = response) => {
+  try {
+    const courseId = req.params.courseId;
+    const limit = req.query.limit ? parseInt(req.query.limit) : null;
+
+    if (!courseId) {
+      return res.status(400).json({
+        ok: false,
+        data: [],
+        message: "Course ID is required",
+      });
+    }
+
+    let query = `
+      SELECT
+        t.id,
+        t.course_id,
+        t.title,
+        t.objective,
+        JSON_UNQUOTE(t.examples) AS examples,
+        JSON_UNQUOTE(t.keywords) AS keywords,
+        t.learning_outcome,
+        t.cefr_level,
+        JSON_UNQUOTE(t.skills_covered) AS skills_covered,
+        JSON_UNQUOTE(t.tags) AS tags,
+        t.created_at,
+        t.updated_at
+      FROM topics t
+      WHERE t.course_id = ?
+    `;
+
+    if (limit) {
+      query += ` LIMIT ${limit}`;
+    }
+
+    const [topics] = await pool.query(query, [courseId]);
+
+    const topicsDTOList = topics.map((t) => new TopicDTO(t));
+
+    return res.json({
+      ok: true,
+      data: topicsDTOList || [],
+      message:
+        topics.length > 0 ? "Topics retrieved successfully" : "No topics found",
+    });
+  } catch (error) {
+    console.error("Error getting topics by course:", error);
+    return res.status(500).json({
+      ok: false,
+      data: [],
+      message: "Internal server error",
+    });
+  }
+};
+
+/**
+ * Get all topics (for landing pages)
+ */
+const getAllTopics = async (req, res = response) => {
+  try {
+    const [topics] = await pool.query(`
+      SELECT
+        t.id,
+        t.course_id,
+        t.title,
+        t.objective,
+        JSON_UNQUOTE(t.examples) AS examples,
+        JSON_UNQUOTE(t.keywords) AS keywords,
+        t.learning_outcome,
+        t.cefr_level,
+        JSON_UNQUOTE(t.skills_covered) AS skills_covered,
+        JSON_UNQUOTE(t.tags) AS tags,
+        t.created_at,
+        t.updated_at
+      FROM topics
+      ORDER BY t.course_id, t.created_at
+    `);
+
+    const topicsDTOList = topics.map((t) => new TopicDTO(t));
+
+    return res.json({
+      ok: true,
+      data: topicsDTOList || [],
+      message:
+        topics.length > 0 ? "Topics retrieved successfully" : "No topics found",
+    });
+  } catch (error) {
+    console.error("Error getting all topics:", error);
+    return res.status(500).json({
+      ok: false,
+      data: [],
+      message: "Internal server error",
+    });
+  }
+};
+
 module.exports = {
   getTopicById,
   getTopicsByUserIdAndCourse,
+  getTopicsByCourse,
+  getAllTopics,
 };

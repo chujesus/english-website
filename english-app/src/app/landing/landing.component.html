@@ -71,11 +71,16 @@
         <div class="container">
             <div class="section-header fade-on-scroll">
                 <h2 class="section-title">Módulos del Curso</h2>
-                <p class="section-subtitle">Aprende English en 4 niveles de dificultad, desde principiante hasta
-                    avanzado</p>
+                <p class="section-subtitle">Aprende English con una estructura completa desde Principiante hasta
+                    Proficiencia según el estándar CEFR</p>
             </div>
 
-            <div class="modules-grid">
+            <div *ngIf="loadingCourses" class="loading-container">
+                <div class="spinner"></div>
+                <p>Cargando módulos...</p>
+            </div>
+
+            <div class="modules-grid" *ngIf="!loadingCourses">
                 <div *ngFor="let module of modules" class="module-card fade-on-scroll"
                     [class]="getModuleBadgeClass(module.level)">
                     <div class="module-header">
@@ -86,6 +91,17 @@
                     </div>
                     <h3 class="module-title">{{ module.title }}</h3>
                     <p class="module-description">{{ module.description }}</p>
+
+                    <!-- Topics for this module -->
+                    <div class="module-topics" *ngIf="getTopicsForCourse(module.id).length > 0">
+                        <div class="topics-label">Temas incluidos:</div>
+                        <ul class="topics-list">
+                            <li *ngFor="let topic of getTopicsForCourse(module.id)" class="topic-item">
+                                <i class="fas fa-check-circle"></i>
+                                {{ topic.title }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

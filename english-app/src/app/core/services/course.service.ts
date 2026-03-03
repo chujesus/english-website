@@ -20,4 +20,18 @@ export class CourseService extends MainService {
       return data.courses as ICourse[];
     }));
   }
+
+  /**
+   * Get all courses (for landing pages)
+   */
+  getAllCourses(): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/courses`);
+  }
+
+  /**
+   * Get course by level
+   */
+  getCourseByLevel(level: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/courses/level/${level}`);
+  }
 }

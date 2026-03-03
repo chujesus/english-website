@@ -1,0 +1,270 @@
+<div class="landing-container">
+    <!-- Animated Background Elements -->
+    <div class="animated-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" [class.scrolled]="isNavbarScrolled" [class.mobile-open]="isMobileMenuOpen">
+        <div class="navbar-container">
+            <!-- Brand -->
+            <div class="navbar-brand" (click)="scrollToSection('hero')">
+                <div class="brand-logo">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="brand-text">
+                    <div class="brand-name">{{ platformName }}</div>
+                    <div class="brand-tagline">Solución Académica</div>
+                </div>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="nav-menu">
+                <a class="nav-link" href="#content" (click)="scrollToSection('differentiators')">Ventajas</a>
+                <a class="nav-link" href="#levels" (click)="scrollToSection('levels')">Niveles CEFR</a>
+                <a class="nav-link" href="#institutions" (click)="scrollToSection('institutions')">Instituciones</a>
+                <a class="nav-link" href="#faq" (click)="scrollToSection('faq')">FAQ</a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="nav-actions">
+                <button class="btn btn-primary" (click)="goToAssociatedInstitutions()">Instituciones</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Text Column -->
+            <div class="hero-text-column pt-sm-0 pt-md-4 fade-on-scroll">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    Solución Académica Innovadora
+                </div>
+                <h1 class="hero-title">{{ platformTagline }}</h1>
+                <div class="hero-title-underline"></div>
+                <p class="hero-subtitle">{{ platformDescription }}</p>
+
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <span>Completamente personalizable</span>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>100% administrable</span>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span>Multi-institucional</span>
+                    </div>
+                </div>
+
+                <div class="hero-ctas">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-arrow-right"></i>
+                        Comenzar ahora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="hero-image-column fade-on-scroll" [style.backgroundImage]="'url(assets/EduEnglishbg.jpg)'">
+                <div class="image-gradient-overlay"></div>
+                <div class="floating-card card-1">
+                    <div class="card-icon">📚</div>
+                    <p>Cursos CEFR</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🎯</div>
+                    <p>Resultados</p>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">⚡</div>
+                    <p>Rápido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators Section -->
+    <section class="section differentiators-section" id="differentiators">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">¿Qué nos diferencia?</h2>
+                <p class="section-subtitle">Características potentes que hacen de Edu English Platform la solución ideal
+                    para instituciones</p>
+            </div>
+
+            <div class="differentiators-grid">
+                <div *ngFor="let diff of differentiators" class="differentiator-card fade-on-scroll">
+                    <div class="differentiator-icon">
+                        <i [class]="diff.icon"></i>
+                    </div>
+                    <h3 class="differentiator-title">{{ diff.title }}</h3>
+                    <p class="differentiator-description">{{ diff.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEFR Levels Section -->
+    <section class="section levels-section" id="levels">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Estructura Académica CEFR</h2>
+                <p class="section-subtitle">Plataforma completa desde A1 (Básico) hasta C2 (Proficiencia)</p>
+            </div>
+
+            <div class="levels-grid">
+                <div *ngFor="let module of modules" class="level-card fade-on-scroll"
+                    [class]="getModuleBadgeClass(module.level)">
+                    <div class="level-header">
+                        <div class="level-icon">
+                            <i [class]="module.icon"></i>
+                        </div>
+                        <span class="level-badge" [class]="getModuleBadgeClass(module.level)">{{ module.level }}</span>
+                    </div>
+                    <h3 class="level-title">{{ module.title }}</h3>
+                    <p class="level-description">{{ module.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Associated Institutions Section -->
+    <section class="section institutions-section" id="institutions">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Instituciones Asociadas</h2>
+                <p class="section-subtitle">Conoce los colegios y universidades que confían en Edu English Platform</p>
+            </div>
+
+            <div class="institutions-grid">
+                <div *ngFor="let institution of institutions" class="institution-card fade-on-scroll">
+                    <div class="institution-header">
+                        <div class="institution-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <h3 class="institution-name">{{ institution.name }}</h3>
+                    <p class="institution-subdomain">{{ institution.subdomain }}</p>
+                    <button class="btn btn-sm btn-primary" (click)="accessInstitution(institution.subdomain)">
+                        <i class="fas fa-arrow-right me-2"></i>Acceder
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-section" id="benefits">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Encuentra respuestas a las preguntas más comunes sobre Edu English Platform
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div *ngFor="let item of faqItems" class="faq-item fade-on-scroll" [class.open]="item.open">
+                    <div class="faq-question" (click)="toggleFAQ(item)">
+                        <span class="faq-text">{{ item.question }}</span>
+                        <i class="fas fa-chevron-down ms-1"></i>
+                    </div>
+                    <div class="faq-answer" *ngIf="item.open">
+                        <p>{{ item.answer }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content fade-on-scroll">
+                <h2 class="cta-title">Lleva tu institución al siguiente nivel académico</h2>
+                <p class="cta-subtitle">Edu English Platform: donde la educación del inglés se transforma en resultados
+                    medibles</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-secondary btn-lg" (click)="goToAssociatedInstitutions()">
+                        <i class="fas fa-building me-2"></i>Instituciones
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 class="footer-title">{{ platformName }}</h4>
+                    <p class="footer-description">Transformando la enseñanza del inglés a través de una plataforma
+                        académica profesional, modular y personalizable para instituciones educativas.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" (click)="scrollToSection('differentiators')">Ventajas</a></li>
+                        <li><a href="#" (click)="scrollToSection('levels')">Niveles CEFR</a></li>
+                        <li><a href="#" (click)="scrollToSection('institutions')">Instituciones</a></li>
+                        <li><a href="#" (click)="scrollToSection('faq')">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Solución</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Características</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Soporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-info">
+                        <li><strong>Email:</strong> <a href="mailto:info@eduenglish.com">info&#64;eduenglish.com</a>
+                        </li>
+                        <li><strong>Teléfono:</strong> +506 2000-0000</li>
+                        <li style="margin-top: 12px;">Lunes - Viernes: 8:00 AM - 5:00 PM</li>
+                        <li>Zona Horaria: CST (UTC-6)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Edu English Platform. Todos los derechos reservados. | <a href="#">Política de
+                        Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+</div>

@@ -26,4 +26,19 @@ export class TopicsService extends MainService {
       return data.topics as ITopic[];
     }));
   }
+
+  /**
+   * Get topics by course ID (for landing pages)
+   */
+  getTopicsByCourse(courseId: number, limit?: number): Observable<any> {
+    const params = limit ? `?limit=${limit}` : '';
+    return this.http.get<any>(`${this.baseUrl}/topics/course/${courseId}${params}`);
+  }
+
+  /**
+   * Get all topics
+   */
+  getAllTopics(): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/topics`);
+  }
 }

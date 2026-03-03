@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { SettingService } from '../core/services/setting.service';
+import { CourseService } from '../core/services/course.service';
+import { TopicsService } from '../core/services/topics.service';
 
 interface Module {
     id: number;
@@ -9,6 +11,12 @@ interface Module {
     title: string;
     description: string;
     icon: string;
+}
+
+interface Topic {
+    id: number;
+    title: string;
+    course_id: number;
 }
 
 interface Practice {
@@ -41,125 +49,100 @@ interface FAQItem {
     styleUrl: './landing.component.scss'
 })
 export class LandingComponent implements OnInit, OnDestroy {
-    // Background & Branding
+    // Background & Branding (Personalizable desde settings)
     loginBackgroundUrl: string | null = null;
-    institutionName = 'CINDEA Abangares';
-    institutionTagline = 'Aprende Inglés, Alcanza la Excelencia';
+    institutionName = 'Tu Institución';
+    institutionTagline = 'Plataforma de Aprendizaje del Inglés';
     loadingSettings = true;
+    loadingCourses = false;
 
     // Navbar state
     isNavbarScrolled = false;
     isMobileMenuOpen = false;
 
-    // Modules
-    modules: Module[] = [
-        {
-            id: 1,
-            level: 'A1',
-            title: 'Principiante',
-            description: 'Domina vocabulario básico, saludos y estructuras gramaticales fundamentales. Perfecto para iniciar tu viaje en inglés.',
-            icon: 'fa fa-star'
-        },
-        {
-            id: 2,
-            level: 'A2',
-            title: 'Elemental',
-            description: 'Construye confianza con expresiones comunes, conversaciones cotidianas y tareas rutinarias a un ritmo constante.',
-            icon: 'fa fa-book'
-        },
-        {
-            id: 3,
-            level: 'B1',
-            title: 'Intermedio',
-            description: 'Comprende temas complejos, intereses personales y desarrolla fluidez en contextos y situaciones variadas.',
-            icon: 'fa fa-graduation-cap'
-        },
-        {
-            id: 4,
-            level: 'B2',
-            title: 'Intermedio Superior',
-            description: 'Domina temas avanzados, ideas abstractas, contextos profesionales y proficiencia de nivel casi nativo.',
-            icon: 'fa fa-rocket'
-        }
-    ];
+    // Modules (will be populated from API)
+    modules: Module[] = [];
 
-    // Practices
+    // Topics by course
+    topicsByCourse: { [courseId: number]: Topic[] } = {};
+
+    // Practices (Características de la plataforma)
     practices: Practice[] = [
         {
             id: 1,
-            title: 'Práctica de Habla',
-            description: 'Mejora la pronunciación y habilidades de conversación con ejercicios de habla interactivos',
-            icon: 'fa fa-microphone',
+            title: 'Lecciones Interactivas',
+            description: 'Contenido estructurado por nivel CEFR con explicaciones claras, ejemplos prácticos y ejercicios progresivos.',
+            icon: 'fa fa-book-open',
             color: 'primary'
         },
         {
             id: 2,
-            title: 'Comprensión Auditiva',
-            description: 'Entrena tu oído con materiales de audio auténticos y preguntas de comprensión',
-            icon: 'fa fa-headphones',
+            title: 'Ejercicios Prácticos',
+            description: 'Practica todas las habilidades: comprensión auditiva, lectura, escritura, gramática y vocabulario.',
+            icon: 'fa fa-dumbbell',
             color: 'success'
         },
         {
             id: 3,
-            title: 'Habilidades de Lectura',
-            description: 'Mejora la comprensión lectora a través de textos diversos y ejercicios analíticos',
-            icon: 'fa fa-book-open',
+            title: 'Seguimiento del Progreso',
+            description: 'Monitorea tu avance en tiempo real con estadísticas detalladas y análisis de áreas de mejora.',
+            icon: 'fa fa-chart-line',
             color: 'info'
         },
         {
             id: 4,
-            title: 'Ejercicios de Escritura',
-            description: 'Desarrolla habilidades de escritura desde oraciones simples hasta composiciones complejas',
-            icon: 'fa fa-pen-fancy',
+            title: 'Contenido Personalizado',
+            description: 'Ruta de aprendizaje adaptativa que se ajusta a tu ritmo y necesidades individuales.',
+            icon: 'fa fa-user-customized',
             color: 'warning'
         },
         {
             id: 5,
-            title: 'Dominio de Gramática',
-            description: 'Comprende y aplica reglas gramaticales con ejercicios dirigidos y explicaciones',
-            icon: 'fa fa-spell-check',
+            title: 'Recursos Complementarios',
+            description: 'Acceso a materiales de referencia, vocabulario y reglas gramaticales en cualquier momento.',
+            icon: 'fa fa-folder-open',
             color: 'danger'
         },
         {
             id: 6,
-            title: 'Cuestionarios Interactivos',
-            description: 'Prueba tus conocimientos con cuestionarios atractivos que abarcan todas las habilidades y niveles',
-            icon: 'fa fa-question-circle',
+            title: 'Disponible 24/7',
+            description: 'Aprende a tu propio ritmo, en cualquier momento y lugar. Acceso ilimitado a todos los contenidos.',
+            icon: 'fa fa-clock',
             color: 'secondary'
         }
     ];
 
-    // Benefits
+    // Benefits (Ventajas de aprender con nosotros)
     benefits: Benefit[] = [
         {
             id: 1,
-            title: 'Ruta de Aprendizaje Personalizada',
-            description: 'Plan de estudios adaptativo que se ajusta a tu ritmo y estilo de aprendizaje para resultados óptimos',
-            icon: 'fa fa-route'
+            title: 'Estructura Basada en CEFR',
+            description: 'Nuestro currículo sigue los estándares internacionales de certificación de inglés (A1 a C2).',
+            icon: 'fa fa-certificate'
         },
         {
             id: 2,
-            title: 'Seguimiento del Progreso',
-            description: 'Monitorea tu avance con análisis detallados',
-            icon: 'fa fa-chart-line'
+            title: 'Certificación Progresiva',
+            description: 'Milestones claros en cada nivel para validar tu progreso y reconocer tu aprendizaje.',
+            icon: 'fa fa-medal'
         },
         {
             id: 3,
-            title: 'Contenido Comprensivo',
-            description: 'Todas las habilidades del idioma cubierta: Habla, Escucha, Lectura, Escritura y Gramática',
-            icon: 'fa fa-layer-group'
+            title: 'Instrucción Completa',
+            description: 'Todas las habilidades del idioma cubiertas: Speaking, Listening, Reading, Writing y Grammar.',
+            icon: 'fa fa-graduation-cap'
+        },
+        {
+            id: 4,
+            title: 'Ambiente de Apoyo',
+            description: 'Herramientas interactivas y recursos que hacen el aprendizaje efectivo y motivador.',
+            icon: 'fa fa-handshake'
         },
         {
             id: 5,
-            title: 'Práctica Interactiva',
-            description: 'Participa con ejercicios dinámicos, escenarios del mundo real y retroalimentación instantánea',
-            icon: 'fa fa-gamepad'
-        },
-        {
-            id: 6,
-            title: 'Horario Flexible',
-            description: 'Aprende a tu propio ritmo con acceso de por vida a los materiales del curso en cualquier momento',
-            icon: 'fa fa-hourglass-half'
+            title: 'Flexibilidad Total',
+            description: 'Aprende según tu horario. No hay presiones, solo tu propio ritmo de aprendizaje.',
+            icon: 'fa fa-clock'
         }
     ];
 
@@ -167,33 +150,33 @@ export class LandingComponent implements OnInit, OnDestroy {
     faqItems: FAQItem[] = [
         {
             id: 1,
-            question: '¿Cómo empiezo con el curso?',
-            answer: 'Simplemente crea una cuenta, selecciona tu módulo inicial (A1-B2) y comienza tu viaje de aprendizaje. Puedes acceder a lecciones, prácticas y realizar seguimiento de tu progreso desde el primer día. ¡No se requiere experiencia previa!'
+            question: '¿Cómo empiezo a aprender?',
+            answer: 'Crea una cuenta en la plataforma y elige tu nivel inicial según tu conocimiento de inglés. Nuestro sistema te guiará a través de una ruta de aprendizaje personalizada con lecciones, ejercicios y seguimiento de progreso.'
         },
         {
             id: 2,
-            question: '¿Puedo cambiar de módulo después de empezar?',
-            answer: '¡Sí! Tienes la flexibilidad de ajustar tu ruta de aprendizaje. Tu progreso se rastrea individualmente para cada módulo, permitiendoóte explorar contenido en diferentes niveles cuando estés listo.'
+            question: '¿Cuáles son los niveles disponibles?',
+            answer: 'Ofrecemos 6 niveles según el Marco Común Europeo de Referencia (CEFR): A1 (Principiante), A2 (Elemental), B1 (Intermedio), B2 (Intermedio Alto), C1 (Avanzado) y C2 (Proficiencia).'
         },
         {
             id: 3,
-            question: '¿Qué hago si necesito ayuda o tengo preguntas?',
-            answer: 'Nuestra plataforma proporciona materiales de aprendizaje completos, explicaciones de prácticas y retroalimentación detallada. También puedes revisar reglas gramaticales y consultar oraciones de ejemplo en cualquier momento.'
+            question: '¿Puedo cambiar de nivel durante el aprendizaje?',
+            answer: 'Sí. Cuando sientas que has dominado el nivel actual, puedes avanzar al siguiente. También puedes revisar niveles anteriores en cualquier momento para reforzar conceptos.'
         },
         {
             id: 4,
             question: '¿Cómo se rastrea mi progreso?',
-            answer: 'Tu progreso se rastrea automáticamente en todas las actividades. Puedes ver estadísticas detalladas, lecciones completadas, puntuaciones de prácticas y áreas de mejora en tu panel de control.'
+            answer: 'Tu progreso se registra automáticamente en cada actividad. Puedes ver estadísticas detalladas, lecciones completadas, calificaciones de ejercicios y áreas donde necesitas más práctica en tu panel personal.'
         },
         {
             id: 5,
-            question: '¿Hay una aplicación móvil?',
-            answer: 'Nuestra plataforma es totalmente responsiva y funciona perfectamente en todos los dispositivos: computadora, tablet y móvil. Accede a tus cursos y continúa aprendiendo en cualquier lugar, en cualquier momento.'
+            question: '¿Qué contenido incluye cada nivel?',
+            answer: 'Cada nivel contiene múltiples temas con lecciones de gramática, vocabulario, comprensión auditiva, lectura y escritura. Cada tema tiene explicaciones, ejemplos prácticos y ejercicios interactivos con retroalimentación inmediata.'
         },
         {
             id: 6,
-            question: '¿Qué se incluye en cada módulo?',
-            answer: 'Cada módulo contiene múltiples temas con lecciones que cubren vocabulario, gramática, lectura, escucha, habla, escritura y cuestionarios interactivos. ¡Progreso real en todas las habilidades del idioma!'
+            question: '¿Es realmente 24/7?',
+            answer: 'Sí, la plataforma está disponible todo el tiempo. Puedes acceder desde cualquier dispositivo (computadora, tablet, móvil) y continuar donde dejaste en cualquier momento.'
         }
     ];
 
@@ -202,11 +185,14 @@ export class LandingComponent implements OnInit, OnDestroy {
 
     constructor(
         private router: Router,
-        private settingService: SettingService
+        private settingService: SettingService,
+        private courseService: CourseService,
+        private topicsService: TopicsService
     ) { }
 
     ngOnInit(): void {
         this.loadSettings();
+        this.loadCoursesAndTopics();
         this.setupIntersectionObserver();
     }
 
@@ -237,10 +223,75 @@ export class LandingComponent implements OnInit, OnDestroy {
                 this.loadingSettings = false;
             },
             error: () => {
-                console.log('Could not load settings, using defaults');
+                console.log('Settings no disponibles, usando valores por defecto');
                 this.loadingSettings = false;
             }
         });
+    }
+
+    /**
+     * Load courses and topics from API
+     */
+    loadCoursesAndTopics(): void {
+        this.loadingCourses = true;
+        this.courseService.getAllCourses().subscribe({
+            next: (response: any) => {
+                if (response.data && Array.isArray(response.data)) {
+                    this.modules = response.data.map((course: any) => ({
+                        id: course.id,
+                        level: course.level,
+                        title: course.title,
+                        description: course.description || '',
+                        icon: this.getIconForLevel(course.level)
+                    }));
+
+                    // Load topics for each course
+                    this.modules.forEach(module => {
+                        this.loadTopicsForCourse(module.id);
+                    });
+                }
+                this.loadingCourses = false;
+            },
+            error: (error) => {
+                console.error('Error loading courses:', error);
+                this.loadingCourses = false;
+            }
+        });
+    }
+
+    /**
+     * Load topics for a specific course
+     */
+    loadTopicsForCourse(courseId: number): void {
+        this.topicsService.getTopicsByCourse(courseId, 5).subscribe({
+            next: (response: any) => {
+                if (response.data && Array.isArray(response.data)) {
+                    this.topicsByCourse[courseId] = response.data.map((topic: any) => ({
+                        id: topic.id,
+                        title: topic.title,
+                        course_id: topic.course_id
+                    }));
+                }
+            },
+            error: (error) => {
+                console.error(`Error loading topics for course ${courseId}:`, error);
+            }
+        });
+    }
+
+    /**
+     * Get icon for level
+     */
+    getIconForLevel(level: string): string {
+        const iconMap: { [key: string]: string } = {
+            'A1': 'fa fa-star',
+            'A2': 'fa fa-book',
+            'B1': 'fa fa-graduation-cap',
+            'B2': 'fa fa-rocket',
+            'C1': 'fa fa-crown',
+            'C2': 'fa fa-trophy'
+        };
+        return iconMap[level] || 'fa fa-book';
     }
 
     /**
@@ -353,6 +404,8 @@ export class LandingComponent implements OnInit, OnDestroy {
             case 'A2': return 'badge-primary';
             case 'B1': return 'badge-warning';
             case 'B2': return 'badge-danger';
+            case 'C1': return 'badge-secondary';
+            case 'C2': return 'badge-dark';
             default: return 'badge-secondary';
         }
     }
@@ -363,4 +416,12 @@ export class LandingComponent implements OnInit, OnDestroy {
     getPracticeColorClass(color: string): string {
         return `practice-card-${color}`;
     }
+
+    /**
+     * Get topics for a course
+     */
+    getTopicsForCourse(courseId: number): Topic[] {
+        return this.topicsByCourse[courseId] || [];
+    }
 }
+

@@ -10,7 +10,7 @@ const getCourses = async (req, res = response) => {
 
     return res.json({
       ok: true,
-      courses: coursesDTOList || [],
+      data: coursesDTOList || [],
       message:
         coursesDTOList.length > 0
           ? "Courses retrieved successfully"
@@ -20,7 +20,7 @@ const getCourses = async (req, res = response) => {
     console.error("Error getting courses data:", error);
     return res.status(500).json({
       ok: false,
-      data: {},
+      data: [],
       message: "Internal server error",
     });
   }

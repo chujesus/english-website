@@ -25,6 +25,8 @@ export class LoginComponent implements OnInit {
   institutionName = 'English Learning Platform';
   loginBackgroundUrl: string | null = null;
   loadingSettings = true;
+  visible: boolean = true;
+  changeType: boolean = true;
 
   constructor(
     private fb: FormBuilder,
@@ -104,6 +106,11 @@ export class LoginComponent implements OnInit {
     } finally {
       this.loading = false;
     }
+  }
+
+  viewPass() {
+    this.visible = !this.visible;
+    this.changeType = !this.changeType;
   }
 
   onSubmit() {

@@ -151,7 +151,7 @@ export class LandingComponent implements OnInit, OnDestroy {
         {
             id: 1,
             question: '¿Cómo empiezo a aprender?',
-            answer: 'Crea una cuenta en la plataforma y elige tu nivel inicial según tu conocimiento de inglés. Nuestro sistema te guiará a través de una ruta de aprendizaje personalizada con lecciones, ejercicios y seguimiento de progreso.'
+            answer: 'Crea una cuenta en la plataforma. Nuestro sistema te guiará a través de una ruta de aprendizaje personalizada con lecciones, ejercicios y seguimiento de progreso.'
         },
         {
             id: 2,
@@ -236,8 +236,8 @@ export class LandingComponent implements OnInit, OnDestroy {
         this.loadingCourses = true;
         this.courseService.getAllCourses().subscribe({
             next: (response: any) => {
-                if (response.data && Array.isArray(response.data)) {
-                    this.modules = response.data.map((course: any) => ({
+                if (response.ok && response.courses && Array.isArray(response.courses)) {
+                    this.modules = response.courses.map((course: any) => ({
                         id: course.id,
                         level: course.level,
                         title: course.title,

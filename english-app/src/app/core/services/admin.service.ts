@@ -144,4 +144,13 @@ export class AdminService {
         const body = { jsonData, type };
         return this.http.post<any>(`${this.apiUrl}/admin/validate-json`, body).pipe(map((res: any) => res.data as any[]));
     }
+
+    // Student Progress (admin view)
+    getAdminAllStudentsProgress(): Observable<any> {
+        return this.http.get(`${this.apiUrl}/admin/students/progress`);
+    }
+
+    getAdminStudentDetail(userId: number): Observable<any> {
+        return this.http.get(`${this.apiUrl}/admin/students/progress/${userId}`);
+    }
 }

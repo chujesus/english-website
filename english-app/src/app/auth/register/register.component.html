@@ -131,8 +131,8 @@
                                     autocomplete="new-password" />
                                 <span class="input-group-text eyeicon" (click)="viewPass()"><i
                                         [ngClass]="isVisible ? 'fa fa-eye' : 'fa fa-eye-slash'"></i></span>
-                                <span class="text-danger ms-1 lead fw-bold">*</span>
                             </div>
+                            <span class="text-danger ms-1 lead fw-bold">*</span>
                             <small *ngIf="passwordRequire" class="text-danger">
                                 Password is required
                                 <br>
@@ -158,8 +158,8 @@
                                     autocomplete="new-password" />
                                 <span class="input-group-text eyeicon" (click)="viewRepeatPass()"><i
                                         [ngClass]="isRepeatVisible ? 'fa fa-eye' : 'fa fa-eye-slash'"></i></span>
-                                <span class="text-danger ms-1 lead fw-bold">*</span>
                             </div>
+                            <span class="text-danger ms-1 lead fw-bold">*</span>
                             <small *ngIf="confirmPasswordRequire" class="text-danger">
                                 Password confirmation is required
                                 <br>

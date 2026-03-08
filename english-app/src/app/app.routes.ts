@@ -84,6 +84,11 @@ export const routes: Routes = [
                 title: 'Recommended Resources',
                 loadComponent: () => import('./dashboard/recommended-resources/recommended-resources.component').then(m => m.RecommendedResourcesComponent)
             },
+            {
+                path: 'admin-student-progress',
+                title: 'Student Progress',
+                loadComponent: () => import('./dashboard/admin-student-progress/admin-student-progress.component').then(m => m.AdminStudentProgressComponent)
+            },
             { path: '**', redirectTo: '/dashboard/control-panel' }
         ]
     },

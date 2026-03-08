@@ -18,6 +18,10 @@ const {
   updateLesson,
   deleteLesson,
 } = require("../controllers/adminLesson");
+const {
+  getAdminAllStudentsProgress,
+  getAdminStudentDetail,
+} = require("../controllers/student");
 
 // Course routes
 router.get("/courses", getAllCoursesAdmin);
@@ -36,5 +40,9 @@ router.get("/topics/:topicId/lessons", getLessonsByTopicAdmin);
 router.post("/lessons", createLesson);
 router.put("/lessons/:id", updateLesson);
 router.delete("/lessons/:id", deleteLesson);
+
+// Admin - Student Progress routes
+router.get("/students/progress", getAdminAllStudentsProgress);
+router.get("/students/progress/:userId", getAdminStudentDetail);
 
 module.exports = router;

@@ -1,0 +1,30 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.topic-row {
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}
+
+.transition-icon {
+    transition: transform 0.2s ease;
+    &.rotated {
+        transform: rotate(90deg);
+    }
+}
+
+.lessons-panel {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.course-progress {
+    width: 100px;
+    height: 10px;
+}
+
+.last-no-border:last-child {
+    border-bottom: none !important;
+}

@@ -87,5 +87,16 @@
             </div>
         </div>
 
+        <div *ngIf="isAdmin()" class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                    <h5>Student Progress</h5>
+                    <p class="text-muted">Monitor each student's learning progress by course, topic, and lesson</p>
+                    <a routerLink="/dashboard/admin-student-progress" class="btn btn-success">View Progress</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

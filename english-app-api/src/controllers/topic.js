@@ -77,19 +77,18 @@ const getTopicsByUserIdAndCourse = async (req, res = response) => {
                 JSON_UNQUOTE(t.tags) AS tags,
                 t.created_at,
                 t.updated_at,
-                -- Calculate progress percent only if there are lessons
-                CASE
-                  WHEN (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id) > 0 THEN
-                    ROUND(
-                      (SELECT COUNT(DISTINCT sp.lesson_id)
+                -- Progress: sum of each lesson's individual contribution to the topic total.
+                -- Each lesson stores its portion (0 to 100/N where N = total lessons in topic),
+                -- so the SUM correctly reflects partial progress even for in-progress lessons.
+                ROUND(
+                  LEAST(
+                    COALESCE(
+                      (SELECT SUM(sp.progress_percent)
                        FROM student_progress sp
-                       WHERE sp.topic_id = t.id AND sp.user_id = ? AND sp.is_completed = 1)
-                      /
-                      (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id)
-                      * 100
-                      , 2)
-                  ELSE 0
-                END AS progress_percent,
+                       WHERE sp.topic_id = t.id AND sp.user_id = ?)
+                    , 0)
+                  , 100)
+                , 2) AS progress_percent,
                 -- Mark completed only if all lessons are done and lessons exist
                 CASE
                   WHEN (SELECT COUNT(*) FROM lessons l WHERE l.topic_id = t.id) > 0

@@ -65,21 +65,25 @@ const getCoursesByUserId = async (req, res = response) => {
         );
         const totalTopics = totalTopicsResult[0]?.total_topics || 0;
 
-        // Obtener tópicos completados por el usuario
-        const [completedTopicsResult] = await pool.query(
+        // Calcular progreso del curso como promedio del progreso de cada tópico.
+        // Cada lección almacena su aporte al progreso del tópico (0 a 100/N).
+        // La suma de todas las lecciones del curso dividido entre el total de tópicos
+        // equivale al promedio del progreso de cada tópico, incluyendo los parcialmente iniciados.
+        const [progressResult] = await pool.query(
           `
-                    SELECT COUNT(DISTINCT sp.topic_id) as completed_topics
+                    SELECT COALESCE(SUM(sp.progress_percent), 0) as total_progress
                     FROM student_progress sp
-                    WHERE sp.course_id = ? AND sp.user_id = ? AND sp.is_completed = 1
+                    WHERE sp.course_id = ? AND sp.user_id = ?
                 `,
           [course.id, userId]
         );
-        const completedTopics = completedTopicsResult[0]?.completed_topics || 0;
+        const totalProgress = progressResult[0]?.total_progress || 0;
 
-        // Calcular progreso: (tópicos completados / total tópicos) * 100
+        // Progreso del curso = suma de aportes de lecciones / total de tópicos
+        // (cuando todos los tópicos llegan a 100, el resultado es 100 = curso completado)
         let progressPercent = 0;
         if (totalTopics > 0) {
-          progressPercent = Math.round((completedTopics / totalTopics) * 100);
+          progressPercent = Math.round((totalProgress / totalTopics) * 100) / 100;
         }
 
         dto.progress_percent = progressPercent;

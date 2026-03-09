@@ -1,13 +1,13 @@
 import { Injectable, signal, computed } from '@angular/core';
 import { BehaviorSubject, firstValueFrom, map, Observable, catchError, of } from 'rxjs';
 import { Router } from '@angular/router';
-import { IUser, Profile, ForgotPasswordResponse } from '../../shared/interfaces';
 import { GoogleAuthService } from './google-auth.service';
 import { MainService } from './main.service';
 import { HttpClient } from '@angular/common/http';
 import { LocalStorageService } from './local-storage.service';
 import { jwtDecode } from "jwt-decode";
 import { Key } from '../../shared/constants/constants';
+import { IUser, Profile } from '../../shared/interfaces/auth';
 
 @Injectable({
     providedIn: 'root'

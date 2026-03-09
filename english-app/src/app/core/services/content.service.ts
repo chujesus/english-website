@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 import { MainService } from './main.service';
+import { CourseModule } from '../../shared/interfaces/content';
 
 @Injectable({
     providedIn: 'root'

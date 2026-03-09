@@ -6,13 +6,13 @@ import { Subject } from 'rxjs/internal/Subject';
 import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 import { distinctUntilChanged } from 'rxjs/internal/operators/distinctUntilChanged';
 import { switchMap } from 'rxjs/internal/operators/switchMap';
-import { IUser, Profile, Status } from '../../shared/interfaces';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
 import { TseService } from '../../core/services/tse.service';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 import { SettingService } from '../../core/services/setting.service';
 import { onlyNumbers, titleCaseTranform } from '../../shared/validators/validators';
+import { IUser, Profile, Status } from '../../shared/interfaces/auth';
 
 @Component({
     selector: 'app-register',

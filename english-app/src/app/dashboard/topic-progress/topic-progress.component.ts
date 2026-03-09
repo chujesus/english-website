@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ProgressService } from '../../core/services/progress.service';
 import { PracticeService } from '../../core/services/practice.service';
-import { TopicProgress, TopicScore } from '../../shared/interfaces';
+import { TopicProgress } from '../../shared/interfaces/models';
+import { TopicScore } from '../../shared/interfaces/practice';
 
 @Component({
     selector: 'app-topic-progress',
@@ -85,7 +86,7 @@ export class TopicProgressComponent implements OnInit {
 
     getProgressStatus(): string {
         if (!this.topicProgress?.progress) return 'Not Started';
-        return this.topicProgress.progress.status.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase());
+        return this.topicProgress.progress.status.replace('_', ' ').replace(/\b\w/g, (l: string) => l.toUpperCase());
     }
 
     canStartPractice(): boolean {

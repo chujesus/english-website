@@ -4,8 +4,8 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
-import { IUser } from '../../shared/interfaces';
 import { onlyNumbers } from '../../shared/validators/validators';
+import { IUser } from '../../shared/interfaces/auth';
 
 @Component({
   selector: 'app-reset-password',

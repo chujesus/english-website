@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { GoogleAuthPayload } from '../../shared/interfaces';
 import { GOOGLE_CONFIG } from '../config/google.config';
+import { GoogleAuthPayload } from '../../shared/interfaces/auth';
 
 declare global {
     interface Window {

@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MainService } from './main.service';
-import { ApiResponse } from '../../shared/interfaces';
 import { ISetting } from '../../shared/interfaces/models';
+import { ApiResponse } from '../../shared/interfaces/auth';
 
 @Injectable({
     providedIn: 'root'

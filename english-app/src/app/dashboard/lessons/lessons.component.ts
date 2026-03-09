@@ -2,12 +2,11 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Modal } from 'bootstrap';
-import { SpeechPracticeComponent } from '../practices/speech-practice/speech-practice.component';
 import { FillInBlankPracticeComponent } from '../practices/fill-in-blank-practice/fill-in-blank-practice.component';
 import { SpeechQuizComponent } from '../practices/speech-quiz/speech-quiz.component';
 import { ContentService } from '../../core/services/content.service';
 import { ProgressService } from '../../core/services/progress.service';
-import { ILessonContent, LessonSection } from '../../shared/interfaces';
+import { ILessonContent, LessonSection } from '../../shared/interfaces/content';
 
 // Legacy interfaces for backward compatibility with existing modal components
 interface IItem {
@@ -32,7 +31,7 @@ interface IListening {
 @Component({
   selector: 'app-lessons',
   standalone: true,
-  imports: [CommonModule, SpeechPracticeComponent, FillInBlankPracticeComponent, SpeechQuizComponent],
+  imports: [CommonModule, FillInBlankPracticeComponent, SpeechQuizComponent],
   templateUrl: './lessons.component.html',
   styleUrl: './lessons.component.scss'
 })
@@ -53,7 +52,7 @@ export class LessonsComponent implements OnInit {
   error = '';
 
   // Lesson data
-  selectedLesson: any;
+  selectedLesson: ILessonContent | null = null;
   currentStep = 0;
 
   // Practice data (legacy format for modals)

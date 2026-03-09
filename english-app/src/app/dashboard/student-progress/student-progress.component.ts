@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ProgressService } from '../../core/services/progress.service';
-import { DashboardData } from '../../shared/interfaces';
+import { DashboardData } from '../../shared/interfaces/models';
 
 @Component({
     selector: 'app-student-progress',

@@ -90,3 +90,19 @@ export interface LessonSection {
     content: any;
 }
 
+// Full lesson content object as returned by the lesson content API
+export interface ILessonContent {
+    id?: number;
+    topic_id?: number;
+    lesson_index?: number;
+    title: string;
+    objective?: string;
+    cefrLevel?: string;
+    keywords?: string[];
+    examples?: string[];
+    sections: LessonSection[];
+    state?: number;
+    created_at?: string;
+    updated_at?: string;
+}
+

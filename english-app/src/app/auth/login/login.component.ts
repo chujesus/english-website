@@ -5,9 +5,9 @@ import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 import { AlertService } from '../../core/services/alert.service';
 import { SettingService } from '../../core/services/setting.service';
-import { IUser, Profile, Status } from '../../shared/interfaces';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 import { isGoogleConfigValid } from '../../core/config/google.config';
+import { IUser, Profile, Status } from '../../shared/interfaces/auth';
 
 @Component({
   selector: 'app-login',

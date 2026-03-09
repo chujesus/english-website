@@ -1,5 +1,5 @@
 import { environment } from '../../../environments/environment';
-import { GoogleConfig } from '../../shared/interfaces';
+import { GoogleConfig } from '../../shared/interfaces/config';
 
 // Configuration that adapts automatically according to the environment
 export const GOOGLE_CONFIG: GoogleConfig = {

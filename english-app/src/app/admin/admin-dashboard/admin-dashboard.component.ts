@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { CourseService } from '../../core/services/course.service';
 import { ContentManagement } from '../../shared/interfaces/admin';
 import { CourseModule } from '../../shared/interfaces/content';
 
@@ -45,7 +44,7 @@ export class AdminDashboardComponent implements OnInit {
     successMessage = '';
     errorMessage = '';
 
-    constructor(private courseService: CourseService) { }
+    constructor() { }
 
     ngOnInit(): void {
         this.loadContentManagement();

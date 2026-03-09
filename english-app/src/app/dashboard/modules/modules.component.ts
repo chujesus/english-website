@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { LocalStorageService } from '../../core/services/local-storage.service';
 import { Profile } from '../../shared/interfaces/auth';
 import { CourseService } from '../../core/services/course.service';
-import { StudentService } from '../../core/services/student.service';
 import { ICourse } from '../../shared/interfaces/models';
 
 @Component({
@@ -21,7 +20,7 @@ export class ModulesComponent implements OnInit {
   loading = true;
   error = '';
 
-  constructor(private courseService: CourseService, private studentService: StudentService, private localStorageService: LocalStorageService) { }
+  constructor(private courseService: CourseService, private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
     this.loadCourseModules();

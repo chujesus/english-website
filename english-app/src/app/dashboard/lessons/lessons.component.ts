@@ -7,26 +7,7 @@ import { SpeechQuizComponent } from '../practices/speech-quiz/speech-quiz.compon
 import { ContentService } from '../../core/services/content.service';
 import { ProgressService } from '../../core/services/progress.service';
 import { ILessonContent, LessonSection } from '../../shared/interfaces/content';
-
-// Legacy interfaces for backward compatibility with existing modal components
-interface IItem {
-  english: string;
-  spanish: string;
-}
-
-interface IFillInBlank {
-  prefix: string[];
-  suffix: string;
-  answer: string;
-  selected: string;
-  feedback: string;
-}
-
-interface IListening {
-  audio: string;
-  options: string[];
-  answer: string;
-}
+import { IFillInBlank, IListening } from '../../shared/interfaces/models';
 
 @Component({
   selector: 'app-lessons',

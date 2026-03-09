@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CourseService } from '../../../core/services/course.service';
-import { StudentService } from '../../../core/services/student.service';
 
 interface IFillInBlank {
   prefix: string[];
@@ -32,7 +30,7 @@ export class FillInBlankPracticeComponent implements OnInit {
   isCompleted: boolean = false;
   score: number = 0;
 
-  constructor(private courseService: CourseService, private studentService: StudentService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.practiceStartTime = Date.now();

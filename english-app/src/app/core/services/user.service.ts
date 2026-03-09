@@ -46,7 +46,6 @@ export class UserService extends MainService {
      */
     toggleUserStatus(userId: number, state: number, starting_module?: string): Observable<ApiResponse> {
         const body = starting_module ? { state, starting_module } : { state };
-        debugger;
         return this.http.patch<ApiResponse>(`${this.baseUrl}/users/${userId}/status`, body);
     }
 

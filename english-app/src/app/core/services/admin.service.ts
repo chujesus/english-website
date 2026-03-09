@@ -148,7 +148,6 @@ export class AdminService extends MainService {
 
     // Student Progress (admin view)
     getAdminAllStudentsProgress(): Observable<any> {
-        debugger;
         return this.http.get(`${this.baseUrl}/admin/students/progress`);
     }
 

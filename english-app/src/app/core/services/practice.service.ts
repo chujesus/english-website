@@ -4,17 +4,19 @@ import { Observable, map } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { LocalStorageService } from './local-storage.service';
 import { PracticeAttempt, PracticeSubmission, TopicScore } from '../../shared/interfaces';
+import { MainService } from './main.service';
 
 @Injectable({
     providedIn: 'root'
 })
-export class PracticeService {
-    private apiUrl = environment.apiUrl;
+export class PracticeService extends MainService {
 
     constructor(
         private http: HttpClient,
         private localStorageService: LocalStorageService
-    ) { }
+    ) {
+        super();
+    }
 
     /**
      * Get current user ID from localStorage
@@ -33,7 +35,7 @@ export class PracticeService {
     submitPracticeAttempt(practiceData: Omit<PracticeSubmission, 'user_id'>): Observable<any[]> {
         const userId = this.getCurrentUserId();
         const submissionData = { ...practiceData, user_id: userId };
-        return this.http.post<any>(`${this.apiUrl}/practice/submit`, submissionData).pipe(map((res: any) => res.data as any[]));
+        return this.http.post<any>(`${this.baseUrl}/practice/submit`, submissionData).pipe(map((res: any) => res.data as any[]));
     }
 
     /**
@@ -41,7 +43,7 @@ export class PracticeService {
      */
     getPracticeHistory(topicId: number): Observable<any[]> {
         const userId = this.getCurrentUserId();
-        return this.http.get<any>(`${this.apiUrl}/practice/history/${userId}/${topicId}`).pipe(map((res: any) => res.data as any[]));
+        return this.http.get<any>(`${this.baseUrl}/practice/history/${userId}/${topicId}`).pipe(map((res: any) => res.data as any[]));
     }
 
     /**
@@ -49,7 +51,7 @@ export class PracticeService {
      */
     canAttemptPractice(topicId: number, practiceType: string, sectionIndex: number): Observable<any[]> {
         const userId = this.getCurrentUserId();
-        return this.http.get<any>(`${this.apiUrl}/practice/can-attempt/${userId}/${topicId}/${practiceType}/${sectionIndex}`).pipe(map((res: any) => res.data as any[]));
+        return this.http.get<any>(`${this.baseUrl}/practice/can-attempt/${userId}/${topicId}/${practiceType}/${sectionIndex}`).pipe(map((res: any) => res.data as any[]));
     }
 
     /**
@@ -57,6 +59,6 @@ export class PracticeService {
      */
     calculateTopicScore(topicId: number): Observable<any[]> {
         const userId = this.getCurrentUserId();
-        return this.http.get<any>(`${this.apiUrl}/practice/topic-score/${userId}/${topicId}`).pipe(map((res: any) => res.data as any[]));
+        return this.http.get<any>(`${this.baseUrl}/practice/topic-score/${userId}/${topicId}`).pipe(map((res: any) => res.data as any[]));
     }
 }

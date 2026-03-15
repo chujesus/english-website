@@ -457,10 +457,10 @@ export class ManageContentComponent implements OnInit {
         const names: { [key: string]: string } = {
             content: '📄 General Content',
             grammar: '📚 Grammar Content',
-            reading: '📖 Reading Content',
-            speaking: '🎤 Speaking Content',
-            listening: '🎧 Listening Content',
-            writing: '✍️ Writing Content'
+            reading: '📖 Reading Practice',
+            speaking: '🎤 Speaking Practice',
+            listening: '🎧 Listening Practice',
+            writing: '✍️ Writing Practice'
         };
         return names[field] || field;
     }

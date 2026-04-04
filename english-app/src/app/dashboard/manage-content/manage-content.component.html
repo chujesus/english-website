@@ -283,12 +283,18 @@
     *ngIf="showTopicModal">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-book me-2"></i>
-                    {{ isEditing ? 'Edit Topic' : 'Add New Topic' }}
-                </h5>
-                <button type="button" class="btn-close" (click)="closeModals()"></button>
+            <div class="modal-header bg-primary text-white">
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="modal-title mb-0">
+                        <i class="fas fa-book me-2"></i>
+                        {{ isEditing ? 'Edit Topic' : 'Add New Topic' }}
+                    </h5>
+                    <button type="button" class="btn btn-sm btn-light" (click)="openTopicPromptModal()"
+                        title="View AI prompt to generate topic structure">
+                        <i class="fas fa-robot me-1 text-primary"></i>AI Prompt
+                    </button>
+                </div>
+                <button type="button" class="btn-close btn-close-white" (click)="closeModals()"></button>
             </div>
             <form [formGroup]="topicForm" (ngSubmit)="saveTopic()">
                 <div class="modal-body">
@@ -457,8 +463,7 @@
                         <i class="fas fa-file-alt me-2"></i>
                         {{ isEditing ? 'Edit Lesson' : 'Add New Lesson' }}
                     </h5>
-                    <button type="button" class="btn btn-sm btn-light"
-                        (click)="openPromptInfoModal()"
+                    <button type="button" class="btn btn-sm btn-light" (click)="openPromptInfoModal()"
                         title="View AI prompt to generate full lesson content">
                         <i class="fas fa-robot me-1 text-primary"></i>AI Prompt
                     </button>
@@ -644,7 +649,193 @@
 
 <!-- Modal backdrops -->
 <div class="modal-backdrop fade show"
-    *ngIf="showCourseModal || showTopicModal || showLessonModal || showPromptInfoModal"></div>
+    *ngIf="showCourseModal || showTopicModal || showLessonModal || showPromptInfoModal || showTopicPromptModal"></div>
+
+<!-- Topic Prompt Info Modal -->
+<div *ngIf="showTopicPromptModal" class="modal fade show d-block" tabindex="-1" role="dialog" style="z-index: 1060;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-robot me-2"></i>AI Prompt — Generate Topic Structure
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="closeTopicPromptModal()"></button>
+            </div>
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                <p class="text-muted small mb-3">
+                    <i class="fas fa-info-circle me-1"></i>
+                    Copy this prompt, fill in <code>&#123;TOPIC&#125;</code>, <code>&#123;LEVEL&#125;</code> and
+                    <code>&#123;LESSON_COUNT&#125;</code>, then paste it into ChatGPT or any AI assistant.
+                </p>
+                <pre ngNonBindable class="bg-light border rounded p-3 small"
+                    style="white-space: pre-wrap; word-break: break-word; font-family: monospace;">You are an expert English curriculum designer specialized in:
+
+• CEFR framework (A1–C2)
+• Costa Rica Ministry of Education (MEP)
+• communicative language teaching
+• secondary education
+
+Your task is to generate the structure of an English learning topic for an educational platform.
+
+-------------------------------------
+
+IMPORTANT
+
+Do NOT generate lesson content.
+
+Only generate:
+
+• topic metadata
+• topic JSON fields
+• lesson titles and objectives
+
+-------------------------------------
+
+INPUT
+
+Topic Title: &#123;TOPIC&#125;
+
+CEFR Level: &#123;LEVEL&#125;
+
+Number of Lessons: &#123;LESSON_COUNT&#125;
+
+-------------------------------------
+
+TASK
+
+Generate the topic structure aligned with:
+
+• CEFR descriptors
+• Costa Rica MEP communicative approach
+• progressive pedagogical structure
+
+-------------------------------------
+
+TOPIC INFORMATION
+
+Title:
+Level:
+Objective:
+Learning Outcome:
+
+-------------------------------------
+
+TOPIC JSON FIELDS
+
+Examples (JSON Array)
+
+[
+"Example sentence",
+"Example sentence"
+]
+
+-------------------------------------
+
+Keywords (JSON Array)
+
+[
+"word",
+"word",
+"word"
+]
+
+-------------------------------------
+
+Skills Covered (JSON Array)
+
+[
+"Grammar",
+"Reading",
+"Speaking",
+"Listening",
+"Writing"
+]
+
+-------------------------------------
+
+Tags (JSON Array)
+
+[
+"daily-life",
+"communication",
+"grammar"
+]
+
+-------------------------------------
+
+LESSONS
+
+Generate exactly &#123;LESSON_COUNT&#125; lessons.
+
+Each lesson must include:
+
+Lesson Number
+Lesson Title
+Objective
+
+Lessons must follow a logical progression and be aligned with the topic and CEFR level.
+
+-------------------------------------
+
+ADDITIONAL REQUIREMENT
+
+After EACH lesson, generate an INPUT block with this exact structure:
+
+INPUT
+
+Topic: &#123;TOPIC&#125;
+
+Lesson Title: &#123;LESSON_TITLE&#125;
+
+CEFR Level: &#123;LEVEL&#125;
+
+Objective: &#123;OBJECTIVE&#125;
+
+Replace placeholders dynamically with the lesson data.
+
+-------------------------------------
+
+FORMAT
+
+Lesson 1
+Title:
+Objective:
+
+INPUT
+Topic: &#123;TOPIC&#125;
+Lesson Title: &#123;LESSON_TITLE&#125;
+CEFR Level: &#123;LEVEL&#125;
+Objective: &#123;OBJECTIVE&#125;
+
+Lesson 2
+Title:
+Objective:
+
+INPUT
+Topic: &#123;TOPIC&#125;
+Lesson Title: &#123;LESSON_TITLE&#125;
+CEFR Level: &#123;LEVEL&#125;
+Objective: &#123;OBJECTIVE&#125;
+
+Continue until Lesson &#123;LESSON_COUNT&#125;.
+
+-------------------------------------
+
+LEVEL ADAPTATION
+
+A1 → Basic vocabulary, introductions, simple sentences.
+A2 → Daily communication, routines, descriptions.
+B1 → Experiences, narratives, opinions.
+B2 → Arguments, explanations, discussions.
+C1 → Academic and analytical communication.
+C2 → Advanced near-native discourse.</pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeTopicPromptModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Prompt Info Modal -->
 <div *ngIf="showPromptInfoModal" class="modal fade show d-block" tabindex="-1" role="dialog" style="z-index: 1060;">

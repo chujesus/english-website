@@ -358,29 +358,11 @@
                                 <div class="card-body">
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label class="form-label fw-bold">Select Topic Field to Edit:</label>
-                                            <select class="form-select" [(ngModel)]="selectedTopicJsonField"
-                                                (ngModelChange)="onTopicJsonFieldChange()"
-                                                [ngModelOptions]="{standalone: true}">
-                                                <option value="examples">
-                                                    📝 Examples
-                                                </option>
-                                                <option value="keywords">
-                                                    🔑 Keywords
-                                                </option>
-                                                <option value="skills_covered">
-                                                    🎯 Skills Covered
-                                                </option>
-                                                <option value="tags">
-                                                    🏷️ Tags
-                                                </option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
                                             <label class="form-label fw-bold">Template Examples:</label>
                                             <div class="btn-group w-100" role="group">
                                                 <button type="button" class="btn btn-outline-secondary btn-sm"
-                                                    (click)="loadTopicJsonTemplate('empty')" title="Load Empty Array">
+                                                    (click)="loadTopicJsonTemplate('empty')"
+                                                    title="Load Empty Template">
                                                     <i class="fas fa-file"></i> Empty
                                                 </button>
                                                 <button type="button" class="btn btn-outline-secondary btn-sm"
@@ -400,21 +382,17 @@
                                     <div class="mb-3">
                                         <label class="form-label fw-bold">
                                             <i class="fas fa-edit me-1"></i>
-                                            {{ getTopicJsonFieldDisplayName(selectedTopicJsonField) }} (JSON Array
-                                            Format)
+                                            Topic Metadata (JSON Format)
                                         </label>
                                         <div class="position-relative">
-                                            <textarea class="form-control font-monospace json-editor" rows="8"
+                                            <textarea class="form-control font-monospace json-editor" rows="12"
                                                 [(ngModel)]="currentTopicJsonContent"
-                                                (ngModelChange)="updateTopicFormField()"
-                                                [ngModelOptions]="{standalone: true}"
-                                                [placeholder]="getTopicJsonFieldPlaceholder(selectedTopicJsonField)"
-                                                spellcheck="false">
+                                                [ngModelOptions]="{standalone: true}" spellcheck="false">
                                             </textarea>
                                             <div class="json-editor-info">
                                                 <small class="text-muted">
                                                     <i class="fas fa-info-circle me-1"></i>
-                                                    Use valid JSON array format
+                                                    Fill in examples, keywords, skills_covered and tags
                                                 </small>
                                             </div>
                                         </div>
@@ -722,44 +700,29 @@ Learning Outcome:
 
 TOPIC JSON FIELDS
 
-Examples (JSON Array)
-
-[
-"Example sentence",
-"Example sentence"
-]
-
--------------------------------------
-
-Keywords (JSON Array)
-
-[
-"word",
-"word",
-"word"
-]
-
--------------------------------------
-
-Skills Covered (JSON Array)
-
-[
-"Grammar",
-"Reading",
-"Speaking",
-"Listening",
-"Writing"
-]
-
--------------------------------------
-
-Tags (JSON Array)
-
-[
-"daily-life",
-"communication",
-"grammar"
-]
+&#123;
+  "examples": [
+    "Example sentence",
+    "Example sentence"
+  ],
+  "keywords": [
+    "word",
+    "word",
+    "word"
+  ],
+  "skillsCovered": [
+    "Grammar",
+    "Reading",
+    "Speaking",
+    "Listening",
+    "Writing"
+  ],
+  "tags": [
+    "daily-life",
+    "communication",
+    "grammar"
+  ]
+&#125;
 
 -------------------------------------
 

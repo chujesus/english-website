@@ -200,11 +200,17 @@ export class ManageContentComponent implements OnInit {
         if (topic) {
             this.topicForm.patchValue({
                 ...topic,
-                examples: JSON.stringify(topic.examples || [], null, 2),
-                keywords: JSON.stringify(topic.keywords || [], null, 2),
-                skills_covered: JSON.stringify(topic.skills_covered || [], null, 2),
-                tags: JSON.stringify(topic.tags || [], null, 2)
+                examples: '[]',
+                keywords: '[]',
+                skills_covered: '[]',
+                tags: '[]'
             });
+            this.currentTopicJsonContent = JSON.stringify({
+                examples: topic.examples || [],
+                keywords: topic.keywords || [],
+                skills_covered: topic.skills_covered || [],
+                tags: topic.tags || []
+            }, null, 2);
         } else {
             this.topicForm.reset();
             this.topicForm.patchValue({
@@ -214,11 +220,8 @@ export class ManageContentComponent implements OnInit {
                 skills_covered: '[]',
                 tags: '[]'
             });
+            this.currentTopicJsonContent = this.getTopicMetadataTemplate();
         }
-
-        // Initialize Topic JSON editor
-        this.selectedTopicJsonField = 'examples';
-        this.currentTopicJsonContent = this.topicForm.get('examples')?.value || '[]';
 
         this.showTopicModal = true;
     }
@@ -324,21 +327,19 @@ export class ManageContentComponent implements OnInit {
 
         const formData = this.topicForm.value;
 
-        // Validate JSON fields
-        const jsonFields = ['examples', 'keywords', 'skills_covered', 'tags'];
-        for (const field of jsonFields) {
-            if (!this.isValidJSON(formData[field])) {
-                this.error = `Invalid JSON format in ${field}`;
-                return;
-            }
+        if (!this.isValidJSON(this.currentTopicJsonContent)) {
+            this.alertService.showErrorToast('Invalid JSON format in Topic Metadata');
+            return;
         }
+
+        const metadata = JSON.parse(this.currentTopicJsonContent);
 
         const topicData = {
             ...formData,
-            examples: JSON.parse(formData.examples),
-            keywords: JSON.parse(formData.keywords),
-            skills_covered: JSON.parse(formData.skills_covered),
-            tags: JSON.parse(formData.tags)
+            examples: Array.isArray(metadata.examples) ? metadata.examples : [],
+            keywords: Array.isArray(metadata.keywords) ? metadata.keywords : [],
+            skills_covered: Array.isArray(metadata.skills_covered) ? metadata.skills_covered : [],
+            tags: Array.isArray(metadata.tags) ? metadata.tags : []
         };
 
         const operation = this.isEditing
@@ -794,25 +795,12 @@ export class ManageContentComponent implements OnInit {
     }
 
     // Topic JSON Editor methods
-    onTopicJsonFieldChange(): void {
-        // Load the content of the selected field into the editor
-        const fieldValue = this.topicForm.get(this.selectedTopicJsonField)?.value || '[]';
-        this.currentTopicJsonContent = fieldValue;
-    }
+    onTopicJsonFieldChange(): void { }
 
-    updateTopicFormField(): void {
-        // Update the form field when the editor content changes
-        this.topicForm.get(this.selectedTopicJsonField)?.setValue(this.currentTopicJsonContent);
-    }
+    updateTopicFormField(): void { }
 
     getTopicJsonFieldDisplayName(field: string): string {
-        const names: { [key: string]: string } = {
-            examples: '📝 Examples',
-            keywords: '🔑 Keywords',
-            skills_covered: '🎯 Skills Covered',
-            tags: '🏷️ Tags'
-        };
-        return names[field] || field;
+        return 'Topic Metadata';
     }
 
     getTopicJsonFieldPlaceholder(field: string): string {
@@ -850,10 +838,9 @@ export class ManageContentComponent implements OnInit {
 
     formatCurrentTopicJsonField(): void {
         try {
-            if (this.currentTopicJsonContent && this.currentTopicJsonContent.trim() !== '[]') {
+            if (this.currentTopicJsonContent) {
                 const parsed = JSON.parse(this.currentTopicJsonContent);
                 this.currentTopicJsonContent = JSON.stringify(parsed, null, 2);
-                this.updateTopicFormField();
             }
         } catch (error) {
             console.error('Invalid JSON format');
@@ -867,118 +854,58 @@ export class ManageContentComponent implements OnInit {
     }
 
     clearCurrentTopicJsonField(): void {
-        this.currentTopicJsonContent = '[]';
-        this.updateTopicFormField();
+        this.currentTopicJsonContent = this.getTopicMetadataTemplate();
     }
 
     loadTopicJsonTemplate(type: 'empty' | 'basic' | 'advanced'): void {
-        const templates: { [field: string]: { [type: string]: string } } = {
-            examples: {
-                empty: '[]',
-                basic: `[
-  "Example 1",
-  "Example 2",
-  "Example 3"
-]`,
-                advanced: `[
-  "Hello, my name is Sarah. I'm 25 years old.",
-  "Nice to meet you! How are you today?",
-  "I'm from Costa Rica. Where are you from?",
-  "Thank you very much for your help.",
-  "Have a great day! See you soon."
-]`
-            },
-            keywords: {
-                empty: '[]',
-                basic: `[
-  "keyword1",
-  "keyword2",
-  "keyword3"
-]`,
-                advanced: `[
-  "greetings",
-  "introductions",
-  "personal information",
-  "nationality",
-  "age",
-  "formal language",
-  "polite expressions",
-  "farewells"
-]`
-            },
-            skills_covered: {
-                empty: '[]',
-                basic: `[
-  "speaking",
-  "listening"
-]`,
-                advanced: `[
-  "speaking fluency",
-  "listening comprehension",
-  "reading comprehension",
-  "pronunciation accuracy",
-  "vocabulary usage",
-  "grammar application",
-  "cultural awareness"
-]`
-            },
-            tags: {
-                empty: '[]',
-                basic: `[
-  "beginner",
-  "basic"
-]`,
-                advanced: `[
-  "beginner",
-  "A1",
-  "conversation",
-  "social interaction",
-  "basic communication",
-  "everyday situations",
-  "interpersonal skills"
-]`
-            }
-        };
+        if (type === 'empty') {
+            this.currentTopicJsonContent = 'null';
+        } else if (type === 'basic') {
+            this.currentTopicJsonContent = this.getTopicMetadataTemplate();
+        } else {
+            this.currentTopicJsonContent = JSON.stringify({
+                examples: ['Example sentence 1', 'Example sentence 2', 'Example sentence 3'],
+                keywords: ['keyword1', 'keyword2', 'keyword3', 'keyword4'],
+                skills_covered: ['Grammar', 'Reading', 'Speaking', 'Listening', 'Writing'],
+                tags: ['beginner', 'A1', 'conversation', 'communication']
+            }, null, 2);
+        }
+    }
 
-        const template = templates[this.selectedTopicJsonField]?.[type] || '[]';
-        this.currentTopicJsonContent = template;
-        this.updateTopicFormField();
+    getTopicMetadataTemplate(): string {
+        return JSON.stringify({
+            examples: [],
+            keywords: [],
+            skills_covered: [],
+            tags: []
+        }, null, 2);
     }
 
     getTopicJsonValidationClass(): string {
-        if (!this.currentTopicJsonContent || this.currentTopicJsonContent.trim() === '[]') {
-            return 'bg-secondary';
-        }
-
+        if (!this.currentTopicJsonContent) return 'bg-secondary';
         try {
-            const parsed = JSON.parse(this.currentTopicJsonContent);
-            return Array.isArray(parsed) ? 'bg-success' : 'bg-warning';
+            JSON.parse(this.currentTopicJsonContent);
+            return 'bg-success';
         } catch {
             return 'bg-danger';
         }
     }
 
     getTopicJsonValidationIcon(): string {
-        if (!this.currentTopicJsonContent || this.currentTopicJsonContent.trim() === '[]') {
-            return 'fa-minus';
-        }
-
+        if (!this.currentTopicJsonContent) return 'fa-minus';
         try {
-            const parsed = JSON.parse(this.currentTopicJsonContent);
-            return Array.isArray(parsed) ? 'fa-check' : 'fa-exclamation';
+            JSON.parse(this.currentTopicJsonContent);
+            return 'fa-check';
         } catch {
             return 'fa-times';
         }
     }
 
     getTopicJsonValidationMessage(): string {
-        if (!this.currentTopicJsonContent || this.currentTopicJsonContent.trim() === '[]') {
-            return 'Empty Array';
-        }
-
+        if (!this.currentTopicJsonContent) return 'Empty';
         try {
-            const parsed = JSON.parse(this.currentTopicJsonContent);
-            return Array.isArray(parsed) ? 'Valid JSON Array' : 'Valid JSON (Not Array)';
+            JSON.parse(this.currentTopicJsonContent);
+            return 'Valid JSON';
         } catch {
             return 'Invalid JSON';
         }

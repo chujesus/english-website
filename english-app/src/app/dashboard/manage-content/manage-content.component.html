@@ -538,24 +538,8 @@
                                             <select class="form-select" [(ngModel)]="selectedJsonField"
                                                 (ngModelChange)="onJsonFieldChange()"
                                                 [ngModelOptions]="{standalone: true}">
-                                                <option value="content">
-                                                    <i class="fas fa-file-alt"></i> General Content
-                                                </option>
-                                                <option value="grammar">
-                                                    <i class="fas fa-book"></i> Grammar Content
-                                                </option>
-                                                <option value="reading">
-                                                    <i class="fas fa-newspaper"></i> Reading Content
-                                                </option>
-                                                <option value="speaking">
-                                                    <i class="fas fa-microphone"></i> Speaking Content
-                                                </option>
-                                                <option value="listening">
-                                                    <i class="fas fa-headphones"></i> Listening Content
-                                                </option>
-                                                <option value="writing">
-                                                    <i class="fas fa-pen"></i> Writing Content
-                                                </option>
+                                                <option value="content">General Content</option>
+                                                <option value="skills">Skills Practice</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6" *ngIf="selectedJsonField !== 'content'">

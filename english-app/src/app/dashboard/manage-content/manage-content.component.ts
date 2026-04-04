@@ -44,7 +44,7 @@ export class ManageContentComponent implements OnInit {
     lessonForm: FormGroup;
 
     // JSON Editor state
-    selectedJsonField: string = 'grammar';
+    selectedJsonField: string = 'content';
     currentJsonContent: string = 'null';
 
     // Topic JSON Editor state
@@ -227,12 +227,24 @@ export class ManageContentComponent implements OnInit {
             this.lessonForm.patchValue({
                 ...lesson,
                 content: lesson.content || '',
-                grammar: JSON.stringify(lesson.grammar || null, null, 2),
-                reading: JSON.stringify(lesson.reading || null, null, 2),
-                speaking: JSON.stringify(lesson.speaking || null, null, 2),
-                listening: JSON.stringify(lesson.listening || null, null, 2),
-                writing: JSON.stringify(lesson.writing || null, null, 2)
+                grammar: 'null',
+                reading: 'null',
+                speaking: 'null',
+                listening: 'null',
+                writing: 'null'
             });
+            // Build combined skills JSON from existing lesson data
+            const skillsData: any = {};
+            if (lesson.grammar) skillsData.grammar = lesson.grammar;
+            if (lesson.reading) skillsData.reading = lesson.reading;
+            if (lesson.speaking) skillsData.speaking = lesson.speaking;
+            if (lesson.listening) skillsData.listening = lesson.listening;
+            if (lesson.writing) skillsData.writing = lesson.writing;
+            const hasSkills = Object.keys(skillsData).length > 0;
+            this.currentJsonContent = hasSkills
+                ? JSON.stringify(skillsData, null, 2)
+                : this.getSkillsTemplate();
+            this.selectedJsonField = hasSkills ? 'skills' : 'content';
         } else {
             this.lessonForm.reset();
             this.lessonForm.patchValue({
@@ -244,12 +256,8 @@ export class ManageContentComponent implements OnInit {
                 listening: 'null',
                 writing: 'null'
             });
-        }
-
-        // Initialize editor (start with content field)
-        this.selectedJsonField = 'content';
-        if (this.selectedJsonField !== 'content') {
-            this.currentJsonContent = this.lessonForm.get(this.selectedJsonField)?.value || 'null';
+            this.currentJsonContent = this.getSkillsTemplate();
+            this.selectedJsonField = 'content';
         }
 
         this.showLessonModal = true;
@@ -336,13 +344,39 @@ export class ManageContentComponent implements OnInit {
 
         const formData = this.lessonForm.value;
 
-        // Validate JSON fields (content is LONGTEXT, not JSON)
-        const jsonFields = ['grammar', 'reading', 'speaking', 'listening', 'writing'];
-        for (const field of jsonFields) {
-            if (formData[field] !== 'null' && !this.isValidJSON(formData[field])) {
-                this.error = `Invalid JSON format in ${field}`;
+        if (this.selectedJsonField === 'skills') {
+            // Validate the combined skills JSON
+            if (!this.currentJsonContent || this.currentJsonContent.trim() === 'null' || !this.isValidJSON(this.currentJsonContent)) {
+                this.alertService.showErrorToast('Invalid JSON format in Skills Practice');
                 return;
             }
+            const skillsData = JSON.parse(this.currentJsonContent);
+            const skillMap: { check: string; key: string }[] = [
+                { check: 'is_grammar', key: 'grammar' },
+                { check: 'is_reading', key: 'reading' },
+                { check: 'is_speaking', key: 'speaking' },
+                { check: 'is_listening', key: 'listening' },
+                { check: 'is_writing', key: 'writing' }
+            ];
+            for (const { check, key } of skillMap) {
+                if (formData[check]) {
+                    if (!skillsData[key]) {
+                        this.alertService.showWarningToast(`"${key}" is checked in Skills Covered but missing in the Skills Practice JSON`);
+                        return;
+                    }
+                    formData[key] = JSON.stringify(skillsData[key]);
+                } else {
+                    formData[key] = 'null';
+                }
+            }
+            formData.content = null;
+        } else {
+            // General Content mode — clear all skill fields
+            formData.grammar = 'null';
+            formData.reading = 'null';
+            formData.speaking = 'null';
+            formData.listening = 'null';
+            formData.writing = 'null';
         }
 
         const lessonData = {
@@ -435,37 +469,27 @@ export class ManageContentComponent implements OnInit {
 
     // JSON Editor methods
     onJsonFieldChange(): void {
-        // For content field, we don't use currentJsonContent (uses angular-editor directly)
-        if (this.selectedJsonField === 'content') {
-            return;
-        }
-        // Load the content of the selected field into the JSON editor
-        const fieldValue = this.lessonForm.get(this.selectedJsonField)?.value || 'null';
-        this.currentJsonContent = fieldValue;
+        // 'content' is handled by angular-editor via formControlName
+        // 'skills' JSON is stored directly in currentJsonContent (initialized in openLessonModal)
     }
 
     updateLessonFormField(): void {
-        // For content field, we don't use currentJsonContent (uses angular-editor directly)
-        if (this.selectedJsonField === 'content') {
-            return;
-        }
-        // Update the form field when the JSON editor content changes
-        this.lessonForm.get(this.selectedJsonField)?.setValue(this.currentJsonContent);
+        // 'content' is handled by angular-editor via formControlName
+        // 'skills' JSON is stored directly in currentJsonContent; form fields are set in saveLesson
     }
 
     getJsonFieldDisplayName(field: string): string {
         const names: { [key: string]: string } = {
             content: '📄 General Content',
-            grammar: '📚 Grammar Content',
-            reading: '📖 Reading Practice',
-            speaking: '🎤 Speaking Practice',
-            listening: '🎧 Listening Practice',
-            writing: '✍️ Writing Practice'
+            skills: '🎯 Skills Practice'
         };
         return names[field] || field;
     }
 
     getJsonFieldPlaceholder(field: string): string {
+        if (field === 'skills') {
+            return this.getSkillsTemplate();
+        }
         const placeholders: { [key: string]: string } = {
             grammar: `{
   "rules": [
@@ -558,6 +582,24 @@ export class ManageContentComponent implements OnInit {
     loadJsonTemplate(type: 'empty' | 'basic' | 'advanced'): void {
         // Content field doesn't use JSON templates
         if (this.selectedJsonField === 'content') {
+            return;
+        }
+
+        // Handle Skills Practice combined JSON
+        if (this.selectedJsonField === 'skills') {
+            if (type === 'empty') {
+                this.currentJsonContent = 'null';
+            } else if (type === 'basic') {
+                this.currentJsonContent = this.getSkillsTemplate();
+            } else {
+                this.currentJsonContent = JSON.stringify({
+                    grammar: [{ title: 'Present Simple', rule: 'Used for facts and habits', examples: ['I work every day', 'She likes coffee'] }],
+                    reading: { title: 'A Day at the Park', text: 'Maria goes to the park every morning...', questions: [{ question: 'Where does Maria go every morning?', options: ['To the gym', 'To the park', 'To work'], answer: 'To the park' }] },
+                    speaking: [{ english: 'Nice to meet you!', example: 'A: Hi! Nice to meet you! B: Nice to meet you too!', pronunciation: '/naɪs tə miːt juː/' }],
+                    listening: [{ audio: 'lesson_audio.mp3', options: ['He is a teacher', 'He is a student', 'He is a doctor'], answer: 'He is a teacher' }],
+                    writing: [{ prefix: ['I', 'go'], suffix: 'every day.', answer: 'I go to school every day.' }]
+                }, null, 2);
+            }
             return;
         }
 
@@ -678,6 +720,16 @@ export class ManageContentComponent implements OnInit {
         const template = templates[this.selectedJsonField]?.[type] || 'null';
         this.currentJsonContent = template;
         this.updateLessonFormField();
+    }
+
+    getSkillsTemplate(): string {
+        return JSON.stringify({
+            grammar: [{ title: '', rule: '', examples: [] }],
+            reading: { title: '', text: '', questions: [{ question: '', options: [], answer: '' }] },
+            speaking: [{ english: '', example: '', pronunciation: '' }],
+            listening: [{ audio: '', options: [], answer: '' }],
+            writing: [{ prefix: [], suffix: '', answer: '' }]
+        }, null, 2);
     }
 
     getJsonValidationClass(): string {

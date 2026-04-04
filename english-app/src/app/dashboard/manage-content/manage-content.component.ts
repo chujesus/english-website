@@ -34,6 +34,7 @@ export class ManageContentComponent implements OnInit {
     showCourseModal = false;
     showTopicModal = false;
     showLessonModal = false;
+    showPromptInfoModal = false;
     isEditing = false;
 
     editorConfig: any;
@@ -268,6 +269,14 @@ export class ManageContentComponent implements OnInit {
         this.showTopicModal = false;
         this.showLessonModal = false;
         this.isEditing = false;
+    }
+
+    openPromptInfoModal(): void {
+        this.showPromptInfoModal = true;
+    }
+
+    closePromptInfoModal(): void {
+        this.showPromptInfoModal = false;
     }
 
     // JSON validation helper

@@ -451,12 +451,19 @@
     tabindex="-1" *ngIf="showLessonModal">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-file-alt me-2"></i>
-                    {{ isEditing ? 'Edit Lesson' : 'Add New Lesson' }}
-                </h5>
-                <button type="button" class="btn-close" (click)="closeModals()"></button>
+            <div class="modal-header bg-primary text-white">
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="modal-title mb-0">
+                        <i class="fas fa-file-alt me-2"></i>
+                        {{ isEditing ? 'Edit Lesson' : 'Add New Lesson' }}
+                    </h5>
+                    <button type="button" class="btn btn-sm btn-light"
+                        (click)="openPromptInfoModal()"
+                        title="View AI prompt to generate full lesson content">
+                        <i class="fas fa-robot me-1 text-primary"></i>AI Prompt
+                    </button>
+                </div>
+                <button type="button" class="btn-close btn-close-white" (click)="closeModals()"></button>
             </div>
             <form [formGroup]="lessonForm" (ngSubmit)="saveLesson()">
                 <div class="modal-body">
@@ -636,4 +643,276 @@
 </div>
 
 <!-- Modal backdrops -->
-<div class="modal-backdrop fade show" *ngIf="showCourseModal || showTopicModal || showLessonModal"></div>
+<div class="modal-backdrop fade show"
+    *ngIf="showCourseModal || showTopicModal || showLessonModal || showPromptInfoModal"></div>
+
+<!-- Prompt Info Modal -->
+<div *ngIf="showPromptInfoModal" class="modal fade show d-block" tabindex="-1" role="dialog" style="z-index: 1060;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-robot me-2"></i>AI Prompt — Generate Lesson Content
+                </h5>
+                <button type="button" class="btn-close btn-close-white" (click)="closePromptInfoModal()"></button>
+            </div>
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                <p class="text-muted small mb-3">
+                    <i class="fas fa-info-circle me-1"></i>
+                    Copy this prompt, fill in the placeholders <code>&#123;TOPIC&#125;</code>,
+                    <code>&#123;LESSON_TITLE&#125;</code>, <code>&#123;LEVEL&#125;</code> and
+                    <code>&#123;OBJECTIVE&#125;</code>, then paste it into ChatGPT or any AI assistant.
+                </p>
+                <pre ngNonBindable class="bg-light border rounded p-3 small"
+                    style="white-space: pre-wrap; word-break: break-word; font-family: monospace;">You are an expert English curriculum designer specialized in:
+
+• CEFR framework  
+• Technical Education Study Programs of the Ministry of Public Education of Costa Rica.
+• communicative language teaching  
+• secondary education pedagogy  
+
+You are generating lesson content for an English Learning Platform.
+
+The result will be copied directly into a Rich Text Editor (Angular Editor).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+🎯 CORE PEDAGOGICAL RULE (VERY IMPORTANT)  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+ALL content MUST be strictly aligned with the OBJECTIVE.
+
+• The Objective is the CENTRAL axis of the lesson  
+• Every section must directly support achieving the Objective  
+• Do NOT generate generic explanations unrelated to the Objective  
+• Examples, explanations, and practice MUST reflect the Objective  
+• If something does not help achieve the Objective → DO NOT include it  
+
+The lesson must feel like a guided path toward mastering the Objective.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📌 FORMAT RULES  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+• DO NOT use HTML tags  
+• Use spacing, bullet points, and icons  
+• The lesson must look clean and structured  
+• Use icons to separate sections  
+• Do NOT display CEFR level inside the lesson sections  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+🎨 VISUAL STRUCTURE  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Use these exact section headers:
+
+🔹 Lesson Introduction  
+📘 Explanation  
+📊 Structure  
+📌 Examples  
+⚠ Common Mistakes  
+💡 Learning Tip  
+🧠 Practice  
+🚀 Challenge  
+🌎 Cultural Note  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📥 INPUT  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Topic: &#123;TOPIC&#125;  
+Lesson Title: &#123;LESSON_TITLE&#125;  
+CEFR Level: &#123;LEVEL&#125;  
+Objective: &#123;OBJECTIVE&#125;  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+🧩 TASK  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Generate a COMPLETE LESSON based on the input.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📌 LESSON METADATA  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Include:
+
+Lesson Title  
+Objective  
+Skills Covered  
+
+Skills Covered must include:
+
+Grammar  
+Reading  
+Speaking  
+Listening  
+Writing  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📘 GENERAL CONTENT REQUIREMENTS  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+The lesson must be:
+
+• highly detailed  
+• pedagogically progressive  
+• aligned with CEFR  
+• aligned with Costa Rica MEP  
+• communicative and practical  
+
+The explanation must include:
+
+• conceptual explanation  
+• grammatical explanation  
+• communicative usage  
+• real-life situations  
+• contextual examples  
+• sentence structure patterns  
+• variations  
+• common mistakes  
+• guided examples  
+
+⚠ IMPORTANT:  
+ALL explanations MUST directly help achieve the Objective.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📚 GENERAL CONTENT STRUCTURE  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+🔹 Lesson Introduction  
+Explain what the student will learn and HOW it connects to the Objective.  
+Mention real-life situations where this Objective is useful.
+
+📘 Explanation  
+Explain the concept in depth, ALWAYS linking it to the Objective.  
+Show how it works in real communication.  
+Use multiple contextual examples connected to the Objective.
+
+📊 Structure  
+Show grammar patterns used to achieve the Objective.  
+Explain each component clearly.
+
+📌 Examples  
+Provide real-life examples aligned with the Objective.
+
+⚠ Common Mistakes  
+Include errors directly related to the Objective.
+
+💡 Learning Tip  
+Give strategies to help achieve the Objective faster.
+
+🧠 Practice  
+Exercises must reinforce the Objective step by step.
+
+🚀 Challenge  
+Students produce language that demonstrates the Objective.
+
+🌎 Cultural Note  
+Explain real-life use of this structure in communication.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📤 OUTPUT FORMAT (UPDATED)  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Return in this exact order:
+
+1️⃣ LESSON METADATA  
+2️⃣ GENERAL CONTENT  
+3️⃣ ALL PRACTICE CONTENT IN ONE SINGLE JSON OBJECT  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📊 JSON OUTPUT STRUCTURE (UPDATED)  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Return ONE JSON object with this structure:
+
+&#123;
+  "grammar": [
+    &#123;
+      "title": "",
+      "rule": "",
+      "examples": []
+    &#125;
+  ],
+  "reading": &#123;
+    "title": "",
+    "text": "",
+    "questions": [
+      &#123;
+        "question": "",
+        "options": [],
+        "answer": ""
+      &#125;
+    ]
+  &#125;,
+  "speaking": [
+    &#123;
+      "english": "",
+      "example": "",
+      "pronunciation": ""
+    &#125;
+  ],
+  "listening": [
+    &#123;
+      "audio": "",
+      "options": [],
+      "answer": ""
+    &#125;
+  ],
+  "writing": [
+    &#123;
+      "prefix": [],
+      "suffix": "",
+      "answer": ""
+    &#125;
+  ]
+&#125;
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📊 JSON REQUIREMENTS  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Grammar:
+• include affirmative, negative, questions, contractions, short answers  
+
+Reading:
+• 10 questions  
+
+Speaking:
+• 10 prompts  
+
+Listening:
+• 10 exercises  
+
+Writing:
+• 10 exercises  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+📈 LEVEL ADAPTATION  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+A1 → simple, short, basic  
+A2 → daily communication  
+B1 → opinions, experiences  
+B2 → complex ideas  
+C1 → advanced communication  
+C2 → near-native  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+✅ FINAL VALIDATION RULE  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Before finishing, verify:
+
+• Does every section clearly support the Objective?  
+• Are all examples aligned with the Objective?  
+• Can a student achieve the Objective ONLY using this lesson?  
+
+If not → adjust before output.</pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closePromptInfoModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

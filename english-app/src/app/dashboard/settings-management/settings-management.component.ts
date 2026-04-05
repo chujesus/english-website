@@ -134,7 +134,11 @@ export class SettingsManagementComponent implements OnInit {
             });
         } else {
             this.selectedSetting = null;
-            this.editSettingForm.reset();
+            this.editSettingForm.patchValue({
+                name: '',
+                value: '',
+                type: 'setting'
+            });
         }
         this.showEditModal = true;
     }

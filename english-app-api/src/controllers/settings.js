@@ -76,7 +76,7 @@ const getSettingByName = async (req, res = response) => {
     );
 
     if (settings.length === 0) {
-      return res.status(404).json({
+      return res.json({
         ok: false,
         data: null,
         message: "Setting not found",

@@ -27,11 +27,11 @@ const getSettingsByType = async (req, res = response) => {
   try {
     const { type } = req.params;
 
-    if (!type || !['setting', 'link'].includes(type)) {
+    if (!type || !['setting', 'link', 'prompt'].includes(type)) {
       return res.status(400).json({
         ok: false,
         data: [],
-        message: "Valid type parameter is required (setting or link)",
+        message: "Valid type parameter is required (setting, link or prompt)",
       });
     }
 
@@ -110,11 +110,11 @@ const createSetting = async (req, res = response) => {
       });
     }
 
-    if (!['setting', 'link'].includes(type)) {
+    if (!['setting', 'link', 'prompt'].includes(type)) {
       return res.status(400).json({
         ok: false,
         data: null,
-        message: "Type must be 'setting' or 'link'",
+        message: "Type must be 'setting', 'link' or 'prompt'",
       });
     }
 
@@ -178,11 +178,11 @@ const updateSetting = async (req, res = response) => {
       });
     }
 
-    if (!['setting', 'link'].includes(type)) {
+    if (!['setting', 'link', 'prompt'].includes(type)) {
       return res.status(400).json({
         ok: false,
         data: null,
-        message: "Type must be 'setting' or 'link'",
+        message: "Type must be 'setting', 'link' or 'prompt'",
       });
     }
 

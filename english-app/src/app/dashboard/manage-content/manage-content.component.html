@@ -639,167 +639,30 @@
                 </h5>
                 <button type="button" class="btn-close btn-close-white" (click)="closeTopicPromptModal()"></button>
             </div>
-            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <div class="modal-body">
                 <p class="text-muted small mb-3">
                     <i class="fas fa-info-circle me-1"></i>
-                    Copy this prompt, fill in <code>&#123;TOPIC&#125;</code>, <code>&#123;LEVEL&#125;</code> and
-                    <code>&#123;LESSON_COUNT&#125;</code>, then paste it into ChatGPT or any AI assistant.
+                    Edit and save a custom prompt, or restore the system default.
+                    Placeholders: <code>&#123;TOPIC&#125;</code>, <code>&#123;LEVEL&#125;</code>,
+                    <code>&#123;LESSON_COUNT&#125;</code>.
                 </p>
-                <pre ngNonBindable class="bg-light border rounded p-3 small"
-                    style="white-space: pre-wrap; word-break: break-word; font-family: monospace;">You are an expert English curriculum designer specialized in:
-
-• CEFR framework (A1–C2)
-• Costa Rica Ministry of Education (MEP)
-• communicative language teaching
-• secondary education
-
-Your task is to generate the structure of an English learning topic for an educational platform.
-
--------------------------------------
-
-IMPORTANT
-
-Do NOT generate lesson content.
-
-Only generate:
-
-• topic metadata
-• topic JSON fields
-• lesson titles and objectives
-
--------------------------------------
-
-INPUT
-
-Topic Title: &#123;TOPIC&#125;
-
-CEFR Level: &#123;LEVEL&#125;
-
-Number of Lessons: &#123;LESSON_COUNT&#125;
-
--------------------------------------
-
-TASK
-
-Generate the topic structure aligned with:
-
-• CEFR descriptors
-• Costa Rica MEP communicative approach
-• progressive pedagogical structure
-
--------------------------------------
-
-TOPIC INFORMATION
-
-Title:
-Level:
-Objective:
-Learning Outcome:
-
--------------------------------------
-
-TOPIC JSON FIELDS
-
-&#123;
-  "examples": [
-    "Example sentence",
-    "Example sentence"
-  ],
-  "keywords": [
-    "word",
-    "word",
-    "word"
-  ],
-  "skillsCovered": [
-    "Grammar",
-    "Reading",
-    "Speaking",
-    "Listening",
-    "Writing"
-  ],
-  "tags": [
-    "daily-life",
-    "communication",
-    "grammar"
-  ]
-&#125;
-
--------------------------------------
-
-LESSONS
-
-Generate exactly &#123;LESSON_COUNT&#125; lessons.
-
-Each lesson must include:
-
-Lesson Number
-Lesson Title
-Objective
-
-Lessons must follow a logical progression and be aligned with the topic and CEFR level.
-
--------------------------------------
-
-ADDITIONAL REQUIREMENT
-
-After EACH lesson, generate an INPUT block with this exact structure:
-
-INPUT
-
-Topic: &#123;TOPIC&#125;
-
-Lesson Title: &#123;LESSON_TITLE&#125;
-
-CEFR Level: &#123;LEVEL&#125;
-
-Objective: &#123;OBJECTIVE&#125;
-
-Replace placeholders dynamically with the lesson data.
-
--------------------------------------
-
-FORMAT
-
-Lesson 1
-Title:
-Objective:
-
-INPUT
-Topic: &#123;TOPIC&#125;
-Lesson Title: &#123;LESSON_TITLE&#125;
-CEFR Level: &#123;LEVEL&#125;
-Objective: &#123;OBJECTIVE&#125;
-
-Lesson 2
-Title:
-Objective:
-
-INPUT
-Topic: &#123;TOPIC&#125;
-Lesson Title: &#123;LESSON_TITLE&#125;
-CEFR Level: &#123;LEVEL&#125;
-Objective: &#123;OBJECTIVE&#125;
-
-Continue until Lesson &#123;LESSON_COUNT&#125;.
-
--------------------------------------
-
-LEVEL ADAPTATION
-
-A1 → Basic vocabulary, introductions, simple sentences.
-A2 → Daily communication, routines, descriptions.
-B1 → Experiences, narratives, opinions.
-B2 → Arguments, explanations, discussions.
-C1 → Academic and analytical communication.
-C2 → Advanced near-native discourse.</pre>
+                <angular-editor style="width: 100%;" [(ngModel)]="topicPromptContent"
+                    [config]="editorConfig"></angular-editor>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-warning me-auto" (click)="restoreTopicDefaultPrompt()">
+                    <i class="fas fa-undo me-1"></i>Default Prompt
+                </button>
                 <button type="button" class="btn btn-secondary" (click)="closeTopicPromptModal()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="saveTopicPrompt()"
+                    [disabled]="topicPromptSaving">
+                    <span *ngIf="!topicPromptSaving"><i class="fas fa-save me-1"></i>Save Prompt</span>
+                    <span *ngIf="topicPromptSaving"><i class="fas fa-spinner fa-spin me-1"></i>Saving...</span>
+                </button>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Prompt Info Modal -->
 <div *ngIf="showPromptInfoModal" class="modal fade show d-block" tabindex="-1" role="dialog" style="z-index: 1060;">
     <div class="modal-dialog modal-lg" role="document">
@@ -810,262 +673,26 @@ C2 → Advanced near-native discourse.</pre>
                 </h5>
                 <button type="button" class="btn-close btn-close-white" (click)="closePromptInfoModal()"></button>
             </div>
-            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+            <div class="modal-body">
                 <p class="text-muted small mb-3">
                     <i class="fas fa-info-circle me-1"></i>
-                    Copy this prompt, fill in the placeholders <code>&#123;TOPIC&#125;</code>,
-                    <code>&#123;LESSON_TITLE&#125;</code>, <code>&#123;LEVEL&#125;</code> and
-                    <code>&#123;OBJECTIVE&#125;</code>, then paste it into ChatGPT or any AI assistant.
+                    Edit and save a custom prompt, or restore the system default.
+                    Placeholders: <code>&#123;TOPIC&#125;</code>, <code>&#123;LESSON_TITLE&#125;</code>,
+                    <code>&#123;LEVEL&#125;</code>, <code>&#123;OBJECTIVE&#125;</code>.
                 </p>
-                <pre ngNonBindable class="bg-light border rounded p-3 small"
-                    style="white-space: pre-wrap; word-break: break-word; font-family: monospace;">You are an expert English curriculum designer specialized in:
-
-• CEFR framework  
-• Technical Education Study Programs of the Ministry of Public Education of Costa Rica.
-• communicative language teaching  
-• secondary education pedagogy  
-
-You are generating lesson content for an English Learning Platform.
-
-The result will be copied directly into a Rich Text Editor (Angular Editor).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-🎯 CORE PEDAGOGICAL RULE (VERY IMPORTANT)  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-ALL content MUST be strictly aligned with the OBJECTIVE.
-
-• The Objective is the CENTRAL axis of the lesson  
-• Every section must directly support achieving the Objective  
-• Do NOT generate generic explanations unrelated to the Objective  
-• Examples, explanations, and practice MUST reflect the Objective  
-• If something does not help achieve the Objective → DO NOT include it  
-
-The lesson must feel like a guided path toward mastering the Objective.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📌 FORMAT RULES  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-• DO NOT use HTML tags  
-• Use spacing, bullet points, and icons  
-• The lesson must look clean and structured  
-• Use icons to separate sections  
-• Do NOT display CEFR level inside the lesson sections  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-🎨 VISUAL STRUCTURE  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Use these exact section headers:
-
-🔹 Lesson Introduction  
-📘 Explanation  
-📊 Structure  
-📌 Examples  
-⚠ Common Mistakes  
-💡 Learning Tip  
-🧠 Practice  
-🚀 Challenge  
-🌎 Cultural Note  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📥 INPUT  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Topic: &#123;TOPIC&#125;  
-Lesson Title: &#123;LESSON_TITLE&#125;  
-CEFR Level: &#123;LEVEL&#125;  
-Objective: &#123;OBJECTIVE&#125;  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-🧩 TASK  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Generate a COMPLETE LESSON based on the input.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📌 LESSON METADATA  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Include:
-
-Lesson Title  
-Objective  
-Skills Covered  
-
-Skills Covered must include:
-
-Grammar  
-Reading  
-Speaking  
-Listening  
-Writing  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📘 GENERAL CONTENT REQUIREMENTS  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-The lesson must be:
-
-• highly detailed  
-• pedagogically progressive  
-• aligned with CEFR  
-• aligned with Costa Rica MEP  
-• communicative and practical  
-
-The explanation must include:
-
-• conceptual explanation  
-• grammatical explanation  
-• communicative usage  
-• real-life situations  
-• contextual examples  
-• sentence structure patterns  
-• variations  
-• common mistakes  
-• guided examples  
-
-⚠ IMPORTANT:  
-ALL explanations MUST directly help achieve the Objective.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📚 GENERAL CONTENT STRUCTURE  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-🔹 Lesson Introduction  
-Explain what the student will learn and HOW it connects to the Objective.  
-Mention real-life situations where this Objective is useful.
-
-📘 Explanation  
-Explain the concept in depth, ALWAYS linking it to the Objective.  
-Show how it works in real communication.  
-Use multiple contextual examples connected to the Objective.
-
-📊 Structure  
-Show grammar patterns used to achieve the Objective.  
-Explain each component clearly.
-
-📌 Examples  
-Provide real-life examples aligned with the Objective.
-
-⚠ Common Mistakes  
-Include errors directly related to the Objective.
-
-💡 Learning Tip  
-Give strategies to help achieve the Objective faster.
-
-🧠 Practice  
-Exercises must reinforce the Objective step by step.
-
-🚀 Challenge  
-Students produce language that demonstrates the Objective.
-
-🌎 Cultural Note  
-Explain real-life use of this structure in communication.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📤 OUTPUT FORMAT (UPDATED)  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Return in this exact order:
-
-1️⃣ LESSON METADATA  
-2️⃣ GENERAL CONTENT  
-3️⃣ ALL PRACTICE CONTENT IN ONE SINGLE JSON OBJECT  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📊 JSON OUTPUT STRUCTURE (UPDATED)  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Return ONE JSON object with this structure:
-
-&#123;
-  "grammar": [
-    &#123;
-      "title": "",
-      "rule": "",
-      "examples": []
-    &#125;
-  ],
-  "reading": &#123;
-    "title": "",
-    "text": "",
-    "questions": [
-      &#123;
-        "question": "",
-        "options": [],
-        "answer": ""
-      &#125;
-    ]
-  &#125;,
-  "speaking": [
-    &#123;
-      "english": "",
-      "example": "",
-      "pronunciation": ""
-    &#125;
-  ],
-  "listening": [
-    &#123;
-      "audio": "",
-      "options": [],
-      "answer": ""
-    &#125;
-  ],
-  "writing": [
-    &#123;
-      "prefix": [],
-      "suffix": "",
-      "answer": ""
-    &#125;
-  ]
-&#125;
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📊 JSON REQUIREMENTS  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Grammar:
-• include affirmative, negative, questions, contractions, short answers  
-
-Reading:
-• 10 questions  
-
-Speaking:
-• 10 prompts  
-
-Listening:
-• 10 exercises  
-
-Writing:
-• 10 exercises  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-📈 LEVEL ADAPTATION  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-A1 → simple, short, basic  
-A2 → daily communication  
-B1 → opinions, experiences  
-B2 → complex ideas  
-C1 → advanced communication  
-C2 → near-native  
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-✅ FINAL VALIDATION RULE  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
-
-Before finishing, verify:
-
-• Does every section clearly support the Objective?  
-• Are all examples aligned with the Objective?  
-• Can a student achieve the Objective ONLY using this lesson?  
-
-If not → adjust before output.</pre>
+                <angular-editor style="width: 100%;" [(ngModel)]="lessonPromptContent"
+                    [config]="editorConfig"></angular-editor>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-warning me-auto" (click)="restoreLessonDefaultPrompt()">
+                    <i class="fas fa-undo me-1"></i>Default Prompt
+                </button>
                 <button type="button" class="btn btn-secondary" (click)="closePromptInfoModal()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="saveLessonPrompt()"
+                    [disabled]="lessonPromptSaving">
+                    <span *ngIf="!lessonPromptSaving"><i class="fas fa-save me-1"></i>Save Prompt</span>
+                    <span *ngIf="lessonPromptSaving"><i class="fas fa-spinner fa-spin me-1"></i>Saving...</span>
+                </button>
             </div>
         </div>
     </div>

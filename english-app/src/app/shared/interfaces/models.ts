@@ -244,7 +244,7 @@ export interface ISetting {
     id?: number;
     name: string;
     value?: string | null;
-    type?: 'setting' | 'link';
+    type?: 'setting' | 'link' | 'prompt';
     created_at?: string;
     updated_at?: string;
 }

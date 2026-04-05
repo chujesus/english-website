@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminService, AdminCourse, AdminTopic, AdminLesson } from '../../core/services/admin.service';
 import { AlertService } from '../../core/services/alert.service';
 import { EditorConfigService } from '../../core/services/editor-config.service';
+import { SettingService } from '../../core/services/setting.service';
+import { ISetting } from '../../shared/interfaces/models';
 import { SharedModule } from '../../shared/shared.module';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { SweetAlertResult } from 'sweetalert2';
@@ -49,6 +51,14 @@ export class ManageContentComponent implements OnInit {
     selectedJsonField: string = 'content';
     currentJsonContent: string = 'null';
 
+    // Prompt modal state
+    topicPromptContent: string = '';
+    topicPromptSetting: ISetting | null = null;
+    topicPromptSaving: boolean = false;
+    lessonPromptContent: string = '';
+    lessonPromptSetting: ISetting | null = null;
+    lessonPromptSaving: boolean = false;
+
     // Topic JSON Editor state
     selectedTopicJsonField: string = 'examples';
     currentTopicJsonContent: string = '[]';
@@ -57,7 +67,8 @@ export class ManageContentComponent implements OnInit {
         private adminService: AdminService,
         private alertService: AlertService,
         private fb: FormBuilder,
-        private editorService: EditorConfigService
+        private editorService: EditorConfigService,
+        private settingService: SettingService
     ) {
         this.courseForm = this.createCourseForm();
         this.topicForm = this.createTopicForm();
@@ -276,6 +287,19 @@ export class ManageContentComponent implements OnInit {
     }
 
     openPromptInfoModal(): void {
+        this.lessonPromptContent = this.textToHtml(this.getDefaultLessonPrompt());
+        this.lessonPromptSetting = null;
+        this.settingService.getSettingByName('Lesson Prompt').subscribe({
+            next: (response: any) => {
+                if (response.ok && response.data && response.data.value) {
+                    this.lessonPromptSetting = response.data;
+                    this.lessonPromptContent = response.data.value;
+                } else if (response.ok && response.data) {
+                    this.lessonPromptSetting = response.data;
+                }
+            },
+            error: () => { /* setting not found, use default */ }
+        });
         this.showPromptInfoModal = true;
     }
 
@@ -283,12 +307,129 @@ export class ManageContentComponent implements OnInit {
         this.showPromptInfoModal = false;
     }
 
+    saveLessonPrompt(): void {
+        this.lessonPromptSaving = true;
+        const payload: ISetting = { name: 'Lesson Prompt', value: this.lessonPromptContent, type: 'prompt' };
+        if (this.lessonPromptSetting?.id) {
+            this.settingService.updateSetting(this.lessonPromptSetting.id, payload).subscribe({
+                next: (res: any) => {
+                    this.lessonPromptSetting = res.data || { ...this.lessonPromptSetting, value: this.lessonPromptContent };
+                    this.lessonPromptSaving = false;
+                    this.alertService.showSuccessToast('Lesson Prompt saved successfully');
+                },
+                error: () => {
+                    this.lessonPromptSaving = false;
+                    this.alertService.showErrorToast('Error saving Lesson Prompt');
+                }
+            });
+        } else {
+            this.settingService.createSetting(payload).subscribe({
+                next: (res: any) => {
+                    this.lessonPromptSetting = res.data;
+                    this.lessonPromptSaving = false;
+                    this.alertService.showSuccessToast('Lesson Prompt saved successfully');
+                },
+                error: () => {
+                    this.lessonPromptSaving = false;
+                    this.alertService.showErrorToast('Error saving Lesson Prompt');
+                }
+            });
+        }
+    }
+
+    restoreLessonDefaultPrompt(): void {
+        this.alertService.showWarningAlert(
+            'Restore Default Prompt',
+            'The custom Lesson Prompt will be deleted and the system default will be restored. This action cannot be undone.'
+        ).then((result: SweetAlertResult) => {
+            if (!result.isConfirmed) return;
+            this.lessonPromptContent = this.textToHtml(this.getDefaultLessonPrompt());
+            if (this.lessonPromptSetting?.id) {
+                const payload: ISetting = { name: 'Lesson Prompt', value: '', type: 'prompt' };
+                this.settingService.updateSetting(this.lessonPromptSetting.id, payload).subscribe({
+                    next: (res: any) => {
+                        this.lessonPromptSetting = res.data || { ...this.lessonPromptSetting, value: '' };
+                        this.alertService.showSuccessToast('Default Lesson Prompt restored');
+                    },
+                    error: () => { this.alertService.showErrorToast('Error restoring default prompt'); }
+                });
+            } else {
+                this.alertService.showSuccessToast('Default Lesson Prompt restored');
+            }
+        });
+    }
+
     openTopicPromptModal(): void {
+        this.topicPromptContent = this.textToHtml(this.getDefaultTopicPrompt());
+        this.topicPromptSetting = null;
+        this.settingService.getSettingByName('Topic Prompt').subscribe({
+            next: (response: any) => {
+                if (response.ok && response.data && response.data.value) {
+                    this.topicPromptSetting = response.data;
+                    this.topicPromptContent = response.data.value;
+                } else if (response.ok && response.data) {
+                    this.topicPromptSetting = response.data;
+                }
+            },
+            error: () => { /* setting not found, use default */ }
+        });
         this.showTopicPromptModal = true;
     }
 
     closeTopicPromptModal(): void {
         this.showTopicPromptModal = false;
+    }
+
+    saveTopicPrompt(): void {
+        this.topicPromptSaving = true;
+        const payload: ISetting = { name: 'Topic Prompt', value: this.topicPromptContent, type: 'prompt' };
+        if (this.topicPromptSetting?.id) {
+            this.settingService.updateSetting(this.topicPromptSetting.id, payload).subscribe({
+                next: (res: any) => {
+                    this.topicPromptSetting = res.data || { ...this.topicPromptSetting, value: this.topicPromptContent };
+                    this.topicPromptSaving = false;
+                    this.alertService.showSuccessToast('Topic Prompt saved successfully');
+                },
+                error: () => {
+                    this.topicPromptSaving = false;
+                    this.alertService.showErrorToast('Error saving Topic Prompt');
+                }
+            });
+        } else {
+            this.settingService.createSetting(payload).subscribe({
+                next: (res: any) => {
+                    this.topicPromptSetting = res.data;
+                    this.topicPromptSaving = false;
+                    this.alertService.showSuccessToast('Topic Prompt saved successfully');
+                },
+                error: () => {
+                    this.topicPromptSaving = false;
+                    this.alertService.showErrorToast('Error saving Topic Prompt');
+                }
+            });
+        }
+    }
+
+    restoreTopicDefaultPrompt(): void {
+        this.alertService.showWarningAlert(
+            'Restore Default Prompt',
+            'The custom Topic Prompt will be deleted and the system default will be restored. This action cannot be undone.'
+        ).then((result: SweetAlertResult) => {
+            if (!result.isConfirmed) return;
+            this.topicPromptContent = this.textToHtml(this.getDefaultTopicPrompt());
+            if (this.topicPromptSetting?.id) {
+                const payload: ISetting = { name: 'Topic Prompt', value: '', type: 'prompt' };
+                this.settingService.updateSetting(this.topicPromptSetting.id, payload).subscribe({
+                    next: (res: any) => {
+                        this.topicPromptSetting = res.data || { ...this.topicPromptSetting, value: '' };
+                        this.alertService.showSuccessToast('Default Topic Prompt restored');
+                    },
+                    error: () => { this.alertService.showErrorToast('Error restoring default prompt'); }
+                });
+            } else {
+                this.alertService.showSuccessToast('Default Topic Prompt restored');
+            }
+        });
     }
 
     // JSON validation helper
@@ -950,5 +1091,409 @@ export class ManageContentComponent implements OnInit {
             case 'lessons': return `Manage individual lessons for ${this.selectedTopic?.title || 'this topic'}. Configure content and learning materials.`;
             default: return 'Comprehensive content management for your learning platform.';
         }
+    }
+
+    private textToHtml(text: string): string {
+        return text
+            .split('\n')
+            .map(line => line.trim() === '' ? '<p></p>' : `<p>${line}</p>`)
+            .join('');
+    }
+
+    getDefaultTopicPrompt(): string {
+        return `You are an expert English curriculum designer specialized in:
+
+• CEFR framework (A1–C2)
+• Costa Rica Ministry of Education (MEP)
+• communicative language teaching
+• secondary education
+
+Your task is to generate the structure of an English learning topic for an educational platform.
+
+-------------------------------------
+
+IMPORTANT
+
+Do NOT generate lesson content.
+
+Only generate:
+
+• topic metadata
+• topic JSON fields
+• lesson titles and objectives
+
+-------------------------------------
+
+INPUT
+
+Topic Title: {TOPIC}
+
+CEFR Level: {LEVEL}
+
+Number of Lessons: {LESSON_COUNT}
+
+-------------------------------------
+
+TASK
+
+Generate the topic structure aligned with:
+
+• CEFR descriptors
+• Costa Rica MEP communicative approach
+• progressive pedagogical structure
+
+-------------------------------------
+
+TOPIC INFORMATION
+
+Title:
+Level:
+Objective:
+Learning Outcome:
+
+-------------------------------------
+
+TOPIC JSON FIELDS
+
+{
+  "examples": [
+    "Example sentence",
+    "Example sentence"
+  ],
+  "keywords": [
+    "word",
+    "word",
+    "word"
+  ],
+  "skillsCovered": [
+    "Grammar",
+    "Reading",
+    "Speaking",
+    "Listening",
+    "Writing"
+  ],
+  "tags": [
+    "daily-life",
+    "communication",
+    "grammar"
+  ]
+}
+
+-------------------------------------
+
+LESSONS
+
+Generate exactly {LESSON_COUNT} lessons.
+
+Each lesson must include:
+
+Lesson Number
+Lesson Title
+Objective
+
+Lessons must follow a logical progression and be aligned with the topic and CEFR level.
+
+-------------------------------------
+
+ADDITIONAL REQUIREMENT
+
+After EACH lesson, generate an INPUT block with this exact structure:
+
+INPUT
+
+Topic: {TOPIC}
+
+Lesson Title: {LESSON_TITLE}
+
+CEFR Level: {LEVEL}
+
+Objective: {OBJECTIVE}
+
+Replace placeholders dynamically with the lesson data.
+
+-------------------------------------
+
+FORMAT
+
+Lesson 1
+Title:
+Objective:
+
+INPUT
+Topic: {TOPIC}
+Lesson Title: {LESSON_TITLE}
+CEFR Level: {LEVEL}
+Objective: {OBJECTIVE}
+
+Lesson 2
+Title:
+Objective:
+
+INPUT
+Topic: {TOPIC}
+Lesson Title: {LESSON_TITLE}
+CEFR Level: {LEVEL}
+Objective: {OBJECTIVE}
+
+Continue until Lesson {LESSON_COUNT}.
+
+-------------------------------------
+
+LEVEL ADAPTATION
+
+A1 → Basic vocabulary, introductions, simple sentences.
+A2 → Daily communication, routines, descriptions.
+B1 → Experiences, narratives, opinions.
+B2 → Arguments, explanations, discussions.
+C1 → Academic and analytical communication.
+C2 → Advanced near-native discourse.`;
+    }
+
+    getDefaultLessonPrompt(): string {
+        return `You are an expert English curriculum designer specialized in:
+
+• CEFR framework
+• Technical Education Study Programs of the Ministry of Public Education of Costa Rica.
+• communicative language teaching
+• secondary education pedagogy
+
+You are generating lesson content for an English Learning Platform.
+
+The result will be copied directly into a Rich Text Editor (Angular Editor).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 CORE PEDAGOGICAL RULE (VERY IMPORTANT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ALL content MUST be strictly aligned with the OBJECTIVE.
+
+• The Objective is the CENTRAL axis of the lesson
+• Every section must directly support achieving the Objective
+• Do NOT generate generic explanations unrelated to the Objective
+• Examples, explanations, and practice MUST reflect the Objective
+• If something does not help achieve the Objective → DO NOT include it
+
+The lesson must feel like a guided path toward mastering the Objective.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 FORMAT RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• DO NOT use HTML tags
+• Use spacing, bullet points, and icons
+• The lesson must look clean and structured
+• Use icons to separate sections
+• Do NOT display CEFR level inside the lesson sections
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎨 VISUAL STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Use these exact section headers:
+
+🔹 Lesson Introduction
+📘 Explanation
+📊 Structure
+📌 Examples
+⚠ Common Mistakes
+💡 Learning Tip
+🧠 Practice
+🚀 Challenge
+🌎 Cultural Note
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📥 INPUT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Topic: {TOPIC}
+Lesson Title: {LESSON_TITLE}
+CEFR Level: {LEVEL}
+Objective: {OBJECTIVE}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧩 TASK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Generate a COMPLETE LESSON based on the input.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 LESSON METADATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Include:
+
+Lesson Title
+Objective
+Skills Covered
+
+Skills Covered must include:
+
+Grammar
+Reading
+Speaking
+Listening
+Writing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📘 GENERAL CONTENT REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The lesson must be:
+
+• highly detailed
+• pedagogically progressive
+• aligned with CEFR
+• aligned with Costa Rica MEP
+• communicative and practical
+
+The explanation must include:
+
+• conceptual explanation
+• grammatical explanation
+• communicative usage
+• real-life situations
+• contextual examples
+• sentence structure patterns
+• variations
+• common mistakes
+• guided examples
+
+⚠ IMPORTANT:
+ALL explanations MUST directly help achieve the Objective.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 GENERAL CONTENT STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 Lesson Introduction
+Explain what the student will learn and HOW it connects to the Objective.
+Mention real-life situations where this Objective is useful.
+
+📘 Explanation
+Explain the concept in depth, ALWAYS linking it to the Objective.
+Show how it works in real communication.
+Use multiple contextual examples connected to the Objective.
+
+📊 Structure
+Show grammar patterns used to achieve the Objective.
+Explain each component clearly.
+
+📌 Examples
+Provide real-life examples aligned with the Objective.
+
+⚠ Common Mistakes
+Include errors directly related to the Objective.
+
+💡 Learning Tip
+Give strategies to help achieve the Objective faster.
+
+🧠 Practice
+Exercises must reinforce the Objective step by step.
+
+🚀 Challenge
+Students produce language that demonstrates the Objective.
+
+🌎 Cultural Note
+Explain real-life use of this structure in communication.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📤 OUTPUT FORMAT (UPDATED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Return in this exact order:
+
+1️⃣ LESSON METADATA
+2️⃣ GENERAL CONTENT
+3️⃣ ALL PRACTICE CONTENT IN ONE SINGLE JSON OBJECT
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 JSON OUTPUT STRUCTURE (UPDATED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Return ONE JSON object with this structure:
+
+{
+  "grammar": [
+    {
+      "title": "",
+      "rule": "",
+      "examples": []
+    }
+  ],
+  "reading": {
+    "title": "",
+    "text": "",
+    "questions": [
+      {
+        "question": "",
+        "options": [],
+        "answer": ""
+      }
+    ]
+  },
+  "speaking": [
+    {
+      "english": "",
+      "example": "",
+      "pronunciation": ""
+    }
+  ],
+  "listening": [
+    {
+      "audio": "",
+      "options": [],
+      "answer": ""
+    }
+  ],
+  "writing": [
+    {
+      "prefix": [],
+      "suffix": "",
+      "answer": ""
+    }
+  ]
+}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 JSON REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Grammar:
+• include affirmative, negative, questions, contractions, short answers
+
+Reading:
+• 10 questions
+
+Speaking:
+• 10 prompts
+
+Listening:
+• 10 exercises
+
+Writing:
+• 10 exercises
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📈 LEVEL ADAPTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A1 → simple, short, basic
+A2 → daily communication
+B1 → opinions, experiences
+B2 → complex ideas
+C1 → advanced communication
+C2 → near-native
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ FINAL VALIDATION RULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before finishing, verify:
+
+• Does every section clearly support the Objective?
+• Are all examples aligned with the Objective?
+• Can a student achieve the Objective ONLY using this lesson?
+
+If not → adjust before output.`;
     }
 }

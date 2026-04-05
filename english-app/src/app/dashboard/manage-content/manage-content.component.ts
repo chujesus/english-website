@@ -316,6 +316,7 @@ export class ManageContentComponent implements OnInit {
                     this.lessonPromptSetting = res.data || { ...this.lessonPromptSetting, value: this.lessonPromptContent };
                     this.lessonPromptSaving = false;
                     this.alertService.showSuccessToast('Lesson Prompt saved successfully');
+                    this.closePromptInfoModal();
                 },
                 error: () => {
                     this.lessonPromptSaving = false;
@@ -328,6 +329,7 @@ export class ManageContentComponent implements OnInit {
                     this.lessonPromptSetting = res.data;
                     this.lessonPromptSaving = false;
                     this.alertService.showSuccessToast('Lesson Prompt saved successfully');
+                    this.closePromptInfoModal();
                 },
                 error: () => {
                     this.lessonPromptSaving = false;
@@ -350,11 +352,13 @@ export class ManageContentComponent implements OnInit {
                     next: (res: any) => {
                         this.lessonPromptSetting = res.data || { ...this.lessonPromptSetting, value: '' };
                         this.alertService.showSuccessToast('Default Lesson Prompt restored');
+                        this.closePromptInfoModal();
                     },
                     error: () => { this.alertService.showErrorToast('Error restoring default prompt'); }
                 });
             } else {
                 this.alertService.showSuccessToast('Default Lesson Prompt restored');
+                this.closePromptInfoModal();
             }
         });
     }
@@ -389,6 +393,7 @@ export class ManageContentComponent implements OnInit {
                     this.topicPromptSetting = res.data || { ...this.topicPromptSetting, value: this.topicPromptContent };
                     this.topicPromptSaving = false;
                     this.alertService.showSuccessToast('Topic Prompt saved successfully');
+                    this.closeTopicPromptModal();
                 },
                 error: () => {
                     this.topicPromptSaving = false;
@@ -401,6 +406,7 @@ export class ManageContentComponent implements OnInit {
                     this.topicPromptSetting = res.data;
                     this.topicPromptSaving = false;
                     this.alertService.showSuccessToast('Topic Prompt saved successfully');
+                    this.closeTopicPromptModal();
                 },
                 error: () => {
                     this.topicPromptSaving = false;
@@ -423,11 +429,13 @@ export class ManageContentComponent implements OnInit {
                     next: (res: any) => {
                         this.topicPromptSetting = res.data || { ...this.topicPromptSetting, value: '' };
                         this.alertService.showSuccessToast('Default Topic Prompt restored');
+                        this.closeTopicPromptModal();
                     },
                     error: () => { this.alertService.showErrorToast('Error restoring default prompt'); }
                 });
             } else {
                 this.alertService.showSuccessToast('Default Topic Prompt restored');
+                this.closeTopicPromptModal();
             }
         });
     }
